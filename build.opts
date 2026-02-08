@@ -1,0 +1,40 @@
+# Project Structure
+SRC_ROOT=$(PROJECT_ROOT)/src
+BUILD_ROOT=$(PROJECT_ROOT)/build
+
+# Docker environment configuration
+CROSSCOMPILE_PREFIX=/usr
+LLVM_PREFIX=/usr/lib/llvm-6.0
+
+# Tools
+CROSSCOMPILE_LD=ld
+CROSSCOMPILE_STRIP=strip
+CROSSCOMPILE_AS=as
+CROSSCOMPILE_AR=ar
+CROSSCOMPILE_CLANG=clang
+XORRISO=xorriso
+DC=ldc2
+
+# JHC Configuration
+JHC=jhc
+JHC_LIBS_PREFIX=/usr/local/lib/jhc-0.8.2
+
+TARGET=x86_64
+HOST=i386
+
+# Include Paths
+RTS_INC=-I$(SRC_ROOT)/libs/rts -I$(SRC_ROOT)/libs/rts/rts
+CBITS_INC=-I$(SRC_ROOT)/kernel/d
+PROGS_INC=-I$(SRC_ROOT)/progs/cbits
+
+CFLAGS_COMMON=-D _JHC_GC=1 -D _JHC_DEBUG=0 -D _JHC_BAREBONES -fno-pic -fno-pie
+JHC_COMMON=-DTARGET=$(TARGET) -pcontainers -papplicative -fforall
+DFLAGS=-betterC -mtriple=x86_64-unknown-none-elf -O2 -code-model=large
+
+# Kernel CFLAGS
+CFLAGS=-m64 $(CFLAGS_COMMON) -ffreestanding $(RTS_INC) $(CBITS_INC) -include d_exports.h -DCOMPILING_HS_KERNEL -mno-red-zone -mcmodel=large -D TARGET=$(TARGET) -D KERNEL=1 -O2
+
+# User CFLAGS
+CFLAGS_USER=-m64 $(CFLAGS_COMMON) $(RTS_INC) $(CBITS_INC) $(PROGS_INC) -D TARGET=$(TARGET) -D HOS_USER=1 -O2
+
+TEST_CFLAGS=$(CFLAGS_COMMON) -D TARGET=$(HOST)
