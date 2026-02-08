@@ -5,10 +5,7 @@
 #undef abort
 #undef assert
 
-#include "syscall.h"
 
-#define assert(x) do {							\
-    if ( !(x) ) { hos_debug_log("Assert failed at " __FILE__); }	\
-  } while (0)
+#include "syscall.h"
 
 #endif

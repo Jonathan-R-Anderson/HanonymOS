@@ -14,11 +14,11 @@ $(BUILD_ROOT)/librts-user.a: $(addprefix $(BUILD_ROOT)/rts-user/, $(RTS_USER_SOU
 
 $(BUILD_ROOT)/rts/%.s: %.c
 	mkdir -p $(BUILD_ROOT)/rts
-	$(CROSSCOMPILE_CLANG) $< -S -I . $(CBITS_INC) $(CFLAGS) -o $@ -D _JHC_BAREBONES=1 -D_JHC_GC=1
+	$(CROSSCOMPILE_CLANG) $< -S -I . $(CBITS_INC) $(KERNEL_CFLAGS) -o $@ -D _JHC_BAREBONES=1 -D_JHC_GC=1
 
 $(BUILD_ROOT)/rts-user/%.s: %.c
 	mkdir -p $(BUILD_ROOT)/rts-user
-	$(CROSSCOMPILE_CLANG) $< -S -I . $(CBITS_INC) $(CFLAGS) -o $@ $(PROGS_INC) -D_JHC_GC=1
+	$(CROSSCOMPILE_CLANG) $< -S -I . $(USER_CFLAGS) -o $@ -D_JHC_GC=1
 
 $(BUILD_ROOT)/rts/%.o: $(BUILD_ROOT)/rts/%.s
 	$(CROSSCOMPILE_AS) -c $< -o $@

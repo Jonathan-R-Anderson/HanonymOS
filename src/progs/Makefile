@@ -1,3 +1,4 @@
+include ../../build.opts
 .PHONY: all clean
 
 all:

@@ -1,0 +1,3 @@
+/build_work/build/rts-user/stableptr.o: stableptr.c jhc_rts_header.h HsFFI.h sys/wsize.h rts/cdefs.h \
+  rts/profile.h rts/rts_support.h rts/gc.h rts/gc_none.h rts/gc_jgc.h \
+  sys/queue.h rts/jhc_rts.h

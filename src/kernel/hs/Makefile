@@ -10,7 +10,7 @@ all: $(BUILD_ROOT)/hos.o
 $(BUILD_ROOT)/hos.o: $(HOS_SOURCES) $(BUILD_ROOT)/prog-libs/hos-common-0.0.1.hl
 	mkdir -p $(BUILD_ROOT)
 	$(JHC) -C $(HOS_SOURCES) -o $(BUILD_ROOT)/hos.c $(JHC_OPTS) -fcpp $(CBITS_INC) $(RTS_INC) -fffi -ftype-families -DKERNEL=1 -phos-common -L$(BUILD_ROOT)/prog-libs
-	$(CROSSCOMPILE_CLANG) $(BUILD_ROOT)/hos.c -S $(RTS_INC) $(CBITS_INC) $(CFLAGS) -mcmodel=large -o $(BUILD_ROOT)/hos.S -D _JHC_BAREBONES=1 -D_JHC_GC=1 -D_JHC_DEBUG=0 -DNDEBUG -DCOMPILING_HS_KERNEL=1 2>$(BUILD_ROOT)/hos-clang-output || (cat $(BUILD_ROOT)/hos-clang-output && exit 1)
+	$(CROSSCOMPILE_CLANG) $(BUILD_ROOT)/hos.c -S $(RTS_INC) $(CBITS_INC) $(KERNEL_CFLAGS) -mcmodel=large -o $(BUILD_ROOT)/hos.S -D _JHC_BAREBONES=1 -D_JHC_GC=1 -D_JHC_DEBUG=0 -DNDEBUG -DCOMPILING_HS_KERNEL=1 2>$(BUILD_ROOT)/hos-clang-output || (cat $(BUILD_ROOT)/hos-clang-output && exit 1)
 	$(CROSSCOMPILE_AS) -c $(BUILD_ROOT)/hos.S -o $(BUILD_ROOT)/hos.o
 
 test:

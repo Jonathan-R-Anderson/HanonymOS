@@ -2,6 +2,22 @@
 #define D_EXPORTS_H
 
 #include <stdint.h>
+#include <stddef.h>
+
+#ifndef _SIZE_T_DEFINED_
+#define _SIZE_T_DEFINED_
+typedef uint64_t size_t;
+#endif
+
+// Runtime support
+void c_assert(int condition);
+#define assert(x) c_assert(!!(x))
+void abort(void);
+void jhc_utf8_putchar(int c);
+void klog(const char *msg);
+void klog_hex(unsigned long n);
+void write_serial(int c);
+void jhc_exit(int code);
 
 // Pointer conversion
 uint64_t ptrToWord(void* ptr);
@@ -75,13 +91,28 @@ void irq15(void);
 
 // User space state
 extern uint8_t curUserSpaceState[256];
+extern uint8_t kernelState[256];
+extern uint64_t x64TrapErrorCode;
+
+// Multiboot
+extern int g_module_count;
+extern void* g_mboot_modules;
 
 // Memory allocation
-uint64_t alloc_from_regions(uint64_t size);
-uint64_t ext_page_aligned_alloc(uint64_t size);
-void free_from_regions(uint64_t ptr, uint64_t size);
+void* alloc_from_regions(uint64_t size);
+void* ext_page_aligned_alloc(uint64_t size);
+void* ext_page_aligned_realloc(void* ptr, uint64_t sz);
+void ext_free(void* ptr, uint64_t size);
+void* ext_alloc_megablock(void);
+void* ext_alloc_cache(void);
+void free_from_regions(void* ptr, uint64_t size);
+void* malloc(size_t size);
+void free(void* ptr);
+void* memset(void* s, int c, size_t n);
 
 // Architecture functions
 void x64WriteCR3(uint64_t value);
+void arch_unmap_init_task(void);
+uint32_t x64SwitchToUserspace(void* userState, void* kernelState);
 
 #endif

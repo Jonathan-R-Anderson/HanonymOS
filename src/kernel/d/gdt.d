@@ -4,6 +4,7 @@ import io;
 
 extern (C):
 
+align(1)
 struct gdt_entry {
     ushort limit_low;
     ushort base_low;
@@ -13,6 +14,7 @@ struct gdt_entry {
     ubyte  base_high;
 }
 
+align(1)
 struct tss_entry {
     ushort limit_low;
     ushort base_low;
@@ -24,6 +26,7 @@ struct tss_entry {
     uint   reserved;
 }
 
+align(1)
 struct gdt_ptr {
     ushort limit;
     ulong  base;
@@ -111,34 +114,10 @@ void init_gdt() {
 
     gdt_pointer.limit = gdt.sizeof - 1;
     gdt_pointer.base = cast(ulong)gdt.ptr;
+ 
+    extern void loadGdt(gdt_ptr*);
+    extern void loadTr(ushort);
 
-    // Load GDT
-    asm {
-        lgdt [gdt_pointer];
-    }
-    
-    // Reload Segments
-    // Needs complex inline asm for far return
-    // LDC inline asm string constraint
-    import ldc.llvmasm;
-    __asm(`
-        pushq $$0x08
-        lea 1f(%rip), %rax
-        pushq %rax
-        lretq
-        1:
-        mov $$0x10, %ax
-        mov %ax, %ds
-        mov %ax, %es
-        mov %ax, %fs
-        mov %ax, %gs
-        mov %ax, %ss
-    `, "~{rax},~{memory}");
-
-    // Load TR
-    // Correct instruction: ltr r/m16
-    ushort tr = 0x28;
-    asm {
-        ltr tr;
-    }
+    loadGdt(&gdt_pointer);
+    loadTr(0x28);
 }

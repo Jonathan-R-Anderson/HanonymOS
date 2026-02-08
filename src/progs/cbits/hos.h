@@ -25,23 +25,39 @@
 #define HOS_IS_32_BIT
 #endif
 
-typedef uintptr_t size_t;
+
 
 /* Some shims for string.h */
-//void *memcpy(void *dest, const void *src, size_t n);
-//void *memset(void *s, int c, unsigned long n);
+void *memcpy(void *dest, const void *src, size_t n);
+void *memset(void *s, int c, size_t n);
+void *malloc(size_t size);
+void free(void *ptr);
+void *realloc(void *ptr, size_t size);
+int fprintf(void *stream, const char *format, ...);
 void abort();
 void hos_init_clear_bss();
 
-/* JHC integration */
-inline static int jhc_utf8_putchar(int ch)
-{ return 0; }
+/* JHC integration - implemented in hos.c */
+void c_assert(int condition);
+void assert(int condition);
+void jhc_utf8_putchar(int ch);
+void jhc_exit(int n);
+void jhc_case_fell_off(int n);
+void klog(const char *msg);
+void klog_hex(unsigned long n);
+void abort(void);
 
-inline static void jhc_exit(int n)
-{ abort(); }
+void *ext_page_aligned_alloc(size_t size);
+void *ext_page_aligned_realloc(void *ptr, size_t sz);
+void ext_free(void *ptr, size_t size);
+void *ext_alloc_megablock(void);
+void *ext_alloc_cache(void);
 
-inline static void jhc_case_fell_off(int n)
-{ abort() ; }
+void *malloc(size_t size);
+void free(void *ptr);
+void *realloc(void *ptr, size_t size);
+int fprintf(void *stream, const char *format, ...);
+
 
 static inline void *word_to_ptr(uintptr_t i)
 {

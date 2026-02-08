@@ -29,14 +29,14 @@ tags:
     type: text
     description: Name of the Hos service provided by this server/driver
 content:
-  - location: ../build/progs/pci.elf
+  - location: ../../build/progs/pci.elf
     tags:
       - com.hos.autoboot
       - system.executable
       - com.bundle.short-description: PCI server
       - com.hos.autoboot.order: 1
       - com.hos.service-name: hos.dev.pci
-  - location: ../build/progs/ata.elf
+  - location: ../../build/progs/ata.elf
     tags:
       - system.executable
       - com.bundle.short-description: ATA server
@@ -47,7 +47,7 @@ content:
 
         # VMWare PIIX3 IDE controller
       - com.hos.dev.pci.supported-device: 8086:7111
-  - location: ../build/progs/shell.elf
+  - location: ../../build/progs/shell.elf
     tags:
       - com.hos.autoboot
       - system.executable

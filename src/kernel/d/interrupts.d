@@ -7,6 +7,7 @@ extern (C):
 
 import ldc.llvmasm;
 
+align(1)
 struct idt_entry {
    ushort offset_1;
    ushort selector;
@@ -17,6 +18,7 @@ struct idt_entry {
    uint zero;
 }
 
+align(1)
 struct idt_ptr {
     ushort limit;
     ulong base;
@@ -71,8 +73,7 @@ void init_idt() {
      }
      early_idt_ptr.limit = early_idt.sizeof - 1;
      early_idt_ptr.base = cast(ulong)early_idt.ptr;
-     
-     asm {
-         lidt [early_idt_ptr];
-     }
+      
+     extern void loadIdt(idt_ptr*);
+     loadIdt(&early_idt_ptr);
 }

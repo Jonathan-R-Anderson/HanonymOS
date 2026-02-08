@@ -1,0 +1,60 @@
+In file included from <built-in>:349:
+<command line>:5:9: warning: '_JHC_GC' macro redefined [-Wmacro-redefined]
+#define _JHC_GC 1
+        ^
+<command line>:1:9: note: previous definition is here
+#define _JHC_GC _JHC_GC_JGC
+        ^
+In file included from <built-in>:1:
+/build_work/src/progs/cbits/hos.h:36:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+int fprintf(void *stream, const char *format, ...);
+    ^
+/build_work/build/progs/init.c:6806:17: warning: expression result unused [-Wunused-value]
+                (uint64_t)syscall((uint64_t)0,(uint64_t)v227981062,(uint64_t)v102891952,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+                ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:7787:45: warning: expression result unused [-Wunused-value]
+                                            (uint64_t)syscall((uint64_t)256,(uint64_t)195935983,(uint64_t)v129035596,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+                                            ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:7846:37: warning: expression result unused [-Wunused-value]
+                                    (uint64_t)syscall((uint64_t)257,(uint64_t)0,(uint64_t)v196080002,(uint64_t)v71383254,(uint64_t)0,(uint64_t)0);
+                                    ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10675:25: warning: expression result unused [-Wunused-value]
+                        v173761890;
+                        ^~~~~~~~~~
+/build_work/build/progs/init.c:10681:29: warning: expression result unused [-Wunused-value]
+                            v173761890;
+                            ^~~~~~~~~~
+/build_work/build/progs/init.c:10847:29: warning: expression result unused [-Wunused-value]
+                            (uint64_t)syscall((uint64_t)7,(uint64_t)v120087510,(uint64_t)v258071182,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+                            ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10740:21: warning: expression result unused [-Wunused-value]
+                    *((uint16_t *)(v120834806));
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10742:21: warning: expression result unused [-Wunused-value]
+                    *((uint16_t *)(v183082878));
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10744:21: warning: expression result unused [-Wunused-value]
+                    *((uint32_t *)(v66102156));
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10750:21: warning: expression result unused [-Wunused-value]
+                    *((uint64_t *)(v239029634));
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10752:21: warning: expression result unused [-Wunused-value]
+                    *((uint32_t *)(v163734720));
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10754:21: warning: expression result unused [-Wunused-value]
+                    *((uint16_t *)(v109152428));
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10760:21: warning: expression result unused [-Wunused-value]
+                    *((uint16_t *)(v29077244));
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10762:21: warning: expression result unused [-Wunused-value]
+                    *((uint16_t *)(v267321786));
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10764:21: warning: expression result unused [-Wunused-value]
+                    *((uint16_t *)(v120834808));
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build_work/build/progs/init.c:10662:17: warning: expression result unused [-Wunused-value]
+                (uint64_t)syscall((uint64_t)65281,(uint64_t)1,(uint64_t)v61415102,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+                ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+18 warnings generated.

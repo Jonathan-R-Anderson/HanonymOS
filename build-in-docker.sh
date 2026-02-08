@@ -16,9 +16,9 @@ docker run --rm -v "$(pwd):/src_mount" $IMAGE_NAME bash -c "
     cp -r /src_mount/* /build_work/ && \
     cd /build_work && \
     make clean && \
-    make && \
-    cp -r build /src_mount/ && \
-    cp hos.iso /src_mount/ && \
+    make || (cp -r build /src_mount/ || true; exit 1) && \
+    cp -r build /src_mount/ || true && \
+    cp hos.iso /src_mount/ || true && \
     cp kernel.bin /src_mount/ || true && \
     cp kernel.elf /src_mount/ || true && \
     cp kernel.symbols /src_mount/ || true

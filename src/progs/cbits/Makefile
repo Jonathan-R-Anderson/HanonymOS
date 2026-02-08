@@ -13,7 +13,7 @@ $(BUILD_ROOT)/libcbits-user.a: $(CBITS_OBJECTS)
 
 $(BUILD_ROOT)/cbits-user/%.o: %.c
 	mkdir -p $(BUILD_ROOT)/cbits-user
-	$(CROSSCOMPILE_CLANG) $< -c -I . $(CBITS_INC) $(RTS_INC) $(CFLAGS_USER) -o $@ -DCLANG=1 -g3
+	$(CROSSCOMPILE_CLANG) $< -c -I . $(CBITS_INC) $(RTS_INC) $(USER_CFLAGS) -o $@ -DCLANG=1 -g3
 
 $(BUILD_ROOT)/cbits-user/%.o: $(BUILD_ROOT)/cbits-user/%.S
 	$(CROSSCOMPILE_AS) -c $< -o $@
