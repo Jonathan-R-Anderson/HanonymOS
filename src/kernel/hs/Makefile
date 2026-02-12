@@ -1,6 +1,6 @@
 include ../../../build.opts
 
-HOS_SOURCES=main.hs Hos/Types.hs Hos/Task.hs Hos/Arch/X64.hs Hos/Arch/X64/Interrupt.hs Hos/Arch/Types.hs Hos/CBits.hs Hos/Memory.hs Hos/Privileges.hs Hos/SysCall.hs Hos/IPC.hs Data/IntervalMap.hs
+HOS_SOURCES=main.hs Hos/Types.hs Hos/Task.hs Hos/Arch/X64.hs Hos/Arch/X64/Interrupt.hs Hos/Arch/Types.hs Hos/CBits.hs Hos/Memory.hs Hos/Privileges.hs Hos/SysCall.hs Hos/IPC.hs Hos/Network.hs Hos/LinuxCompat.hs Data/IntervalMap.hs
 JHC_OPTS=-fbang-patterns $(JHC_COMMON) -L $(JHC_LIBS_PREFIX)
 
 .PHONY: all clean test

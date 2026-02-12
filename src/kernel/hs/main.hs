@@ -23,6 +23,8 @@ import Hos.Memory
 import Hos.SysCall
 import Hos.IPC
 import Hos.Privileges
+import Hos.Network
+import Hos.LinuxCompat
 import Data.Elf
 
 import Hos.Arch.Types
@@ -65,6 +67,15 @@ main = do
   writeSerial (fromIntegral (ord '\n'))
   hosMain (x64 { archInitProcessPhysBase = initProcessPhysBase })
 #endif
+
+defaultNetworkConfig :: NetworkConfig
+defaultNetworkConfig =
+  NetworkConfig
+    { ncLocalIP = IPv4Address 10 0 2 15
+    , ncGateway = IPv4Address 10 0 2 2
+    , ncNetmask = IPv4Address 255 255 255 0
+    , ncDns = IPv4Address 1 1 1 1
+    }
 
 hosMain :: Arch X64Registers X64PageTable X64Exception -> IO ()
 hosMain a = do cr3 <- x64ReadCR3C
@@ -151,12 +162,16 @@ hosMain a = do cr3 <- x64ReadCR3C
                                   , hosTasks = M.singleton initTaskId initTask' }
                    initTaskId = TaskId 0
 
+               archDebugLog a "Initializing network + Linux compatibility"
+               _ <- initLinuxCompat
+               _ <- initNetworkStack defaultNetworkConfig
                archDebugLog a "Entering kernelize"
                kernelize a initialState
 
 kernelize :: (Registers regs, Show e, Show regs, Show vMemTbl) => Arch regs vMemTbl e -> HosState regs vMemTbl e -> IO ()
 kernelize a st =
-    do rsn <- archSwitchToUserspace a
+    do networkStackPoll
+       rsn <- archSwitchToUserspace a
        -- archDebugLog a "K"  -- Too verbose for screen
        let taskId = hscCurrentTask (hosSchedule st)
        rip <- x64GetUserRIP
