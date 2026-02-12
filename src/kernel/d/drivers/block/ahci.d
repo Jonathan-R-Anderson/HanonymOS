@@ -1,7 +1,7 @@
-module implementation.drivers.block.ahci;
+module anonymos_drivers.block.ahci;
 
-import implementation.drivers.pci;
-import implementation.userland.shell.console : print, printHex, printLine, printUnsigned;
+import anonymos_drivers.pci;
+import anonymos_userland.shell.console : print, printHex, printLine, printUnsigned;
 import implementation.kernel.core.physmem : allocFrame, freeFrame;
 import core.stdc.string : memset;
 

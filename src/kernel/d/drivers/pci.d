@@ -1,6 +1,6 @@
-module implementation.drivers.pci;
+module anonymos_drivers.pci;
 
-import implementation.userland.shell.console : print, printHex, printLine, printUnsigned;
+import anonymos_userland.shell.console : print, printHex, printLine, printUnsigned;
 
 @nogc nothrow:
 

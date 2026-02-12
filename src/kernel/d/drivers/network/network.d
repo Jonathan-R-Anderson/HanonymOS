@@ -1,7 +1,7 @@
-module implementation.drivers.network.network;
+module anonymos_drivers.network.network;
 
-import implementation.userland.shell.console : printLine, print, printHex;
-import implementation.drivers.pci : PCIDevice, scanPCIDevices;
+import anonymos_userland.shell.console : printLine, print, printHex;
+import anonymos_drivers.pci : PCIDevice, scanPCIDevices;
 
 /// Network device types
 enum NetworkDeviceType {

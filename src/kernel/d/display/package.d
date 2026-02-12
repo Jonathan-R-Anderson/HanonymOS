@@ -13,7 +13,6 @@ module anonymos_display;
 
 // Core display components
 public import anonymos_display.framebuffer;
-public import anonymos_display.desktop;
 public import anonymos_display.canvas;
 public import anonymos_display.cursor;
 public import anonymos_display.cursor_diagnostics;
@@ -37,14 +36,13 @@ public import anonymos_display.compositor.compositor;
 // Window manager
 public import anonymos_display.window_manager.manager;
 public import anonymos_display.window_manager.renderer;
-public import anonymos_display.i3_integration;
 
 // Font rendering
 public import anonymos_display.fonts.bitmap_font;
 public import anonymos_display.fonts.truetype_font;
 public import anonymos_display.fonts.font_stack;
-public import anonymos_display.fonts.freetype_bindings;
-public import anonymos_display.fonts.harfbuzz_bindings;
+public import anonymos_display.freetype_bindings;
+public import anonymos_display.harfbuzz_bindings;
 
 // Input
 public import anonymos_display.input_handler;
