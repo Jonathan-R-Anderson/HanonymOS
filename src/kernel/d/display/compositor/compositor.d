@@ -573,44 +573,6 @@ void renderWorkspaceComposited(const WindowManager* manager)
     // Skip window blitting for now to avoid potential stalls; just present the cleared buffer + taskbar.
     if (frameLogs < 1) printLine("[compositor] windows drawing skipped");
 
-    // Render installer if active
-    import anonymos_installer.logic.state : g_installer;
-import anonymos_installer.ui.main : renderInstallerWindow;
-    if (g_installer.active)
-    {
-        if (frameLogs < 1) printLine("[compositor] rendering installer");
-        
-        // Create canvas pointing to compositor buffer
-        import anonymos_display.canvas : Canvas;
-        import anonymos_display.framebuffer : g_fb;
-        
-        Canvas c;
-        c.pixels = g_compositor.buffer;
-        c.width = g_compositor.width;
-        c.height = g_compositor.height;
-        c.pitch = g_compositor.pitch;
-        c.targetsFramebuffer = false;
-        c.available = true;
-        c.clipX = 0;
-        c.clipY = 0;
-        c.clipW = g_compositor.width;
-        c.clipH = g_compositor.height;
-        
-        // Calculate installer window position (centered)
-        uint w = 800;
-        uint h = 500;
-        uint x = (g_fb.width - w) / 2;
-        uint y = (g_fb.height - h) / 2;
-        g_installer.windowX = cast(int)x;
-        g_installer.windowY = cast(int)y;
-        g_installer.windowW = cast(int)w;
-        g_installer.windowH = cast(int)h;
-        
-        renderInstallerWindow(&c, cast(int)x, cast(int)y, cast(int)w, cast(int)h);
-        
-        if (frameLogs < 1) printLine("[compositor] installer rendered");
-    }
-
     // Draw cursor on top of everything in the backbuffer
     import anonymos_display.framebuffer : framebufferDrawCursorToBuffer;
     framebufferDrawCursorToBuffer(g_compositor.buffer, g_compositor.width, g_compositor.height, g_compositor.pitch);
