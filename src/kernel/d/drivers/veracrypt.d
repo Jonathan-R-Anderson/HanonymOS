@@ -1,7 +1,5 @@
 module anonymos_drivers.veracrypt;
 
-import implementation.kernel.core.memory;
-
 // Constants from Volumes.h
 enum TC_HEADER_MAGIC = 0x56455241; // "VERA"
 enum TC_VOLUME_HEADER_SIZE = 65536;
