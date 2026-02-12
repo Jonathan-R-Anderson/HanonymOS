@@ -25,6 +25,7 @@ import Hos.IPC
 import Hos.Privileges
 import Hos.Network
 import Hos.LinuxCompat
+import Hos.DisplayDrivers
 import Data.Elf
 
 import Hos.Arch.Types
@@ -165,12 +166,16 @@ hosMain a = do cr3 <- x64ReadCR3C
                archDebugLog a "Initializing network + Linux compatibility"
                _ <- initLinuxCompat
                _ <- initNetworkStack defaultNetworkConfig
+               displayReady <- initDisplayAndDrivers
+               when (not displayReady) $
+                 archDebugLog a "Display/driver bridge not fully available"
                archDebugLog a "Entering kernelize"
                kernelize a initialState
 
 kernelize :: (Registers regs, Show e, Show regs, Show vMemTbl) => Arch regs vMemTbl e -> HosState regs vMemTbl e -> IO ()
 kernelize a st =
     do networkStackPoll
+       displayDriversPoll
        rsn <- archSwitchToUserspace a
        -- archDebugLog a "K"  -- Too verbose for screen
        let taskId = hscCurrentTask (hosSchedule st)

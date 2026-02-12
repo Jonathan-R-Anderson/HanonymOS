@@ -8,7 +8,13 @@ module Hos.CBits where
     foreign import ccall "free_from_regions" cPageAlignedPhysFree :: Word64 -> Word64 -> IO ()
     foreign import ccall "arch_invalidate_page" archInvalidatePage :: Word64 -> IO ()
     foreign import ccall "ext_halt" cHalt :: IO ()
+    foreign import ccall "write_serial" writeSerial :: Word8 -> IO ()
 
+    foreign import ccall "d_init_display" dInitDisplay :: IO Int
+    foreign import ccall "d_init_drivers" dInitDrivers :: IO Int
+    foreign import ccall "d_display_is_ready" dDisplayIsReady :: IO Int
+    foreign import ccall "d_drivers_are_ready" dDriversAreReady :: IO Int
+    foreign import ccall "d_display_heartbeat" dDisplayHeartbeat :: IO ()
 
     foreign import ccall "ptrToWord" ptrToWord :: Ptr a -> Word64
 
