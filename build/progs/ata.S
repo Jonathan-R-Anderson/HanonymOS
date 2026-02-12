@@ -9,289 +9,9 @@ jhc_hs_init:                            # @jhc_hs_init
 	pushq	%rax
 	.cfi_def_cfa_offset 16
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_shows, %edi
+	movl	$cFW$__fNumeric_showIntAtBase$d3, %edi
 	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fPrelude_Text_showLitChar$d2, %edi
-	movl	$2, %edx
 	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fPrelude_Text_showLitChar$d3, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fJhc_List_$bb, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFPrelude_Text_read$d4, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Prelude_Text_read$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d7, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d25, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d26, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d22, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d23, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d16, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d17, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d13, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d14, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d9, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d8, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d9, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFPrelude_Text_read$d5, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d12, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d15, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d18, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d5, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d4, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d6, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d11, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d7, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d9, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d10, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d12, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d13, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d14, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_put$d2, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d15, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d16, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_put$d4, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d3, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lexLitChar$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_readDec$d10, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_readDec$d9, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_readDec$d3, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_put$d6, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_readDec$d4, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_readDec$d7, %edi
-	movl	$6, %edx
-	movl	$5, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Jhc_Text_Read_readDec$d5, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Prim_Prim_$LccR, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFtheMain$d28, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFtheMain$d27, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFtheMain$d26, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFPrelude_Text_read, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_put$d8, %edi
-	movl	$8, %edx
-	movl	$5, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Jhc_Text_Read_lex$d19, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d32, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d24, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Jhc_Text_Read_lex$d20, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_readDec$d5, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_readDec$d6, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cFW$__fMain_idRead$d4, %edi
@@ -299,17 +19,12 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cBap__1__W$__fNumeric_showIntAtBase__100862, %edi
+	movl	$cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFW$__fNumeric_showIntAtBase$d3, %edi
+	movl	$cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3, %edi
 	movl	$4, %edx
 	movl	$2, %ecx
 	callq	find_cache
@@ -439,6 +154,16 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
 	movl	$cFData_Binary_get$d2, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
@@ -464,17 +189,12 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_lex$d4, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
 	movl	$cFJhc_Text_Read_lex$d11, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cBap__1__Prelude_Text_read$d3u101202, %edi
+	movl	$cBap__1__Prelude_Text_read$d3u101244, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
@@ -489,7 +209,12 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cBap__1__Jhc_Text_Read_lex$d27u101218, %edi
+	movl	$cP1__Data_Binary_fl$_x64315462$d5406, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cBap__1__Jhc_Text_Read_lex$d27u101260, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
@@ -504,9 +229,14 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$4, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cBap__1__Jhc_Text_Read_lex$d21u101230, %edi
+	movl	$cBap__1__Jhc_Text_Read_lex$d21u101272, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d4, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cFJhc_Text_Read_lex$d7, %edi
@@ -529,37 +259,32 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Basics_117__g, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec$d3, %edi
+	movl	$cBap__1__Jhc_Show_showsPrec__101322, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec$d4, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cBap__1__Jhc_Show_showsPrec__101312, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Jhc_Show_showsPrec$d5, %edi
+	movl	$cP1__Jhc_Show_showsPrec$d2, %edi
 	movl	$6, %edx
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cBap__1__Jhc_Show_showsPrec__101320, %edi
+	movl	$cBap__1__Jhc_Show_showsPrec__101330, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__Jhc_Show_showsPrec$d9, %edi
+	movl	$cP1__Jhc_Show_showsPrec$d6, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Show_showsPrec$d11, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Show_showsPrec$d12, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
@@ -579,12 +304,12 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec$d6, %edi
+	movl	$cFJhc_Show_showsPrec$d3, %edi
 	movl	$6, %edx
 	movl	$4, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec$d8, %edi
+	movl	$cFJhc_Show_showsPrec$d5, %edi
 	movl	$4, %edx
 	movl	$2, %ecx
 	callq	find_cache
@@ -599,27 +324,27 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec$d7, %edi
+	movl	$cFJhc_Show_showsPrec$d4, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec$d10, %edi
+	movl	$cFJhc_Show_showsPrec$d7, %edi
 	movl	$6, %edx
 	movl	$4, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec$d12, %edi
+	movl	$cFJhc_Show_showsPrec$d9, %edi
 	movl	$4, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec$d11, %edi
+	movl	$cFJhc_Show_showsPrec$d8, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336, %edi
+	movl	$cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
@@ -639,7 +364,7 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348, %edi
+	movl	$cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
@@ -664,54 +389,14 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFJhc_Text_Read_nonnull$d2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fJhc_List_span$d5, %edi
+	movl	$cFJhc_Basics_117__g, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFW$__fJhc_List_span$d4, %edi
+	movl	$cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2, %edi
 	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fJhc_List_span$d3, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fJhc_List_span$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
+	movl	$1, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cCJhc_Type_Basic_Left, %edi
@@ -744,6 +429,11 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
+	movl	$cCJhc_Type_Basic_Just, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
 	movl	$cCData_Binary_Builder, %edi
 	movl	$2, %edx
 	movl	$1, %ecx
@@ -754,17 +444,7 @@ jhc_hs_init:                            # @jhc_hs_init
 	xorl	%ecx, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cCJhc_Type_Basic_Just, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
 	movl	$cCJhc_Type_Word_Word32, %edi
-	movl	$2, %edx
-	xorl	%ecx, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCMain_AtaCapabilities, %edi
 	movl	$2, %edx
 	xorl	%ecx, %ecx
 	callq	find_cache
@@ -774,9 +454,9 @@ jhc_hs_init:                            # @jhc_hs_init
 	xorl	%ecx, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__Data_Binary_fl$_x64315462$d5406, %edi
+	movl	$cCMain_AtaCapabilities, %edi
 	movl	$2, %edx
-	movl	$2, %ecx
+	xorl	%ecx, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP1__Data_Binary_get$d3, %edi
@@ -809,14 +489,39 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2, %edi
-	movl	$6, %edx
+	movl	$cP1__Data_Binary_get$d7, %edi
+	movl	$4, %edx
 	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Data_Binary_get$d7, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d3, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d5, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d7, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cCMain_AtaController, %edi
 	movl	$2, %edx
 	xorl	%ecx, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d9, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cFInstance$__iJhc_Show_show_default, %edi
@@ -859,6 +564,11 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d11, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
 	movl	$cFtheMain$d31, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
@@ -884,9 +594,19 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$1, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_put$d2, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
 	movl	$cCHos_Init_Msg_InitRegisterProvider, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_put$d4, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cFR$__fJhc_Basics_zip, %edi
@@ -914,19 +634,14 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__Data_Binary_get$d7, %edi
-	movl	$4, %edx
+	movl	$cP1__W$__fData_Binary_put$d6, %edi
+	movl	$6, %edx
 	movl	$4, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cFtheMain$d36, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Data_Binary_get$d7, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cFW$__fR$__fJhc_List_383__f, %edi
@@ -944,6 +659,261 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
+	movl	$cFPrelude_Text_read$d4, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Prelude_Text_read$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d25, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d26, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d22, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d23, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_put$d8, %edi
+	movl	$8, %edx
+	movl	$5, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d16, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d17, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d13, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d14, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d9, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d8, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFPrelude_Text_read$d5, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d12, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d15, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d18, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d5, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d4, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d6, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d7, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d9, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d10, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d12, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d13, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d14, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d15, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d16, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d3, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lexLitChar$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Jhc_Text_Read_lex$d19, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d32, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_lex$d24, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Jhc_Text_Read_lex$d20, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_readDec$d10, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_readDec$d9, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_readDec$d3, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_readDec$d4, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_readDec$d7, %edi
+	movl	$6, %edx
+	movl	$5, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Jhc_Text_Read_readDec$d5, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Prim_Prim_$LccR, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFtheMain$d28, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFtheMain$d27, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFtheMain$d26, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFPrelude_Text_read, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fJhc_List_span$d5, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fJhc_List_span$d4, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fJhc_List_span$d3, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fJhc_List_span$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_nonnull$d2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
 	movl	$cFW$__fMain_ataIdentify$d4, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
@@ -952,11 +922,6 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$cFW$__fMain_atapiIdentify$d4, %edi
 	movl	$4, %edx
 	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d3, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cFHos_User_SysCall_hosDebugLog$d2, %edi
@@ -969,12 +934,12 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
+	movl	$cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d5, %edi
+	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
@@ -982,6 +947,41 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6, %edi
 	movl	$4, %edx
 	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Show_shows, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fPrelude_Text_showLitChar$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fPrelude_Text_showLitChar$d3, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fJhc_List_$bb, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_readDec$d5, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Text_Read_readDec$d6, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cBap__1__W$__fNumeric_showIntAtBase__100840, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
 	popq	%rax
 	.cfi_def_cfa_offset 8
 	jmp	find_cache                      # TAILCALL
@@ -1034,7 +1034,7 @@ _amain:                                 # @_amain
 	movq	%rbx, %rdi
 	callq	fW$__fHos_User_SysCall_hosWaitOnChannels
 	movl	$_c693, %esi
-	movl	$_g2031890965+1, %edx
+	movl	$_g1779189781+1, %edx
 	movq	%rbx, %rdi
 	callq	fData_Binary_getFrom
 	movq	%rax, %rcx
@@ -1195,7 +1195,7 @@ _amain:                                 # @_amain
 .LBB1_19:
 	movl	$1, %edi
 	callq	c_assert
-	movl	$_c52, %esi
+	movl	$_c239, %esi
 	movq	%r13, %rdi
 	movq	%rbp, %rdx
 	callq	fPrelude_lookup
@@ -1251,8 +1251,8 @@ _amain:                                 # @_amain
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$4390914, (%rax)                # imm = 0x430002
-	movq	$5767170, 8(%rax)               # imm = 0x580002
-	movq	$_c778, 16(%rax)
+	movq	$_c778, 8(%rax)
+	movq	$5767170, 16(%rax)              # imm = 0x580002
 	movq	%rax, 56(%rbx)
 	leaq	64(%rbx), %rbp
 	movq	cP2__W$__fData_Binary_storableB$d7(%rip), %rsi
@@ -1270,8 +1270,8 @@ _amain:                                 # @_amain
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$4390914, (%rax)                # imm = 0x430002
-	movq	$5767170, 8(%rax)               # imm = 0x580002
-	movq	$_c689, 16(%rax)
+	movq	$_c689, 8(%rax)
+	movq	$5767170, 16(%rax)              # imm = 0x580002
 	movq	%rax, 64(%rbx)
 	leaq	72(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d7(%rip), %rsi
@@ -1281,10 +1281,10 @@ _amain:                                 # @_amain
 	movq	%r15, 8(%rax)
 	movq	%rax, 48(%rsp)                  # 8-byte Spill
 	movq	%rax, 48(%rbx)
-	movl	$_c216, %esi
+	movl	$_c222, %esi
 	movq	%r14, %rdi
 	callq	eval
-	movl	$_g2001613335+1, %r15d
+	movl	$_g1748912151+1, %r15d
 	cmpq	$65538, %rax                    # imm = 0x10002
 	movq	%r12, 16(%rsp)                  # 8-byte Spill
 	je	.LBB1_26
@@ -1304,7 +1304,7 @@ _amain:                                 # @_amain
 # %bb.25:
 	movl	$1, %edi
 	callq	c_assert
-	movl	$_g2000171543+1, %r15d
+	movl	$_g1747470359+1, %r15d
 .LBB1_26:
 	movq	%r14, %rdi
 	movq	%r15, %rsi
@@ -1319,16 +1319,16 @@ _amain:                                 # @_amain
 	callq	bRfW$__fData_Binary_put
 	movq	%rax, %r15
 	movq	%rdx, %r13
-	movq	%r12, 64(%rbx)
-	movq	%rax, 72(%rbx)
+	movq	%rax, 64(%rbx)
+	movq	%r12, 72(%rbx)
 	leaq	80(%rbx), %rdi
 	movq	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2(%rip), %rsi
 	movq	%rdi, 72(%rsp)                  # 8-byte Spill
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$4718594, (%rax)                # imm = 0x480002
-	movq	%rbp, 24(%rax)
 	movq	%r12, 8(%rax)
+	movq	%rbp, 24(%rax)
 	movq	%r15, 16(%rax)
 	leaq	8(,%r13), %rax
 	addq	%rbp, %rax
@@ -1338,32 +1338,32 @@ _amain:                                 # @_amain
 	movq	48(%rsp), %r12                  # 8-byte Reload
 	movq	%r12, 64(%rbx)
 	movq	%r14, 72(%rbx)
-	movq	$_g878064149+1, 80(%rbx)
+	movq	$_g625494037+1, 80(%rbx)
 	leaq	88(%rbx), %r15
-	movl	$_g878064149+1, %edx
+	movl	$_g625494037+1, %edx
 	movq	%r15, %rdi
 	movq	56(%rsp), %rsi                  # 8-byte Reload
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	cFtheMain$d11(%rip), %rsi
 	movq	%r15, %rdi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$E__ftheMain$d11+3, (%rax)
-	movq	$_g878064149+1, 8(%rax)
 	movq	$4, 16(%rax)
+	movq	$_g625494037+1, 8(%rax)
 	orq	$1, %r13
 	movq	%r13, 88(%rbx)
 	leaq	96(%rbx), %r15
 	movq	%r15, %rdi
 	movq	%r12, %rsi
 	movq	%r13, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	cFtheMain$d12(%rip), %rsi
 	movq	%r15, %rdi
 	callq	s_alloc
@@ -1383,10 +1383,10 @@ _amain:                                 # @_amain
 	movq	%r12, %rdi
 	movq	%rax, %rsi
 	movq	%r15, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r12, %rdi
 	movq	%r14, %rsi
 	callq	eval
@@ -1397,16 +1397,16 @@ _amain:                                 # @_amain
 	movq	%r12, %rdi
 	callq	s_alloc
 	movq	$E__fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3+3, (%rax)
-	movq	%r13, 16(%rax)
 	movq	%r15, 8(%rax)
+	movq	%r13, 16(%rax)
 	orq	$1, %rax
 	movq	%r12, %rdi
 	movq	%r14, %rsi
 	movq	%rax, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	32(%rsp), %r14                  # 8-byte Reload
 	movq	%r14, saved_gc(%rip)
 	movl	$256, %edi                      # imm = 0x100
@@ -2243,9 +2243,9 @@ _amain:                                 # @_amain
 # %bb.80:
 	movq	(%rax), %rcx
 	movq	8(%rax), %r15
-	movq	%r15, 216(%rbx)
 	movq	%rcx, 32(%rsp)                  # 8-byte Spill
-	movq	%rcx, 224(%rbx)
+	movq	%rcx, 216(%rbx)
+	movq	%r15, 224(%rbx)
 	movq	cCJhc_Type_Word_Int(%rip), %rsi
 	movq	%rbp, %rdi
 	callq	s_alloc
@@ -2311,7 +2311,7 @@ _amain:                                 # @_amain
 	callq	eval
 	movq	%rbx, %r13
 	movl	(%rax), %ebx
-	movl	$_g888680983+1, %esi
+	movl	$_g636110871+1, %esi
 	movq	%r13, %rdi
 	callq	eval
 	movq	(%rax), %r14
@@ -2706,12 +2706,12 @@ E__ftheMain$d22:                        # @"E__ftheMain$d22"
 	.cfi_offset %rbp, -16
 	movq	%rsi, 16(%rsp)                  # 8-byte Spill
 	movq	%rdi, %rbx
-	movl	$_g2110534167+1, %esi
+	movl	$_g2069383191+1, %esi
 	callq	fR$__fJhc_Basics_foldr
 	movq	%rax, %r15
 	movq	%rax, (%rbx)
 	leaq	8(%rbx), %r12
-	movl	$_c216, %esi
+	movl	$_c222, %esi
 	movq	%r12, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -2749,7 +2749,7 @@ E__ftheMain$d22:                        # @"E__ftheMain$d22"
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %rsi
-	movq	$_g384054295+1, (%rax)
+	movq	$_g87443991+1, (%rax)
 	movq	%r13, 8(%rax)
 	jmp	.LBB9_8
 .LBB9_7:
@@ -2765,17 +2765,17 @@ E__ftheMain$d22:                        # @"E__ftheMain$d22"
 	movq	(%rax), %rbp
 	movq	8(%rax), %r14
 	addq	%r13, %r14
-	movq	%r15, 8(%rbx)
+	movq	%rbp, 8(%rbx)
 	leaq	16(%rbx), %rax
 	movq	%rax, 8(%rsp)                   # 8-byte Spill
-	movq	%rbp, 16(%rbx)
+	movq	%r15, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$4718594, (%rax)                # imm = 0x480002
-	movq	%r13, 24(%rax)
 	movq	%r15, 8(%rax)
+	movq	%r13, 24(%rax)
 	movq	%rbp, 16(%rax)
 	movq	%rax, 8(%rbx)
 	movq	cCData_Binary_Builder(%rip), %rsi
@@ -2870,17 +2870,17 @@ fR$__fJhc_Basics_foldr:                 # @"fR$__fJhc_Basics_foldr"
 	movq	(%r14), %r13
 	movq	8(%r14), %rbp
 	addq	%rcx, %rbp
-	movq	%r12, 32(%rbx)
+	movq	%r13, 32(%rbx)
 	leaq	40(%rbx), %r14
-	movq	%r13, 40(%rbx)
+	movq	%r12, 40(%rbx)
 	leaq	48(%rbx), %rdi
 	movq	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$4718594, (%rax)                # imm = 0x480002
+	movq	%r12, 8(%rax)
 	movq	(%rsp), %rax                    # 8-byte Reload
 	movq	%rax, 24(%r15)
-	movq	%r12, 8(%r15)
 	movq	%r13, 16(%r15)
 	movq	%r15, 32(%rbx)
 	movq	cCData_Binary_Builder(%rip), %rsi
@@ -2957,7 +2957,7 @@ E__ftheMain$d21:                        # @"E__ftheMain$d21"
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	movq	%r14, %rdi
 	callq	s_alloc
-	movq	$_g384054295+1, (%rax)
+	movq	$_g87443991+1, (%rax)
 	movq	%r15, 8(%rax)
 	jmp	.LBB11_3
 .LBB11_2:
@@ -2979,6 +2979,41 @@ E__ftheMain$d21:                        # @"E__ftheMain$d21"
 	retq
 .Lfunc_end11:
 	.size	E__ftheMain$d21, .Lfunc_end11-E__ftheMain$d21
+	.cfi_endproc
+                                        # -- End function
+	.p2align	4, 0x90                         # -- Begin function E__ftheMain$d16
+	.type	E__ftheMain$d16,@function
+E__ftheMain$d16:                        # @"E__ftheMain$d16"
+	.cfi_startproc
+# %bb.0:
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	pushq	%rbx
+	.cfi_def_cfa_offset 32
+	.cfi_offset %rbx, -32
+	.cfi_offset %r14, -24
+	.cfi_offset %r15, -16
+	movq	%rsi, %rbx
+	movq	%rdi, %r14
+	movl	$_g31476247+1, %esi
+	callq	fR$__fJhc_Basics_foldr
+	movq	%rax, %r15
+	movq	%rax, (%rbx)
+	movq	%r14, %rdi
+	movq	%rax, %rsi
+	callq	gc_add_root
+	movq	%r15, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	retq
+.Lfunc_end12:
+	.size	E__ftheMain$d16, .Lfunc_end12-E__ftheMain$d16
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__ftheMain$d20
@@ -3019,8 +3054,8 @@ E__ftheMain$d20:                        # @"E__ftheMain$d20"
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$4128770, (%rax)                # imm = 0x3F0002
-	movq	$5898242, 8(%rax)               # imm = 0x5A0002
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	$5898242, 16(%rax)              # imm = 0x5A0002
 	movq	%rax, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -3051,8 +3086,8 @@ E__ftheMain$d20:                        # @"E__ftheMain$d20"
 	popq	%r15
 	.cfi_def_cfa_offset 8
 	retq
-.Lfunc_end12:
-	.size	E__ftheMain$d20, .Lfunc_end12-E__ftheMain$d20
+.Lfunc_end13:
+	.size	E__ftheMain$d20, .Lfunc_end13-E__ftheMain$d20
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2
@@ -3076,43 +3111,8 @@ E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2: # @"E__fW$__fInstan
 	popq	%rbx
 	.cfi_def_cfa_offset 8
 	retq
-.Lfunc_end13:
-	.size	E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2, .Lfunc_end13-E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2
-	.cfi_endproc
-                                        # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__ftheMain$d16
-	.type	E__ftheMain$d16,@function
-E__ftheMain$d16:                        # @"E__ftheMain$d16"
-	.cfi_startproc
-# %bb.0:
-	pushq	%r15
-	.cfi_def_cfa_offset 16
-	pushq	%r14
-	.cfi_def_cfa_offset 24
-	pushq	%rbx
-	.cfi_def_cfa_offset 32
-	.cfi_offset %rbx, -32
-	.cfi_offset %r14, -24
-	.cfi_offset %r15, -16
-	movq	%rsi, %rbx
-	movq	%rdi, %r14
-	movl	$_g439235607+1, %esi
-	callq	fR$__fJhc_Basics_foldr
-	movq	%rax, %r15
-	movq	%rax, (%rbx)
-	movq	%r14, %rdi
-	movq	%rax, %rsi
-	callq	gc_add_root
-	movq	%r15, %rax
-	popq	%rbx
-	.cfi_def_cfa_offset 24
-	popq	%r14
-	.cfi_def_cfa_offset 16
-	popq	%r15
-	.cfi_def_cfa_offset 8
-	retq
 .Lfunc_end14:
-	.size	E__ftheMain$d16, .Lfunc_end14-E__ftheMain$d16
+	.size	E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2, .Lfunc_end14-E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__ftheMain$d15
@@ -3142,7 +3142,7 @@ E__ftheMain$d15:                        # @"E__ftheMain$d15"
 	.cfi_offset %rbp, -16
 	movq	%rsi, %r14
 	movq	%rdi, %rbx
-	movl	$_c216, %esi
+	movl	$_c222, %esi
 	callq	eval
 	movl	$65538, %r15d                   # imm = 0x10002
 	movl	$65538, %esi                    # imm = 0x10002
@@ -3151,8 +3151,8 @@ E__ftheMain$d15:                        # @"E__ftheMain$d15"
 # %bb.1:
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%rbp, (%rbx)
-	movq	%r13, 8(%rbx)
+	movq	%r13, (%rbx)
+	movq	%rbp, 8(%rbx)
 	leaq	16(%rbx), %rdi
 	movq	cFW$__fR$__fJhc_List_383__f(%rip), %rsi
 	callq	s_alloc
@@ -3267,8 +3267,8 @@ E__fW$__fR$__fJhc_List_383__f:          # @"E__fW$__fR$__fJhc_List_383__f"
 # %bb.2:
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
-	movq	%r13, 8(%r14)
-	movq	%r12, 16(%r14)
+	movq	%r12, 8(%r14)
+	movq	%r13, 16(%r14)
 	decl	%ebp
 	leaq	24(%r14), %rdi
 	movq	cFW$__fR$__fJhc_List_383__f(%rip), %rsi
@@ -3354,8 +3354,8 @@ E__ftheMain$d13:                        # @"E__ftheMain$d13"
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$4128770, (%rax)                # imm = 0x3F0002
-	movq	$5898242, 8(%rax)               # imm = 0x5A0002
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	$5898242, 16(%rax)              # imm = 0x5A0002
 	movq	%rax, 32(%r14)
 	leaq	40(%r14), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -3484,7 +3484,7 @@ E__ftheMain$d19:                        # @"E__ftheMain$d19"
 	.cfi_offset %r15, -16
 	movq	%rsi, %r14
 	movq	%rdi, %rbx
-	movl	$_c216, %esi
+	movl	$_c222, %esi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
 	je	.LBB19_1
@@ -3581,8 +3581,8 @@ E__ftheMain$d17:                        # @"E__ftheMain$d17"
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$4128770, (%rax)                # imm = 0x3F0002
-	movq	$5898242, 8(%rax)               # imm = 0x5A0002
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	$5898242, 16(%rax)              # imm = 0x5A0002
 	movq	%rax, 32(%r14)
 	leaq	40(%r14), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -4111,8 +4111,8 @@ fW$__fHos_User_SysCall_hosAddMappingToCurTask: # @"fW$__fHos_User_SysCall_hosAdd
 	retq
 .LBB22_67:
 	.cfi_def_cfa_offset 80
-	movl	$_c222, %esi
-	movl	$_c237, %edx
+	movl	$_c9, %esi
+	movl	$_c24, %edx
 	movq	%rbx, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%rbx, %rdi
@@ -4240,15 +4240,15 @@ fW$__fHos_User_SysCall_hosWaitOnChannels: # @"fW$__fHos_User_SysCall_hosWaitOnCh
 	jmp	free                            # TAILCALL
 .LBB23_1:
 	.cfi_def_cfa_offset 64
-	movl	$_c222, %esi
-	movl	$_c237, %edx
+	movl	$_c9, %esi
+	movl	$_c24, %edx
 	movq	%rbx, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	jmp	.LBB23_7
 .LBB23_6:
-	movl	$_c281, %esi
+	movl	$_c214, %esi
 	movq	%rbx, %rdi
 .LBB23_7:
 	callq	fJhc_IO_putErrLn
@@ -4400,8 +4400,8 @@ fHos_User_SysCall_hosDebugLog:          # @fHos_User_SysCall_hosDebugLog
 .LBB25_6:                               # =>This Inner Loop Header: Depth=1
 	movq	(%rax), %r15
 	movq	8(%rax), %r14
-	movq	%r15, 24(%rbx)
-	movq	%r14, 32(%rbx)
+	movq	%r14, 24(%rbx)
+	movq	%r15, 32(%rbx)
 	movq	%r12, %rdi
 	movq	%rbp, %rsi
 	callq	eval
@@ -4455,8 +4455,8 @@ fHos_User_SysCall_hosDebugLog:          # @fHos_User_SysCall_hosDebugLog
 	jmp	free                            # TAILCALL
 .LBB25_8:
 	.cfi_def_cfa_offset 96
-	movl	$_c222, %esi
-	movl	$_c237, %edx
+	movl	$_c9, %esi
+	movl	$_c24, %edx
 	movq	%r14, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%r14, %rdi
@@ -4483,7 +4483,7 @@ E__fInstance$__iJhc_Show_show_default:  # @"E__fInstance$__iJhc_Show_show_defaul
 	addq	$8, %rdi
 	movq	8(%rsi), %rsi
 	movq	16(%rbx), %rcx
-	movl	$_c511, %edx
+	movl	$_c378, %edx
 	movl	$65538, %r8d                    # imm = 0x10002
 	callq	fJhc_Show_showsPrec
 	movq	%rax, (%rbx)
@@ -4615,8 +4615,8 @@ fPrelude_lookup:                        # @fPrelude_lookup
 	callq	eval
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%r13, 16(%r14)
-	movq	%rbp, 24(%r14)
+	movq	%rbp, 16(%r14)
+	movq	%r13, 24(%r14)
 	leaq	32(%r14), %r12
 	movl	$_c1, %esi
 	movq	%r12, %rdi
@@ -4866,10 +4866,10 @@ E__ftheMain$d29:                        # @"E__ftheMain$d29"
 	movq	16(%rsi), %rbp
 	movq	%rbp, 8(%rdi)
 	leaq	16(%rdi), %r14
-	movl	$_c52, %esi
+	movl	$_c239, %esi
 	movq	%r14, %rdi
 	callq	fPrelude_lookup
-	movl	$_c57, %r13d
+	movl	$_c242, %r13d
 	cmpq	$2, %rax
 	je	.LBB31_11
 # %bb.1:
@@ -4903,7 +4903,7 @@ E__ftheMain$d29:                        # @"E__ftheMain$d29"
 	cmpq	$65538, %rax                    # imm = 0x10002
 	jne	.LBB31_3
 # %bb.6:
-	movl	$_c57, %r13d
+	movl	$_c242, %r13d
 	cmpb	$0, (%r15)
 	jne	.LBB31_11
 	jmp	.LBB31_8
@@ -4914,10 +4914,10 @@ E__ftheMain$d29:                        # @"E__ftheMain$d29"
 .LBB31_8:
 	movl	$1, %edi
 	callq	c_assert
-	movl	$_c69, %r13d
+	movl	$_c253, %r13d
 	jmp	.LBB31_11
 .LBB31_10:
-	movl	$_c57, %r13d
+	movl	$_c242, %r13d
 .LBB31_11:
 	movq	8(%rbp), %rsi
 	movq	%r14, %rdi
@@ -5101,7 +5101,7 @@ E__ftheMain$d34:                        # @"E__ftheMain$d34"
 	movq	%rax, (%rdi)
 	addq	$8, %r14
 	movq	8(%rsi), %rdx
-	movl	$_c328, %esi
+	movl	$_c625, %esi
 	movq	%r14, %rdi
 	callq	fPrelude_lookup
 	cmpq	$2, %rax
@@ -5203,17 +5203,15 @@ E__fNumeric_showHex:                    # @E__fNumeric_showHex
 	shrl	$2, %r13d
 	leaq	40(%r14), %rax
 	movq	%rax, 32(%rsp)                  # 8-byte Spill
-	leaq	48(%r14), %rax
-	movq	%rax, (%rsp)                    # 8-byte Spill
+	leaq	48(%r14), %r12
 	leaq	56(%r14), %rax
 	movq	%rax, 8(%rsp)                   # 8-byte Spill
-	movq	(%rsp), %r12                    # 8-byte Reload
 	.p2align	4, 0x90
 .LBB37_1:                               # =>This Inner Loop Header: Depth=1
-	movq	$66, 16(%r14)
 	movq	%rbx, 16(%rsp)                  # 8-byte Spill
-	movq	%rbx, 24(%r14)
-	movq	$1179650, 32(%r14)              # imm = 0x120002
+	movq	%rbx, 16(%r14)
+	movq	$1179650, 24(%r14)              # imm = 0x120002
+	movq	$66, 32(%r14)
 	movzwl	%r13w, %ebp
 	movl	%ebp, %r13d
 	shrl	$4, %r13d
@@ -5236,10 +5234,10 @@ E__fNumeric_showHex:                    # @E__fNumeric_showHex
 	movq	$66, 8(%rax)
 	orq	$1, %r15
 	movq	%r15, 40(%r14)
-	movq	cBap__1__W$__fNumeric_showIntAtBase__100862(%rip), %rsi
+	movq	cBap__1__W$__fNumeric_showIntAtBase__100840(%rip), %rsi
 	movq	%r12, %rdi
 	callq	s_alloc
-	movq	$E__bap__1__W$__fNumeric_showIntAtBase__100862+3, (%rax)
+	movq	$E__bap__1__W$__fNumeric_showIntAtBase__100840+3, (%rax)
 	movq	$1179650, 8(%rax)               # imm = 0x120002
 	movq	%r15, 16(%rax)
 	movq	%rax, %r15
@@ -5247,8 +5245,7 @@ E__fNumeric_showHex:                    # @E__fNumeric_showHex
 	testl	$262140, %ebx                   # imm = 0x3FFFC
 	je	.LBB37_3
 # %bb.2:                                #   in Loop: Header=BB37_1 Depth=1
-	movq	(%rsp), %rax                    # 8-byte Reload
-	movq	%r15, (%rax)
+	movq	%r15, (%r12)
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	movq	8(%rsp), %rdi                   # 8-byte Reload
 	callq	s_alloc
@@ -5260,8 +5257,7 @@ E__fNumeric_showHex:                    # @E__fNumeric_showHex
 .LBB37_3:
 	movl	$1, %edi
 	callq	c_assert
-	movq	(%rsp), %rax                    # 8-byte Reload
-	movq	%r15, (%rax)
+	movq	%r15, (%r12)
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	movq	8(%rsp), %rdi                   # 8-byte Reload
 	callq	s_alloc
@@ -5421,7 +5417,7 @@ fW$__fMain_ataIdentify:                 # @"fW$__fMain_ataIdentify"
 	orq	$1, %rbx
 	movq	%rbx, 8(%r12)
 	leaq	16(%r12), %r13
-	movl	$_c671, %esi
+	movl	$_c537, %esi
 	movq	%r13, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -5577,7 +5573,7 @@ fW$__fMain_ataIdentify:                 # @"fW$__fMain_ataIdentify"
 	cmpq	$65538, %rax                    # imm = 0x10002
 	jne	.LBB39_12
 .LBB39_13:
-	movl	$_c688, %esi
+	movl	$_c554, %esi
 	movq	%r13, %rdi
 	callq	fHos_User_SysCall_hosDebugLog
 	movq	(%rbp), %r15
@@ -5586,8 +5582,8 @@ fW$__fMain_ataIdentify:                 # @"fW$__fMain_ataIdentify"
 	jne	.LBB39_15
 # %bb.14:
 	testl	$512, %r12d                     # imm = 0x200
-	movl	$_c238, %eax
-	movl	$_c239, %r14d
+	movl	$_c254, %eax
+	movl	$_c255, %r14d
 	cmoveq	%rax, %r14
 	jmp	.LBB39_18
 .LBB39_22:
@@ -5703,8 +5699,8 @@ fW$__fMain_ataIdentify:                 # @"fW$__fMain_ataIdentify"
 	retq
 .LBB39_24:
 	.cfi_def_cfa_offset 112
-	movl	$_c222, %esi
-	movl	$_c237, %edx
+	movl	$_c9, %esi
+	movl	$_c24, %edx
 	movq	%rbp, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%rbp, %rdi
@@ -5886,8 +5882,8 @@ fJhc_Monad_60__go:                      # @fJhc_Monad_60__go
 	retq
 .LBB41_5:
 	.cfi_def_cfa_offset 48
-	movl	$_c222, %esi
-	movl	$_c237, %edx
+	movl	$_c9, %esi
+	movl	$_c24, %edx
 	movq	%r14, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%r14, %rdi
@@ -5935,8 +5931,8 @@ fR$__fJhc_Basics_zip:                   # @"fR$__fJhc_Basics_zip"
 # %bb.1:
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
-	movq	%r12, 8(%rbx)
-	movq	%r13, 16(%rbx)
+	movq	%r13, 8(%rbx)
+	movq	%r12, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	%r15, %rsi
 	callq	eval
@@ -5945,8 +5941,8 @@ fR$__fJhc_Basics_zip:                   # @"fR$__fJhc_Basics_zip"
 # %bb.2:
 	movq	(%rax), %r14
 	movq	8(%rax), %rbp
-	movq	%r14, 24(%rbx)
-	movq	%rbp, 32(%rbx)
+	movq	%rbp, 24(%rbx)
+	movq	%r14, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$LcR(%rip), %rsi
 	callq	s_alloc
@@ -6250,9 +6246,9 @@ bRfData_Binary_get:                     # @bRfData_Binary_get
 	movq	(%rax), %r13
 	movq	8(%rax), %r15
 	movq	16(%rax), %r14
-	movq	%r13, 8(%rbp)
-	movq	%r15, 16(%rbp)
-	movq	%r14, 24(%rbp)
+	movq	%r15, 8(%rbp)
+	movq	%r14, 16(%rbp)
+	movq	%r13, 24(%rbp)
 	leaq	32(%rbp), %r12
 	movq	%r12, %rdi
 	movq	%r13, %rsi
@@ -6402,10 +6398,10 @@ bRfData_Binary_get:                     # @bRfData_Binary_get
 	movq	%r14, %rdi
 	callq	eval
 	movq	(%rax), %rsi
-	movq	8(%rax), %r12
-	movq	16(%rax), %r13
-	movq	%r12, 8(%rbp)
-	movq	%r13, 16(%rbp)
+	movq	8(%rax), %r13
+	movq	16(%rax), %r12
+	movq	%r13, 8(%rbp)
+	movq	%r12, 16(%rbp)
 	leaq	24(%rbp), %rdi
 	movq	%rdi, 32(%rsp)                  # 8-byte Spill
 	callq	eval
@@ -6427,8 +6423,8 @@ bRfData_Binary_get:                     # @bRfData_Binary_get
 	movq	%rbp, (%rax)
 	movq	%r14, %rdi
 	movq	40(%rsp), %rsi                  # 8-byte Reload
-	movq	%r12, %rdx
-	movq	%r13, %rcx
+	movq	%r13, %rdx
+	movq	%r12, %rcx
 	callq	bRfData_Binary_get
 	movq	%r14, %rdi
 	movq	%rax, %rsi
@@ -6460,7 +6456,8 @@ bRfData_Binary_get:                     # @bRfData_Binary_get
 	movq	%rbx, (%rax)
 	movq	$65538, 8(%rax)                 # imm = 0x10002
 	movq	%rax, 56(%r12)
-	movq	%rbp, %r12
+	movq	%r13, %r12
+	movq	%rbp, %r13
 	movq	cFJhc_Basics_$pp(%rip), %rsi
 	movq	8(%rsp), %rdi                   # 8-byte Reload
 	callq	s_alloc
@@ -6560,9 +6557,9 @@ bRfData_Binary_get:                     # @bRfData_Binary_get
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r12, 8(%rbp)
-	movq	%r15, 16(%rbp)
-	movq	%r13, 24(%rbp)
+	movq	%r13, 8(%rbp)
+	movq	%r12, 16(%rbp)
+	movq	%r15, 24(%rbp)
 	leaq	32(%rbp), %rdi
 	movq	cCJhc_Prim_Prim_$LcR(%rip), %rsi
 	callq	s_alloc
@@ -6598,8 +6595,8 @@ bRfData_Binary_get:                     # @bRfData_Binary_get
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	%rbx, (%rax)
-	movq	%r12, 8(%rax)
-	movq	%r13, 16(%rax)
+	movq	%r13, 8(%rax)
+	movq	%r12, 16(%rax)
 	movq	%rax, 48(%r15)
 	addq	$56, %r15
 	movq	cCJhc_Type_Basic_Right(%rip), %rsi
@@ -6655,11 +6652,11 @@ bRfData_Binary_get:                     # @bRfData_Binary_get
 .LBB45_50:
 	movq	%r12, %rdi
 	movq	%r15, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
 	movq	%r14, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
 	addq	$56, %rsp
@@ -6676,7 +6673,7 @@ bRfData_Binary_get:                     # @bRfData_Binary_get
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	bapply__82735                   # TAILCALL
+	jmp	bapply__87952                   # TAILCALL
 .LBB45_51:
 	.cfi_def_cfa_offset 112
 	movl	$8258, %edi                     # imm = 0x2042
@@ -6743,7 +6740,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 # %bb.3:
 	jmpq	*.LJTI46_0(,%rax,8)
 .LBB46_51:
-	movl	$_c209, %eax
+	movl	$_c172, %eax
 	cmpq	$11, %r14
 	jb	.LBB46_6
 # %bb.52:
@@ -6796,7 +6793,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 	movzwl	(%rbp), %eax
 	jmp	.LBB46_15
 .LBB46_29:
-	movl	$_c209, %eax
+	movl	$_c172, %eax
 	cmpq	$4, %r14
 	jb	.LBB46_6
 # %bb.30:
@@ -6823,7 +6820,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 	movzwl	(%rbp), %eax
 	jmp	.LBB46_38
 .LBB46_40:
-	movl	$_c209, %eax
+	movl	$_c172, %eax
 	cmpq	$8, %r14
 	jb	.LBB46_6
 # %bb.41:
@@ -6850,7 +6847,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 	movzwl	(%rbp), %eax
 	jmp	.LBB46_49
 .LBB46_18:
-	movl	$_c209, %eax
+	movl	$_c172, %eax
 	cmpq	$2, %r14
 	jb	.LBB46_6
 # %bb.19:
@@ -6877,7 +6874,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 	movzwl	(%rbp), %eax
 	jmp	.LBB46_27
 .LBB46_5:
-	movl	$_c209, %eax
+	movl	$_c172, %eax
 	jmp	.LBB46_6
 .LBB46_13:
 	movq	(%rbp), %r12
@@ -7153,9 +7150,9 @@ E__fData_Binary_get$d2:                 # @"E__fData_Binary_get$d2"
 	.size	E__fData_Binary_get$d2, .Lfunc_end47-E__fData_Binary_get$d2
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function bapply__82734
-	.type	bapply__82734,@function
-bapply__82734:                          # @bapply__82734
+	.p2align	4, 0x90                         # -- Begin function bapply__87951
+	.type	bapply__87951,@function
+bapply__87951:                          # @bapply__87951
 	.cfi_startproc
 # %bb.0:
 	pushq	%r15
@@ -7181,7 +7178,7 @@ bapply__82734:                          # @bapply__82734
 	shrq	$16, %rax
 	addq	$-7, %rax
 	cmpq	$69, %rax
-	ja	.LBB48_78
+	ja	.LBB48_79
 # %bb.3:
 	jmpq	*.LJTI48_0(,%rax,8)
 .LBB48_4:
@@ -7190,7 +7187,7 @@ bapply__82734:                          # @bapply__82734
 	shrl	$7, %eax
 	andl	$4, %eax
 	xorq	$6, %rax
-	jmp	.LBB48_64
+	jmp	.LBB48_65
 .LBB48_19:
 	movq	%rdx, %rsi
 	callq	eval
@@ -7201,21 +7198,21 @@ bapply__82734:                          # @bapply__82734
 # %bb.20:
 	movl	$2, %eax
 	cmpl	$48, %ebx
-	jb	.LBB48_64
+	jb	.LBB48_65
 # %bb.21:
 	movl	$1, %edi
 	callq	c_assert
 	movl	$2, %eax
 	cmpl	$58, %ebx
 	jb	.LBB48_29
-	jmp	.LBB48_64
+	jmp	.LBB48_65
 .LBB48_5:
 	movq	%rdx, %rsi
 	callq	eval
 	shrl	$3, %eax
 	andl	$4, %eax
 	orq	$2, %rax
-	jmp	.LBB48_64
+	jmp	.LBB48_65
 .LBB48_28:
 	movl	$1, %edi
 	callq	c_assert
@@ -7223,10 +7220,10 @@ bapply__82734:                          # @bapply__82734
 	callq	c_assert
 	movl	$2, %eax
 	cmpl	$90, %ebx
-	ja	.LBB48_64
+	ja	.LBB48_65
 .LBB48_29:
 	movl	$6, %eax
-	jmp	.LBB48_64
+	jmp	.LBB48_65
 .LBB48_6:
 	movq	8(%rsi), %rbx
 	movq	%rdx, (%rdi)
@@ -7236,7 +7233,7 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r14
 	callq	s_alloc
 	movq	$2097154, (%rax)                # imm = 0x200002
-	jmp	.LBB48_63
+	jmp	.LBB48_64
 .LBB48_7:
 	movq	%rdx, (%rdi)
 	addq	$8, %rdi
@@ -7245,7 +7242,7 @@ bapply__82734:                          # @bapply__82734
 	callq	s_alloc
 	movq	$3538946, (%rax)                # imm = 0x360002
 	movq	%rbx, 8(%rax)
-	jmp	.LBB48_64
+	jmp	.LBB48_65
 .LBB48_8:
 	movq	8(%rsi), %rbx
 	movq	16(%rsi), %r14
@@ -7258,7 +7255,11 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r12
 	callq	s_alloc
 	movq	$2424834, (%rax)                # imm = 0x250002
-	jmp	.LBB48_12
+	movq	%rbx, 8(%rax)
+	movq	%r14, 16(%rax)
+	movq	%r15, 32(%rax)
+	movq	%r12, 24(%rax)
+	jmp	.LBB48_65
 .LBB48_9:
 	movq	8(%rsi), %rbx
 	movq	%rdx, (%rdi)
@@ -7268,7 +7269,7 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r14
 	callq	s_alloc
 	movq	$1966082, (%rax)                # imm = 0x1E0002
-	jmp	.LBB48_63
+	jmp	.LBB48_64
 .LBB48_10:
 	movq	24(%rsi), %rbx
 	movq	8(%rsi), %r14
@@ -7281,25 +7282,23 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r12
 	callq	s_alloc
 	movq	$1638402, (%rax)                # imm = 0x190002
-	jmp	.LBB48_38
+	jmp	.LBB48_12
 .LBB48_11:
-	movq	8(%rsi), %rbx
-	movq	16(%rsi), %r14
-	movq	24(%rsi), %r15
+	movq	24(%rsi), %rbx
+	movq	8(%rsi), %r14
+	movq	16(%rsi), %r15
 	movq	%rdx, (%rdi)
-	movq	%rbx, 8(%rdi)
-	movq	%r14, 16(%rdi)
+	movq	%r14, 8(%rdi)
+	movq	%r15, 16(%rdi)
 	addq	$24, %rdi
 	movq	cP1__W$__fData_Binary_put$d4(%rip), %rsi
 	movq	%rdx, %r12
 	callq	s_alloc
 	movq	$1572866, (%rax)                # imm = 0x180002
 .LBB48_12:
-	movq	%rbx, 8(%rax)
-	movq	%r14, 16(%rax)
-	movq	%r15, 32(%rax)
-	movq	%r12, 24(%rax)
-	jmp	.LBB48_64
+	movq	%rbx, 32(%rax)
+	movq	%r14, 8(%rax)
+	jmp	.LBB48_39
 .LBB48_13:
 	movq	8(%rsi), %rbx
 	movq	16(%rsi), %r14
@@ -7322,7 +7321,7 @@ bapply__82734:                          # @bapply__82734
 	movups	%xmm0, 40(%rax)
 	movq	%r15, 24(%rax)
 	movq	%r12, 32(%rax)
-	jmp	.LBB48_64
+	jmp	.LBB48_65
 .LBB48_14:
 	movq	8(%rsi), %rbx
 	movq	%rdx, (%rdi)
@@ -7332,28 +7331,28 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r14
 	callq	s_alloc
 	movq	$1835010, (%rax)                # imm = 0x1C0002
-	jmp	.LBB48_63
+	jmp	.LBB48_64
 .LBB48_15:
 	movq	%rdx, %rsi
 	callq	eval
 	movl	(%rax), %ebx
 	cmpl	$10, %ebx
-	jb	.LBB48_65
+	jb	.LBB48_66
 # %bb.16:
 	cmpl	$16, %ebx
-	jae	.LBB48_79
+	jae	.LBB48_80
 # %bb.17:
 	movl	$1, %edi
 	callq	c_assert
 	addl	$87, %ebx
-	jmp	.LBB48_66
+	jmp	.LBB48_67
 .LBB48_18:
 	movq	24(%rsi), %rbx
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	%rdx, (%rdi)
-	movq	%r14, 8(%rdi)
-	movq	%r15, 16(%rdi)
+	movq	%r15, 8(%rdi)
+	movq	%r14, 16(%rdi)
 	addq	$24, %rdi
 	movq	cP1__W$__fData_Binary_put$d2(%rip), %rsi
 	movq	%rdx, %r12
@@ -7367,13 +7366,13 @@ bapply__82734:                          # @bapply__82734
 	shrq	$2, %rbx
 	movl	$2, %eax
 	cmpl	$48, %ebx
-	jb	.LBB48_64
+	jb	.LBB48_65
 # %bb.23:
 	movl	$1, %edi
 	callq	c_assert
 	xorl	%eax, %eax
 	cmpl	$58, %ebx
-	jmp	.LBB48_45
+	jmp	.LBB48_46
 .LBB48_24:
 	movq	%rdx, (%rdi)
 	addq	$8, %rdi
@@ -7382,7 +7381,7 @@ bapply__82734:                          # @bapply__82734
 	callq	s_alloc
 	movq	$3604482, (%rax)                # imm = 0x370002
 	movq	%rbx, 8(%rax)
-	jmp	.LBB48_64
+	jmp	.LBB48_65
 .LBB48_25:
 	movq	8(%rsi), %rsi
 	addq	$40, %rsp
@@ -7418,21 +7417,21 @@ bapply__82734:                          # @bapply__82734
 	shrq	$2, %rbx
 	movl	$2, %eax
 	cmpl	$48, %ebx
-	jb	.LBB48_64
+	jb	.LBB48_65
 # %bb.32:
 	movl	$1, %edi
 	callq	c_assert
 	cmpl	$58, %ebx
-	jb	.LBB48_75
+	jb	.LBB48_76
 # %bb.33:
 	cmpl	$97, %ebx
-	jae	.LBB48_76
+	jae	.LBB48_77
 # %bb.34:
 	cmpl	$65, %ebx
-	jae	.LBB48_77
+	jae	.LBB48_78
 # %bb.35:
 	movl	$2, %eax
-	jmp	.LBB48_64
+	jmp	.LBB48_65
 .LBB48_36:
 	movq	8(%rsi), %rsi
 	addq	$40, %rsp
@@ -7460,12 +7459,13 @@ bapply__82734:                          # @bapply__82734
 	callq	s_alloc
 	movq	$2490370, (%rax)                # imm = 0x260002
 .LBB48_38:
-	movq	%rbx, 32(%rax)
 	movq	%r14, 8(%rax)
+	movq	%rbx, 32(%rax)
+.LBB48_39:
 	movq	%r15, 16(%rax)
 	movq	%r12, 24(%rax)
-	jmp	.LBB48_64
-.LBB48_39:
+	jmp	.LBB48_65
+.LBB48_40:
 	movzwl	8(%rsi), %eax
 	movzwl	10(%rsi), %r9d
 	movzwl	12(%rsi), %ecx
@@ -7483,7 +7483,7 @@ bapply__82734:                          # @bapply__82734
 	popq	%r15
 	.cfi_def_cfa_offset 8
 	jmp	fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaController$d2 # TAILCALL
-.LBB48_40:
+.LBB48_41:
 	.cfi_def_cfa_offset 80
 	movq	8(%rsi), %rbx
 	movq	%rdx, (%rdi)
@@ -7493,8 +7493,8 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r14
 	callq	s_alloc
 	movq	$196610, (%rax)                 # imm = 0x30002
-	jmp	.LBB48_63
-.LBB48_41:
+	jmp	.LBB48_64
+.LBB48_42:
 	movq	8(%rsi), %rbx
 	movq	%rdx, (%rdi)
 	movq	%rbx, 8(%rdi)
@@ -7503,29 +7503,29 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r14
 	callq	s_alloc
 	movq	$262146, (%rax)                 # imm = 0x40002
-	jmp	.LBB48_63
-.LBB48_42:
-	movq	%rdx, %rsi
-	movl	$_c30, %edx
-	jmp	.LBB48_72
+	jmp	.LBB48_64
 .LBB48_43:
+	movq	%rdx, %rsi
+	movl	$_c583, %edx
+	jmp	.LBB48_73
+.LBB48_44:
 	movq	%rdx, %rsi
 	callq	eval
 	movq	%rax, %rbx
 	shrq	$2, %rbx
 	movl	$2, %eax
 	cmpl	$48, %ebx
-	jb	.LBB48_64
-# %bb.44:
+	jb	.LBB48_65
+# %bb.45:
 	movl	$1, %edi
 	callq	c_assert
 	xorl	%eax, %eax
 	cmpl	$56, %ebx
-.LBB48_45:
+.LBB48_46:
 	setb	%al
 	leaq	2(,%rax,4), %rax
-	jmp	.LBB48_64
-.LBB48_46:
+	jmp	.LBB48_65
+.LBB48_47:
 	movzwl	8(%rsi), %eax
 	movzwl	10(%rsi), %r9d
 	movzwl	12(%rsi), %ecx
@@ -7543,15 +7543,15 @@ bapply__82734:                          # @bapply__82734
 	popq	%r15
 	.cfi_def_cfa_offset 8
 	jmp	fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2 # TAILCALL
-.LBB48_47:
+.LBB48_48:
 	.cfi_def_cfa_offset 80
-	movzbl	26(%rsi), %eax
-	movq	8(%rsi), %r9
-	movq	16(%rsi), %rcx
+	movq	8(%rsi), %rax
+	movq	16(%rsi), %r10
+	movzbl	26(%rsi), %ecx
 	movzwl	24(%rsi), %r8d
-	movq	%r9, %rsi
+	movq	%rax, %rsi
 	movq	%rdx, %r9
-	movl	%eax, %edx
+	movq	%r10, %rdx
 	addq	$40, %rsp
 	.cfi_def_cfa_offset 40
 	popq	%rbx
@@ -7562,20 +7562,20 @@ bapply__82734:                          # @bapply__82734
 	.cfi_def_cfa_offset 16
 	popq	%r15
 	.cfi_def_cfa_offset 8
-	jmp	fJhc_Show_showsPrec$d9          # TAILCALL
-.LBB48_48:
-	.cfi_def_cfa_offset 80
-	movzbl	34(%rsi), %eax
-	movq	8(%rsi), %r10
-	movq	16(%rsi), %rcx
-	movzwl	32(%rsi), %r8d
-	movq	24(%rsi), %r9
-	movq	%rdx, (%rsp)
-	movq	%r10, %rsi
-	movl	%eax, %edx
-	callq	fJhc_Show_showsPrec$d5
-	jmp	.LBB48_64
+	jmp	fJhc_Show_showsPrec$d6          # TAILCALL
 .LBB48_49:
+	.cfi_def_cfa_offset 80
+	movq	24(%rsi), %rax
+	movzbl	34(%rsi), %r10d
+	movzwl	32(%rsi), %r8d
+	movq	8(%rsi), %rcx
+	movq	16(%rsi), %r9
+	movq	%rdx, (%rsp)
+	movq	%rax, %rsi
+	movl	%r10d, %edx
+	callq	fJhc_Show_showsPrec$d2
+	jmp	.LBB48_65
+.LBB48_50:
 	movq	8(%rsi), %rsi
 	addq	$40, %rsp
 	.cfi_def_cfa_offset 40
@@ -7588,7 +7588,7 @@ bapply__82734:                          # @bapply__82734
 	popq	%r15
 	.cfi_def_cfa_offset 8
 	jmp	fPrelude_Text_read$d2           # TAILCALL
-.LBB48_50:
+.LBB48_51:
 	.cfi_def_cfa_offset 80
 	movq	%rdx, (%rdi)
 	addq	$8, %rdi
@@ -7597,8 +7597,8 @@ bapply__82734:                          # @bapply__82734
 	callq	s_alloc
 	movq	$65538, (%rax)                  # imm = 0x10002
 	movq	%rbx, 8(%rax)
-	jmp	.LBB48_64
-.LBB48_51:
+	jmp	.LBB48_65
+.LBB48_52:
 	movq	%rdi, %rbx
 	movq	%rdx, %rsi
 	callq	eval
@@ -7606,17 +7606,17 @@ bapply__82734:                          # @bapply__82734
 	movq	%rax, %r15
 	shrq	$2, %r15
 	cmpl	$65, %r15d
-	jae	.LBB48_67
-# %bb.52:
-	cmpl	$48, %r15d
-	jb	.LBB48_71
+	jae	.LBB48_68
 # %bb.53:
+	cmpl	$48, %r15d
+	jb	.LBB48_72
+# %bb.54:
 	movl	$1, %edi
 	callq	c_assert
 	cmpl	$58, %r15d
-	jae	.LBB48_71
-	jmp	.LBB48_75
-.LBB48_55:
+	jae	.LBB48_72
+	jmp	.LBB48_76
+.LBB48_56:
 	movq	8(%rsi), %rsi
 	addq	$40, %rsp
 	.cfi_def_cfa_offset 40
@@ -7629,7 +7629,7 @@ bapply__82734:                          # @bapply__82734
 	popq	%r15
 	.cfi_def_cfa_offset 8
 	jmp	fJhc_Text_Read_lex$d19          # TAILCALL
-.LBB48_56:
+.LBB48_57:
 	.cfi_def_cfa_offset 80
 	movq	8(%rsi), %rbx
 	movq	%rdx, (%rdi)
@@ -7639,8 +7639,8 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r14
 	callq	s_alloc
 	movq	$131074, (%rax)                 # imm = 0x20002
-	jmp	.LBB48_63
-.LBB48_57:
+	jmp	.LBB48_64
+.LBB48_58:
 	movq	8(%rsi), %rbx
 	movq	16(%rsi), %r14
 	movq	%rdx, (%rdi)
@@ -7654,8 +7654,8 @@ bapply__82734:                          # @bapply__82734
 	movq	%rbx, 8(%rax)
 	movq	%r14, 16(%rax)
 	movq	%r15, 24(%rax)
-	jmp	.LBB48_64
-.LBB48_58:
+	jmp	.LBB48_65
+.LBB48_59:
 	movq	%rdx, %rsi
 	callq	eval
 	movabsq	$17179869180, %rcx              # imm = 0x3FFFFFFFC
@@ -7664,8 +7664,8 @@ bapply__82734:                          # @bapply__82734
 	cmpq	$232, %rcx
 	setne	%al
 	leaq	2(,%rax,4), %rax
-	jmp	.LBB48_64
-.LBB48_59:
+	jmp	.LBB48_65
+.LBB48_60:
 	movq	8(%rsi), %rbx
 	movq	%rdx, (%rdi)
 	movq	%rbx, 8(%rdi)
@@ -7674,8 +7674,8 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r14
 	callq	s_alloc
 	movq	$3670018, (%rax)                # imm = 0x380002
-	jmp	.LBB48_63
-.LBB48_60:
+	jmp	.LBB48_64
+.LBB48_61:
 	movq	8(%rsi), %rbx
 	movq	%rdx, (%rdi)
 	movq	%rbx, 8(%rdi)
@@ -7684,8 +7684,8 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r14
 	callq	s_alloc
 	movq	$2228226, (%rax)                # imm = 0x220002
-	jmp	.LBB48_63
-.LBB48_61:
+	jmp	.LBB48_64
+.LBB48_62:
 	movq	%rdx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Data_Binary_get$d3(%rip), %rsi
@@ -7693,8 +7693,8 @@ bapply__82734:                          # @bapply__82734
 	callq	s_alloc
 	movq	$3473410, (%rax)                # imm = 0x350002
 	movq	%rbx, 8(%rax)
-	jmp	.LBB48_64
-.LBB48_62:
+	jmp	.LBB48_65
+.LBB48_63:
 	movq	8(%rsi), %rbx
 	movq	%rdx, (%rdi)
 	movq	%rbx, 8(%rdi)
@@ -7703,10 +7703,10 @@ bapply__82734:                          # @bapply__82734
 	movq	%rdx, %r14
 	callq	s_alloc
 	movq	$2359298, (%rax)                # imm = 0x240002
-.LBB48_63:
+.LBB48_64:
 	movq	%rbx, 8(%rax)
 	movq	%r14, 16(%rax)
-.LBB48_64:
+.LBB48_65:
 	addq	$40, %rsp
 	.cfi_def_cfa_offset 40
 	popq	%rbx
@@ -7718,55 +7718,55 @@ bapply__82734:                          # @bapply__82734
 	popq	%r15
 	.cfi_def_cfa_offset 8
 	retq
-.LBB48_65:
+.LBB48_66:
 	.cfi_def_cfa_offset 80
 	movl	$1, %edi
 	callq	c_assert
 	orl	$48, %ebx
-.LBB48_66:
+.LBB48_67:
 	movl	%ebx, %eax
 	leaq	2(,%rax,4), %rax
-	jmp	.LBB48_64
-.LBB48_67:
+	jmp	.LBB48_65
+.LBB48_68:
 	movl	$1, %edi
 	callq	c_assert
 	cmpl	$91, %r15d
-	jb	.LBB48_73
-# %bb.68:
-	cmpl	$97, %r15d
-	jb	.LBB48_70
+	jb	.LBB48_74
 # %bb.69:
+	cmpl	$97, %r15d
+	jb	.LBB48_71
+# %bb.70:
 	movl	$1, %edi
 	callq	c_assert
 	cmpl	$122, %r15d
-	jbe	.LBB48_74
-.LBB48_70:
+	jbe	.LBB48_75
+.LBB48_71:
 	movl	$1, %edi
 	callq	c_assert
-.LBB48_71:
+.LBB48_72:
 	movabsq	$17179869180, %rax              # imm = 0x3FFFFFFFC
 	andq	%rax, %r14
 	orq	$2, %r14
-	movl	$_c283, %edx
+	movl	$_c584, %edx
 	movq	%rbx, %rdi
 	movq	%r14, %rsi
-.LBB48_72:
+.LBB48_73:
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
 	movzwl	%ax, %eax
 	leaq	2(,%rax,4), %rax
-	jmp	.LBB48_64
-.LBB48_73:
-	movl	$1, %edi
-	callq	c_assert
+	jmp	.LBB48_65
 .LBB48_74:
 	movl	$1, %edi
 	callq	c_assert
 .LBB48_75:
 	movl	$1, %edi
 	callq	c_assert
-	movl	$6, %eax
-	jmp	.LBB48_64
 .LBB48_76:
+	movl	$1, %edi
+	callq	c_assert
+	movl	$6, %eax
+	jmp	.LBB48_65
+.LBB48_77:
 	movl	$1, %edi
 	callq	c_assert
 	xorl	%r14d, %r14d
@@ -7775,32 +7775,32 @@ bapply__82734:                          # @bapply__82734
 	movl	$1, %edi
 	callq	c_assert
 	leaq	2(,%r14,4), %rax
-	jmp	.LBB48_64
-.LBB48_77:
+	jmp	.LBB48_65
+.LBB48_78:
 	movl	$1, %edi
 	callq	c_assert
 	cmpl	$70, %ebx
 	movl	$2, %eax
-	ja	.LBB48_64
-	jmp	.LBB48_75
-.LBB48_78:
+	ja	.LBB48_65
+	jmp	.LBB48_76
+.LBB48_79:
 	movl	$9073, %edi                     # imm = 0x2371
 	callq	jhc_case_fell_off
-.LBB48_79:
+.LBB48_80:
 	movl	$.L.str.8, %edi
 	callq	jhc_error
 .Lfunc_end48:
-	.size	bapply__82734, .Lfunc_end48-bapply__82734
+	.size	bapply__87951, .Lfunc_end48-bapply__87951
 	.cfi_endproc
 	.section	.rodata,"a",@progbits
 	.p2align	3, 0x0
 .LJTI48_0:
+	.quad	.LBB48_49
 	.quad	.LBB48_48
-	.quad	.LBB48_47
 	.quad	.LBB48_19
-	.quad	.LBB48_42
-	.quad	.LBB48_51
-	.quad	.LBB48_55
+	.quad	.LBB48_43
+	.quad	.LBB48_52
+	.quad	.LBB48_56
 	.quad	.LBB48_26
 	.quad	.LBB48_19
 	.quad	.LBB48_19
@@ -7809,27 +7809,27 @@ bapply__82734:                          # @bapply__82734
 	.quad	.LBB48_15
 	.quad	.LBB48_22
 	.quad	.LBB48_31
-	.quad	.LBB48_43
-	.quad	.LBB48_49
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_78
-	.quad	.LBB48_46
-	.quad	.LBB48_39
-	.quad	.LBB48_78
+	.quad	.LBB48_44
+	.quad	.LBB48_50
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_79
+	.quad	.LBB48_47
+	.quad	.LBB48_40
+	.quad	.LBB48_79
 	.quad	.LBB48_4
 	.quad	.LBB48_5
 	.quad	.LBB48_4
@@ -7838,38 +7838,38 @@ bapply__82734:                          # @bapply__82734
 	.quad	.LBB48_4
 	.quad	.LBB48_5
 	.quad	.LBB48_36
-	.quad	.LBB48_58
+	.quad	.LBB48_59
 	.quad	.LBB48_4
-	.quad	.LBB48_50
-	.quad	.LBB48_56
-	.quad	.LBB48_40
-	.quad	.LBB48_41
+	.quad	.LBB48_51
 	.quad	.LBB48_57
+	.quad	.LBB48_41
+	.quad	.LBB48_42
+	.quad	.LBB48_58
 	.quad	.LBB48_18
 	.quad	.LBB48_11
 	.quad	.LBB48_10
 	.quad	.LBB48_13
-	.quad	.LBB48_78
+	.quad	.LBB48_79
 	.quad	.LBB48_14
-	.quad	.LBB48_78
+	.quad	.LBB48_79
 	.quad	.LBB48_9
-	.quad	.LBB48_78
+	.quad	.LBB48_79
 	.quad	.LBB48_6
-	.quad	.LBB48_78
-	.quad	.LBB48_60
-	.quad	.LBB48_78
-	.quad	.LBB48_62
+	.quad	.LBB48_79
+	.quad	.LBB48_61
+	.quad	.LBB48_79
+	.quad	.LBB48_63
 	.quad	.LBB48_8
 	.quad	.LBB48_37
-	.quad	.LBB48_61
+	.quad	.LBB48_62
 	.quad	.LBB48_7
 	.quad	.LBB48_24
-	.quad	.LBB48_59
+	.quad	.LBB48_60
                                         # -- End function
 	.text
-	.p2align	4, 0x90                         # -- Begin function bapply__82735
-	.type	bapply__82735,@function
-bapply__82735:                          # @bapply__82735
+	.p2align	4, 0x90                         # -- Begin function bapply__87952
+	.type	bapply__87952,@function
+bapply__87952:                          # @bapply__87952
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -7897,22 +7897,22 @@ bapply__82735:                          # @bapply__82735
 	jmp	.LBB49_1
 .LBB49_26:                              #   in Loop: Header=BB49_1 Depth=1
 	movq	40(%rax), %rbp
-	movq	8(%rax), %r14
-	movq	16(%rax), %rsi
+	movq	8(%rax), %rsi
+	movq	16(%rax), %r14
 	movq	48(%rax), %rcx
 	movq	%rcx, (%rsp)                    # 8-byte Spill
 	movq	24(%rax), %r13
 	movq	32(%rax), %r12
 	movq	%r14, (%rbx)
-	movq	%r13, 8(%rbx)
-	movq	%r12, 16(%rbx)
+	movq	%r12, 8(%rbx)
+	movq	%r13, 16(%rbx)
 	leaq	24(%rbx), %r15
 	movq	%r15, %rdi
 	movq	%r12, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r14, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cFW$__fData_Binary_put$d9(%rip), %rsi
@@ -7927,10 +7927,10 @@ bapply__82735:                          # @bapply__82735
 	movq	%r12, %rdi
 	movq	%r14, %rsi
 	movq	%r15, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r13, 40(%rbx)
 	leaq	48(%rbx), %rdi
 	movq	cFW$__fData_Binary_put$d10(%rip), %rsi
@@ -7949,10 +7949,10 @@ bapply__82735:                          # @bapply__82735
 	leaq	64(%rbx), %r12
 	movq	%r12, %rdi
 	movq	%r14, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r12, %rdi
 	movq	%r15, %rsi
 	callq	eval
@@ -7964,15 +7964,15 @@ bapply__82735:                          # @bapply__82735
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6+3, (%rax)
+.LBB49_21:                              #   in Loop: Header=BB49_1 Depth=1
 	movq	%r14, 8(%rax)
 	movq	%r13, 16(%rax)
-.LBB49_21:                              #   in Loop: Header=BB49_1 Depth=1
 	orq	$1, %rax
 	movq	%rbx, %rdi
 	movq	%r15, %rsi
 .LBB49_22:                              #   in Loop: Header=BB49_1 Depth=1
 	movq	%rax, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 .LBB49_1:                               # =>This Inner Loop Header: Depth=1
 	movq	%rax, %rcx
 	testb	$2, %al
@@ -7996,10 +7996,10 @@ bapply__82735:                          # @bapply__82735
 	leaq	16(%rbx), %r12
 	movq	%r12, %rdi
 	movq	%r15, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r14, 16(%rbx)
 	addq	$24, %rbx
 	movq	cFW$__fData_Binary_put$d3(%rip), %rsi
@@ -8025,10 +8025,10 @@ bapply__82735:                          # @bapply__82735
 	movq	%r12, %rdi
 	movq	%rax, %rsi
 	movq	%r14, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r12, %rdi
 	movq	%r15, %rsi
 	callq	eval
@@ -8039,8 +8039,6 @@ bapply__82735:                          # @bapply__82735
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	$E__fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3+3, (%rax)
-	movq	%r13, 16(%rax)
-	movq	%r14, 8(%rax)
 	jmp	.LBB49_21
 .LBB49_25:                              #   in Loop: Header=BB49_1 Depth=1
 	movq	32(%rax), %r13
@@ -8052,10 +8050,10 @@ bapply__82735:                          # @bapply__82735
 	leaq	16(%rbx), %r14
 	movq	%r14, %rdi
 	movq	%r15, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r12, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cFW$__fData_Binary_put$d7(%rip), %rsi
@@ -8066,19 +8064,19 @@ bapply__82735:                          # @bapply__82735
 	movq	%r15, 8(%rax)
 	jmp	.LBB49_19
 .LBB49_18:                              #   in Loop: Header=BB49_1 Depth=1
+	movq	32(%rax), %r13
 	movq	8(%rax), %r12
 	movq	16(%rax), %rsi
-	movq	32(%rax), %r13
 	movq	24(%rax), %r15
 	movq	%r15, (%rbx)
 	movq	%r12, 8(%rbx)
 	leaq	16(%rbx), %r14
 	movq	%r14, %rdi
 	movq	%r15, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r12, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cFW$__fData_Binary_put$d5(%rip), %rsi
@@ -8097,10 +8095,10 @@ bapply__82735:                          # @bapply__82735
 	leaq	40(%rbx), %r12
 	movq	%r12, %rdi
 	movq	%r14, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r12, %rdi
 	movq	%r15, %rsi
 	callq	eval
@@ -8118,10 +8116,10 @@ bapply__82735:                          # @bapply__82735
 	leaq	16(%rbx), %r12
 	movq	%r12, %rdi
 	movq	%r14, %rdx
-	callq	bapply__82734
+	callq	bapply__87951
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__82735
+	callq	bapply__87952
 	movq	%r12, %rdi
 	movq	%r15, %rsi
 	callq	eval
@@ -8137,12 +8135,12 @@ bapply__82735:                          # @bapply__82735
 	movq	%rbx, %rdi
 	callq	eval
 	movq	(%rax), %rdx
-	movq	8(%r14), %rsi
-	movq	16(%r14), %rcx
+	movq	8(%r14), %rcx
+	movq	16(%r14), %rsi
 	jmp	.LBB49_28
 .LBB49_27:
-	movq	8(%rax), %rsi
-	movq	16(%rax), %rcx
+	movq	8(%rax), %rcx
+	movq	16(%rax), %rsi
 	movq	24(%rax), %rdx
 .LBB49_28:
 	movq	%rbx, %rdi
@@ -8169,8 +8167,8 @@ bapply__82735:                          # @bapply__82735
 	.cfi_def_cfa_offset 64
 	movq	8(%rax), %r15
 	movq	16(%rax), %r12
-	movq	%r12, (%rbx)
-	movq	%r15, 8(%rbx)
+	movq	%r15, (%rbx)
+	movq	%r12, 8(%rbx)
 	leaq	16(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -8185,7 +8183,7 @@ bapply__82735:                          # @bapply__82735
 	movq	%r14, %rdi
 	callq	eval
 	movq	(%rax), %rbp
-	movl	$_c209, %eax
+	movl	$_c172, %eax
 	cmpq	$4, %rbp
 	jb	.LBB49_9
 # %bb.8:
@@ -8268,7 +8266,7 @@ bapply__82735:                          # @bapply__82735
 	movq	%rax, %r15
 	movq	$E__fJhc_Basics_$pp+3, (%rax)
 	movq	$2, 8(%rax)
-	movq	$_c602, 16(%rax)
+	movq	$_c466, 16(%rax)
 	movq	%r14, 24(%rax)
 	orq	$1, %r15
 	movq	%r15, 16(%rbx)
@@ -8282,8 +8280,8 @@ bapply__82735:                          # @bapply__82735
 .LBB49_5:
 	movq	8(%rax), %r15
 	movq	16(%rax), %r12
-	movq	%r15, (%rbx)
-	movq	%r12, 8(%rbx)
+	movq	%r12, (%rbx)
+	movq	%r15, 8(%rbx)
 	leaq	16(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -8335,7 +8333,7 @@ bapply__82735:                          # @bapply__82735
 	movl	$9293, %edi                     # imm = 0x244D
 	callq	jhc_case_fell_off
 .Lfunc_end49:
-	.size	bapply__82735, .Lfunc_end49-bapply__82735
+	.size	bapply__87952, .Lfunc_end49-bapply__87952
 	.cfi_endproc
 	.section	.rodata,"a",@progbits
 	.p2align	3, 0x0
@@ -8380,150 +8378,9 @@ bapply__82735:                          # @bapply__82735
 	.quad	.LBB49_31
                                         # -- End function
 	.text
-	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d5
-	.type	fJhc_Show_showsPrec$d5,@function
-fJhc_Show_showsPrec$d5:                 # @"fJhc_Show_showsPrec$d5"
-	.cfi_startproc
-# %bb.0:
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
-	pushq	%r15
-	.cfi_def_cfa_offset 24
-	pushq	%r14
-	.cfi_def_cfa_offset 32
-	pushq	%r13
-	.cfi_def_cfa_offset 40
-	pushq	%r12
-	.cfi_def_cfa_offset 48
-	pushq	%rbx
-	.cfi_def_cfa_offset 56
-	subq	$24, %rsp
-	.cfi_def_cfa_offset 80
-	.cfi_offset %rbx, -56
-	.cfi_offset %r12, -48
-	.cfi_offset %r13, -40
-	.cfi_offset %r14, -32
-	.cfi_offset %r15, -24
-	.cfi_offset %rbp, -16
-	movq	%r9, 16(%rsp)                   # 8-byte Spill
-	movl	%r8d, 12(%rsp)                  # 4-byte Spill
-	movq	%rcx, %r15
-	movl	%edx, %r12d
-	movq	%rsi, %r13
-	movq	%rdi, %rbx
-	movq	80(%rsp), %r14
-	movq	%rcx, (%rdi)
-	movq	%r14, 8(%rdi)
-	movq	%rsi, 16(%rdi)
-	addq	$24, %rdi
-	movq	cFJhc_Show_showsPrec$d6(%rip), %rsi
-	callq	s_alloc
-	movq	%rax, %rbp
-	movq	$E__fJhc_Show_showsPrec$d6+3, (%rax)
-	movq	16(%rsp), %rax                  # 8-byte Reload
-	movq	%rax, 32(%rbp)
-	movq	%r13, 8(%rbp)
-	movq	%r14, 16(%rbp)
-	movb	%r12b, 42(%rbp)
-	movq	%r15, 24(%rbp)
-	movl	12(%rsp), %eax                  # 4-byte Reload
-	movw	%ax, 40(%rbp)
-	orq	$1, %rbp
-	movq	%rbp, 24(%rbx)
-	leaq	32(%rbx), %rdi
-	movq	cFJhc_Show_showString(%rip), %rsi
-	callq	s_alloc
-	movq	%rax, %r14
-	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
-	movq	%rbp, 16(%rax)
-	orq	$1, %r14
-	movq	%r14, 32(%rbx)
-	leaq	40(%rbx), %rdi
-	movq	cFJhc_Show_showString(%rip), %rsi
-	callq	s_alloc
-	movq	%rax, %r15
-	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c155, 8(%rax)
-	movq	%r14, 16(%rax)
-	orq	$1, %r15
-	movq	%r15, 40(%rbx)
-	leaq	48(%rbx), %rdi
-	movq	cFJhc_Show_showString(%rip), %rsi
-	callq	s_alloc
-	movq	%rax, %r14
-	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c126, 8(%rax)
-	movq	%r15, 16(%rax)
-	orq	$1, %r14
-	movq	%r14, 48(%rbx)
-	leaq	56(%rbx), %r15
-	movl	$_c172, %esi
-	movq	%r15, %rdi
-	callq	eval
-	cmpq	$65538, %rax                    # imm = 0x10002
-	je	.LBB50_2
-# %bb.1:
-	movq	(%rax), %r12
-	movq	8(%rax), %r13
-	movq	%r13, 56(%rbx)
-	movq	%r12, 64(%rbx)
-	leaq	72(%rbx), %rdi
-	movq	cFR$__fJhc_Basics_$pp(%rip), %rsi
-	callq	s_alloc
-	movq	%rax, %r15
-	movq	$E__fR$__fJhc_Basics_$pp+3, (%rax)
-	movq	%r13, 8(%rax)
-	movq	%r14, 16(%rax)
-	orq	$1, %r15
-	movq	%r15, 72(%rbx)
-	addq	$80, %rbx
-	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
-	movq	%rbx, %rdi
-	callq	s_alloc
-	movq	%r12, (%rax)
-	movq	%r15, 8(%rax)
-	addq	$24, %rsp
-	.cfi_def_cfa_offset 56
-	popq	%rbx
-	.cfi_def_cfa_offset 48
-	popq	%r12
-	.cfi_def_cfa_offset 40
-	popq	%r13
-	.cfi_def_cfa_offset 32
-	popq	%r14
-	.cfi_def_cfa_offset 24
-	popq	%r15
-	.cfi_def_cfa_offset 16
-	popq	%rbp
-	.cfi_def_cfa_offset 8
-	retq
-.LBB50_2:
-	.cfi_def_cfa_offset 80
-	movq	%r15, %rdi
-	movq	%r14, %rsi
-	addq	$24, %rsp
-	.cfi_def_cfa_offset 56
-	popq	%rbx
-	.cfi_def_cfa_offset 48
-	popq	%r12
-	.cfi_def_cfa_offset 40
-	popq	%r13
-	.cfi_def_cfa_offset 32
-	popq	%r14
-	.cfi_def_cfa_offset 24
-	popq	%r15
-	.cfi_def_cfa_offset 16
-	popq	%rbp
-	.cfi_def_cfa_offset 8
-	jmp	eval                            # TAILCALL
-.Lfunc_end50:
-	.size	fJhc_Show_showsPrec$d5, .Lfunc_end50-fJhc_Show_showsPrec$d5
-	.cfi_endproc
-                                        # -- End function
-	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d9
-	.type	fJhc_Show_showsPrec$d9,@function
-fJhc_Show_showsPrec$d9:                 # @"fJhc_Show_showsPrec$d9"
+	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d2
+	.type	fJhc_Show_showsPrec$d2,@function
+fJhc_Show_showsPrec$d2:                 # @"fJhc_Show_showsPrec$d2"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -8549,21 +8406,162 @@ fJhc_Show_showsPrec$d9:                 # @"fJhc_Show_showsPrec$d9"
 	movq	%r9, %r14
 	movl	%r8d, 4(%rsp)                   # 4-byte Spill
 	movq	%rcx, %r15
-	movl	%edx, %r12d
+	movl	%edx, (%rsp)                    # 4-byte Spill
 	movq	%rsi, %r13
 	movq	%rdi, %rbx
-	movq	%rsi, (%rdi)
+	movq	64(%rsp), %r12
+	movq	%r12, (%rdi)
 	movq	%rcx, 8(%rdi)
 	movq	%r9, 16(%rdi)
 	addq	$24, %rdi
-	movq	cFJhc_Show_showsPrec$d10(%rip), %rsi
+	movq	cFJhc_Show_showsPrec$d3(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %rbp
-	movq	$E__fJhc_Show_showsPrec$d10+3, (%rax)
+	movq	$E__fJhc_Show_showsPrec$d3+3, (%rax)
+	movq	%r13, 32(%rax)
+	movq	%r12, 8(%rax)
+	movl	(%rsp), %eax                    # 4-byte Reload
+	movb	%al, 42(%rbp)
+	movq	%r15, 16(%rbp)
+	movl	4(%rsp), %eax                   # 4-byte Reload
+	movw	%ax, 40(%rbp)
+	movq	%r14, 24(%rbp)
+	orq	$1, %rbp
+	movq	%rbp, 24(%rbx)
+	leaq	32(%rbx), %rdi
+	movq	cFJhc_Show_showString(%rip), %rsi
+	callq	s_alloc
+	movq	%rax, %r14
+	movq	$E__fJhc_Show_showString+3, (%rax)
+	movq	$_c59, 8(%rax)
+	movq	%rbp, 16(%rax)
+	orq	$1, %r14
+	movq	%r14, 32(%rbx)
+	leaq	40(%rbx), %rdi
+	movq	cFJhc_Show_showString(%rip), %rsi
+	callq	s_alloc
+	movq	%rax, %r15
+	movq	$E__fJhc_Show_showString+3, (%rax)
+	movq	$_c113, 8(%rax)
+	movq	%r14, 16(%rax)
+	orq	$1, %r15
+	movq	%r15, 40(%rbx)
+	leaq	48(%rbx), %rdi
+	movq	cFJhc_Show_showString(%rip), %rsi
+	callq	s_alloc
+	movq	%rax, %r14
+	movq	$E__fJhc_Show_showString+3, (%rax)
+	movq	$_c84, 8(%rax)
+	movq	%r15, 16(%rax)
+	orq	$1, %r14
+	movq	%r14, 48(%rbx)
+	leaq	56(%rbx), %r15
+	movl	$_c135, %esi
+	movq	%r15, %rdi
+	callq	eval
+	cmpq	$65538, %rax                    # imm = 0x10002
+	je	.LBB50_2
+# %bb.1:
+	movq	(%rax), %r12
+	movq	8(%rax), %r13
+	movq	%r13, 56(%rbx)
+	movq	%r12, 64(%rbx)
+	leaq	72(%rbx), %rdi
+	movq	cFR$__fJhc_Basics_$pp(%rip), %rsi
+	callq	s_alloc
+	movq	%rax, %r15
+	movq	$E__fR$__fJhc_Basics_$pp+3, (%rax)
+	movq	%r13, 8(%rax)
+	movq	%r14, 16(%rax)
+	orq	$1, %r15
+	movq	%r15, 72(%rbx)
+	addq	$80, %rbx
+	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
+	movq	%rbx, %rdi
+	callq	s_alloc
+	movq	%r12, (%rax)
+	movq	%r15, 8(%rax)
+	addq	$8, %rsp
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%r12
+	.cfi_def_cfa_offset 40
+	popq	%r13
+	.cfi_def_cfa_offset 32
+	popq	%r14
+	.cfi_def_cfa_offset 24
+	popq	%r15
+	.cfi_def_cfa_offset 16
+	popq	%rbp
+	.cfi_def_cfa_offset 8
+	retq
+.LBB50_2:
+	.cfi_def_cfa_offset 64
+	movq	%r15, %rdi
+	movq	%r14, %rsi
+	addq	$8, %rsp
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%r12
+	.cfi_def_cfa_offset 40
+	popq	%r13
+	.cfi_def_cfa_offset 32
+	popq	%r14
+	.cfi_def_cfa_offset 24
+	popq	%r15
+	.cfi_def_cfa_offset 16
+	popq	%rbp
+	.cfi_def_cfa_offset 8
+	jmp	eval                            # TAILCALL
+.Lfunc_end50:
+	.size	fJhc_Show_showsPrec$d2, .Lfunc_end50-fJhc_Show_showsPrec$d2
+	.cfi_endproc
+                                        # -- End function
+	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d6
+	.type	fJhc_Show_showsPrec$d6,@function
+fJhc_Show_showsPrec$d6:                 # @"fJhc_Show_showsPrec$d6"
+	.cfi_startproc
+# %bb.0:
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	pushq	%r15
+	.cfi_def_cfa_offset 24
+	pushq	%r14
+	.cfi_def_cfa_offset 32
+	pushq	%r13
+	.cfi_def_cfa_offset 40
+	pushq	%r12
+	.cfi_def_cfa_offset 48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	pushq	%rax
+	.cfi_def_cfa_offset 64
+	.cfi_offset %rbx, -56
+	.cfi_offset %r12, -48
+	.cfi_offset %r13, -40
+	.cfi_offset %r14, -32
+	.cfi_offset %r15, -24
+	.cfi_offset %rbp, -16
+	movq	%r9, %r14
+	movl	%r8d, 4(%rsp)                   # 4-byte Spill
+	movl	%ecx, %r15d
+	movq	%rdx, %r12
+	movq	%rsi, %r13
+	movq	%rdi, %rbx
+	movq	%rdx, (%rdi)
+	movq	%rsi, 8(%rdi)
+	movq	%r9, 16(%rdi)
+	addq	$24, %rdi
+	movq	cFJhc_Show_showsPrec$d7(%rip), %rsi
+	callq	s_alloc
+	movq	%rax, %rbp
+	movq	$E__fJhc_Show_showsPrec$d7+3, (%rax)
 	movq	%r14, 8(%rax)
 	movq	%r13, 16(%rax)
-	movb	%r12b, 34(%rax)
-	movq	%r15, 24(%rax)
+	movq	%r12, 24(%rax)
+	movb	%r15b, 34(%rax)
 	movl	4(%rsp), %eax                   # 4-byte Reload
 	movw	%ax, 32(%rbp)
 	orq	$1, %rbp
@@ -8573,7 +8571,7 @@ fJhc_Show_showsPrec$d9:                 # @"fJhc_Show_showsPrec$d9"
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%rbp, 16(%rax)
 	orq	$1, %r14
 	movq	%r14, 32(%rbx)
@@ -8582,7 +8580,7 @@ fJhc_Show_showsPrec$d9:                 # @"fJhc_Show_showsPrec$d9"
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c155, 8(%rax)
+	movq	$_c113, 8(%rax)
 	movq	%r14, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 40(%rbx)
@@ -8591,12 +8589,12 @@ fJhc_Show_showsPrec$d9:                 # @"fJhc_Show_showsPrec$d9"
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c126, 8(%rax)
+	movq	$_c84, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r14
 	movq	%r14, 48(%rbx)
 	leaq	56(%rbx), %r15
-	movl	$_c160, %esi
+	movl	$_c123, %esi
 	movq	%r15, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -8656,7 +8654,7 @@ fJhc_Show_showsPrec$d9:                 # @"fJhc_Show_showsPrec$d9"
 	.cfi_def_cfa_offset 8
 	jmp	eval                            # TAILCALL
 .Lfunc_end51:
-	.size	fJhc_Show_showsPrec$d9, .Lfunc_end51-fJhc_Show_showsPrec$d9
+	.size	fJhc_Show_showsPrec$d6, .Lfunc_end51-fJhc_Show_showsPrec$d6
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function fJhc_Text_Read_lex$d19
@@ -8766,8 +8764,8 @@ fJhc_Text_Read_lex$d19:                 # @"fJhc_Text_Read_lex$d19"
 	movq	%r13, %rsi
 	callq	fJhc_Text_Read_80__lexExp
 .LBB52_13:
-	movq	%r15, 48(%rbx)
-	movq	%rbp, 56(%rbx)
+	movq	%rbp, 48(%rbx)
+	movq	%r15, 56(%rbx)
 	leaq	64(%rbx), %rdi
 	movq	32(%rsp), %rsi                  # 8-byte Reload
 	movq	%r14, %rdx
@@ -8776,10 +8774,10 @@ fJhc_Text_Read_lex$d19:                 # @"fJhc_Text_Read_lex$d19"
 	movq	%rax, %r12
 	movq	%rax, 64(%rbx)
 	leaq	72(%rbx), %rdi
-	movq	cBap__1__Jhc_Text_Read_lex$d27u101218(%rip), %rsi
+	movq	cBap__1__Jhc_Text_Read_lex$d27u101260(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r14
-	movq	$E__bap__1__Jhc_Text_Read_lex$d27u101218+3, (%rax)
+	movq	$E__bap__1__Jhc_Text_Read_lex$d27u101260+3, (%rax)
 	movq	%r15, 8(%rax)
 	movq	%rbp, 16(%rax)
 	orq	$1, %r14
@@ -8939,8 +8937,8 @@ fJhc_Text_Read_lex$d20:                 # @"fJhc_Text_Read_lex$d20"
 	movq	%rax, %r14
 	movq	(%r12), %rsi
 	movq	8(%r12), %r12
-	movq	%r12, 16(%rbx)
-	movq	%rax, 24(%rbx)
+	movq	%rax, 16(%rbx)
+	movq	%r12, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	callq	eval
 	movl	$65538, %ebp                    # imm = 0x10002
@@ -8952,7 +8950,7 @@ fJhc_Text_Read_lex$d20:                 # @"fJhc_Text_Read_lex$d20"
 	movq	%r13, 32(%rbx)
 	movq	%rsi, 40(%rbx)
 	leaq	48(%rbx), %rdi
-	movl	$_c297, %edx
+	movl	$_c595, %edx
 	movq	%rdi, 8(%rsp)                   # 8-byte Spill
 	movq	%rsi, 16(%rsp)                  # 8-byte Spill
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -8988,14 +8986,14 @@ fJhc_Text_Read_lex$d20:                 # @"fJhc_Text_Read_lex$d20"
 	callq	fJhc_Text_Read_lex$d22
 	movq	%rax, %rbp
 .LBB53_5:
-	movq	%r14, 32(%rbx)
+	movq	%rbp, 32(%rbx)
 	movq	%r12, 40(%rbx)
-	movq	%rbp, 48(%rbx)
+	movq	%r14, 48(%rbx)
 	leaq	56(%rbx), %rdi
-	movq	cBap__1__Jhc_Text_Read_lex$d21u101230(%rip), %rsi
+	movq	cBap__1__Jhc_Text_Read_lex$d21u101272(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$E__bap__1__Jhc_Text_Read_lex$d21u101230+3, (%rax)
+	movq	$E__bap__1__Jhc_Text_Read_lex$d21u101272+3, (%rax)
 	movq	%r14, 8(%rax)
 	movq	%r12, 16(%rax)
 	orq	$1, %r15
@@ -9099,8 +9097,8 @@ fJhc_Text_Read_readDec$d5:              # @"fJhc_Text_Read_readDec$d5"
 # %bb.2:
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
-	movq	%r13, 8(%rbx)
-	movq	%r12, 16(%rbx)
+	movq	%r12, 8(%rbx)
+	movq	%r13, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cFJhc_Text_Read_readDec$d6(%rip), %rsi
 	callq	s_alloc
@@ -9218,10 +9216,10 @@ fPrelude_Text_read$d2:                  # @"fPrelude_Text_read$d2"
 	movq	%rax, %r12
 	movq	%rax, 56(%rbx)
 	leaq	64(%rbx), %rdi
-	movq	cBap__1__Prelude_Text_read$d3u101202(%rip), %rsi
+	movq	cBap__1__Prelude_Text_read$d3u101244(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$E__bap__1__Prelude_Text_read$d3u101202+3, (%rax)
+	movq	$E__bap__1__Prelude_Text_read$d3u101244+3, (%rax)
 	movq	%r14, 8(%rax)
 	movq	%r13, 16(%rax)
 	orq	$1, %r15
@@ -9337,8 +9335,8 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2: # @"fW$__fInstance
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d3+3, (%rax)
-	movq	%r13, 8(%rax)
 	movw	%r12w, 16(%rax)
+	movq	%r13, 8(%rax)
 	orq	$1, %r15
 	movq	%r15, 16(%rbx)
 	leaq	24(%rbx), %rdi
@@ -9346,7 +9344,7 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2: # @"fW$__fInstance
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r12
 	movq	%r12, 24(%rbx)
@@ -9355,7 +9353,7 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2: # @"fW$__fInstance
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c115, 8(%rax)
+	movq	$_c73, 8(%rax)
 	movq	%r12, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 32(%rbx)
@@ -9380,7 +9378,7 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2: # @"fW$__fInstance
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r14
 	movq	%r14, 56(%rbx)
@@ -9389,7 +9387,7 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2: # @"fW$__fInstance
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c119, 8(%rax)
+	movq	$_c77, 8(%rax)
 	movq	%r14, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 64(%rbx)
@@ -9414,7 +9412,7 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2: # @"fW$__fInstance
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r14
 	movq	%r14, 88(%rbx)
@@ -9423,7 +9421,7 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2: # @"fW$__fInstance
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c124, 8(%rax)
+	movq	$_c82, 8(%rax)
 	movq	%r14, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 96(%rbx)
@@ -9432,12 +9430,12 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2: # @"fW$__fInstance
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c126, 8(%rax)
+	movq	$_c84, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r14
 	movq	%r14, 104(%rbx)
 	leaq	112(%rbx), %r15
-	movl	$_c141, %esi
+	movl	$_c99, %esi
 	movq	%r15, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -9527,8 +9525,8 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaController$d2: # @"fW$__fInstance$_
 	.cfi_offset %rbp, -16
 	movq	%r8, %r15
 	movl	%ecx, %r14d
-	movl	%edx, %ebp
-	movl	%esi, %r12d
+	movl	%edx, %r12d
+	movl	%esi, %ebp
 	movq	%rdi, %rbx
 	movq	%r8, (%rdi)
 	addq	$8, %rdi
@@ -9580,7 +9578,7 @@ fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaController$d2: # @"fW$__fInstance$_
 	movq	%r15, 8(%rax)
 	movq	%rax, 48(%rbx)
 	leaq	56(%rbx), %r15
-	movl	$_c83, %esi
+	movl	$_c40, %esi
 	movq	%r15, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -9713,7 +9711,7 @@ ftheMain$d25:                           # @"ftheMain$d25"
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fInstance$__iJhc_Show_show_default+3, (%rax)
-	movq	$_c572, 8(%rax)
+	movq	$_c685, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r12
 	movq	%r12, 48(%rbx)
@@ -9723,7 +9721,7 @@ ftheMain$d25:                           # @"ftheMain$d25"
 	movq	%rax, %r15
 	movq	$E__fJhc_Basics_$pp+3, (%rax)
 	movq	$2, 8(%rax)
-	movq	$_c575, 16(%rax)
+	movq	$_c688, 16(%rax)
 	movq	%r12, 24(%rax)
 	orq	$1, %r15
 	movq	%r15, 56(%rbx)
@@ -9791,9 +9789,9 @@ ftheMain$d25:                           # @"ftheMain$d25"
 	.size	ftheMain$d25, .Lfunc_end58-ftheMain$d25
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d6
-	.type	E__fJhc_Show_showsPrec$d6,@function
-E__fJhc_Show_showsPrec$d6:              # @"E__fJhc_Show_showsPrec$d6"
+	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d3
+	.type	E__fJhc_Show_showsPrec$d3,@function
+E__fJhc_Show_showsPrec$d3:              # @"E__fJhc_Show_showsPrec$d3"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -9808,8 +9806,8 @@ E__fJhc_Show_showsPrec$d6:              # @"E__fJhc_Show_showsPrec$d6"
 	.cfi_def_cfa_offset 48
 	pushq	%rbx
 	.cfi_def_cfa_offset 56
-	subq	$152, %rsp
-	.cfi_def_cfa_offset 208
+	subq	$168, %rsp
+	.cfi_def_cfa_offset 224
 	.cfi_offset %rbx, -56
 	.cfi_offset %r12, -48
 	.cfi_offset %r13, -40
@@ -9822,59 +9820,59 @@ E__fJhc_Show_showsPrec$d6:              # @"E__fJhc_Show_showsPrec$d6"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	movq	32(%rsi), %rax
-	movq	%rax, 96(%rsp)                  # 8-byte Spill
-	movq	8(%rsi), %r12
-	movq	16(%rsi), %r13
+	movq	%rax, 88(%rsp)                  # 8-byte Spill
 	movzbl	42(%rsi), %eax
-	movb	%al, 15(%rsp)                   # 1-byte Spill
-	movq	24(%rsi), %rsi
+	movb	%al, 11(%rsp)                   # 1-byte Spill
+	movq	8(%rsi), %r12
+	movq	16(%rsi), %rsi
 	movzwl	40(%rbx), %eax
-	movw	%ax, 16(%rsp)                   # 2-byte Spill
+	movw	%ax, 12(%rsp)                   # 2-byte Spill
+	movq	24(%rbx), %r13
 	movq	%r12, 8(%rdi)
 	movq	%r13, 16(%rdi)
 	leaq	24(%rdi), %r15
 	movq	%r15, %rdi
 	callq	eval
-	movzwl	4(%rax), %ecx
-	movw	%cx, 18(%rsp)                   # 2-byte Spill
-	movq	cFJhc_Show_showsPrec$d7(%rip), %rsi
+	movzwl	(%rax), %ecx
+	movw	%cx, 14(%rsp)                   # 2-byte Spill
+	movq	cFJhc_Show_showsPrec$d4(%rip), %rsi
 	leaq	32(%r14), %rbp
 	leaq	40(%r14), %rcx
-	movq	%rcx, 24(%rsp)                  # 8-byte Spill
+	movq	%rcx, 16(%rsp)                  # 8-byte Spill
 	leaq	48(%r14), %rcx
-	movq	%rcx, 32(%rsp)                  # 8-byte Spill
+	movq	%rcx, 24(%rsp)                  # 8-byte Spill
 	leaq	56(%r14), %rcx
-	movq	%rcx, 40(%rsp)                  # 8-byte Spill
+	movq	%rcx, 32(%rsp)                  # 8-byte Spill
 	leaq	64(%r14), %rcx
-	movq	%rcx, 48(%rsp)                  # 8-byte Spill
+	movq	%rcx, 40(%rsp)                  # 8-byte Spill
 	leaq	72(%r14), %rcx
-	movq	%rcx, 56(%rsp)                  # 8-byte Spill
+	movq	%rcx, 48(%rsp)                  # 8-byte Spill
 	leaq	80(%r14), %rcx
-	movq	%rcx, 64(%rsp)                  # 8-byte Spill
+	movq	%rcx, 56(%rsp)                  # 8-byte Spill
 	leaq	88(%r14), %rcx
-	movq	%rcx, 72(%rsp)                  # 8-byte Spill
+	movq	%rcx, 64(%rsp)                  # 8-byte Spill
 	leaq	96(%r14), %rcx
-	movq	%rcx, 80(%rsp)                  # 8-byte Spill
+	movq	%rcx, 72(%rsp)                  # 8-byte Spill
 	leaq	104(%r14), %rcx
-	movq	%rcx, 88(%rsp)                  # 8-byte Spill
+	movq	%rcx, 80(%rsp)                  # 8-byte Spill
 	leaq	112(%r14), %rcx
-	movq	%rcx, 104(%rsp)                 # 8-byte Spill
+	movq	%rcx, 96(%rsp)                  # 8-byte Spill
 	leaq	120(%r14), %rcx
-	movq	%rcx, 112(%rsp)                 # 8-byte Spill
-	movl	(%rax), %eax
-	movl	%eax, 20(%rsp)                  # 4-byte Spill
+	movq	%rcx, 104(%rsp)                 # 8-byte Spill
+	movss	2(%rax), %xmm0                  # xmm0 = mem[0],zero,zero,zero
+	movaps	%xmm0, 144(%rsp)                # 16-byte Spill
 	leaq	128(%r14), %rax
-	movq	%rax, 120(%rsp)                 # 8-byte Spill
+	movq	%rax, 112(%rsp)                 # 8-byte Spill
 	leaq	136(%r14), %rax
-	movq	%rax, 128(%rsp)                 # 8-byte Spill
+	movq	%rax, 120(%rsp)                 # 8-byte Spill
 	leaq	144(%r14), %rax
-	movq	%rax, 136(%rsp)                 # 8-byte Spill
+	movq	%rax, 128(%rsp)                 # 8-byte Spill
 	leaq	152(%r14), %rax
-	movq	%rax, 144(%rsp)                 # 8-byte Spill
+	movq	%rax, 136(%rsp)                 # 8-byte Spill
 	movq	%r15, %rdi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$E__fJhc_Show_showsPrec$d7+3, (%rax)
+	movq	$E__fJhc_Show_showsPrec$d4+3, (%rax)
 	movq	%r12, 8(%rax)
 	movq	%r13, 16(%rax)
 	orq	$1, %r15
@@ -9884,140 +9882,141 @@ E__fJhc_Show_showsPrec$d6:              # @"E__fJhc_Show_showsPrec$d6"
 	callq	s_alloc
 	movq	%rax, %rbp
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %rbp
 	movq	%rbp, 32(%r14)
 	movq	cFJhc_Show_showString(%rip), %rsi
-	movq	24(%rsp), %rdi                  # 8-byte Reload
+	movq	16(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c142, 8(%rax)
+	movq	$_c100, 8(%rax)
 	movq	%rbp, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 40(%r14)
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
-	movq	32(%rsp), %rdi                  # 8-byte Reload
+	movq	24(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$178, (%rax)
 	movq	%r15, 8(%rax)
 	movq	%rax, 48(%r14)
 	movq	cFW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word8(%rip), %rsi
-	movq	40(%rsp), %rdi                  # 8-byte Reload
+	movq	32(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word8+3, (%rax)
-	movzbl	15(%rsp), %eax                  # 1-byte Folded Reload
+	movzbl	11(%rsp), %eax                  # 1-byte Folded Reload
 	movb	%al, 16(%r15)
 	movq	%r12, 8(%r15)
 	orq	$1, %r15
 	movq	%r15, 56(%r14)
 	movq	cFJhc_Show_showString(%rip), %rsi
-	movq	48(%rsp), %rdi                  # 8-byte Reload
+	movq	40(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r12
 	movq	%r12, 64(%r14)
 	movq	cFJhc_Show_showString(%rip), %rsi
-	movq	56(%rsp), %rdi                  # 8-byte Reload
+	movq	48(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c148, 8(%rax)
+	movq	$_c106, 8(%rax)
 	movq	%r12, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 72(%r14)
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
-	movq	64(%rsp), %rdi                  # 8-byte Reload
+	movq	56(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$178, (%rax)
 	movq	%r15, 8(%rax)
 	movq	%rax, 80(%r14)
 	movq	cFW$__fJhc_Inst_Show_showWordMax(%rip), %rsi
-	movq	72(%rsp), %rdi                  # 8-byte Reload
+	movq	64(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fW$__fJhc_Inst_Show_showWordMax+3, (%rax)
-	movq	96(%rsp), %rax                  # 8-byte Reload
+	movq	88(%rsp), %rax                  # 8-byte Reload
 	movq	%rax, 16(%r15)
 	movq	%r12, 8(%r15)
 	orq	$1, %r15
 	movq	%r15, 88(%r14)
 	movq	cFJhc_Show_showString(%rip), %rsi
-	movq	80(%rsp), %rdi                  # 8-byte Reload
+	movq	72(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r12
 	movq	%r12, 96(%r14)
 	movq	cFJhc_Show_showString(%rip), %rsi
-	movq	88(%rsp), %rdi                  # 8-byte Reload
+	movq	80(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c169, 8(%rax)
+	movq	$_c132, 8(%rax)
 	movq	%r12, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 104(%r14)
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
-	movq	104(%rsp), %rdi                 # 8-byte Reload
+	movq	96(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$178, (%rax)
 	movq	%r15, 8(%rax)
 	movq	%rax, 112(%r14)
-	movq	cFJhc_Show_showsPrec$d8(%rip), %rsi
-	movq	112(%rsp), %rdi                 # 8-byte Reload
+	movq	cFJhc_Show_showsPrec$d5(%rip), %rsi
+	movq	104(%rsp), %rdi                 # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$E__fJhc_Show_showsPrec$d8+3, (%rax)
-	movzwl	16(%rsp), %eax                  # 2-byte Folded Reload
+	movq	$E__fJhc_Show_showsPrec$d5+3, (%rax)
+	movq	%r12, 8(%rax)
+	movzwl	12(%rsp), %eax                  # 2-byte Folded Reload
 	movw	%ax, 16(%r15)
-	movq	%r12, 8(%r15)
 	orq	$1, %r15
 	movq	%r15, 120(%r14)
 	movq	cFJhc_Show_showString(%rip), %rsi
-	movq	120(%rsp), %rdi                 # 8-byte Reload
+	movq	112(%rsp), %rdi                 # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r12
 	movq	%r12, 128(%r14)
 	movq	cFJhc_Show_showString(%rip), %rsi
-	movq	128(%rsp), %rdi                 # 8-byte Reload
+	movq	120(%rsp), %rdi                 # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c154, 8(%rax)
+	movq	$_c112, 8(%rax)
 	movq	%r12, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 136(%r14)
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
-	movq	136(%rsp), %rdi                 # 8-byte Reload
+	movq	128(%rsp), %rdi                 # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$178, (%rax)
 	movq	%r15, 8(%rax)
 	movq	%rax, 144(%r14)
 	movq	cP1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController$d2(%rip), %rsi
-	movq	144(%rsp), %rdi                 # 8-byte Reload
+	movq	136(%rsp), %rdi                 # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$2621442, (%rax)                # imm = 0x280002
-	movzwl	18(%rsp), %eax                  # 2-byte Folded Reload
+	movzwl	14(%rsp), %eax                  # 2-byte Folded Reload
 	movw	%ax, 8(%r15)
-	movl	20(%rsp), %eax                  # 4-byte Reload
-	movl	%eax, 10(%r15)
+	pshuflw	$225, 144(%rsp), %xmm0          # 16-byte Folded Reload
+                                        # xmm0 = mem[1,0,2,3,4,5,6,7]
+	movd	%xmm0, 10(%r15)
 	movl	$1, %edi
 	callq	c_assert
 	movq	%r15, 152(%r14)
@@ -10029,10 +10028,10 @@ E__fJhc_Show_showsPrec$d6:              # @"E__fJhc_Show_showsPrec$d6"
 	movq	%r12, 8(%rax)
 	movq	%rax, 160(%r14)
 	leaq	168(%r14), %rdi
-	movq	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336(%rip), %rsi
+	movq	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r12
-	movq	$E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336+3, (%rax)
+	movq	$E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398+3, (%rax)
 	movq	%r15, 8(%rax)
 	movq	%r13, 16(%rax)
 	orq	$1, %r12
@@ -10044,7 +10043,7 @@ E__fJhc_Show_showsPrec$d6:              # @"E__fJhc_Show_showsPrec$d6"
 	movq	$162, (%rax)
 	movq	%r12, 8(%rax)
 	movq	%rax, (%rbx)
-	addq	$152, %rsp
+	addq	$168, %rsp
 	.cfi_def_cfa_offset 56
 	popq	%rbx
 	.cfi_def_cfa_offset 48
@@ -10060,7 +10059,7 @@ E__fJhc_Show_showsPrec$d6:              # @"E__fJhc_Show_showsPrec$d6"
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end59:
-	.size	E__fJhc_Show_showsPrec$d6, .Lfunc_end59-E__fJhc_Show_showsPrec$d6
+	.size	E__fJhc_Show_showsPrec$d3, .Lfunc_end59-E__fJhc_Show_showsPrec$d3
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showString
@@ -10147,9 +10146,9 @@ E__fJhc_Show_showString:                # @E__fJhc_Show_showString
 	.size	E__fJhc_Show_showString, .Lfunc_end60-E__fJhc_Show_showString
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d7
-	.type	E__fJhc_Show_showsPrec$d7,@function
-E__fJhc_Show_showsPrec$d7:              # @"E__fJhc_Show_showsPrec$d7"
+	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d4
+	.type	E__fJhc_Show_showsPrec$d4,@function
+E__fJhc_Show_showsPrec$d4:              # @"E__fJhc_Show_showsPrec$d4"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -10177,8 +10176,8 @@ E__fJhc_Show_showsPrec$d7:              # @"E__fJhc_Show_showsPrec$d7"
 	movq	%rsi, %rax
 	orq	$1, %rax
 	movq	%rax, (%rdi)
-	movq	8(%rsi), %rsi
-	movq	16(%rbx), %r13
+	movq	8(%rsi), %r13
+	movq	16(%rsi), %rsi
 	movq	%r13, 8(%rdi)
 	leaq	16(%rdi), %r15
 	movq	%r15, %rdi
@@ -10213,10 +10212,10 @@ E__fJhc_Show_showsPrec$d7:              # @"E__fJhc_Show_showsPrec$d7"
 	movq	%r15, 8(%rax)
 	movq	%rax, 32(%r14)
 	leaq	40(%r14), %rdi
-	movq	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348(%rip), %rsi
+	movq	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348+3, (%rax)
+	movq	$E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410+3, (%rax)
 	movq	%r12, 8(%rax)
 	movq	%r13, 16(%rax)
 	orq	$1, %r15
@@ -10244,7 +10243,7 @@ E__fJhc_Show_showsPrec$d7:              # @"E__fJhc_Show_showsPrec$d7"
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end61:
-	.size	E__fJhc_Show_showsPrec$d7, .Lfunc_end61-E__fJhc_Show_showsPrec$d7
+	.size	E__fJhc_Show_showsPrec$d4, .Lfunc_end61-E__fJhc_Show_showsPrec$d4
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word8
@@ -10459,9 +10458,9 @@ E__fW$__fJhc_Inst_Show_showWordMax:     # @"E__fW$__fJhc_Inst_Show_showWordMax"
 	.size	E__fW$__fJhc_Inst_Show_showWordMax, .Lfunc_end63-E__fW$__fJhc_Inst_Show_showWordMax
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d8
-	.type	E__fJhc_Show_showsPrec$d8,@function
-E__fJhc_Show_showsPrec$d8:              # @"E__fJhc_Show_showsPrec$d8"
+	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d5
+	.type	E__fJhc_Show_showsPrec$d5,@function
+E__fJhc_Show_showsPrec$d5:              # @"E__fJhc_Show_showsPrec$d5"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -10489,8 +10488,8 @@ E__fJhc_Show_showsPrec$d8:              # @"E__fJhc_Show_showsPrec$d8"
 	movq	%rsi, %rax
 	orq	$1, %rax
 	movq	%rax, (%rdi)
-	movzwl	16(%rsi), %eax
 	movq	8(%rsi), %r15
+	movzwl	16(%rsi), %eax
 	testw	%ax, %ax
 	je	.LBB64_1
 # %bb.2:
@@ -10498,10 +10497,10 @@ E__fJhc_Show_showsPrec$d8:              # @"E__fJhc_Show_showsPrec$d8"
 	cmpw	$1, %ax
 	sete	%dil
 	callq	c_assert
-	movl	$_c91, %esi
+	movl	$_c49, %esi
 	jmp	.LBB64_3
 .LBB64_1:
-	movl	$_c87, %esi
+	movl	$_c45, %esi
 .LBB64_3:
 	movq	%r15, 8(%r14)
 	leaq	16(%r14), %r12
@@ -10552,12 +10551,12 @@ E__fJhc_Show_showsPrec$d8:              # @"E__fJhc_Show_showsPrec$d8"
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end64:
-	.size	E__fJhc_Show_showsPrec$d8, .Lfunc_end64-E__fJhc_Show_showsPrec$d8
+	.size	E__fJhc_Show_showsPrec$d5, .Lfunc_end64-E__fJhc_Show_showsPrec$d5
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348
-	.type	E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348,@function
-E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348: # @"E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410
+	.type	E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410,@function
+E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410: # @"E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -10579,12 +10578,12 @@ E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348: # @
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end65:
-	.size	E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348, .Lfunc_end65-E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348
+	.size	E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410, .Lfunc_end65-E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336
-	.type	E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336,@function
-E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336: # @"E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398
+	.type	E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398,@function
+E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398: # @"E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -10606,12 +10605,12 @@ E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336: # @"E
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end66:
-	.size	E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336, .Lfunc_end66-E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336
+	.size	E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398, .Lfunc_end66-E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d10
-	.type	E__fJhc_Show_showsPrec$d10,@function
-E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
+	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d7
+	.type	E__fJhc_Show_showsPrec$d7,@function
+E__fJhc_Show_showsPrec$d7:              # @"E__fJhc_Show_showsPrec$d7"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -10626,37 +10625,37 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	.cfi_def_cfa_offset 48
 	pushq	%rbx
 	.cfi_def_cfa_offset 56
-	subq	$104, %rsp
-	.cfi_def_cfa_offset 160
+	subq	$120, %rsp
+	.cfi_def_cfa_offset 176
 	.cfi_offset %rbx, -56
 	.cfi_offset %r12, -48
 	.cfi_offset %r13, -40
 	.cfi_offset %r14, -32
 	.cfi_offset %r15, -24
 	.cfi_offset %rbp, -16
+	movq	%rsi, %rbx
 	movq	%rdi, %r14
-	movq	%rsi, %rcx
-	movq	%rsi, 96(%rsp)                  # 8-byte Spill
 	movq	%rsi, %rax
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	movq	8(%rsi), %r12
-	movq	16(%rsi), %rbx
-	movzbl	34(%rsi), %eax
-	movb	%al, 7(%rsp)                    # 1-byte Spill
+	movq	16(%rsi), %r13
 	movq	24(%rsi), %rsi
-	movzwl	32(%rcx), %eax
-	movw	%ax, 8(%rsp)                    # 2-byte Spill
-	movq	%r12, 8(%rdi)
-	movq	%rbx, 16(%rdi)
+	movzbl	34(%rbx), %eax
+	movb	%al, 3(%rsp)                    # 1-byte Spill
+	movzwl	32(%rbx), %eax
+	movw	%ax, 4(%rsp)                    # 2-byte Spill
+	movq	%r13, 8(%rdi)
+	movq	%r12, 16(%rdi)
 	leaq	24(%rdi), %rbp
 	movq	%rbp, %rdi
 	callq	eval
-	movzwl	4(%rax), %ecx
-	movw	%cx, 10(%rsp)                   # 2-byte Spill
-	movq	cFJhc_Show_showsPrec$d11(%rip), %rsi
+	movzwl	(%rax), %ecx
+	movw	%cx, 6(%rsp)                    # 2-byte Spill
+	movq	cFJhc_Show_showsPrec$d8(%rip), %rsi
 	leaq	32(%r14), %r15
-	leaq	40(%r14), %r13
+	leaq	40(%r14), %rcx
+	movq	%rcx, 8(%rsp)                   # 8-byte Spill
 	leaq	48(%r14), %rcx
 	movq	%rcx, 16(%rsp)                  # 8-byte Spill
 	leaq	56(%r14), %rcx
@@ -10675,16 +10674,16 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	movq	%rcx, 72(%rsp)                  # 8-byte Spill
 	leaq	112(%r14), %rcx
 	movq	%rcx, 80(%rsp)                  # 8-byte Spill
-	leaq	120(%r14), %rcx
-	movq	%rcx, 88(%rsp)                  # 8-byte Spill
-	movl	(%rax), %eax
-	movl	%eax, 12(%rsp)                  # 4-byte Spill
+	movss	2(%rax), %xmm0                  # xmm0 = mem[0],zero,zero,zero
+	movaps	%xmm0, 96(%rsp)                 # 16-byte Spill
+	leaq	120(%r14), %rax
+	movq	%rax, 88(%rsp)                  # 8-byte Spill
 	movq	%rbp, %rdi
 	callq	s_alloc
 	movq	%rax, %rbp
-	movq	$E__fJhc_Show_showsPrec$d11+3, (%rax)
+	movq	$E__fJhc_Show_showsPrec$d8+3, (%rax)
 	movq	%r12, 8(%rax)
-	movq	%rbx, 16(%rax)
+	movq	%r13, 16(%rax)
 	orq	$1, %rbp
 	movq	%rbp, 24(%r14)
 	movq	cFJhc_Show_showString(%rip), %rsi
@@ -10692,16 +10691,16 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%rbp, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 32(%r14)
 	movq	cFJhc_Show_showString(%rip), %rsi
-	movq	%r13, %rdi
+	movq	8(%rsp), %rdi                   # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c142, 8(%rax)
+	movq	$_c100, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r13
 	movq	%r13, 40(%r14)
@@ -10717,7 +10716,7 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word8+3, (%rax)
-	movzbl	7(%rsp), %eax                   # 1-byte Folded Reload
+	movzbl	3(%rsp), %eax                   # 1-byte Folded Reload
 	movb	%al, 16(%r12)
 	movq	%r15, 8(%r12)
 	orq	$1, %r12
@@ -10727,7 +10726,7 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%r12, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 64(%r14)
@@ -10736,7 +10735,7 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c148, 8(%rax)
+	movq	$_c106, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r12
 	movq	%r12, 72(%r14)
@@ -10747,13 +10746,13 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	movq	$178, (%rax)
 	movq	%r12, 8(%rax)
 	movq	%rax, 80(%r14)
-	movq	cFJhc_Show_showsPrec$d12(%rip), %rsi
+	movq	cFJhc_Show_showsPrec$d9(%rip), %rsi
 	movq	56(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r12
-	movq	$E__fJhc_Show_showsPrec$d12+3, (%rax)
+	movq	$E__fJhc_Show_showsPrec$d9+3, (%rax)
 	movq	%r15, 8(%rax)
-	movzwl	8(%rsp), %eax                   # 2-byte Folded Reload
+	movzwl	4(%rsp), %eax                   # 2-byte Folded Reload
 	movw	%ax, 16(%r12)
 	orq	$1, %r12
 	movq	%r12, 88(%r14)
@@ -10762,7 +10761,7 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c101, 8(%rax)
+	movq	$_c59, 8(%rax)
 	movq	%r12, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 96(%r14)
@@ -10771,7 +10770,7 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fJhc_Show_showString+3, (%rax)
-	movq	$_c154, 8(%rax)
+	movq	$_c112, 8(%rax)
 	movq	%r15, 16(%rax)
 	orq	$1, %r12
 	movq	%r12, 104(%r14)
@@ -10787,10 +10786,11 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$2621442, (%rax)                # imm = 0x280002
-	movzwl	10(%rsp), %eax                  # 2-byte Folded Reload
+	movzwl	6(%rsp), %eax                   # 2-byte Folded Reload
 	movw	%ax, 8(%r12)
-	movl	12(%rsp), %eax                  # 4-byte Reload
-	movl	%eax, 10(%r12)
+	pshuflw	$225, 96(%rsp), %xmm0           # 16-byte Folded Reload
+                                        # xmm0 = mem[1,0,2,3,4,5,6,7]
+	movd	%xmm0, 10(%r12)
 	movl	$1, %edi
 	callq	c_assert
 	movq	%r12, 120(%r14)
@@ -10802,10 +10802,10 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	movq	%r15, 8(%rax)
 	movq	%rax, 128(%r14)
 	leaq	136(%r14), %rdi
-	movq	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336(%rip), %rsi
+	movq	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336+3, (%rax)
+	movq	$E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398+3, (%rax)
 	movq	%r12, 8(%rax)
 	movq	%r13, 16(%rax)
 	orq	$1, %r15
@@ -10816,9 +10816,8 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	callq	s_alloc
 	movq	$162, (%rax)
 	movq	%r15, 8(%rax)
-	movq	96(%rsp), %rcx                  # 8-byte Reload
-	movq	%rax, (%rcx)
-	addq	$104, %rsp
+	movq	%rax, (%rbx)
+	addq	$120, %rsp
 	.cfi_def_cfa_offset 56
 	popq	%rbx
 	.cfi_def_cfa_offset 48
@@ -10834,12 +10833,12 @@ E__fJhc_Show_showsPrec$d10:             # @"E__fJhc_Show_showsPrec$d10"
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end67:
-	.size	E__fJhc_Show_showsPrec$d10, .Lfunc_end67-E__fJhc_Show_showsPrec$d10
+	.size	E__fJhc_Show_showsPrec$d7, .Lfunc_end67-E__fJhc_Show_showsPrec$d7
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d11
-	.type	E__fJhc_Show_showsPrec$d11,@function
-E__fJhc_Show_showsPrec$d11:             # @"E__fJhc_Show_showsPrec$d11"
+	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d8
+	.type	E__fJhc_Show_showsPrec$d8,@function
+E__fJhc_Show_showsPrec$d8:              # @"E__fJhc_Show_showsPrec$d8"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -10903,10 +10902,10 @@ E__fJhc_Show_showsPrec$d11:             # @"E__fJhc_Show_showsPrec$d11"
 	movq	%r15, 8(%rax)
 	movq	%rax, 32(%r14)
 	leaq	40(%r14), %rdi
-	movq	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348(%rip), %rsi
+	movq	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348+3, (%rax)
+	movq	$E__bap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410+3, (%rax)
 	movq	%r12, 8(%rax)
 	movq	%r13, 16(%rax)
 	orq	$1, %r15
@@ -10934,12 +10933,12 @@ E__fJhc_Show_showsPrec$d11:             # @"E__fJhc_Show_showsPrec$d11"
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end68:
-	.size	E__fJhc_Show_showsPrec$d11, .Lfunc_end68-E__fJhc_Show_showsPrec$d11
+	.size	E__fJhc_Show_showsPrec$d8, .Lfunc_end68-E__fJhc_Show_showsPrec$d8
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d12
-	.type	E__fJhc_Show_showsPrec$d12,@function
-E__fJhc_Show_showsPrec$d12:             # @"E__fJhc_Show_showsPrec$d12"
+	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d9
+	.type	E__fJhc_Show_showsPrec$d9,@function
+E__fJhc_Show_showsPrec$d9:              # @"E__fJhc_Show_showsPrec$d9"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -10976,10 +10975,10 @@ E__fJhc_Show_showsPrec$d12:             # @"E__fJhc_Show_showsPrec$d12"
 	cmpw	$1, %ax
 	sete	%dil
 	callq	c_assert
-	movl	$_c91, %esi
+	movl	$_c49, %esi
 	jmp	.LBB69_3
 .LBB69_1:
-	movl	$_c87, %esi
+	movl	$_c45, %esi
 .LBB69_3:
 	movq	%r15, 8(%r14)
 	leaq	16(%r14), %r12
@@ -11030,7 +11029,7 @@ E__fJhc_Show_showsPrec$d12:             # @"E__fJhc_Show_showsPrec$d12"
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end69:
-	.size	E__fJhc_Show_showsPrec$d12, .Lfunc_end69-E__fJhc_Show_showsPrec$d12
+	.size	E__fJhc_Show_showsPrec$d9, .Lfunc_end69-E__fJhc_Show_showsPrec$d9
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -11169,7 +11168,7 @@ fJhc_Text_Read_80__lexExp:              # @fJhc_Text_Read_80__lexExp
 	movq	%r13, 8(%rbx)
 	movq	%r15, 16(%rbx)
 	leaq	24(%rbx), %r12
-	movl	$_c299, %edx
+	movl	$_c596, %edx
 	movq	%r12, %rdi
 	movq	%r15, %rsi
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -11582,8 +11581,8 @@ E__fJhc_Text_Read_lex$d26:              # @"E__fJhc_Text_Read_lex$d26"
 	callq	eval
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%r13, 16(%r14)
-	movq	%rbp, 24(%r14)
+	movq	%rbp, 16(%r14)
+	movq	%r13, 24(%r14)
 	leaq	32(%r14), %rdi
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
@@ -11761,8 +11760,8 @@ fJhc_Text_Read_nonnull$d4:              # @"fJhc_Text_Read_nonnull$d4"
 .LBB78_3:
 	movl	$65538, %r15d                   # imm = 0x10002
 .LBB78_5:
-	movq	%r15, 24(%rbx)
-	movq	%r13, 32(%rbx)
+	movq	%r13, 24(%rbx)
+	movq	%r15, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cFJhc_Text_Read_nonnull$d4(%rip), %rsi
 	callq	s_alloc
@@ -11889,7 +11888,7 @@ fW$__fJhc_List_span$d2:                 # @"fW$__fJhc_List_span$d2"
 	leaq	48(%rbx), %rbp
 	movq	%rbp, %rdi
 	movq	%rdx, (%rsp)                    # 8-byte Spill
-	callq	bapply__82734
+	callq	bapply__87951
 	shrl	$2, %eax
 	andl	$65535, %eax                    # imm = 0xFFFF
 	je	.LBB79_4
@@ -12146,8 +12145,8 @@ fJhc_Text_Read_lex$d30:                 # @"fJhc_Text_Read_lex$d30"
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fJhc_Text_Read_lex$d31+3, (%rax)
-	movq	%r14, 8(%rax)
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	%r14, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 24(%rbx)
 	leaq	32(%rbx), %rdi
@@ -12237,15 +12236,15 @@ E__fJhc_Text_Read_lex$d31:              # @"E__fJhc_Text_Read_lex$d31"
 	movq	%rsi, %rax
 	orq	$1, %rax
 	movq	%rax, (%rdi)
-	movq	8(%rsi), %r12
-	movq	16(%rsi), %rsi
+	movq	8(%rsi), %rsi
+	movq	16(%rbx), %r12
 	movq	%r12, 8(%rdi)
 	addq	$16, %rdi
 	callq	eval
 	movq	(%rax), %rbp
 	movq	8(%rax), %r13
-	movq	%rbp, 16(%r14)
-	movq	%r13, 24(%r14)
+	movq	%r13, 16(%r14)
+	movq	%rbp, 24(%r14)
 	leaq	32(%r14), %rdi
 	movq	cFJhc_Basics_$pp(%rip), %rsi
 	callq	s_alloc
@@ -12341,8 +12340,8 @@ fJhc_Text_Read_lex$d28:                 # @"fJhc_Text_Read_lex$d28"
 	movq	%rdx, %r14
 	movq	%rsi, %r15
 	movq	%rdi, %rbx
-	movq	%rsi, (%rdi)
-	movq	%rdx, 8(%rdi)
+	movq	%rdx, (%rdi)
+	movq	%rsi, 8(%rdi)
 	addq	$16, %rdi
 	movq	%rcx, %rsi
 	callq	eval
@@ -12351,8 +12350,8 @@ fJhc_Text_Read_lex$d28:                 # @"fJhc_Text_Read_lex$d28"
 # %bb.2:
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%rbp, 16(%rbx)
-	movq	%r13, 24(%rbx)
+	movq	%r13, 16(%rbx)
+	movq	%rbp, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cFJhc_Text_Read_lex$d29(%rip), %rsi
 	callq	s_alloc
@@ -12402,9 +12401,9 @@ fJhc_Text_Read_lex$d28:                 # @"fJhc_Text_Read_lex$d28"
 	.size	fJhc_Text_Read_lex$d28, .Lfunc_end88-fJhc_Text_Read_lex$d28
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__Jhc_Text_Read_lex$d27u101218
-	.type	E__bap__1__Jhc_Text_Read_lex$d27u101218,@function
-E__bap__1__Jhc_Text_Read_lex$d27u101218: # @"E__bap__1__Jhc_Text_Read_lex$d27u101218"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__Jhc_Text_Read_lex$d27u101260
+	.type	E__bap__1__Jhc_Text_Read_lex$d27u101260,@function
+E__bap__1__Jhc_Text_Read_lex$d27u101260: # @"E__bap__1__Jhc_Text_Read_lex$d27u101260"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -12424,7 +12423,7 @@ E__bap__1__Jhc_Text_Read_lex$d27u101218: # @"E__bap__1__Jhc_Text_Read_lex$d27u10
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end89:
-	.size	E__bap__1__Jhc_Text_Read_lex$d27u101218, .Lfunc_end89-E__bap__1__Jhc_Text_Read_lex$d27u101218
+	.size	E__bap__1__Jhc_Text_Read_lex$d27u101260, .Lfunc_end89-E__bap__1__Jhc_Text_Read_lex$d27u101260
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fJhc_Text_Read_lex$d29
@@ -12467,8 +12466,8 @@ E__fJhc_Text_Read_lex$d29:              # @"E__fJhc_Text_Read_lex$d29"
 	movq	(%rax), %r13
 	movq	8(%rax), %rax
 	movq	%rax, (%rsp)                    # 8-byte Spill
-	movq	%rax, 24(%r14)
-	movq	%r13, 32(%r14)
+	movq	%r13, 24(%r14)
+	movq	%rax, 32(%r14)
 	leaq	40(%r14), %rdi
 	movq	cFJhc_Basics_$pp(%rip), %rsi
 	callq	s_alloc
@@ -12584,8 +12583,8 @@ fJhc_Text_Read_lex$d22:                 # @"fJhc_Text_Read_lex$d22"
 	movq	%rax, %r12
 	movq	$E__fJhc_Text_Read_lex$d23+3, (%rax)
 	movq	%r15, 8(%rax)
-	movq	%r13, 16(%rax)
-	movq	%r14, 24(%rax)
+	movq	%r14, 16(%rax)
+	movq	%r13, 24(%rax)
 	orq	$1, %r12
 	movq	%r12, 32(%rbx)
 	leaq	40(%rbx), %rdi
@@ -12659,10 +12658,10 @@ E__fJhc_Text_Read_lex$d23:              # @"E__fJhc_Text_Read_lex$d23"
 	movq	%rax, (%rdi)
 	movq	8(%rsi), %rax
 	movq	%rax, (%rsp)                    # 8-byte Spill
-	movq	16(%rsi), %rsi
-	movq	24(%rbx), %r12
-	movq	%r12, 8(%rdi)
-	movq	%rax, 16(%rdi)
+	movq	16(%rsi), %r12
+	movq	24(%rsi), %rsi
+	movq	%rax, 8(%rdi)
+	movq	%r12, 16(%rdi)
 	addq	$24, %rdi
 	callq	eval
 	movq	(%rax), %r13
@@ -12735,9 +12734,9 @@ E__fJhc_Text_Read_lex$d22:              # @"E__fJhc_Text_Read_lex$d22"
 	.size	E__fJhc_Text_Read_lex$d22, .Lfunc_end94-E__fJhc_Text_Read_lex$d22
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__Jhc_Text_Read_lex$d21u101230
-	.type	E__bap__1__Jhc_Text_Read_lex$d21u101230,@function
-E__bap__1__Jhc_Text_Read_lex$d21u101230: # @"E__bap__1__Jhc_Text_Read_lex$d21u101230"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__Jhc_Text_Read_lex$d21u101272
+	.type	E__bap__1__Jhc_Text_Read_lex$d21u101272,@function
+E__bap__1__Jhc_Text_Read_lex$d21u101272: # @"E__bap__1__Jhc_Text_Read_lex$d21u101272"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -12757,7 +12756,7 @@ E__bap__1__Jhc_Text_Read_lex$d21u101230: # @"E__bap__1__Jhc_Text_Read_lex$d21u10
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end95:
-	.size	E__bap__1__Jhc_Text_Read_lex$d21u101230, .Lfunc_end95-E__bap__1__Jhc_Text_Read_lex$d21u101230
+	.size	E__bap__1__Jhc_Text_Read_lex$d21u101272, .Lfunc_end95-E__bap__1__Jhc_Text_Read_lex$d21u101272
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fJhc_Text_Read_readDec$d6
@@ -12962,9 +12961,9 @@ E__fPrelude_Text_read$d4:               # @"E__fPrelude_Text_read$d4"
 	.size	E__fPrelude_Text_read$d4, .Lfunc_end98-E__fPrelude_Text_read$d4
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__Prelude_Text_read$d3u101202
-	.type	E__bap__1__Prelude_Text_read$d3u101202,@function
-E__bap__1__Prelude_Text_read$d3u101202: # @"E__bap__1__Prelude_Text_read$d3u101202"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__Prelude_Text_read$d3u101244
+	.type	E__bap__1__Prelude_Text_read$d3u101244,@function
+E__bap__1__Prelude_Text_read$d3u101244: # @"E__bap__1__Prelude_Text_read$d3u101244"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -12984,7 +12983,7 @@ E__bap__1__Prelude_Text_read$d3u101202: # @"E__bap__1__Prelude_Text_read$d3u1012
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end99:
-	.size	E__bap__1__Prelude_Text_read$d3u101202, .Lfunc_end99-E__bap__1__Prelude_Text_read$d3u101202
+	.size	E__bap__1__Prelude_Text_read$d3u101244, .Lfunc_end99-E__bap__1__Prelude_Text_read$d3u101244
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d3
@@ -13017,8 +13016,8 @@ E__fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d3: # @"E__fW$__fIn
 	movq	%rsi, %rax
 	orq	$1, %rax
 	movq	%rax, (%rdi)
-	movq	8(%rsi), %r15
 	movzwl	16(%rsi), %eax
+	movq	8(%rsi), %r15
 	testw	%ax, %ax
 	je	.LBB100_1
 # %bb.2:
@@ -13026,10 +13025,10 @@ E__fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d3: # @"E__fW$__fIn
 	cmpw	$1, %ax
 	sete	%dil
 	callq	c_assert
-	movl	$_c98, %esi
+	movl	$_c56, %esi
 	jmp	.LBB100_3
 .LBB100_1:
-	movl	$_c95, %esi
+	movl	$_c53, %esi
 .LBB100_3:
 	movq	%r15, 8(%r14)
 	leaq	16(%r14), %r12
@@ -13122,10 +13121,10 @@ E__fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d4: # @"E__fW$__fIn
 	cmpw	$1, %ax
 	sete	%dil
 	callq	c_assert
-	movl	$_c98, %esi
+	movl	$_c56, %esi
 	jmp	.LBB101_3
 .LBB101_1:
-	movl	$_c95, %esi
+	movl	$_c53, %esi
 .LBB101_3:
 	movq	%r15, 8(%r14)
 	leaq	16(%r14), %r12
@@ -13218,10 +13217,10 @@ E__fW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d5: # @"E__fW$__fIn
 	cmpw	$1, %ax
 	sete	%dil
 	callq	c_assert
-	movl	$_c98, %esi
+	movl	$_c56, %esi
 	jmp	.LBB102_3
 .LBB102_1:
-	movl	$_c95, %esi
+	movl	$_c53, %esi
 .LBB102_3:
 	movq	%r15, 8(%r14)
 	leaq	16(%r14), %r12
@@ -13507,7 +13506,7 @@ E__ftheMain$d26:                        # @"E__ftheMain$d26"
 	movq	%rax, (%rdi)
 	addq	$8, %rdi
 	movq	8(%rsi), %rdx
-	movl	$_c389, %esi
+	movl	$_c684, %esi
 	callq	fPrelude_lookup
 	cmpq	$2, %rax
 	je	.LBB105_1
@@ -13573,7 +13572,7 @@ E__ftheMain$d27:                        # @"E__ftheMain$d27"
 	movq	%rax, (%rdi)
 	addq	$8, %rdi
 	movq	8(%rsi), %rdx
-	movl	$_c370, %esi
+	movl	$_c665, %esi
 	callq	fPrelude_lookup
 	cmpq	$2, %rax
 	je	.LBB106_1
@@ -13639,7 +13638,7 @@ E__ftheMain$d28:                        # @"E__ftheMain$d28"
 	movq	%rax, (%rdi)
 	addq	$8, %rdi
 	movq	8(%rsi), %rdx
-	movl	$_c351, %esi
+	movl	$_c646, %esi
 	callq	fPrelude_lookup
 	cmpq	$2, %rax
 	je	.LBB107_1
@@ -14039,8 +14038,8 @@ E__fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3: # @"E__fW$__fIn
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
-	movslq	16(%rsi), %r15
 	movq	8(%rsi), %rsi
+	movslq	16(%rbx), %r15
 	movq	%r14, %rdi
 	callq	eval
 	addq	(%rax), %r15
@@ -14178,7 +14177,7 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	fJhc_Show_showsPrec$d4          # TAILCALL
+	jmp	fJhc_Show_showsPrec$d12         # TAILCALL
 .LBB118_11:
 	.cfi_def_cfa_offset 80
 	movq	%r14, (%rbx)
@@ -14193,7 +14192,7 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	cmpl	$1, %eax
 	sete	%dil
 	callq	c_assert
-	movl	$_c91, %esi
+	movl	$_c49, %esi
 	jmp	.LBB118_40
 .LBB118_13:
 	movl	(%rdx), %eax
@@ -14211,37 +14210,37 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	cmpq	$65535, %rcx                    # imm = 0xFFFF
 	ja	.LBB118_34
 # %bb.16:
-	movq	8(%rax), %r12
-	movq	16(%rax), %rbp
+	movq	8(%rax), %r13
+	movq	16(%rax), %r12
 	movzwl	32(%rax), %ecx
 	movw	%cx, 10(%rsp)                   # 2-byte Spill
 	movq	24(%rax), %r15
-	movzbl	34(%rax), %r13d
-	movq	%rbp, 8(%rbx)
-	movq	%r12, 16(%rbx)
+	movzbl	34(%rax), %ebp
+	movq	%r12, 8(%rbx)
+	movq	%r13, 16(%rbx)
 	leaq	24(%rbx), %rdi
-	movq	cP1__Jhc_Show_showsPrec$d5(%rip), %rsi
+	movq	cP1__Jhc_Show_showsPrec$d2(%rip), %rsi
 	movq	%rdi, 16(%rsp)                  # 8-byte Spill
 	callq	s_alloc
-	movq	%r15, %r9
+	movq	%r15, %rsi
 	movq	%rax, %r15
 	movzwl	10(%rsp), %eax                  # 2-byte Folded Reload
 	movq	$458754, (%r15)                 # imm = 0x70002
-	movq	%rbp, 8(%r15)
-	movb	%r13b, 34(%r15)
-	movq	%r12, 16(%r15)
+	movq	%rsi, 24(%r15)
+	movb	%bpl, 34(%r15)
+	movq	%r13, 8(%r15)
 	movw	%ax, 32(%r15)
-	movq	%r9, 24(%r15)
+	movq	%r12, 16(%r15)
 	cmpl	$9, 12(%rsp)                    # 4-byte Folded Reload
 	jg	.LBB118_55
 # %bb.17:
 	movq	%r14, (%rsp)
-	movzbl	%r13b, %edx
+	movzbl	%bpl, %edx
 	movzwl	%ax, %r8d
 	movq	16(%rsp), %rdi                  # 8-byte Reload
-	movq	%rbp, %rsi
-	movq	%r12, %rcx
-	callq	fJhc_Show_showsPrec$d5
+	movq	%r13, %rcx
+	movq	%r12, %r9
+	callq	fJhc_Show_showsPrec$d2
 	jmp	.LBB118_62
 .LBB118_18:
 	movq	%r14, (%rbx)
@@ -14275,11 +14274,11 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	fJhc_Show_showsPrec$d3          # TAILCALL
+	jmp	fJhc_Show_showsPrec$d11         # TAILCALL
 .LBB118_21:
 	.cfi_def_cfa_offset 80
-	movq	%rcx, (%rbx)
-	movq	%r14, 8(%rbx)
+	movq	%r14, (%rbx)
+	movq	%rcx, 8(%rbx)
 	leaq	16(%rbx), %rdi
 	movq	cFPrelude_Text_30__showl(%rip), %rsi
 	movq	%rcx, %r12
@@ -14447,8 +14446,8 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	movq	8(%rax), %r13
 	movq	16(%rax), %rbp
 	movq	%rbp, 8(%rbx)
-	movq	%r13, 16(%rbx)
-	movq	%r12, 24(%rbx)
+	movq	%r12, 16(%rbx)
+	movq	%r13, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
@@ -14461,7 +14460,7 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$E__fJhc_Show_shows+3, (%rax)
-	movq	$_c512, 8(%rax)
+	movq	$_c379, 8(%rax)
 	movq	%rbp, 16(%rax)
 	movq	%r15, 24(%rax)
 	orq	$1, %r14
@@ -14478,7 +14477,7 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$E__fJhc_Show_shows+3, (%rax)
-	movq	$_c512, 8(%rax)
+	movq	$_c379, 8(%rax)
 	movq	%r13, 16(%rax)
 	movq	%r15, 24(%rax)
 	orq	$1, %r14
@@ -14495,7 +14494,7 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$E__fJhc_Show_shows+3, (%rax)
-	movq	$_c512, 8(%rax)
+	movq	$_c379, 8(%rax)
 	movq	%r12, 16(%rax)
 	movq	%r15, 24(%rax)
 	orq	$1, %r14
@@ -14567,10 +14566,10 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	movzwl	24(%rax), %ecx
 	movw	%cx, 10(%rsp)                   # 2-byte Spill
 	movzbl	26(%rax), %r15d
-	movq	%r12, 8(%rbx)
-	movq	%r13, 16(%rbx)
+	movq	%r13, 8(%rbx)
+	movq	%r12, 16(%rbx)
 	leaq	24(%rbx), %rbp
-	movq	cP1__Jhc_Show_showsPrec$d9(%rip), %rsi
+	movq	cP1__Jhc_Show_showsPrec$d6(%rip), %rsi
 	movq	%rbp, %rdi
 	callq	s_alloc
 	movl	%r15d, %ecx
@@ -14578,17 +14577,17 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	movzwl	10(%rsp), %eax                  # 2-byte Folded Reload
 	movq	$524290, (%r15)                 # imm = 0x80002
 	movq	%r13, 8(%r15)
-	movb	%cl, 26(%r15)
 	movq	%r12, 16(%r15)
+	movb	%cl, 26(%r15)
 	movw	%ax, 24(%r15)
 	cmpl	$9, 12(%rsp)                    # 4-byte Folded Reload
 	jg	.LBB118_56
 # %bb.35:
-	movzbl	%cl, %edx
+	movzbl	%cl, %ecx
 	movzwl	%ax, %r8d
 	movq	%rbp, %rdi
 	movq	%r13, %rsi
-	movq	%r12, %rcx
+	movq	%r12, %rdx
 	movq	%r14, %r9
 	addq	$24, %rsp
 	.cfi_def_cfa_offset 56
@@ -14604,10 +14603,10 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	fJhc_Show_showsPrec$d9          # TAILCALL
+	jmp	fJhc_Show_showsPrec$d6          # TAILCALL
 .LBB118_39:
 	.cfi_def_cfa_offset 80
-	movl	$_c87, %esi
+	movl	$_c45, %esi
 .LBB118_40:
 	movq	%r14, 8(%rbx)
 	leaq	16(%rbx), %r15
@@ -14634,7 +14633,7 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 .LBB118_42:
 	movq	%r14, 16(%rbx)
 	leaq	24(%rbx), %r15
-	movl	$_c519, %esi
+	movl	$_c386, %esi
 	jmp	.LBB118_47
 .LBB118_43:
 	movl	$1, %edi
@@ -14659,17 +14658,17 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	fJhc_Show_showsPrec$d2          # TAILCALL
+	jmp	fJhc_Show_showsPrec$d10         # TAILCALL
 .LBB118_45:
 	.cfi_def_cfa_offset 80
 	movq	%r14, 16(%rbx)
 	leaq	24(%rbx), %r15
-	movl	$_c532, %esi
+	movl	$_c399, %esi
 	jmp	.LBB118_47
 .LBB118_46:
 	movq	%r14, 16(%rbx)
 	leaq	24(%rbx), %r15
-	movl	$_c547, %esi
+	movl	$_c414, %esi
 .LBB118_47:
 	movq	%r15, %rdi
 	callq	eval
@@ -14729,10 +14728,10 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	movq	%r14, 8(%rax)
 	movq	%rax, 24(%rbx)
 	leaq	32(%rbx), %rdi
-	movq	cFJhc_Show_showsPrec$d3(%rip), %rsi
+	movq	cFJhc_Show_showsPrec$d11(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r14
-	movq	$E__fJhc_Show_showsPrec$d3+3, (%rax)
+	movq	$E__fJhc_Show_showsPrec$d11+3, (%rax)
 	movq	%r15, 8(%rax)
 	movq	%r12, 16(%rax)
 	jmp	.LBB118_60
@@ -14760,10 +14759,10 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	movq	%r14, 8(%rax)
 	movq	%rax, 32(%rbx)
 	leaq	40(%rbx), %rdi
-	movq	cBap__1__Jhc_Show_showsPrec__101312(%rip), %rsi
+	movq	cBap__1__Jhc_Show_showsPrec__101322(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r14
-	movq	$E__bap__1__Jhc_Show_showsPrec__101312+3, (%rax)
+	movq	$E__bap__1__Jhc_Show_showsPrec__101322+3, (%rax)
 	jmp	.LBB118_57
 .LBB118_56:
 	movl	$1, %edi
@@ -14777,10 +14776,10 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	movq	%r14, 8(%rax)
 	movq	%rax, 32(%rbx)
 	leaq	40(%rbx), %rdi
-	movq	cBap__1__Jhc_Show_showsPrec__101320(%rip), %rsi
+	movq	cBap__1__Jhc_Show_showsPrec__101330(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r14
-	movq	$E__bap__1__Jhc_Show_showsPrec__101320+3, (%rax)
+	movq	$E__bap__1__Jhc_Show_showsPrec__101330+3, (%rax)
 .LBB118_57:
 	movq	%r15, 8(%rax)
 	movq	%r12, 16(%rax)
@@ -14799,7 +14798,7 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	movq	%r15, %rdi
 	movl	%ebp, %esi
 	movq	%rax, %rdx
-	callq	fJhc_Show_showsPrec$d2
+	callq	fJhc_Show_showsPrec$d10
 	movq	%rax, %r14
 	movq	%rax, 8(%rbx)
 	addq	$16, %rbx
@@ -14816,10 +14815,10 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	movq	%r14, 8(%rax)
 	movq	%rax, 24(%rbx)
 	leaq	32(%rbx), %rdi
-	movq	cFJhc_Show_showsPrec$d4(%rip), %rsi
+	movq	cFJhc_Show_showsPrec$d12(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r14
-	movq	$E__fJhc_Show_showsPrec$d4+3, (%rax)
+	movq	$E__fJhc_Show_showsPrec$d12+3, (%rax)
 	movq	%r12, 8(%rax)
 	movq	%r15, 16(%rax)
 .LBB118_60:
@@ -14853,7 +14852,7 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	movl	$10092, %edi                    # imm = 0x276C
 	callq	jhc_case_fell_off
 .LBB118_64:
-	movl	$9962, %edi                     # imm = 0x26EA
+	movl	$10087, %edi                    # imm = 0x2767
 	callq	jhc_case_fell_off
 .Lfunc_end118:
 	.size	fJhc_Show_showsPrec, .Lfunc_end118-fJhc_Show_showsPrec
@@ -14876,6 +14875,68 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	.quad	.LBB118_11
                                         # -- End function
 	.text
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__Jhc_Show_showsPrec__101322
+	.type	E__bap__1__Jhc_Show_showsPrec__101322,@function
+E__bap__1__Jhc_Show_showsPrec__101322:  # @E__bap__1__Jhc_Show_showsPrec__101322
+	.cfi_startproc
+# %bb.0:
+	pushq	%rbx
+	.cfi_def_cfa_offset 16
+	subq	$16, %rsp
+	.cfi_def_cfa_offset 32
+	.cfi_offset %rbx, -16
+	movq	%rsi, %rbx
+	movq	%rsi, %rax
+	orq	$1, %rax
+	movq	%rax, (%rdi)
+	addq	$8, %rdi
+	movq	8(%rsi), %rax
+	movq	16(%rsi), %r10
+	movq	24(%rax), %rsi
+	movzbl	34(%rax), %edx
+	movzwl	32(%rax), %r8d
+	movq	8(%rax), %rcx
+	movq	16(%rax), %r9
+	movq	%r10, (%rsp)
+	callq	fJhc_Show_showsPrec$d2
+	movq	%rax, (%rbx)
+	addq	$16, %rsp
+	.cfi_def_cfa_offset 16
+	popq	%rbx
+	.cfi_def_cfa_offset 8
+	retq
+.Lfunc_end119:
+	.size	E__bap__1__Jhc_Show_showsPrec__101322, .Lfunc_end119-E__bap__1__Jhc_Show_showsPrec__101322
+	.cfi_endproc
+                                        # -- End function
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__Jhc_Show_showsPrec__101330
+	.type	E__bap__1__Jhc_Show_showsPrec__101330,@function
+E__bap__1__Jhc_Show_showsPrec__101330:  # @E__bap__1__Jhc_Show_showsPrec__101330
+	.cfi_startproc
+# %bb.0:
+	pushq	%rbx
+	.cfi_def_cfa_offset 16
+	.cfi_offset %rbx, -16
+	movq	%rsi, %rbx
+	movq	%rsi, %rax
+	orq	$1, %rax
+	movq	%rax, (%rdi)
+	addq	$8, %rdi
+	movq	8(%rsi), %rax
+	movq	16(%rsi), %r9
+	movq	8(%rax), %rsi
+	movq	16(%rax), %rdx
+	movzbl	26(%rax), %ecx
+	movzwl	24(%rax), %r8d
+	callq	fJhc_Show_showsPrec$d6
+	movq	%rax, (%rbx)
+	popq	%rbx
+	.cfi_def_cfa_offset 8
+	retq
+.Lfunc_end120:
+	.size	E__bap__1__Jhc_Show_showsPrec__101330, .Lfunc_end120-E__bap__1__Jhc_Show_showsPrec__101330
+	.cfi_endproc
+                                        # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_shows
 	.type	E__fJhc_Show_shows,@function
 E__fJhc_Show_shows:                     # @E__fJhc_Show_shows
@@ -14892,19 +14953,19 @@ E__fJhc_Show_shows:                     # @E__fJhc_Show_shows
 	movq	8(%rsi), %rsi
 	movq	16(%rbx), %rcx
 	movq	24(%rbx), %r8
-	movl	$_c511, %edx
+	movl	$_c378, %edx
 	callq	fJhc_Show_showsPrec
 	movq	%rax, (%rbx)
 	popq	%rbx
 	.cfi_def_cfa_offset 8
 	retq
-.Lfunc_end119:
-	.size	E__fJhc_Show_shows, .Lfunc_end119-E__fJhc_Show_shows
+.Lfunc_end121:
+	.size	E__fJhc_Show_shows, .Lfunc_end121-E__fJhc_Show_shows
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d2
-	.type	fJhc_Show_showsPrec$d2,@function
-fJhc_Show_showsPrec$d2:                 # @"fJhc_Show_showsPrec$d2"
+	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d10
+	.type	fJhc_Show_showsPrec$d10,@function
+fJhc_Show_showsPrec$d10:                # @"fJhc_Show_showsPrec$d10"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -14952,13 +15013,13 @@ fJhc_Show_showsPrec$d2:                 # @"fJhc_Show_showsPrec$d2"
 	popq	%rbp
 	.cfi_def_cfa_offset 8
 	retq
-.Lfunc_end120:
-	.size	fJhc_Show_showsPrec$d2, .Lfunc_end120-fJhc_Show_showsPrec$d2
+.Lfunc_end122:
+	.size	fJhc_Show_showsPrec$d10, .Lfunc_end122-fJhc_Show_showsPrec$d10
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d3
-	.type	fJhc_Show_showsPrec$d3,@function
-fJhc_Show_showsPrec$d3:                 # @"fJhc_Show_showsPrec$d3"
+	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d11
+	.type	fJhc_Show_showsPrec$d11,@function
+fJhc_Show_showsPrec$d11:                # @"fJhc_Show_showsPrec$d11"
 	.cfi_startproc
 # %bb.0:
 	pushq	%r15
@@ -14987,7 +15048,7 @@ fJhc_Show_showsPrec$d3:                 # @"fJhc_Show_showsPrec$d3"
 	movq	%rax, %r12
 	movq	$E__fJhc_Show_showsPrec+3, (%rax)
 	movq	$5898242, 8(%rax)               # imm = 0x5A0002
-	movq	$_c548, 16(%rax)
+	movq	$_c415, 16(%rax)
 	movq	%r15, 24(%rax)
 	movq	%r14, 32(%rax)
 	orq	$1, %r12
@@ -15000,11 +15061,11 @@ fJhc_Show_showsPrec$d3:                 # @"fJhc_Show_showsPrec$d3"
 	movq	%r12, 8(%rax)
 	movq	%rax, 24(%rbx)
 	leaq	32(%rbx), %r15
-	movl	$_c551, %esi
+	movl	$_c418, %esi
 	movq	%r15, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
-	je	.LBB121_2
+	je	.LBB123_2
 # %bb.1:
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
@@ -15036,7 +15097,7 @@ fJhc_Show_showsPrec$d3:                 # @"fJhc_Show_showsPrec$d3"
 	popq	%r15
 	.cfi_def_cfa_offset 8
 	retq
-.LBB121_2:
+.LBB123_2:
 	.cfi_def_cfa_offset 48
 	movq	%r15, %rdi
 	movq	%r14, %rsi
@@ -15051,13 +15112,13 @@ fJhc_Show_showsPrec$d3:                 # @"fJhc_Show_showsPrec$d3"
 	popq	%r15
 	.cfi_def_cfa_offset 8
 	jmp	eval                            # TAILCALL
-.Lfunc_end121:
-	.size	fJhc_Show_showsPrec$d3, .Lfunc_end121-fJhc_Show_showsPrec$d3
+.Lfunc_end123:
+	.size	fJhc_Show_showsPrec$d11, .Lfunc_end123-fJhc_Show_showsPrec$d11
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d3
-	.type	E__fJhc_Show_showsPrec$d3,@function
-E__fJhc_Show_showsPrec$d3:              # @"E__fJhc_Show_showsPrec$d3"
+	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d11
+	.type	E__fJhc_Show_showsPrec$d11,@function
+E__fJhc_Show_showsPrec$d11:             # @"E__fJhc_Show_showsPrec$d11"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -15070,18 +15131,18 @@ E__fJhc_Show_showsPrec$d3:              # @"E__fJhc_Show_showsPrec$d3"
 	addq	$8, %rdi
 	movq	8(%rsi), %rsi
 	movq	16(%rbx), %rdx
-	callq	fJhc_Show_showsPrec$d3
+	callq	fJhc_Show_showsPrec$d11
 	movq	%rax, (%rbx)
 	popq	%rbx
 	.cfi_def_cfa_offset 8
 	retq
-.Lfunc_end122:
-	.size	E__fJhc_Show_showsPrec$d3, .Lfunc_end122-E__fJhc_Show_showsPrec$d3
+.Lfunc_end124:
+	.size	E__fJhc_Show_showsPrec$d11, .Lfunc_end124-E__fJhc_Show_showsPrec$d11
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d4
-	.type	fJhc_Show_showsPrec$d4,@function
-fJhc_Show_showsPrec$d4:                 # @"fJhc_Show_showsPrec$d4"
+	.p2align	4, 0x90                         # -- Begin function fJhc_Show_showsPrec$d12
+	.type	fJhc_Show_showsPrec$d12,@function
+fJhc_Show_showsPrec$d12:                # @"fJhc_Show_showsPrec$d12"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -15107,9 +15168,9 @@ fJhc_Show_showsPrec$d4:                 # @"fJhc_Show_showsPrec$d4"
 	movq	%rdx, %r15
 	movq	%rsi, %r12
 	movq	%rdi, %rbx
-	movq	%rsi, (%rdi)
+	movq	%rdx, (%rdi)
 	leaq	8(%rdi), %r13
-	movq	%rdx, 8(%rdi)
+	movq	%rsi, 8(%rdi)
 	leaq	16(%rdi), %r14
 	movq	cFPrelude_Text_30__showl(%rip), %rsi
 	movq	%r14, %rdi
@@ -15134,11 +15195,11 @@ fJhc_Show_showsPrec$d4:                 # @"fJhc_Show_showsPrec$d4"
 	movq	$130, (%rax)
 	movq	%r12, 8(%rax)
 	movq	%rax, 8(%rbx)
-	movl	$_c570, %esi
+	movl	$_c437, %esi
 	movq	%r14, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
-	je	.LBB123_2
+	je	.LBB125_2
 # %bb.1:
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
@@ -15174,7 +15235,7 @@ fJhc_Show_showsPrec$d4:                 # @"fJhc_Show_showsPrec$d4"
 	popq	%rbp
 	.cfi_def_cfa_offset 8
 	retq
-.LBB123_2:
+.LBB125_2:
 	.cfi_def_cfa_offset 64
 	movq	%r14, %rdi
 	movq	%r15, %rsi
@@ -15193,13 +15254,13 @@ fJhc_Show_showsPrec$d4:                 # @"fJhc_Show_showsPrec$d4"
 	popq	%rbp
 	.cfi_def_cfa_offset 8
 	jmp	eval                            # TAILCALL
-.Lfunc_end123:
-	.size	fJhc_Show_showsPrec$d4, .Lfunc_end123-fJhc_Show_showsPrec$d4
+.Lfunc_end125:
+	.size	fJhc_Show_showsPrec$d12, .Lfunc_end125-fJhc_Show_showsPrec$d12
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d4
-	.type	E__fJhc_Show_showsPrec$d4,@function
-E__fJhc_Show_showsPrec$d4:              # @"E__fJhc_Show_showsPrec$d4"
+	.p2align	4, 0x90                         # -- Begin function E__fJhc_Show_showsPrec$d12
+	.type	E__fJhc_Show_showsPrec$d12,@function
+E__fJhc_Show_showsPrec$d12:             # @"E__fJhc_Show_showsPrec$d12"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -15212,75 +15273,13 @@ E__fJhc_Show_showsPrec$d4:              # @"E__fJhc_Show_showsPrec$d4"
 	addq	$8, %rdi
 	movq	8(%rsi), %rsi
 	movq	16(%rbx), %rdx
-	callq	fJhc_Show_showsPrec$d4
-	movq	%rax, (%rbx)
-	popq	%rbx
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end124:
-	.size	E__fJhc_Show_showsPrec$d4, .Lfunc_end124-E__fJhc_Show_showsPrec$d4
-	.cfi_endproc
-                                        # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__Jhc_Show_showsPrec__101312
-	.type	E__bap__1__Jhc_Show_showsPrec__101312,@function
-E__bap__1__Jhc_Show_showsPrec__101312:  # @E__bap__1__Jhc_Show_showsPrec__101312
-	.cfi_startproc
-# %bb.0:
-	pushq	%rbx
-	.cfi_def_cfa_offset 16
-	subq	$16, %rsp
-	.cfi_def_cfa_offset 32
-	.cfi_offset %rbx, -16
-	movq	%rsi, %rbx
-	movq	%rsi, %rax
-	orq	$1, %rax
-	movq	%rax, (%rdi)
-	addq	$8, %rdi
-	movq	8(%rsi), %rax
-	movq	16(%rsi), %r10
-	movzbl	34(%rax), %edx
-	movq	8(%rax), %rsi
-	movq	16(%rax), %rcx
-	movzwl	32(%rax), %r8d
-	movq	24(%rax), %r9
-	movq	%r10, (%rsp)
-	callq	fJhc_Show_showsPrec$d5
-	movq	%rax, (%rbx)
-	addq	$16, %rsp
-	.cfi_def_cfa_offset 16
-	popq	%rbx
-	.cfi_def_cfa_offset 8
-	retq
-.Lfunc_end125:
-	.size	E__bap__1__Jhc_Show_showsPrec__101312, .Lfunc_end125-E__bap__1__Jhc_Show_showsPrec__101312
-	.cfi_endproc
-                                        # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__Jhc_Show_showsPrec__101320
-	.type	E__bap__1__Jhc_Show_showsPrec__101320,@function
-E__bap__1__Jhc_Show_showsPrec__101320:  # @E__bap__1__Jhc_Show_showsPrec__101320
-	.cfi_startproc
-# %bb.0:
-	pushq	%rbx
-	.cfi_def_cfa_offset 16
-	.cfi_offset %rbx, -16
-	movq	%rsi, %rbx
-	movq	%rsi, %rax
-	orq	$1, %rax
-	movq	%rax, (%rdi)
-	addq	$8, %rdi
-	movq	8(%rsi), %rax
-	movq	16(%rsi), %r9
-	movzbl	26(%rax), %edx
-	movq	8(%rax), %rsi
-	movq	16(%rax), %rcx
-	movzwl	24(%rax), %r8d
-	callq	fJhc_Show_showsPrec$d9
+	callq	fJhc_Show_showsPrec$d12
 	movq	%rax, (%rbx)
 	popq	%rbx
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end126:
-	.size	E__bap__1__Jhc_Show_showsPrec__101320, .Lfunc_end126-E__bap__1__Jhc_Show_showsPrec__101320
+	.size	E__fJhc_Show_showsPrec$d12, .Lfunc_end126-E__fJhc_Show_showsPrec$d12
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fPrelude_Text_30__showl
@@ -15345,7 +15344,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 # %bb.3:
 	movq	%r15, 24(%r14)
 	leaq	32(%r14), %r12
-	movl	$_c571, %esi
+	movl	$_c439, %esi
 .LBB127_4:
 	movq	%r12, %rdi
 	callq	eval
@@ -15390,7 +15389,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 # %bb.9:
 	movq	%r15, 24(%r14)
 	leaq	32(%r14), %r12
-	movl	$_c391, %esi
+	movl	$_c257, %esi
 	jmp	.LBB127_4
 .LBB127_5:
 	movq	%r12, %rdi
@@ -15455,7 +15454,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 	.cfi_def_cfa_offset 64
 	movq	%r15, 24(%r14)
 	leaq	32(%r14), %r12
-	movl	$_c395, %esi
+	movl	$_c261, %esi
 	jmp	.LBB127_4
 .LBB127_11:
 	cmpl	$31, %r13d
@@ -15467,7 +15466,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 # %bb.13:
 	jmpq	*.LJTI127_0(,%rax,8)
 .LBB127_14:
-	movl	$_c397, %esi
+	movl	$_c263, %esi
 	jmp	.LBB127_23
 .LBB127_25:
 	movl	$1, %edi
@@ -15483,13 +15482,13 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 	movq	%r12, (%rax)
 	jmp	.LBB127_27
 .LBB127_18:
-	movl	$_c404, %esi
+	movl	$_c270, %esi
 	jmp	.LBB127_23
 .LBB127_16:
-	movl	$_c400, %esi
+	movl	$_c266, %esi
 	jmp	.LBB127_23
 .LBB127_17:
-	movl	$_c402, %esi
+	movl	$_c268, %esi
 	jmp	.LBB127_23
 .LBB127_21:
 	movq	%r15, 24(%r14)
@@ -15499,17 +15498,17 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 	movq	$E__fW$__fPrelude_Text_showLitChar$d3+3, (%rax)
 	movq	%r15, 8(%rax)
 	orq	$1, %rax
-	movl	$_c410, %esi
+	movl	$_c276, %esi
 	movq	%rax, %r15
 	jmp	.LBB127_23
 .LBB127_15:
-	movl	$_c399, %esi
+	movl	$_c265, %esi
 	jmp	.LBB127_23
 .LBB127_19:
-	movl	$_c406, %esi
+	movl	$_c272, %esi
 	jmp	.LBB127_23
 .LBB127_20:
-	movl	$_c407, %esi
+	movl	$_c273, %esi
 	jmp	.LBB127_23
 .LBB127_22:
 	movq	%r15, 24(%r14)
@@ -15519,7 +15518,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 	movq	%rax, %r12
 	movq	$E__fW$__fJhc_List_$bb+3, (%rax)
 	movq	$2, 8(%rax)
-	movq	$_c510, 16(%rax)
+	movq	$_c377, 16(%rax)
 	movl	%r13d, 24(%rax)
 	orq	$1, %r12
 	movq	%r12, 32(%r14)
@@ -15602,7 +15601,7 @@ E__fW$__fPrelude_Text_showLitChar$d3:   # @"E__fW$__fPrelude_Text_showLitChar$d3
 # %bb.3:
 	movq	%r15, 32(%r14)
 	leaq	40(%r14), %r12
-	movl	$_c72, %esi
+	movl	$_c27, %esi
 	movq	%r12, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -15728,8 +15727,8 @@ E__fW$__fPrelude_Text_showLitChar$d2:   # @"E__fW$__fPrelude_Text_showLitChar$d2
 	movq	%rbx, (%rsp)                    # 8-byte Spill
 	movq	(%rax), %r12
 	movq	8(%rax), %rbx
-	movq	%rbx, 16(%r14)
-	movq	%r12, 24(%r14)
+	movq	%r12, 16(%r14)
+	movq	%rbx, 24(%r14)
 	leaq	32(%r14), %r13
 	movq	%r13, %rdi
 	movq	%r12, %rsi
@@ -15777,7 +15776,7 @@ E__fW$__fPrelude_Text_showLitChar$d2:   # @"E__fW$__fPrelude_Text_showLitChar$d2
 	callq	c_assert
 	movq	%r15, 32(%r14)
 	leaq	40(%r14), %r12
-	movl	$_c72, %esi
+	movl	$_c27, %esi
 	movq	%r12, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -15979,8 +15978,8 @@ fW$__fJhc_Class_Ord_$ee:                # @"fW$__fJhc_Class_Ord_$ee"
 .LBB133_7:                              # =>This Inner Loop Header: Depth=1
 	movq	(%rax), %r12
 	movq	8(%rax), %rbp
-	movq	%r12, 8(%r14)
-	movq	%rbp, 16(%r14)
+	movq	%rbp, 8(%r14)
+	movq	%r12, 16(%r14)
 	movq	16(%rsp), %rdi                  # 8-byte Reload
 	movq	%rbx, %rsi
 	callq	eval
@@ -16142,8 +16141,8 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$4259842, (%rax)                # imm = 0x410002
-	movq	$5701634, 8(%rax)               # imm = 0x570002
-	movq	$2, 16(%rax)
+	movq	$2, 8(%rax)
+	movq	$5701634, 16(%rax)              # imm = 0x570002
 	movq	%rax, 24(%rbp)
 	leaq	32(%rbp), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d5(%rip), %rsi
@@ -16165,9 +16164,9 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	callq	s_alloc
 	movq	%r15, %rdx
 	movq	$3801090, (%rax)                # imm = 0x3A0002
+	movq	$2, 24(%rax)
 	movq	%r14, 8(%rax)
 	movq	%r13, 16(%rax)
-	movq	$2, 24(%rax)
 	jmp	.LBB134_18
 .LBB134_16:
 	movq	%rdi, %rbx
@@ -16196,8 +16195,8 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	callq	s_alloc
 	movq	%r13, %rdx
 	movq	$3735554, (%rax)                # imm = 0x390002
-	movq	%r12, 24(%rax)
 	movq	%r15, 8(%rax)
+	movq	%r12, 24(%rax)
 	jmp	.LBB134_17
 .LBB134_5:
 	movq	%rdx, (%rdi)
@@ -16218,8 +16217,8 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$4128770, (%rax)                # imm = 0x3F0002
-	movq	$5898242, 8(%rax)               # imm = 0x5A0002
-	movq	%r14, 16(%rax)
+	movq	%r14, 8(%rax)
+	movq	$5898242, 16(%rax)              # imm = 0x5A0002
 	movq	%rax, 24(%rbx)
 	addq	$32, %rbx
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -16246,8 +16245,8 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$4259842, (%rax)                # imm = 0x410002
-	movq	$5701634, 8(%rax)               # imm = 0x570002
-	movq	$6, 16(%rax)
+	movq	$6, 8(%rax)
+	movq	$5701634, 16(%rax)              # imm = 0x570002
 	movq	%rax, 24(%rbp)
 	leaq	32(%rbp), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d5(%rip), %rsi
@@ -16298,21 +16297,21 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	movq	%rax, 8(%r12)
 	movq	$5701634, 16(%r12)              # imm = 0x570002
 	movq	$10, 24(%r12)
-	leaq	32(%r12), %r15
+	leaq	32(%r12), %r14
 	movq	cP2__W$__fData_Binary_storableB$d4(%rip), %rsi
-	movq	%r15, %rdi
+	movq	%r14, %rdi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$4259842, (%rax)                # imm = 0x410002
-	movq	$5701634, 8(%rax)               # imm = 0x570002
-	movq	$10, 16(%rax)
+	movq	$10, 8(%rax)
+	movq	$5701634, 16(%rax)              # imm = 0x570002
 	movq	%rax, 32(%r12)
 	leaq	40(%r12), %rbx
 	movq	cP2__W$__fData_Binary_storableB$d5(%rip), %rsi
 	movq	%rbx, %rdi
 	movq	%rbx, 8(%rsp)                   # 8-byte Spill
 	callq	s_alloc
-	movq	%rax, %r14
+	movq	%rax, %r15
 	movq	$4325378, (%rax)                # imm = 0x420002
 	movq	%r13, 8(%rax)
 	movq	%rax, 16(%r12)
@@ -16323,8 +16322,8 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$4390914, (%rax)                # imm = 0x430002
-	movq	$5767170, 8(%rax)               # imm = 0x580002
-	movq	%rbp, 16(%rax)
+	movq	%rbp, 8(%rax)
+	movq	$5767170, 16(%rax)              # imm = 0x580002
 	movq	%rax, 40(%r12)
 	leaq	48(%r12), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d7(%rip), %rsi
@@ -16334,21 +16333,21 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	movq	%r13, 8(%rax)
 	movq	%rax, 24(%r12)
 	movl	$_c3, %esi
-	movq	%r15, %rdi
+	movq	%r14, %rdi
 	movq	16(%rsp), %rdx                  # 8-byte Reload
 	callq	fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BE
 	movq	%rax, %rbx
-	movq	%rdx, %r15
-	addq	$6, %r15
+	movq	%rdx, %r14
+	addq	$6, %r14
 	movq	%rax, 32(%r12)
 	movq	cP2__W$__fData_Binary_put$d8(%rip), %rsi
 	movq	8(%rsp), %rdi                   # 8-byte Reload
 	callq	s_alloc
-	movq	%r15, %rdx
+	movq	%r14, %rdx
 	movq	$3932162, (%rax)                # imm = 0x3C0002
-	movq	%rbp, 8(%rax)
 	movq	$2, 32(%rax)
-	movq	%r14, 16(%rax)
+	movq	%r15, 8(%rax)
+	movq	%rbp, 16(%rax)
 	movq	$4, 40(%rax)
 	movq	%rbx, 24(%rax)
 	jmp	.LBB134_18
@@ -16420,8 +16419,8 @@ fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BE: # @"fW$__fInstance$__iData_
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$4521986, (%rax)                # imm = 0x450002
-	movq	$5832706, 8(%rax)               # imm = 0x590002
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	$5832706, 16(%rax)              # imm = 0x590002
 	movq	%rax, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d9(%rip), %rsi
@@ -16488,8 +16487,8 @@ fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2: # @"fW$__fInstance$__iDat
 # %bb.2:
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
-	movq	%r12, 8(%rbx)
-	movq	%r13, 16(%rbx)
+	movq	%r13, 8(%rbx)
+	movq	%r12, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3(%rip), %rsi
 	callq	s_alloc
@@ -16683,8 +16682,8 @@ E__ftheMain$d11:                        # @"E__ftheMain$d11"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
+	movslq	16(%rsi), %r15
 	movq	8(%rsi), %rsi
-	movslq	16(%rbx), %r15
 	movq	%r14, %rdi
 	callq	eval
 	addq	(%rax), %r15
@@ -16773,8 +16772,8 @@ fJhc_Text_Read_readDec$d3:              # @"fJhc_Text_Read_readDec$d3"
 	movq	%rdx, %r14
 	movq	%rsi, %r15
 	movq	%rdi, %rbx
-	movq	%rsi, (%rdi)
-	movq	%rdx, 8(%rdi)
+	movq	%rdx, (%rdi)
+	movq	%rsi, 8(%rdi)
 	addq	$16, %rdi
 	movq	%rcx, %rsi
 	callq	eval
@@ -16891,8 +16890,8 @@ E__fJhc_Text_Read_readDec$d4:           # @"E__fJhc_Text_Read_readDec$d4"
 	movq	$E__fJhc_Text_Read_readDec$d7+3, (%rax)
 	movq	8(%rsp), %rax                   # 8-byte Reload
 	movq	%rax, 8(%r12)
-	movq	%r15, 16(%r12)
-	movq	%r13, 24(%r12)
+	movq	%r13, 16(%r12)
+	movq	%r15, 24(%r12)
 	movq	%rbp, 32(%r12)
 	orq	$1, %r12
 	movq	%r12, 48(%r14)
@@ -16979,8 +16978,8 @@ E__fJhc_Text_Read_readDec$d7:           # @"E__fJhc_Text_Read_readDec$d7"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	movq	8(%rsi), %r15
-	movq	16(%rsi), %rax
-	movq	24(%rsi), %rdx
+	movq	16(%rsi), %rdx
+	movq	24(%rsi), %rax
 	movq	32(%rsi), %rbp
 	movq	8(%rax), %rsi
 	movq	%rbp, 8(%rdi)
@@ -16994,9 +16993,9 @@ E__fJhc_Text_Read_readDec$d7:           # @"E__fJhc_Text_Read_readDec$d7"
 	movq	(%rax), %r12
 	movq	8(%rax), %rsi
 	leaq	48(%r14), %r13
-	movq	%rbp, 24(%r14)
+	movq	%r12, 24(%r14)
 	movq	%r15, 32(%r14)
-	movq	%r12, 40(%r14)
+	movq	%rbp, 40(%r14)
 	movq	%r13, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -17033,14 +17032,14 @@ E__fJhc_Text_Read_readDec$d7:           # @"E__fJhc_Text_Read_readDec$d7"
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fJhc_Text_Read_readDec$d10+3, (%rax)
-	movq	%r13, 8(%rax)
+	movq	%r15, 8(%rax)
+	movq	%r13, 16(%rax)
 	movq	40(%rsp), %r13                  # 8-byte Reload
-	movq	%r15, 16(%rax)
 	movq	%rbp, 24(%rax)
 	orq	$1, %r12
-	movq	%rbp, 24(%r14)
+	movq	%r12, 24(%r14)
 	movq	%rbx, 32(%r14)
-	movq	%r12, 40(%r14)
+	movq	%rbp, 40(%r14)
 	movq	%r13, %rdi
 	movq	48(%rsp), %rsi                  # 8-byte Reload
 	callq	eval
@@ -17145,8 +17144,8 @@ E__fJhc_Text_Read_readDec$d10:          # @"E__fJhc_Text_Read_readDec$d10"
 	movq	%rsi, %rax
 	orq	$1, %rax
 	movq	%rax, (%rdi)
-	movq	8(%rsi), %r15
-	movq	16(%rsi), %rsi
+	movq	8(%rsi), %rsi
+	movq	16(%rbx), %r15
 	movq	24(%rbx), %r13
 	movq	%r15, 8(%rdi)
 	addq	$16, %r14
@@ -17219,9 +17218,9 @@ E__fW$__fNumeric_showIntAtBase$d3:      # @"E__fW$__fNumeric_showIntAtBase$d3"
 	.size	E__fW$__fNumeric_showIntAtBase$d3, .Lfunc_end148-E__fW$__fNumeric_showIntAtBase$d3
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fNumeric_showIntAtBase__100862
-	.type	E__bap__1__W$__fNumeric_showIntAtBase__100862,@function
-E__bap__1__W$__fNumeric_showIntAtBase__100862: # @"E__bap__1__W$__fNumeric_showIntAtBase__100862"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fNumeric_showIntAtBase__100840
+	.type	E__bap__1__W$__fNumeric_showIntAtBase__100840,@function
+E__bap__1__W$__fNumeric_showIntAtBase__100840: # @"E__bap__1__W$__fNumeric_showIntAtBase__100840"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -17270,7 +17269,7 @@ E__bap__1__W$__fNumeric_showIntAtBase__100862: # @"E__bap__1__W$__fNumeric_showI
 	movl	$.L.str.8, %edi
 	callq	jhc_error
 .Lfunc_end149:
-	.size	E__bap__1__W$__fNumeric_showIntAtBase__100862, .Lfunc_end149-E__bap__1__W$__fNumeric_showIntAtBase__100862
+	.size	E__bap__1__W$__fNumeric_showIntAtBase__100840, .Lfunc_end149-E__bap__1__W$__fNumeric_showIntAtBase__100840
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function fPrelude_Text_read$d5
@@ -17315,7 +17314,7 @@ fPrelude_Text_read$d5:                  # @"fPrelude_Text_read$d5"
 	leaq	16(%rbx), %rdi
 	movq	%rdi, 24(%rsp)                  # 8-byte Spill
 	callq	eval
-	movl	$_c301, %edx
+	movl	$_c598, %edx
 	cmpq	$65538, %rax                    # imm = 0x10002
 	je	.LBB150_22
 # %bb.2:
@@ -17347,7 +17346,7 @@ fPrelude_Text_read$d5:                  # @"fPrelude_Text_read$d5"
 	movq	8(%rax), %r15
 	movq	%rbp, 16(%rbx)
 	movq	%r15, 24(%rbx)
-	movl	$_c10, %edx
+	movl	$_c563, %edx
 	movq	%r13, %rdi
 	movq	%rbp, %rsi
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -17369,7 +17368,7 @@ fPrelude_Text_read$d5:                  # @"fPrelude_Text_read$d5"
 	movq	8(%rax), %rbp
 	movq	%rbp, (%r13)
 	movq	%rbx, (%r12)
-	movl	$_c10, %edx
+	movl	$_c563, %edx
 	movq	%r14, %rdi
 	movq	%rbx, %rsi
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -17441,7 +17440,7 @@ fPrelude_Text_read$d5:                  # @"fPrelude_Text_read$d5"
 	jmp	.LBB150_21
 .LBB150_15:
 	movq	8(%rsp), %r14                   # 8-byte Reload
-	movl	$_c301, %edx
+	movl	$_c598, %edx
 	jmp	.LBB150_22
 .LBB150_16:
 	movq	%r13, %rdi
@@ -17455,7 +17454,7 @@ fPrelude_Text_read$d5:                  # @"fPrelude_Text_read$d5"
 	jmp	.LBB150_21
 .LBB150_18:
 	movq	%rax, 16(%rsp)                  # 8-byte Spill
-	movl	$_c311, %edx
+	movl	$_c608, %edx
 	movq	%r13, %rdi
 	movq	%rbp, %rsi
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -17569,7 +17568,7 @@ fPrelude_Text_read$d5:                  # @"fPrelude_Text_read$d5"
 	jmp	eval                            # TAILCALL
 .LBB150_26:
 	.cfi_def_cfa_offset 96
-	movl	$_c30, %edx
+	movl	$_c583, %edx
 	movq	%r13, %rdi
 	movq	%rbp, %rsi
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -17758,7 +17757,7 @@ fJhc_Text_Read_55__lexString:           # @fJhc_Text_Read_55__lexString
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	%rax, %rbx
-	movq	$_c295, (%rax)
+	movq	$_c438, (%rax)
 	movq	%r12, 8(%rax)
 	movq	%rax, 16(%r14)
 	addq	$24, %r14
@@ -17792,8 +17791,8 @@ fJhc_Text_Read_55__lexString:           # @fJhc_Text_Read_55__lexString
 # %bb.5:
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%r13, 16(%r14)
-	movq	%rbp, 24(%r14)
+	movq	%rbp, 16(%r14)
+	movq	%r13, 24(%r14)
 	leaq	32(%r14), %r12
 	movq	%r12, %rdi
 	movq	%r13, %rsi
@@ -17807,7 +17806,7 @@ fJhc_Text_Read_55__lexString:           # @fJhc_Text_Read_55__lexString
 	movq	%r12, %rdi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$_c72, (%rax)
+	movq	$_c27, (%rax)
 	movq	%rbp, 8(%rax)
 	movq	%rax, 32(%r14)
 	addq	$40, %r14
@@ -17842,7 +17841,7 @@ fJhc_Text_Read_55__lexString:           # @fJhc_Text_Read_55__lexString
 	jmp	fJhc_Text_Read_lex$d4           # TAILCALL
 .LBB152_7:
 	.cfi_def_cfa_offset 64
-	movl	$_c10, %edx
+	movl	$_c563, %edx
 	movq	%r12, %rdi
 	movq	%r13, %rsi
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -17931,7 +17930,7 @@ fJhc_Text_Read_lexLitChar:              # @fJhc_Text_Read_lexLitChar
 	movq	%rbp, 16(%rbx)
 	movq	%r13, 24(%rbx)
 	leaq	32(%rbx), %r12
-	movl	$_c294, %edx
+	movl	$_c593, %edx
 	movq	%r12, %rdi
 	movq	%rbp, %rsi
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -18008,8 +18007,8 @@ fJhc_Text_Read_lexLitChar:              # @fJhc_Text_Read_lexLitChar
 # %bb.10:
 	movq	(%rax), %r15
 	movq	8(%rax), %rbp
-	movq	%r15, 32(%rbx)
-	movq	%rbp, 40(%rbx)
+	movq	%rbp, 32(%rbx)
+	movq	%r15, 40(%rbx)
 	leaq	48(%rbx), %r12
 	movq	%r12, %rdi
 	movq	%r15, %rsi
@@ -18238,7 +18237,7 @@ fJhc_Text_Read_lex$d11:                 # @"fJhc_Text_Read_lex$d11"
 	jne	.LBB154_7
 # %bb.4:
 	movl	$_c1, %esi
-	movl	$_c70, %ecx
+	movl	$_c25, %ecx
 	movq	%r12, %rdi
 	movq	%r15, %rdx
 	callq	fW$__fJhc_Class_Ord_$ee
@@ -18263,7 +18262,7 @@ fJhc_Text_Read_lex$d11:                 # @"fJhc_Text_Read_lex$d11"
 	movq	$E__fJhc_Basics_$pp+3, (%rax)
 	movq	$2, 8(%rax)
 	movq	%r15, 16(%rax)
-	movq	$_c70, 24(%rax)
+	movq	$_c25, 24(%rax)
 	orq	$1, %r14
 	movq	%r14, 24(%rbx)
 	leaq	32(%rbx), %rdi
@@ -18287,8 +18286,8 @@ fJhc_Text_Read_lex$d11:                 # @"fJhc_Text_Read_lex$d11"
 	movq	%r12, (%rax)
 	movq	$65538, 8(%rax)                 # imm = 0x10002
 .LBB154_7:
-	movq	%r13, 16(%rbx)
-	movq	%r14, 24(%rbx)
+	movq	%r14, 16(%rbx)
+	movq	%r13, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cFJhc_Text_Read_lex$d11(%rip), %rsi
 	callq	s_alloc
@@ -18446,8 +18445,8 @@ E__fJhc_Text_Read_lex$d15:              # @"E__fJhc_Text_Read_lex$d15"
 	callq	fW$__fJhc_List_span$d2
 	movq	%rax, %r15
 	movq	%rdx, %r12
-	movq	%rdx, 8(%r14)
-	movq	%rax, 16(%r14)
+	movq	%rax, 8(%r14)
+	movq	%rdx, 16(%r14)
 	addq	$24, %r14
 	movq	cCJhc_Prim_Prim_$LcR(%rip), %rsi
 	movq	%r14, %rdi
@@ -18631,8 +18630,8 @@ fJhc_Text_Read_lex$d13:                 # @"fJhc_Text_Read_lex$d13"
 # %bb.2:
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
-	movq	%r12, 8(%rbx)
-	movq	%r13, 16(%rbx)
+	movq	%r13, 8(%rbx)
+	movq	%r12, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cFJhc_Text_Read_lex$d14(%rip), %rsi
 	callq	s_alloc
@@ -18829,9 +18828,9 @@ E__fJhc_Text_Read_lex$d5:               # @"E__fJhc_Text_Read_lex$d5"
 .LBB161_2:                              # =>This Inner Loop Header: Depth=1
 	movq	(%rax), %rbp
 	movq	8(%rax), %r13
-	movq	%rbp, 8(%r14)
-	movq	%r13, 16(%r14)
-	movl	$_c10, %edx
+	movq	%r13, 8(%r14)
+	movq	%rbp, 16(%r14)
+	movl	$_c563, %edx
 	movq	%r12, %rdi
 	movq	%rbp, %rsi
 	callq	fW$__fSpec$__Jhc_List_217_fJhc_List_elem
@@ -18928,7 +18927,7 @@ fJhc_Text_Read_lex$d7:                  # @"fJhc_Text_Read_lex$d7"
 	movq	%r15, %rdi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$_c72, (%rax)
+	movq	$_c27, (%rax)
 	movq	%r13, 8(%rax)
 	movq	%rax, 16(%rbx)
 	leaq	24(%rbx), %rdi
@@ -18938,8 +18937,8 @@ fJhc_Text_Read_lex$d7:                  # @"fJhc_Text_Read_lex$d7"
 	movq	%r15, (%rax)
 	movq	$65538, 8(%rax)                 # imm = 0x10002
 .LBB162_5:
-	movq	%r12, 8(%rbx)
-	movq	%r14, 16(%rbx)
+	movq	%r14, 8(%rbx)
+	movq	%r12, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cFJhc_Text_Read_lex$d7(%rip), %rsi
 	callq	s_alloc
@@ -19039,8 +19038,8 @@ fJhc_Text_Read_lex$d2:                  # @"fJhc_Text_Read_lex$d2"
 # %bb.2:
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
-	movq	%r12, 8(%rbx)
-	movq	%r13, 16(%rbx)
+	movq	%r13, 8(%rbx)
+	movq	%r12, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cFJhc_Text_Read_lex$d3(%rip), %rsi
 	callq	s_alloc
@@ -19144,8 +19143,8 @@ E__fJhc_Text_Read_lex$d3:               # @"E__fJhc_Text_Read_lex$d3"
 	callq	eval
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%r13, 16(%r14)
-	movq	%rbp, 24(%r14)
+	movq	%rbp, 16(%r14)
+	movq	%r13, 24(%r14)
 	leaq	32(%r14), %rdi
 	movq	cFJhc_Basics_$pp(%rip), %rsi
 	callq	s_alloc
@@ -19259,8 +19258,8 @@ E__fJhc_Text_Read_lex$d8:               # @"E__fJhc_Text_Read_lex$d8"
 	callq	eval
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
-	movq	%r12, 8(%r14)
-	movq	%r13, 16(%r14)
+	movq	%r13, 8(%r14)
+	movq	%r12, 16(%r14)
 	leaq	24(%r14), %rdi
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
@@ -19398,8 +19397,8 @@ E__fJhc_Text_Read_lexLitChar$d13:       # @"E__fJhc_Text_Read_lexLitChar$d13"
 	callq	fW$__fJhc_List_span$d2
 	movq	%rax, %r15
 	movq	%rdx, %r12
-	movq	%rdx, 8(%r14)
-	movq	%rax, 16(%r14)
+	movq	%rax, 8(%r14)
+	movq	%rdx, 16(%r14)
 	leaq	24(%r14), %rdi
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
@@ -19460,8 +19459,8 @@ E__fJhc_Text_Read_lexLitChar$d14:       # @"E__fJhc_Text_Read_lexLitChar$d14"
 	callq	fW$__fJhc_List_span$d2
 	movq	%rax, %r15
 	movq	%rdx, %r12
-	movq	%rdx, 8(%r14)
-	movq	%rax, 16(%r14)
+	movq	%rax, 8(%r14)
+	movq	%rdx, 16(%r14)
 	leaq	24(%r14), %rdi
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
@@ -19521,8 +19520,8 @@ E__fJhc_Text_Read_lexLitChar$d16:       # @"E__fJhc_Text_Read_lexLitChar$d16"
 	callq	fW$__fJhc_List_span$d2
 	movq	%rax, %r15
 	movq	%rdx, %r12
-	movq	%rax, 8(%r14)
-	movq	%rdx, 16(%r14)
+	movq	%rdx, 8(%r14)
+	movq	%rax, 16(%r14)
 	addq	$24, %r14
 	movq	cCJhc_Prim_Prim_$LcR(%rip), %rsi
 	movq	%r14, %rdi
@@ -19629,8 +19628,8 @@ E__fJhc_Text_Read_lexLitChar$d2:        # @"E__fJhc_Text_Read_lexLitChar$d2"
 	callq	eval
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
-	movq	%r12, 8(%r14)
-	movq	%r13, 16(%r14)
+	movq	%r13, 8(%r14)
+	movq	%r12, 16(%r14)
 	leaq	24(%r14), %rdi
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
@@ -19797,8 +19796,8 @@ E__fJhc_Text_Read_lex$d17:              # @"E__fJhc_Text_Read_lex$d17"
 	callq	eval
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%rbp, 16(%r14)
-	movq	%r13, 24(%r14)
+	movq	%r13, 16(%r14)
+	movq	%rbp, 24(%r14)
 	leaq	32(%r14), %rdi
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
@@ -19893,8 +19892,8 @@ E__fJhc_Text_Read_lex$d14:              # @"E__fJhc_Text_Read_lex$d14"
 	callq	eval
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%rbp, 16(%r14)
-	movq	%r13, 24(%r14)
+	movq	%r13, 16(%r14)
+	movq	%rbp, 24(%r14)
 	leaq	32(%r14), %rdi
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
@@ -19977,41 +19976,42 @@ fW$__fMain_atapiIdentify:               # @"fW$__fMain_atapiIdentify"
 	.cfi_offset %r14, -32
 	.cfi_offset %r15, -24
 	.cfi_offset %rbp, -16
-	movl	%ecx, 32(%rsp)                  # 4-byte Spill
-	movl	%edx, 28(%rsp)                  # 4-byte Spill
+	movl	%ecx, 36(%rsp)                  # 4-byte Spill
+	movl	%edx, 32(%rsp)                  # 4-byte Spill
 	movl	%esi, %ebp
 	movq	%rdi, %rbx
-	movl	%r8d, 36(%rsp)                  # 4-byte Spill
+	movl	%r8d, 28(%rsp)                  # 4-byte Spill
 	movl	%r8d, %edx
 	movl	$161, %ecx
 	xorl	%r8d, %r8d
 	callq	fW$__fMain_ataSimpleCommand
 	movl	%ebp, 12(%rsp)                  # 4-byte Spill
-	addl	$7, %ebp
-	leaq	8(%rbx), %r14
+	movl	%ebp, %eax
+	addl	$7, %eax
+	leaq	8(%rbx), %rbp
 	leaq	16(%rbx), %r13
-	movzwl	%bp, %ebp
+	movzwl	%ax, %r15d
 	.p2align	4, 0x90
 .LBB181_1:                              # =>This Inner Loop Header: Depth=1
 	movq	%rbx, saved_gc(%rip)
-	movl	%ebp, %edi
+	movl	%r15d, %edi
 	callq	hosIn8
 	movq	$3080194, (%rbx)                # imm = 0x2F0002
 	movzbl	%al, %r12d
-	leaq	2(,%r12,4), %r15
-	movq	%r15, 8(%rbx)
+	leaq	2(,%r12,4), %r14
+	movq	%r14, 8(%rbx)
 	movq	%r13, %rdi
-	movq	%r15, %rsi
+	movq	%r14, %rsi
 	callq	eval
 	testl	$512, %eax                      # imm = 0x200
 	jne	.LBB181_1
 # %bb.2:
 	movl	$1, %edi
 	callq	c_assert
-	cmpl	$3, %r15d
+	cmpl	$3, %r14d
 	jbe	.LBB181_17
 # %bb.3:
-	testb	$4, %r15b
+	testb	$4, %r14b
 	jne	.LBB181_17
 # %bb.4:
 	testb	$32, %r12b
@@ -20020,23 +20020,23 @@ fW$__fMain_atapiIdentify:               # @"fW$__fMain_atapiIdentify"
 	movq	%rbx, saved_gc(%rip)
 	movl	$512, %edi                      # imm = 0x200
 	callq	malloc
-	movq	%rax, %r15
+	movq	%rax, %r14
 	movq	cCJhc_Type_Ptr_Ptr(%rip), %rsi
 	movq	%rbx, %rdi
 	callq	s_alloc
-	movq	%r15, (%rax)
-	testq	%r15, %r15
+	movq	%r14, (%rax)
+	testq	%r14, %r14
 	je	.LBB181_19
 # %bb.6:
-	movq	%rax, %r15
+	movq	%rax, %r14
 	movq	%rax, (%rbx)
 	addq	$24, %rbx
 	.p2align	4, 0x90
 .LBB181_7:                              # =>This Inner Loop Header: Depth=1
-	movq	%r14, saved_gc(%rip)
-	movl	%ebp, %edi
+	movq	%rbp, saved_gc(%rip)
+	movl	%r15d, %edi
 	callq	hosIn8
-	movq	$3145730, (%r14)                # imm = 0x300002
+	movq	$3145730, (%rbp)                # imm = 0x300002
 	movzbl	%al, %eax
 	leaq	2(,%rax,4), %rsi
 	movq	%rsi, (%r13)
@@ -20048,71 +20048,71 @@ fW$__fMain_atapiIdentify:               # @"fW$__fMain_atapiIdentify"
 	movl	$1, %edi
 	callq	c_assert
 	movq	cCJhc_Type_Word_Int(%rip), %rsi
-	movq	%r14, %rdi
+	movq	%rbp, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
 	movl	$0, (%rax)
-	movq	%rax, (%r14)
+	movq	%rax, (%rbp)
 	movq	cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2(%rip), %rsi
 	movq	%r13, %rdi
 	callq	s_alloc
-	movq	%rax, %rbp
+	movq	%rax, %r15
 	movq	$E__fW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2+3, (%rax)
 	movabsq	$4294967551, %rax               # imm = 0x1000000FF
-	movq	%rax, 8(%rbp)
-	orq	$1, %rbp
-	movq	%rbp, (%r13)
+	movq	%rax, 8(%r15)
+	orq	$1, %r15
+	movq	%r15, (%r13)
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	%r12, (%rax)
-	movq	%rbp, 8(%rax)
-	movq	%r14, %rdi
+	movq	%r15, 8(%rax)
+	movq	%rbp, %rdi
 	movq	%rax, %rsi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
-	movq	%r15, 16(%rsp)                  # 8-byte Spill
+	movq	%r14, 16(%rsp)                  # 8-byte Spill
 	je	.LBB181_11
 # %bb.9:
-	movzwl	12(%rsp), %ebp                  # 2-byte Folded Reload
+	movzwl	12(%rsp), %r15d                 # 2-byte Folded Reload
 	.p2align	4, 0x90
 .LBB181_10:                             # =>This Inner Loop Header: Depth=1
 	movq	(%rax), %rsi
 	movq	8(%rax), %r12
-	movq	%r12, (%r14)
+	movq	%r12, (%rbp)
 	movq	%r13, %rdi
 	callq	eval
-	movl	(%rax), %r15d
+	movl	(%rax), %r14d
 	movq	%r13, saved_gc(%rip)
-	movl	%ebp, %edi
+	movl	%r15d, %edi
 	callq	hosIn16
 	movq	16(%rsp), %rcx                  # 8-byte Reload
 	movq	(%rcx), %rcx
-	addl	%r15d, %r15d
-	movslq	%r15d, %rdx
+	addl	%r14d, %r14d
+	movslq	%r14d, %rdx
 	movw	%ax, (%rcx,%rdx)
-	movq	%r14, %rdi
+	movq	%rbp, %rdi
 	movq	%r12, %rsi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
 	jne	.LBB181_10
 .LBB181_11:
-	movl	$_c643, %esi
-	movq	%r14, %rdi
+	movl	$_c509, %esi
+	movq	%rbp, %rdi
 	callq	fHos_User_SysCall_hosDebugLog
 	movq	16(%rsp), %rax                  # 8-byte Reload
-	movq	(%rax), %r15
-	movzwl	98(%r15), %r12d
+	movq	(%rax), %r14
+	movzwl	98(%r14), %r12d
 	testl	$256, %r12d                     # imm = 0x100
 	jne	.LBB181_13
 # %bb.12:
 	testl	$512, %r12d                     # imm = 0x200
-	movl	$_c238, %eax
-	movl	$_c239, %ebp
-	cmoveq	%rax, %rbp
+	movl	$_c254, %eax
+	movl	$_c255, %r15d
+	cmoveq	%rax, %r15
 	jmp	.LBB181_16
 .LBB181_17:
-	movl	$_c617, %esi
+	movl	$_c483, %esi
 	movq	%rbx, %rdi
 	callq	fHos_User_SysCall_hosDebugLog
 	movl	$2, %eax
@@ -20139,35 +20139,35 @@ fW$__fMain_atapiIdentify:               # @"fW$__fMain_atapiIdentify"
 	je	.LBB181_15
 # %bb.14:
 	xorl	%eax, %eax
-	testb	$31, 176(%r15)
+	testb	$31, 176(%r14)
 	setne	%al
 	leaq	2(,%rax,4), %rax
 .LBB181_15:
 	movq	%rax, 16(%rsp)                  # 8-byte Spill
-	movq	%rax, (%r14)
+	movq	%rax, (%rbp)
 	movq	cFW$__fMain_idRead$d4(%rip), %rsi
 	movq	%r13, %rdi
 	callq	s_alloc
-	movq	%rax, %rbp
+	movq	%rax, %r15
 	movq	$E__fW$__fMain_idRead$d4+3, (%rax)
 	movw	%r12w, 16(%rax)
 	movq	16(%rsp), %rax                  # 8-byte Reload
-	movq	%rax, 8(%rbp)
-	orq	$1, %rbp
+	movq	%rax, 8(%r15)
+	orq	$1, %r15
 .LBB181_16:
-	movq	%r14, saved_gc(%rip)
-	movq	%r15, %rdi
+	movq	%rbp, saved_gc(%rip)
+	movq	%r14, %rdi
 	callq	free
-	movq	%rbp, (%r14)
+	movq	%r15, (%rbp)
 	movq	cFW$__fMain_atapiIdentify$d4(%rip), %rsi
 	movq	%r13, %rdi
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$E__fW$__fMain_atapiIdentify$d4+3, (%rax)
-	movq	%rbp, 8(%rax)
-	movl	12(%rsp), %eax                  # 4-byte Reload
-	movw	%ax, 16(%r14)
+	movq	%r15, 8(%rax)
 	movl	28(%rsp), %eax                  # 4-byte Reload
+	movw	%ax, 16(%r14)
+	movl	12(%rsp), %eax                  # 4-byte Reload
 	movw	%ax, 18(%r14)
 	movl	32(%rsp), %eax                  # 4-byte Reload
 	movw	%ax, 20(%r14)
@@ -20181,8 +20181,8 @@ fW$__fMain_atapiIdentify:               # @"fW$__fMain_atapiIdentify"
 	movq	%r14, (%rax)
 	jmp	.LBB181_18
 .LBB181_19:
-	movl	$_c222, %esi
-	movl	$_c237, %edx
+	movl	$_c9, %esi
+	movl	$_c24, %edx
 	movq	%rbx, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%rbx, %rdi
@@ -20320,11 +20320,11 @@ E__fW$__fMain_atapiIdentify$d4:         # @"E__fW$__fMain_atapiIdentify$d4"
 	movq	%rax, (%rdi)
 	addq	$8, %rdi
 	movq	8(%rsi), %rsi
-	movzwl	20(%rbx), %r13d
-	movzwl	22(%rbx), %eax
+	movzwl	16(%rbx), %eax
 	movw	%ax, 6(%rsp)                    # 2-byte Spill
+	movzwl	22(%rbx), %r13d
 	leaq	16(%r14), %r15
-	movl	16(%rbx), %ebp
+	movl	18(%rbx), %ebp
 	callq	eval
 	movq	%rax, %r12
 	movq	%rax, 8(%r14)
@@ -21203,14 +21203,14 @@ E__fR$__fJhc_Basics_zip:                # @"E__fR$__fJhc_Basics_zip"
 	.globl	jhc_c_compile
 	.p2align	4, 0x0
 jhc_c_compile:
-	.asciz	"gcc /tmp/jhc_GlBSLA/rts/profile.c /tmp/jhc_GlBSLA/rts/rts_support.c /tmp/jhc_GlBSLA/rts/gc_none.c /tmp/jhc_GlBSLA/rts/jhc_rts.c /tmp/jhc_GlBSLA/lib/lib_cbits.c /tmp/jhc_GlBSLA/rts/gc_jgc.c /tmp/jhc_GlBSLA/rts/stableptr.c -I/tmp/jhc_GlBSLA/cbits -I/tmp/jhc_GlBSLA /home/bruns/Documents/haskellos/build/progs/ata.c -o /home/bruns/Documents/haskellos/build/progs/ata.c '-std=gnu99' -D_GNU_SOURCE '-falign-functions=4' -ffast-math -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -DNDEBUG -O3 '-D_JHC_GC=_JHC_GC_JGC'"
+	.asciz	"gcc /tmp/jhc_ePtKmk/rts/profile.c /tmp/jhc_ePtKmk/rts/rts_support.c /tmp/jhc_ePtKmk/rts/gc_none.c /tmp/jhc_ePtKmk/rts/jhc_rts.c /tmp/jhc_ePtKmk/lib/lib_cbits.c /tmp/jhc_ePtKmk/rts/gc_jgc.c /tmp/jhc_ePtKmk/rts/stableptr.c -I/tmp/jhc_ePtKmk/cbits -I/tmp/jhc_ePtKmk /home/bruns/Documents/HanonymOS/build/progs/ata.c -o /home/bruns/Documents/HanonymOS/build/progs/ata.c '-std=gnu99' -D_GNU_SOURCE '-falign-functions=4' -ffast-math -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -DNDEBUG -O3 '-D_JHC_GC=_JHC_GC_JGC'"
 	.size	jhc_c_compile, 521
 
 	.type	jhc_command,@object             # @jhc_command
 	.globl	jhc_command
 	.p2align	4, 0x0
 jhc_command:
-	.asciz	"jhc -C ata.hs -o /home/bruns/Documents/haskellos/build/progs/ata.c -fcpp -I/home/bruns/Documents/haskellos/src/progs/cbits -I/home/bruns/Documents/haskellos/src/progs/hos -I/home/bruns/Documents/haskellos/src/kernel/d -I/home/bruns/Documents/haskellos/src/libs/rts -I/home/bruns/Documents/haskellos/src/libs/rts/rts -fffi -phos -phos-common -L/usr/local/lib/jhc-0.8.2 -L/home/bruns/Documents/haskellos/build/prog-libs -papplicative -pinit"
+	.asciz	"jhc -C ata.hs -o /home/bruns/Documents/HanonymOS/build/progs/ata.c -fcpp -I/home/bruns/Documents/HanonymOS/src/progs/cbits -I/home/bruns/Documents/HanonymOS/src/progs/hos -I/home/bruns/Documents/HanonymOS/src/kernel/d -I/home/bruns/Documents/HanonymOS/src/libs/rts -I/home/bruns/Documents/HanonymOS/src/libs/rts/rts -fffi -phos -phos-common -L/usr/local/lib/jhc-0.8.2 -L/home/bruns/Documents/HanonymOS/build/prog-libs -papplicative -pinit"
 	.size	jhc_command, 439
 
 	.type	jhc_version,@object             # @jhc_version
@@ -21220,77 +21220,77 @@ jhc_version:
 	.asciz	"jhc 0.8.2 (mydniquipepo-32)"
 	.size	jhc_version, 28
 
-	.type	_g888680983,@object             # @_g888680983
+	.type	_g636110871,@object             # @_g636110871
 	.p2align	3, 0x0
-_g888680983:
+_g636110871:
 	.quad	E__ftheMain$d41+3
-	.size	_g888680983, 8
+	.size	_g636110871, 8
 
-	.type	_g1997287959,@object            # @_g1997287959
+	.type	_g1744586775,@object            # @_g1744586775
 	.p2align	3, 0x0
-_g1997287959:
+_g1744586775:
 	.quad	E__ftheMain$d23+3
-	.size	_g1997287959, 8
+	.size	_g1744586775, 8
 
-	.type	_g878064149,@object             # @_g878064149
+	.type	_g625494037,@object             # @_g625494037
 	.p2align	3, 0x0
-_g878064149:
+_g625494037:
 	.quad	E__ftheMain$d9+3
-	.size	_g878064149, 8
+	.size	_g625494037, 8
 
-	.type	_g2018914837,@object            # @_g2018914837
+	.type	_g1766213653,@object            # @_g1766213653
 	.p2align	3, 0x0
-_g2018914837:
+_g1766213653:
 	.quad	E__ftheMain$d7+3
-	.size	_g2018914837, 8
+	.size	_g1766213653, 8
 
-	.type	_g2030580245,@object            # @_g2030580245
+	.type	_g1777879061,@object            # @_g1777879061
 	.p2align	3, 0x0
-_g2030580245:
+_g1777879061:
 	.quad	E__ftheMain$d5+3
-	.size	_g2030580245, 8
+	.size	_g1777879061, 8
 
-	.type	_g2031890965,@object            # @_g2031890965
+	.type	_g1779189781,@object            # @_g1779189781
 	.p2align	3, 0x0
-_g2031890965:
+_g1779189781:
 	.quad	E__ftheMain$d4+3
-	.size	_g2031890965, 8
+	.size	_g1779189781, 8
 
-	.type	_g2033201685,@object            # @_g2033201685
+	.type	_g1780500501,@object            # @_g1780500501
 	.p2align	3, 0x0
-_g2033201685:
+_g1780500501:
 	.quad	E__ftheMain$d2+3
-	.size	_g2033201685, 8
+	.size	_g1780500501, 8
 
-	.type	_g2001613335,@object            # @_g2001613335
+	.type	_g1748912151,@object            # @_g1748912151
 	.p2align	3, 0x0
-_g2001613335:
+_g1748912151:
 	.quad	E__ftheMain$d22+3
-	.size	_g2001613335, 8
+	.size	_g1748912151, 8
 
-	.type	_g384054295,@object             # @_g384054295
+	.type	_g1747470359,@object            # @_g1747470359
 	.p2align	3, 0x0
-_g384054295:
-	.quad	E__ftheMain$d20+3
-	.size	_g384054295, 8
-
-	.type	_g2000171543,@object            # @_g2000171543
-	.p2align	3, 0x0
-_g2000171543:
+_g1747470359:
 	.quad	E__ftheMain$d16+3
-	.size	_g2000171543, 8
+	.size	_g1747470359, 8
 
-	.type	_g439235607,@object             # @_g439235607
+	.type	_g87443991,@object              # @_g87443991
 	.p2align	3, 0x0
-_g439235607:
+_g87443991:
+	.quad	E__ftheMain$d20+3
+	.size	_g87443991, 8
+
+	.type	_g31476247,@object              # @_g31476247
+	.p2align	3, 0x0
+_g31476247:
 	.quad	E__ftheMain$d15+3
-	.size	_g439235607, 8
+	.size	_g31476247, 8
 
-	.type	_g2110534167,@object            # @_g2110534167
+	.type	_g2069383191,@object            # @_g2069383191
 	.p2align	3, 0x0
-_g2110534167:
+_g2069383191:
 	.quad	E__ftheMain$d19+3
-	.size	_g2110534167, 8
+	.size	_g2069383191, 8
 
 	.type	_c1,@object                     # @_c1
 	.section	.rodata,"a",@progbits
@@ -21319,267 +21319,267 @@ _c3:
 	.type	_c4,@object                     # @_c4
 	.p2align	4, 0x0
 _c4:
-	.quad	642
+	.quad	398
 	.quad	65538
 	.size	_c4, 16
 
 	.type	_c5,@object                     # @_c5
 	.p2align	4, 0x0
 _c5:
-	.quad	46
+	.quad	446
 	.quad	_c4
 	.size	_c5, 16
 
 	.type	_c6,@object                     # @_c6
 	.p2align	4, 0x0
 _c6:
-	.quad	50
+	.quad	434
 	.quad	_c5
 	.size	_c6, 16
 
 	.type	_c7,@object                     # @_c7
 	.p2align	4, 0x0
 _c7:
-	.quad	54
+	.quad	434
 	.quad	_c6
 	.size	_c7, 16
 
 	.type	_c8,@object                     # @_c8
 	.p2align	4, 0x0
 _c8:
-	.quad	42
+	.quad	390
 	.quad	_c7
 	.size	_c8, 16
 
 	.type	_c9,@object                     # @_c9
 	.p2align	4, 0x0
 _c9:
-	.quad	38
+	.quad	438
 	.quad	_c8
 	.size	_c9, 16
 
 	.type	_c10,@object                    # @_c10
 	.p2align	4, 0x0
 _c10:
-	.quad	130
-	.quad	_c9
+	.quad	486
+	.quad	65538
 	.size	_c10, 16
 
 	.type	_c11,@object                    # @_c11
 	.p2align	4, 0x0
 _c11:
-	.quad	506
-	.quad	65538
+	.quad	458
+	.quad	_c10
 	.size	_c11, 16
 
 	.type	_c12,@object                    # @_c12
 	.p2align	4, 0x0
 _c12:
-	.quad	182
+	.quad	446
 	.quad	_c11
 	.size	_c12, 16
 
 	.type	_c13,@object                    # @_c13
 	.p2align	4, 0x0
 _c13:
-	.quad	234
+	.quad	438
 	.quad	_c12
 	.size	_c13, 16
 
 	.type	_c14,@object                    # @_c14
 	.p2align	4, 0x0
 _c14:
-	.quad	498
+	.quad	406
 	.quad	_c13
 	.size	_c14, 16
 
 	.type	_c15,@object                    # @_c15
 	.p2align	4, 0x0
 _c15:
-	.quad	378
+	.quad	438
 	.quad	_c14
 	.size	_c15, 16
 
 	.type	_c16,@object                    # @_c16
 	.p2align	4, 0x0
 _c16:
-	.quad	370
+	.quad	130
 	.quad	_c15
 	.size	_c16, 16
 
 	.type	_c17,@object                    # @_c17
 	.p2align	4, 0x0
 _c17:
-	.quad	254
+	.quad	410
 	.quad	_c16
 	.size	_c17, 16
 
 	.type	_c18,@object                    # @_c18
 	.p2align	4, 0x0
 _c18:
-	.quad	250
+	.quad	446
 	.quad	_c17
 	.size	_c18, 16
 
 	.type	_c19,@object                    # @_c19
 	.p2align	4, 0x0
 _c19:
-	.quad	246
+	.quad	130
 	.quad	_c18
 	.size	_c19, 16
 
 	.type	_c20,@object                    # @_c20
 	.p2align	4, 0x0
 _c20:
-	.quad	242
+	.quad	466
 	.quad	_c19
 	.size	_c20, 16
 
 	.type	_c21,@object                    # @_c21
 	.p2align	4, 0x0
 _c21:
-	.quad	190
+	.quad	470
 	.quad	_c20
 	.size	_c21, 16
 
 	.type	_c22,@object                    # @_c22
 	.p2align	4, 0x0
 _c22:
-	.quad	186
+	.quad	446
 	.quad	_c21
 	.size	_c22, 16
 
 	.type	_c23,@object                    # @_c23
 	.p2align	4, 0x0
 _c23:
-	.quad	174
+	.quad	130
 	.quad	_c22
 	.size	_c23, 16
 
 	.type	_c24,@object                    # @_c24
 	.p2align	4, 0x0
 _c24:
-	.quad	170
+	.quad	234
 	.quad	_c23
 	.size	_c24, 16
 
 	.type	_c25,@object                    # @_c25
 	.p2align	4, 0x0
 _c25:
-	.quad	154
-	.quad	_c24
+	.quad	158
+	.quad	65538
 	.size	_c25, 16
 
 	.type	_c26,@object                    # @_c26
 	.p2align	4, 0x0
 _c26:
-	.quad	150
-	.quad	_c25
+	.quad	154
+	.quad	65538
 	.size	_c26, 16
 
 	.type	_c27,@object                    # @_c27
 	.p2align	4, 0x0
 _c27:
-	.quad	146
+	.quad	370
 	.quad	_c26
 	.size	_c27, 16
 
 	.type	_c28,@object                    # @_c28
 	.p2align	4, 0x0
 _c28:
-	.quad	142
-	.quad	_c27
+	.quad	458
+	.quad	65538
 	.size	_c28, 16
 
 	.type	_c29,@object                    # @_c29
 	.p2align	4, 0x0
 _c29:
-	.quad	258
+	.quad	406
 	.quad	_c28
 	.size	_c29, 16
 
 	.type	_c30,@object                    # @_c30
 	.p2align	4, 0x0
 _c30:
-	.quad	134
+	.quad	434
 	.quad	_c29
 	.size	_c30, 16
 
 	.type	_c31,@object                    # @_c31
 	.p2align	4, 0x0
 _c31:
-	.quad	406
-	.quad	65538
+	.quad	434
+	.quad	_c30
 	.size	_c31, 16
 
 	.type	_c32,@object                    # @_c32
 	.p2align	4, 0x0
 _c32:
-	.quad	398
+	.quad	446
 	.quad	_c31
 	.size	_c32, 16
 
 	.type	_c33,@object                    # @_c33
 	.p2align	4, 0x0
 _c33:
-	.quad	422
+	.quad	458
 	.quad	_c32
 	.size	_c33, 16
 
 	.type	_c34,@object                    # @_c34
 	.p2align	4, 0x0
 _c34:
-	.quad	474
+	.quad	466
 	.quad	_c33
 	.size	_c34, 16
 
 	.type	_c35,@object                    # @_c35
 	.p2align	4, 0x0
 _c35:
-	.quad	406
+	.quad	442
 	.quad	_c34
 	.size	_c35, 16
 
 	.type	_c36,@object                    # @_c36
 	.p2align	4, 0x0
 _c36:
-	.quad	402
+	.quad	446
 	.quad	_c35
 	.size	_c36, 16
 
 	.type	_c37,@object                    # @_c37
 	.p2align	4, 0x0
 _c37:
-	.quad	186
+	.quad	270
 	.quad	_c36
 	.size	_c37, 16
 
 	.type	_c38,@object                    # @_c38
 	.p2align	4, 0x0
 _c38:
-	.quad	422
+	.quad	390
 	.quad	_c37
 	.size	_c38, 16
 
 	.type	_c39,@object                    # @_c39
 	.p2align	4, 0x0
 _c39:
-	.quad	398
+	.quad	466
 	.quad	_c38
 	.size	_c39, 16
 
 	.type	_c40,@object                    # @_c40
 	.p2align	4, 0x0
 _c40:
-	.quad	450
+	.quad	262
 	.quad	_c39
 	.size	_c40, 16
 
 	.type	_c41,@object                    # @_c41
 	.p2align	4, 0x0
 _c41:
-	.quad	186
-	.quad	_c40
+	.quad	406
+	.quad	65538
 	.size	_c41, 16
 
 	.type	_c42,@object                    # @_c42
@@ -21592,113 +21592,113 @@ _c42:
 	.type	_c43,@object                    # @_c43
 	.p2align	4, 0x0
 _c43:
-	.quad	406
+	.quad	390
 	.quad	_c42
 	.size	_c43, 16
 
 	.type	_c44,@object                    # @_c44
 	.p2align	4, 0x0
 _c44:
-	.quad	402
+	.quad	434
 	.quad	_c43
 	.size	_c44, 16
 
 	.type	_c45,@object                    # @_c45
 	.p2align	4, 0x0
 _c45:
-	.quad	186
+	.quad	334
 	.quad	_c44
 	.size	_c45, 16
 
 	.type	_c46,@object                    # @_c46
 	.p2align	4, 0x0
 _c46:
-	.quad	462
-	.quad	_c45
+	.quad	466
+	.quad	_c29
 	.size	_c46, 16
 
 	.type	_c47,@object                    # @_c47
 	.p2align	4, 0x0
 _c47:
-	.quad	446
+	.quad	462
 	.quad	_c46
 	.size	_c47, 16
 
 	.type	_c48,@object                    # @_c48
 	.p2align	4, 0x0
 _c48:
-	.quad	418
+	.quad	390
 	.quad	_c47
 	.size	_c48, 16
 
 	.type	_c49,@object                    # @_c49
 	.p2align	4, 0x0
 _c49:
-	.quad	186
+	.quad	310
 	.quad	_c48
 	.size	_c49, 16
 
 	.type	_c50,@object                    # @_c50
 	.p2align	4, 0x0
 _c50:
-	.quad	438
-	.quad	_c49
+	.quad	462
+	.quad	_c41
 	.size	_c50, 16
 
 	.type	_c51,@object                    # @_c51
 	.p2align	4, 0x0
 _c51:
-	.quad	446
+	.quad	434
 	.quad	_c50
 	.size	_c51, 16
 
 	.type	_c52,@object                    # @_c52
 	.p2align	4, 0x0
 _c52:
-	.quad	398
+	.quad	390
 	.quad	_c51
 	.size	_c52, 16
 
 	.type	_c53,@object                    # @_c53
 	.p2align	4, 0x0
 _c53:
-	.quad	458
-	.quad	65538
+	.quad	282
+	.quad	_c52
 	.size	_c53, 16
 
 	.type	_c54,@object                    # @_c54
 	.p2align	4, 0x0
 _c54:
-	.quad	406
-	.quad	_c53
+	.quad	470
+	.quad	_c41
 	.size	_c54, 16
 
 	.type	_c55,@object                    # @_c55
 	.p2align	4, 0x0
 _c55:
-	.quad	418
+	.quad	458
 	.quad	_c54
 	.size	_c55, 16
 
 	.type	_c56,@object                    # @_c56
 	.p2align	4, 0x0
 _c56:
-	.quad	466
+	.quad	338
 	.quad	_c55
 	.size	_c56, 16
 
 	.type	_c57,@object                    # @_c57
 	.p2align	4, 0x0
 _c57:
-	.quad	318
-	.quad	_c56
+	.quad	130
+	.quad	65538
 	.size	_c57, 16
 
 	.type	_c58,@object                    # @_c58
 	.p2align	4, 0x0
 _c58:
-	.quad	274
-	.quad	_c35
+	.quad	246
+	.quad	_c57
 	.size	_c58, 16
 
 	.type	_c59,@object                    # @_c59
@@ -21711,196 +21711,196 @@ _c59:
 	.type	_c60,@object                    # @_c60
 	.p2align	4, 0x0
 _c60:
-	.quad	278
-	.quad	_c59
+	.quad	466
+	.quad	65538
 	.size	_c60, 16
 
 	.type	_c61,@object                    # @_c61
 	.p2align	4, 0x0
 _c61:
-	.quad	274
+	.quad	458
 	.quad	_c60
 	.size	_c61, 16
 
 	.type	_c62,@object                    # @_c62
 	.p2align	4, 0x0
 _c62:
-	.quad	294
+	.quad	446
 	.quad	_c61
 	.size	_c62, 16
 
 	.type	_c63,@object                    # @_c63
 	.p2align	4, 0x0
 _c63:
-	.quad	130
+	.quad	450
 	.quad	_c62
 	.size	_c63, 16
 
 	.type	_c64,@object                    # @_c64
 	.p2align	4, 0x0
 _c64:
-	.quad	406
+	.quad	450
 	.quad	_c63
 	.size	_c64, 16
 
 	.type	_c65,@object                    # @_c65
 	.p2align	4, 0x0
 _c65:
-	.quad	458
+	.quad	470
 	.quad	_c64
 	.size	_c65, 16
 
 	.type	_c66,@object                    # @_c66
 	.p2align	4, 0x0
 _c66:
-	.quad	390
+	.quad	334
 	.quad	_c65
 	.size	_c66, 16
 
 	.type	_c67,@object                    # @_c67
 	.p2align	4, 0x0
 _c67:
-	.quad	350
+	.quad	390
 	.quad	_c66
 	.size	_c67, 16
 
 	.type	_c68,@object                    # @_c68
 	.p2align	4, 0x0
 _c68:
-	.quad	310
+	.quad	438
 	.quad	_c67
 	.size	_c68, 16
 
 	.type	_c69,@object                    # @_c69
 	.p2align	4, 0x0
 _c69:
-	.quad	346
+	.quad	402
 	.quad	_c68
 	.size	_c69, 16
 
 	.type	_c70,@object                    # @_c70
 	.p2align	4, 0x0
 _c70:
-	.quad	158
-	.quad	65538
+	.quad	342
+	.quad	_c69
 	.size	_c70, 16
 
 	.type	_c71,@object                    # @_c71
 	.p2align	4, 0x0
 _c71:
-	.quad	154
-	.quad	65538
+	.quad	390
+	.quad	_c70
 	.size	_c71, 16
 
 	.type	_c72,@object                    # @_c72
 	.p2align	4, 0x0
 _c72:
-	.quad	370
+	.quad	466
 	.quad	_c71
 	.size	_c72, 16
 
 	.type	_c73,@object                    # @_c73
 	.p2align	4, 0x0
 _c73:
-	.quad	434
-	.quad	_c54
+	.quad	390
+	.quad	_c72
 	.size	_c73, 16
 
 	.type	_c74,@object                    # @_c74
 	.p2align	4, 0x0
 _c74:
-	.quad	434
-	.quad	_c73
+	.quad	274
+	.quad	_c68
 	.size	_c74, 16
 
 	.type	_c75,@object                    # @_c75
 	.p2align	4, 0x0
 _c75:
-	.quad	446
+	.quad	390
 	.quad	_c74
 	.size	_c75, 16
 
 	.type	_c76,@object                    # @_c76
 	.p2align	4, 0x0
 _c76:
-	.quad	458
+	.quad	466
 	.quad	_c75
 	.size	_c76, 16
 
 	.type	_c77,@object                    # @_c77
 	.p2align	4, 0x0
 _c77:
-	.quad	466
+	.quad	390
 	.quad	_c76
 	.size	_c77, 16
 
 	.type	_c78,@object                    # @_c78
 	.p2align	4, 0x0
 _c78:
-	.quad	442
-	.quad	_c77
+	.quad	394
+	.quad	_c67
 	.size	_c78, 16
 
 	.type	_c79,@object                    # @_c79
 	.p2align	4, 0x0
 _c79:
-	.quad	446
+	.quad	306
 	.quad	_c78
 	.size	_c79, 16
 
 	.type	_c80,@object                    # @_c80
 	.p2align	4, 0x0
 _c80:
-	.quad	270
+	.quad	390
 	.quad	_c79
 	.size	_c80, 16
 
 	.type	_c81,@object                    # @_c81
 	.p2align	4, 0x0
 _c81:
-	.quad	390
+	.quad	466
 	.quad	_c80
 	.size	_c81, 16
 
 	.type	_c82,@object                    # @_c82
 	.p2align	4, 0x0
 _c82:
-	.quad	466
+	.quad	390
 	.quad	_c81
 	.size	_c82, 16
 
 	.type	_c83,@object                    # @_c83
 	.p2align	4, 0x0
 _c83:
-	.quad	262
-	.quad	_c82
+	.quad	494
+	.quad	65538
 	.size	_c83, 16
 
 	.type	_c84,@object                    # @_c84
 	.p2align	4, 0x0
 _c84:
-	.quad	474
-	.quad	_c31
+	.quad	130
+	.quad	_c83
 	.size	_c84, 16
 
 	.type	_c85,@object                    # @_c85
 	.p2align	4, 0x0
 _c85:
-	.quad	390
-	.quad	_c84
+	.quad	462
+	.quad	65538
 	.size	_c85, 16
 
 	.type	_c86,@object                    # @_c86
 	.p2align	4, 0x0
 _c86:
-	.quad	434
+	.quad	406
 	.quad	_c85
 	.size	_c86, 16
 
 	.type	_c87,@object                    # @_c87
 	.p2align	4, 0x0
 _c87:
-	.quad	334
+	.quad	422
 	.quad	_c86
 	.size	_c87, 16
 
@@ -21908,174 +21908,174 @@ _c87:
 	.p2align	4, 0x0
 _c88:
 	.quad	466
-	.quad	_c54
+	.quad	_c87
 	.size	_c88, 16
 
 	.type	_c89,@object                    # @_c89
 	.p2align	4, 0x0
 _c89:
-	.quad	462
+	.quad	422
 	.quad	_c88
 	.size	_c89, 16
 
 	.type	_c90,@object                    # @_c90
 	.p2align	4, 0x0
 _c90:
-	.quad	390
+	.quad	434
 	.quad	_c89
 	.size	_c90, 16
 
 	.type	_c91,@object                    # @_c91
 	.p2align	4, 0x0
 _c91:
-	.quad	310
+	.quad	422
 	.quad	_c90
 	.size	_c91, 16
 
 	.type	_c92,@object                    # @_c92
 	.p2align	4, 0x0
 _c92:
-	.quad	462
-	.quad	_c31
+	.quad	394
+	.quad	_c91
 	.size	_c92, 16
 
 	.type	_c93,@object                    # @_c93
 	.p2align	4, 0x0
 _c93:
-	.quad	434
+	.quad	390
 	.quad	_c92
 	.size	_c93, 16
 
 	.type	_c94,@object                    # @_c94
 	.p2align	4, 0x0
 _c94:
-	.quad	390
+	.quad	450
 	.quad	_c93
 	.size	_c94, 16
 
 	.type	_c95,@object                    # @_c95
 	.p2align	4, 0x0
 _c95:
-	.quad	282
+	.quad	390
 	.quad	_c94
 	.size	_c95, 16
 
 	.type	_c96,@object                    # @_c96
 	.p2align	4, 0x0
 _c96:
-	.quad	470
-	.quad	_c31
+	.quad	270
+	.quad	_c95
 	.size	_c96, 16
 
 	.type	_c97,@object                    # @_c97
 	.p2align	4, 0x0
 _c97:
-	.quad	458
+	.quad	390
 	.quad	_c96
 	.size	_c97, 16
 
 	.type	_c98,@object                    # @_c98
 	.p2align	4, 0x0
 _c98:
-	.quad	338
+	.quad	466
 	.quad	_c97
 	.size	_c98, 16
 
 	.type	_c99,@object                    # @_c99
 	.p2align	4, 0x0
 _c99:
-	.quad	130
-	.quad	65538
+	.quad	262
+	.quad	_c98
 	.size	_c99, 16
 
 	.type	_c100,@object                   # @_c100
 	.p2align	4, 0x0
 _c100:
-	.quad	246
-	.quad	_c99
+	.quad	390
+	.quad	_c98
 	.size	_c100, 16
 
 	.type	_c101,@object                   # @_c101
 	.p2align	4, 0x0
 _c101:
-	.quad	130
-	.quad	_c100
+	.quad	454
+	.quad	65538
 	.size	_c101, 16
 
 	.type	_c102,@object                   # @_c102
 	.p2align	4, 0x0
 _c102:
-	.quad	466
-	.quad	65538
+	.quad	458
+	.quad	_c101
 	.size	_c102, 16
 
 	.type	_c103,@object                   # @_c103
 	.p2align	4, 0x0
 _c103:
-	.quad	458
+	.quad	294
 	.quad	_c102
 	.size	_c103, 16
 
 	.type	_c104,@object                   # @_c104
 	.p2align	4, 0x0
 _c104:
-	.quad	446
+	.quad	390
 	.quad	_c103
 	.size	_c104, 16
 
 	.type	_c105,@object                   # @_c105
 	.p2align	4, 0x0
 _c105:
-	.quad	450
+	.quad	466
 	.quad	_c104
 	.size	_c105, 16
 
 	.type	_c106,@object                   # @_c106
 	.p2align	4, 0x0
 _c106:
-	.quad	450
+	.quad	390
 	.quad	_c105
 	.size	_c106, 16
 
 	.type	_c107,@object                   # @_c107
 	.p2align	4, 0x0
 _c107:
-	.quad	470
-	.quad	_c106
+	.quad	422
+	.quad	_c42
 	.size	_c107, 16
 
 	.type	_c108,@object                   # @_c108
 	.p2align	4, 0x0
 _c108:
-	.quad	334
+	.quad	458
 	.quad	_c107
 	.size	_c108, 16
 
 	.type	_c109,@object                   # @_c109
 	.p2align	4, 0x0
 _c109:
-	.quad	390
+	.quad	274
 	.quad	_c108
 	.size	_c109, 16
 
 	.type	_c110,@object                   # @_c110
 	.p2align	4, 0x0
 _c110:
-	.quad	438
+	.quad	390
 	.quad	_c109
 	.size	_c110, 16
 
 	.type	_c111,@object                   # @_c111
 	.p2align	4, 0x0
 _c111:
-	.quad	402
+	.quad	466
 	.quad	_c110
 	.size	_c111, 16
 
 	.type	_c112,@object                   # @_c112
 	.p2align	4, 0x0
 _c112:
-	.quad	342
+	.quad	390
 	.quad	_c111
 	.size	_c112, 16
 
@@ -22083,105 +22083,105 @@ _c112:
 	.p2align	4, 0x0
 _c113:
 	.quad	390
-	.quad	_c112
+	.quad	_c39
 	.size	_c113, 16
 
 	.type	_c114,@object                   # @_c114
 	.p2align	4, 0x0
 _c114:
-	.quad	466
-	.quad	_c113
+	.quad	398
+	.quad	_c41
 	.size	_c114, 16
 
 	.type	_c115,@object                   # @_c115
 	.p2align	4, 0x0
 _c115:
-	.quad	390
+	.quad	422
 	.quad	_c114
 	.size	_c115, 16
 
 	.type	_c116,@object                   # @_c116
 	.p2align	4, 0x0
 _c116:
-	.quad	274
-	.quad	_c110
+	.quad	474
+	.quad	_c115
 	.size	_c116, 16
 
 	.type	_c117,@object                   # @_c117
 	.p2align	4, 0x0
 _c117:
-	.quad	390
+	.quad	406
 	.quad	_c116
 	.size	_c117, 16
 
 	.type	_c118,@object                   # @_c118
 	.p2align	4, 0x0
 _c118:
-	.quad	466
+	.quad	274
 	.quad	_c117
 	.size	_c118, 16
 
 	.type	_c119,@object                   # @_c119
 	.p2align	4, 0x0
 _c119:
-	.quad	390
+	.quad	422
 	.quad	_c118
 	.size	_c119, 16
 
 	.type	_c120,@object                   # @_c120
 	.p2align	4, 0x0
 _c120:
-	.quad	394
-	.quad	_c109
+	.quad	450
+	.quad	_c119
 	.size	_c120, 16
 
 	.type	_c121,@object                   # @_c121
 	.p2align	4, 0x0
 _c121:
-	.quad	306
+	.quad	390
 	.quad	_c120
 	.size	_c121, 16
 
 	.type	_c122,@object                   # @_c122
 	.p2align	4, 0x0
 _c122:
-	.quad	390
+	.quad	466
 	.quad	_c121
 	.size	_c122, 16
 
 	.type	_c123,@object                   # @_c123
 	.p2align	4, 0x0
 _c123:
-	.quad	466
+	.quad	262
 	.quad	_c122
 	.size	_c123, 16
 
 	.type	_c124,@object                   # @_c124
 	.p2align	4, 0x0
 _c124:
-	.quad	390
-	.quad	_c123
+	.quad	458
+	.quad	_c85
 	.size	_c124, 16
 
 	.type	_c125,@object                   # @_c125
 	.p2align	4, 0x0
 _c125:
-	.quad	494
-	.quad	65538
+	.quad	446
+	.quad	_c124
 	.size	_c125, 16
 
 	.type	_c126,@object                   # @_c126
 	.p2align	4, 0x0
 _c126:
-	.quad	130
+	.quad	466
 	.quad	_c125
 	.size	_c126, 16
 
 	.type	_c127,@object                   # @_c127
 	.p2align	4, 0x0
 _c127:
-	.quad	462
-	.quad	65538
+	.quad	398
+	.quad	_c126
 	.size	_c127, 16
 
 	.type	_c128,@object                   # @_c128
@@ -22194,203 +22194,203 @@ _c128:
 	.type	_c129,@object                   # @_c129
 	.p2align	4, 0x0
 _c129:
-	.quad	422
+	.quad	334
 	.quad	_c128
 	.size	_c129, 16
 
 	.type	_c130,@object                   # @_c130
 	.p2align	4, 0x0
 _c130:
-	.quad	466
+	.quad	390
 	.quad	_c129
 	.size	_c130, 16
 
 	.type	_c131,@object                   # @_c131
 	.p2align	4, 0x0
 _c131:
-	.quad	422
+	.quad	466
 	.quad	_c130
 	.size	_c131, 16
 
 	.type	_c132,@object                   # @_c132
 	.p2align	4, 0x0
 _c132:
-	.quad	434
+	.quad	390
 	.quad	_c131
 	.size	_c132, 16
 
 	.type	_c133,@object                   # @_c133
 	.p2align	4, 0x0
 _c133:
-	.quad	422
-	.quad	_c132
+	.quad	390
+	.quad	_c118
 	.size	_c133, 16
 
 	.type	_c134,@object                   # @_c134
 	.p2align	4, 0x0
 _c134:
-	.quad	394
+	.quad	466
 	.quad	_c133
 	.size	_c134, 16
 
 	.type	_c135,@object                   # @_c135
 	.p2align	4, 0x0
 _c135:
-	.quad	390
+	.quad	262
 	.quad	_c134
 	.size	_c135, 16
 
 	.type	_c136,@object                   # @_c136
 	.p2align	4, 0x0
 _c136:
-	.quad	450
-	.quad	_c135
+	.quad	434
+	.quad	_c41
 	.size	_c136, 16
 
 	.type	_c137,@object                   # @_c137
 	.p2align	4, 0x0
 _c137:
-	.quad	390
+	.quad	394
 	.quad	_c136
 	.size	_c137, 16
 
 	.type	_c138,@object                   # @_c138
 	.p2align	4, 0x0
 _c138:
-	.quad	270
+	.quad	390
 	.quad	_c137
 	.size	_c138, 16
 
 	.type	_c139,@object                   # @_c139
 	.p2align	4, 0x0
 _c139:
-	.quad	390
+	.quad	458
 	.quad	_c138
 	.size	_c139, 16
 
 	.type	_c140,@object                   # @_c140
 	.p2align	4, 0x0
 _c140:
-	.quad	466
+	.quad	446
 	.quad	_c139
 	.size	_c140, 16
 
 	.type	_c141,@object                   # @_c141
 	.p2align	4, 0x0
 _c141:
-	.quad	262
+	.quad	466
 	.quad	_c140
 	.size	_c141, 16
 
 	.type	_c142,@object                   # @_c142
 	.p2align	4, 0x0
 _c142:
-	.quad	390
-	.quad	_c140
+	.quad	462
+	.quad	_c141
 	.size	_c142, 16
 
 	.type	_c143,@object                   # @_c143
 	.p2align	4, 0x0
 _c143:
-	.quad	454
-	.quad	65538
+	.quad	130
+	.quad	_c142
 	.size	_c143, 16
 
 	.type	_c144,@object                   # @_c144
 	.p2align	4, 0x0
 _c144:
-	.quad	458
+	.quad	406
 	.quad	_c143
 	.size	_c144, 16
 
 	.type	_c145,@object                   # @_c145
 	.p2align	4, 0x0
 _c145:
-	.quad	294
+	.quad	474
 	.quad	_c144
 	.size	_c145, 16
 
 	.type	_c146,@object                   # @_c146
 	.p2align	4, 0x0
 _c146:
-	.quad	390
+	.quad	406
 	.quad	_c145
 	.size	_c146, 16
 
 	.type	_c147,@object                   # @_c147
 	.p2align	4, 0x0
 _c147:
-	.quad	466
+	.quad	422
 	.quad	_c146
 	.size	_c147, 16
 
 	.type	_c148,@object                   # @_c148
 	.p2align	4, 0x0
 _c148:
-	.quad	390
+	.quad	458
 	.quad	_c147
 	.size	_c148, 16
 
 	.type	_c149,@object                   # @_c149
 	.p2align	4, 0x0
 _c149:
-	.quad	422
-	.quad	_c84
+	.quad	466
+	.quad	_c148
 	.size	_c149, 16
 
 	.type	_c150,@object                   # @_c150
 	.p2align	4, 0x0
 _c150:
-	.quad	458
+	.quad	406
 	.quad	_c149
 	.size	_c150, 16
 
 	.type	_c151,@object                   # @_c151
 	.p2align	4, 0x0
 _c151:
-	.quad	274
+	.quad	458
 	.quad	_c150
 	.size	_c151, 16
 
 	.type	_c152,@object                   # @_c152
 	.p2align	4, 0x0
 _c152:
-	.quad	390
+	.quad	130
 	.quad	_c151
 	.size	_c152, 16
 
 	.type	_c153,@object                   # @_c153
 	.p2align	4, 0x0
 _c153:
-	.quad	466
+	.quad	446
 	.quad	_c152
 	.size	_c153, 16
 
 	.type	_c154,@object                   # @_c154
 	.p2align	4, 0x0
 _c154:
-	.quad	390
+	.quad	466
 	.quad	_c153
 	.size	_c154, 16
 
 	.type	_c155,@object                   # @_c155
 	.p2align	4, 0x0
 _c155:
-	.quad	390
-	.quad	_c82
+	.quad	130
+	.quad	_c154
 	.size	_c155, 16
 
 	.type	_c156,@object                   # @_c156
 	.p2align	4, 0x0
 _c156:
-	.quad	422
-	.quad	_c58
+	.quad	406
+	.quad	_c155
 	.size	_c156, 16
 
 	.type	_c157,@object                   # @_c157
 	.p2align	4, 0x0
 _c157:
-	.quad	450
+	.quad	398
 	.quad	_c156
 	.size	_c157, 16
 
@@ -22404,634 +22404,630 @@ _c158:
 	.type	_c159,@object                   # @_c159
 	.p2align	4, 0x0
 _c159:
-	.quad	466
+	.quad	450
 	.quad	_c158
 	.size	_c159, 16
 
 	.type	_c160,@object                   # @_c160
 	.p2align	4, 0x0
 _c160:
-	.quad	262
+	.quad	462
 	.quad	_c159
 	.size	_c160, 16
 
 	.type	_c161,@object                   # @_c161
 	.p2align	4, 0x0
 _c161:
-	.quad	458
-	.quad	_c127
+	.quad	130
+	.quad	_c160
 	.size	_c161, 16
 
 	.type	_c162,@object                   # @_c162
 	.p2align	4, 0x0
 _c162:
-	.quad	446
+	.quad	418
 	.quad	_c161
 	.size	_c162, 16
 
 	.type	_c163,@object                   # @_c163
 	.p2align	4, 0x0
 _c163:
-	.quad	466
+	.quad	414
 	.quad	_c162
 	.size	_c163, 16
 
 	.type	_c164,@object                   # @_c164
 	.p2align	4, 0x0
 _c164:
-	.quad	398
+	.quad	470
 	.quad	_c163
 	.size	_c164, 16
 
 	.type	_c165,@object                   # @_c165
 	.p2align	4, 0x0
 _c165:
-	.quad	406
+	.quad	446
 	.quad	_c164
 	.size	_c165, 16
 
 	.type	_c166,@object                   # @_c166
 	.p2align	4, 0x0
 _c166:
-	.quad	334
+	.quad	442
 	.quad	_c165
 	.size	_c166, 16
 
 	.type	_c167,@object                   # @_c167
 	.p2align	4, 0x0
 _c167:
-	.quad	390
+	.quad	406
 	.quad	_c166
 	.size	_c167, 16
 
 	.type	_c168,@object                   # @_c168
 	.p2align	4, 0x0
 _c168:
-	.quad	466
+	.quad	130
 	.quad	_c167
 	.size	_c168, 16
 
 	.type	_c169,@object                   # @_c169
 	.p2align	4, 0x0
 _c169:
-	.quad	390
+	.quad	466
 	.quad	_c168
 	.size	_c169, 16
 
 	.type	_c170,@object                   # @_c170
 	.p2align	4, 0x0
 _c170:
-	.quad	390
-	.quad	_c58
+	.quad	446
+	.quad	_c169
 	.size	_c170, 16
 
 	.type	_c171,@object                   # @_c171
 	.p2align	4, 0x0
 _c171:
-	.quad	466
+	.quad	314
 	.quad	_c170
 	.size	_c171, 16
 
 	.type	_c172,@object                   # @_c172
 	.p2align	4, 0x0
 _c172:
-	.quad	262
+	.quad	2                               # 0x2
 	.quad	_c171
 	.size	_c172, 16
 
 	.type	_c173,@object                   # @_c173
 	.p2align	4, 0x0
 _c173:
-	.quad	434
-	.quad	_c31
+	.quad	2                               # 0x2
+	.quad	2
 	.size	_c173, 16
 
 	.type	_c174,@object                   # @_c174
 	.p2align	4, 0x0
 _c174:
-	.quad	394
-	.quad	_c173
+	.quad	470
+	.quad	_c85
 	.size	_c174, 16
 
 	.type	_c175,@object                   # @_c175
 	.p2align	4, 0x0
 _c175:
-	.quad	390
+	.quad	466
 	.quad	_c174
 	.size	_c175, 16
 
 	.type	_c176,@object                   # @_c176
 	.p2align	4, 0x0
 _c176:
-	.quad	458
+	.quad	390
 	.quad	_c175
 	.size	_c176, 16
 
 	.type	_c177,@object                   # @_c177
 	.p2align	4, 0x0
 _c177:
-	.quad	446
+	.quad	466
 	.quad	_c176
 	.size	_c177, 16
 
 	.type	_c178,@object                   # @_c178
 	.p2align	4, 0x0
 _c178:
-	.quad	466
+	.quad	462
 	.quad	_c177
 	.size	_c178, 16
 
 	.type	_c179,@object                   # @_c179
 	.p2align	4, 0x0
 _c179:
-	.quad	462
+	.quad	130
 	.quad	_c178
 	.size	_c179, 16
 
 	.type	_c180,@object                   # @_c180
 	.p2align	4, 0x0
 _c180:
-	.quad	130
+	.quad	406
 	.quad	_c179
 	.size	_c180, 16
 
 	.type	_c181,@object                   # @_c181
 	.p2align	4, 0x0
 _c181:
-	.quad	406
+	.quad	458
 	.quad	_c180
 	.size	_c181, 16
 
 	.type	_c182,@object                   # @_c182
 	.p2align	4, 0x0
 _c182:
-	.quad	474
+	.quad	458
 	.quad	_c181
 	.size	_c182, 16
 
 	.type	_c183,@object                   # @_c183
 	.p2align	4, 0x0
 _c183:
-	.quad	406
+	.quad	390
 	.quad	_c182
 	.size	_c183, 16
 
 	.type	_c184,@object                   # @_c184
 	.p2align	4, 0x0
 _c184:
-	.quad	422
+	.quad	490
 	.quad	_c183
 	.size	_c184, 16
 
 	.type	_c185,@object                   # @_c185
 	.p2align	4, 0x0
 _c185:
-	.quad	458
+	.quad	422
 	.quad	_c184
 	.size	_c185, 16
 
 	.type	_c186,@object                   # @_c186
 	.p2align	4, 0x0
 _c186:
-	.quad	466
+	.quad	394
 	.quad	_c185
 	.size	_c186, 16
 
 	.type	_c187,@object                   # @_c187
 	.p2align	4, 0x0
 _c187:
-	.quad	406
+	.quad	130
 	.quad	_c186
 	.size	_c187, 16
 
 	.type	_c188,@object                   # @_c188
 	.p2align	4, 0x0
 _c188:
-	.quad	458
+	.quad	402
 	.quad	_c187
 	.size	_c188, 16
 
 	.type	_c189,@object                   # @_c189
 	.p2align	4, 0x0
 _c189:
-	.quad	130
+	.quad	406
 	.quad	_c188
 	.size	_c189, 16
 
 	.type	_c190,@object                   # @_c190
 	.p2align	4, 0x0
 _c190:
-	.quad	446
+	.quad	442
 	.quad	_c189
 	.size	_c190, 16
 
 	.type	_c191,@object                   # @_c191
 	.p2align	4, 0x0
 _c191:
-	.quad	466
+	.quad	458
 	.quad	_c190
 	.size	_c191, 16
 
 	.type	_c192,@object                   # @_c192
 	.p2align	4, 0x0
 _c192:
-	.quad	130
+	.quad	470
 	.quad	_c191
 	.size	_c192, 16
 
 	.type	_c193,@object                   # @_c193
 	.p2align	4, 0x0
 _c193:
-	.quad	406
+	.quad	466
 	.quad	_c192
 	.size	_c193, 16
 
 	.type	_c194,@object                   # @_c194
 	.p2align	4, 0x0
 _c194:
-	.quad	398
+	.quad	406
 	.quad	_c193
 	.size	_c194, 16
 
 	.type	_c195,@object                   # @_c195
 	.p2align	4, 0x0
 _c195:
-	.quad	390
+	.quad	330
 	.quad	_c194
 	.size	_c195, 16
 
 	.type	_c196,@object                   # @_c196
 	.p2align	4, 0x0
 _c196:
-	.quad	450
+	.quad	130
 	.quad	_c195
 	.size	_c196, 16
 
 	.type	_c197,@object                   # @_c197
 	.p2align	4, 0x0
 _c197:
-	.quad	462
+	.quad	234
 	.quad	_c196
 	.size	_c197, 16
 
 	.type	_c198,@object                   # @_c198
 	.p2align	4, 0x0
 _c198:
-	.quad	130
+	.quad	462
 	.quad	_c197
 	.size	_c198, 16
 
 	.type	_c199,@object                   # @_c199
 	.p2align	4, 0x0
 _c199:
-	.quad	418
+	.quad	434
 	.quad	_c198
 	.size	_c199, 16
 
 	.type	_c200,@object                   # @_c200
 	.p2align	4, 0x0
 _c200:
-	.quad	414
+	.quad	406
 	.quad	_c199
 	.size	_c200, 16
 
 	.type	_c201,@object                   # @_c201
 	.p2align	4, 0x0
 _c201:
-	.quad	470
+	.quad	442
 	.quad	_c200
 	.size	_c201, 16
 
 	.type	_c202,@object                   # @_c202
 	.p2align	4, 0x0
 _c202:
-	.quad	446
+	.quad	442
 	.quad	_c201
 	.size	_c202, 16
 
 	.type	_c203,@object                   # @_c203
 	.p2align	4, 0x0
 _c203:
-	.quad	442
+	.quad	390
 	.quad	_c202
 	.size	_c203, 16
 
 	.type	_c204,@object                   # @_c204
 	.p2align	4, 0x0
 _c204:
-	.quad	406
+	.quad	418
 	.quad	_c203
 	.size	_c204, 16
 
 	.type	_c205,@object                   # @_c205
 	.p2align	4, 0x0
 _c205:
-	.quad	130
+	.quad	270
 	.quad	_c204
 	.size	_c205, 16
 
 	.type	_c206,@object                   # @_c206
 	.p2align	4, 0x0
 _c206:
-	.quad	466
+	.quad	442
 	.quad	_c205
 	.size	_c206, 16
 
 	.type	_c207,@object                   # @_c207
 	.p2align	4, 0x0
 _c207:
-	.quad	446
+	.quad	318
 	.quad	_c206
 	.size	_c207, 16
 
 	.type	_c208,@object                   # @_c208
 	.p2align	4, 0x0
 _c208:
-	.quad	314
+	.quad	466
 	.quad	_c207
 	.size	_c208, 16
 
 	.type	_c209,@object                   # @_c209
 	.p2align	4, 0x0
 _c209:
-	.quad	2                               # 0x2
+	.quad	422
 	.quad	_c208
 	.size	_c209, 16
 
 	.type	_c210,@object                   # @_c210
 	.p2align	4, 0x0
 _c210:
-	.quad	422
-	.quad	_c102
+	.quad	390
+	.quad	_c209
 	.size	_c210, 16
 
 	.type	_c211,@object                   # @_c211
 	.p2align	4, 0x0
 _c211:
-	.quad	442
+	.quad	350
 	.quad	_c210
 	.size	_c211, 16
 
 	.type	_c212,@object                   # @_c212
 	.p2align	4, 0x0
 _c212:
-	.quad	422
+	.quad	462
 	.quad	_c211
 	.size	_c212, 16
 
 	.type	_c213,@object                   # @_c213
 	.p2align	4, 0x0
 _c213:
-	.quad	186
+	.quad	446
 	.quad	_c212
 	.size	_c213, 16
 
 	.type	_c214,@object                   # @_c214
 	.p2align	4, 0x0
 _c214:
-	.quad	462
+	.quad	418
 	.quad	_c213
 	.size	_c214, 16
 
 	.type	_c215,@object                   # @_c215
 	.p2align	4, 0x0
 _c215:
-	.quad	446
-	.quad	_c214
+	.quad	2                               # 0x2
+	.quad	6
 	.size	_c215, 16
 
 	.type	_c216,@object                   # @_c216
 	.p2align	4, 0x0
 _c216:
-	.quad	418
-	.quad	_c215
+	.quad	422
+	.quad	_c60
 	.size	_c216, 16
 
 	.type	_c217,@object                   # @_c217
 	.p2align	4, 0x0
 _c217:
-	.quad	398
-	.quad	65538
+	.quad	442
+	.quad	_c216
 	.size	_c217, 16
 
 	.type	_c218,@object                   # @_c218
 	.p2align	4, 0x0
 _c218:
-	.quad	446
+	.quad	422
 	.quad	_c217
 	.size	_c218, 16
 
 	.type	_c219,@object                   # @_c219
 	.p2align	4, 0x0
 _c219:
-	.quad	434
+	.quad	186
 	.quad	_c218
 	.size	_c219, 16
 
 	.type	_c220,@object                   # @_c220
 	.p2align	4, 0x0
 _c220:
-	.quad	434
+	.quad	462
 	.quad	_c219
 	.size	_c220, 16
 
 	.type	_c221,@object                   # @_c221
 	.p2align	4, 0x0
 _c221:
-	.quad	390
+	.quad	446
 	.quad	_c220
 	.size	_c221, 16
 
 	.type	_c222,@object                   # @_c222
 	.p2align	4, 0x0
 _c222:
-	.quad	438
+	.quad	418
 	.quad	_c221
 	.size	_c222, 16
 
 	.type	_c223,@object                   # @_c223
 	.p2align	4, 0x0
 _c223:
-	.quad	486
-	.quad	65538
+	.quad	402
+	.quad	_c117
 	.size	_c223, 16
 
 	.type	_c224,@object                   # @_c224
 	.p2align	4, 0x0
 _c224:
-	.quad	458
+	.quad	186
 	.quad	_c223
 	.size	_c224, 16
 
 	.type	_c225,@object                   # @_c225
 	.p2align	4, 0x0
 _c225:
-	.quad	446
+	.quad	422
 	.quad	_c224
 	.size	_c225, 16
 
 	.type	_c226,@object                   # @_c226
 	.p2align	4, 0x0
 _c226:
-	.quad	438
+	.quad	398
 	.quad	_c225
 	.size	_c226, 16
 
 	.type	_c227,@object                   # @_c227
 	.p2align	4, 0x0
 _c227:
-	.quad	406
+	.quad	450
 	.quad	_c226
 	.size	_c227, 16
 
 	.type	_c228,@object                   # @_c228
 	.p2align	4, 0x0
 _c228:
-	.quad	438
+	.quad	186
 	.quad	_c227
 	.size	_c228, 16
 
 	.type	_c229,@object                   # @_c229
 	.p2align	4, 0x0
 _c229:
-	.quad	130
+	.quad	474
 	.quad	_c228
 	.size	_c229, 16
 
 	.type	_c230,@object                   # @_c230
 	.p2align	4, 0x0
 _c230:
-	.quad	410
+	.quad	406
 	.quad	_c229
 	.size	_c230, 16
 
 	.type	_c231,@object                   # @_c231
 	.p2align	4, 0x0
 _c231:
-	.quad	446
+	.quad	402
 	.quad	_c230
 	.size	_c231, 16
 
 	.type	_c232,@object                   # @_c232
 	.p2align	4, 0x0
 _c232:
-	.quad	130
+	.quad	186
 	.quad	_c231
 	.size	_c232, 16
 
 	.type	_c233,@object                   # @_c233
 	.p2align	4, 0x0
 _c233:
-	.quad	466
+	.quad	462
 	.quad	_c232
 	.size	_c233, 16
 
 	.type	_c234,@object                   # @_c234
 	.p2align	4, 0x0
 _c234:
-	.quad	470
+	.quad	446
 	.quad	_c233
 	.size	_c234, 16
 
 	.type	_c235,@object                   # @_c235
 	.p2align	4, 0x0
 _c235:
-	.quad	446
+	.quad	418
 	.quad	_c234
 	.size	_c235, 16
 
 	.type	_c236,@object                   # @_c236
 	.p2align	4, 0x0
 _c236:
-	.quad	130
+	.quad	186
 	.quad	_c235
 	.size	_c236, 16
 
 	.type	_c237,@object                   # @_c237
 	.p2align	4, 0x0
 _c237:
-	.quad	234
+	.quad	438
 	.quad	_c236
 	.size	_c237, 16
 
 	.type	_c238,@object                   # @_c238
 	.p2align	4, 0x0
 _c238:
-	.short	0                               # 0x0
-	.short	0                               # 0x0
-	.short	0                               # 0x0
-	.zero	10
+	.quad	446
+	.quad	_c237
 	.size	_c238, 16
 
 	.type	_c239,@object                   # @_c239
 	.p2align	4, 0x0
 _c239:
-	.short	1                               # 0x1
-	.short	0                               # 0x0
-	.short	0                               # 0x0
-	.zero	10
+	.quad	398
+	.quad	_c238
 	.size	_c239, 16
 
 	.type	_c240,@object                   # @_c240
 	.p2align	4, 0x0
 _c240:
-	.quad	2                               # 0x2
-	.quad	2
+	.quad	418
+	.quad	_c29
 	.size	_c240, 16
 
 	.type	_c241,@object                   # @_c241
 	.p2align	4, 0x0
 _c241:
-	.quad	470
-	.quad	_c127
+	.quad	466
+	.quad	_c240
 	.size	_c241, 16
 
 	.type	_c242,@object                   # @_c242
 	.p2align	4, 0x0
 _c242:
-	.quad	466
+	.quad	318
 	.quad	_c241
 	.size	_c242, 16
 
 	.type	_c243,@object                   # @_c243
 	.p2align	4, 0x0
 _c243:
-	.quad	390
-	.quad	_c242
+	.quad	130
+	.quad	_c118
 	.size	_c243, 16
 
 	.type	_c244,@object                   # @_c244
 	.p2align	4, 0x0
 _c244:
-	.quad	466
+	.quad	278
 	.quad	_c243
 	.size	_c244, 16
 
 	.type	_c245,@object                   # @_c245
 	.p2align	4, 0x0
 _c245:
-	.quad	462
+	.quad	274
 	.quad	_c244
 	.size	_c245, 16
 
 	.type	_c246,@object                   # @_c246
 	.p2align	4, 0x0
 _c246:
-	.quad	130
+	.quad	294
 	.quad	_c245
 	.size	_c246, 16
 
 	.type	_c247,@object                   # @_c247
 	.p2align	4, 0x0
 _c247:
-	.quad	406
+	.quad	130
 	.quad	_c246
 	.size	_c247, 16
 
 	.type	_c248,@object                   # @_c248
 	.p2align	4, 0x0
 _c248:
-	.quad	458
+	.quad	406
 	.quad	_c247
 	.size	_c248, 16
 
@@ -23052,1842 +23048,1846 @@ _c250:
 	.type	_c251,@object                   # @_c251
 	.p2align	4, 0x0
 _c251:
-	.quad	490
+	.quad	350
 	.quad	_c250
 	.size	_c251, 16
 
 	.type	_c252,@object                   # @_c252
 	.p2align	4, 0x0
 _c252:
-	.quad	422
+	.quad	310
 	.quad	_c251
 	.size	_c252, 16
 
 	.type	_c253,@object                   # @_c253
 	.p2align	4, 0x0
 _c253:
-	.quad	394
+	.quad	346
 	.quad	_c252
 	.size	_c253, 16
 
 	.type	_c254,@object                   # @_c254
 	.p2align	4, 0x0
 _c254:
-	.quad	130
-	.quad	_c253
+	.short	0                               # 0x0
+	.short	0                               # 0x0
+	.short	0                               # 0x0
+	.zero	10
 	.size	_c254, 16
 
 	.type	_c255,@object                   # @_c255
 	.p2align	4, 0x0
 _c255:
-	.quad	402
-	.quad	_c254
+	.short	1                               # 0x1
+	.short	0                               # 0x0
+	.short	0                               # 0x0
+	.zero	10
 	.size	_c255, 16
 
 	.type	_c256,@object                   # @_c256
 	.p2align	4, 0x0
 _c256:
-	.quad	406
-	.quad	_c255
+	.quad	370
+	.quad	65538
 	.size	_c256, 16
 
 	.type	_c257,@object                   # @_c257
 	.p2align	4, 0x0
 _c257:
-	.quad	442
+	.quad	370
 	.quad	_c256
 	.size	_c257, 16
 
 	.type	_c258,@object                   # @_c258
 	.p2align	4, 0x0
 _c258:
-	.quad	458
-	.quad	_c257
+	.quad	306
+	.quad	65538
 	.size	_c258, 16
 
 	.type	_c259,@object                   # @_c259
 	.p2align	4, 0x0
 _c259:
-	.quad	470
+	.quad	278
 	.quad	_c258
 	.size	_c259, 16
 
 	.type	_c260,@object                   # @_c260
 	.p2align	4, 0x0
 _c260:
-	.quad	466
+	.quad	274
 	.quad	_c259
 	.size	_c260, 16
 
 	.type	_c261,@object                   # @_c261
 	.p2align	4, 0x0
 _c261:
-	.quad	406
+	.quad	370
 	.quad	_c260
 	.size	_c261, 16
 
 	.type	_c262,@object                   # @_c262
 	.p2align	4, 0x0
 _c262:
-	.quad	330
-	.quad	_c261
+	.quad	390
+	.quad	65538
 	.size	_c262, 16
 
 	.type	_c263,@object                   # @_c263
 	.p2align	4, 0x0
 _c263:
-	.quad	130
+	.quad	370
 	.quad	_c262
 	.size	_c263, 16
 
 	.type	_c264,@object                   # @_c264
 	.p2align	4, 0x0
 _c264:
-	.quad	234
-	.quad	_c263
+	.quad	394
+	.quad	65538
 	.size	_c264, 16
 
 	.type	_c265,@object                   # @_c265
 	.p2align	4, 0x0
 _c265:
-	.quad	462
+	.quad	370
 	.quad	_c264
 	.size	_c265, 16
 
 	.type	_c266,@object                   # @_c266
 	.p2align	4, 0x0
 _c266:
-	.quad	434
-	.quad	_c265
+	.quad	370
+	.quad	_c60
 	.size	_c266, 16
 
 	.type	_c267,@object                   # @_c267
 	.p2align	4, 0x0
 _c267:
-	.quad	406
-	.quad	_c266
+	.quad	442
+	.quad	65538
 	.size	_c267, 16
 
 	.type	_c268,@object                   # @_c268
 	.p2align	4, 0x0
 _c268:
-	.quad	442
+	.quad	370
 	.quad	_c267
 	.size	_c268, 16
 
 	.type	_c269,@object                   # @_c269
 	.p2align	4, 0x0
 _c269:
-	.quad	442
-	.quad	_c268
+	.quad	474
+	.quad	65538
 	.size	_c269, 16
 
 	.type	_c270,@object                   # @_c270
 	.p2align	4, 0x0
 _c270:
-	.quad	390
+	.quad	370
 	.quad	_c269
 	.size	_c270, 16
 
 	.type	_c271,@object                   # @_c271
 	.p2align	4, 0x0
 _c271:
-	.quad	418
-	.quad	_c270
+	.quad	410
+	.quad	65538
 	.size	_c271, 16
 
 	.type	_c272,@object                   # @_c272
 	.p2align	4, 0x0
 _c272:
-	.quad	270
+	.quad	370
 	.quad	_c271
 	.size	_c272, 16
 
 	.type	_c273,@object                   # @_c273
 	.p2align	4, 0x0
 _c273:
-	.quad	442
-	.quad	_c272
+	.quad	370
+	.quad	_c28
 	.size	_c273, 16
 
 	.type	_c274,@object                   # @_c274
 	.p2align	4, 0x0
 _c274:
 	.quad	318
-	.quad	_c273
+	.quad	65538
 	.size	_c274, 16
 
 	.type	_c275,@object                   # @_c275
 	.p2align	4, 0x0
 _c275:
-	.quad	466
+	.quad	334
 	.quad	_c274
 	.size	_c275, 16
 
 	.type	_c276,@object                   # @_c276
 	.p2align	4, 0x0
 _c276:
-	.quad	422
+	.quad	370
 	.quad	_c275
 	.size	_c276, 16
 
 	.type	_c277,@object                   # @_c277
 	.p2align	4, 0x0
 _c277:
-	.quad	390
-	.quad	_c276
+	.quad	342
+	.quad	_c258
 	.size	_c277, 16
 
 	.type	_c278,@object                   # @_c278
 	.p2align	4, 0x0
 _c278:
-	.quad	350
+	.quad	314
 	.quad	_c277
 	.size	_c278, 16
 
 	.type	_c279,@object                   # @_c279
 	.p2align	4, 0x0
 _c279:
-	.quad	462
-	.quad	_c278
+	.quad	290
+	.quad	65538
 	.size	_c279, 16
 
 	.type	_c280,@object                   # @_c280
 	.p2align	4, 0x0
 _c280:
-	.quad	446
+	.quad	318
 	.quad	_c279
 	.size	_c280, 16
 
 	.type	_c281,@object                   # @_c281
 	.p2align	4, 0x0
 _c281:
-	.quad	418
+	.quad	334
 	.quad	_c280
 	.size	_c281, 16
 
 	.type	_c282,@object                   # @_c282
 	.p2align	4, 0x0
 _c282:
-	.quad	2                               # 0x2
-	.quad	6
+	.quad	354
+	.quad	65538
 	.size	_c282, 16
 
 	.type	_c283,@object                   # @_c283
 	.p2align	4, 0x0
 _c283:
-	.quad	382
-	.quad	_c70
+	.quad	338
+	.quad	_c282
 	.size	_c283, 16
 
 	.type	_c284,@object                   # @_c284
 	.p2align	4, 0x0
 _c284:
-	.long	10                              # 0xa
-	.zero	12
+	.quad	334
+	.quad	_c283
 	.size	_c284, 16
 
 	.type	_c285,@object                   # @_c285
 	.p2align	4, 0x0
 _c285:
-	.quad	10                              # 0xa
-	.zero	8
+	.quad	278
+	.quad	_c283
 	.size	_c285, 16
 
 	.type	_c286,@object                   # @_c286
 	.p2align	4, 0x0
 _c286:
-	.quad	138
-	.quad	_c70
+	.quad	338
+	.quad	65538
 	.size	_c286, 16
 
 	.type	_c287,@object                   # @_c287
 	.p2align	4, 0x0
 _c287:
-	.quad	370
+	.quad	318
 	.quad	_c286
 	.size	_c287, 16
 
 	.type	_c288,@object                   # @_c288
 	.p2align	4, 0x0
 _c288:
-	.quad	474
+	.quad	278
 	.quad	_c287
 	.size	_c288, 16
 
 	.type	_c289,@object                   # @_c289
 	.p2align	4, 0x0
 _c289:
-	.quad	466
-	.quad	_c288
+	.quad	326
+	.quad	65538
 	.size	_c289, 16
 
 	.type	_c290,@object                   # @_c290
 	.p2align	4, 0x0
 _c290:
-	.quad	458
+	.quad	314
 	.quad	_c289
 	.size	_c290, 16
 
 	.type	_c291,@object                   # @_c291
 	.p2align	4, 0x0
 _c291:
-	.quad	442
+	.quad	278
 	.quad	_c290
 	.size	_c291, 16
 
 	.type	_c292,@object                   # @_c292
 	.p2align	4, 0x0
 _c292:
-	.quad	410
-	.quad	_c291
+	.quad	302
+	.quad	65538
 	.size	_c292, 16
 
 	.type	_c293,@object                   # @_c293
 	.p2align	4, 0x0
 _c293:
-	.quad	394
+	.quad	270
 	.quad	_c292
 	.size	_c293, 16
 
 	.type	_c294,@object                   # @_c294
 	.p2align	4, 0x0
 _c294:
-	.quad	390
+	.quad	262
 	.quad	_c293
 	.size	_c294, 16
 
 	.type	_c295,@object                   # @_c295
 	.p2align	4, 0x0
 _c295:
-	.quad	138
-	.quad	65538
+	.quad	266
+	.quad	_c259
 	.size	_c295, 16
 
 	.type	_c296,@object                   # @_c296
 	.p2align	4, 0x0
 _c296:
-	.quad	182
+	.quad	334
 	.quad	65538
 	.size	_c296, 16
 
 	.type	_c297,@object                   # @_c297
 	.p2align	4, 0x0
 _c297:
-	.quad	174
+	.quad	266
 	.quad	_c296
 	.size	_c297, 16
 
 	.type	_c298,@object                   # @_c298
 	.p2align	4, 0x0
 _c298:
-	.quad	278
-	.quad	65538
+	.quad	290
+	.quad	_c286
 	.size	_c298, 16
 
 	.type	_c299,@object                   # @_c299
 	.p2align	4, 0x0
 _c299:
-	.quad	406
-	.quad	_c298
+	.quad	282
+	.quad	65538
 	.size	_c299, 16
 
 	.type	_c300,@object                   # @_c300
 	.p2align	4, 0x0
 _c300:
-	.quad	65538
-	.quad	65538
+	.quad	306
+	.quad	_c299
 	.size	_c300, 16
 
 	.type	_c301,@object                   # @_c301
 	.p2align	4, 0x0
 _c301:
-	.quad	_c300
-	.quad	65538
+	.quad	346
+	.quad	_c286
 	.size	_c301, 16
 
 	.type	_c302,@object                   # @_c302
 	.p2align	4, 0x0
 _c302:
-	.quad	386
-	.quad	65538
+	.quad	282
+	.quad	_c299
 	.size	_c302, 16
 
 	.type	_c303,@object                   # @_c303
 	.p2align	4, 0x0
 _c303:
-	.quad	382
-	.quad	_c302
+	.quad	330
+	.quad	65538
 	.size	_c303, 16
 
 	.type	_c304,@object                   # @_c304
 	.p2align	4, 0x0
 _c304:
-	.quad	502
+	.quad	270
 	.quad	_c303
 	.size	_c304, 16
 
 	.type	_c305,@object                   # @_c305
 	.p2align	4, 0x0
 _c305:
-	.quad	494
-	.quad	_c304
+	.quad	294
+	.quad	65538
 	.size	_c305, 16
 
 	.type	_c306,@object                   # @_c306
 	.p2align	4, 0x0
 _c306:
-	.quad	374
+	.quad	334
 	.quad	_c305
 	.size	_c306, 16
 
 	.type	_c307,@object                   # @_c307
 	.p2align	4, 0x0
 _c307:
-	.quad	366
-	.quad	_c306
+	.quad	278
+	.quad	65538
 	.size	_c307, 16
 
 	.type	_c308,@object                   # @_c308
 	.p2align	4, 0x0
 _c308:
-	.quad	166
+	.quad	306
 	.quad	_c307
 	.size	_c308, 16
 
 	.type	_c309,@object                   # @_c309
 	.p2align	4, 0x0
 _c309:
-	.quad	162
+	.quad	274
 	.quad	_c308
 	.size	_c309, 16
 
 	.type	_c310,@object                   # @_c310
 	.p2align	4, 0x0
 _c310:
-	.quad	238
-	.quad	_c309
+	.quad	198
+	.quad	65538
 	.size	_c310, 16
 
 	.type	_c311,@object                   # @_c311
 	.p2align	4, 0x0
 _c311:
-	.quad	178
+	.quad	270
 	.quad	_c310
 	.size	_c311, 16
 
 	.type	_c312,@object                   # @_c312
 	.p2align	4, 0x0
 _c312:
-	.quad	422
-	.quad	_c144
+	.quad	274
+	.quad	_c311
 	.size	_c312, 16
 
 	.type	_c313,@object                   # @_c313
 	.p2align	4, 0x0
 _c313:
-	.quad	186
-	.quad	_c312
+	.quad	202
+	.quad	65538
 	.size	_c313, 16
 
 	.type	_c314,@object                   # @_c314
 	.p2align	4, 0x0
 _c314:
-	.quad	422
+	.quad	270
 	.quad	_c313
 	.size	_c314, 16
 
 	.type	_c315,@object                   # @_c315
 	.p2align	4, 0x0
 _c315:
-	.quad	398
+	.quad	274
 	.quad	_c314
 	.size	_c315, 16
 
 	.type	_c316,@object                   # @_c316
 	.p2align	4, 0x0
 _c316:
-	.quad	450
-	.quad	_c315
+	.quad	206
+	.quad	65538
 	.size	_c316, 16
 
 	.type	_c317,@object                   # @_c317
 	.p2align	4, 0x0
 _c317:
-	.quad	186
+	.quad	270
 	.quad	_c316
 	.size	_c317, 16
 
 	.type	_c318,@object                   # @_c318
 	.p2align	4, 0x0
 _c318:
-	.quad	474
+	.quad	274
 	.quad	_c317
 	.size	_c318, 16
 
 	.type	_c319,@object                   # @_c319
 	.p2align	4, 0x0
 _c319:
-	.quad	406
-	.quad	_c318
+	.quad	210
+	.quad	65538
 	.size	_c319, 16
 
 	.type	_c320,@object                   # @_c320
 	.p2align	4, 0x0
 _c320:
-	.quad	402
+	.quad	270
 	.quad	_c319
 	.size	_c320, 16
 
 	.type	_c321,@object                   # @_c321
 	.p2align	4, 0x0
 _c321:
-	.quad	186
+	.quad	274
 	.quad	_c320
 	.size	_c321, 16
 
 	.type	_c322,@object                   # @_c322
 	.p2align	4, 0x0
 _c322:
-	.quad	462
-	.quad	_c321
+	.quad	262
+	.quad	_c292
 	.size	_c322, 16
 
 	.type	_c323,@object                   # @_c323
 	.p2align	4, 0x0
 _c323:
-	.quad	446
+	.quad	314
 	.quad	_c322
 	.size	_c323, 16
 
 	.type	_c324,@object                   # @_c324
 	.p2align	4, 0x0
 _c324:
-	.quad	418
-	.quad	_c323
+	.quad	314
+	.quad	65538
 	.size	_c324, 16
 
 	.type	_c325,@object                   # @_c325
 	.p2align	4, 0x0
 _c325:
-	.quad	186
+	.quad	358
 	.quad	_c324
 	.size	_c325, 16
 
 	.type	_c326,@object                   # @_c326
 	.p2align	4, 0x0
 _c326:
-	.quad	438
+	.quad	334
 	.quad	_c325
 	.size	_c326, 16
 
 	.type	_c327,@object                   # @_c327
 	.p2align	4, 0x0
 _c327:
-	.quad	446
-	.quad	_c326
+	.quad	266
+	.quad	65538
 	.size	_c327, 16
 
 	.type	_c328,@object                   # @_c328
 	.p2align	4, 0x0
 _c328:
-	.quad	398
+	.quad	338
 	.quad	_c327
 	.size	_c328, 16
 
 	.type	_c329,@object                   # @_c329
 	.p2align	4, 0x0
 _c329:
-	.quad	402
-	.quad	65538
+	.quad	278
+	.quad	_c328
 	.size	_c329, 16
 
 	.type	_c330,@object                   # @_c330
 	.p2align	4, 0x0
 _c330:
-	.quad	442
-	.quad	_c329
+	.quad	262
+	.quad	_c324
 	.size	_c330, 16
 
 	.type	_c331,@object                   # @_c331
 	.p2align	4, 0x0
 _c331:
-	.quad	294
+	.quad	270
 	.quad	_c330
 	.size	_c331, 16
 
 	.type	_c332,@object                   # @_c332
 	.p2align	4, 0x0
 _c332:
-	.quad	398
-	.quad	_c331
+	.quad	310
+	.quad	65538
 	.size	_c332, 16
 
 	.type	_c333,@object                   # @_c333
 	.p2align	4, 0x0
 _c333:
-	.quad	442
+	.quad	278
 	.quad	_c332
 	.size	_c333, 16
 
 	.type	_c334,@object                   # @_c334
 	.p2align	4, 0x0
 _c334:
-	.quad	470
-	.quad	_c333
+	.quad	342
+	.quad	_c327
 	.size	_c334, 16
 
 	.type	_c335,@object                   # @_c335
 	.p2align	4, 0x0
 _c335:
-	.quad	410
+	.quad	334
 	.quad	_c334
 	.size	_c335, 16
 
 	.type	_c336,@object                   # @_c336
 	.p2align	4, 0x0
 _c336:
-	.quad	186
-	.quad	_c335
+	.quad	270
+	.quad	65538
 	.size	_c336, 16
 
 	.type	_c337,@object                   # @_c337
 	.p2align	4, 0x0
 _c337:
-	.quad	422
+	.quad	334
 	.quad	_c336
 	.size	_c337, 16
 
 	.type	_c338,@object                   # @_c338
 	.p2align	4, 0x0
 _c338:
-	.quad	398
+	.quad	278
 	.quad	_c337
 	.size	_c338, 16
 
 	.type	_c339,@object                   # @_c339
 	.p2align	4, 0x0
 _c339:
-	.quad	450
-	.quad	_c338
+	.quad	282
+	.quad	_c296
 	.size	_c339, 16
 
 	.type	_c340,@object                   # @_c340
 	.p2align	4, 0x0
 _c340:
-	.quad	186
-	.quad	_c339
+	.quad	286
+	.quad	_c296
 	.size	_c340, 16
 
 	.type	_c341,@object                   # @_c341
 	.p2align	4, 0x0
 _c341:
-	.quad	474
-	.quad	_c340
+	.quad	330
+	.quad	_c296
 	.size	_c341, 16
 
 	.type	_c342,@object                   # @_c342
 	.p2align	4, 0x0
 _c342:
-	.quad	406
-	.quad	_c341
+	.quad	342
+	.quad	_c296
 	.size	_c342, 16
 
 	.type	_c343,@object                   # @_c343
 	.p2align	4, 0x0
 _c343:
-	.quad	402
-	.quad	_c342
+	.quad	322
+	.quad	65538
 	.size	_c343, 16
 
 	.type	_c344,@object                   # @_c344
 	.p2align	4, 0x0
 _c344:
-	.quad	186
+	.quad	334
 	.quad	_c343
 	.size	_c344, 16
 
 	.type	_c345,@object                   # @_c345
 	.p2align	4, 0x0
 _c345:
-	.quad	462
 	.quad	_c344
+	.quad	65538
 	.size	_c345, 16
 
 	.type	_c346,@object                   # @_c346
 	.p2align	4, 0x0
 _c346:
-	.quad	446
+	.quad	_c342
 	.quad	_c345
 	.size	_c346, 16
 
 	.type	_c347,@object                   # @_c347
 	.p2align	4, 0x0
 _c347:
-	.quad	418
+	.quad	_c341
 	.quad	_c346
 	.size	_c347, 16
 
 	.type	_c348,@object                   # @_c348
 	.p2align	4, 0x0
 _c348:
-	.quad	186
+	.quad	_c340
 	.quad	_c347
 	.size	_c348, 16
 
 	.type	_c349,@object                   # @_c349
 	.p2align	4, 0x0
 _c349:
-	.quad	438
+	.quad	_c339
 	.quad	_c348
 	.size	_c349, 16
 
 	.type	_c350,@object                   # @_c350
 	.p2align	4, 0x0
 _c350:
-	.quad	446
+	.quad	_c338
 	.quad	_c349
 	.size	_c350, 16
 
 	.type	_c351,@object                   # @_c351
 	.p2align	4, 0x0
 _c351:
-	.quad	398
+	.quad	_c335
 	.quad	_c350
 	.size	_c351, 16
 
 	.type	_c352,@object                   # @_c352
 	.p2align	4, 0x0
 _c352:
-	.quad	474
-	.quad	_c331
+	.quad	_c333
+	.quad	_c351
 	.size	_c352, 16
 
 	.type	_c353,@object                   # @_c353
 	.p2align	4, 0x0
 _c353:
-	.quad	406
+	.quad	_c331
 	.quad	_c352
 	.size	_c353, 16
 
 	.type	_c354,@object                   # @_c354
 	.p2align	4, 0x0
 _c354:
-	.quad	402
+	.quad	_c329
 	.quad	_c353
 	.size	_c354, 16
 
 	.type	_c355,@object                   # @_c355
 	.p2align	4, 0x0
 _c355:
-	.quad	186
+	.quad	_c326
 	.quad	_c354
 	.size	_c355, 16
 
 	.type	_c356,@object                   # @_c356
 	.p2align	4, 0x0
 _c356:
-	.quad	422
+	.quad	_c323
 	.quad	_c355
 	.size	_c356, 16
 
 	.type	_c357,@object                   # @_c357
 	.p2align	4, 0x0
 _c357:
-	.quad	398
+	.quad	_c321
 	.quad	_c356
 	.size	_c357, 16
 
 	.type	_c358,@object                   # @_c358
 	.p2align	4, 0x0
 _c358:
-	.quad	450
+	.quad	_c318
 	.quad	_c357
 	.size	_c358, 16
 
 	.type	_c359,@object                   # @_c359
 	.p2align	4, 0x0
 _c359:
-	.quad	186
+	.quad	_c315
 	.quad	_c358
 	.size	_c359, 16
 
 	.type	_c360,@object                   # @_c360
 	.p2align	4, 0x0
 _c360:
-	.quad	474
+	.quad	_c312
 	.quad	_c359
 	.size	_c360, 16
 
 	.type	_c361,@object                   # @_c361
 	.p2align	4, 0x0
 _c361:
-	.quad	406
+	.quad	_c309
 	.quad	_c360
 	.size	_c361, 16
 
 	.type	_c362,@object                   # @_c362
 	.p2align	4, 0x0
 _c362:
-	.quad	402
+	.quad	_c306
 	.quad	_c361
 	.size	_c362, 16
 
 	.type	_c363,@object                   # @_c363
 	.p2align	4, 0x0
 _c363:
-	.quad	186
+	.quad	_c275
 	.quad	_c362
 	.size	_c363, 16
 
 	.type	_c364,@object                   # @_c364
 	.p2align	4, 0x0
 _c364:
-	.quad	462
+	.quad	_c304
 	.quad	_c363
 	.size	_c364, 16
 
 	.type	_c365,@object                   # @_c365
 	.p2align	4, 0x0
 _c365:
-	.quad	446
+	.quad	_c302
 	.quad	_c364
 	.size	_c365, 16
 
 	.type	_c366,@object                   # @_c366
 	.p2align	4, 0x0
 _c366:
-	.quad	418
+	.quad	_c301
 	.quad	_c365
 	.size	_c366, 16
 
 	.type	_c367,@object                   # @_c367
 	.p2align	4, 0x0
 _c367:
-	.quad	186
+	.quad	_c300
 	.quad	_c366
 	.size	_c367, 16
 
 	.type	_c368,@object                   # @_c368
 	.p2align	4, 0x0
 _c368:
-	.quad	438
+	.quad	_c298
 	.quad	_c367
 	.size	_c368, 16
 
 	.type	_c369,@object                   # @_c369
 	.p2align	4, 0x0
 _c369:
-	.quad	446
+	.quad	_c297
 	.quad	_c368
 	.size	_c369, 16
 
 	.type	_c370,@object                   # @_c370
 	.p2align	4, 0x0
 _c370:
-	.quad	398
+	.quad	_c295
 	.quad	_c369
 	.size	_c370, 16
 
 	.type	_c371,@object                   # @_c371
 	.p2align	4, 0x0
 _c371:
-	.quad	462
-	.quad	_c331
+	.quad	_c294
+	.quad	_c370
 	.size	_c371, 16
 
 	.type	_c372,@object                   # @_c372
 	.p2align	4, 0x0
 _c372:
-	.quad	470
+	.quad	_c291
 	.quad	_c371
 	.size	_c372, 16
 
 	.type	_c373,@object                   # @_c373
 	.p2align	4, 0x0
 _c373:
-	.quad	394
+	.quad	_c288
 	.quad	_c372
 	.size	_c373, 16
 
 	.type	_c374,@object                   # @_c374
 	.p2align	4, 0x0
 _c374:
-	.quad	186
+	.quad	_c285
 	.quad	_c373
 	.size	_c374, 16
 
 	.type	_c375,@object                   # @_c375
 	.p2align	4, 0x0
 _c375:
-	.quad	422
+	.quad	_c284
 	.quad	_c374
 	.size	_c375, 16
 
 	.type	_c376,@object                   # @_c376
 	.p2align	4, 0x0
 _c376:
-	.quad	398
+	.quad	_c281
 	.quad	_c375
 	.size	_c376, 16
 
 	.type	_c377,@object                   # @_c377
 	.p2align	4, 0x0
 _c377:
-	.quad	450
+	.quad	_c278
 	.quad	_c376
 	.size	_c377, 16
 
 	.type	_c378,@object                   # @_c378
 	.p2align	4, 0x0
 _c378:
-	.quad	186
-	.quad	_c377
+	.long	0                               # 0x0
+	.zero	12
 	.size	_c378, 16
 
 	.type	_c379,@object                   # @_c379
 	.p2align	4, 0x0
 _c379:
-	.quad	474
-	.quad	_c378
+	.quad	5570562                         # 0x550002
+	.quad	5898242
 	.size	_c379, 16
 
 	.type	_c380,@object                   # @_c380
 	.p2align	4, 0x0
 _c380:
-	.quad	406
-	.quad	_c379
+	.quad	414
+	.quad	65538
 	.size	_c380, 16
 
 	.type	_c381,@object                   # @_c381
 	.p2align	4, 0x0
 _c381:
-	.quad	402
+	.quad	442
 	.quad	_c380
 	.size	_c381, 16
 
 	.type	_c382,@object                   # @_c382
 	.p2align	4, 0x0
 _c382:
-	.quad	186
+	.quad	422
 	.quad	_c381
 	.size	_c382, 16
 
 	.type	_c383,@object                   # @_c383
 	.p2align	4, 0x0
 _c383:
-	.quad	462
+	.quad	418
 	.quad	_c382
 	.size	_c383, 16
 
 	.type	_c384,@object                   # @_c384
 	.p2align	4, 0x0
 _c384:
-	.quad	446
+	.quad	466
 	.quad	_c383
 	.size	_c384, 16
 
 	.type	_c385,@object                   # @_c385
 	.p2align	4, 0x0
 _c385:
-	.quad	418
+	.quad	446
 	.quad	_c384
 	.size	_c385, 16
 
 	.type	_c386,@object                   # @_c386
 	.p2align	4, 0x0
 _c386:
-	.quad	186
+	.quad	314
 	.quad	_c385
 	.size	_c386, 16
 
 	.type	_c387,@object                   # @_c387
 	.p2align	4, 0x0
 _c387:
-	.quad	438
-	.quad	_c386
+	.quad	462
+	.quad	_c380
 	.size	_c387, 16
 
 	.type	_c388,@object                   # @_c388
 	.p2align	4, 0x0
 _c388:
-	.quad	446
+	.quad	310
 	.quad	_c387
 	.size	_c388, 16
 
 	.type	_c389,@object                   # @_c389
 	.p2align	4, 0x0
 _c389:
-	.quad	398
+	.quad	450
 	.quad	_c388
 	.size	_c389, 16
 
 	.type	_c390,@object                   # @_c390
 	.p2align	4, 0x0
 _c390:
-	.quad	370
-	.quad	65538
+	.quad	390
+	.quad	_c389
 	.size	_c390, 16
 
 	.type	_c391,@object                   # @_c391
 	.p2align	4, 0x0
 _c391:
-	.quad	370
+	.quad	310
 	.quad	_c390
 	.size	_c391, 16
 
 	.type	_c392,@object                   # @_c392
 	.p2align	4, 0x0
 _c392:
-	.quad	306
-	.quad	65538
+	.quad	466
+	.quad	_c391
 	.size	_c392, 16
 
 	.type	_c393,@object                   # @_c393
 	.p2align	4, 0x0
 _c393:
-	.quad	278
+	.quad	446
 	.quad	_c392
 	.size	_c393, 16
 
 	.type	_c394,@object                   # @_c394
 	.p2align	4, 0x0
 _c394:
-	.quad	274
+	.quad	314
 	.quad	_c393
 	.size	_c394, 16
 
 	.type	_c395,@object                   # @_c395
 	.p2align	4, 0x0
 _c395:
-	.quad	370
+	.quad	402
 	.quad	_c394
 	.size	_c395, 16
 
 	.type	_c396,@object                   # @_c396
 	.p2align	4, 0x0
 _c396:
-	.quad	390
-	.quad	65538
+	.quad	434
+	.quad	_c395
 	.size	_c396, 16
 
 	.type	_c397,@object                   # @_c397
 	.p2align	4, 0x0
 _c397:
-	.quad	370
+	.quad	470
 	.quad	_c396
 	.size	_c397, 16
 
 	.type	_c398,@object                   # @_c398
 	.p2align	4, 0x0
 _c398:
-	.quad	394
-	.quad	65538
+	.quad	446
+	.quad	_c397
 	.size	_c398, 16
 
 	.type	_c399,@object                   # @_c399
 	.p2align	4, 0x0
 _c399:
-	.quad	370
+	.quad	270
 	.quad	_c398
 	.size	_c399, 16
 
 	.type	_c400,@object                   # @_c400
 	.p2align	4, 0x0
 _c400:
-	.quad	370
-	.quad	_c102
+	.quad	434
+	.quad	_c10
 	.size	_c400, 16
 
 	.type	_c401,@object                   # @_c401
 	.p2align	4, 0x0
 _c401:
-	.quad	442
-	.quad	65538
+	.quad	450
+	.quad	_c400
 	.size	_c401, 16
 
 	.type	_c402,@object                   # @_c402
 	.p2align	4, 0x0
 _c402:
-	.quad	370
+	.quad	406
 	.quad	_c401
 	.size	_c402, 16
 
 	.type	_c403,@object                   # @_c403
 	.p2align	4, 0x0
 _c403:
-	.quad	474
-	.quad	65538
+	.quad	330
+	.quad	_c402
 	.size	_c403, 16
 
 	.type	_c404,@object                   # @_c404
 	.p2align	4, 0x0
 _c404:
-	.quad	370
+	.quad	450
 	.quad	_c403
 	.size	_c404, 16
 
 	.type	_c405,@object                   # @_c405
 	.p2align	4, 0x0
 _c405:
-	.quad	410
-	.quad	65538
+	.quad	390
+	.quad	_c404
 	.size	_c405, 16
 
 	.type	_c406,@object                   # @_c406
 	.p2align	4, 0x0
 _c406:
-	.quad	370
+	.quad	310
 	.quad	_c405
 	.size	_c406, 16
 
 	.type	_c407,@object                   # @_c407
 	.p2align	4, 0x0
 _c407:
-	.quad	370
-	.quad	_c53
+	.quad	466
+	.quad	_c406
 	.size	_c407, 16
 
 	.type	_c408,@object                   # @_c408
 	.p2align	4, 0x0
 _c408:
-	.quad	318
-	.quad	65538
+	.quad	446
+	.quad	_c407
 	.size	_c408, 16
 
 	.type	_c409,@object                   # @_c409
 	.p2align	4, 0x0
 _c409:
-	.quad	334
+	.quad	314
 	.quad	_c408
 	.size	_c409, 16
 
 	.type	_c410,@object                   # @_c410
 	.p2align	4, 0x0
 _c410:
-	.quad	370
+	.quad	402
 	.quad	_c409
 	.size	_c410, 16
 
 	.type	_c411,@object                   # @_c411
 	.p2align	4, 0x0
 _c411:
-	.quad	342
-	.quad	_c392
+	.quad	434
+	.quad	_c410
 	.size	_c411, 16
 
 	.type	_c412,@object                   # @_c412
 	.p2align	4, 0x0
 _c412:
-	.quad	314
+	.quad	470
 	.quad	_c411
 	.size	_c412, 16
 
 	.type	_c413,@object                   # @_c413
 	.p2align	4, 0x0
 _c413:
-	.quad	290
-	.quad	65538
+	.quad	446
+	.quad	_c412
 	.size	_c413, 16
 
 	.type	_c414,@object                   # @_c414
 	.p2align	4, 0x0
 _c414:
-	.quad	318
+	.quad	270
 	.quad	_c413
 	.size	_c414, 16
 
 	.type	_c415,@object                   # @_c415
 	.p2align	4, 0x0
 _c415:
-	.quad	334
-	.quad	_c414
+	.long	10                              # 0xa
+	.zero	12
 	.size	_c415, 16
 
 	.type	_c416,@object                   # @_c416
 	.p2align	4, 0x0
 _c416:
-	.quad	354
-	.quad	65538
+	.quad	462
+	.quad	_c60
 	.size	_c416, 16
 
 	.type	_c417,@object                   # @_c417
 	.p2align	4, 0x0
 _c417:
-	.quad	338
+	.quad	470
 	.quad	_c416
 	.size	_c417, 16
 
 	.type	_c418,@object                   # @_c418
 	.p2align	4, 0x0
 _c418:
-	.quad	334
+	.quad	298
 	.quad	_c417
 	.size	_c418, 16
 
 	.type	_c419,@object                   # @_c419
 	.p2align	4, 0x0
 _c419:
-	.quad	278
-	.quad	_c417
+	.quad	442
+	.quad	_c50
 	.size	_c419, 16
 
 	.type	_c420,@object                   # @_c420
 	.p2align	4, 0x0
 _c420:
-	.quad	338
-	.quad	65538
+	.quad	446
+	.quad	_c419
 	.size	_c420, 16
 
 	.type	_c421,@object                   # @_c421
 	.p2align	4, 0x0
 _c421:
-	.quad	318
+	.quad	450
 	.quad	_c420
 	.size	_c421, 16
 
 	.type	_c422,@object                   # @_c422
 	.p2align	4, 0x0
 _c422:
-	.quad	278
+	.quad	462
 	.quad	_c421
 	.size	_c422, 16
 
 	.type	_c423,@object                   # @_c423
 	.p2align	4, 0x0
 _c423:
-	.quad	326
-	.quad	65538
+	.quad	406
+	.quad	_c422
 	.size	_c423, 16
 
 	.type	_c424,@object                   # @_c424
 	.p2align	4, 0x0
 _c424:
-	.quad	314
+	.quad	330
 	.quad	_c423
 	.size	_c424, 16
 
 	.type	_c425,@object                   # @_c425
 	.p2align	4, 0x0
 _c425:
-	.quad	278
+	.quad	406
 	.quad	_c424
 	.size	_c425, 16
 
 	.type	_c426,@object                   # @_c426
 	.p2align	4, 0x0
 _c426:
-	.quad	302
-	.quad	65538
+	.quad	462
+	.quad	_c425
 	.size	_c426, 16
 
 	.type	_c427,@object                   # @_c427
 	.p2align	4, 0x0
 _c427:
-	.quad	270
+	.quad	458
 	.quad	_c426
 	.size	_c427, 16
 
 	.type	_c428,@object                   # @_c428
 	.p2align	4, 0x0
 _c428:
-	.quad	262
+	.quad	390
 	.quad	_c427
 	.size	_c428, 16
 
 	.type	_c429,@object                   # @_c429
 	.p2align	4, 0x0
 _c429:
-	.quad	266
-	.quad	_c393
+	.quad	322
+	.quad	_c428
 	.size	_c429, 16
 
 	.type	_c430,@object                   # @_c430
 	.p2align	4, 0x0
 _c430:
-	.quad	334
-	.quad	65538
+	.quad	466
+	.quad	_c429
 	.size	_c430, 16
 
 	.type	_c431,@object                   # @_c431
 	.p2align	4, 0x0
 _c431:
-	.quad	266
+	.quad	446
 	.quad	_c430
 	.size	_c431, 16
 
 	.type	_c432,@object                   # @_c432
 	.p2align	4, 0x0
 _c432:
-	.quad	290
-	.quad	_c420
+	.quad	314
+	.quad	_c431
 	.size	_c432, 16
 
 	.type	_c433,@object                   # @_c433
 	.p2align	4, 0x0
 _c433:
-	.quad	282
-	.quad	65538
+	.quad	402
+	.quad	_c432
 	.size	_c433, 16
 
 	.type	_c434,@object                   # @_c434
 	.p2align	4, 0x0
 _c434:
-	.quad	306
+	.quad	434
 	.quad	_c433
 	.size	_c434, 16
 
 	.type	_c435,@object                   # @_c435
 	.p2align	4, 0x0
 _c435:
-	.quad	346
-	.quad	_c420
+	.quad	470
+	.quad	_c434
 	.size	_c435, 16
 
 	.type	_c436,@object                   # @_c436
 	.p2align	4, 0x0
 _c436:
-	.quad	282
-	.quad	_c433
+	.quad	446
+	.quad	_c435
 	.size	_c436, 16
 
 	.type	_c437,@object                   # @_c437
 	.p2align	4, 0x0
 _c437:
-	.quad	330
-	.quad	65538
+	.quad	270
+	.quad	_c436
 	.size	_c437, 16
 
 	.type	_c438,@object                   # @_c438
 	.p2align	4, 0x0
 _c438:
-	.quad	270
-	.quad	_c437
+	.quad	138
+	.quad	65538
 	.size	_c438, 16
 
 	.type	_c439,@object                   # @_c439
 	.p2align	4, 0x0
 _c439:
-	.quad	294
-	.quad	65538
+	.quad	370
+	.quad	_c438
 	.size	_c439, 16
 
 	.type	_c440,@object                   # @_c440
 	.p2align	4, 0x0
 _c440:
-	.quad	334
-	.quad	_c439
+	.quad	234
+	.quad	_c57
 	.size	_c440, 16
 
 	.type	_c441,@object                   # @_c441
 	.p2align	4, 0x0
 _c441:
-	.quad	306
-	.quad	_c298
+	.quad	406
+	.quad	_c440
 	.size	_c441, 16
 
 	.type	_c442,@object                   # @_c442
 	.p2align	4, 0x0
 _c442:
-	.quad	274
+	.quad	450
 	.quad	_c441
 	.size	_c442, 16
 
 	.type	_c443,@object                   # @_c443
 	.p2align	4, 0x0
 _c443:
-	.quad	198
-	.quad	65538
+	.quad	486
+	.quad	_c442
 	.size	_c443, 16
 
 	.type	_c444,@object                   # @_c444
 	.p2align	4, 0x0
 _c444:
-	.quad	270
+	.quad	466
 	.quad	_c443
 	.size	_c444, 16
 
 	.type	_c445,@object                   # @_c445
 	.p2align	4, 0x0
 _c445:
-	.quad	274
+	.quad	130
 	.quad	_c444
 	.size	_c445, 16
 
 	.type	_c446,@object                   # @_c446
 	.p2align	4, 0x0
 _c446:
-	.quad	202
-	.quad	65538
+	.quad	442
+	.quad	_c445
 	.size	_c446, 16
 
 	.type	_c447,@object                   # @_c447
 	.p2align	4, 0x0
 _c447:
-	.quad	270
+	.quad	478
 	.quad	_c446
 	.size	_c447, 16
 
 	.type	_c448,@object                   # @_c448
 	.p2align	4, 0x0
 _c448:
-	.quad	274
+	.quad	446
 	.quad	_c447
 	.size	_c448, 16
 
 	.type	_c449,@object                   # @_c449
 	.p2align	4, 0x0
 _c449:
-	.quad	206
-	.quad	65538
+	.quad	442
+	.quad	_c448
 	.size	_c449, 16
 
 	.type	_c450,@object                   # @_c450
 	.p2align	4, 0x0
 _c450:
-	.quad	270
+	.quad	430
 	.quad	_c449
 	.size	_c450, 16
 
 	.type	_c451,@object                   # @_c451
 	.p2align	4, 0x0
 _c451:
-	.quad	274
+	.quad	442
 	.quad	_c450
 	.size	_c451, 16
 
 	.type	_c452,@object                   # @_c452
 	.p2align	4, 0x0
 _c452:
-	.quad	210
-	.quad	65538
+	.quad	470
+	.quad	_c451
 	.size	_c452, 16
 
 	.type	_c453,@object                   # @_c453
 	.p2align	4, 0x0
 _c453:
-	.quad	270
+	.quad	130
 	.quad	_c452
 	.size	_c453, 16
 
 	.type	_c454,@object                   # @_c454
 	.p2align	4, 0x0
 _c454:
-	.quad	274
+	.quad	234
 	.quad	_c453
 	.size	_c454, 16
 
 	.type	_c455,@object                   # @_c455
 	.p2align	4, 0x0
 _c455:
-	.quad	262
-	.quad	_c426
+	.quad	406
+	.quad	_c454
 	.size	_c455, 16
 
 	.type	_c456,@object                   # @_c456
 	.p2align	4, 0x0
 _c456:
-	.quad	314
+	.quad	462
 	.quad	_c455
 	.size	_c456, 16
 
 	.type	_c457,@object                   # @_c457
 	.p2align	4, 0x0
 _c457:
-	.quad	314
-	.quad	65538
+	.quad	442
+	.quad	_c456
 	.size	_c457, 16
 
 	.type	_c458,@object                   # @_c458
 	.p2align	4, 0x0
 _c458:
-	.quad	358
+	.quad	446
 	.quad	_c457
 	.size	_c458, 16
 
 	.type	_c459,@object                   # @_c459
 	.p2align	4, 0x0
 _c459:
-	.quad	334
+	.quad	450
 	.quad	_c458
 	.size	_c459, 16
 
 	.type	_c460,@object                   # @_c460
 	.p2align	4, 0x0
 _c460:
-	.quad	266
-	.quad	65538
+	.quad	462
+	.quad	_c459
 	.size	_c460, 16
 
 	.type	_c461,@object                   # @_c461
 	.p2align	4, 0x0
 _c461:
-	.quad	338
+	.quad	406
 	.quad	_c460
 	.size	_c461, 16
 
 	.type	_c462,@object                   # @_c462
 	.p2align	4, 0x0
 _c462:
-	.quad	278
+	.quad	330
 	.quad	_c461
 	.size	_c462, 16
 
 	.type	_c463,@object                   # @_c463
 	.p2align	4, 0x0
 _c463:
-	.quad	262
-	.quad	_c457
+	.quad	466
+	.quad	_c462
 	.size	_c463, 16
 
 	.type	_c464,@object                   # @_c464
 	.p2align	4, 0x0
 _c464:
-	.quad	270
+	.quad	422
 	.quad	_c463
 	.size	_c464, 16
 
 	.type	_c465,@object                   # @_c465
 	.p2align	4, 0x0
 _c465:
-	.quad	310
-	.quad	65538
+	.quad	442
+	.quad	_c464
 	.size	_c465, 16
 
 	.type	_c466,@object                   # @_c466
 	.p2align	4, 0x0
 _c466:
-	.quad	278
+	.quad	294
 	.quad	_c465
 	.size	_c466, 16
 
 	.type	_c467,@object                   # @_c467
 	.p2align	4, 0x0
 _c467:
-	.quad	342
-	.quad	_c460
+	.quad	402
+	.quad	65538
 	.size	_c467, 16
 
 	.type	_c468,@object                   # @_c468
 	.p2align	4, 0x0
 _c468:
-	.quad	334
+	.quad	442
 	.quad	_c467
 	.size	_c468, 16
 
 	.type	_c469,@object                   # @_c469
 	.p2align	4, 0x0
 _c469:
-	.quad	270
-	.quad	65538
+	.quad	470
+	.quad	_c468
 	.size	_c469, 16
 
 	.type	_c470,@object                   # @_c470
 	.p2align	4, 0x0
 _c470:
-	.quad	334
+	.quad	446
 	.quad	_c469
 	.size	_c470, 16
 
 	.type	_c471,@object                   # @_c471
 	.p2align	4, 0x0
 _c471:
-	.quad	278
+	.quad	410
 	.quad	_c470
 	.size	_c471, 16
 
 	.type	_c472,@object                   # @_c472
 	.p2align	4, 0x0
 _c472:
-	.quad	282
-	.quad	_c430
+	.quad	130
+	.quad	_c471
 	.size	_c472, 16
 
 	.type	_c473,@object                   # @_c473
 	.p2align	4, 0x0
 _c473:
-	.quad	286
-	.quad	_c430
+	.quad	466
+	.quad	_c472
 	.size	_c473, 16
 
 	.type	_c474,@object                   # @_c474
 	.p2align	4, 0x0
 _c474:
-	.quad	330
-	.quad	_c430
+	.quad	446
+	.quad	_c473
 	.size	_c474, 16
 
 	.type	_c475,@object                   # @_c475
 	.p2align	4, 0x0
 _c475:
-	.quad	342
-	.quad	_c430
+	.quad	442
+	.quad	_c474
 	.size	_c475, 16
 
 	.type	_c476,@object                   # @_c476
 	.p2align	4, 0x0
 _c476:
-	.quad	322
-	.quad	65538
+	.quad	130
+	.quad	_c475
 	.size	_c476, 16
 
 	.type	_c477,@object                   # @_c477
 	.p2align	4, 0x0
 _c477:
-	.quad	334
+	.quad	130
 	.quad	_c476
 	.size	_c477, 16
 
 	.type	_c478,@object                   # @_c478
 	.p2align	4, 0x0
 _c478:
+	.quad	130
 	.quad	_c477
-	.quad	65538
 	.size	_c478, 16
 
 	.type	_c479,@object                   # @_c479
 	.p2align	4, 0x0
 _c479:
-	.quad	_c475
+	.quad	374
 	.quad	_c478
 	.size	_c479, 16
 
 	.type	_c480,@object                   # @_c480
 	.p2align	4, 0x0
 _c480:
-	.quad	_c474
+	.quad	390
 	.quad	_c479
 	.size	_c480, 16
 
 	.type	_c481,@object                   # @_c481
 	.p2align	4, 0x0
 _c481:
-	.quad	_c473
+	.quad	466
 	.quad	_c480
 	.size	_c481, 16
 
 	.type	_c482,@object                   # @_c482
 	.p2align	4, 0x0
 _c482:
-	.quad	_c472
+	.quad	390
 	.quad	_c481
 	.size	_c482, 16
 
 	.type	_c483,@object                   # @_c483
 	.p2align	4, 0x0
 _c483:
-	.quad	_c471
+	.quad	366
 	.quad	_c482
 	.size	_c483, 16
 
 	.type	_c484,@object                   # @_c484
 	.p2align	4, 0x0
 _c484:
-	.quad	_c468
-	.quad	_c483
+	.quad	134
+	.quad	65538
 	.size	_c484, 16
 
 	.type	_c485,@object                   # @_c485
 	.p2align	4, 0x0
 _c485:
-	.quad	_c466
+	.quad	406
 	.quad	_c484
 	.size	_c485, 16
 
 	.type	_c486,@object                   # @_c486
 	.p2align	4, 0x0
 _c486:
-	.quad	_c464
+	.quad	474
 	.quad	_c485
 	.size	_c486, 16
 
 	.type	_c487,@object                   # @_c487
 	.p2align	4, 0x0
 _c487:
-	.quad	_c462
+	.quad	422
 	.quad	_c486
 	.size	_c487, 16
 
 	.type	_c488,@object                   # @_c488
 	.p2align	4, 0x0
 _c488:
-	.quad	_c459
+	.quad	458
 	.quad	_c487
 	.size	_c488, 16
 
 	.type	_c489,@object                   # @_c489
 	.p2align	4, 0x0
 _c489:
-	.quad	_c456
+	.quad	402
 	.quad	_c488
 	.size	_c489, 16
 
 	.type	_c490,@object                   # @_c490
 	.p2align	4, 0x0
 _c490:
-	.quad	_c454
+	.quad	130
 	.quad	_c489
 	.size	_c490, 16
 
 	.type	_c491,@object                   # @_c491
 	.p2align	4, 0x0
 _c491:
-	.quad	_c451
+	.quad	294
 	.quad	_c490
 	.size	_c491, 16
 
 	.type	_c492,@object                   # @_c492
 	.p2align	4, 0x0
 _c492:
-	.quad	_c448
+	.quad	322
 	.quad	_c491
 	.size	_c492, 16
 
 	.type	_c493,@object                   # @_c493
 	.p2align	4, 0x0
 _c493:
-	.quad	_c445
+	.quad	262
 	.quad	_c492
 	.size	_c493, 16
 
 	.type	_c494,@object                   # @_c494
 	.p2align	4, 0x0
 _c494:
-	.quad	_c442
+	.quad	338
 	.quad	_c493
 	.size	_c494, 16
 
 	.type	_c495,@object                   # @_c495
 	.p2align	4, 0x0
 _c495:
-	.quad	_c440
+	.quad	262
 	.quad	_c494
 	.size	_c495, 16
 
 	.type	_c496,@object                   # @_c496
 	.p2align	4, 0x0
 _c496:
-	.quad	_c409
+	.quad	130
 	.quad	_c495
 	.size	_c496, 16
 
 	.type	_c497,@object                   # @_c497
 	.p2align	4, 0x0
 _c497:
-	.quad	_c438
+	.quad	402
 	.quad	_c496
 	.size	_c497, 16
 
 	.type	_c498,@object                   # @_c498
 	.p2align	4, 0x0
 _c498:
-	.quad	_c436
+	.quad	442
 	.quad	_c497
 	.size	_c498, 16
 
 	.type	_c499,@object                   # @_c499
 	.p2align	4, 0x0
 _c499:
-	.quad	_c435
+	.quad	470
 	.quad	_c498
 	.size	_c499, 16
 
 	.type	_c500,@object                   # @_c500
 	.p2align	4, 0x0
 _c500:
-	.quad	_c434
+	.quad	446
 	.quad	_c499
 	.size	_c500, 16
 
 	.type	_c501,@object                   # @_c501
 	.p2align	4, 0x0
 _c501:
-	.quad	_c432
+	.quad	410
 	.quad	_c500
 	.size	_c501, 16
 
 	.type	_c502,@object                   # @_c502
 	.p2align	4, 0x0
 _c502:
-	.quad	_c431
+	.quad	130
 	.quad	_c501
 	.size	_c502, 16
 
 	.type	_c503,@object                   # @_c503
 	.p2align	4, 0x0
 _c503:
-	.quad	_c429
+	.quad	130
 	.quad	_c502
 	.size	_c503, 16
 
 	.type	_c504,@object                   # @_c504
 	.p2align	4, 0x0
 _c504:
-	.quad	_c428
+	.quad	130
 	.quad	_c503
 	.size	_c504, 16
 
 	.type	_c505,@object                   # @_c505
 	.p2align	4, 0x0
 _c505:
-	.quad	_c425
+	.quad	374
 	.quad	_c504
 	.size	_c505, 16
 
 	.type	_c506,@object                   # @_c506
 	.p2align	4, 0x0
 _c506:
-	.quad	_c422
+	.quad	390
 	.quad	_c505
 	.size	_c506, 16
 
 	.type	_c507,@object                   # @_c507
 	.p2align	4, 0x0
 _c507:
-	.quad	_c419
+	.quad	466
 	.quad	_c506
 	.size	_c507, 16
 
 	.type	_c508,@object                   # @_c508
 	.p2align	4, 0x0
 _c508:
-	.quad	_c418
+	.quad	390
 	.quad	_c507
 	.size	_c508, 16
 
 	.type	_c509,@object                   # @_c509
 	.p2align	4, 0x0
 _c509:
-	.quad	_c415
+	.quad	366
 	.quad	_c508
 	.size	_c509, 16
 
 	.type	_c510,@object                   # @_c510
 	.p2align	4, 0x0
 _c510:
-	.quad	_c412
-	.quad	_c509
+	.quad	486
+	.quad	_c57
 	.size	_c510, 16
 
 	.type	_c511,@object                   # @_c511
 	.p2align	4, 0x0
 _c511:
-	.long	0                               # 0x0
-	.zero	12
+	.quad	410
+	.quad	_c510
 	.size	_c511, 16
 
 	.type	_c512,@object                   # @_c512
 	.p2align	4, 0x0
 _c512:
-	.quad	5570562                         # 0x550002
-	.quad	5898242
+	.quad	422
+	.quad	_c511
 	.size	_c512, 16
 
 	.type	_c513,@object                   # @_c513
 	.p2align	4, 0x0
 _c513:
-	.quad	414
-	.quad	65538
+	.quad	466
+	.quad	_c512
 	.size	_c513, 16
 
 	.type	_c514,@object                   # @_c514
@@ -24900,70 +24900,70 @@ _c514:
 	.type	_c515,@object                   # @_c515
 	.p2align	4, 0x0
 _c515:
-	.quad	422
+	.quad	406
 	.quad	_c514
 	.size	_c515, 16
 
 	.type	_c516,@object                   # @_c516
 	.p2align	4, 0x0
 _c516:
-	.quad	418
+	.quad	402
 	.quad	_c515
 	.size	_c516, 16
 
 	.type	_c517,@object                   # @_c517
 	.p2align	4, 0x0
 _c517:
-	.quad	466
+	.quad	422
 	.quad	_c516
 	.size	_c517, 16
 
 	.type	_c518,@object                   # @_c518
 	.p2align	4, 0x0
 _c518:
-	.quad	446
+	.quad	130
 	.quad	_c517
 	.size	_c518, 16
 
 	.type	_c519,@object                   # @_c519
 	.p2align	4, 0x0
 _c519:
-	.quad	314
+	.quad	446
 	.quad	_c518
 	.size	_c519, 16
 
 	.type	_c520,@object                   # @_c520
 	.p2align	4, 0x0
 _c520:
-	.quad	462
-	.quad	_c513
+	.quad	466
+	.quad	_c519
 	.size	_c520, 16
 
 	.type	_c521,@object                   # @_c521
 	.p2align	4, 0x0
 _c521:
-	.quad	310
+	.quad	130
 	.quad	_c520
 	.size	_c521, 16
 
 	.type	_c522,@object                   # @_c522
 	.p2align	4, 0x0
 _c522:
-	.quad	450
+	.quad	414
 	.quad	_c521
 	.size	_c522, 16
 
 	.type	_c523,@object                   # @_c523
 	.p2align	4, 0x0
 _c523:
-	.quad	390
+	.quad	442
 	.quad	_c522
 	.size	_c523, 16
 
 	.type	_c524,@object                   # @_c524
 	.p2align	4, 0x0
 _c524:
-	.quad	310
+	.quad	422
 	.quad	_c523
 	.size	_c524, 16
 
@@ -24977,877 +24977,875 @@ _c525:
 	.type	_c526,@object                   # @_c526
 	.p2align	4, 0x0
 _c526:
-	.quad	446
+	.quad	450
 	.quad	_c525
 	.size	_c526, 16
 
 	.type	_c527,@object                   # @_c527
 	.p2align	4, 0x0
 _c527:
-	.quad	314
+	.quad	438
 	.quad	_c526
 	.size	_c527, 16
 
 	.type	_c528,@object                   # @_c528
 	.p2align	4, 0x0
 _c528:
-	.quad	402
+	.quad	406
 	.quad	_c527
 	.size	_c528, 16
 
 	.type	_c529,@object                   # @_c529
 	.p2align	4, 0x0
 _c529:
-	.quad	434
+	.quad	466
 	.quad	_c528
 	.size	_c529, 16
 
 	.type	_c530,@object                   # @_c530
 	.p2align	4, 0x0
 _c530:
-	.quad	470
+	.quad	466
 	.quad	_c529
 	.size	_c530, 16
 
 	.type	_c531,@object                   # @_c531
 	.p2align	4, 0x0
 _c531:
-	.quad	446
+	.quad	262
 	.quad	_c530
 	.size	_c531, 16
 
 	.type	_c532,@object                   # @_c532
 	.p2align	4, 0x0
 _c532:
-	.quad	270
+	.quad	130
 	.quad	_c531
 	.size	_c532, 16
 
 	.type	_c533,@object                   # @_c533
 	.p2align	4, 0x0
 _c533:
-	.quad	434
-	.quad	_c223
+	.quad	374
+	.quad	_c532
 	.size	_c533, 16
 
 	.type	_c534,@object                   # @_c534
 	.p2align	4, 0x0
 _c534:
-	.quad	450
+	.quad	390
 	.quad	_c533
 	.size	_c534, 16
 
 	.type	_c535,@object                   # @_c535
 	.p2align	4, 0x0
 _c535:
-	.quad	406
+	.quad	466
 	.quad	_c534
 	.size	_c535, 16
 
 	.type	_c536,@object                   # @_c536
 	.p2align	4, 0x0
 _c536:
-	.quad	330
+	.quad	390
 	.quad	_c535
 	.size	_c536, 16
 
 	.type	_c537,@object                   # @_c537
 	.p2align	4, 0x0
 _c537:
-	.quad	450
+	.quad	366
 	.quad	_c536
 	.size	_c537, 16
 
 	.type	_c538,@object                   # @_c538
 	.p2align	4, 0x0
 _c538:
-	.quad	390
-	.quad	_c537
+	.quad	262
+	.quad	_c490
 	.size	_c538, 16
 
 	.type	_c539,@object                   # @_c539
 	.p2align	4, 0x0
 _c539:
-	.quad	310
+	.quad	338
 	.quad	_c538
 	.size	_c539, 16
 
 	.type	_c540,@object                   # @_c540
 	.p2align	4, 0x0
 _c540:
-	.quad	466
+	.quad	262
 	.quad	_c539
 	.size	_c540, 16
 
 	.type	_c541,@object                   # @_c541
 	.p2align	4, 0x0
 _c541:
-	.quad	446
+	.quad	130
 	.quad	_c540
 	.size	_c541, 16
 
 	.type	_c542,@object                   # @_c542
 	.p2align	4, 0x0
 _c542:
-	.quad	314
+	.quad	402
 	.quad	_c541
 	.size	_c542, 16
 
 	.type	_c543,@object                   # @_c543
 	.p2align	4, 0x0
 _c543:
-	.quad	402
+	.quad	442
 	.quad	_c542
 	.size	_c543, 16
 
 	.type	_c544,@object                   # @_c544
 	.p2align	4, 0x0
 _c544:
-	.quad	434
+	.quad	470
 	.quad	_c543
 	.size	_c544, 16
 
 	.type	_c545,@object                   # @_c545
 	.p2align	4, 0x0
 _c545:
-	.quad	470
+	.quad	446
 	.quad	_c544
 	.size	_c545, 16
 
 	.type	_c546,@object                   # @_c546
 	.p2align	4, 0x0
 _c546:
-	.quad	446
+	.quad	410
 	.quad	_c545
 	.size	_c546, 16
 
 	.type	_c547,@object                   # @_c547
 	.p2align	4, 0x0
 _c547:
-	.quad	270
+	.quad	130
 	.quad	_c546
 	.size	_c547, 16
 
 	.type	_c548,@object                   # @_c548
 	.p2align	4, 0x0
 _c548:
-	.long	10                              # 0xa
-	.zero	12
+	.quad	130
+	.quad	_c547
 	.size	_c548, 16
 
 	.type	_c549,@object                   # @_c549
 	.p2align	4, 0x0
 _c549:
-	.quad	462
-	.quad	_c102
+	.quad	130
+	.quad	_c548
 	.size	_c549, 16
 
 	.type	_c550,@object                   # @_c550
 	.p2align	4, 0x0
 _c550:
-	.quad	470
+	.quad	374
 	.quad	_c549
 	.size	_c550, 16
 
 	.type	_c551,@object                   # @_c551
 	.p2align	4, 0x0
 _c551:
-	.quad	298
+	.quad	390
 	.quad	_c550
 	.size	_c551, 16
 
 	.type	_c552,@object                   # @_c552
 	.p2align	4, 0x0
 _c552:
-	.quad	442
-	.quad	_c92
+	.quad	466
+	.quad	_c551
 	.size	_c552, 16
 
 	.type	_c553,@object                   # @_c553
 	.p2align	4, 0x0
 _c553:
-	.quad	446
+	.quad	390
 	.quad	_c552
 	.size	_c553, 16
 
 	.type	_c554,@object                   # @_c554
 	.p2align	4, 0x0
 _c554:
-	.quad	450
+	.quad	366
 	.quad	_c553
 	.size	_c554, 16
 
 	.type	_c555,@object                   # @_c555
 	.p2align	4, 0x0
 _c555:
-	.quad	462
-	.quad	_c554
+	.long	10                              # 0xa
+	.zero	12
 	.size	_c555, 16
 
 	.type	_c556,@object                   # @_c556
 	.p2align	4, 0x0
 _c556:
-	.quad	406
-	.quad	_c555
+	.quad	10                              # 0xa
+	.zero	8
 	.size	_c556, 16
 
 	.type	_c557,@object                   # @_c557
 	.p2align	4, 0x0
 _c557:
-	.quad	330
-	.quad	_c556
+	.quad	642
+	.quad	65538
 	.size	_c557, 16
 
 	.type	_c558,@object                   # @_c558
 	.p2align	4, 0x0
 _c558:
-	.quad	406
+	.quad	46
 	.quad	_c557
 	.size	_c558, 16
 
 	.type	_c559,@object                   # @_c559
 	.p2align	4, 0x0
 _c559:
-	.quad	462
+	.quad	50
 	.quad	_c558
 	.size	_c559, 16
 
 	.type	_c560,@object                   # @_c560
 	.p2align	4, 0x0
 _c560:
-	.quad	458
+	.quad	54
 	.quad	_c559
 	.size	_c560, 16
 
 	.type	_c561,@object                   # @_c561
 	.p2align	4, 0x0
 _c561:
-	.quad	390
+	.quad	42
 	.quad	_c560
 	.size	_c561, 16
 
 	.type	_c562,@object                   # @_c562
 	.p2align	4, 0x0
 _c562:
-	.quad	322
+	.quad	38
 	.quad	_c561
 	.size	_c562, 16
 
 	.type	_c563,@object                   # @_c563
 	.p2align	4, 0x0
 _c563:
-	.quad	466
+	.quad	130
 	.quad	_c562
 	.size	_c563, 16
 
 	.type	_c564,@object                   # @_c564
 	.p2align	4, 0x0
 _c564:
-	.quad	446
-	.quad	_c563
+	.quad	506
+	.quad	65538
 	.size	_c564, 16
 
 	.type	_c565,@object                   # @_c565
 	.p2align	4, 0x0
 _c565:
-	.quad	314
+	.quad	182
 	.quad	_c564
 	.size	_c565, 16
 
 	.type	_c566,@object                   # @_c566
 	.p2align	4, 0x0
 _c566:
-	.quad	402
+	.quad	234
 	.quad	_c565
 	.size	_c566, 16
 
 	.type	_c567,@object                   # @_c567
 	.p2align	4, 0x0
 _c567:
-	.quad	434
+	.quad	498
 	.quad	_c566
 	.size	_c567, 16
 
 	.type	_c568,@object                   # @_c568
 	.p2align	4, 0x0
 _c568:
-	.quad	470
+	.quad	378
 	.quad	_c567
 	.size	_c568, 16
 
 	.type	_c569,@object                   # @_c569
 	.p2align	4, 0x0
 _c569:
-	.quad	446
+	.quad	370
 	.quad	_c568
 	.size	_c569, 16
 
 	.type	_c570,@object                   # @_c570
 	.p2align	4, 0x0
 _c570:
-	.quad	270
+	.quad	254
 	.quad	_c569
 	.size	_c570, 16
 
 	.type	_c571,@object                   # @_c571
 	.p2align	4, 0x0
 _c571:
-	.quad	370
-	.quad	_c295
+	.quad	250
+	.quad	_c570
 	.size	_c571, 16
 
 	.type	_c572,@object                   # @_c572
 	.p2align	4, 0x0
 _c572:
-	.quad	5439490                         # 0x530002
-	.quad	_c512
-	.quad	_c512
-	.quad	_c512
-	.size	_c572, 32
+	.quad	246
+	.quad	_c571
+	.size	_c572, 16
 
 	.type	_c573,@object                   # @_c573
 	.p2align	4, 0x0
 _c573:
-	.quad	466
-	.quad	_c99
+	.quad	242
+	.quad	_c572
 	.size	_c573, 16
 
 	.type	_c574,@object                   # @_c574
 	.p2align	4, 0x0
 _c574:
-	.quad	390
+	.quad	190
 	.quad	_c573
 	.size	_c574, 16
 
 	.type	_c575,@object                   # @_c575
 	.p2align	4, 0x0
 _c575:
-	.quad	130
+	.quad	186
 	.quad	_c574
 	.size	_c575, 16
 
 	.type	_c576,@object                   # @_c576
 	.p2align	4, 0x0
 _c576:
-	.quad	234
-	.quad	_c99
+	.quad	174
+	.quad	_c575
 	.size	_c576, 16
 
 	.type	_c577,@object                   # @_c577
 	.p2align	4, 0x0
 _c577:
-	.quad	406
+	.quad	170
 	.quad	_c576
 	.size	_c577, 16
 
 	.type	_c578,@object                   # @_c578
 	.p2align	4, 0x0
 _c578:
-	.quad	450
+	.quad	154
 	.quad	_c577
 	.size	_c578, 16
 
 	.type	_c579,@object                   # @_c579
 	.p2align	4, 0x0
 _c579:
-	.quad	486
+	.quad	150
 	.quad	_c578
 	.size	_c579, 16
 
 	.type	_c580,@object                   # @_c580
 	.p2align	4, 0x0
 _c580:
-	.quad	466
+	.quad	146
 	.quad	_c579
 	.size	_c580, 16
 
 	.type	_c581,@object                   # @_c581
 	.p2align	4, 0x0
 _c581:
-	.quad	130
+	.quad	142
 	.quad	_c580
 	.size	_c581, 16
 
 	.type	_c582,@object                   # @_c582
 	.p2align	4, 0x0
 _c582:
-	.quad	442
+	.quad	258
 	.quad	_c581
 	.size	_c582, 16
 
 	.type	_c583,@object                   # @_c583
 	.p2align	4, 0x0
 _c583:
-	.quad	478
+	.quad	134
 	.quad	_c582
 	.size	_c583, 16
 
 	.type	_c584,@object                   # @_c584
 	.p2align	4, 0x0
 _c584:
-	.quad	446
-	.quad	_c583
+	.quad	382
+	.quad	_c25
 	.size	_c584, 16
 
 	.type	_c585,@object                   # @_c585
 	.p2align	4, 0x0
 _c585:
-	.quad	442
-	.quad	_c584
+	.quad	138
+	.quad	_c25
 	.size	_c585, 16
 
 	.type	_c586,@object                   # @_c586
 	.p2align	4, 0x0
 _c586:
-	.quad	430
+	.quad	370
 	.quad	_c585
 	.size	_c586, 16
 
 	.type	_c587,@object                   # @_c587
 	.p2align	4, 0x0
 _c587:
-	.quad	442
+	.quad	474
 	.quad	_c586
 	.size	_c587, 16
 
 	.type	_c588,@object                   # @_c588
 	.p2align	4, 0x0
 _c588:
-	.quad	470
+	.quad	466
 	.quad	_c587
 	.size	_c588, 16
 
 	.type	_c589,@object                   # @_c589
 	.p2align	4, 0x0
 _c589:
-	.quad	130
+	.quad	458
 	.quad	_c588
 	.size	_c589, 16
 
 	.type	_c590,@object                   # @_c590
 	.p2align	4, 0x0
 _c590:
-	.quad	234
+	.quad	442
 	.quad	_c589
 	.size	_c590, 16
 
 	.type	_c591,@object                   # @_c591
 	.p2align	4, 0x0
 _c591:
-	.quad	406
+	.quad	410
 	.quad	_c590
 	.size	_c591, 16
 
 	.type	_c592,@object                   # @_c592
 	.p2align	4, 0x0
 _c592:
-	.quad	462
+	.quad	394
 	.quad	_c591
 	.size	_c592, 16
 
 	.type	_c593,@object                   # @_c593
 	.p2align	4, 0x0
 _c593:
-	.quad	442
+	.quad	390
 	.quad	_c592
 	.size	_c593, 16
 
 	.type	_c594,@object                   # @_c594
 	.p2align	4, 0x0
 _c594:
-	.quad	446
-	.quad	_c593
+	.quad	182
+	.quad	65538
 	.size	_c594, 16
 
 	.type	_c595,@object                   # @_c595
 	.p2align	4, 0x0
 _c595:
-	.quad	450
+	.quad	174
 	.quad	_c594
 	.size	_c595, 16
 
 	.type	_c596,@object                   # @_c596
 	.p2align	4, 0x0
 _c596:
-	.quad	462
-	.quad	_c595
+	.quad	406
+	.quad	_c307
 	.size	_c596, 16
 
 	.type	_c597,@object                   # @_c597
 	.p2align	4, 0x0
 _c597:
-	.quad	406
-	.quad	_c596
+	.quad	65538
+	.quad	65538
 	.size	_c597, 16
 
 	.type	_c598,@object                   # @_c598
 	.p2align	4, 0x0
 _c598:
-	.quad	330
 	.quad	_c597
+	.quad	65538
 	.size	_c598, 16
 
 	.type	_c599,@object                   # @_c599
 	.p2align	4, 0x0
 _c599:
-	.quad	466
-	.quad	_c598
+	.quad	386
+	.quad	65538
 	.size	_c599, 16
 
 	.type	_c600,@object                   # @_c600
 	.p2align	4, 0x0
 _c600:
-	.quad	422
+	.quad	382
 	.quad	_c599
 	.size	_c600, 16
 
 	.type	_c601,@object                   # @_c601
 	.p2align	4, 0x0
 _c601:
-	.quad	442
+	.quad	502
 	.quad	_c600
 	.size	_c601, 16
 
 	.type	_c602,@object                   # @_c602
 	.p2align	4, 0x0
 _c602:
-	.quad	294
+	.quad	494
 	.quad	_c601
 	.size	_c602, 16
 
 	.type	_c603,@object                   # @_c603
 	.p2align	4, 0x0
 _c603:
-	.quad	470
-	.quad	_c330
+	.quad	374
+	.quad	_c602
 	.size	_c603, 16
 
 	.type	_c604,@object                   # @_c604
 	.p2align	4, 0x0
 _c604:
-	.quad	446
+	.quad	366
 	.quad	_c603
 	.size	_c604, 16
 
 	.type	_c605,@object                   # @_c605
 	.p2align	4, 0x0
 _c605:
-	.quad	410
+	.quad	166
 	.quad	_c604
 	.size	_c605, 16
 
 	.type	_c606,@object                   # @_c606
 	.p2align	4, 0x0
 _c606:
-	.quad	130
+	.quad	162
 	.quad	_c605
 	.size	_c606, 16
 
 	.type	_c607,@object                   # @_c607
 	.p2align	4, 0x0
 _c607:
-	.quad	466
+	.quad	238
 	.quad	_c606
 	.size	_c607, 16
 
 	.type	_c608,@object                   # @_c608
 	.p2align	4, 0x0
 _c608:
-	.quad	446
+	.quad	178
 	.quad	_c607
 	.size	_c608, 16
 
 	.type	_c609,@object                   # @_c609
 	.p2align	4, 0x0
 _c609:
-	.quad	442
-	.quad	_c608
+	.quad	422
+	.quad	_c102
 	.size	_c609, 16
 
 	.type	_c610,@object                   # @_c610
 	.p2align	4, 0x0
 _c610:
-	.quad	130
+	.quad	186
 	.quad	_c609
 	.size	_c610, 16
 
 	.type	_c611,@object                   # @_c611
 	.p2align	4, 0x0
 _c611:
-	.quad	130
+	.quad	422
 	.quad	_c610
 	.size	_c611, 16
 
 	.type	_c612,@object                   # @_c612
 	.p2align	4, 0x0
 _c612:
-	.quad	130
+	.quad	398
 	.quad	_c611
 	.size	_c612, 16
 
 	.type	_c613,@object                   # @_c613
 	.p2align	4, 0x0
 _c613:
-	.quad	374
+	.quad	450
 	.quad	_c612
 	.size	_c613, 16
 
 	.type	_c614,@object                   # @_c614
 	.p2align	4, 0x0
 _c614:
-	.quad	390
+	.quad	186
 	.quad	_c613
 	.size	_c614, 16
 
 	.type	_c615,@object                   # @_c615
 	.p2align	4, 0x0
 _c615:
-	.quad	466
+	.quad	474
 	.quad	_c614
 	.size	_c615, 16
 
 	.type	_c616,@object                   # @_c616
 	.p2align	4, 0x0
 _c616:
-	.quad	390
+	.quad	406
 	.quad	_c615
 	.size	_c616, 16
 
 	.type	_c617,@object                   # @_c617
 	.p2align	4, 0x0
 _c617:
-	.quad	366
+	.quad	402
 	.quad	_c616
 	.size	_c617, 16
 
 	.type	_c618,@object                   # @_c618
 	.p2align	4, 0x0
 _c618:
-	.quad	134
-	.quad	65538
+	.quad	186
+	.quad	_c617
 	.size	_c618, 16
 
 	.type	_c619,@object                   # @_c619
 	.p2align	4, 0x0
 _c619:
-	.quad	406
+	.quad	462
 	.quad	_c618
 	.size	_c619, 16
 
 	.type	_c620,@object                   # @_c620
 	.p2align	4, 0x0
 _c620:
-	.quad	474
+	.quad	446
 	.quad	_c619
 	.size	_c620, 16
 
 	.type	_c621,@object                   # @_c621
 	.p2align	4, 0x0
 _c621:
-	.quad	422
+	.quad	418
 	.quad	_c620
 	.size	_c621, 16
 
 	.type	_c622,@object                   # @_c622
 	.p2align	4, 0x0
 _c622:
-	.quad	458
+	.quad	186
 	.quad	_c621
 	.size	_c622, 16
 
 	.type	_c623,@object                   # @_c623
 	.p2align	4, 0x0
 _c623:
-	.quad	402
+	.quad	438
 	.quad	_c622
 	.size	_c623, 16
 
 	.type	_c624,@object                   # @_c624
 	.p2align	4, 0x0
 _c624:
-	.quad	130
+	.quad	446
 	.quad	_c623
 	.size	_c624, 16
 
 	.type	_c625,@object                   # @_c625
 	.p2align	4, 0x0
 _c625:
-	.quad	294
+	.quad	398
 	.quad	_c624
 	.size	_c625, 16
 
 	.type	_c626,@object                   # @_c626
 	.p2align	4, 0x0
 _c626:
-	.quad	322
-	.quad	_c625
+	.quad	294
+	.quad	_c468
 	.size	_c626, 16
 
 	.type	_c627,@object                   # @_c627
 	.p2align	4, 0x0
 _c627:
-	.quad	262
+	.quad	398
 	.quad	_c626
 	.size	_c627, 16
 
 	.type	_c628,@object                   # @_c628
 	.p2align	4, 0x0
 _c628:
-	.quad	338
+	.quad	442
 	.quad	_c627
 	.size	_c628, 16
 
 	.type	_c629,@object                   # @_c629
 	.p2align	4, 0x0
 _c629:
-	.quad	262
+	.quad	470
 	.quad	_c628
 	.size	_c629, 16
 
 	.type	_c630,@object                   # @_c630
 	.p2align	4, 0x0
 _c630:
-	.quad	130
+	.quad	410
 	.quad	_c629
 	.size	_c630, 16
 
 	.type	_c631,@object                   # @_c631
 	.p2align	4, 0x0
 _c631:
-	.quad	402
+	.quad	186
 	.quad	_c630
 	.size	_c631, 16
 
 	.type	_c632,@object                   # @_c632
 	.p2align	4, 0x0
 _c632:
-	.quad	442
+	.quad	422
 	.quad	_c631
 	.size	_c632, 16
 
 	.type	_c633,@object                   # @_c633
 	.p2align	4, 0x0
 _c633:
-	.quad	470
+	.quad	398
 	.quad	_c632
 	.size	_c633, 16
 
 	.type	_c634,@object                   # @_c634
 	.p2align	4, 0x0
 _c634:
-	.quad	446
+	.quad	450
 	.quad	_c633
 	.size	_c634, 16
 
 	.type	_c635,@object                   # @_c635
 	.p2align	4, 0x0
 _c635:
-	.quad	410
+	.quad	186
 	.quad	_c634
 	.size	_c635, 16
 
 	.type	_c636,@object                   # @_c636
 	.p2align	4, 0x0
 _c636:
-	.quad	130
+	.quad	474
 	.quad	_c635
 	.size	_c636, 16
 
 	.type	_c637,@object                   # @_c637
 	.p2align	4, 0x0
 _c637:
-	.quad	130
+	.quad	406
 	.quad	_c636
 	.size	_c637, 16
 
 	.type	_c638,@object                   # @_c638
 	.p2align	4, 0x0
 _c638:
-	.quad	130
+	.quad	402
 	.quad	_c637
 	.size	_c638, 16
 
 	.type	_c639,@object                   # @_c639
 	.p2align	4, 0x0
 _c639:
-	.quad	374
+	.quad	186
 	.quad	_c638
 	.size	_c639, 16
 
 	.type	_c640,@object                   # @_c640
 	.p2align	4, 0x0
 _c640:
-	.quad	390
+	.quad	462
 	.quad	_c639
 	.size	_c640, 16
 
 	.type	_c641,@object                   # @_c641
 	.p2align	4, 0x0
 _c641:
-	.quad	466
+	.quad	446
 	.quad	_c640
 	.size	_c641, 16
 
 	.type	_c642,@object                   # @_c642
 	.p2align	4, 0x0
 _c642:
-	.quad	390
+	.quad	418
 	.quad	_c641
 	.size	_c642, 16
 
 	.type	_c643,@object                   # @_c643
 	.p2align	4, 0x0
 _c643:
-	.quad	366
+	.quad	186
 	.quad	_c642
 	.size	_c643, 16
 
 	.type	_c644,@object                   # @_c644
 	.p2align	4, 0x0
 _c644:
-	.quad	486
-	.quad	_c99
+	.quad	438
+	.quad	_c643
 	.size	_c644, 16
 
 	.type	_c645,@object                   # @_c645
 	.p2align	4, 0x0
 _c645:
-	.quad	410
+	.quad	446
 	.quad	_c644
 	.size	_c645, 16
 
 	.type	_c646,@object                   # @_c646
 	.p2align	4, 0x0
 _c646:
-	.quad	422
+	.quad	398
 	.quad	_c645
 	.size	_c646, 16
 
 	.type	_c647,@object                   # @_c647
 	.p2align	4, 0x0
 _c647:
-	.quad	466
-	.quad	_c646
+	.quad	474
+	.quad	_c626
 	.size	_c647, 16
 
 	.type	_c648,@object                   # @_c648
 	.p2align	4, 0x0
 _c648:
-	.quad	442
+	.quad	406
 	.quad	_c647
 	.size	_c648, 16
 
 	.type	_c649,@object                   # @_c649
 	.p2align	4, 0x0
 _c649:
-	.quad	406
+	.quad	402
 	.quad	_c648
 	.size	_c649, 16
 
 	.type	_c650,@object                   # @_c650
 	.p2align	4, 0x0
 _c650:
-	.quad	402
+	.quad	186
 	.quad	_c649
 	.size	_c650, 16
 
@@ -25861,168 +25859,168 @@ _c651:
 	.type	_c652,@object                   # @_c652
 	.p2align	4, 0x0
 _c652:
-	.quad	130
+	.quad	398
 	.quad	_c651
 	.size	_c652, 16
 
 	.type	_c653,@object                   # @_c653
 	.p2align	4, 0x0
 _c653:
-	.quad	446
+	.quad	450
 	.quad	_c652
 	.size	_c653, 16
 
 	.type	_c654,@object                   # @_c654
 	.p2align	4, 0x0
 _c654:
-	.quad	466
+	.quad	186
 	.quad	_c653
 	.size	_c654, 16
 
 	.type	_c655,@object                   # @_c655
 	.p2align	4, 0x0
 _c655:
-	.quad	130
+	.quad	474
 	.quad	_c654
 	.size	_c655, 16
 
 	.type	_c656,@object                   # @_c656
 	.p2align	4, 0x0
 _c656:
-	.quad	414
+	.quad	406
 	.quad	_c655
 	.size	_c656, 16
 
 	.type	_c657,@object                   # @_c657
 	.p2align	4, 0x0
 _c657:
-	.quad	442
+	.quad	402
 	.quad	_c656
 	.size	_c657, 16
 
 	.type	_c658,@object                   # @_c658
 	.p2align	4, 0x0
 _c658:
-	.quad	422
+	.quad	186
 	.quad	_c657
 	.size	_c658, 16
 
 	.type	_c659,@object                   # @_c659
 	.p2align	4, 0x0
 _c659:
-	.quad	466
+	.quad	462
 	.quad	_c658
 	.size	_c659, 16
 
 	.type	_c660,@object                   # @_c660
 	.p2align	4, 0x0
 _c660:
-	.quad	450
+	.quad	446
 	.quad	_c659
 	.size	_c660, 16
 
 	.type	_c661,@object                   # @_c661
 	.p2align	4, 0x0
 _c661:
-	.quad	438
+	.quad	418
 	.quad	_c660
 	.size	_c661, 16
 
 	.type	_c662,@object                   # @_c662
 	.p2align	4, 0x0
 _c662:
-	.quad	406
+	.quad	186
 	.quad	_c661
 	.size	_c662, 16
 
 	.type	_c663,@object                   # @_c663
 	.p2align	4, 0x0
 _c663:
-	.quad	466
+	.quad	438
 	.quad	_c662
 	.size	_c663, 16
 
 	.type	_c664,@object                   # @_c664
 	.p2align	4, 0x0
 _c664:
-	.quad	466
+	.quad	446
 	.quad	_c663
 	.size	_c664, 16
 
 	.type	_c665,@object                   # @_c665
 	.p2align	4, 0x0
 _c665:
-	.quad	262
+	.quad	398
 	.quad	_c664
 	.size	_c665, 16
 
 	.type	_c666,@object                   # @_c666
 	.p2align	4, 0x0
 _c666:
-	.quad	130
-	.quad	_c665
+	.quad	462
+	.quad	_c626
 	.size	_c666, 16
 
 	.type	_c667,@object                   # @_c667
 	.p2align	4, 0x0
 _c667:
-	.quad	374
+	.quad	470
 	.quad	_c666
 	.size	_c667, 16
 
 	.type	_c668,@object                   # @_c668
 	.p2align	4, 0x0
 _c668:
-	.quad	390
+	.quad	394
 	.quad	_c667
 	.size	_c668, 16
 
 	.type	_c669,@object                   # @_c669
 	.p2align	4, 0x0
 _c669:
-	.quad	466
+	.quad	186
 	.quad	_c668
 	.size	_c669, 16
 
 	.type	_c670,@object                   # @_c670
 	.p2align	4, 0x0
 _c670:
-	.quad	390
+	.quad	422
 	.quad	_c669
 	.size	_c670, 16
 
 	.type	_c671,@object                   # @_c671
 	.p2align	4, 0x0
 _c671:
-	.quad	366
+	.quad	398
 	.quad	_c670
 	.size	_c671, 16
 
 	.type	_c672,@object                   # @_c672
 	.p2align	4, 0x0
 _c672:
-	.quad	262
-	.quad	_c624
+	.quad	450
+	.quad	_c671
 	.size	_c672, 16
 
 	.type	_c673,@object                   # @_c673
 	.p2align	4, 0x0
 _c673:
-	.quad	338
+	.quad	186
 	.quad	_c672
 	.size	_c673, 16
 
 	.type	_c674,@object                   # @_c674
 	.p2align	4, 0x0
 _c674:
-	.quad	262
+	.quad	474
 	.quad	_c673
 	.size	_c674, 16
 
 	.type	_c675,@object                   # @_c675
 	.p2align	4, 0x0
 _c675:
-	.quad	130
+	.quad	406
 	.quad	_c674
 	.size	_c675, 16
 
@@ -26036,14 +26034,14 @@ _c676:
 	.type	_c677,@object                   # @_c677
 	.p2align	4, 0x0
 _c677:
-	.quad	442
+	.quad	186
 	.quad	_c676
 	.size	_c677, 16
 
 	.type	_c678,@object                   # @_c678
 	.p2align	4, 0x0
 _c678:
-	.quad	470
+	.quad	462
 	.quad	_c677
 	.size	_c678, 16
 
@@ -26057,50 +26055,52 @@ _c679:
 	.type	_c680,@object                   # @_c680
 	.p2align	4, 0x0
 _c680:
-	.quad	410
+	.quad	418
 	.quad	_c679
 	.size	_c680, 16
 
 	.type	_c681,@object                   # @_c681
 	.p2align	4, 0x0
 _c681:
-	.quad	130
+	.quad	186
 	.quad	_c680
 	.size	_c681, 16
 
 	.type	_c682,@object                   # @_c682
 	.p2align	4, 0x0
 _c682:
-	.quad	130
+	.quad	438
 	.quad	_c681
 	.size	_c682, 16
 
 	.type	_c683,@object                   # @_c683
 	.p2align	4, 0x0
 _c683:
-	.quad	130
+	.quad	446
 	.quad	_c682
 	.size	_c683, 16
 
 	.type	_c684,@object                   # @_c684
 	.p2align	4, 0x0
 _c684:
-	.quad	374
+	.quad	398
 	.quad	_c683
 	.size	_c684, 16
 
 	.type	_c685,@object                   # @_c685
 	.p2align	4, 0x0
 _c685:
-	.quad	390
-	.quad	_c684
-	.size	_c685, 16
+	.quad	5439490                         # 0x530002
+	.quad	_c379
+	.quad	_c379
+	.quad	_c379
+	.size	_c685, 32
 
 	.type	_c686,@object                   # @_c686
 	.p2align	4, 0x0
 _c686:
 	.quad	466
-	.quad	_c685
+	.quad	_c57
 	.size	_c686, 16
 
 	.type	_c687,@object                   # @_c687
@@ -26113,7 +26113,7 @@ _c687:
 	.type	_c688,@object                   # @_c688
 	.p2align	4, 0x0
 _c688:
-	.quad	366
+	.quad	130
 	.quad	_c687
 	.size	_c688, 16
 
@@ -26143,7 +26143,7 @@ _c691:
 _c692:
 	.quad	196610                          # 0x30002
 	.quad	_c691
-	.quad	_g2033201685+1
+	.quad	_g1780500501+1
 	.zero	8
 	.size	_c692, 32
 
@@ -26165,7 +26165,7 @@ _c694:
 	.p2align	4, 0x0
 _c695:
 	.quad	442
-	.quad	_c102
+	.quad	_c60
 	.size	_c695, 16
 
 	.type	_c696,@object                   # @_c696
@@ -26355,7 +26355,7 @@ _c721:
 _c722:
 	.quad	196610                          # 0x30002
 	.quad	_c721
-	.quad	_g2030580245+1
+	.quad	_g1777879061+1
 	.zero	8
 	.size	_c722, 32
 
@@ -26363,7 +26363,7 @@ _c722:
 	.p2align	4, 0x0
 _c723:
 	.quad	414
-	.quad	_c99
+	.quad	_c57
 	.size	_c723, 16
 
 	.type	_c724,@object                   # @_c724
@@ -26461,7 +26461,7 @@ _c736:
 	.p2align	4, 0x0
 _c737:
 	.quad	374
-	.quad	_c99
+	.quad	_c57
 	.size	_c737, 16
 
 	.type	_c738,@object                   # @_c738
@@ -26496,7 +26496,7 @@ _c741:
 	.p2align	4, 0x0
 _c742:
 	.quad	450
-	.quad	_c31
+	.quad	_c41
 	.size	_c742, 16
 
 	.type	_c743,@object                   # @_c743
@@ -26742,7 +26742,7 @@ _c776:
 _c777:
 	.quad	196610                          # 0x30002
 	.quad	_c776
-	.quad	_g2018914837+1
+	.quad	_g1766213653+1
 	.zero	8
 	.size	_c777, 32
 
@@ -26757,7 +26757,7 @@ _c778:
 	.p2align	4, 0x0
 _c779:
 	.quad	390
-	.quad	_c32
+	.quad	_c114
 	.size	_c779, 16
 
 	.type	_c780,@object                   # @_c780
@@ -26856,7 +26856,7 @@ _c792:
 _c793:
 	.quad	196610                          # 0x30002
 	.quad	_c792
-	.quad	_g1997287959+1
+	.quad	_g1744586775+1
 	.zero	8
 	.size	_c793, 32
 
@@ -26878,7 +26878,7 @@ _c795:
 	.p2align	4, 0x0
 _c796:
 	.quad	458
-	.quad	_c576
+	.quad	_c440
 	.size	_c796, 16
 
 	.type	_c797,@object                   # @_c797
@@ -27312,7 +27312,7 @@ _c857:
 	.p2align	4, 0x0
 _c858:
 	.quad	390
-	.quad	_c99
+	.quad	_c57
 	.size	_c858, 16
 
 	.type	_c859,@object                   # @_c859
@@ -27417,7 +27417,7 @@ _c872:
 	.p2align	4, 0x0
 _c873:
 	.quad	186
-	.quad	_c452
+	.quad	_c319
 	.size	_c873, 16
 
 	.type	_c874,@object                   # @_c874
@@ -27557,7 +27557,7 @@ _c892:
 	.p2align	4, 0x0
 _c893:
 	.quad	326
-	.quad	_c99
+	.quad	_c57
 	.size	_c893, 16
 
 	.type	_c894,@object                   # @_c894
@@ -27613,7 +27613,7 @@ _c900:
 	.p2align	4, 0x0
 _c901:
 	.quad	462
-	.quad	_c99
+	.quad	_c57
 	.size	_c901, 16
 
 	.type	_c902,@object                   # @_c902
@@ -28012,7 +28012,7 @@ _c957:
 	.p2align	4, 0x0
 _c958:
 	.quad	294
-	.quad	_c405
+	.quad	_c271
 	.size	_c958, 16
 
 	.type	_c959,@object                   # @_c959
@@ -28306,7 +28306,7 @@ _c999:
 	.p2align	4, 0x0
 _c1000:
 	.quad	406
-	.quad	_c99
+	.quad	_c57
 	.size	_c1000, 16
 
 	.type	_c1001,@object                  # @_c1001
@@ -29377,7 +29377,7 @@ _c1152:
 	.p2align	4, 0x0
 _c1153:
 	.quad	390
-	.quad	_c330
+	.quad	_c468
 	.size	_c1153, 16
 
 	.type	_c1154,@object                  # @_c1154
@@ -29580,18 +29580,18 @@ _c1181:
 	.globl	nh_stuff
 	.p2align	4, 0x0
 nh_stuff:
-	.quad	_g888680983
-	.quad	_g1997287959
-	.quad	_g878064149
-	.quad	_g2018914837
-	.quad	_g2030580245
-	.quad	_g2031890965
-	.quad	_g2033201685
-	.quad	_g2001613335
-	.quad	_g384054295
-	.quad	_g2000171543
-	.quad	_g439235607
-	.quad	_g2110534167
+	.quad	_g636110871
+	.quad	_g1744586775
+	.quad	_g625494037
+	.quad	_g1766213653
+	.quad	_g1777879061
+	.quad	_g1779189781
+	.quad	_g1780500501
+	.quad	_g1748912151
+	.quad	_g1747470359
+	.quad	_g87443991
+	.quad	_g31476247
+	.quad	_g2069383191
 	.quad	_c1
 	.quad	_c2
 	.quad	_c3
@@ -30776,189 +30776,18 @@ nh_stuff:
 	.quad	0
 	.size	nh_stuff, 9552
 
-	.type	cFJhc_Show_shows,@object        # @cFJhc_Show_shows
-	.local	cFJhc_Show_shows
-	.comm	cFJhc_Show_shows,8,8
-	.type	cFW$__fPrelude_Text_showLitChar$d2,@object # @"cFW$__fPrelude_Text_showLitChar$d2"
-	.local	cFW$__fPrelude_Text_showLitChar$d2
-	.comm	cFW$__fPrelude_Text_showLitChar$d2,8,8
-	.type	cFW$__fPrelude_Text_showLitChar$d3,@object # @"cFW$__fPrelude_Text_showLitChar$d3"
-	.local	cFW$__fPrelude_Text_showLitChar$d3
-	.comm	cFW$__fPrelude_Text_showLitChar$d3,8,8
-	.type	cFW$__fJhc_List_$bb,@object     # @"cFW$__fJhc_List_$bb"
-	.local	cFW$__fJhc_List_$bb
-	.comm	cFW$__fJhc_List_$bb,8,8
-	.type	cFPrelude_Text_read$d4,@object  # @"cFPrelude_Text_read$d4"
-	.local	cFPrelude_Text_read$d4
-	.comm	cFPrelude_Text_read$d4,8,8
-	.type	cP1__Prelude_Text_read$d2,@object # @"cP1__Prelude_Text_read$d2"
-	.local	cP1__Prelude_Text_read$d2
-	.comm	cP1__Prelude_Text_read$d2,8,8
-	.type	cP1__W$__fData_Binary_storableB$d7,@object # @"cP1__W$__fData_Binary_storableB$d7"
-	.local	cP1__W$__fData_Binary_storableB$d7
-	.comm	cP1__W$__fData_Binary_storableB$d7,8,8
-	.type	cFJhc_Text_Read_lex$d25,@object # @"cFJhc_Text_Read_lex$d25"
-	.local	cFJhc_Text_Read_lex$d25
-	.comm	cFJhc_Text_Read_lex$d25,8,8
-	.type	cFJhc_Text_Read_lex$d26,@object # @"cFJhc_Text_Read_lex$d26"
-	.local	cFJhc_Text_Read_lex$d26
-	.comm	cFJhc_Text_Read_lex$d26,8,8
-	.type	cFJhc_Text_Read_lex$d22,@object # @"cFJhc_Text_Read_lex$d22"
-	.local	cFJhc_Text_Read_lex$d22
-	.comm	cFJhc_Text_Read_lex$d22,8,8
-	.type	cFJhc_Text_Read_lex$d23,@object # @"cFJhc_Text_Read_lex$d23"
-	.local	cFJhc_Text_Read_lex$d23
-	.comm	cFJhc_Text_Read_lex$d23,8,8
-	.type	cFJhc_Text_Read_lex$d16,@object # @"cFJhc_Text_Read_lex$d16"
-	.local	cFJhc_Text_Read_lex$d16
-	.comm	cFJhc_Text_Read_lex$d16,8,8
-	.type	cFJhc_Text_Read_lex$d17,@object # @"cFJhc_Text_Read_lex$d17"
-	.local	cFJhc_Text_Read_lex$d17
-	.comm	cFJhc_Text_Read_lex$d17,8,8
-	.type	cFJhc_Text_Read_lex$d13,@object # @"cFJhc_Text_Read_lex$d13"
-	.local	cFJhc_Text_Read_lex$d13
-	.comm	cFJhc_Text_Read_lex$d13,8,8
-	.type	cFJhc_Text_Read_lex$d14,@object # @"cFJhc_Text_Read_lex$d14"
-	.local	cFJhc_Text_Read_lex$d14
-	.comm	cFJhc_Text_Read_lex$d14,8,8
-	.type	cFJhc_Text_Read_lex$d9,@object  # @"cFJhc_Text_Read_lex$d9"
-	.local	cFJhc_Text_Read_lex$d9
-	.comm	cFJhc_Text_Read_lex$d9,8,8
-	.type	cFJhc_Text_Read_lex$d8,@object  # @"cFJhc_Text_Read_lex$d8"
-	.local	cFJhc_Text_Read_lex$d8
-	.comm	cFJhc_Text_Read_lex$d8,8,8
-	.type	cP1__W$__fData_Binary_storableB$d9,@object # @"cP1__W$__fData_Binary_storableB$d9"
-	.local	cP1__W$__fData_Binary_storableB$d9
-	.comm	cP1__W$__fData_Binary_storableB$d9,8,8
-	.type	cFPrelude_Text_read$d5,@object  # @"cFPrelude_Text_read$d5"
-	.local	cFPrelude_Text_read$d5
-	.comm	cFPrelude_Text_read$d5,8,8
-	.type	cFJhc_Text_Read_lex$d12,@object # @"cFJhc_Text_Read_lex$d12"
-	.local	cFJhc_Text_Read_lex$d12
-	.comm	cFJhc_Text_Read_lex$d12,8,8
-	.type	cFJhc_Text_Read_lex$d15,@object # @"cFJhc_Text_Read_lex$d15"
-	.local	cFJhc_Text_Read_lex$d15
-	.comm	cFJhc_Text_Read_lex$d15,8,8
-	.type	cFJhc_Text_Read_lex$d18,@object # @"cFJhc_Text_Read_lex$d18"
-	.local	cFJhc_Text_Read_lex$d18
-	.comm	cFJhc_Text_Read_lex$d18,8,8
-	.type	cFJhc_Text_Read_lex$d5,@object  # @"cFJhc_Text_Read_lex$d5"
-	.local	cFJhc_Text_Read_lex$d5
-	.comm	cFJhc_Text_Read_lex$d5,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d4,@object # @"cFJhc_Text_Read_lexLitChar$d4"
-	.local	cFJhc_Text_Read_lexLitChar$d4
-	.comm	cFJhc_Text_Read_lexLitChar$d4,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d6,@object # @"cFJhc_Text_Read_lexLitChar$d6"
-	.local	cFJhc_Text_Read_lexLitChar$d6
-	.comm	cFJhc_Text_Read_lexLitChar$d6,8,8
-	.type	cP1__W$__fData_Binary_storableB$d11,@object # @"cP1__W$__fData_Binary_storableB$d11"
-	.local	cP1__W$__fData_Binary_storableB$d11
-	.comm	cP1__W$__fData_Binary_storableB$d11,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d7,@object # @"cFJhc_Text_Read_lexLitChar$d7"
-	.local	cFJhc_Text_Read_lexLitChar$d7
-	.comm	cFJhc_Text_Read_lexLitChar$d7,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d9,@object # @"cFJhc_Text_Read_lexLitChar$d9"
-	.local	cFJhc_Text_Read_lexLitChar$d9
-	.comm	cFJhc_Text_Read_lexLitChar$d9,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d10,@object # @"cFJhc_Text_Read_lexLitChar$d10"
-	.local	cFJhc_Text_Read_lexLitChar$d10
-	.comm	cFJhc_Text_Read_lexLitChar$d10,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d12,@object # @"cFJhc_Text_Read_lexLitChar$d12"
-	.local	cFJhc_Text_Read_lexLitChar$d12
-	.comm	cFJhc_Text_Read_lexLitChar$d12,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d13,@object # @"cFJhc_Text_Read_lexLitChar$d13"
-	.local	cFJhc_Text_Read_lexLitChar$d13
-	.comm	cFJhc_Text_Read_lexLitChar$d13,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d14,@object # @"cFJhc_Text_Read_lexLitChar$d14"
-	.local	cFJhc_Text_Read_lexLitChar$d14
-	.comm	cFJhc_Text_Read_lexLitChar$d14,8,8
-	.type	cP1__W$__fData_Binary_put$d2,@object # @"cP1__W$__fData_Binary_put$d2"
-	.local	cP1__W$__fData_Binary_put$d2
-	.comm	cP1__W$__fData_Binary_put$d2,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d15,@object # @"cFJhc_Text_Read_lexLitChar$d15"
-	.local	cFJhc_Text_Read_lexLitChar$d15
-	.comm	cFJhc_Text_Read_lexLitChar$d15,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d16,@object # @"cFJhc_Text_Read_lexLitChar$d16"
-	.local	cFJhc_Text_Read_lexLitChar$d16
-	.comm	cFJhc_Text_Read_lexLitChar$d16,8,8
-	.type	cP1__W$__fData_Binary_put$d4,@object # @"cP1__W$__fData_Binary_put$d4"
-	.local	cP1__W$__fData_Binary_put$d4
-	.comm	cP1__W$__fData_Binary_put$d4,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d3,@object # @"cFJhc_Text_Read_lexLitChar$d3"
-	.local	cFJhc_Text_Read_lexLitChar$d3
-	.comm	cFJhc_Text_Read_lexLitChar$d3,8,8
-	.type	cFJhc_Text_Read_lexLitChar$d2,@object # @"cFJhc_Text_Read_lexLitChar$d2"
-	.local	cFJhc_Text_Read_lexLitChar$d2
-	.comm	cFJhc_Text_Read_lexLitChar$d2,8,8
-	.type	cFJhc_Text_Read_readDec$d10,@object # @"cFJhc_Text_Read_readDec$d10"
-	.local	cFJhc_Text_Read_readDec$d10
-	.comm	cFJhc_Text_Read_readDec$d10,8,8
-	.type	cFJhc_Text_Read_readDec$d9,@object # @"cFJhc_Text_Read_readDec$d9"
-	.local	cFJhc_Text_Read_readDec$d9
-	.comm	cFJhc_Text_Read_readDec$d9,8,8
-	.type	cFJhc_Text_Read_readDec$d3,@object # @"cFJhc_Text_Read_readDec$d3"
-	.local	cFJhc_Text_Read_readDec$d3
-	.comm	cFJhc_Text_Read_readDec$d3,8,8
-	.type	cP1__W$__fData_Binary_put$d6,@object # @"cP1__W$__fData_Binary_put$d6"
-	.local	cP1__W$__fData_Binary_put$d6
-	.comm	cP1__W$__fData_Binary_put$d6,8,8
-	.type	cFJhc_Text_Read_readDec$d4,@object # @"cFJhc_Text_Read_readDec$d4"
-	.local	cFJhc_Text_Read_readDec$d4
-	.comm	cFJhc_Text_Read_readDec$d4,8,8
-	.type	cFJhc_Text_Read_readDec$d7,@object # @"cFJhc_Text_Read_readDec$d7"
-	.local	cFJhc_Text_Read_readDec$d7
-	.comm	cFJhc_Text_Read_readDec$d7,8,8
-	.type	cP1__Jhc_Text_Read_readDec$d5,@object # @"cP1__Jhc_Text_Read_readDec$d5"
-	.local	cP1__Jhc_Text_Read_readDec$d5
-	.comm	cP1__Jhc_Text_Read_readDec$d5,8,8
-	.type	cCJhc_Prim_Prim_$LccR,@object   # @"cCJhc_Prim_Prim_$LccR"
-	.local	cCJhc_Prim_Prim_$LccR
-	.comm	cCJhc_Prim_Prim_$LccR,8,8
-	.type	cFtheMain$d28,@object           # @"cFtheMain$d28"
-	.local	cFtheMain$d28
-	.comm	cFtheMain$d28,8,8
-	.type	cFtheMain$d27,@object           # @"cFtheMain$d27"
-	.local	cFtheMain$d27
-	.comm	cFtheMain$d27,8,8
-	.type	cFtheMain$d26,@object           # @"cFtheMain$d26"
-	.local	cFtheMain$d26
-	.comm	cFtheMain$d26,8,8
-	.type	cFPrelude_Text_read,@object     # @cFPrelude_Text_read
-	.local	cFPrelude_Text_read
-	.comm	cFPrelude_Text_read,8,8
-	.type	cP1__W$__fData_Binary_put$d8,@object # @"cP1__W$__fData_Binary_put$d8"
-	.local	cP1__W$__fData_Binary_put$d8
-	.comm	cP1__W$__fData_Binary_put$d8,8,8
-	.type	cP1__Jhc_Text_Read_lex$d19,@object # @"cP1__Jhc_Text_Read_lex$d19"
-	.local	cP1__Jhc_Text_Read_lex$d19
-	.comm	cP1__Jhc_Text_Read_lex$d19,8,8
-	.type	cFJhc_Text_Read_lex$d32,@object # @"cFJhc_Text_Read_lex$d32"
-	.local	cFJhc_Text_Read_lex$d32
-	.comm	cFJhc_Text_Read_lex$d32,8,8
-	.type	cFJhc_Text_Read_lex$d24,@object # @"cFJhc_Text_Read_lex$d24"
-	.local	cFJhc_Text_Read_lex$d24
-	.comm	cFJhc_Text_Read_lex$d24,8,8
-	.type	cP1__Jhc_Text_Read_lex$d20,@object # @"cP1__Jhc_Text_Read_lex$d20"
-	.local	cP1__Jhc_Text_Read_lex$d20
-	.comm	cP1__Jhc_Text_Read_lex$d20,8,8
-	.type	cFJhc_Text_Read_readDec$d5,@object # @"cFJhc_Text_Read_readDec$d5"
-	.local	cFJhc_Text_Read_readDec$d5
-	.comm	cFJhc_Text_Read_readDec$d5,8,8
-	.type	cFJhc_Text_Read_readDec$d6,@object # @"cFJhc_Text_Read_readDec$d6"
-	.local	cFJhc_Text_Read_readDec$d6
-	.comm	cFJhc_Text_Read_readDec$d6,8,8
-	.type	cFW$__fMain_idRead$d4,@object   # @"cFW$__fMain_idRead$d4"
-	.local	cFW$__fMain_idRead$d4
-	.comm	cFW$__fMain_idRead$d4,8,8
-	.type	cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2,@object # @"cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2"
-	.local	cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2
-	.comm	cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2,8,8
-	.type	cBap__1__W$__fNumeric_showIntAtBase__100862,@object # @"cBap__1__W$__fNumeric_showIntAtBase__100862"
-	.local	cBap__1__W$__fNumeric_showIntAtBase__100862
-	.comm	cBap__1__W$__fNumeric_showIntAtBase__100862,8,8
 	.type	cFW$__fNumeric_showIntAtBase$d3,@object # @"cFW$__fNumeric_showIntAtBase$d3"
 	.local	cFW$__fNumeric_showIntAtBase$d3
 	.comm	cFW$__fNumeric_showIntAtBase$d3,8,8
+	.type	cFW$__fMain_idRead$d4,@object   # @"cFW$__fMain_idRead$d4"
+	.local	cFW$__fMain_idRead$d4
+	.comm	cFW$__fMain_idRead$d4,8,8
+	.type	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,@object # @"cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2"
+	.local	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2
+	.comm	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,8,8
+	.type	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3,@object # @"cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3"
+	.local	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3
+	.comm	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3,8,8
 	.type	cP2__W$__fData_Binary_put$d2,@object # @"cP2__W$__fData_Binary_put$d2"
 	.local	cP2__W$__fData_Binary_put$d2
 	.comm	cP2__W$__fData_Binary_put$d2,8,8
@@ -31034,6 +30863,12 @@ nh_stuff:
 	.type	cP2__W$__fData_Binary_storableB$d10,@object # @"cP2__W$__fData_Binary_storableB$d10"
 	.local	cP2__W$__fData_Binary_storableB$d10
 	.comm	cP2__W$__fData_Binary_storableB$d10,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2"
+	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2
+	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3"
+	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3
+	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3,8,8
 	.type	cFData_Binary_get$d2,@object    # @"cFData_Binary_get$d2"
 	.local	cFData_Binary_get$d2
 	.comm	cFData_Binary_get$d2,8,8
@@ -31049,33 +30884,36 @@ nh_stuff:
 	.type	cFR$__fJhc_Basics_$pp,@object   # @"cFR$__fJhc_Basics_$pp"
 	.local	cFR$__fJhc_Basics_$pp
 	.comm	cFR$__fJhc_Basics_$pp,8,8
-	.type	cFJhc_Text_Read_lex$d4,@object  # @"cFJhc_Text_Read_lex$d4"
-	.local	cFJhc_Text_Read_lex$d4
-	.comm	cFJhc_Text_Read_lex$d4,8,8
 	.type	cFJhc_Text_Read_lex$d11,@object # @"cFJhc_Text_Read_lex$d11"
 	.local	cFJhc_Text_Read_lex$d11
 	.comm	cFJhc_Text_Read_lex$d11,8,8
-	.type	cBap__1__Prelude_Text_read$d3u101202,@object # @"cBap__1__Prelude_Text_read$d3u101202"
-	.local	cBap__1__Prelude_Text_read$d3u101202
-	.comm	cBap__1__Prelude_Text_read$d3u101202,8,8
+	.type	cBap__1__Prelude_Text_read$d3u101244,@object # @"cBap__1__Prelude_Text_read$d3u101244"
+	.local	cBap__1__Prelude_Text_read$d3u101244
+	.comm	cBap__1__Prelude_Text_read$d3u101244,8,8
 	.type	cFJhc_Text_Read_lex$d30,@object # @"cFJhc_Text_Read_lex$d30"
 	.local	cFJhc_Text_Read_lex$d30
 	.comm	cFJhc_Text_Read_lex$d30,8,8
 	.type	cFJhc_Text_Read_lex$d31,@object # @"cFJhc_Text_Read_lex$d31"
 	.local	cFJhc_Text_Read_lex$d31
 	.comm	cFJhc_Text_Read_lex$d31,8,8
-	.type	cBap__1__Jhc_Text_Read_lex$d27u101218,@object # @"cBap__1__Jhc_Text_Read_lex$d27u101218"
-	.local	cBap__1__Jhc_Text_Read_lex$d27u101218
-	.comm	cBap__1__Jhc_Text_Read_lex$d27u101218,8,8
+	.type	cP1__Data_Binary_fl$_x64315462$d5406,@object # @"cP1__Data_Binary_fl$_x64315462$d5406"
+	.local	cP1__Data_Binary_fl$_x64315462$d5406
+	.comm	cP1__Data_Binary_fl$_x64315462$d5406,8,8
+	.type	cBap__1__Jhc_Text_Read_lex$d27u101260,@object # @"cBap__1__Jhc_Text_Read_lex$d27u101260"
+	.local	cBap__1__Jhc_Text_Read_lex$d27u101260
+	.comm	cBap__1__Jhc_Text_Read_lex$d27u101260,8,8
 	.type	cFJhc_Text_Read_lex$d28,@object # @"cFJhc_Text_Read_lex$d28"
 	.local	cFJhc_Text_Read_lex$d28
 	.comm	cFJhc_Text_Read_lex$d28,8,8
 	.type	cFJhc_Text_Read_lex$d29,@object # @"cFJhc_Text_Read_lex$d29"
 	.local	cFJhc_Text_Read_lex$d29
 	.comm	cFJhc_Text_Read_lex$d29,8,8
-	.type	cBap__1__Jhc_Text_Read_lex$d21u101230,@object # @"cBap__1__Jhc_Text_Read_lex$d21u101230"
-	.local	cBap__1__Jhc_Text_Read_lex$d21u101230
-	.comm	cBap__1__Jhc_Text_Read_lex$d21u101230,8,8
+	.type	cBap__1__Jhc_Text_Read_lex$d21u101272,@object # @"cBap__1__Jhc_Text_Read_lex$d21u101272"
+	.local	cBap__1__Jhc_Text_Read_lex$d21u101272
+	.comm	cBap__1__Jhc_Text_Read_lex$d21u101272,8,8
+	.type	cFJhc_Text_Read_lex$d4,@object  # @"cFJhc_Text_Read_lex$d4"
+	.local	cFJhc_Text_Read_lex$d4
+	.comm	cFJhc_Text_Read_lex$d4,8,8
 	.type	cFJhc_Text_Read_lex$d7,@object  # @"cFJhc_Text_Read_lex$d7"
 	.local	cFJhc_Text_Read_lex$d7
 	.comm	cFJhc_Text_Read_lex$d7,8,8
@@ -31088,27 +30926,24 @@ nh_stuff:
 	.type	cFJhc_Text_Read_nonnull$d4,@object # @"cFJhc_Text_Read_nonnull$d4"
 	.local	cFJhc_Text_Read_nonnull$d4
 	.comm	cFJhc_Text_Read_nonnull$d4,8,8
-	.type	cFJhc_Basics_117__g,@object     # @cFJhc_Basics_117__g
-	.local	cFJhc_Basics_117__g
-	.comm	cFJhc_Basics_117__g,8,8
-	.type	cFJhc_Show_showsPrec$d3,@object # @"cFJhc_Show_showsPrec$d3"
-	.local	cFJhc_Show_showsPrec$d3
-	.comm	cFJhc_Show_showsPrec$d3,8,8
-	.type	cFJhc_Show_showsPrec$d4,@object # @"cFJhc_Show_showsPrec$d4"
-	.local	cFJhc_Show_showsPrec$d4
-	.comm	cFJhc_Show_showsPrec$d4,8,8
-	.type	cBap__1__Jhc_Show_showsPrec__101312,@object # @cBap__1__Jhc_Show_showsPrec__101312
-	.local	cBap__1__Jhc_Show_showsPrec__101312
-	.comm	cBap__1__Jhc_Show_showsPrec__101312,8,8
-	.type	cP1__Jhc_Show_showsPrec$d5,@object # @"cP1__Jhc_Show_showsPrec$d5"
-	.local	cP1__Jhc_Show_showsPrec$d5
-	.comm	cP1__Jhc_Show_showsPrec$d5,8,8
-	.type	cBap__1__Jhc_Show_showsPrec__101320,@object # @cBap__1__Jhc_Show_showsPrec__101320
-	.local	cBap__1__Jhc_Show_showsPrec__101320
-	.comm	cBap__1__Jhc_Show_showsPrec__101320,8,8
-	.type	cP1__Jhc_Show_showsPrec$d9,@object # @"cP1__Jhc_Show_showsPrec$d9"
-	.local	cP1__Jhc_Show_showsPrec$d9
-	.comm	cP1__Jhc_Show_showsPrec$d9,8,8
+	.type	cBap__1__Jhc_Show_showsPrec__101322,@object # @cBap__1__Jhc_Show_showsPrec__101322
+	.local	cBap__1__Jhc_Show_showsPrec__101322
+	.comm	cBap__1__Jhc_Show_showsPrec__101322,8,8
+	.type	cP1__Jhc_Show_showsPrec$d2,@object # @"cP1__Jhc_Show_showsPrec$d2"
+	.local	cP1__Jhc_Show_showsPrec$d2
+	.comm	cP1__Jhc_Show_showsPrec$d2,8,8
+	.type	cBap__1__Jhc_Show_showsPrec__101330,@object # @cBap__1__Jhc_Show_showsPrec__101330
+	.local	cBap__1__Jhc_Show_showsPrec__101330
+	.comm	cBap__1__Jhc_Show_showsPrec__101330,8,8
+	.type	cP1__Jhc_Show_showsPrec$d6,@object # @"cP1__Jhc_Show_showsPrec$d6"
+	.local	cP1__Jhc_Show_showsPrec$d6
+	.comm	cP1__Jhc_Show_showsPrec$d6,8,8
+	.type	cFJhc_Show_showsPrec$d11,@object # @"cFJhc_Show_showsPrec$d11"
+	.local	cFJhc_Show_showsPrec$d11
+	.comm	cFJhc_Show_showsPrec$d11,8,8
+	.type	cFJhc_Show_showsPrec$d12,@object # @"cFJhc_Show_showsPrec$d12"
+	.local	cFJhc_Show_showsPrec$d12
+	.comm	cFJhc_Show_showsPrec$d12,8,8
 	.type	cFJhc_Show_showsPrec,@object    # @cFJhc_Show_showsPrec
 	.local	cFJhc_Show_showsPrec
 	.comm	cFJhc_Show_showsPrec,8,8
@@ -31118,33 +30953,33 @@ nh_stuff:
 	.type	cFJhc_Show_showString,@object   # @cFJhc_Show_showString
 	.local	cFJhc_Show_showString
 	.comm	cFJhc_Show_showString,8,8
-	.type	cFJhc_Show_showsPrec$d6,@object # @"cFJhc_Show_showsPrec$d6"
-	.local	cFJhc_Show_showsPrec$d6
-	.comm	cFJhc_Show_showsPrec$d6,8,8
-	.type	cFJhc_Show_showsPrec$d8,@object # @"cFJhc_Show_showsPrec$d8"
-	.local	cFJhc_Show_showsPrec$d8
-	.comm	cFJhc_Show_showsPrec$d8,8,8
+	.type	cFJhc_Show_showsPrec$d3,@object # @"cFJhc_Show_showsPrec$d3"
+	.local	cFJhc_Show_showsPrec$d3
+	.comm	cFJhc_Show_showsPrec$d3,8,8
+	.type	cFJhc_Show_showsPrec$d5,@object # @"cFJhc_Show_showsPrec$d5"
+	.local	cFJhc_Show_showsPrec$d5
+	.comm	cFJhc_Show_showsPrec$d5,8,8
 	.type	cFW$__fJhc_Inst_Show_showWordMax,@object # @"cFW$__fJhc_Inst_Show_showWordMax"
 	.local	cFW$__fJhc_Inst_Show_showWordMax
 	.comm	cFW$__fJhc_Inst_Show_showWordMax,8,8
 	.type	cFW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word8,@object # @"cFW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word8"
 	.local	cFW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word8
 	.comm	cFW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word8,8,8
+	.type	cFJhc_Show_showsPrec$d4,@object # @"cFJhc_Show_showsPrec$d4"
+	.local	cFJhc_Show_showsPrec$d4
+	.comm	cFJhc_Show_showsPrec$d4,8,8
 	.type	cFJhc_Show_showsPrec$d7,@object # @"cFJhc_Show_showsPrec$d7"
 	.local	cFJhc_Show_showsPrec$d7
 	.comm	cFJhc_Show_showsPrec$d7,8,8
-	.type	cFJhc_Show_showsPrec$d10,@object # @"cFJhc_Show_showsPrec$d10"
-	.local	cFJhc_Show_showsPrec$d10
-	.comm	cFJhc_Show_showsPrec$d10,8,8
-	.type	cFJhc_Show_showsPrec$d12,@object # @"cFJhc_Show_showsPrec$d12"
-	.local	cFJhc_Show_showsPrec$d12
-	.comm	cFJhc_Show_showsPrec$d12,8,8
-	.type	cFJhc_Show_showsPrec$d11,@object # @"cFJhc_Show_showsPrec$d11"
-	.local	cFJhc_Show_showsPrec$d11
-	.comm	cFJhc_Show_showsPrec$d11,8,8
-	.type	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336,@object # @"cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336"
-	.local	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336
-	.comm	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101336,8,8
+	.type	cFJhc_Show_showsPrec$d9,@object # @"cFJhc_Show_showsPrec$d9"
+	.local	cFJhc_Show_showsPrec$d9
+	.comm	cFJhc_Show_showsPrec$d9,8,8
+	.type	cFJhc_Show_showsPrec$d8,@object # @"cFJhc_Show_showsPrec$d8"
+	.local	cFJhc_Show_showsPrec$d8
+	.comm	cFJhc_Show_showsPrec$d8,8,8
+	.type	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398,@object # @"cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398"
+	.local	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398
+	.comm	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController__101398,8,8
 	.type	cP1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController$d2,@object # @"cP1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController$d2"
 	.local	cP1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController$d2
 	.comm	cP1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaController$d2,8,8
@@ -31154,9 +30989,9 @@ nh_stuff:
 	.type	cFW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word16,@object # @"cFW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word16"
 	.local	cFW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word16
 	.comm	cFW$__fInstance$__iJhc_Show_showsPrec_Jhc_Type_Word_Word16,8,8
-	.type	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348,@object # @"cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348"
-	.local	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348
-	.comm	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101348,8,8
+	.type	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410,@object # @"cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410"
+	.local	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410
+	.comm	cBap__1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities__101410,8,8
 	.type	cP1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2,@object # @"cP1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2"
 	.local	cP1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2
 	.comm	cP1__W$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d2,8,8
@@ -31169,36 +31004,12 @@ nh_stuff:
 	.type	cFW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d3,@object # @"cFW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d3"
 	.local	cFW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d3
 	.comm	cFW$__fInstance$__iJhc_Show_showsPrec_Main_AtaCapabilities$d3,8,8
-	.type	cFJhc_Text_Read_nonnull$d2,@object # @"cFJhc_Text_Read_nonnull$d2"
-	.local	cFJhc_Text_Read_nonnull$d2
-	.comm	cFJhc_Text_Read_nonnull$d2,8,8
-	.type	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,@object # @"cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2"
-	.local	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2
-	.comm	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,8,8
-	.type	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3,@object # @"cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3"
-	.local	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3
-	.comm	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2"
-	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2
-	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3"
-	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3
-	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3,8,8
-	.type	cFW$__fJhc_List_span$d5,@object # @"cFW$__fJhc_List_span$d5"
-	.local	cFW$__fJhc_List_span$d5
-	.comm	cFW$__fJhc_List_span$d5,8,8
-	.type	cFW$__fJhc_List_span$d4,@object # @"cFW$__fJhc_List_span$d4"
-	.local	cFW$__fJhc_List_span$d4
-	.comm	cFW$__fJhc_List_span$d4,8,8
-	.type	cFW$__fJhc_List_span$d3,@object # @"cFW$__fJhc_List_span$d3"
-	.local	cFW$__fJhc_List_span$d3
-	.comm	cFW$__fJhc_List_span$d3,8,8
-	.type	cP1__W$__fJhc_List_span$d2,@object # @"cP1__W$__fJhc_List_span$d2"
-	.local	cP1__W$__fJhc_List_span$d2
-	.comm	cP1__W$__fJhc_List_span$d2,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,@object # @"cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5"
-	.local	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5
-	.comm	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,8,8
+	.type	cFJhc_Basics_117__g,@object     # @cFJhc_Basics_117__g
+	.local	cFJhc_Basics_117__g
+	.comm	cFJhc_Basics_117__g,8,8
+	.type	cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2,@object # @"cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2"
+	.local	cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2
+	.comm	cFW$__fInstance$__iJhc_Enum_enumFromTo_Jhc_Type_Word_Int$d2,8,8
 	.type	cCJhc_Type_Basic_Left,@object   # @cCJhc_Type_Basic_Left
 	.local	cCJhc_Type_Basic_Left
 	.comm	cCJhc_Type_Basic_Left,8,8
@@ -31217,27 +31028,24 @@ nh_stuff:
 	.type	cCJhc_Prim_Prim_$LcR,@object    # @"cCJhc_Prim_Prim_$LcR"
 	.local	cCJhc_Prim_Prim_$LcR
 	.comm	cCJhc_Prim_Prim_$LcR,8,8
+	.type	cCJhc_Type_Basic_Just,@object   # @cCJhc_Type_Basic_Just
+	.local	cCJhc_Type_Basic_Just
+	.comm	cCJhc_Type_Basic_Just,8,8
 	.type	cCData_Binary_Builder,@object   # @cCData_Binary_Builder
 	.local	cCData_Binary_Builder
 	.comm	cCData_Binary_Builder,8,8
 	.type	cCJhc_Type_Word_Word64,@object  # @cCJhc_Type_Word_Word64
 	.local	cCJhc_Type_Word_Word64
 	.comm	cCJhc_Type_Word_Word64,8,8
-	.type	cCJhc_Type_Basic_Just,@object   # @cCJhc_Type_Basic_Just
-	.local	cCJhc_Type_Basic_Just
-	.comm	cCJhc_Type_Basic_Just,8,8
 	.type	cCJhc_Type_Word_Word32,@object  # @cCJhc_Type_Word_Word32
 	.local	cCJhc_Type_Word_Word32
 	.comm	cCJhc_Type_Word_Word32,8,8
-	.type	cCMain_AtaCapabilities,@object  # @cCMain_AtaCapabilities
-	.local	cCMain_AtaCapabilities
-	.comm	cCMain_AtaCapabilities,8,8
 	.type	cCJhc_Type_Word_Int,@object     # @cCJhc_Type_Word_Int
 	.local	cCJhc_Type_Word_Int
 	.comm	cCJhc_Type_Word_Int,8,8
-	.type	cP1__Data_Binary_fl$_x64315462$d5406,@object # @"cP1__Data_Binary_fl$_x64315462$d5406"
-	.local	cP1__Data_Binary_fl$_x64315462$d5406
-	.comm	cP1__Data_Binary_fl$_x64315462$d5406,8,8
+	.type	cCMain_AtaCapabilities,@object  # @cCMain_AtaCapabilities
+	.local	cCMain_AtaCapabilities
+	.comm	cCMain_AtaCapabilities,8,8
 	.type	cP1__Data_Binary_get$d3,@object # @"cP1__Data_Binary_get$d3"
 	.local	cP1__Data_Binary_get$d3
 	.comm	cP1__Data_Binary_get$d3,8,8
@@ -31256,12 +31064,27 @@ nh_stuff:
 	.type	cP2__Data_Binary_get$d5,@object # @"cP2__Data_Binary_get$d5"
 	.local	cP2__Data_Binary_get$d5
 	.comm	cP2__Data_Binary_get$d5,8,8
-	.type	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,@object # @"cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2"
-	.local	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2
-	.comm	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,8,8
+	.type	cP1__Data_Binary_get$d7,@object # @"cP1__Data_Binary_get$d7"
+	.local	cP1__Data_Binary_get$d7
+	.comm	cP1__Data_Binary_get$d7,8,8
+	.type	cP2__Data_Binary_get$d7,@object # @"cP2__Data_Binary_get$d7"
+	.local	cP2__Data_Binary_get$d7
+	.comm	cP2__Data_Binary_get$d7,8,8
+	.type	cP1__W$__fData_Binary_storableB$d3,@object # @"cP1__W$__fData_Binary_storableB$d3"
+	.local	cP1__W$__fData_Binary_storableB$d3
+	.comm	cP1__W$__fData_Binary_storableB$d3,8,8
+	.type	cP1__W$__fData_Binary_storableB$d5,@object # @"cP1__W$__fData_Binary_storableB$d5"
+	.local	cP1__W$__fData_Binary_storableB$d5
+	.comm	cP1__W$__fData_Binary_storableB$d5,8,8
+	.type	cP1__W$__fData_Binary_storableB$d7,@object # @"cP1__W$__fData_Binary_storableB$d7"
+	.local	cP1__W$__fData_Binary_storableB$d7
+	.comm	cP1__W$__fData_Binary_storableB$d7,8,8
 	.type	cCMain_AtaController,@object    # @cCMain_AtaController
 	.local	cCMain_AtaController
 	.comm	cCMain_AtaController,8,8
+	.type	cP1__W$__fData_Binary_storableB$d9,@object # @"cP1__W$__fData_Binary_storableB$d9"
+	.local	cP1__W$__fData_Binary_storableB$d9
+	.comm	cP1__W$__fData_Binary_storableB$d9,8,8
 	.type	cFInstance$__iJhc_Show_show_default,@object # @"cFInstance$__iJhc_Show_show_default"
 	.local	cFInstance$__iJhc_Show_show_default
 	.comm	cFInstance$__iJhc_Show_show_default,8,8
@@ -31286,6 +31109,9 @@ nh_stuff:
 	.type	cFtheMain$d32,@object           # @"cFtheMain$d32"
 	.local	cFtheMain$d32
 	.comm	cFtheMain$d32,8,8
+	.type	cP1__W$__fData_Binary_storableB$d11,@object # @"cP1__W$__fData_Binary_storableB$d11"
+	.local	cP1__W$__fData_Binary_storableB$d11
+	.comm	cP1__W$__fData_Binary_storableB$d11,8,8
 	.type	cFtheMain$d31,@object           # @"cFtheMain$d31"
 	.local	cFtheMain$d31
 	.comm	cFtheMain$d31,8,8
@@ -31301,9 +31127,15 @@ nh_stuff:
 	.type	cCHos_User_IPC_CouldNotParseResponse,@object # @cCHos_User_IPC_CouldNotParseResponse
 	.local	cCHos_User_IPC_CouldNotParseResponse
 	.comm	cCHos_User_IPC_CouldNotParseResponse,8,8
+	.type	cP1__W$__fData_Binary_put$d2,@object # @"cP1__W$__fData_Binary_put$d2"
+	.local	cP1__W$__fData_Binary_put$d2
+	.comm	cP1__W$__fData_Binary_put$d2,8,8
 	.type	cCHos_Init_Msg_InitRegisterProvider,@object # @cCHos_Init_Msg_InitRegisterProvider
 	.local	cCHos_Init_Msg_InitRegisterProvider
 	.comm	cCHos_Init_Msg_InitRegisterProvider,8,8
+	.type	cP1__W$__fData_Binary_put$d4,@object # @"cP1__W$__fData_Binary_put$d4"
+	.local	cP1__W$__fData_Binary_put$d4
+	.comm	cP1__W$__fData_Binary_put$d4,8,8
 	.type	cFR$__fJhc_Basics_zip,@object   # @"cFR$__fJhc_Basics_zip"
 	.local	cFR$__fJhc_Basics_zip
 	.comm	cFR$__fJhc_Basics_zip,8,8
@@ -31319,15 +31151,12 @@ nh_stuff:
 	.type	cFtheMain$d37,@object           # @"cFtheMain$d37"
 	.local	cFtheMain$d37
 	.comm	cFtheMain$d37,8,8
-	.type	cP1__Data_Binary_get$d7,@object # @"cP1__Data_Binary_get$d7"
-	.local	cP1__Data_Binary_get$d7
-	.comm	cP1__Data_Binary_get$d7,8,8
+	.type	cP1__W$__fData_Binary_put$d6,@object # @"cP1__W$__fData_Binary_put$d6"
+	.local	cP1__W$__fData_Binary_put$d6
+	.comm	cP1__W$__fData_Binary_put$d6,8,8
 	.type	cFtheMain$d36,@object           # @"cFtheMain$d36"
 	.local	cFtheMain$d36
 	.comm	cFtheMain$d36,8,8
-	.type	cP2__Data_Binary_get$d7,@object # @"cP2__Data_Binary_get$d7"
-	.local	cP2__Data_Binary_get$d7
-	.comm	cP2__Data_Binary_get$d7,8,8
 	.type	cFW$__fR$__fJhc_List_383__f,@object # @"cFW$__fR$__fJhc_List_383__f"
 	.local	cFW$__fR$__fJhc_List_383__f
 	.comm	cFW$__fR$__fJhc_List_383__f,8,8
@@ -31337,30 +31166,201 @@ nh_stuff:
 	.type	cFtheMain$d11,@object           # @"cFtheMain$d11"
 	.local	cFtheMain$d11
 	.comm	cFtheMain$d11,8,8
+	.type	cFPrelude_Text_read$d4,@object  # @"cFPrelude_Text_read$d4"
+	.local	cFPrelude_Text_read$d4
+	.comm	cFPrelude_Text_read$d4,8,8
+	.type	cP1__Prelude_Text_read$d2,@object # @"cP1__Prelude_Text_read$d2"
+	.local	cP1__Prelude_Text_read$d2
+	.comm	cP1__Prelude_Text_read$d2,8,8
+	.type	cFJhc_Text_Read_lex$d25,@object # @"cFJhc_Text_Read_lex$d25"
+	.local	cFJhc_Text_Read_lex$d25
+	.comm	cFJhc_Text_Read_lex$d25,8,8
+	.type	cFJhc_Text_Read_lex$d26,@object # @"cFJhc_Text_Read_lex$d26"
+	.local	cFJhc_Text_Read_lex$d26
+	.comm	cFJhc_Text_Read_lex$d26,8,8
+	.type	cFJhc_Text_Read_lex$d22,@object # @"cFJhc_Text_Read_lex$d22"
+	.local	cFJhc_Text_Read_lex$d22
+	.comm	cFJhc_Text_Read_lex$d22,8,8
+	.type	cFJhc_Text_Read_lex$d23,@object # @"cFJhc_Text_Read_lex$d23"
+	.local	cFJhc_Text_Read_lex$d23
+	.comm	cFJhc_Text_Read_lex$d23,8,8
+	.type	cP1__W$__fData_Binary_put$d8,@object # @"cP1__W$__fData_Binary_put$d8"
+	.local	cP1__W$__fData_Binary_put$d8
+	.comm	cP1__W$__fData_Binary_put$d8,8,8
+	.type	cFJhc_Text_Read_lex$d16,@object # @"cFJhc_Text_Read_lex$d16"
+	.local	cFJhc_Text_Read_lex$d16
+	.comm	cFJhc_Text_Read_lex$d16,8,8
+	.type	cFJhc_Text_Read_lex$d17,@object # @"cFJhc_Text_Read_lex$d17"
+	.local	cFJhc_Text_Read_lex$d17
+	.comm	cFJhc_Text_Read_lex$d17,8,8
+	.type	cFJhc_Text_Read_lex$d13,@object # @"cFJhc_Text_Read_lex$d13"
+	.local	cFJhc_Text_Read_lex$d13
+	.comm	cFJhc_Text_Read_lex$d13,8,8
+	.type	cFJhc_Text_Read_lex$d14,@object # @"cFJhc_Text_Read_lex$d14"
+	.local	cFJhc_Text_Read_lex$d14
+	.comm	cFJhc_Text_Read_lex$d14,8,8
+	.type	cFJhc_Text_Read_lex$d9,@object  # @"cFJhc_Text_Read_lex$d9"
+	.local	cFJhc_Text_Read_lex$d9
+	.comm	cFJhc_Text_Read_lex$d9,8,8
+	.type	cFJhc_Text_Read_lex$d8,@object  # @"cFJhc_Text_Read_lex$d8"
+	.local	cFJhc_Text_Read_lex$d8
+	.comm	cFJhc_Text_Read_lex$d8,8,8
+	.type	cFPrelude_Text_read$d5,@object  # @"cFPrelude_Text_read$d5"
+	.local	cFPrelude_Text_read$d5
+	.comm	cFPrelude_Text_read$d5,8,8
+	.type	cFJhc_Text_Read_lex$d12,@object # @"cFJhc_Text_Read_lex$d12"
+	.local	cFJhc_Text_Read_lex$d12
+	.comm	cFJhc_Text_Read_lex$d12,8,8
+	.type	cFJhc_Text_Read_lex$d15,@object # @"cFJhc_Text_Read_lex$d15"
+	.local	cFJhc_Text_Read_lex$d15
+	.comm	cFJhc_Text_Read_lex$d15,8,8
+	.type	cFJhc_Text_Read_lex$d18,@object # @"cFJhc_Text_Read_lex$d18"
+	.local	cFJhc_Text_Read_lex$d18
+	.comm	cFJhc_Text_Read_lex$d18,8,8
+	.type	cFJhc_Text_Read_lex$d5,@object  # @"cFJhc_Text_Read_lex$d5"
+	.local	cFJhc_Text_Read_lex$d5
+	.comm	cFJhc_Text_Read_lex$d5,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d4,@object # @"cFJhc_Text_Read_lexLitChar$d4"
+	.local	cFJhc_Text_Read_lexLitChar$d4
+	.comm	cFJhc_Text_Read_lexLitChar$d4,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d6,@object # @"cFJhc_Text_Read_lexLitChar$d6"
+	.local	cFJhc_Text_Read_lexLitChar$d6
+	.comm	cFJhc_Text_Read_lexLitChar$d6,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d7,@object # @"cFJhc_Text_Read_lexLitChar$d7"
+	.local	cFJhc_Text_Read_lexLitChar$d7
+	.comm	cFJhc_Text_Read_lexLitChar$d7,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d9,@object # @"cFJhc_Text_Read_lexLitChar$d9"
+	.local	cFJhc_Text_Read_lexLitChar$d9
+	.comm	cFJhc_Text_Read_lexLitChar$d9,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d10,@object # @"cFJhc_Text_Read_lexLitChar$d10"
+	.local	cFJhc_Text_Read_lexLitChar$d10
+	.comm	cFJhc_Text_Read_lexLitChar$d10,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d12,@object # @"cFJhc_Text_Read_lexLitChar$d12"
+	.local	cFJhc_Text_Read_lexLitChar$d12
+	.comm	cFJhc_Text_Read_lexLitChar$d12,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d13,@object # @"cFJhc_Text_Read_lexLitChar$d13"
+	.local	cFJhc_Text_Read_lexLitChar$d13
+	.comm	cFJhc_Text_Read_lexLitChar$d13,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d14,@object # @"cFJhc_Text_Read_lexLitChar$d14"
+	.local	cFJhc_Text_Read_lexLitChar$d14
+	.comm	cFJhc_Text_Read_lexLitChar$d14,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d15,@object # @"cFJhc_Text_Read_lexLitChar$d15"
+	.local	cFJhc_Text_Read_lexLitChar$d15
+	.comm	cFJhc_Text_Read_lexLitChar$d15,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d16,@object # @"cFJhc_Text_Read_lexLitChar$d16"
+	.local	cFJhc_Text_Read_lexLitChar$d16
+	.comm	cFJhc_Text_Read_lexLitChar$d16,8,8
+	.type	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,@object # @"cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2"
+	.local	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2
+	.comm	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d3,@object # @"cFJhc_Text_Read_lexLitChar$d3"
+	.local	cFJhc_Text_Read_lexLitChar$d3
+	.comm	cFJhc_Text_Read_lexLitChar$d3,8,8
+	.type	cFJhc_Text_Read_lexLitChar$d2,@object # @"cFJhc_Text_Read_lexLitChar$d2"
+	.local	cFJhc_Text_Read_lexLitChar$d2
+	.comm	cFJhc_Text_Read_lexLitChar$d2,8,8
+	.type	cP1__Jhc_Text_Read_lex$d19,@object # @"cP1__Jhc_Text_Read_lex$d19"
+	.local	cP1__Jhc_Text_Read_lex$d19
+	.comm	cP1__Jhc_Text_Read_lex$d19,8,8
+	.type	cFJhc_Text_Read_lex$d32,@object # @"cFJhc_Text_Read_lex$d32"
+	.local	cFJhc_Text_Read_lex$d32
+	.comm	cFJhc_Text_Read_lex$d32,8,8
+	.type	cFJhc_Text_Read_lex$d24,@object # @"cFJhc_Text_Read_lex$d24"
+	.local	cFJhc_Text_Read_lex$d24
+	.comm	cFJhc_Text_Read_lex$d24,8,8
+	.type	cP1__Jhc_Text_Read_lex$d20,@object # @"cP1__Jhc_Text_Read_lex$d20"
+	.local	cP1__Jhc_Text_Read_lex$d20
+	.comm	cP1__Jhc_Text_Read_lex$d20,8,8
+	.type	cFJhc_Text_Read_readDec$d10,@object # @"cFJhc_Text_Read_readDec$d10"
+	.local	cFJhc_Text_Read_readDec$d10
+	.comm	cFJhc_Text_Read_readDec$d10,8,8
+	.type	cFJhc_Text_Read_readDec$d9,@object # @"cFJhc_Text_Read_readDec$d9"
+	.local	cFJhc_Text_Read_readDec$d9
+	.comm	cFJhc_Text_Read_readDec$d9,8,8
+	.type	cFJhc_Text_Read_readDec$d3,@object # @"cFJhc_Text_Read_readDec$d3"
+	.local	cFJhc_Text_Read_readDec$d3
+	.comm	cFJhc_Text_Read_readDec$d3,8,8
+	.type	cFJhc_Text_Read_readDec$d4,@object # @"cFJhc_Text_Read_readDec$d4"
+	.local	cFJhc_Text_Read_readDec$d4
+	.comm	cFJhc_Text_Read_readDec$d4,8,8
+	.type	cFJhc_Text_Read_readDec$d7,@object # @"cFJhc_Text_Read_readDec$d7"
+	.local	cFJhc_Text_Read_readDec$d7
+	.comm	cFJhc_Text_Read_readDec$d7,8,8
+	.type	cP1__Jhc_Text_Read_readDec$d5,@object # @"cP1__Jhc_Text_Read_readDec$d5"
+	.local	cP1__Jhc_Text_Read_readDec$d5
+	.comm	cP1__Jhc_Text_Read_readDec$d5,8,8
+	.type	cCJhc_Prim_Prim_$LccR,@object   # @"cCJhc_Prim_Prim_$LccR"
+	.local	cCJhc_Prim_Prim_$LccR
+	.comm	cCJhc_Prim_Prim_$LccR,8,8
+	.type	cFtheMain$d28,@object           # @"cFtheMain$d28"
+	.local	cFtheMain$d28
+	.comm	cFtheMain$d28,8,8
+	.type	cFtheMain$d27,@object           # @"cFtheMain$d27"
+	.local	cFtheMain$d27
+	.comm	cFtheMain$d27,8,8
+	.type	cFtheMain$d26,@object           # @"cFtheMain$d26"
+	.local	cFtheMain$d26
+	.comm	cFtheMain$d26,8,8
+	.type	cFPrelude_Text_read,@object     # @cFPrelude_Text_read
+	.local	cFPrelude_Text_read
+	.comm	cFPrelude_Text_read,8,8
+	.type	cFW$__fJhc_List_span$d5,@object # @"cFW$__fJhc_List_span$d5"
+	.local	cFW$__fJhc_List_span$d5
+	.comm	cFW$__fJhc_List_span$d5,8,8
+	.type	cFW$__fJhc_List_span$d4,@object # @"cFW$__fJhc_List_span$d4"
+	.local	cFW$__fJhc_List_span$d4
+	.comm	cFW$__fJhc_List_span$d4,8,8
+	.type	cFW$__fJhc_List_span$d3,@object # @"cFW$__fJhc_List_span$d3"
+	.local	cFW$__fJhc_List_span$d3
+	.comm	cFW$__fJhc_List_span$d3,8,8
+	.type	cP1__W$__fJhc_List_span$d2,@object # @"cP1__W$__fJhc_List_span$d2"
+	.local	cP1__W$__fJhc_List_span$d2
+	.comm	cP1__W$__fJhc_List_span$d2,8,8
+	.type	cFJhc_Text_Read_nonnull$d2,@object # @"cFJhc_Text_Read_nonnull$d2"
+	.local	cFJhc_Text_Read_nonnull$d2
+	.comm	cFJhc_Text_Read_nonnull$d2,8,8
 	.type	cFW$__fMain_ataIdentify$d4,@object # @"cFW$__fMain_ataIdentify$d4"
 	.local	cFW$__fMain_ataIdentify$d4
 	.comm	cFW$__fMain_ataIdentify$d4,8,8
 	.type	cFW$__fMain_atapiIdentify$d4,@object # @"cFW$__fMain_atapiIdentify$d4"
 	.local	cFW$__fMain_atapiIdentify$d4
 	.comm	cFW$__fMain_atapiIdentify$d4,8,8
-	.type	cP1__W$__fData_Binary_storableB$d3,@object # @"cP1__W$__fData_Binary_storableB$d3"
-	.local	cP1__W$__fData_Binary_storableB$d3
-	.comm	cP1__W$__fData_Binary_storableB$d3,8,8
 	.type	cFHos_User_SysCall_hosDebugLog$d2,@object # @"cFHos_User_SysCall_hosDebugLog$d2"
 	.local	cFHos_User_SysCall_hosDebugLog$d2
 	.comm	cFHos_User_SysCall_hosDebugLog$d2,8,8
 	.type	cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,@object # @"cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5"
 	.local	cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5
 	.comm	cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,@object # @"cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5"
+	.local	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5
+	.comm	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,8,8
 	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4"
 	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4
 	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4,8,8
-	.type	cP1__W$__fData_Binary_storableB$d5,@object # @"cP1__W$__fData_Binary_storableB$d5"
-	.local	cP1__W$__fData_Binary_storableB$d5
-	.comm	cP1__W$__fData_Binary_storableB$d5,8,8
 	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6"
 	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6
 	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6,8,8
+	.type	cFJhc_Show_shows,@object        # @cFJhc_Show_shows
+	.local	cFJhc_Show_shows
+	.comm	cFJhc_Show_shows,8,8
+	.type	cFW$__fPrelude_Text_showLitChar$d2,@object # @"cFW$__fPrelude_Text_showLitChar$d2"
+	.local	cFW$__fPrelude_Text_showLitChar$d2
+	.comm	cFW$__fPrelude_Text_showLitChar$d2,8,8
+	.type	cFW$__fPrelude_Text_showLitChar$d3,@object # @"cFW$__fPrelude_Text_showLitChar$d3"
+	.local	cFW$__fPrelude_Text_showLitChar$d3
+	.comm	cFW$__fPrelude_Text_showLitChar$d3,8,8
+	.type	cFW$__fJhc_List_$bb,@object     # @"cFW$__fJhc_List_$bb"
+	.local	cFW$__fJhc_List_$bb
+	.comm	cFW$__fJhc_List_$bb,8,8
+	.type	cFJhc_Text_Read_readDec$d5,@object # @"cFJhc_Text_Read_readDec$d5"
+	.local	cFJhc_Text_Read_readDec$d5
+	.comm	cFJhc_Text_Read_readDec$d5,8,8
+	.type	cFJhc_Text_Read_readDec$d6,@object # @"cFJhc_Text_Read_readDec$d6"
+	.local	cFJhc_Text_Read_readDec$d6
+	.comm	cFJhc_Text_Read_readDec$d6,8,8
+	.type	cBap__1__W$__fNumeric_showIntAtBase__100840,@object # @"cBap__1__W$__fNumeric_showIntAtBase__100840"
+	.local	cBap__1__W$__fNumeric_showIntAtBase__100840
+	.comm	cBap__1__W$__fNumeric_showIntAtBase__100840,8,8
 	.type	.L.str,@object                  # @.str
 	.section	.rodata.str1.1,"aMS",@progbits,1
 .L.str:

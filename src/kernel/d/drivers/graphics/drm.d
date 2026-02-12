@@ -1,7 +1,7 @@
-module anonymos_drivers.graphics.drm;
+module drivers.graphics.drm;
 
-import anonymos_userland.shell.console : printLine, print, printUnsigned, printHex;
-import anonymos_display.framebuffer;
+import userland.shell.console : printLine, print, printUnsigned, printHex;
+import display.framebuffer;
 import core.stdc.string : memcpy, memset, strlen;
 
 @nogc nothrow:

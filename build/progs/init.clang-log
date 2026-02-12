@@ -6,33 +6,33 @@ In file included from <built-in>:385:
     1 | #define _JHC_GC _JHC_GC_JGC
       |         ^
 In file included from <built-in>:1:
-/home/bruns/Documents/haskellos/src/progs/cbits/hos.h:36:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/home/bruns/Documents/HanonymOS/src/progs/cbits/hos.h:36:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
    36 | int fprintf(void *stream, const char *format, ...);
       |     ^
-In file included from /home/bruns/Documents/haskellos/build/progs/init.c:31:
-/home/bruns/Documents/haskellos/src/progs/cbits/stdio.h:10:8: warning: incompatible redeclaration of library function 'fwrite' [-Wincompatible-library-redeclaration]
+In file included from /home/bruns/Documents/HanonymOS/build/progs/init.c:31:
+/home/bruns/Documents/HanonymOS/src/progs/cbits/stdio.h:10:8: warning: incompatible redeclaration of library function 'fwrite' [-Wincompatible-library-redeclaration]
    10 | size_t fwrite(const void * ptr, size_t size, size_t nitems, void * stream);
       |        ^
-/home/bruns/Documents/haskellos/src/progs/cbits/stdio.h:10:8: note: 'fwrite' is a builtin with type 'unsigned long (const void *, unsigned long, unsigned long, FILE *)' (aka 'unsigned long (const void *, unsigned long, unsigned long, void **)')
-/home/bruns/Documents/haskellos/build/progs/init.c:2182:28: warning: incompatible pointer types passing 'wchar_t *' (aka 'int *') to parameter of type 'const char *' [-Wincompatible-pointer-types]
- 2182 |                 (void)klog((wchar_t*)v59069478);
-      |                            ^~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/src/progs/cbits/hos.h:45:23: note: passing argument to parameter 'msg' here
+/home/bruns/Documents/HanonymOS/src/progs/cbits/stdio.h:10:8: note: 'fwrite' is a builtin with type 'unsigned long (const void *, unsigned long, unsigned long, FILE *)' (aka 'unsigned long (const void *, unsigned long, unsigned long, void **)')
+/home/bruns/Documents/HanonymOS/build/progs/init.c:1988:28: warning: incompatible pointer types passing 'wchar_t *' (aka 'int *') to parameter of type 'const char *' [-Wincompatible-pointer-types]
+ 1988 |                 (void)klog((wchar_t*)v137643140);
+      |                            ^~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/src/progs/cbits/hos.h:45:23: note: passing argument to parameter 'msg' here
    45 | void klog(const char *msg);
       |                       ^
-/home/bruns/Documents/haskellos/build/progs/init.c:2748:25: warning: expression result unused [-Wunused-value]
- 2748 |                         (uint64_t)syscall((uint64_t)1027,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+/home/bruns/Documents/HanonymOS/build/progs/init.c:2554:25: warning: expression result unused [-Wunused-value]
+ 2554 |                         (uint64_t)syscall((uint64_t)1027,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
       |                         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/init.c:3202:9: warning: expression result unused [-Wunused-value]
- 3202 |         (uint64_t)syscall((uint64_t)1,(uint64_t)v260952208,(uint64_t)v235480816,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+/home/bruns/Documents/HanonymOS/build/progs/init.c:3018:9: warning: expression result unused [-Wunused-value]
+ 3018 |         (uint64_t)syscall((uint64_t)1,(uint64_t)v260952208,(uint64_t)v128764926,(uint64_t)0,(uint64_t)0,(uint64_t)0);
       |         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/init.c:3213:9: warning: expression result unused [-Wunused-value]
- 3213 |         (uint64_t)syscall((uint64_t)0,(uint64_t)v7598848,(uint64_t)v123670240,(uint64_t)0,(uint64_t)0,(uint64_t)0);
-      |         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/init.c:3235:9: warning: expression result unused [-Wunused-value]
- 3235 |         (uint64_t)syscall((uint64_t)768,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+/home/bruns/Documents/HanonymOS/build/progs/init.c:3029:9: warning: expression result unused [-Wunused-value]
+ 3029 |         (uint64_t)syscall((uint64_t)0,(uint64_t)v58334284,(uint64_t)v253791876,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+      |         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/init.c:3041:9: warning: expression result unused [-Wunused-value]
+ 3041 |         (uint64_t)syscall((uint64_t)768,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
       |         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/init.c:3253:17: warning: expression result unused [-Wunused-value]
- 3253 |                 (uint8_t)inb((uint16_t)96);
+/home/bruns/Documents/HanonymOS/build/progs/init.c:3059:17: warning: expression result unused [-Wunused-value]
+ 3059 |                 (uint8_t)inb((uint16_t)96);
       |                 ^        ~~~~~~~~~~~~~~~~~
 9 warnings generated.

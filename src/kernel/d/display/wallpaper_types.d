@@ -1,4 +1,4 @@
-module anonymos_display.wallpaper_types;
+module display.wallpaper_types;
 
 nothrow:
 @nogc:

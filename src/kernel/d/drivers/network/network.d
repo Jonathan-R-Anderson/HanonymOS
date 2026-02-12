@@ -1,7 +1,7 @@
-module anonymos_drivers.network.network;
+module drivers.network.network;
 
-import anonymos_userland.shell.console : printLine, print, printHex;
-import anonymos_drivers.pci : PCIDevice, scanPCIDevices;
+import userland.shell.console : printLine, print, printHex;
+import drivers.pci : PCIDevice, scanPCIDevices;
 
 /// Network device types
 enum NetworkDeviceType {
@@ -232,7 +232,7 @@ private enum NUM_RX_DESC = 32;
 private enum NUM_TX_DESC = 8;
 private enum RX_BUFFER_SIZE = 2048;
 
-import implementation.kernel.core.physmem : allocFrame, freeFrame;
+import memory.physmem : allocFrame, freeFrame;
 
 // Helper for physToVirt (assuming identity map or offset)
 private enum ulong KERNEL_BASE = 0xFFFF_8000_0000_0000;
@@ -517,7 +517,7 @@ private int virtioReceive(ubyte* buffer, size_t maxLen) @nogc nothrow {
 // ============================================================================
 
 private ulong readPCIBar(PCIDevice* dev, uint barIndex) @nogc nothrow {
-    import anonymos_drivers.pci : pciConfigRead32;
+    import drivers.pci : pciConfigRead32;
     uint bar = pciConfigRead32(dev.bus, dev.slot, dev.func, cast(ubyte)(0x10 + (barIndex * 4)));
     
     // Check if memory-mapped or I/O
@@ -531,7 +531,7 @@ private ulong readPCIBar(PCIDevice* dev, uint barIndex) @nogc nothrow {
 }
 
 private void enablePCIBusMastering(PCIDevice* dev) @nogc nothrow {
-    import anonymos_drivers.pci : pciConfigRead32, pciConfigWrite32;
+    import drivers.pci : pciConfigRead32, pciConfigWrite32;
     
     // Read command register (offset 0x04)
     uint cmd = pciConfigRead32(dev.bus, dev.slot, dev.func, 0x04);

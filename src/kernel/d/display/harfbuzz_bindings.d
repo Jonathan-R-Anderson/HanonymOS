@@ -1,9 +1,9 @@
-module anonymos_display.harfbuzz_bindings;
+module display.harfbuzz_bindings;
 
 // Minimal HarfBuzz bindings for kernel use
 // Based on HarfBuzz API
 
-import anonymos_display.freetype_bindings : FT_Face;
+import display.freetype_bindings : FT_Face;
 
 extern(C) @nogc nothrow:
 

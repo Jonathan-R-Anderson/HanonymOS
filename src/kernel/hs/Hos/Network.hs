@@ -41,23 +41,23 @@ initNetworkStack :: NetworkConfig -> IO Bool
 initNetworkStack cfg = do
   st <- readIORef networkState
   if nsInitialized st
-    then pure True
+    then return True
     else do
       writeIORef networkState (NetworkState True True (Just cfg))
       -- Keep logging tiny for early-kernel bring-up diagnostics.
       logNet (fromIntegral (fromEnum 'N'))
-      pure True
+      return True
 
 networkStackPoll :: IO ()
 networkStackPoll = do
   st <- readIORef networkState
-  if nsRunning st then pure () else pure ()
+  if nsRunning st then return () else return ()
 
 isNetworkStackRunning :: IO Bool
-isNetworkStackRunning = nsRunning <$> readIORef networkState
+isNetworkStackRunning = fmap nsRunning (readIORef networkState)
 
 stopNetworkStack :: IO ()
-stopNetworkStack = modifyIORef' networkState $ \st -> st { nsRunning = False }
+stopNetworkStack = modifyIORef networkState $ \st -> st { nsRunning = False }
 
 startNetworkStack :: IO ()
-startNetworkStack = modifyIORef' networkState $ \st -> if nsInitialized st then st { nsRunning = True } else st
+startNetworkStack = modifyIORef networkState $ \st -> if nsInitialized st then st { nsRunning = True } else st

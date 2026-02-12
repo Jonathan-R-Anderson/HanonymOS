@@ -1,8 +1,8 @@
-module anonymos_drivers.input.hid_mouse;
+module drivers.input.hid_mouse;
 
-import anonymos_display.input_pipeline : InputQueue, InputEvent, enqueue;
-import anonymos_display.framebuffer : framebufferMoveCursor;
-import anonymos_userland.shell.console : print, printLine, printUnsigned;
+import display.input_pipeline : InputQueue, InputEvent, enqueue;
+import display.framebuffer : framebufferMoveCursor;
+import userland.shell.console : print, printLine, printUnsigned;
 
 @nogc:
 nothrow:
@@ -52,7 +52,7 @@ void processMouseReport(ref const HIDMouseReport report, ref InputQueue queue,
 {
     // Logging disabled to prevent screen scrolling/corruption
     /*
-    import anonymos_userland.shell.console : print, printLine, printUnsigned, printHex;
+    import userland.shell.console : print, printLine, printUnsigned, printHex;
     
     static uint reportCount = 0;
     static uint moveCount = 0;

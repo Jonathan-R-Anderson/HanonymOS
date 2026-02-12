@@ -1,7 +1,7 @@
-module anonymos_drivers.input.hid_keyboard;
+module drivers.input.hid_keyboard;
 
-import anonymos_display.input_pipeline : InputQueue, InputEvent, enqueue;
-import implementation.kernel.core.interrupts : getTickCount;
+import display.input_pipeline : InputQueue, InputEvent, enqueue;
+import core.ticks : getTickCount;
 
 @nogc:
 nothrow:

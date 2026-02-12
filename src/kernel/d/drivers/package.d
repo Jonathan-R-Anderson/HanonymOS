@@ -1,4 +1,4 @@
-module anonymos_drivers;
+module drivers;
 
 /// AnonymOS Drivers - Hardware device drivers
 /// 
@@ -12,21 +12,21 @@ module anonymos_drivers;
 /// - VirtIO devices
 
 // Block device drivers
-public import anonymos_drivers.block.ahci;
+public import drivers.block.ahci;
 
 // Network drivers
-public import anonymos_drivers.network.network;
+public import drivers.network.network;
 
 // Input drivers
-public import anonymos_drivers.input.hid_keyboard;
-public import anonymos_drivers.input.hid_mouse;
-public import anonymos_drivers.input.usb_hid;
+public import drivers.input.hid_keyboard;
+public import drivers.input.hid_mouse;
+public import drivers.input.usb_hid;
 
 // Graphics drivers
-public import anonymos_drivers.graphics.drm;
-public import anonymos_drivers.graphics.virtio_gpu;
+public import drivers.graphics.drm;
+public import drivers.graphics.virtio_gpu;
 
 // Bus and infrastructure drivers
-public import anonymos_drivers.pci;
-public import anonymos_drivers.virtio;
-public import anonymos_drivers.io;
+public import drivers.pci;
+public import drivers.virtio;
+public import drivers.io;

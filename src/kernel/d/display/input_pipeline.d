@@ -1,4 +1,4 @@
-module anonymos_display.input_pipeline;
+module display.input_pipeline;
 
 /// Minimal input event representation so higher-level components can describe
 /// the flow of keyboard/mouse data without tying directly into hardware yet.

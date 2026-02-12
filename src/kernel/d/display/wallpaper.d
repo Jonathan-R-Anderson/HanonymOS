@@ -1,8 +1,8 @@
-module anonymos_display.wallpaper;
+module display.wallpaper;
 
-import anonymos_display.framebuffer : framebufferPutPixel, framebufferAvailable,
+import display.framebuffer : framebufferPutPixel, framebufferAvailable,
     g_fb;
-import anonymos_display.wallpaper_types;
+import display.wallpaper_types;
 
 nothrow:
 @nogc:
@@ -11,9 +11,9 @@ private enum uint fallbackColor = 0xFF202020;
 
 private WallpaperData loadWallpaper()
 {
-    static if (__traits(compiles, { import anonymos_display.generated_wallpaper; }))
+    static if (__traits(compiles, { import display.generated_wallpaper; }))
     {
-        import anonymos_display.generated_wallpaper;
+        import display.generated_wallpaper;
         enum WallpaperData data = WallpaperData(
             wallpaperWidth,
             wallpaperHeight,
@@ -24,7 +24,7 @@ private WallpaperData loadWallpaper()
     }
     else
     {
-        import anonymos_display.wallpaper_builtin;
+        import display.wallpaper_builtin;
         enum WallpaperData data = WallpaperData(
             wallpaperWidth,
             wallpaperHeight,

@@ -6,36 +6,36 @@ In file included from <built-in>:385:
     1 | #define _JHC_GC _JHC_GC_JGC
       |         ^
 In file included from <built-in>:1:
-/home/bruns/Documents/haskellos/src/progs/cbits/hos.h:36:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/home/bruns/Documents/HanonymOS/src/progs/cbits/hos.h:36:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
    36 | int fprintf(void *stream, const char *format, ...);
       |     ^
-In file included from /home/bruns/Documents/haskellos/build/progs/ata.c:202:
-/home/bruns/Documents/haskellos/src/progs/cbits/stdio.h:10:8: warning: incompatible redeclaration of library function 'fwrite' [-Wincompatible-library-redeclaration]
+In file included from /home/bruns/Documents/HanonymOS/build/progs/ata.c:202:
+/home/bruns/Documents/HanonymOS/src/progs/cbits/stdio.h:10:8: warning: incompatible redeclaration of library function 'fwrite' [-Wincompatible-library-redeclaration]
    10 | size_t fwrite(const void * ptr, size_t size, size_t nitems, void * stream);
       |        ^
-/home/bruns/Documents/haskellos/src/progs/cbits/stdio.h:10:8: note: 'fwrite' is a builtin with type 'unsigned long (const void *, unsigned long, unsigned long, FILE *)' (aka 'unsigned long (const void *, unsigned long, unsigned long, void **)')
-/home/bruns/Documents/haskellos/build/progs/ata.c:9533:17: warning: expression result unused [-Wunused-value]
- 9533 |                 (uint64_t)syscall((uint64_t)0,(uint64_t)v49937462,(uint64_t)v190911676,(uint64_t)0,(uint64_t)0,(uint64_t)0);
-      |                 ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/ata.c:14819:9: warning: expression result unused [-Wunused-value]
- 14819 |         (uint64_t)syscall((uint64_t)8,(uint64_t)v420618809,(uint64_t)v260952208,(uint64_t)0,(uint64_t)0,(uint64_t)0);
-       |         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/ata.c:16893:13: warning: expression result unused [-Wunused-value]
- 16893 |             *((uint16_t *)(v182639134));
-       |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/ata.c:17936:9: warning: expression result unused [-Wunused-value]
+/home/bruns/Documents/HanonymOS/src/progs/cbits/stdio.h:10:8: note: 'fwrite' is a builtin with type 'unsigned long (const void *, unsigned long, unsigned long, FILE *)' (aka 'unsigned long (const void *, unsigned long, unsigned long, void **)')
+/home/bruns/Documents/HanonymOS/build/progs/ata.c:9533:17: warning: expression result unused [-Wunused-value]
+ 9533 |                 (uint64_t)syscall((uint64_t)0,(uint64_t)v177262038,(uint64_t)v193156542,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+      |                 ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/ata.c:14819:9: warning: expression result unused [-Wunused-value]
+ 14819 |         (uint64_t)syscall((uint64_t)8,(uint64_t)v1490036281,(uint64_t)v204308582,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+       |         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/ata.c:16893:13: warning: expression result unused [-Wunused-value]
+ 16893 |             *((uint16_t *)(v66102170));
+       |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/ata.c:17936:9: warning: expression result unused [-Wunused-value]
  17936 |         (uint64_t)syscall((uint64_t)260,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
        |         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/ata.c:17949:17: warning: expression result unused [-Wunused-value]
+/home/bruns/Documents/HanonymOS/build/progs/ata.c:17949:17: warning: expression result unused [-Wunused-value]
  17949 |                 (uint64_t)syscall((uint64_t)258,(uint64_t)195935983,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
        |                 ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/ata.c:18114:57: warning: expression result unused [-Wunused-value]
+/home/bruns/Documents/HanonymOS/build/progs/ata.c:18114:57: warning: expression result unused [-Wunused-value]
  18114 |                                                         (uint64_t)syscall((uint64_t)256,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
        |                                                         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/ata.c:18125:61: warning: expression result unused [-Wunused-value]
+/home/bruns/Documents/HanonymOS/build/progs/ata.c:18125:61: warning: expression result unused [-Wunused-value]
  18125 |                                                             (uint64_t)syscall((uint64_t)260,(uint64_t)((uint64_t)((uintmax_t)(1 << 31))),(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
        |                                                             ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/ata.c:18380:133: warning: expression result unused [-Wunused-value]
+/home/bruns/Documents/HanonymOS/build/progs/ata.c:18380:133: warning: expression result unused [-Wunused-value]
  18380 |                                                                                                                                     (uint64_t)syscall((uint64_t)768,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
        |                                                                                                                                     ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 11 warnings generated.

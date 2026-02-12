@@ -1,9 +1,10 @@
-module anonymos_display.cursor;
+module display.cursor;
 
-import anonymos_display.framebuffer;
-import anonymos_display.canvas;
-import anonymos_userland.shell.console : printLine, printUnsigned;
-import core.stdc.stdlib : malloc, free;
+import display.framebuffer;
+import display.canvas;
+import userland.shell.console : printLine, printUnsigned;
+extern(C) void* malloc(size_t size) @nogc nothrow;
+extern(C) void free(void* ptr) @nogc nothrow;
 
 @system:
 
@@ -106,7 +107,7 @@ __gshared Cursor g_activeCursor;
 __gshared bool g_cursorInitialized = false;
 
 void initCursorSystem() @nogc nothrow {
-    import anonymos_userland.shell.console : printLine;
+    import userland.shell.console : printLine;
     printLine("[cursor] initCursorSystem called");
     if (g_cursorInitialized) {
         printLine("[cursor] already initialized");

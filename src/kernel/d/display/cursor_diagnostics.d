@@ -1,8 +1,8 @@
-module anonymos_display.cursor_diagnostics;
+module display.cursor_diagnostics;
 
-import anonymos_display.framebuffer;
-import anonymos_drivers.input.hid_mouse;
-import anonymos_userland.shell.console;
+import display.framebuffer;
+import drivers.input.hid_mouse;
+import userland.shell.console;
 
 /// Diagnostic data for cursor rendering
 struct CursorDiagnostics

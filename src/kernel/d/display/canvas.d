@@ -1,9 +1,9 @@
-module anonymos_display.canvas;
+module display.canvas;
 
-import anonymos_display.fonts.font_stack;
-import anonymos_display.framebuffer;
-import anonymos_display.common : glyphWidth, glyphHeight;
-import anonymos_display.gpu_accel : acceleratedFill, acceleratedFillRect;
+import display.fonts.font_stack;
+import display.framebuffer;
+import display.common : glyphWidth, glyphHeight;
+import display.gpu_accel : acceleratedFill, acceleratedFillRect;
 import core.stdc.string : memcmp;
 
 /// Basic 2D canvas abstraction layered on top of the existing framebuffer

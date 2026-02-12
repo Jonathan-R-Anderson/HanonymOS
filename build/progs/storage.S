@@ -9,19 +9,434 @@ jhc_hs_init:                            # @jhc_hs_init
 	pushq	%rax
 	.cfi_def_cfa_offset 16
 	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2, %edi
+	movl	$cP1__Hos_User_IPC_transmitMsg$d15, %edi
+	movl	$10, %edx
+	movl	$6, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Type_Basic_Right, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Prim_Prim_$LccR, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Data_Binary_fl$_x64315462$d5406, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Init_Msg_InitFoundProvider, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Prim_Prim_$LcR, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFInstance$__iJhc_Show_show_default, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Common_Bundle_BundleItem, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFtheMain$d7, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFtheMain$d6, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFtheMain$d5, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Common_Types_FromPhysical, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFNumeric_showHex, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Basics_$pp, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_User_IPC_CouldNotParseResponse, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Init_Msg_InitRegisterProvider, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_User_IPC_OurMsg, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_StoragePerformQuery, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_TagIs, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_StorageQueryResult, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_StorageExecute, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Init_Msg_InitSendArgs, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_StorageStartedTask, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFMain_serveBundle$d13, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_User_IPC_InTransitMsg, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFMain_serveBundle$d5, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFR$__fJhc_Basics_zip, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fJhc_Inst_Enum_67__f, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Hos_User_IPC_transmitMsg$d8, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Hos_User_IPC_transmitMsg$d15, %edi
 	movl	$8, %edx
 	movl	$5, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
+	movl	$cFHos_User_IPC_transmitMsg$d18, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFHos_User_IPC_transmitMsg$d17, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFHos_User_IPC_transmitMsg$d16, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFHos_User_IPC_transmitMsg$d10, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFHos_User_IPC_transmitMsg$d9, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fR$__fJhc_List_383__f, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCData_Elf_Elf64ProgHdr, %edi
+	movl	$8, %edx
+	movl	$8, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Common_Types_CopyOnWrite, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fHos_Storage_loadElf$d4, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fHos_Storage_loadElf$d2, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cBap__1__W$__fNumeric_showIntAtBase__100304, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fNumeric_showIntAtBase$d2, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cBap__1__W$__fNumeric_showIntAtBase__100308, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fNumeric_showIntAtBase$d3, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFHos_User_SysCall_hosDebugLog$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d3, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d5, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d7, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d9, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__Data_Binary_get$d2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__Data_Binary_get$d3, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__Data_Binary_get$d4, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_storableB$d11, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_QId, %edi
@@ -29,19 +444,14 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_QId, %edi
+	movl	$cP3__Data_Binary_get$d5, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_QId, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId, %edi
@@ -54,14 +464,9 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
+	movl	$cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2, %edi
+	movl	$8, %edx
+	movl	$5, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus, %edi
@@ -71,6 +476,391 @@ jhc_hs_init:                            # @jhc_hs_init
 	movq	arena(%rip), %rsi
 	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus, %edi
 	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__Data_Binary_get$d6, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__Data_Binary_get$d7, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_User_IPC_RoutedMessage, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Show_showsPrec, %edi
+	movl	$6, %edx
+	movl	$5, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fPrelude_Text_showLitChar$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fPrelude_Text_showLitChar$d3, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fJhc_List_$bb, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_put$d2, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_StorageTransactionStatus, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_StorageAbortTransaction, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_StorageCommitTransaction, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_put$d4, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_NotQ, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_OrQ, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_AndQ, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_put$d6, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Common_Bundle_Tag, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Common_Bundle_BooleanV, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Common_Bundle_IntegerV, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Common_Bundle_TextV, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fData_Binary_put$d8, %edi
+	movl	$8, %edx
+	movl	$5, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFR$__fJhc_Basics_$pp, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Init_Msg_InitFindProvider, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Common_Bundle_TagDescriptor, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFPrelude_Text_30__showl, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Type_Word_Word64, %edi
+	movl	$2, %edx
+	xorl	%ecx, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Type_Ptr_Ptr, %edi
+	movl	$2, %edx
+	xorl	%ecx, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Type_Basic_Left, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFJhc_Show_showsPrec$d3, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fJhc_Inst_Show_showWord, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Prim_Prim_$x3a, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cBap__1__Main_serveBundle$d8u100840, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Main_serveBundle$d8, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Type_Word_Word32, %edi
+	movl	$2, %edx
+	xorl	%ecx, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Type_Word_Int, %edi
+	movl	$2, %edx
+	xorl	%ecx, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Type_Basic_Integer, %edi
+	movl	$2, %edx
+	xorl	%ecx, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFR$__fJhc_List_filter, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cTHos_Common_Bundle_BundleItem, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCJhc_Type_Basic_Just, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCData_Binary_Builder, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_put$d2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_put$d4, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_put$d6, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_put$d8, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fData_Binary_put$d10, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fData_Binary_put$d9, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fData_Binary_put$d7, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fData_Binary_put$d5, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fData_Binary_put$d3, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cCHos_Storage_Msg_StorageTransaction, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2, %edi
+	movl	$6, %edx
+	movl	$4, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8, %edi
+	movl	$4, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
@@ -84,13 +874,18 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery, %edi
+	movl	$cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6, %edi
 	movl	$4, %edx
-	movl	$3, %ecx
+	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery, %edi
-	movl	$2, %edx
+	movl	$cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4, %edi
+	movl	$4, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3, %edi
+	movl	$4, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
@@ -104,9 +899,64 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__Data_Binary_fl$_x64315462$d5406, %edi
+	movl	$cFHos_User_IPC_transmitMsg$d14, %edi
+	movl	$2, %edx
+	movl	$1, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFHos_User_IPC_transmitMsg$d11, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFHos_User_IPC_transmitMsg$d12, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFHos_User_IPC_transmitMsg$d6, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFHos_User_IPC_transmitMsg$d7, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_storableB$d3, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_storableB$d2, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_storableB$d5, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_storableB$d4, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_storableB$d7, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_storableB$d6, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10, %edi
@@ -114,29 +964,34 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$5, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_storableB$d9, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__W$__fData_Binary_storableB$d8, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
 	movl	$cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10, %edi
 	movl	$4, %edx
 	movl	$4, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor, %edi
+	movl	$cP2__W$__fData_Binary_storableB$d11, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag, %edi
+	movl	$cP2__W$__fData_Binary_storableB$d10, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
+	movl	$cCHos_Common_Bundle_GUID, %edi
+	movl	$4, %edx
+	movl	$4, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11, %edi
@@ -147,16 +1002,6 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11, %edi
 	movl	$6, %edx
 	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP1__Data_Binary_get$d2, %edi
@@ -177,6 +1022,16 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$cP2__Data_Binary_get$d3, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP1__Data_Binary_get$d4, %edi
@@ -219,27 +1074,32 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage, %edi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage, %edi
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7, %edi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6, %edi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
@@ -249,17 +1109,42 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$4, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP3__Data_Binary_get$d2, %edi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP3__Data_Binary_get$d3, %edi
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP3__Data_Binary_get$d4, %edi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64, %edi
+	movl	$2, %edx
+	movl	$2, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32, %edi
+	movl	$4, %edx
+	movl	$3, %ecx
+	callq	find_cache
+	movq	arena(%rip), %rsi
+	movl	$cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
@@ -274,334 +1159,9 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP3__Data_Binary_get$d5, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP3__Data_Binary_get$d6, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP3__Data_Binary_get$d7, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Hos_User_IPC_transmitMsg$d8, %edi
-	movl	$8, %edx
-	movl	$5, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Hos_User_IPC_transmitMsg$d15, %edi
-	movl	$10, %edx
-	movl	$6, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Type_Basic_Right, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Prim_Prim_$LccR, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_User_IPC_RoutedMessage, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Prim_Prim_$LcR, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Common_Bundle_BundleItem, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cBap__1__Main_serveBundle$d8u100472, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Main_serveBundle$d8, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Common_Bundle_TextV, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Common_Bundle_IntegerV, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Common_Bundle_BooleanV, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFR$__fJhc_List_filter, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Common_Bundle_Tag, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_SysCall_hosDebugLog$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec, %edi
-	movl	$6, %edx
-	movl	$5, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fPrelude_Text_showLitChar$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fPrelude_Text_showLitChar$d3, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fJhc_List_$bb, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Common_Types_FromPhysical, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Common_Types_CopyOnWrite, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCData_Elf_Elf64ProgHdr, %edi
-	movl	$8, %edx
-	movl	$8, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_StorageExecute, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_StoragePerformQuery, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_StorageTransactionStatus, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_StorageAbortTransaction, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_StorageCommitTransaction, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_NotQ, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_OrQ, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_AndQ, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_TagIs, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Init_Msg_InitSendArgs, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
 	movl	$cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word16, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_StorageQueryResult, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word16, %edi
@@ -609,29 +1169,9 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_StorageStartedTask, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Storage_Msg_StorageTransaction, %edi
+	movl	$cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName, %edi
 	movl	$4, %edx
 	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Common_Bundle_GUID, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Init_Msg_InitFoundProvider, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
 	movl	$cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word8, %edi
@@ -644,552 +1184,12 @@ jhc_hs_init:                            # @jhc_hs_init
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_put$d2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Init_Msg_InitRegisterProvider, %edi
+	movl	$cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName, %edi
 	movl	$2, %edx
 	movl	$2, %ecx
 	callq	find_cache
 	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_put$d4, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Init_Msg_InitFindProvider, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_put$d6, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_put$d8, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fData_Binary_put$d10, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fData_Binary_put$d9, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fData_Binary_put$d7, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fData_Binary_put$d5, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fData_Binary_put$d3, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d14, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d11, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d12, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d6, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d7, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d3, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d5, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d4, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d7, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d6, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d9, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d8, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d11, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fData_Binary_storableB$d10, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Basics_$pp, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFInstance$__iJhc_Show_show_default, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFPrelude_Text_30__showl, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFJhc_Show_showsPrec$d3, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fJhc_Inst_Show_showWord, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFR$__fJhc_Basics_$pp, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_Common_Bundle_TagDescriptor, %edi
-	movl	$4, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Type_Word_Word64, %edi
-	movl	$2, %edx
-	xorl	%ecx, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Type_Ptr_Ptr, %edi
-	movl	$2, %edx
-	xorl	%ecx, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Type_Basic_Left, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFtheMain$d7, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFtheMain$d6, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFtheMain$d5, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFNumeric_showHex, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Prim_Prim_$x3a, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_User_IPC_CouldNotParseResponse, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_User_IPC_OurMsg, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Type_Word_Word32, %edi
-	movl	$2, %edx
-	xorl	%ecx, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFMain_serveBundle$d13, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCHos_User_IPC_InTransitMsg, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFMain_serveBundle$d5, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCData_Binary_Builder, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Type_Word_Int, %edi
-	movl	$2, %edx
-	xorl	%ecx, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Type_Basic_Just, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFR$__fJhc_Basics_zip, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fJhc_Inst_Enum_67__f, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cCJhc_Type_Basic_Integer, %edi
-	movl	$2, %edx
-	xorl	%ecx, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Hos_User_IPC_transmitMsg$d8, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__Hos_User_IPC_transmitMsg$d15, %edi
-	movl	$8, %edx
-	movl	$5, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cTHos_Common_Bundle_BundleItem, %edi
-	movl	$2, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d18, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d17, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d16, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d10, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFHos_User_IPC_transmitMsg$d9, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fR$__fJhc_List_383__f, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d3, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d5, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fHos_Storage_loadElf$d4, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d7, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fHos_Storage_loadElf$d2, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d9, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cBap__1__W$__fNumeric_showIntAtBase__100342, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fNumeric_showIntAtBase$d2, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_storableB$d11, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cBap__1__W$__fNumeric_showIntAtBase__100346, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fNumeric_showIntAtBase$d3, %edi
-	movl	$2, %edx
-	movl	$1, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_put$d2, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13, %edi
-	movl	$4, %edx
-	movl	$2, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_put$d4, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9, %edi
-	movl	$4, %edx
-	movl	$3, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_put$d6, %edi
-	movl	$6, %edx
-	movl	$4, %ecx
-	callq	find_cache
-	movq	arena(%rip), %rsi
-	movl	$cP1__W$__fData_Binary_put$d8, %edi
+	movl	$cP1__Hos_User_IPC_transmitMsg$d8, %edi
 	movl	$8, %edx
 	movl	$5, %ecx
 	popq	%rax
@@ -1563,17 +1563,17 @@ _amain:                                 # @_amain
 	movl	$_c781, %esi
 	movq	%r14, %rdi
 	callq	fData_Binary_get
-	movl	$_g1782590997+1, %edx
+	movl	$_g1140999701+1, %edx
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	movq	%rbx, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -1655,9 +1655,9 @@ _amain:                                 # @_amain
 	movq	%rbp, %rcx
 	movq	%rax, %rbp
 	movq	$E__ftheMain$d6+3, (%rax)
-	movq	%rbx, 8(%rax)
 	movq	32(%rsp), %rax                  # 8-byte Reload
 	movl	%eax, 16(%rbp)
+	movq	%rbx, 8(%rbp)
 	orq	$1, %rbp
 	movq	%rbp, 96(%rcx)
 	leaq	104(%rcx), %r14
@@ -1793,9 +1793,9 @@ _amain:                                 # @_amain
 	movq	40(%rsp), %r12                  # 8-byte Reload
 	movq	88(%rsp), %rax                  # 8-byte Reload
 	movq	%rax, 104(%r12)
-	movq	%rbx, 112(%r12)
 	movq	56(%rsp), %rax                  # 8-byte Reload
-	movq	%rax, 120(%r12)
+	movq	%rax, 112(%r12)
+	movq	%rbx, 120(%r12)
 	movl	$_c419, %r8d
 	movq	%rbp, %rdi
 	movl	$-1, %esi
@@ -1867,9 +1867,9 @@ _amain:                                 # @_amain
 	movq	(%rax), %rsi
 	movq	8(%rax), %r14
 	movq	16(%rax), %rbx
-	movq	%rbx, (%rbp)
+	movq	%r14, (%rbp)
 	movq	32(%rsp), %r12                  # 8-byte Reload
-	movq	%r14, (%r12)
+	movq	%rbx, (%r12)
 	movq	%r15, %rdi
 	callq	eval
 	movq	%rax, %rcx
@@ -1911,27 +1911,27 @@ _amain:                                 # @_amain
 	movq	(%rax), %rcx
 	movq	8(%rax), %rbx
 	movq	16(%rax), %r14
-	movq	%rbx, (%r15)
+	movq	%rcx, 104(%rsp)                 # 8-byte Spill
+	movq	%rcx, (%r15)
 	movq	16(%rsp), %rax                  # 8-byte Reload
 	movq	%r14, (%rax)
 	movq	80(%rsp), %rax                  # 8-byte Reload
-	movq	%rcx, 104(%rsp)                 # 8-byte Spill
-	movq	%rcx, (%rax)
-	movl	$_g1800941159+1, %esi
+	movq	%rbx, (%rax)
+	movl	$_g1158825575+1, %esi
 	movq	24(%rsp), %r13                  # 8-byte Reload
 	movq	%r13, %rdi
 	callq	eval
 	movq	%r13, %rdi
 	movq	%rax, %rsi
 	movq	%rbx, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r13, %rdi
 	movq	%rax, %rsi
 	movq	%r14, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r13, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r13, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -2030,9 +2030,9 @@ _amain:                                 # @_amain
 	movq	(%rax), %rbx
 	movq	%r15, %rcx
 	movq	8(%rax), %r15
-	movq	%r15, (%rcx)
+	movq	%rbx, (%rcx)
 	movq	16(%rsp), %rax                  # 8-byte Reload
-	movq	%rbx, (%rax)
+	movq	%r15, (%rax)
 	movl	$_c430, %edx
 	movq	80(%rsp), %rbp                  # 8-byte Reload
 	movq	%rbp, %rdi
@@ -2211,8 +2211,8 @@ _amain:                                 # @_amain
 	movq	56(%rsp), %rdx                  # 8-byte Reload
 	callq	fR$__fJhc_Basics_zip
 	movq	%r15, %rdi
-	movq	104(%rsp), %rsi                 # 8-byte Reload
-	movq	96(%rsp), %rdx                  # 8-byte Reload
+	movq	96(%rsp), %rsi                  # 8-byte Reload
+	movq	104(%rsp), %rdx                 # 8-byte Reload
 	movq	%rax, %rcx
 	callq	fMain_serveBundle$d8
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -2231,13 +2231,13 @@ _amain:                                 # @_amain
 	movq	%r12, %rdi
 	movq	%rax, %rsi
 	callq	fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse
-	movl	$_g1810116135+1, %edx
+	movl	$_g1168000551+1, %edx
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r12, saved_gc(%rip)
 	jmp	.LBB1_78
 	.p2align	4, 0x90
@@ -2305,13 +2305,13 @@ _amain:                                 # @_amain
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	callq	fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse
-	movl	$_g1820470825+1, %edx
+	movl	$_g1178355241+1, %edx
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%rbx, saved_gc(%rip)
 	movl	$258, %edi                      # imm = 0x102
 	xorl	%esi, %esi
@@ -2357,28 +2357,28 @@ _amain:                                 # @_amain
 	callq	fHos_User_SysCall_hosDebugLog
 	jmp	.LBB1_89
 .LBB1_77:                               #   in Loop: Header=BB1_35 Depth=1
-	movq	$12713986, (%r15)               # imm = 0xC20002
-	movq	$70, (%r12)
+	movq	$70, (%r15)
+	movq	$12713986, (%r12)               # imm = 0xC20002
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	movq	%r13, %rdi
 	callq	s_alloc
 	movq	%rax, %rbx
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	$70, 16(%rax)
+	movq	$70, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, (%r13)
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
 	movq	24(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	$7077890, (%rax)                # imm = 0x6C0002
 	movq	%rbx, 8(%rax)
-	movl	$_g1815227945+1, %edx
+	movl	$_g1173112361+1, %edx
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, saved_gc(%rip)
 .LBB1_78:                               #   in Loop: Header=BB1_35 Depth=1
 	movl	$258, %edi                      # imm = 0x102
@@ -2420,8 +2420,8 @@ _amain:                                 # @_amain
 	movl	$.L.str.2, %edi
 	callq	jhc_error
 .LBB1_92:
-	movl	$_c72, %esi
-	movl	$_c87, %edx
+	movl	$_c265, %esi
+	movl	$_c280, %edx
 	movq	%rbp, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%rbp, %rdi
@@ -2716,8 +2716,8 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName: # @"E__fInstance$__iDat
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4+3, (%rax)
-	movl	$247, 16(%rax)
 	movq	$524290, 8(%rax)                # imm = 0x80002
+	movl	$247, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 16(%rbx)
 	leaq	24(%rbx), %rdi
@@ -2726,8 +2726,8 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName: # @"E__fInstance$__iDat
 	movq	%rax, %r12
 	movq	$9699330, (%rax)                # imm = 0x940002
 	movq	%r15, 8(%rax)
-	movl	$0, 24(%rax)
 	movq	$524290, 16(%rax)               # imm = 0x80002
+	movl	$0, 24(%rax)
 	movq	%rax, (%r14)
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
@@ -2748,9 +2748,9 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName: # @"E__fInstance$__iDat
 	.size	E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName, .Lfunc_end12-E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418
-	.type	E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418,@function
-E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418: # @"E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482
+	.type	E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482,@function
+E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482: # @"E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -2763,13 +2763,13 @@ E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418: # @"E__bap__1
 	addq	$8, %rdi
 	movq	8(%rsi), %rsi
 	movq	16(%rbx), %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rax, (%rbx)
 	popq	%rbx
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end13:
-	.size	E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418, .Lfunc_end13-E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418
+	.size	E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482, .Lfunc_end13-E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4
@@ -2802,8 +2802,8 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4: # @"E__fInstance$__i
 	movq	%rsi, %rax
 	orq	$1, %rax
 	movq	%rax, (%rdi)
-	movl	16(%rsi), %r12d
 	movq	8(%rsi), %rbp
+	movl	16(%rsi), %r12d
 	movq	%rbp, 8(%rdi)
 	testl	%r12d, %r12d
 	jle	.LBB14_2
@@ -2831,10 +2831,10 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4: # @"E__fInstance$__i
 .LBB14_3:
 	movq	%r12, 16(%r14)
 	leaq	24(%r14), %rdi
-	movq	cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430(%rip), %rsi
+	movq	cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r13
-	movq	$E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430+3, (%rax)
+	movq	$E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494+3, (%rax)
 	movq	%rbp, 8(%rax)
 	movq	$65538, 16(%rax)                # imm = 0x10002
 	orq	$1, %r13
@@ -2854,8 +2854,8 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4: # @"E__fInstance$__i
 # %bb.4:
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%rbp, 40(%r14)
-	movq	%r13, 48(%r14)
+	movq	%r13, 40(%r14)
+	movq	%rbp, 48(%r14)
 	leaq	56(%r14), %rdi
 	movq	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9(%rip), %rsi
 	callq	s_alloc
@@ -2871,8 +2871,8 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4: # @"E__fInstance$__i
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$9633794, (%rax)                # imm = 0x930002
-	movq	%r13, 8(%rax)
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	%r13, 16(%rax)
 .LBB14_5:
 	movq	%r15, (%rbx)
 	movq	%r15, %rax
@@ -2895,9 +2895,9 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4: # @"E__fInstance$__i
 	.size	E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4, .Lfunc_end14-E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function bapply__78295
-	.type	bapply__78295,@function
-bapply__78295:                          # @bapply__78295
+	.p2align	4, 0x90                         # -- Begin function bapply__84512
+	.type	bapply__84512,@function
+bapply__84512:                          # @bapply__84512
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -2930,51 +2930,51 @@ bapply__78295:                          # @bapply__78295
 	shrq	$16, %rax
 	addq	$-8, %rax
 	cmpq	$155, %rax
-	ja	.LBB15_109
+	ja	.LBB15_110
 # %bb.3:
 	jmpq	*.LJTI15_0(,%rax,8)
 .LBB15_4:
 	movq	%rbx, %rsi
 	jmp	.LBB15_5
-.LBB15_106:
+.LBB15_107:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3(%rip), %rsi
 	callq	s_alloc
 	movq	$7798786, (%rax)                # imm = 0x770002
-	jmp	.LBB15_111
-.LBB15_101:
+	jmp	.LBB15_112
+.LBB15_102:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word8(%rip), %rsi
 	callq	s_alloc
 	movq	$6553602, (%rax)                # imm = 0x640002
-	jmp	.LBB15_111
-.LBB15_79:
+	jmp	.LBB15_112
+.LBB15_80:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag(%rip), %rsi
 	callq	s_alloc
 	movq	$5111810, (%rax)                # imm = 0x4E0002
-	jmp	.LBB15_111
-.LBB15_84:
+	jmp	.LBB15_112
+.LBB15_85:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse(%rip), %rsi
 	callq	s_alloc
 	movq	$5439490, (%rax)                # imm = 0x530002
-	jmp	.LBB15_111
-.LBB15_88:
+	jmp	.LBB15_112
+.LBB15_89:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery(%rip), %rsi
 	callq	s_alloc
 	movq	$5701634, (%rax)                # imm = 0x570002
-	jmp	.LBB15_111
-.LBB15_93:
-	movl	24(%rsi), %ebp
+	jmp	.LBB15_112
+.LBB15_94:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
+	movl	24(%rsi), %ebp
 	movq	%rbx, (%rdi)
 	movq	%r15, 8(%rdi)
 	movq	%r14, 16(%rdi)
@@ -2983,22 +2983,24 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$6029314, (%rax)                # imm = 0x5C0002
 	movq	%r14, 8(%rax)
+	movq	%r15, 16(%rax)
 	movl	%ebp, 32(%rax)
-	jmp	.LBB15_16
-.LBB15_82:
+	movq	%rbx, 24(%rax)
+	jmp	.LBB15_113
+.LBB15_83:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue(%rip), %rsi
 	callq	s_alloc
 	movq	$5308418, (%rax)                # imm = 0x510002
-	jmp	.LBB15_111
-.LBB15_80:
+	jmp	.LBB15_112
+.LBB15_81:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor(%rip), %rsi
 	callq	s_alloc
 	movq	$5177346, (%rax)                # imm = 0x4F0002
-	jmp	.LBB15_111
+	jmp	.LBB15_112
 .LBB15_62:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
@@ -3010,7 +3012,7 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$3735554, (%rax)                # imm = 0x390002
 	jmp	.LBB15_15
-.LBB15_54:
+.LBB15_53:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	24(%rsi), %r12
@@ -3025,8 +3027,8 @@ bapply__78295:                          # @bapply__78295
 	movq	%rax, %rsi
 	callq	s_alloc
 	movq	$2818050, (%rax)                # imm = 0x2B0002
-	jmp	.LBB15_23
-.LBB15_71:
+	jmp	.LBB15_54
+.LBB15_72:
 	movq	24(%rsi), %r14
 	movq	8(%rsi), %r15
 	movq	16(%rsi), %r12
@@ -3037,8 +3039,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2(%rip), %rsi
 	callq	s_alloc
 	movq	$4390914, (%rax)                # imm = 0x430002
-	jmp	.LBB15_50
-.LBB15_73:
+	jmp	.LBB15_71
+.LBB15_74:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3046,8 +3048,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP2__Data_Binary_get$d3(%rip), %rsi
 	callq	s_alloc
 	movq	$4587522, (%rax)                # imm = 0x460002
-	jmp	.LBB15_25
-.LBB15_77:
+	jmp	.LBB15_23
+.LBB15_78:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3055,8 +3057,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP2__Data_Binary_get$d7(%rip), %rsi
 	callq	s_alloc
 	movq	$4849666, (%rax)                # imm = 0x4A0002
-	jmp	.LBB15_25
-.LBB15_95:
+	jmp	.LBB15_23
+.LBB15_96:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3064,20 +3066,20 @@ bapply__78295:                          # @bapply__78295
 	movq	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5(%rip), %rsi
 	callq	s_alloc
 	movq	$6160386, (%rax)                # imm = 0x5E0002
-	jmp	.LBB15_25
-.LBB15_52:
-	movq	24(%rsi), %r14
-	movq	8(%rsi), %r15
-	movq	16(%rsi), %r12
+	jmp	.LBB15_23
+.LBB15_50:
+	movq	8(%rsi), %r14
+	movq	16(%rsi), %r15
+	movq	24(%rsi), %r12
 	movq	%rbx, (%rdi)
-	movq	%r15, 8(%rdi)
-	movq	%r12, 16(%rdi)
+	movq	%r14, 8(%rdi)
+	movq	%r15, 16(%rdi)
 	addq	$24, %rdi
 	movq	cP1__W$__fData_Binary_put$d4(%rip), %rsi
 	callq	s_alloc
 	movq	$2686978, (%rax)                # imm = 0x290002
-	jmp	.LBB15_50
-.LBB15_76:
+	jmp	.LBB15_51
+.LBB15_77:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3085,8 +3087,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP2__Data_Binary_get$d6(%rip), %rsi
 	callq	s_alloc
 	movq	$4784130, (%rax)                # imm = 0x490002
-	jmp	.LBB15_25
-.LBB15_94:
+	jmp	.LBB15_23
+.LBB15_95:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3094,7 +3096,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2(%rip), %rsi
 	callq	s_alloc
 	movq	$6094850, (%rax)                # imm = 0x5D0002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_58:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
@@ -3103,7 +3105,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fData_Binary_storableB$d7(%rip), %rsi
 	callq	s_alloc
 	movq	$3342338, (%rax)                # imm = 0x330002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_55:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
@@ -3112,8 +3114,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fData_Binary_storableB$d11(%rip), %rsi
 	callq	s_alloc
 	movq	$2949122, (%rax)                # imm = 0x2D0002
-	jmp	.LBB15_25
-.LBB15_74:
+	jmp	.LBB15_23
+.LBB15_75:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3121,15 +3123,15 @@ bapply__78295:                          # @bapply__78295
 	movq	cP2__Data_Binary_get$d4(%rip), %rsi
 	callq	s_alloc
 	movq	$4653058, (%rax)                # imm = 0x470002
-	jmp	.LBB15_25
-.LBB15_78:
+	jmp	.LBB15_23
+.LBB15_79:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID(%rip), %rsi
 	callq	s_alloc
 	movq	$5046274, (%rax)                # imm = 0x4D0002
-	jmp	.LBB15_111
-.LBB15_75:
+	jmp	.LBB15_112
+.LBB15_76:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3137,8 +3139,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP2__Data_Binary_get$d5(%rip), %rsi
 	callq	s_alloc
 	movq	$4718594, (%rax)                # imm = 0x480002
-	jmp	.LBB15_25
-.LBB15_49:
+	jmp	.LBB15_23
+.LBB15_47:
 	movq	24(%rsi), %r14
 	movq	8(%rsi), %r15
 	movq	16(%rsi), %r12
@@ -3149,15 +3151,15 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fData_Binary_put$d2(%rip), %rsi
 	callq	s_alloc
 	movq	$2621442, (%rax)                # imm = 0x280002
-	jmp	.LBB15_50
-.LBB15_89:
+	jmp	.LBB15_48
+.LBB15_90:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse(%rip), %rsi
 	callq	s_alloc
 	movq	$5767170, (%rax)                # imm = 0x580002
-	jmp	.LBB15_111
-.LBB15_36:
+	jmp	.LBB15_112
+.LBB15_34:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3165,38 +3167,37 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse(%rip), %rsi
 	callq	s_alloc
 	movq	$1441794, (%rax)                # imm = 0x160002
-	jmp	.LBB15_25
-.LBB15_105:
+	jmp	.LBB15_23
+.LBB15_106:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2(%rip), %rsi
 	callq	s_alloc
 	movq	$7733250, (%rax)                # imm = 0x760002
-	jmp	.LBB15_111
-.LBB15_107:
+	jmp	.LBB15_112
+.LBB15_108:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4(%rip), %rsi
 	callq	s_alloc
 	movq	$7864322, (%rax)                # imm = 0x780002
-	jmp	.LBB15_111
+	jmp	.LBB15_112
 .LBB15_70:
-	movq	8(%rsi), %r14
-	movq	16(%rsi), %r15
-	movq	24(%rsi), %r12
+	movq	24(%rsi), %r14
+	movq	8(%rsi), %r15
+	movq	16(%rsi), %r12
 	movq	%rbx, (%rdi)
-	movq	%r14, 8(%rdi)
-	movq	%r15, 16(%rdi)
+	movq	%r15, 8(%rdi)
+	movq	%r12, 16(%rdi)
 	addq	$24, %rdi
 	movq	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5(%rip), %rsi
 	callq	s_alloc
 	movq	$4325378, (%rax)                # imm = 0x420002
-	movq	%r14, 8(%rax)
-	movq	%r15, 16(%rax)
-	movq	%r12, 32(%rax)
-	movq	%rbx, 24(%rax)
-	jmp	.LBB15_112
-.LBB15_34:
+.LBB15_71:
+	movq	%r14, 32(%rax)
+	movq	%r15, 8(%rax)
+	jmp	.LBB15_49
+.LBB15_32:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3204,8 +3205,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage(%rip), %rsi
 	callq	s_alloc
 	movq	$1310722, (%rax)                # imm = 0x140002
-	jmp	.LBB15_25
-.LBB15_72:
+	jmp	.LBB15_23
+.LBB15_73:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	%rbx, (%rdi)
@@ -3216,7 +3217,7 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$4521986, (%rax)                # imm = 0x450002
 	jmp	.LBB15_15
-.LBB15_46:
+.LBB15_44:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3224,7 +3225,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32(%rip), %rsi
 	callq	s_alloc
 	movq	$2293762, (%rax)                # imm = 0x230002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_10:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
@@ -3238,27 +3239,27 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$131074, (%rax)                 # imm = 0x20002
 	jmp	.LBB15_11
-.LBB15_98:
+.LBB15_99:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word16(%rip), %rsi
 	callq	s_alloc
 	movq	$6356994, (%rax)                # imm = 0x610002
-	jmp	.LBB15_111
-.LBB15_110:
+	jmp	.LBB15_112
+.LBB15_111:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP1__Data_Binary_fl$_x64315462$d5406(%rip), %rsi
 	callq	s_alloc
 	movq	$65538, (%rax)                  # imm = 0x10002
-	jmp	.LBB15_111
-.LBB15_99:
+	jmp	.LBB15_112
+.LBB15_100:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32(%rip), %rsi
 	callq	s_alloc
 	movq	$6422530, (%rax)                # imm = 0x620002
-	jmp	.LBB15_111
+	jmp	.LBB15_112
 .LBB15_67:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
@@ -3274,14 +3275,13 @@ bapply__78295:                          # @bapply__78295
 	movq	%rax, %rsi
 	callq	s_alloc
 	movq	$4128770, (%rax)                # imm = 0x3F0002
+.LBB15_54:
 	movq	%r14, 8(%rax)
 	movq	%r15, 16(%rax)
-	movq	%r12, 24(%rax)
 	movaps	(%rsp), %xmm0                   # 16-byte Reload
 	movups	%xmm0, 40(%rax)
-	movq	%rbx, 32(%rax)
-	jmp	.LBB15_112
-.LBB15_45:
+	jmp	.LBB15_13
+.LBB15_43:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3289,8 +3289,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word16(%rip), %rsi
 	callq	s_alloc
 	movq	$2228226, (%rax)                # imm = 0x220002
-	jmp	.LBB15_25
-.LBB15_47:
+	jmp	.LBB15_23
+.LBB15_45:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3298,7 +3298,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64(%rip), %rsi
 	callq	s_alloc
 	movq	$2359298, (%rax)                # imm = 0x240002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_14:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
@@ -3310,7 +3310,7 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$196610, (%rax)                 # imm = 0x30002
 	jmp	.LBB15_15
-.LBB15_48:
+.LBB15_46:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3318,7 +3318,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word8(%rip), %rsi
 	callq	s_alloc
 	movq	$2424834, (%rax)                # imm = 0x250002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_8:
 	movq	8(%rsi), %rax
 	movq	16(%rsi), %rdx
@@ -3361,9 +3361,9 @@ bapply__78295:                          # @bapply__78295
 	jmp	eval                            # TAILCALL
 .LBB15_6:
 	.cfi_def_cfa_offset 80
-	movzbl	16(%rsi), %eax
-	movq	8(%rsi), %rdx
-	movl	%eax, %esi
+	movq	8(%rsi), %rax
+	movzbl	16(%rsi), %edx
+	movq	%rax, %rsi
 	movq	%rbx, %rcx
 	addq	$24, %rsp
 	.cfi_def_cfa_offset 56
@@ -3380,7 +3380,7 @@ bapply__78295:                          # @bapply__78295
 	popq	%rbp
 	.cfi_def_cfa_offset 8
 	jmp	fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d13 # TAILCALL
-.LBB15_20:
+.LBB15_19:
 	.cfi_def_cfa_offset 80
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
@@ -3392,7 +3392,7 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$458754, (%rax)                 # imm = 0x70002
 	jmp	.LBB15_15
-.LBB15_31:
+.LBB15_29:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3400,8 +3400,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse(%rip), %rsi
 	callq	s_alloc
 	movq	$1114114, (%rax)                # imm = 0x110002
-	jmp	.LBB15_25
-.LBB15_44:
+	jmp	.LBB15_23
+.LBB15_42:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3409,7 +3409,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char(%rip), %rsi
 	callq	s_alloc
 	movq	$2162690, (%rax)                # imm = 0x210002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_9:
 	movq	%rbx, %rsi
 	addq	$24, %rsp
@@ -3429,20 +3429,18 @@ bapply__78295:                          # @bapply__78295
 	jmp	fPrelude_CType_intToDigit       # TAILCALL
 .LBB15_68:
 	.cfi_def_cfa_offset 80
-	movq	24(%rsi), %r14
-	movq	8(%rsi), %r15
-	movq	16(%rsi), %r12
+	movq	8(%rsi), %r14
+	movq	16(%rsi), %r15
+	movq	24(%rsi), %r12
 	movq	%rbx, (%rdi)
-	movq	%r15, 8(%rdi)
-	movq	%r12, 16(%rdi)
+	movq	%r14, 8(%rdi)
+	movq	%r15, 16(%rdi)
 	addq	$24, %rdi
 	movq	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5(%rip), %rsi
 	callq	s_alloc
 	movq	$4194306, (%rax)                # imm = 0x400002
-	movq	%r15, 8(%rax)
-	movq	%r14, 32(%rax)
 	jmp	.LBB15_51
-.LBB15_18:
+.LBB15_17:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	%rbx, (%rdi)
@@ -3453,7 +3451,7 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$327682, (%rax)                 # imm = 0x50002
 	jmp	.LBB15_15
-.LBB15_30:
+.LBB15_28:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3461,7 +3459,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage(%rip), %rsi
 	callq	s_alloc
 	movq	$1048578, (%rax)                # imm = 0x100002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_59:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
@@ -3470,17 +3468,17 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fData_Binary_storableB$d9(%rip), %rsi
 	callq	s_alloc
 	movq	$3473410, (%rax)                # imm = 0x350002
-	jmp	.LBB15_25
-.LBB15_21:
+	jmp	.LBB15_23
+.LBB15_20:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
-	movq	56(%rsi), %r12
-	movq	24(%rsi), %r13
-	movq	32(%rsi), %rbp
+	movq	24(%rsi), %r12
+	movq	32(%rsi), %r13
+	movq	56(%rsi), %rbp
 	movq	%rbx, (%rdi)
-	movq	%r15, 8(%rdi)
-	movq	%r13, 16(%rdi)
-	movq	%rbp, 24(%rdi)
+	movq	%r12, 8(%rdi)
+	movq	%r15, 16(%rdi)
+	movq	%r13, 24(%rdi)
 	movq	%r14, 32(%rdi)
 	addq	$40, %rdi
 	movq	cP1__Hos_User_IPC_transmitMsg$d15(%rip), %rax
@@ -3490,22 +3488,22 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$589826, (%rax)                 # imm = 0x90002
 	movq	%r14, 8(%rax)
+	movq	%r15, 16(%rax)
+	movq	%r12, 24(%rax)
 	movaps	(%rsp), %xmm0                   # 16-byte Reload
 	movaps	%xmm0, 48(%rax)
-	movq	%r15, 16(%rax)
-	movq	%r12, 64(%rax)
-	movq	%r13, 24(%rax)
-	movq	%rbp, 32(%rax)
+	movq	%r13, 32(%rax)
+	movq	%rbp, 64(%rax)
 	movq	%rbx, 40(%rax)
-	jmp	.LBB15_112
-.LBB15_85:
+	jmp	.LBB15_113
+.LBB15_86:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId(%rip), %rsi
 	callq	s_alloc
 	movq	$5505026, (%rax)                # imm = 0x540002
-	jmp	.LBB15_111
-.LBB15_19:
+	jmp	.LBB15_112
+.LBB15_18:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	%rbx, (%rdi)
@@ -3516,7 +3514,7 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$393218, (%rax)                 # imm = 0x60002
 	jmp	.LBB15_15
-.LBB15_17:
+.LBB15_16:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	%rbx, (%rdi)
@@ -3535,15 +3533,15 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fData_Binary_storableB$d3(%rip), %rsi
 	callq	s_alloc
 	movq	$3080194, (%rax)                # imm = 0x2F0002
-	jmp	.LBB15_25
-.LBB15_22:
+	jmp	.LBB15_23
+.LBB15_21:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	24(%rsi), %r12
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
-	movq	%r15, 16(%rdi)
-	movq	%r12, 24(%rdi)
+	movq	%r12, 16(%rdi)
+	movq	%r15, 24(%rdi)
 	addq	$32, %rdi
 	movq	cP1__Hos_User_IPC_transmitMsg$d8(%rip), %rax
 	movaps	32(%rsi), %xmm0
@@ -3551,13 +3549,11 @@ bapply__78295:                          # @bapply__78295
 	movq	%rax, %rsi
 	callq	s_alloc
 	movq	$655362, (%rax)                 # imm = 0xA0002
-.LBB15_23:
 	movq	%r14, 8(%rax)
-	movq	%r15, 16(%rax)
 	movaps	(%rsp), %xmm0                   # 16-byte Reload
 	movups	%xmm0, 40(%rax)
-	jmp	.LBB15_13
-.LBB15_28:
+	jmp	.LBB15_12
+.LBB15_26:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3565,8 +3561,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName(%rip), %rsi
 	callq	s_alloc
 	movq	$917506, (%rax)                 # imm = 0xE0002
-	jmp	.LBB15_25
-.LBB15_32:
+	jmp	.LBB15_23
+.LBB15_30:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3574,8 +3570,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId(%rip), %rsi
 	callq	s_alloc
 	movq	$1179650, (%rax)                # imm = 0x120002
-	jmp	.LBB15_25
-.LBB15_37:
+	jmp	.LBB15_23
+.LBB15_35:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3583,8 +3579,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId(%rip), %rsi
 	callq	s_alloc
 	movq	$1507330, (%rax)                # imm = 0x170002
-	jmp	.LBB15_25
-.LBB15_24:
+	jmp	.LBB15_23
+.LBB15_22:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3592,8 +3588,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID(%rip), %rsi
 	callq	s_alloc
 	movq	$720898, (%rax)                 # imm = 0xB0002
-	jmp	.LBB15_25
-.LBB15_27:
+	jmp	.LBB15_23
+.LBB15_25:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3601,8 +3597,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor(%rip), %rsi
 	callq	s_alloc
 	movq	$851970, (%rax)                 # imm = 0xD0002
-	jmp	.LBB15_25
-.LBB15_41:
+	jmp	.LBB15_23
+.LBB15_39:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	%rbx, (%rdi)
@@ -3613,7 +3609,7 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$1835010, (%rax)                # imm = 0x1C0002
 	jmp	.LBB15_15
-.LBB15_42:
+.LBB15_40:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	%rbx, (%rdi)
@@ -3632,8 +3628,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4(%rip), %rsi
 	callq	s_alloc
 	movq	$3932162, (%rax)                # imm = 0x3C0002
-	jmp	.LBB15_25
-.LBB15_26:
+	jmp	.LBB15_23
+.LBB15_24:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3641,8 +3637,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag(%rip), %rsi
 	callq	s_alloc
 	movq	$786434, (%rax)                 # imm = 0xC0002
-	jmp	.LBB15_25
-.LBB15_39:
+	jmp	.LBB15_23
+.LBB15_37:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	24(%rsi), %r12
@@ -3656,7 +3652,9 @@ bapply__78295:                          # @bapply__78295
 	movq	$1638402, (%rax)                # imm = 0x190002
 .LBB15_11:
 	movq	%r14, 8(%rax)
-	jmp	.LBB15_12
+.LBB15_12:
+	movq	%r15, 16(%rax)
+	jmp	.LBB15_13
 .LBB15_64:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
@@ -3665,11 +3663,11 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3(%rip), %rsi
 	callq	s_alloc
 	movq	$3866626, (%rax)                # imm = 0x3B0002
-	jmp	.LBB15_25
-.LBB15_40:
-	movl	32(%rsi), %ebp
+	jmp	.LBB15_23
+.LBB15_38:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
+	movl	32(%rsi), %ebp
 	movq	24(%rsi), %r12
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3680,21 +3678,20 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$1703938, (%rax)                # imm = 0x1A0002
 	movq	%r14, 8(%rax)
-	movl	%ebp, 40(%rax)
-.LBB15_12:
 	movq	%r15, 16(%rax)
+	movl	%ebp, 40(%rax)
 .LBB15_13:
 	movq	%r12, 24(%rax)
 	movq	%rbx, 32(%rax)
-	jmp	.LBB15_112
-.LBB15_86:
+	jmp	.LBB15_113
+.LBB15_87:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_QId(%rip), %rsi
 	callq	s_alloc
 	movq	$5570562, (%rax)                # imm = 0x550002
-	jmp	.LBB15_111
-.LBB15_43:
+	jmp	.LBB15_112
+.LBB15_41:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3702,7 +3699,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool(%rip), %rsi
 	callq	s_alloc
 	movq	$2097154, (%rax)                # imm = 0x200002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_63:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
@@ -3711,15 +3708,15 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2(%rip), %rsi
 	callq	s_alloc
 	movq	$3801090, (%rax)                # imm = 0x3A0002
-	jmp	.LBB15_25
-.LBB15_87:
+	jmp	.LBB15_23
+.LBB15_88:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage(%rip), %rsi
 	callq	s_alloc
 	movq	$5636098, (%rax)                # imm = 0x560002
-	jmp	.LBB15_111
-.LBB15_29:
+	jmp	.LBB15_112
+.LBB15_27:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3727,8 +3724,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue(%rip), %rsi
 	callq	s_alloc
 	movq	$983042, (%rax)                 # imm = 0xF0002
-	jmp	.LBB15_25
-.LBB15_35:
+	jmp	.LBB15_23
+.LBB15_33:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3736,8 +3733,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery(%rip), %rsi
 	callq	s_alloc
 	movq	$1376258, (%rax)                # imm = 0x150002
-	jmp	.LBB15_25
-.LBB15_38:
+	jmp	.LBB15_23
+.LBB15_36:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3745,8 +3742,8 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus(%rip), %rsi
 	callq	s_alloc
 	movq	$1572866, (%rax)                # imm = 0x180002
-	jmp	.LBB15_25
-.LBB15_33:
+	jmp	.LBB15_23
+.LBB15_31:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3754,14 +3751,14 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_QId(%rip), %rsi
 	callq	s_alloc
 	movq	$1245186, (%rax)                # imm = 0x130002
-	jmp	.LBB15_25
-.LBB15_91:
+	jmp	.LBB15_23
+.LBB15_92:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus(%rip), %rsi
 	callq	s_alloc
 	movq	$5898242, (%rax)                # imm = 0x5A0002
-	jmp	.LBB15_111
+	jmp	.LBB15_112
 .LBB15_60:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
@@ -3770,33 +3767,39 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2(%rip), %rsi
 	callq	s_alloc
 	movq	$3538946, (%rax)                # imm = 0x360002
-	jmp	.LBB15_25
-.LBB15_100:
+	jmp	.LBB15_23
+.LBB15_101:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64(%rip), %rsi
 	callq	s_alloc
 	movq	$6488066, (%rax)                # imm = 0x630002
-	jmp	.LBB15_111
-.LBB15_81:
+	jmp	.LBB15_112
+.LBB15_82:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName(%rip), %rsi
 	callq	s_alloc
 	movq	$5242882, (%rax)                # imm = 0x500002
-	jmp	.LBB15_111
-.LBB15_53:
+	jmp	.LBB15_112
+.LBB15_52:
 	movq	24(%rsi), %r14
 	movq	8(%rsi), %r15
 	movq	16(%rsi), %r12
 	movq	%rbx, (%rdi)
-	movq	%r12, 8(%rdi)
-	movq	%r15, 16(%rdi)
+	movq	%r15, 8(%rdi)
+	movq	%r12, 16(%rdi)
 	addq	$24, %rdi
 	movq	cP1__W$__fData_Binary_put$d6(%rip), %rsi
 	callq	s_alloc
 	movq	$2752514, (%rax)                # imm = 0x2A0002
-	jmp	.LBB15_50
+.LBB15_48:
+	movq	%r15, 8(%rax)
+	movq	%r14, 32(%rax)
+.LBB15_49:
+	movq	%r12, 16(%rax)
+	movq	%rbx, 24(%rax)
+	jmp	.LBB15_113
 .LBB15_57:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
@@ -3805,7 +3808,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fData_Binary_storableB$d5(%rip), %rsi
 	callq	s_alloc
 	movq	$3211266, (%rax)                # imm = 0x310002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_66:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
@@ -3817,7 +3820,7 @@ bapply__78295:                          # @bapply__78295
 	callq	s_alloc
 	movq	$4063234, (%rax)                # imm = 0x3E0002
 	jmp	.LBB15_15
-.LBB15_108:
+.LBB15_109:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3825,7 +3828,7 @@ bapply__78295:                          # @bapply__78295
 	movq	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6(%rip), %rsi
 	callq	s_alloc
 	movq	$7929858, (%rax)                # imm = 0x790002
-	jmp	.LBB15_25
+	jmp	.LBB15_23
 .LBB15_61:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
@@ -3834,61 +3837,60 @@ bapply__78295:                          # @bapply__78295
 	movq	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3(%rip), %rsi
 	callq	s_alloc
 	movq	$3604482, (%rax)                # imm = 0x370002
-	jmp	.LBB15_25
-.LBB15_83:
+	jmp	.LBB15_23
+.LBB15_84:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage(%rip), %rsi
 	callq	s_alloc
 	movq	$5373954, (%rax)                # imm = 0x520002
-	jmp	.LBB15_111
+	jmp	.LBB15_112
 .LBB15_69:
-	movq	24(%rsi), %r14
-	movq	8(%rsi), %r15
-	movq	16(%rsi), %r12
+	movq	8(%rsi), %r14
+	movq	16(%rsi), %r15
+	movq	24(%rsi), %r12
 	movq	%rbx, (%rdi)
 	movq	%r15, 8(%rdi)
-	movq	%r12, 16(%rdi)
+	movq	%r14, 16(%rdi)
 	addq	$24, %rdi
 	movq	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7(%rip), %rsi
 	callq	s_alloc
 	movq	$4259842, (%rax)                # imm = 0x410002
-.LBB15_50:
-	movq	%r14, 32(%rax)
-	movq	%r15, 8(%rax)
 .LBB15_51:
-	movq	%r12, 16(%rax)
+	movq	%r14, 8(%rax)
+	movq	%r15, 16(%rax)
+	movq	%r12, 32(%rax)
 	movq	%rbx, 24(%rax)
-	jmp	.LBB15_112
-.LBB15_103:
+	jmp	.LBB15_113
+.LBB15_104:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3(%rip), %rsi
 	callq	s_alloc
 	movq	$7602178, (%rax)                # imm = 0x740002
-	jmp	.LBB15_111
-.LBB15_102:
+	jmp	.LBB15_112
+.LBB15_103:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2(%rip), %rsi
 	callq	s_alloc
 	movq	$7536642, (%rax)                # imm = 0x730002
-	jmp	.LBB15_111
-.LBB15_97:
+	jmp	.LBB15_112
+.LBB15_98:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char(%rip), %rsi
 	callq	s_alloc
 	movq	$6291458, (%rax)                # imm = 0x600002
-	jmp	.LBB15_111
-.LBB15_96:
+	jmp	.LBB15_112
+.LBB15_97:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool(%rip), %rsi
 	callq	s_alloc
 	movq	$6225922, (%rax)                # imm = 0x5F0002
-	jmp	.LBB15_111
-.LBB15_92:
+	jmp	.LBB15_112
+.LBB15_93:
 	movq	8(%rsi), %r14
 	movq	16(%rsi), %r15
 	movq	%rbx, (%rdi)
@@ -3900,20 +3902,19 @@ bapply__78295:                          # @bapply__78295
 	movq	$5963778, (%rax)                # imm = 0x5B0002
 .LBB15_15:
 	movq	%r14, 8(%rax)
-.LBB15_16:
 	movq	%r15, 16(%rax)
 	movq	%rbx, 24(%rax)
-	jmp	.LBB15_112
-.LBB15_90:
+	jmp	.LBB15_113
+.LBB15_91:
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
 	movq	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId(%rip), %rsi
 	callq	s_alloc
 	movq	$5832706, (%rax)                # imm = 0x590002
-.LBB15_111:
+.LBB15_112:
 	movq	%rbx, 8(%rax)
-	jmp	.LBB15_112
-.LBB15_104:
+	jmp	.LBB15_113
+.LBB15_105:
 	movq	8(%rsi), %r14
 	movq	%rbx, (%rdi)
 	movq	%r14, 8(%rdi)
@@ -3921,10 +3922,10 @@ bapply__78295:                          # @bapply__78295
 	movq	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5(%rip), %rsi
 	callq	s_alloc
 	movq	$7667714, (%rax)                # imm = 0x750002
-.LBB15_25:
+.LBB15_23:
 	movq	%r14, 8(%rax)
 	movq	%rbx, 16(%rax)
-.LBB15_112:
+.LBB15_113:
 	addq	$24, %rsp
 	.cfi_def_cfa_offset 56
 	popq	%rbx
@@ -3940,79 +3941,80 @@ bapply__78295:                          # @bapply__78295
 	popq	%rbp
 	.cfi_def_cfa_offset 8
 	retq
-.LBB15_109:
+.LBB15_110:
 	.cfi_def_cfa_offset 80
 	movl	$7938, %edi                     # imm = 0x1F02
 	callq	jhc_case_fell_off
 .Lfunc_end15:
-	.size	bapply__78295, .Lfunc_end15-bapply__78295
+	.size	bapply__84512, .Lfunc_end15-bapply__84512
 	.cfi_endproc
 	.section	.rodata,"a",@progbits
 	.p2align	3, 0x0
 .LJTI15_0:
 	.quad	.LBB15_4
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
 	.quad	.LBB15_6
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
 	.quad	.LBB15_7
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
 	.quad	.LBB15_8
 	.quad	.LBB15_9
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
-	.quad	.LBB15_109
 	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_110
+	.quad	.LBB15_111
 	.quad	.LBB15_10
 	.quad	.LBB15_14
+	.quad	.LBB15_16
 	.quad	.LBB15_17
 	.quad	.LBB15_18
 	.quad	.LBB15_19
@@ -4020,6 +4022,7 @@ bapply__78295:                          # @bapply__78295
 	.quad	.LBB15_21
 	.quad	.LBB15_22
 	.quad	.LBB15_24
+	.quad	.LBB15_25
 	.quad	.LBB15_26
 	.quad	.LBB15_27
 	.quad	.LBB15_28
@@ -4042,20 +4045,18 @@ bapply__78295:                          # @bapply__78295
 	.quad	.LBB15_45
 	.quad	.LBB15_46
 	.quad	.LBB15_47
-	.quad	.LBB15_48
-	.quad	.LBB15_49
+	.quad	.LBB15_50
 	.quad	.LBB15_52
 	.quad	.LBB15_53
-	.quad	.LBB15_54
-	.quad	.LBB15_109
+	.quad	.LBB15_110
 	.quad	.LBB15_55
-	.quad	.LBB15_109
+	.quad	.LBB15_110
 	.quad	.LBB15_56
-	.quad	.LBB15_109
+	.quad	.LBB15_110
 	.quad	.LBB15_57
-	.quad	.LBB15_109
+	.quad	.LBB15_110
 	.quad	.LBB15_58
-	.quad	.LBB15_109
+	.quad	.LBB15_110
 	.quad	.LBB15_59
 	.quad	.LBB15_60
 	.quad	.LBB15_61
@@ -4068,7 +4069,6 @@ bapply__78295:                          # @bapply__78295
 	.quad	.LBB15_68
 	.quad	.LBB15_69
 	.quad	.LBB15_70
-	.quad	.LBB15_71
 	.quad	.LBB15_72
 	.quad	.LBB15_73
 	.quad	.LBB15_74
@@ -4106,6 +4106,7 @@ bapply__78295:                          # @bapply__78295
 	.quad	.LBB15_106
 	.quad	.LBB15_107
 	.quad	.LBB15_108
+	.quad	.LBB15_109
                                         # -- End function
 	.text
 	.p2align	4, 0x90                         # -- Begin function fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d13
@@ -4128,11 +4129,11 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d13: # @"fInstance$__iData_
 	.cfi_offset %r14, -24
 	.cfi_offset %r15, -16
 	movq	%rcx, %rbx
-	movq	%rdx, %r14
+	movq	%rsi, %r14
 	movq	%rdi, %r15
-	movq	%rdx, (%rdi)
+	movq	%rsi, (%rdi)
 	movq	%rcx, 8(%rdi)
-	movl	%esi, %eax
+	movl	%edx, %eax
 	leaq	2(,%rax,4), %r12
 	movq	%r12, 16(%rdi)
 	addq	$24, %r15
@@ -4154,7 +4155,7 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d13: # @"fInstance$__iData_
 	.cfi_def_cfa_offset 16
 	popq	%r15
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78295                   # TAILCALL
+	jmp	bapply__84512                   # TAILCALL
 .Lfunc_end16:
 	.size	fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d13, .Lfunc_end16-fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d13
 	.cfi_endproc
@@ -4216,17 +4217,17 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 	movq	%rcx, (%rsp)                    # 8-byte Spill
 	leaq	72(%rbp), %rcx
 	movq	%rcx, 32(%rsp)                  # 8-byte Spill
-	movq	%r13, 24(%rsp)                  # 8-byte Spill
-	movq	%r12, 40(%rsp)                  # 8-byte Spill
+	movq	%r12, 24(%rsp)                  # 8-byte Spill
+	movq	%r13, 40(%rsp)                  # 8-byte Spill
 	jmp	.LBB17_4
 	.p2align	4, 0x90
 .LBB17_2:                               #   in Loop: Header=BB17_4 Depth=1
 	testw	%ax, %ax
 	jne	.LBB17_30
 .LBB17_3:                               #   in Loop: Header=BB17_4 Depth=1
+	movq	40(%rsp), %r13                  # 8-byte Reload
 	movq	%r13, (%rbp)
 	movq	%rbx, 8(%rbp)
-	movq	40(%rsp), %r12                  # 8-byte Reload
 	movq	%r12, 16(%rbp)
 	movq	cP1__Main_serveBundle$d8(%rip), %rsi
 	movq	64(%rsp), %rdi                  # 8-byte Reload
@@ -4256,14 +4257,14 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 	movq	%r15, %rdi
 	callq	eval
 	movq	%r15, %rdi
-	movq	%r12, %rsi
+	movq	%r13, %rsi
 	movq	%rax, %rdx
 	callq	fMain_findTag
 	cmpq	$2, %rax
 	je	.LBB17_3
 # %bb.5:                                #   in Loop: Header=BB17_4 Depth=1
 	movq	(%rax), %rsi
-	movq	%r13, (%r15)
+	movq	%r12, (%r15)
 	movq	8(%rsp), %rdi                   # 8-byte Reload
 	callq	eval
 	movq	%rax, %rcx
@@ -4278,11 +4279,11 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 # %bb.8:                                #   in Loop: Header=BB17_4 Depth=1
 	jmpq	*.LJTI17_0(,%rcx,8)
 .LBB17_9:                               #   in Loop: Header=BB17_4 Depth=1
-	movq	8(%rax), %r12
+	movq	8(%rax), %r13
 	movq	8(%rsp), %rax                   # 8-byte Reload
-	movq	%r12, (%rax)
+	movq	%r13, (%rax)
 	movq	(%rsp), %rdi                    # 8-byte Reload
-	movq	%r13, %rsi
+	movq	%r12, %rsi
 	callq	eval
 	movq	%rax, %rcx
 	testb	$2, %al
@@ -4295,16 +4296,16 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 # %bb.12:                               #   in Loop: Header=BB17_4 Depth=1
 	movq	8(%rax), %rdx
 	movq	(%rsp), %rdi                    # 8-byte Reload
-	movq	%r12, %rsi
+	movq	%r13, %rsi
 	callq	fW$__fInstance$__iJhc_Class_Ord_$ee_$Jhc_Prim_Prim_$BE
                                         # kill: def $ax killed $ax def $rax
 	jmp	.LBB17_2
 .LBB17_13:                              #   in Loop: Header=BB17_4 Depth=1
-	movq	8(%rax), %r12
+	movq	8(%rax), %r13
 	movq	8(%rsp), %rax                   # 8-byte Reload
-	movq	%r12, (%rax)
+	movq	%r13, (%rax)
 	movq	(%rsp), %rdi                    # 8-byte Reload
-	movq	%r13, %rsi
+	movq	%r12, %rsi
 	callq	eval
 	movq	%rax, %rcx
 	testb	$2, %al
@@ -4316,17 +4317,17 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 	cmpq	$131072, %rcx                   # imm = 0x20000
 	jne	.LBB17_29
 # %bb.16:                               #   in Loop: Header=BB17_4 Depth=1
-	movq	%r12, %rsi
-	movq	8(%rax), %r12
+	movq	%r13, %rsi
+	movq	8(%rax), %r13
 	movq	(%rsp), %rax                    # 8-byte Reload
-	movq	%r12, (%rax)
-	movq	32(%rsp), %r13                  # 8-byte Reload
-	movq	%r13, %rdi
+	movq	%r13, (%rax)
+	movq	32(%rsp), %r12                  # 8-byte Reload
+	movq	%r12, %rdi
 	callq	eval
 	movq	%rax, 16(%rsp)                  # 8-byte Spill
-	movq	%r13, %rdi
-	movq	24(%rsp), %r13                  # 8-byte Reload
-	movq	%r12, %rsi
+	movq	%r12, %rdi
+	movq	24(%rsp), %r12                  # 8-byte Reload
+	movq	%r13, %rsi
 	callq	eval
 	movq	%rax, %rcx
 	xorl	16(%rsp), %ecx                  # 4-byte Folded Reload
@@ -4335,11 +4336,11 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 	sete	%al
 	jmp	.LBB17_2
 .LBB17_17:                              #   in Loop: Header=BB17_4 Depth=1
-	movq	8(%rax), %r12
+	movq	8(%rax), %r13
 	movq	8(%rsp), %rax                   # 8-byte Reload
-	movq	%r12, (%rax)
+	movq	%r13, (%rax)
 	movq	(%rsp), %rdi                    # 8-byte Reload
-	movq	%r13, %rsi
+	movq	%r12, %rsi
 	callq	eval
 	movq	%rax, %rcx
 	testb	$2, %al
@@ -4351,18 +4352,18 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 	cmpq	$196608, %rcx                   # imm = 0x30000
 	jne	.LBB17_29
 # %bb.20:                               #   in Loop: Header=BB17_4 Depth=1
-	movq	%r12, %rsi
-	movq	8(%rax), %r12
+	movq	%r13, %rsi
+	movq	8(%rax), %r13
 	movq	(%rsp), %rax                    # 8-byte Reload
-	movq	%r12, (%rax)
-	movq	32(%rsp), %r13                  # 8-byte Reload
-	movq	%r13, %rdi
+	movq	%r13, (%rax)
+	movq	32(%rsp), %r12                  # 8-byte Reload
+	movq	%r12, %rdi
 	callq	eval
 	movsd	(%rax), %xmm0                   # xmm0 = mem[0],zero
 	movsd	%xmm0, 16(%rsp)                 # 8-byte Spill
-	movq	%r13, %rdi
-	movq	24(%rsp), %r13                  # 8-byte Reload
-	movq	%r12, %rsi
+	movq	%r12, %rdi
+	movq	24(%rsp), %r12                  # 8-byte Reload
+	movq	%r13, %rsi
 	callq	eval
 	movsd	16(%rsp), %xmm0                 # 8-byte Reload
                                         # xmm0 = mem[0],zero
@@ -4371,11 +4372,11 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 	andl	$1, %eax
 	jmp	.LBB17_2
 .LBB17_21:                              #   in Loop: Header=BB17_4 Depth=1
-	movq	8(%rax), %r12
+	movq	8(%rax), %r13
 	movq	8(%rsp), %rax                   # 8-byte Reload
-	movq	%r12, (%rax)
+	movq	%r13, (%rax)
 	movq	(%rsp), %rdi                    # 8-byte Reload
-	movq	%r13, %rsi
+	movq	%r12, %rsi
 	callq	eval
 	movq	%rax, %rcx
 	testb	$2, %al
@@ -4387,18 +4388,18 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 	cmpq	$65536, %rcx                    # imm = 0x10000
 	jne	.LBB17_29
 # %bb.24:                               #   in Loop: Header=BB17_4 Depth=1
-	movq	%r12, %rsi
-	movq	8(%rax), %r12
+	movq	%r13, %rsi
+	movq	8(%rax), %r13
 	movq	(%rsp), %rax                    # 8-byte Reload
-	movq	%r12, (%rax)
-	movq	32(%rsp), %r13                  # 8-byte Reload
-	movq	%r13, %rdi
+	movq	%r13, (%rax)
+	movq	32(%rsp), %r12                  # 8-byte Reload
+	movq	%r12, %rdi
 	callq	eval
 	movq	(%rax), %rax
 	movq	%rax, 16(%rsp)                  # 8-byte Spill
-	movq	%r13, %rdi
-	movq	24(%rsp), %r13                  # 8-byte Reload
-	movq	%r12, %rsi
+	movq	%r12, %rdi
+	movq	24(%rsp), %r12                  # 8-byte Reload
+	movq	%r13, %rsi
 	callq	eval
 	movq	%rax, %rcx
 	xorl	%eax, %eax
@@ -4416,11 +4417,11 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 	cmpw	$1, %ax
 	sete	%dil
 	callq	c_assert
-	movq	cBap__1__Main_serveBundle$d8u100472(%rip), %rsi
+	movq	cBap__1__Main_serveBundle$d8u100840(%rip), %rsi
 	movq	%r15, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
-	movq	$E__bap__1__Main_serveBundle$d8u100472+3, (%rax)
+	movq	$E__bap__1__Main_serveBundle$d8u100840+3, (%rax)
 	movq	%r14, 8(%rax)
 	movq	%rbx, 16(%rax)
 	orq	$1, %r12
@@ -4451,7 +4452,7 @@ fMain_serveBundle$d8:                   # @"fMain_serveBundle$d8"
 	retq
 .LBB17_32:
 	.cfi_def_cfa_offset 128
-	movl	$16297, %edi                    # imm = 0x3FA9
+	movl	$16351, %edi                    # imm = 0x3FDF
 	callq	jhc_case_fell_off
 .Lfunc_end17:
 	.size	fMain_serveBundle$d8, .Lfunc_end17-fMain_serveBundle$d8
@@ -4589,9 +4590,9 @@ fMain_findTag:                          # @fMain_findTag
 	.size	fMain_findTag, .Lfunc_end19-fMain_findTag
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__Main_serveBundle$d8u100472
-	.type	E__bap__1__Main_serveBundle$d8u100472,@function
-E__bap__1__Main_serveBundle$d8u100472:  # @"E__bap__1__Main_serveBundle$d8u100472"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__Main_serveBundle$d8u100840
+	.type	E__bap__1__Main_serveBundle$d8u100840,@function
+E__bap__1__Main_serveBundle$d8u100840:  # @"E__bap__1__Main_serveBundle$d8u100840"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -4612,7 +4613,7 @@ E__bap__1__Main_serveBundle$d8u100472:  # @"E__bap__1__Main_serveBundle$d8u10047
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end20:
-	.size	E__bap__1__Main_serveBundle$d8u100472, .Lfunc_end20-E__bap__1__Main_serveBundle$d8u100472
+	.size	E__bap__1__Main_serveBundle$d8u100840, .Lfunc_end20-E__bap__1__Main_serveBundle$d8u100840
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function fW$__fInstance$__iJhc_Class_Ord_$ee_$Jhc_Prim_Prim_$BE
@@ -4720,9 +4721,9 @@ fW$__fInstance$__iJhc_Class_Ord_$ee_$Jhc_Prim_Prim_$BE: # @"fW$__fInstance$__iJh
 	.size	fW$__fInstance$__iJhc_Class_Ord_$ee_$Jhc_Prim_Prim_$BE, .Lfunc_end21-fW$__fInstance$__iJhc_Class_Ord_$ee_$Jhc_Prim_Prim_$BE
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430
-	.type	E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430,@function
-E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430: # @"E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494
+	.type	E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494,@function
+E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494: # @"E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbx
@@ -4735,13 +4736,13 @@ E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430: # @"E_
 	addq	$8, %rdi
 	movq	8(%rsi), %rsi
 	movq	16(%rbx), %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rax, (%rbx)
 	popq	%rbx
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end22:
-	.size	E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430, .Lfunc_end22-E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430
+	.size	E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494, .Lfunc_end22-E__bap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3
@@ -4850,8 +4851,8 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9: # @"E__fInstance$__i
 # %bb.1:
 	movq	(%rax), %r13
 	movq	8(%rax), %rbp
-	movq	%rbp, 16(%r14)
-	movq	%r13, 24(%r14)
+	movq	%r13, 16(%r14)
+	movq	%rbp, 24(%r14)
 	leaq	32(%r14), %rdi
 	movq	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9(%rip), %rsi
 	callq	s_alloc
@@ -4867,8 +4868,8 @@ E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9: # @"E__fInstance$__i
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$9633794, (%rax)                # imm = 0x930002
-	movq	%r13, 8(%rax)
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	%r13, 16(%rax)
 .LBB24_2:
 	movq	%r15, (%rbx)
 	movq	%r15, %rax
@@ -4922,15 +4923,15 @@ E__fHos_User_IPC_transmitMsg$d13:       # @"E__fHos_User_IPC_transmitMsg$d13"
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2+3, (%rax)
 	movq	$2, 8(%rax)
 	orq	$1, %r12
-	movq	$12713986, 8(%rbx)              # imm = 0xC20002
-	movq	%r12, 16(%rbx)
+	movq	%r12, 8(%rbx)
+	movq	$12713986, 16(%rbx)             # imm = 0xC20002
 	leaq	24(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -5127,8 +5128,8 @@ fHos_User_SysCall_hosDebugLog:          # @fHos_User_SysCall_hosDebugLog
 	jmp	free                            # TAILCALL
 .LBB27_8:
 	.cfi_def_cfa_offset 96
-	movl	$_c72, %esi
-	movl	$_c87, %edx
+	movl	$_c265, %esi
+	movl	$_c280, %edx
 	movq	%r14, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%r14, %rdi
@@ -5170,9 +5171,9 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 	movabsq	$1099511631872, %r14            # imm = 0x10000001000
 	movq	$_c504, (%rdi)
 	movq	$_c504, 8(%rdi)
-	movq	$_c134, 16(%rdi)
-	movq	$_c134, 24(%rdi)
-	movq	$_c134, 32(%rdi)
+	movq	$_c327, 16(%rdi)
+	movq	$_c327, 24(%rdi)
+	movq	$_c327, 32(%rdi)
 	movq	%rsi, 40(%rdi)
 	leaq	48(%rdi), %rbx
 	leaq	-4096(%r14), %rdx
@@ -5194,16 +5195,16 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 	movq	%r14, (%rax)
 	movq	%rax, 48(%rsp)                  # 8-byte Spill
 	movq	%rax, 48(%rbp)
-	movq	$12582914, 56(%rbp)             # imm = 0xC00002
-	movq	$_c397, 64(%rbp)
+	movq	$_c397, 56(%rbp)
+	movq	$12582914, 64(%rbp)             # imm = 0xC00002
 	leaq	72(%rbp), %rbx
 	movq	cP2__W$__fData_Binary_storableB$d6(%rip), %rsi
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$7274498, (%rax)                # imm = 0x6F0002
-	movq	$12582914, 8(%rax)              # imm = 0xC00002
-	movq	$_c397, 16(%rax)
+	movq	$_c397, 8(%rax)
+	movq	$12582914, 16(%rax)             # imm = 0xC00002
 	movq	%rax, 72(%rbp)
 	leaq	80(%rbp), %r15
 	movq	cP2__W$__fData_Binary_storableB$d7(%rip), %rsi
@@ -5213,15 +5214,15 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 	movq	%r12, 8(%rax)
 	movq	%rax, 32(%rsp)                  # 8-byte Spill
 	movq	%rax, 56(%rbp)
-	movq	$12582914, 64(%rbp)             # imm = 0xC00002
-	movq	$_c134, 72(%rbp)
+	movq	$_c327, 64(%rbp)
+	movq	$12582914, 72(%rbp)             # imm = 0xC00002
 	movq	cP2__W$__fData_Binary_storableB$d6(%rip), %rsi
 	movq	%r15, %rdi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$7274498, (%rax)                # imm = 0x6F0002
-	movq	$12582914, 8(%rax)              # imm = 0xC00002
-	movq	$_c134, 16(%rax)
+	movq	$_c327, 8(%rax)
+	movq	$12582914, 16(%rax)             # imm = 0xC00002
 	movq	%rax, 80(%rbp)
 	leaq	88(%rbp), %r12
 	movq	cP2__W$__fData_Binary_storableB$d7(%rip), %rsi
@@ -5260,8 +5261,8 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 # %bb.7:
 	movq	(%rax), %r14
 	movq	8(%rax), %r15
-	movq	%r14, 72(%rbp)
-	movq	%r15, 80(%rbp)
+	movq	%r15, 72(%rbp)
+	movq	%r14, 80(%rbp)
 	movq	cFHos_User_IPC_transmitMsg$d12(%rip), %rsi
 	movq	%r12, %rdi
 	callq	s_alloc
@@ -5299,8 +5300,8 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 # %bb.18:
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
-	movq	%r15, 72(%rbp)
-	movq	%r12, 80(%rbp)
+	movq	%r12, 72(%rbp)
+	movq	%r15, 80(%rbp)
 	movq	cFW$__fR$__fJhc_List_383__f(%rip), %rsi
 	movq	(%rsp), %rdi                    # 8-byte Reload
 	callq	s_alloc
@@ -5325,8 +5326,8 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 # %bb.20:
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
-	movq	%r12, 72(%rbp)
-	movq	%r15, 80(%rbp)
+	movq	%r15, 72(%rbp)
+	movq	%r12, 80(%rbp)
 	movq	cFHos_User_IPC_transmitMsg$d7(%rip), %rsi
 	movq	(%rsp), %rdi                    # 8-byte Reload
 	callq	s_alloc
@@ -5353,7 +5354,7 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 .LBB28_21:
 	movq	%rbx, %rdi
 	movq	%r13, %rsi
-	callq	fx107942252
+	callq	fR$__fJhc_Basics_foldr
 	movq	(%rax), %r13
 	movq	8(%rax), %r12
 	movq	%r12, 16(%rsp)                  # 8-byte Spill
@@ -5374,26 +5375,26 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 	movq	$8257538, (%rax)                # imm = 0x7E0002
 	movq	16(%rsp), %rax                  # 8-byte Reload
 	movq	%rax, 24(%r12)
-	movq	%r13, 8(%r12)
-	movq	%r14, 16(%r12)
+	movq	%r14, 8(%r12)
+	movq	%r13, 16(%r12)
 	movq	%r12, 80(%rbp)
 	movq	cP2__Hos_User_IPC_transmitMsg$d8(%rip), %rsi
 	movq	(%rsp), %rdi                    # 8-byte Reload
 	callq	s_alloc
 	movq	$4980738, (%rax)                # imm = 0x4C0002
-	movq	24(%rsp), %rcx                  # 8-byte Reload
+	movq	32(%rsp), %rcx                  # 8-byte Reload
 	movq	%rcx, 8(%rax)
 	movq	$4, 32(%rax)
-	movq	%r12, 16(%rax)
 	movq	$4, 40(%rax)
-	movq	32(%rsp), %rcx                  # 8-byte Reload
-	movq	%rcx, 24(%rax)
+	movq	24(%rsp), %rcx                  # 8-byte Reload
+	movq	%rcx, 16(%rax)
+	movq	%r12, 24(%rax)
 	jmp	.LBB28_22
 .LBB28_6:
 	movl	$65538, %esi                    # imm = 0x10002
 .LBB28_8:
 	movq	%rbx, %rdi
-	callq	fx107942252
+	callq	fR$__fJhc_Basics_foldr
 	movq	(%rax), %rcx
 	movq	8(%rax), %r14
 	movq	%rcx, 16(%rsp)                  # 8-byte Spill
@@ -5436,7 +5437,7 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 	movq	(%rsp), %rdi                    # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %rsi
-	movq	$_g1647063097+1, (%rax)
+	movq	$_g1346783289+1, (%rax)
 	movq	%r12, 8(%rax)
 	jmp	.LBB28_16
 .LBB28_15:
@@ -5445,7 +5446,7 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 	movl	$65538, %esi                    # imm = 0x10002
 .LBB28_16:
 	movq	%r15, %rdi
-	callq	fx107942252
+	callq	fR$__fJhc_Basics_foldr
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	addq	%r14, %r12
@@ -5461,8 +5462,8 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 	movq	$8257538, (%rax)                # imm = 0x7E0002
 	movq	56(%rsp), %rax                  # 8-byte Reload
 	movq	%rax, 24(%r13)
-	movq	%r14, 8(%r13)
-	movq	%r15, 16(%r13)
+	movq	%r15, 8(%r13)
+	movq	%r14, 16(%r13)
 	movq	%r13, 80(%rbp)
 	movl	$11272194, %esi                 # imm = 0xAC0002
 	movq	(%rsp), %rdi                    # 8-byte Reload
@@ -5476,27 +5477,27 @@ fHos_User_IPC_transmitMsg:              # @fHos_User_IPC_transmitMsg
 	movq	64(%rsp), %rdi                  # 8-byte Reload
 	callq	s_alloc
 	movq	$4915202, (%rax)                # imm = 0x4B0002
-	movq	24(%rsp), %rcx                  # 8-byte Reload
-	movq	%rcx, 8(%rax)
-	movq	%r12, 40(%rax)
-	movq	$4, 48(%rax)
-	movq	%r14, 16(%rax)
-	movq	$4, 56(%rax)
-	movq	%r13, 24(%rax)
 	movq	32(%rsp), %rcx                  # 8-byte Reload
+	movq	%rcx, 8(%rax)
+	movq	$4, 40(%rax)
+	movq	%r13, 16(%rax)
+	movq	%r14, 24(%rax)
+	movq	$4, 48(%rax)
+	movq	24(%rsp), %rcx                  # 8-byte Reload
 	movq	%rcx, 32(%rax)
+	movq	%r12, 56(%rax)
 .LBB28_22:
 	addq	$8, %r15
 	cmpq	$4096, %r15                     # imm = 0x1000
 	ja	.LBB28_30
 # %bb.23:
-	movl	$_g1828728375+1, %edx
+	movl	$_g1186612791+1, %edx
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%rbx, saved_gc(%rip)
 	movl	$256, %edi                      # imm = 0x100
 	xorl	%esi, %esi
@@ -5688,7 +5689,7 @@ E__fInstance$__iJhc_Show_show_default:  # @"E__fInstance$__iJhc_Show_show_defaul
 	addq	$8, %rdi
 	movq	8(%rsi), %rsi
 	movq	16(%rbx), %rcx
-	movl	$_c259, %edx
+	movl	$_c167, %edx
 	movl	$65538, %r8d                    # imm = 0x10002
 	callq	fJhc_Show_showsPrec
 	movq	%rax, (%rbx)
@@ -5831,23 +5832,23 @@ E__fNumeric_showHex:                    # @E__fNumeric_showHex
 	.p2align	4, 0x90
 .LBB32_3:                               # =>This Inner Loop Header: Depth=1
 	shrl	$4, %r15d
-	movq	$2555906, 8(%r14)               # imm = 0x270002
-	movq	%r12, 16(%r14)
-	movq	$_c135, 24(%r14)
+	movq	$_c281, 8(%r14)
+	movq	$2555906, 16(%r14)              # imm = 0x270002
+	movq	%r12, 24(%r14)
 	movq	cFW$__fNumeric_showIntAtBase$d3(%rip), %rsi
 	movq	(%rsp), %rdi                    # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$E__fW$__fNumeric_showIntAtBase$d3+3, (%rax)
-	movl	%ebp, 8(%rax)
-	movl	$16, 12(%rax)
+	movl	$16, 8(%rax)
+	movl	%ebp, 12(%rax)
 	orq	$1, %r13
 	movq	%r13, 32(%r14)
-	movq	cBap__1__W$__fNumeric_showIntAtBase__100346(%rip), %rsi
+	movq	cBap__1__W$__fNumeric_showIntAtBase__100308(%rip), %rsi
 	movq	8(%rsp), %rdi                   # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %rbx
-	movq	$E__bap__1__W$__fNumeric_showIntAtBase__100346+3, (%rax)
+	movq	$E__bap__1__W$__fNumeric_showIntAtBase__100308+3, (%rax)
 	movq	$2555906, 8(%rax)               # imm = 0x270002
 	movq	%r13, 16(%rax)
 	orq	$1, %rbx
@@ -5874,15 +5875,15 @@ E__fNumeric_showHex:                    # @E__fNumeric_showHex
 	callq	s_alloc
 	movq	%rax, %rbx
 	movq	$E__fW$__fNumeric_showIntAtBase$d2+3, (%rax)
-	movl	%r15d, 8(%rax)
-	movl	$16, 12(%rax)
+	movl	$16, 8(%rax)
+	movl	%r15d, 12(%rax)
 	orq	$1, %rbx
 	movq	%rbx, 24(%r14)
-	movq	cBap__1__W$__fNumeric_showIntAtBase__100342(%rip), %rsi
+	movq	cBap__1__W$__fNumeric_showIntAtBase__100304(%rip), %rsi
 	movq	(%rsp), %rdi                    # 8-byte Reload
 	callq	s_alloc
 	movq	%rax, %r12
-	movq	$E__bap__1__W$__fNumeric_showIntAtBase__100342+3, (%rax)
+	movq	$E__bap__1__W$__fNumeric_showIntAtBase__100304+3, (%rax)
 	movq	$2555906, 8(%rax)               # imm = 0x270002
 	movq	%rbx, 16(%rax)
 	orq	$1, %r12
@@ -5938,7 +5939,7 @@ fData_Binary_get:                       # @fData_Binary_get
 	ja	.LBB33_30
 # %bb.3:
 	jmpq	*.LJTI33_0(,%rax,8)
-.LBB33_18:
+.LBB33_25:
 	movq	8(%rsi), %rbx
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
@@ -5950,13 +5951,13 @@ fData_Binary_get:                       # @fData_Binary_get
 .LBB33_7:
 	movl	$10027010, %eax                 # imm = 0x990002
 	jmp	.LBB33_32
-.LBB33_29:
+.LBB33_22:
 	movl	$9306114, %eax                  # imm = 0x8E0002
 	jmp	.LBB33_32
 .LBB33_10:
 	movl	$9895938, %eax                  # imm = 0x970002
 	jmp	.LBB33_32
-.LBB33_25:
+.LBB33_18:
 	movl	$9175042, %eax                  # imm = 0x8C0002
 	jmp	.LBB33_32
 .LBB33_4:
@@ -5968,23 +5969,23 @@ fData_Binary_get:                       # @fData_Binary_get
 	movq	cP3__Data_Binary_get$d2(%rip), %rsi
 	callq	s_alloc
 	movq	$8323074, (%rax)                # imm = 0x7F0002
-	movq	%rbx, 8(%rax)
-	movq	%r14, 16(%rax)
+	movq	%r14, 8(%rax)
+	movq	%rbx, 16(%rax)
 	jmp	.LBB33_32
-.LBB33_28:
+.LBB33_21:
 	movl	$9371650, %eax                  # imm = 0x8F0002
 	jmp	.LBB33_32
-.LBB33_24:
+.LBB33_17:
 	movl	$9240578, %eax                  # imm = 0x8D0002
 	jmp	.LBB33_32
 .LBB33_15:
 	movl	$9109506, %eax                  # imm = 0x8B0002
 	jmp	.LBB33_32
-.LBB33_27:
+.LBB33_20:
 	movl	$9437186, %eax                  # imm = 0x900002
 	jmp	.LBB33_32
 .LBB33_12:
-	movl	$_g1800941159+1, %esi
+	movl	$_g1158825575+1, %esi
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
 	popq	%rbx
@@ -5996,7 +5997,7 @@ fData_Binary_get:                       # @fData_Binary_get
 	.cfi_def_cfa_offset 32
 	movl	$9961474, %eax                  # imm = 0x980002
 	jmp	.LBB33_32
-.LBB33_23:
+.LBB33_16:
 	movl	$9502722, %eax                  # imm = 0x910002
 	jmp	.LBB33_32
 .LBB33_13:
@@ -6008,28 +6009,28 @@ fData_Binary_get:                       # @fData_Binary_get
 	movq	$8519682, (%rax)                # imm = 0x820002
 	movq	%rbx, 8(%rax)
 	jmp	.LBB33_32
-.LBB33_16:
+.LBB33_23:
 	movl	$8847362, %eax                  # imm = 0x870002
 	jmp	.LBB33_32
-.LBB33_26:
+.LBB33_19:
 	movl	$9568258, %eax                  # imm = 0x920002
 	jmp	.LBB33_32
 .LBB33_31:
 	movl	$10223618, %eax                 # imm = 0x9C0002
 	jmp	.LBB33_32
-.LBB33_22:
+.LBB33_29:
 	movl	$8912898, %eax                  # imm = 0x880002
 	jmp	.LBB33_32
-.LBB33_20:
+.LBB33_27:
 	movl	$8716290, %eax                  # imm = 0x850002
 	jmp	.LBB33_32
 .LBB33_14:
 	movl	$9043970, %eax                  # imm = 0x8A0002
 	jmp	.LBB33_32
-.LBB33_21:
+.LBB33_28:
 	movl	$8781826, %eax                  # imm = 0x860002
 	jmp	.LBB33_32
-.LBB33_19:
+.LBB33_26:
 	movq	8(%rsi), %rbx
 	movq	%rbx, (%rdi)
 	addq	$8, %rdi
@@ -6038,7 +6039,7 @@ fData_Binary_get:                       # @fData_Binary_get
 	movq	$8650754, (%rax)                # imm = 0x840002
 	movq	%rbx, 8(%rax)
 	jmp	.LBB33_32
-.LBB33_17:
+.LBB33_24:
 	movl	$8978434, %eax                  # imm = 0x890002
 	jmp	.LBB33_32
 .LBB33_5:
@@ -6082,23 +6083,23 @@ fData_Binary_get:                       # @fData_Binary_get
 	.section	.rodata,"a",@progbits
 	.p2align	3, 0x0
 .LJTI33_0:
-	.quad	.LBB33_18
-	.quad	.LBB33_19
-	.quad	.LBB33_20
-	.quad	.LBB33_21
-	.quad	.LBB33_16
-	.quad	.LBB33_22
-	.quad	.LBB33_17
+	.quad	.LBB33_25
+	.quad	.LBB33_26
+	.quad	.LBB33_27
+	.quad	.LBB33_28
+	.quad	.LBB33_23
+	.quad	.LBB33_29
+	.quad	.LBB33_24
 	.quad	.LBB33_30
 	.quad	.LBB33_14
 	.quad	.LBB33_15
-	.quad	.LBB33_25
-	.quad	.LBB33_24
-	.quad	.LBB33_29
-	.quad	.LBB33_28
-	.quad	.LBB33_27
-	.quad	.LBB33_23
-	.quad	.LBB33_26
+	.quad	.LBB33_18
+	.quad	.LBB33_17
+	.quad	.LBB33_22
+	.quad	.LBB33_21
+	.quad	.LBB33_20
+	.quad	.LBB33_16
+	.quad	.LBB33_19
 	.quad	.LBB33_13
 	.quad	.LBB33_12
 	.quad	.LBB33_5
@@ -6115,9 +6116,9 @@ fData_Binary_get:                       # @fData_Binary_get
 	.quad	.LBB33_31
                                         # -- End function
 	.text
-	.p2align	4, 0x90                         # -- Begin function bapply__78296
-	.type	bapply__78296,@function
-bapply__78296:                          # @bapply__78296
+	.p2align	4, 0x90                         # -- Begin function bapply__84513
+	.type	bapply__84513,@function
+bapply__84513:                          # @bapply__84513
 	.cfi_startproc
 # %bb.0:
 	subq	$24, %rsp
@@ -6135,8 +6136,8 @@ bapply__78296:                          # @bapply__78296
 # %bb.3:
 	jmpq	*.LJTI34_0(,%rax,8)
 .LBB34_43:
-	movq	8(%rsi), %rax
-	movq	16(%rsi), %rcx
+	movq	8(%rsi), %rcx
+	movq	16(%rsi), %rax
 	movq	24(%rsi), %rdx
 	movq	%rax, %rsi
 	callq	fW$__fForeign_Storable_poke
@@ -6153,9 +6154,9 @@ bapply__78296:                          # @bapply__78296
 	jmp	fW$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4 # TAILCALL
 .LBB34_56:
 	.cfi_def_cfa_offset 32
-	movq	32(%rsi), %rax
-	movq	8(%rsi), %rdx
-	movq	16(%rsi), %rcx
+	movq	8(%rsi), %rax
+	movq	16(%rsi), %rdx
+	movq	32(%rsi), %rcx
 	movq	24(%rsi), %r8
 	movq	%rax, %rsi
 	addq	$24, %rsp
@@ -6185,8 +6186,8 @@ bapply__78296:                          # @bapply__78296
 	callq	fW$__fData_Binary_storableB$d11
 	jmp	.LBB34_61
 .LBB34_26:
-	movq	8(%rsi), %rax
-	movq	16(%rsi), %rdx
+	movq	8(%rsi), %rdx
+	movq	16(%rsi), %rax
 	movq	24(%rsi), %rcx
 	movq	32(%rsi), %r8
 	movq	%rax, %rsi
@@ -6195,16 +6196,6 @@ bapply__78296:                          # @bapply__78296
 	jmp	fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d8 # TAILCALL
 .LBB34_55:
 	.cfi_def_cfa_offset 32
-	movq	32(%rsi), %rdx
-	movq	8(%rsi), %rax
-	movq	16(%rsi), %rcx
-	movq	24(%rsi), %r8
-	movq	%rax, %rsi
-	addq	$24, %rsp
-	.cfi_def_cfa_offset 8
-	jmp	fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5 # TAILCALL
-.LBB34_57:
-	.cfi_def_cfa_offset 32
 	movq	8(%rsi), %rax
 	movq	16(%rsi), %rdx
 	movq	32(%rsi), %rcx
@@ -6212,11 +6203,21 @@ bapply__78296:                          # @bapply__78296
 	movq	%rax, %rsi
 	addq	$24, %rsp
 	.cfi_def_cfa_offset 8
-	jmp	fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5 # TAILCALL
-.LBB34_38:
+	jmp	fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5 # TAILCALL
+.LBB34_57:
 	.cfi_def_cfa_offset 32
 	movq	32(%rsi), %rax
 	movq	8(%rsi), %rdx
+	movq	16(%rsi), %rcx
+	movq	24(%rsi), %r8
+	movq	%rax, %rsi
+	addq	$24, %rsp
+	.cfi_def_cfa_offset 8
+	jmp	fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5 # TAILCALL
+.LBB34_38:
+	.cfi_def_cfa_offset 32
+	movq	32(%rsi), %rdx
+	movq	8(%rsi), %rax
 	movq	16(%rsi), %rcx
 	movq	24(%rsi), %r8
 	movq	%rax, %rsi
@@ -6225,9 +6226,9 @@ bapply__78296:                          # @bapply__78296
 	jmp	fW$__fData_Binary_put$d6        # TAILCALL
 .LBB34_37:
 	.cfi_def_cfa_offset 32
-	movq	32(%rsi), %rax
-	movq	8(%rsi), %rdx
-	movq	16(%rsi), %rcx
+	movq	8(%rsi), %rax
+	movq	16(%rsi), %rdx
+	movq	32(%rsi), %rcx
 	movq	24(%rsi), %r8
 	movq	%rax, %rsi
 	addq	$24, %rsp
@@ -6235,9 +6236,9 @@ bapply__78296:                          # @bapply__78296
 	jmp	fW$__fData_Binary_put$d4        # TAILCALL
 .LBB34_39:
 	.cfi_def_cfa_offset 32
-	movq	40(%rsi), %rax
-	movq	8(%rsi), %rdx
-	movq	16(%rsi), %rcx
+	movq	8(%rsi), %rax
+	movq	16(%rsi), %rdx
+	movq	40(%rsi), %rcx
 	movq	48(%rsi), %r8
 	movq	24(%rsi), %r9
 	movq	32(%rsi), %rsi
@@ -6271,8 +6272,8 @@ bapply__78296:                          # @bapply__78296
 	jmp	fInstance$__iData_Binary_get_Hos_Common_Bundle_Tag # TAILCALL
 .LBB34_36:
 	.cfi_def_cfa_offset 32
-	movq	32(%rsi), %rax
-	movq	8(%rsi), %rdx
+	movq	32(%rsi), %rdx
+	movq	8(%rsi), %rax
 	movq	16(%rsi), %rcx
 	movq	24(%rsi), %r8
 	movq	%rax, %rsi
@@ -6313,14 +6314,16 @@ bapply__78296:                          # @bapply__78296
 .LBB34_10:
 	.cfi_def_cfa_offset 32
 	movq	48(%rsi), %rdx
-	movq	56(%rsi), %rcx
 	movq	8(%rsi), %rax
-	movq	16(%rsi), %r8
-	movq	64(%rsi), %r9
-	movups	24(%rsi), %xmm0
+	movq	16(%rsi), %rcx
+	movq	24(%rsi), %r8
+	movq	56(%rsi), %r9
+	movq	32(%rsi), %r10
+	movq	64(%rsi), %r11
 	movq	40(%rsi), %rsi
 	movq	%rsi, 16(%rsp)
-	movups	%xmm0, (%rsp)
+	movq	%r11, 8(%rsp)
+	movq	%r10, (%rsp)
 	movq	%rax, %rsi
 	callq	fHos_User_IPC_transmitMsg$d15
 	addq	$24, %rsp
@@ -6352,8 +6355,8 @@ bapply__78296:                          # @bapply__78296
 	jmp	fInstance$__iData_Binary_get_Hos_Storage_Msg_TxId # TAILCALL
 .LBB34_4:
 	.cfi_def_cfa_offset 32
-	movq	8(%rsi), %rax
-	movq	16(%rsi), %rdx
+	movq	8(%rsi), %rdx
+	movq	16(%rsi), %rax
 	movq	24(%rsi), %rcx
 	movq	32(%rsi), %r8
 	movq	%rax, %rsi
@@ -6476,9 +6479,9 @@ bapply__78296:                          # @bapply__78296
 .LBB34_11:
 	.cfi_def_cfa_offset 32
 	movq	40(%rsi), %rdx
+	movq	48(%rsi), %rcx
 	movq	8(%rsi), %rax
-	movq	16(%rsi), %rcx
-	movq	48(%rsi), %r8
+	movq	16(%rsi), %r8
 	movq	24(%rsi), %r9
 	movq	32(%rsi), %rsi
 	movq	%rsi, (%rsp)
@@ -6543,9 +6546,9 @@ bapply__78296:                          # @bapply__78296
 	jmp	fInstance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor # TAILCALL
 .LBB34_27:
 	.cfi_def_cfa_offset 32
-	movl	40(%rsi), %edx
 	movq	8(%rsi), %rax
-	movq	16(%rsi), %rcx
+	movq	16(%rsi), %rdx
+	movl	40(%rsi), %ecx
 	movq	24(%rsi), %r8
 	movq	32(%rsi), %r9
 	movq	%rax, %rsi
@@ -6609,11 +6612,11 @@ bapply__78296:                          # @bapply__78296
 	jmp	fW$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3 # TAILCALL
 .LBB34_54:
 	.cfi_def_cfa_offset 32
+	movq	40(%rsi), %rdx
 	movq	8(%rsi), %rax
-	movq	16(%rsi), %rdx
-	movq	24(%rsi), %rcx
-	movq	40(%rsi), %r8
-	movq	48(%rsi), %r9
+	movq	16(%rsi), %rcx
+	movq	48(%rsi), %r8
+	movq	24(%rsi), %r9
 	movq	32(%rsi), %rsi
 	movq	%rsi, (%rsp)
 	movq	%rax, %rsi
@@ -6626,7 +6629,7 @@ bapply__78296:                          # @bapply__78296
 	movl	$8534, %edi                     # imm = 0x2156
 	callq	jhc_case_fell_off
 .Lfunc_end34:
-	.size	bapply__78296, .Lfunc_end34-bapply__78296
+	.size	bapply__84513, .Lfunc_end34-bapply__84513
 	.cfi_endproc
 	.section	.rodata,"a",@progbits
 	.p2align	3, 0x0
@@ -6738,15 +6741,15 @@ fR$__fJhc_List_filter:                  # @"fR$__fJhc_List_filter"
 .LBB35_2:                               # =>This Inner Loop Header: Depth=1
 	movq	(%rax), %r15
 	movq	8(%rax), %r13
-	movq	%r15, (%rbx)
-	movq	%r13, 8(%rbx)
+	movq	%r13, (%rbx)
+	movq	%r15, 8(%rbx)
 	movq	%r12, %rdi
 	movq	%r15, %rsi
 	callq	eval
 	movq	8(%rax), %rsi
 	movq	%r12, %rdi
 	callq	eval
-	movl	$_c365, %esi
+	movl	$_c19, %esi
 	movq	%r12, %rdi
 	movq	%rax, %rdx
 	callq	fMain_findTag
@@ -6873,8 +6876,8 @@ E__ftheMain$d6:                         # @"E__ftheMain$d6"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
+	movl	16(%rsi), %r15d
 	movq	8(%rsi), %rsi
-	movl	16(%rbx), %r15d
 	movq	%r14, %rdi
 	callq	eval
 	addq	(%rax), %r15
@@ -7067,9 +7070,9 @@ fW$__fHos_Storage_loadElf:              # @"fW$__fHos_Storage_loadElf"
 	movq	16(%rax), %r15
 	movq	24(%rax), %r12
 	movq	48(%rax), %rbp
-	movq	%r15, 32(%r14)
+	movq	%r12, 32(%r14)
 	movq	%rbp, 40(%r14)
-	movq	%r12, 48(%r14)
+	movq	%r15, 48(%r14)
 	movq	%rbx, %rdi
 	callq	eval
 	andl	$262140, %eax                   # imm = 0x3FFFC
@@ -7100,7 +7103,7 @@ fW$__fHos_Storage_loadElf:              # @"fW$__fHos_Storage_loadElf"
 	movq	%r15, %rdi
 	callq	s_alloc
 	movq	$262146, (%rax)                 # imm = 0x40002
-	movq	$_c132, 8(%rax)
+	movq	$_c325, 8(%rax)
 	movq	%r14, 16(%rax)
 	movq	40(%rsp), %r14                  # 8-byte Reload
 	movq	16(%rsp), %rcx                  # 8-byte Reload
@@ -7153,7 +7156,7 @@ fW$__fHos_Storage_loadElf:              # @"fW$__fHos_Storage_loadElf"
 	xorl	%r8d, %r8d
 	xorl	%r9d, %r9d
 	callq	syscall
-	movl	$_c134, %eax
+	movl	$_c327, %eax
 .LBB39_11:
 	addq	$56, %rsp
 	.cfi_def_cfa_offset 56
@@ -7362,15 +7365,15 @@ fW$__fHos_User_SysCall_hosWaitOnChannels: # @"fW$__fHos_User_SysCall_hosWaitOnCh
 	jmp	free                            # TAILCALL
 .LBB42_1:
 	.cfi_def_cfa_offset 64
-	movl	$_c72, %esi
-	movl	$_c87, %edx
+	movl	$_c265, %esi
+	movl	$_c280, %edx
 	movq	%rbx, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	jmp	.LBB42_7
 .LBB42_6:
-	movl	$_c130, %esi
+	movl	$_c323, %esi
 	movq	%rbx, %rdi
 .LBB42_7:
 	callq	fJhc_IO_putErrLn
@@ -7410,14 +7413,14 @@ fData_Binary_getFrom:                   # @fData_Binary_getFrom
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	movq	%r15, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -7499,8 +7502,8 @@ E__fHos_User_IPC_transmitMsg$d12:       # @"E__fHos_User_IPC_transmitMsg$d12"
 # %bb.2:
 	movq	(%rax), %r13
 	movq	8(%rax), %r12
-	movq	%r13, 8(%r14)
-	movq	%r12, 16(%r14)
+	movq	%r12, 8(%r14)
+	movq	%r13, 16(%r14)
 	leaq	24(%r14), %rdi
 	movq	cFHos_User_IPC_transmitMsg$d12(%rip), %rsi
 	callq	s_alloc
@@ -7578,15 +7581,15 @@ E__fHos_User_IPC_transmitMsg$d11:       # @"E__fHos_User_IPC_transmitMsg$d11"
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2+3, (%rax)
 	movq	%r13, 8(%rax)
 	orq	$1, %r12
-	movq	$12713986, 16(%r14)             # imm = 0xC20002
-	movq	%r12, 24(%r14)
+	movq	%r12, 16(%r14)
+	movq	$12713986, 24(%r14)             # imm = 0xC20002
 	leaq	32(%r14), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 32(%r14)
 	leaq	40(%r14), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -7616,9 +7619,9 @@ E__fHos_User_IPC_transmitMsg$d11:       # @"E__fHos_User_IPC_transmitMsg$d11"
 	.size	E__fHos_User_IPC_transmitMsg$d11, .Lfunc_end45-E__fHos_User_IPC_transmitMsg$d11
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function fx107942252
-	.type	fx107942252,@function
-fx107942252:                            # @fx107942252
+	.p2align	4, 0x90                         # -- Begin function fR$__fJhc_Basics_foldr
+	.type	fR$__fJhc_Basics_foldr,@function
+fR$__fJhc_Basics_foldr:                 # @"fR$__fJhc_Basics_foldr"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -7656,7 +7659,7 @@ fx107942252:                            # @fx107942252
 	movq	%r12, 8(%rbx)
 	leaq	16(%rbx), %rdi
 	movq	%r14, %rsi
-	callq	fx107942252
+	callq	fR$__fJhc_Basics_foldr
 	movq	(%rax), %r15
 	movq	8(%rax), %rbp
 	movq	%r15, 16(%rbx)
@@ -7687,8 +7690,8 @@ fx107942252:                            # @fx107942252
 	movq	$8257538, (%rax)                # imm = 0x7E0002
 	movq	(%rsp), %rax                    # 8-byte Reload
 	movq	%rax, 24(%r15)
-	movq	%r12, 8(%r15)
-	movq	%r13, 16(%r15)
+	movq	%r13, 8(%r15)
+	movq	%r12, 16(%r15)
 	movq	%r15, 32(%rbx)
 	movq	cCData_Binary_Builder(%rip), %rsi
 	movq	%r14, %rdi
@@ -7719,7 +7722,7 @@ fx107942252:                            # @fx107942252
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end46:
-	.size	fx107942252, .Lfunc_end46-fx107942252
+	.size	fR$__fJhc_Basics_foldr, .Lfunc_end46-fR$__fJhc_Basics_foldr
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fHos_User_IPC_transmitMsg$d14
@@ -7764,7 +7767,7 @@ E__fHos_User_IPC_transmitMsg$d14:       # @"E__fHos_User_IPC_transmitMsg$d14"
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	movq	%r14, %rdi
 	callq	s_alloc
-	movq	$_g1647063097+1, (%rax)
+	movq	$_g1346783289+1, (%rax)
 	movq	%r15, 8(%rax)
 	jmp	.LBB47_3
 .LBB47_2:
@@ -7825,7 +7828,7 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 # %bb.3:
 	jmpq	*.LJTI48_0(,%rsi,8)
 .LBB48_6:
-	movq	%rdi, %r12
+	movq	%rdi, %r15
 	movq	%rdx, %rsi
 	callq	eval
 	movq	%rax, %rcx
@@ -7839,25 +7842,25 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	je	.LBB48_13
 # %bb.9:
 	cmpq	$1, %rcx
+	movq	%r15, %rbp
 	je	.LBB48_12
 # %bb.10:
 	testq	%rcx, %rcx
 	jne	.LBB48_14
 # %bb.11:
 	movq	8(%rax), %r14
-	movq	%r14, (%r12)
-	movq	$12517378, 8(%r12)              # imm = 0xBF0002
-	leaq	16(%r12), %r15
-	movq	$2, 16(%r12)
-	leaq	24(%r12), %rbx
+	movq	%r14, (%rbp)
+	movq	$2, 8(%rbp)
+	leaq	16(%rbp), %r15
+	movq	$12517378, 16(%rbp)             # imm = 0xBF0002
+	leaq	24(%rbp), %rbx
 	movq	cP2__W$__fData_Binary_storableB$d4(%rip), %rsi
-	movq	%r12, %rbp
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$7143426, (%rax)                # imm = 0x6D0002
-	movq	$12517378, 8(%rax)              # imm = 0xBF0002
-	movq	$2, 16(%rax)
+	movq	$2, 8(%rax)
+	movq	$12517378, 16(%rax)             # imm = 0xBF0002
 	movq	%rax, 24(%rbp)
 	leaq	32(%rbp), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d5(%rip), %rsi
@@ -7879,8 +7882,9 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	callq	s_alloc
 	movq	%r15, %rdx
 	movq	$6684674, (%rax)                # imm = 0x660002
+	movq	%r14, 8(%rax)
+	movq	%r13, 16(%rax)
 	movq	$2, 24(%rax)
-	movq	%r13, 8(%rax)
 	jmp	.LBB48_17
 .LBB48_16:
 	movq	%rdi, %rbx
@@ -7909,11 +7913,10 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	callq	s_alloc
 	movq	%r13, %rdx
 	movq	$6619138, (%rax)                # imm = 0x650002
+	movq	%r14, 8(%rax)
 	movq	%r12, 24(%rax)
-	movq	%r15, 8(%rax)
-.LBB48_17:
-	movq	%r14, 16(%rax)
-	jmp	.LBB48_18
+	movq	%r15, 16(%rax)
+	jmp	.LBB48_17
 .LBB48_5:
 	movq	%rdx, (%rdi)
 	leaq	8(%rdi), %rax
@@ -7926,15 +7929,15 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2+3, (%rax)
 	movq	%r15, 8(%rax)
 	orq	$1, %r14
-	movq	$12713986, 8(%rbx)              # imm = 0xC20002
-	movq	%r14, 16(%rbx)
+	movq	%r14, 8(%rbx)
+	movq	$12713986, 16(%rbx)             # imm = 0xC20002
 	leaq	24(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	%r14, 16(%rax)
+	movq	%r14, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 24(%rbx)
 	addq	$32, %rbx
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -7943,26 +7946,25 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	movq	$7077890, (%rax)                # imm = 0x6C0002
 	movq	%r15, 8(%rax)
 	movl	$1, %edx
-	jmp	.LBB48_18
+	jmp	.LBB48_17
 .LBB48_4:
 	movl	$12255234, %esi                 # imm = 0xBB0002
 	callq	fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BE
-	jmp	.LBB48_18
+	jmp	.LBB48_17
 .LBB48_12:
 	movq	8(%rax), %r14
-	movq	%r14, (%r12)
-	movq	$12517378, 8(%r12)              # imm = 0xBF0002
-	leaq	16(%r12), %r15
-	movq	$6, 16(%r12)
-	leaq	24(%r12), %rbx
+	movq	%r14, (%rbp)
+	movq	$6, 8(%rbp)
+	leaq	16(%rbp), %r15
+	movq	$12517378, 16(%rbp)             # imm = 0xBF0002
+	leaq	24(%rbp), %rbx
 	movq	cP2__W$__fData_Binary_storableB$d4(%rip), %rsi
-	movq	%r12, %rbp
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$7143426, (%rax)                # imm = 0x6D0002
-	movq	$12517378, 8(%rax)              # imm = 0xBF0002
-	movq	$6, 16(%rax)
+	movq	$6, 8(%rax)
+	movq	$12517378, 16(%rax)             # imm = 0xBF0002
 	movq	%rax, 24(%rbp)
 	leaq	32(%rbp), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d5(%rip), %rsi
@@ -7984,53 +7986,53 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	callq	s_alloc
 	movq	%r15, %rdx
 	movq	$6750210, (%rax)                # imm = 0x670002
+	movq	%r13, 8(%rax)
 	movq	$2, 24(%rax)
-	movq	%r14, 8(%rax)
-	movq	%r13, 16(%rax)
-	jmp	.LBB48_18
+	movq	%r14, 16(%rax)
+	jmp	.LBB48_17
 .LBB48_13:
 	movq	8(%rax), %rbp
 	movq	16(%rax), %rax
 	movq	%rax, 16(%rsp)                  # 8-byte Spill
-	movq	%rbp, (%r12)
-	movq	%rax, 8(%r12)
-	movq	$12517378, 16(%r12)             # imm = 0xBF0002
-	movq	$10, 24(%r12)
-	leaq	32(%r12), %r14
+	movq	%rbp, (%r15)
+	movq	%rax, 8(%r15)
+	movq	$10, 16(%r15)
+	movq	$12517378, 24(%r15)             # imm = 0xBF0002
+	leaq	32(%r15), %r14
 	movq	cP2__W$__fData_Binary_storableB$d4(%rip), %rsi
 	movq	%r14, %rdi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$7143426, (%rax)                # imm = 0x6D0002
-	movq	$12517378, 8(%rax)              # imm = 0xBF0002
-	movq	$10, 16(%rax)
-	movq	%rax, 32(%r12)
-	leaq	40(%r12), %rbx
+	movq	$10, 8(%rax)
+	movq	$12517378, 16(%rax)             # imm = 0xBF0002
+	movq	%rax, 32(%r15)
+	leaq	40(%r15), %rbx
 	movq	cP2__W$__fData_Binary_storableB$d5(%rip), %rsi
 	movq	%rbx, %rdi
 	movq	%rbx, 8(%rsp)                   # 8-byte Spill
 	callq	s_alloc
-	movq	%rax, %r15
+	movq	%rax, %r12
 	movq	$7208962, (%rax)                # imm = 0x6E0002
 	movq	%r13, 8(%rax)
-	movq	%rax, 16(%r12)
-	movq	$12582914, 24(%r12)             # imm = 0xC00002
-	movq	%rbp, 32(%r12)
+	movq	%rax, 16(%r15)
+	movq	%rbp, 24(%r15)
+	movq	$12582914, 32(%r15)             # imm = 0xC00002
 	movq	cP2__W$__fData_Binary_storableB$d6(%rip), %rsi
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$7274498, (%rax)                # imm = 0x6F0002
-	movq	$12582914, 8(%rax)              # imm = 0xC00002
-	movq	%rbp, 16(%rax)
-	movq	%rax, 40(%r12)
-	leaq	48(%r12), %rdi
+	movq	%rbp, 8(%rax)
+	movq	$12582914, 16(%rax)             # imm = 0xC00002
+	movq	%rax, 40(%r15)
+	leaq	48(%r15), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d7(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %rbp
 	movq	$7340034, (%rax)                # imm = 0x700002
 	movq	%r13, 8(%rax)
-	movq	%rax, 24(%r12)
+	movq	%rax, 24(%r15)
 	movl	$_c3, %esi
 	movq	%r14, %rdi
 	movq	16(%rsp), %rdx                  # 8-byte Reload
@@ -8038,18 +8040,18 @@ bRfW$__fData_Binary_put:                # @"bRfW$__fData_Binary_put"
 	movq	%rax, %rbx
 	movq	%rdx, %r14
 	addq	$6, %r14
-	movq	%rax, 32(%r12)
+	movq	%rax, 32(%r15)
 	movq	cP2__W$__fData_Binary_put$d8(%rip), %rsi
 	movq	8(%rsp), %rdi                   # 8-byte Reload
 	callq	s_alloc
 	movq	%r14, %rdx
 	movq	$6815746, (%rax)                # imm = 0x680002
-	movq	$2, 32(%rax)
-	movq	%r15, 8(%rax)
+	movq	%r12, 8(%rax)
 	movq	%rbp, 16(%rax)
+	movq	$2, 32(%rax)
 	movq	$4, 40(%rax)
 	movq	%rbx, 24(%rax)
-.LBB48_18:
+.LBB48_17:
 	addq	$24, %rsp
 	.cfi_def_cfa_offset 56
 	popq	%rbx
@@ -8124,7 +8126,7 @@ fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BE: # @"fW$__fInstance$__iData_
 	callq	fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	fx107942252
+	callq	fR$__fJhc_Basics_foldr
 	movq	%rax, %r14
 	movq	%rax, 8(%rbx)
 	leaq	16(%rbx), %rdi
@@ -8132,19 +8134,19 @@ fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BE: # @"fW$__fInstance$__iData_
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4+3, (%rax)
-	movq	$2, 8(%rax)
-	movq	%r15, 16(%rax)
+	movq	%r15, 8(%rax)
+	movq	$2, 16(%rax)
 	orq	$1, %r12
-	movq	$12648450, 16(%rbx)             # imm = 0xC10002
-	movq	%r12, 24(%rbx)
+	movq	%r12, 16(%rbx)
+	movq	$12648450, 24(%rbx)             # imm = 0xC10002
 	leaq	32(%rbx), %r15
 	movq	cP2__W$__fData_Binary_storableB$d8(%rip), %rsi
 	movq	%r15, %rdi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$7405570, (%rax)                # imm = 0x710002
-	movq	$12648450, 8(%rax)              # imm = 0xC10002
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	$12648450, 16(%rax)             # imm = 0xC10002
 	movq	%rax, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d9(%rip), %rsi
@@ -8161,9 +8163,9 @@ fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BE: # @"fW$__fInstance$__iData_
 	movq	%r15, %rdi
 	callq	s_alloc
 	movq	$8192002, (%rax)                # imm = 0x7D0002
+	movq	$8, 24(%rax)
 	movq	%r12, 8(%rax)
 	movq	%r13, 16(%rax)
-	movq	$8, 24(%rax)
 	movq	%r14, %rdx
 	popq	%rbx
 	.cfi_def_cfa_offset 40
@@ -8276,7 +8278,7 @@ E__fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4: # @"E__fW$__fInstance$
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
-	movq	16(%rsi), %rsi
+	movq	8(%rsi), %rsi
 	movq	%r14, %rdi
 	callq	eval
 	xorl	%r15d, %r15d
@@ -8428,8 +8430,8 @@ E__fW$__fR$__fJhc_List_383__f:          # @"E__fW$__fR$__fJhc_List_383__f"
 # %bb.2:
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
-	movq	%r12, 8(%r14)
-	movq	%r13, 16(%r14)
+	movq	%r13, 8(%r14)
+	movq	%r12, 16(%r14)
 	decl	%ebp
 	leaq	24(%r14), %rdi
 	movq	cFW$__fR$__fJhc_List_383__f(%rip), %rsi
@@ -8506,8 +8508,8 @@ E__fHos_User_IPC_transmitMsg$d7:        # @"E__fHos_User_IPC_transmitMsg$d7"
 # %bb.2:
 	movq	(%rax), %r13
 	movq	8(%rax), %r12
-	movq	%r12, 8(%r14)
-	movq	%r13, 16(%r14)
+	movq	%r13, 8(%r14)
+	movq	%r12, 16(%r14)
 	leaq	24(%r14), %rdi
 	movq	cFHos_User_IPC_transmitMsg$d7(%rip), %rsi
 	callq	s_alloc
@@ -8585,15 +8587,15 @@ E__fHos_User_IPC_transmitMsg$d6:        # @"E__fHos_User_IPC_transmitMsg$d6"
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2+3, (%rax)
 	movq	%r13, 8(%rax)
 	orq	$1, %r12
-	movq	$12713986, 16(%r14)             # imm = 0xC20002
-	movq	%r12, 24(%r14)
+	movq	%r12, 16(%r14)
+	movq	$12713986, 24(%r14)             # imm = 0xC20002
 	leaq	32(%r14), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 32(%r14)
 	leaq	40(%r14), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -8767,7 +8769,7 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 .LBB58_8:
 	movq	%r14, 16(%rbx)
 	leaq	24(%rbx), %r15
-	movl	$_c269, %esi
+	movl	$_c178, %esi
 	jmp	.LBB58_39
 .LBB58_9:
 	movq	%r14, (%rbx)
@@ -8815,8 +8817,8 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 	ja	.LBB58_11
 	jmp	.LBB58_32
 .LBB58_12:
-	movq	%rcx, (%rbx)
-	movq	%r14, 8(%rbx)
+	movq	%r14, (%rbx)
+	movq	%rcx, 8(%rbx)
 	leaq	16(%rbx), %rdi
 	movq	cFPrelude_Text_30__showl(%rip), %rsi
 	movq	%rcx, %r12
@@ -9099,12 +9101,12 @@ fJhc_Show_showsPrec:                    # @fJhc_Show_showsPrec
 .LBB58_37:
 	movq	%r14, 16(%rbx)
 	leaq	24(%rbx), %r15
-	movl	$_c289, %esi
+	movl	$_c198, %esi
 	jmp	.LBB58_39
 .LBB58_38:
 	movq	%r14, 16(%rbx)
 	leaq	24(%rbx), %r15
-	movl	$_c300, %esi
+	movl	$_c209, %esi
 .LBB58_39:
 	movq	%r15, %rdi
 	callq	eval
@@ -9355,7 +9357,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 # %bb.3:
 	movq	%r15, 24(%r14)
 	leaq	32(%r14), %r12
-	movl	$_c302, %esi
+	movl	$_c211, %esi
 .LBB59_4:
 	movq	%r12, %rdi
 	callq	eval
@@ -9400,7 +9402,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 # %bb.9:
 	movq	%r15, 24(%r14)
 	leaq	32(%r14), %r12
-	movl	$_c137, %esi
+	movl	$_c46, %esi
 	jmp	.LBB59_4
 .LBB59_5:
 	movq	%r12, %rdi
@@ -9431,7 +9433,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 	movq	%rax, %r13
 	movq	$E__fJhc_Show_showsPrec+3, (%rax)
 	movq	$12451842, 8(%rax)              # imm = 0xBE0002
-	movq	$_c259, 16(%rax)
+	movq	$_c167, 16(%rax)
 	movq	%r15, 24(%rax)
 	movq	%r12, 32(%rax)
 	orq	$1, %r13
@@ -9465,7 +9467,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 	.cfi_def_cfa_offset 64
 	movq	%r15, 24(%r14)
 	leaq	32(%r14), %r12
-	movl	$_c141, %esi
+	movl	$_c50, %esi
 	jmp	.LBB59_4
 .LBB59_11:
 	cmpl	$31, %r13d
@@ -9477,7 +9479,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 # %bb.13:
 	jmpq	*.LJTI59_0(,%rax,8)
 .LBB59_14:
-	movl	$_c143, %esi
+	movl	$_c52, %esi
 	jmp	.LBB59_23
 .LBB59_25:
 	movl	$1, %edi
@@ -9494,13 +9496,13 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 	movq	%r15, 8(%rax)
 	jmp	.LBB59_27
 .LBB59_18:
-	movl	$_c151, %esi
+	movl	$_c59, %esi
 	jmp	.LBB59_23
 .LBB59_16:
-	movl	$_c147, %esi
+	movl	$_c55, %esi
 	jmp	.LBB59_23
 .LBB59_17:
-	movl	$_c149, %esi
+	movl	$_c57, %esi
 	jmp	.LBB59_23
 .LBB59_21:
 	movq	%r15, 24(%r14)
@@ -9510,17 +9512,17 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 	movq	$E__fW$__fPrelude_Text_showLitChar$d3+3, (%rax)
 	movq	%r15, 8(%rax)
 	orq	$1, %rax
-	movl	$_c157, %esi
+	movl	$_c65, %esi
 	movq	%rax, %r15
 	jmp	.LBB59_23
 .LBB59_15:
-	movl	$_c145, %esi
+	movl	$_c54, %esi
 	jmp	.LBB59_23
 .LBB59_19:
-	movl	$_c153, %esi
+	movl	$_c61, %esi
 	jmp	.LBB59_23
 .LBB59_20:
-	movl	$_c154, %esi
+	movl	$_c62, %esi
 	jmp	.LBB59_23
 .LBB59_22:
 	movq	%r15, 24(%r14)
@@ -9530,7 +9532,7 @@ E__fPrelude_Text_30__showl:             # @E__fPrelude_Text_30__showl
 	movq	%rax, %r12
 	movq	$E__fW$__fJhc_List_$bb+3, (%rax)
 	movq	$2, 8(%rax)
-	movq	$_c258, 16(%rax)
+	movq	$_c166, 16(%rax)
 	movl	%r13d, 24(%rax)
 	orq	$1, %r12
 	movq	%r12, 32(%r14)
@@ -9603,7 +9605,7 @@ fJhc_Show_showsPrec$d3:                 # @"fJhc_Show_showsPrec$d3"
 	movq	%r12, 8(%rax)
 	movq	%rax, 24(%rbx)
 	leaq	32(%rbx), %r15
-	movl	$_c28, %esi
+	movl	$_c44, %esi
 	movq	%r15, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -9735,7 +9737,7 @@ E__fW$__fPrelude_Text_showLitChar$d3:   # @"E__fW$__fPrelude_Text_showLitChar$d3
 # %bb.3:
 	movq	%r15, 32(%r14)
 	leaq	40(%r14), %r12
-	movl	$_c5, %esi
+	movl	$_c21, %esi
 	movq	%r12, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -9910,7 +9912,7 @@ E__fW$__fPrelude_Text_showLitChar$d2:   # @"E__fW$__fPrelude_Text_showLitChar$d2
 	callq	c_assert
 	movq	%r15, 32(%r14)
 	leaq	40(%r14), %r12
-	movl	$_c5, %esi
+	movl	$_c21, %esi
 	movq	%r12, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -10168,8 +10170,8 @@ E__fW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId: # @"E__fW$__fIn
 	movq	%rdi, %r15
 	movl	$1, %edi
 	callq	c_assert
-	movq	%r12, 8(%r15)
-	movq	%r14, 16(%r15)
+	movq	%r14, 8(%r15)
+	movq	%r12, 16(%r15)
 	leaq	24(%r15), %rdi
 	movq	cCJhc_Prim_Prim_$x3a(%rip), %rsi
 	callq	s_alloc
@@ -10251,7 +10253,7 @@ fW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2: # @"fW$__fInsta
 	movq	%r12, 8(%rax)
 	movq	%rax, 24(%rbx)
 	leaq	32(%rbx), %r15
-	movl	$_c11, %esi
+	movl	$_c27, %esi
 	movq	%r15, %rdi
 	callq	eval
 	cmpq	$65538, %rax                    # imm = 0x10002
@@ -10456,9 +10458,9 @@ E__fW$__fNumeric_showIntAtBase$d2:      # @"E__fW$__fNumeric_showIntAtBase$d2"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %rdi
-	movl	8(%rsi), %eax
+	movl	12(%rsi), %eax
 	xorl	%edx, %edx
-	divl	12(%rsi)
+	divl	8(%rsi)
 	movl	%edx, %ebp
 	movq	cCJhc_Type_Word_Int(%rip), %rsi
 	callq	s_alloc
@@ -10475,9 +10477,9 @@ E__fW$__fNumeric_showIntAtBase$d2:      # @"E__fW$__fNumeric_showIntAtBase$d2"
 	.size	E__fW$__fNumeric_showIntAtBase$d2, .Lfunc_end72-E__fW$__fNumeric_showIntAtBase$d2
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fNumeric_showIntAtBase__100342
-	.type	E__bap__1__W$__fNumeric_showIntAtBase__100342,@function
-E__bap__1__W$__fNumeric_showIntAtBase__100342: # @"E__bap__1__W$__fNumeric_showIntAtBase__100342"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fNumeric_showIntAtBase__100304
+	.type	E__bap__1__W$__fNumeric_showIntAtBase__100304,@function
+E__bap__1__W$__fNumeric_showIntAtBase__100304: # @"E__bap__1__W$__fNumeric_showIntAtBase__100304"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -10526,7 +10528,7 @@ E__bap__1__W$__fNumeric_showIntAtBase__100342: # @"E__bap__1__W$__fNumeric_showI
 	movl	$.L.str.1, %edi
 	callq	jhc_error
 .Lfunc_end73:
-	.size	E__bap__1__W$__fNumeric_showIntAtBase__100342, .Lfunc_end73-E__bap__1__W$__fNumeric_showIntAtBase__100342
+	.size	E__bap__1__W$__fNumeric_showIntAtBase__100304, .Lfunc_end73-E__bap__1__W$__fNumeric_showIntAtBase__100304
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fW$__fNumeric_showIntAtBase$d3
@@ -10547,9 +10549,9 @@ E__fW$__fNumeric_showIntAtBase$d3:      # @"E__fW$__fNumeric_showIntAtBase$d3"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %rdi
-	movl	8(%rsi), %eax
+	movl	12(%rsi), %eax
 	xorl	%edx, %edx
-	divl	12(%rsi)
+	divl	8(%rsi)
 	movl	%edx, %ebp
 	movq	cCJhc_Type_Word_Int(%rip), %rsi
 	callq	s_alloc
@@ -10566,9 +10568,9 @@ E__fW$__fNumeric_showIntAtBase$d3:      # @"E__fW$__fNumeric_showIntAtBase$d3"
 	.size	E__fW$__fNumeric_showIntAtBase$d3, .Lfunc_end74-E__fW$__fNumeric_showIntAtBase$d3
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fNumeric_showIntAtBase__100346
-	.type	E__bap__1__W$__fNumeric_showIntAtBase__100346,@function
-E__bap__1__W$__fNumeric_showIntAtBase__100346: # @"E__bap__1__W$__fNumeric_showIntAtBase__100346"
+	.p2align	4, 0x90                         # -- Begin function E__bap__1__W$__fNumeric_showIntAtBase__100308
+	.type	E__bap__1__W$__fNumeric_showIntAtBase__100308,@function
+E__bap__1__W$__fNumeric_showIntAtBase__100308: # @"E__bap__1__W$__fNumeric_showIntAtBase__100308"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -10617,7 +10619,7 @@ E__bap__1__W$__fNumeric_showIntAtBase__100346: # @"E__bap__1__W$__fNumeric_showI
 	movl	$.L.str.1, %edi
 	callq	jhc_error
 .Lfunc_end75:
-	.size	E__bap__1__W$__fNumeric_showIntAtBase__100346, .Lfunc_end75-E__bap__1__W$__fNumeric_showIntAtBase__100346
+	.size	E__bap__1__W$__fNumeric_showIntAtBase__100308, .Lfunc_end75-E__bap__1__W$__fNumeric_showIntAtBase__100308
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function fW$__fW$__fHos_User_SysCall_hosAddMapping
@@ -11043,8 +11045,8 @@ fW$__fW$__fHos_User_SysCall_hosAddMapping: # @"fW$__fW$__fHos_User_SysCall_hosAd
 	movq	$0, 2(%r12)
 	jmp	.LBB76_66
 .LBB76_69:
-	movl	$_c72, %esi
-	movl	$_c87, %edx
+	movl	$_c265, %esi
+	movl	$_c280, %edx
 	movq	%rbx, %rdi
 	callq	fJhc_Basics_$pp
 	movq	%rbx, %rdi
@@ -11053,7 +11055,7 @@ fW$__fW$__fHos_User_SysCall_hosAddMapping: # @"fW$__fW$__fHos_User_SysCall_hosAd
 	movl	$255, %edi
 	callq	jhc_exit
 .LBB76_70:
-	movl	$17584, %edi                    # imm = 0x44B0
+	movl	$17638, %edi                    # imm = 0x44E6
 	callq	jhc_case_fell_off
 .Lfunc_end76:
 	.size	fW$__fW$__fHos_User_SysCall_hosAddMapping, .Lfunc_end76-fW$__fW$__fHos_User_SysCall_hosAddMapping
@@ -11135,8 +11137,8 @@ fData_Binary_get$d5:                    # @"fData_Binary_get$d5"
 	movq	(%rax), %rsi
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r12, 24(%rbx)
-	movq	%r13, 32(%rbx)
+	movq	%r13, 24(%rbx)
+	movq	%r12, 32(%rbx)
 	leaq	40(%rbx), %r15
 	movq	%r15, %rdi
 	callq	eval
@@ -11194,20 +11196,20 @@ fData_Binary_get$d5:                    # @"fData_Binary_get$d5"
 	movq	%rbp, 48(%rbx)
 	movq	%r13, 56(%rbx)
 	leaq	64(%rbx), %r15
-	movl	$_g1800941159+1, %esi
+	movl	$_g1158825575+1, %esi
 	movq	%r15, %rdi
 	callq	eval
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -11231,10 +11233,10 @@ fData_Binary_get$d5:                    # @"fData_Binary_get$d5"
 	movq	(%rax), %rcx
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r13, 64(%rbx)
-	movq	%r12, 72(%rbx)
 	movq	%rcx, (%rsp)                    # 8-byte Spill
-	movq	%rcx, 80(%rbx)
+	movq	%rcx, 64(%rbx)
+	movq	%r12, 72(%rbx)
+	movq	%r13, 80(%rbx)
 	leaq	88(%rbx), %r15
 	movq	%r15, %rdi
 	movq	%r14, %rsi
@@ -11242,14 +11244,14 @@ fData_Binary_get$d5:                    # @"fData_Binary_get$d5"
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -11273,9 +11275,9 @@ fData_Binary_get$d5:                    # @"fData_Binary_get$d5"
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r13, 88(%rbx)
-	movq	%r15, 96(%rbx)
-	movq	%r12, 104(%rbx)
+	movq	%r12, 88(%rbx)
+	movq	%r13, 96(%rbx)
+	movq	%r15, 104(%rbx)
 	leaq	112(%rbx), %rdi
 	movq	cCHos_User_IPC_RoutedMessage(%rip), %rsi
 	callq	s_alloc
@@ -11388,10 +11390,10 @@ fData_Binary_get$d7:                    # @"fData_Binary_get$d7"
 	movq	(%rax), %rcx
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r12, 32(%rbx)
-	movq	%r13, 40(%rbx)
 	movq	%rcx, (%rsp)                    # 8-byte Spill
-	movq	%rcx, 48(%rbx)
+	movq	%rcx, 32(%rbx)
+	movq	%r13, 40(%rbx)
+	movq	%r12, 48(%rbx)
 	leaq	56(%rbx), %r15
 	movq	%r15, %rdi
 	movq	%r14, %rsi
@@ -11399,14 +11401,14 @@ fData_Binary_get$d7:                    # @"fData_Binary_get$d7"
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -11452,9 +11454,9 @@ fData_Binary_get$d7:                    # @"fData_Binary_get$d7"
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r13, 56(%rbx)
-	movq	%r12, 64(%rbx)
-	movq	%r15, 72(%rbx)
+	movq	%r12, 56(%rbx)
+	movq	%r15, 64(%rbx)
+	movq	%r13, 72(%rbx)
 	leaq	80(%rbx), %rdi
 	movq	cCHos_Common_Bundle_BundleItem(%rip), %rsi
 	callq	s_alloc
@@ -11508,108 +11510,106 @@ fHos_User_IPC_transmitMsg$d15:          # @"fHos_User_IPC_transmitMsg$d15"
 	.cfi_offset %r14, -32
 	.cfi_offset %r15, -24
 	.cfi_offset %rbp, -16
-	movq	%r9, (%rsp)                     # 8-byte Spill
+	movq	%r9, %r15
 	movq	%r8, 8(%rsp)                    # 8-byte Spill
-	movq	%rcx, %rbp
-	movq	%rdx, 16(%rsp)                  # 8-byte Spill
-	movq	%rsi, %r12
-	movq	%rdi, %r15
-	movq	88(%rsp), %rsi
-	movq	80(%rsp), %rbx
-	movq	96(%rsp), %r14
-	movq	%r14, (%rdi)
-	movq	%r8, 8(%rdi)
-	movq	%rbx, 16(%rdi)
-	movq	%r12, 24(%rdi)
+	movq	%rcx, %r12
+	movq	%rdx, (%rsp)                    # 8-byte Spill
+	movq	%rdi, %r14
+	movq	88(%rsp), %rax
+	movq	%rax, 16(%rsp)                  # 8-byte Spill
+	movq	80(%rsp), %rbp
+	movq	96(%rsp), %rbx
+	movq	%rbx, (%rdi)
+	movq	%rcx, 8(%rdi)
+	movq	%r8, 16(%rdi)
+	movq	%rbp, 24(%rdi)
 	leaq	32(%rdi), %r13
 	movq	%r13, %rdi
-	movq	%r14, %rdx
-	callq	bapply__78295
+	movq	%rbx, %rdx
+	callq	bapply__84512
 	movq	%r13, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	%r12, 32(%r15)
-	leaq	40(%r15), %rdi
+	callq	bapply__84513
+	movq	%rbp, 32(%r14)
+	leaq	40(%r14), %rdi
 	movq	cFHos_User_IPC_transmitMsg$d16(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$E__fHos_User_IPC_transmitMsg$d16+3, (%rax)
-	movq	%r14, 8(%rax)
-	movq	%rbp, 16(%rax)
+	movq	%rbx, 8(%rax)
+	movq	%r15, 16(%rax)
 	orq	$1, %r13
-	movq	%r13, 40(%r15)
-	leaq	48(%r15), %r14
-	movq	%r14, %rdi
-	movq	%r12, %rsi
+	movq	%r13, 40(%r14)
+	leaq	48(%r14), %rbx
+	movq	%rbx, %rdi
+	movq	%rbp, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
-	movq	%r14, %rdi
+	callq	bapply__84512
+	movq	%rbx, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	%rbx, 48(%r15)
-	leaq	56(%r15), %rdi
+	callq	bapply__84513
+	movq	%r12, 48(%r14)
+	leaq	56(%r14), %rdi
 	movq	cFHos_User_IPC_transmitMsg$d17(%rip), %rsi
 	callq	s_alloc
-	movq	%rax, %r12
+	movq	%rax, %r15
 	movq	$E__fHos_User_IPC_transmitMsg$d17+3, (%rax)
-	movq	%r13, 8(%rax)
 	movq	(%rsp), %rax                    # 8-byte Reload
-	movq	%rax, 16(%r12)
-	orq	$1, %r12
-	movq	24(%rbx), %rax
-	movq	%rax, (%rsp)                    # 8-byte Spill
-	movq	8(%rbx), %rsi
-	movq	16(%rbx), %r14
-	movq	%r12, 56(%r15)
-	movq	%r12, 64(%r15)
-	leaq	72(%r15), %r13
-	movq	%r14, 72(%r15)
-	leaq	80(%r15), %rbp
-	movq	%rbp, %rdi
+	movq	%rax, 16(%r15)
+	movq	%r13, 8(%r15)
+	orq	$1, %r15
+	movq	24(%r12), %rbp
+	movq	8(%r12), %rbx
+	movq	16(%r12), %rsi
+	movq	%r15, 56(%r14)
+	movq	%r15, 64(%r14)
+	leaq	72(%r14), %r12
+	movq	%rbx, 72(%r14)
+	leaq	80(%r14), %r13
+	movq	%r13, %rdi
 	callq	eval
-	movq	%rbp, %rdi
+	movq	%r13, %rdi
 	movq	%rax, %rsi
-	movq	%r12, %rdx
-	callq	bapply__78295
-	movq	%rbp, %rdi
+	movq	%r15, %rdx
+	callq	bapply__84512
+	movq	%r13, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	%rbp, %rdi
-	movq	%r14, %rsi
+	callq	bapply__84513
+	movq	%r13, %rdi
+	movq	%rbx, %rsi
 	callq	eval
-	movq	%rax, %r14
-	movq	%rax, 80(%r15)
-	leaq	88(%r15), %rbp
+	movq	%rax, %rbx
+	movq	%rax, 80(%r14)
+	leaq	88(%r14), %r13
 	movq	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3(%rip), %rsi
-	movq	%rbp, %rdi
-	callq	s_alloc
-	movq	$E__fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3+3, (%rax)
-	movq	%r12, 8(%rax)
-	movq	(%rsp), %rcx                    # 8-byte Reload
-	movq	%rcx, 16(%rax)
-	orq	$1, %rax
-	movq	%rbp, %rdi
-	movq	%r14, %rsi
-	movq	%rax, %rdx
-	callq	bapply__78295
-	movq	%rbp, %rdi
-	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	8(%rsp), %rbx                   # 8-byte Reload
-	movq	%rbx, 64(%r15)
-	movq	cFHos_User_IPC_transmitMsg$d18(%rip), %rsi
 	movq	%r13, %rdi
 	callq	s_alloc
-	movq	$E__fHos_User_IPC_transmitMsg$d18+3, (%rax)
-	movq	16(%rsp), %rcx                  # 8-byte Reload
-	movq	%rcx, 16(%rax)
-	movq	%r12, 8(%rax)
+	movq	$E__fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3+3, (%rax)
+	movq	%r15, 8(%rax)
+	movq	%rbp, 16(%rax)
 	orq	$1, %rax
 	movq	%r13, %rdi
 	movq	%rbx, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r13, %rdi
+	movq	%rax, %rsi
+	callq	bapply__84513
+	movq	8(%rsp), %rbx                   # 8-byte Reload
+	movq	%rbx, 64(%r14)
+	movq	cFHos_User_IPC_transmitMsg$d18(%rip), %rsi
+	movq	%r12, %rdi
+	callq	s_alloc
+	movq	$E__fHos_User_IPC_transmitMsg$d18+3, (%rax)
+	movq	%r15, 8(%rax)
+	movq	16(%rsp), %rcx                  # 8-byte Reload
+	movq	%rcx, 16(%rax)
+	orq	$1, %rax
+	movq	%r12, %rdi
+	movq	%rbx, %rsi
+	movq	%rax, %rdx
+	callq	bapply__84512
+	movq	%r12, %rdi
 	movq	%rax, %rsi
 	addq	$24, %rsp
 	.cfi_def_cfa_offset 56
@@ -11625,7 +11625,7 @@ fHos_User_IPC_transmitMsg$d15:          # @"fHos_User_IPC_transmitMsg$d15"
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end79:
 	.size	fHos_User_IPC_transmitMsg$d15, .Lfunc_end79-fHos_User_IPC_transmitMsg$d15
 	.cfi_endproc
@@ -11655,68 +11655,67 @@ fHos_User_IPC_transmitMsg$d8:           # @"fHos_User_IPC_transmitMsg$d8"
 	.cfi_offset %r14, -32
 	.cfi_offset %r15, -24
 	.cfi_offset %rbp, -16
-	movq	%r8, (%rsp)                     # 8-byte Spill
-	movq	%rcx, %r14
-	movq	%rdx, %r13
-	movq	%rsi, %r12
+	movq	%r9, %r14
+	movq	%r8, %r12
+	movq	%rcx, %r13
+	movq	%rdx, (%rsp)                    # 8-byte Spill
 	movq	%rdi, %rbx
-	movq	64(%rsp), %rbp
-	movq	%rsi, (%rdi)
-	movq	%rbp, 8(%rdi)
-	movq	%rcx, 16(%rdi)
-	leaq	24(%rdi), %r15
-	movq	%r15, %rdi
-	movq	%r9, %rsi
-	movq	%rbp, %rdx
-	callq	bapply__78295
-	movq	%r15, %rdi
+	movq	64(%rsp), %r15
+	movq	%r15, (%rdi)
+	movq	%r8, 8(%rdi)
+	movq	%r9, 16(%rdi)
+	leaq	24(%rdi), %rbp
+	movq	%rbp, %rdi
+	movq	%r15, %rdx
+	callq	bapply__84512
+	movq	%rbp, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r12, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cFHos_User_IPC_transmitMsg$d9(%rip), %rsi
 	callq	s_alloc
-	movq	%rax, %r15
+	movq	%rax, %rbp
 	movq	$E__fHos_User_IPC_transmitMsg$d9+3, (%rax)
+	movq	%r15, 8(%rax)
 	movq	%r13, 16(%rax)
-	movq	%rbp, 8(%rax)
-	orq	$1, %r15
-	movq	%r15, 32(%rbx)
-	leaq	40(%rbx), %r13
-	movq	%r13, %rdi
+	orq	$1, %rbp
+	movq	%rbp, 32(%rbx)
+	leaq	40(%rbx), %r15
+	movq	%r15, %rdi
 	movq	%r12, %rsi
-	movq	%r15, %rdx
-	callq	bapply__78295
-	movq	%r13, %rdi
+	movq	%rbp, %rdx
+	callq	bapply__84512
+	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, 40(%rbx)
 	leaq	48(%rbx), %rdi
 	movq	cFHos_User_IPC_transmitMsg$d10(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$E__fHos_User_IPC_transmitMsg$d10+3, (%rax)
-	movq	%r15, 8(%rax)
 	movq	(%rsp), %rax                    # 8-byte Reload
 	movq	%rax, 16(%r12)
+	movq	%rbp, 8(%r12)
 	orq	$1, %r12
 	movq	24(%r14), %r13
-	movq	8(%r14), %rsi
-	movq	16(%r14), %r14
+	movq	8(%r14), %r15
+	movq	16(%r14), %rsi
 	movq	%r12, 48(%rbx)
-	movq	%r14, 56(%rbx)
-	leaq	64(%rbx), %r15
-	movq	%r15, %rdi
+	movq	%r15, 56(%rbx)
+	leaq	64(%rbx), %r14
+	movq	%r14, %rdi
 	callq	eval
-	movq	%r15, %rdi
+	movq	%r14, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
-	movq	%r15, %rdi
+	callq	bapply__84512
+	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	%r15, %rdi
-	movq	%r14, %rsi
+	callq	bapply__84513
+	movq	%r14, %rdi
+	movq	%r15, %rsi
 	callq	eval
 	movq	%rax, %r14
 	movq	%rax, 64(%rbx)
@@ -11731,7 +11730,7 @@ fHos_User_IPC_transmitMsg$d8:           # @"fHos_User_IPC_transmitMsg$d8"
 	movq	%rbx, %rdi
 	movq	%r14, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	addq	$8, %rsp
@@ -11748,7 +11747,7 @@ fHos_User_IPC_transmitMsg$d8:           # @"fHos_User_IPC_transmitMsg$d8"
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end80:
 	.size	fHos_User_IPC_transmitMsg$d8, .Lfunc_end80-fHos_User_IPC_transmitMsg$d8
 	.cfi_endproc
@@ -11869,8 +11868,8 @@ fInstance$__iData_Binary_get_Hos_Common_Bundle_Tag: # @"fInstance$__iData_Binary
 	movq	(%rax), %r15
 	movq	8(%rax), %r13
 	movq	16(%rax), %rbp
-	movq	%r15, 16(%rbx)
-	movq	%rbp, 24(%rbx)
+	movq	%rbp, 16(%rbx)
+	movq	%r15, 24(%rbx)
 	movq	%r13, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cCHos_Common_Bundle_Tag(%rip), %rsi
@@ -12143,9 +12142,9 @@ fInstance$__iData_Binary_get_Hos_Common_Bundle_TagName: # @"fInstance$__iData_Bi
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r13, (%rbx)
-	movq	%r15, 8(%rbx)
-	movq	%r12, 16(%rbx)
+	movq	%r12, (%rbx)
+	movq	%r13, 8(%rbx)
+	movq	%r15, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -12289,9 +12288,9 @@ fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage: # @"fInstance$__iData_Bin
 	movq	(%rax), %r13
 	movq	8(%rax), %r15
 	movq	16(%rax), %r12
-	movq	%r12, 8(%rbx)
+	movq	%r15, 8(%rbx)
 	movq	%r13, 16(%rbx)
-	movq	%r15, 24(%rbx)
+	movq	%r12, 24(%rbx)
 	leaq	32(%rbx), %r14
 	movq	%r14, %rdi
 	movq	%r13, %rsi
@@ -12379,11 +12378,11 @@ fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage: # @"fInstance$__iData_Bin
 .LBB86_19:
 	movq	%r14, %rdi
 	movq	%r15, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	addq	$8, %rsp
@@ -12400,7 +12399,7 @@ fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage: # @"fInstance$__iData_Bin
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .LBB86_20:
 	.cfi_def_cfa_offset 64
 	movq	8(%rax), %rsi
@@ -12409,9 +12408,9 @@ fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage: # @"fInstance$__iData_Bin
 	movq	(%rax), %r12
 	movq	8(%rax), %r13
 	movq	16(%rax), %rbp
-	movq	%r13, 40(%rbx)
-	movq	%r12, 48(%rbx)
-	movq	%rbp, 56(%rbx)
+	movq	%rbp, 40(%rbx)
+	movq	%r13, 48(%rbx)
+	movq	%r12, 56(%rbx)
 	leaq	64(%rbx), %rdi
 	movq	cCHos_Init_Msg_InitSendArgs(%rip), %rsi
 	callq	s_alloc
@@ -12501,9 +12500,9 @@ fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse: # @"fInstance$__iData_Bi
 	movq	(%rax), %r13
 	movq	8(%rax), %r15
 	movq	16(%rax), %r14
-	movq	%r15, 8(%rbx)
-	movq	%r14, 16(%rbx)
-	movq	%r13, 24(%rbx)
+	movq	%r14, 8(%rbx)
+	movq	%r13, 16(%rbx)
+	movq	%r15, 24(%rbx)
 	leaq	32(%rbx), %r12
 	movq	%r12, %rdi
 	movq	%r13, %rsi
@@ -12582,11 +12581,11 @@ fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse: # @"fInstance$__iData_Bi
 .LBB87_14:
 	movq	%r12, %rdi
 	movq	%r15, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r12, %rdi
 	movq	%rax, %rsi
 	movq	%r14, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r12, %rdi
 	movq	%rax, %rsi
 	addq	$8, %rsp
@@ -12603,7 +12602,7 @@ fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse: # @"fInstance$__iData_Bi
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end87:
 	.size	fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse, .Lfunc_end87-fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse
 	.cfi_endproc
@@ -12698,8 +12697,8 @@ fInstance$__iData_Binary_get_Hos_Storage_Msg_QId: # @"fInstance$__iData_Binary_g
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r12, 8(%rbx)
-	movq	%r13, 16(%rbx)
+	movq	%r13, 8(%rbx)
+	movq	%r12, 16(%rbx)
 	movq	%r15, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
@@ -12824,9 +12823,9 @@ fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage: # @"fInstance$__iDa
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r13, 24(%rbx)
-	movq	%r12, 32(%rbx)
-	movq	%r15, 40(%rbx)
+	movq	%r15, 24(%rbx)
+	movq	%r13, 32(%rbx)
+	movq	%r12, 40(%rbx)
 	leaq	48(%rbx), %rdi
 	movq	cCHos_Storage_Msg_StorageCommitTransaction(%rip), %rsi
 	callq	s_alloc
@@ -12897,9 +12896,9 @@ fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage: # @"fInstance$__iDa
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r12, 24(%rbx)
+	movq	%r13, 24(%rbx)
 	movq	%r15, 32(%rbx)
-	movq	%r13, 40(%rbx)
+	movq	%r12, 40(%rbx)
 	leaq	48(%rbx), %rdi
 	movq	cCHos_Storage_Msg_StorageTransactionStatus(%rip), %rsi
 	callq	s_alloc
@@ -13084,9 +13083,9 @@ fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage: # @"fInstance$__iDa
 	movq	(%rax), %r15
 	movq	8(%rax), %r13
 	movq	16(%rax), %rbp
-	movq	%r13, 40(%rbx)
-	movq	%r15, 48(%rbx)
-	movq	%rbp, 56(%rbx)
+	movq	%r15, 40(%rbx)
+	movq	%rbp, 48(%rbx)
+	movq	%r13, 56(%rbx)
 	leaq	64(%rbx), %rdi
 	movq	cCHos_Storage_Msg_StoragePerformQuery(%rip), %rsi
 	callq	s_alloc
@@ -13319,9 +13318,9 @@ fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse: # @"fInstance$__iD
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r12, 24(%rbx)
+	movq	%r15, 24(%rbx)
 	movq	%r13, 32(%rbx)
-	movq	%r15, 40(%rbx)
+	movq	%r12, 40(%rbx)
 	leaq	48(%rbx), %rdi
 	movq	cCHos_Storage_Msg_StorageQueryResult(%rip), %rsi
 	callq	s_alloc
@@ -13397,9 +13396,9 @@ fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse: # @"fInstance$__iD
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r13, 24(%rbx)
+	movq	%r12, 24(%rbx)
 	movq	%r15, 32(%rbx)
-	movq	%r12, 40(%rbx)
+	movq	%r13, 40(%rbx)
 	leaq	48(%rbx), %rdi
 	movq	cCHos_Storage_Msg_StorageStartedTask(%rip), %rsi
 	callq	s_alloc
@@ -13432,8 +13431,8 @@ fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse: # @"fInstance$__iD
 	movq	8(%rax), %r13
 	movq	16(%rax), %rbp
 	movq	%r15, 40(%rbx)
-	movq	%rbp, 48(%rbx)
-	movq	%r13, 56(%rbx)
+	movq	%r13, 48(%rbx)
+	movq	%rbp, 56(%rbx)
 	leaq	64(%rbx), %rdi
 	movq	cCHos_Storage_Msg_StorageTransaction(%rip), %rsi
 	callq	s_alloc
@@ -13574,11 +13573,11 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d11: # @"fInstance$__iData_
 	.cfi_offset %r15, -24
 	.cfi_offset %rbp, -16
 	movq	%r8, %r13
-	movq	%rcx, %r14
-	movl	%edx, %ebp
+	movl	%ecx, %ebp
+	movq	%rdx, %r14
 	movq	%rsi, %r15
 	movq	%rdi, %rbx
-	movq	%rcx, (%rdi)
+	movq	%rdx, (%rdi)
 	movq	%rsi, 8(%rdi)
 	movq	%r8, 16(%rdi)
 	leaq	24(%rdi), %r12
@@ -13634,32 +13633,32 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d11: # @"fInstance$__iData_
 	movq	%rax, 16(%rsp)                  # 8-byte Spill
 	movq	%rax, 24(%rbx)
 	movq	%r13, 32(%rbx)
-	leaq	40(%rbx), %rbp
-	movq	%rbp, %rdi
+	leaq	40(%rbx), %r12
+	movq	%r12, %rdi
 	callq	eval
-	movq	%rax, %r12
-	testl	$1020, %r12d                    # imm = 0x3FC
+	movq	%rax, %rbp
+	testl	$1020, %ebp                     # imm = 0x3FC
 	je	.LBB95_5
 # %bb.4:
-	shrl	$2, %r12d
+	shrl	$2, %ebp
 	movq	%r14, %r15
 	movl	12(%rsp), %r14d                 # 4-byte Reload
 	incl	%r14d
 	movq	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13(%rip), %rsi
-	movq	%rbp, %rdi
+	movq	%r12, %rdi
 	callq	s_alloc
-	movq	%rax, %rbp
+	movq	%rax, %r12
 	movq	$1769474, (%rax)                # imm = 0x1B0002
-	movb	%r12b, 16(%rax)
 	movq	%r15, 8(%rax)
+	movb	%bpl, 16(%rax)
 	movq	%rax, 40(%rbx)
 	leaq	48(%rbx), %rdi
-	movq	cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000(%rip), %rsi
+	movq	cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000+3, (%rax)
+	movq	$E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066+3, (%rax)
 	movl	%r14d, 16(%rax)
-	movq	%rbp, 8(%rax)
+	movq	%r12, 8(%rax)
 	orq	$1, %r15
 .LBB95_5:
 	movq	16(%rsp), %r14                  # 8-byte Reload
@@ -13672,11 +13671,11 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d11: # @"fInstance$__iData_
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	movq	%r14, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	addq	$24, %rsp
@@ -13693,7 +13692,7 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d11: # @"fInstance$__iData_
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end95:
 	.size	fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d11, .Lfunc_end95-fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d11
 	.cfi_endproc
@@ -13722,9 +13721,9 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d2: # @"fInstance$__iData_B
 	movq	%rdx, %r14
 	movq	%rsi, %r15
 	movq	%rdi, %r12
-	movq	%rdx, (%rdi)
+	movq	%rcx, (%rdi)
 	movq	%rsi, 8(%rdi)
-	movq	%rcx, 16(%rdi)
+	movq	%rdx, 16(%rdi)
 	addq	$24, %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -13779,8 +13778,8 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d5: # @"fInstance$__iData_B
 	movq	%rsi, %r15
 	movq	%rdi, %r12
 	movq	%rdx, (%rdi)
-	movq	%rcx, 8(%rdi)
-	movq	%rsi, 16(%rdi)
+	movq	%rsi, 8(%rdi)
+	movq	%rcx, 16(%rdi)
 	addq	$24, %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -13846,10 +13845,10 @@ fInstance$__iData_Binary_get_Jhc_Prim_Prim_Bool: # @"fInstance$__iData_Binary_ge
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -13954,10 +13953,10 @@ fInstance$__iData_Binary_get_Jhc_Type_Basic_Char: # @"fInstance$__iData_Binary_g
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -14187,19 +14186,19 @@ fW$__fData_Binary_put$d2:               # @"fW$__fData_Binary_put$d2"
 	.cfi_offset %r14, -24
 	.cfi_offset %r15, -16
 	movq	%r8, %r15
-	movq	%rcx, %r14
-	movq	%rsi, %r12
+	movq	%rdx, %r12
+	movq	%rsi, %r14
 	movq	%rdi, %rbx
-	movq	%r8, (%rdi)
-	movq	%rcx, 8(%rdi)
+	movq	%rsi, (%rdi)
+	movq	%r8, 8(%rdi)
 	leaq	16(%rdi), %r13
 	movq	%r13, %rdi
-	movq	%rdx, %rsi
+	movq	%rcx, %rsi
 	movq	%r8, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r13, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, 16(%rbx)
 	addq	$24, %rbx
 	movq	cFW$__fData_Binary_put$d3(%rip), %rsi
@@ -14212,7 +14211,7 @@ fW$__fData_Binary_put$d2:               # @"fW$__fData_Binary_put$d2"
 	movq	%rbx, %rdi
 	movq	%r14, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	popq	%rbx
@@ -14225,7 +14224,7 @@ fW$__fData_Binary_put$d2:               # @"fW$__fData_Binary_put$d2"
 	.cfi_def_cfa_offset 16
 	popq	%r15
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end104:
 	.size	fW$__fData_Binary_put$d2, .Lfunc_end104-fW$__fData_Binary_put$d2
 	.cfi_endproc
@@ -14251,19 +14250,19 @@ fW$__fData_Binary_put$d4:               # @"fW$__fData_Binary_put$d4"
 	.cfi_offset %r14, -24
 	.cfi_offset %r15, -16
 	movq	%r8, %r12
-	movq	%rcx, %r15
-	movq	%rsi, %r13
+	movq	%rcx, %r13
+	movq	%rsi, %r15
 	movq	%rdi, %rbx
-	movq	%r8, (%rdi)
-	movq	%rcx, 8(%rdi)
+	movq	%rsi, (%rdi)
+	movq	%r8, 8(%rdi)
 	leaq	16(%rdi), %r14
 	movq	%r14, %rdi
 	movq	%rdx, %rsi
 	movq	%r8, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cFW$__fData_Binary_put$d5(%rip), %rsi
@@ -14273,20 +14272,20 @@ fW$__fData_Binary_put$d4:               # @"fW$__fData_Binary_put$d4"
 	movq	%r12, 8(%rax)
 	movq	%r13, 16(%rax)
 	orq	$1, %r14
-	movq	8(%r15), %rsi
-	movq	16(%r15), %r12
 	movq	24(%r15), %r13
-	movq	%r12, 24(%rbx)
+	movq	8(%r15), %rsi
+	movq	16(%r15), %r15
+	movq	%r15, 24(%rbx)
 	movq	%r14, 32(%rbx)
-	leaq	40(%rbx), %r15
-	movq	%r15, %rdi
+	leaq	40(%rbx), %r12
+	movq	%r12, %rdi
 	movq	%r14, %rdx
-	callq	bapply__78295
-	movq	%r15, %rdi
+	callq	bapply__84512
+	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	%r15, %rdi
-	movq	%r12, %rsi
+	callq	bapply__84513
+	movq	%r12, %rdi
+	movq	%r15, %rsi
 	callq	eval
 	movq	%rax, %r15
 	movq	%rax, 40(%rbx)
@@ -14295,13 +14294,13 @@ fW$__fData_Binary_put$d4:               # @"fW$__fData_Binary_put$d4"
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6+3, (%rax)
-	movq	%r14, 8(%rax)
 	movq	%r13, 16(%rax)
+	movq	%r14, 8(%rax)
 	orq	$1, %rax
 	movq	%rbx, %rdi
 	movq	%r15, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	popq	%rbx
@@ -14314,7 +14313,7 @@ fW$__fData_Binary_put$d4:               # @"fW$__fData_Binary_put$d4"
 	.cfi_def_cfa_offset 16
 	popq	%r15
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end105:
 	.size	fW$__fData_Binary_put$d4, .Lfunc_end105-fW$__fData_Binary_put$d4
 	.cfi_endproc
@@ -14340,19 +14339,18 @@ fW$__fData_Binary_put$d6:               # @"fW$__fData_Binary_put$d6"
 	.cfi_offset %r14, -24
 	.cfi_offset %r15, -16
 	movq	%r8, %r12
-	movq	%rdx, %r15
-	movq	%rsi, %r13
+	movq	%rcx, %r15
+	movq	%rdx, %r13
 	movq	%rdi, %rbx
-	movq	%rdx, (%rdi)
+	movq	%rcx, (%rdi)
 	movq	%r8, 8(%rdi)
 	leaq	16(%rdi), %r14
 	movq	%r14, %rdi
-	movq	%rcx, %rsi
 	movq	%r8, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cFW$__fData_Binary_put$d7(%rip), %rsi
@@ -14362,20 +14360,20 @@ fW$__fData_Binary_put$d6:               # @"fW$__fData_Binary_put$d6"
 	movq	%r13, 16(%rax)
 	movq	%r12, 8(%rax)
 	orq	$1, %r14
-	movq	8(%r15), %rsi
-	movq	16(%r15), %r12
 	movq	24(%r15), %r13
-	movq	%r12, 24(%rbx)
+	movq	8(%r15), %rsi
+	movq	16(%r15), %r15
+	movq	%r15, 24(%rbx)
 	movq	%r14, 32(%rbx)
-	leaq	40(%rbx), %r15
-	movq	%r15, %rdi
+	leaq	40(%rbx), %r12
+	movq	%r12, %rdi
 	movq	%r14, %rdx
-	callq	bapply__78295
-	movq	%r15, %rdi
+	callq	bapply__84512
+	movq	%r12, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	%r15, %rdi
-	movq	%r12, %rsi
+	callq	bapply__84513
+	movq	%r12, %rdi
+	movq	%r15, %rsi
 	callq	eval
 	movq	%rax, %r15
 	movq	%rax, 40(%rbx)
@@ -14384,13 +14382,13 @@ fW$__fData_Binary_put$d6:               # @"fW$__fData_Binary_put$d6"
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6+3, (%rax)
-	movq	%r14, 8(%rax)
 	movq	%r13, 16(%rax)
+	movq	%r14, 8(%rax)
 	orq	$1, %rax
 	movq	%rbx, %rdi
 	movq	%r15, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	popq	%rbx
@@ -14403,7 +14401,7 @@ fW$__fData_Binary_put$d6:               # @"fW$__fData_Binary_put$d6"
 	.cfi_def_cfa_offset 16
 	popq	%r15
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end106:
 	.size	fW$__fData_Binary_put$d6, .Lfunc_end106-fW$__fData_Binary_put$d6
 	.cfi_endproc
@@ -14435,39 +14433,38 @@ fW$__fData_Binary_put$d8:               # @"fW$__fData_Binary_put$d8"
 	.cfi_offset %rbp, -16
 	movq	%r9, %r14
 	movq	%r8, (%rsp)                     # 8-byte Spill
-	movq	%rcx, %r12
-	movq	%rsi, %rbp
+	movq	%rcx, %r13
+	movq	%rdx, %r12
 	movq	%rdi, %rbx
 	movq	64(%rsp), %r15
-	movq	%rcx, (%rdi)
-	movq	%r9, 8(%rdi)
-	movq	%r15, 16(%rdi)
-	leaq	24(%rdi), %r13
-	movq	%r13, %rdi
-	movq	%rdx, %rsi
+	movq	%r15, (%rdi)
+	movq	%rdx, 8(%rdi)
+	movq	%r9, 16(%rdi)
+	leaq	24(%rdi), %rbp
+	movq	%rbp, %rdi
 	movq	%r15, %rdx
-	callq	bapply__78295
-	movq	%r13, %rdi
+	callq	bapply__84512
+	movq	%rbp, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r12, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cFW$__fData_Binary_put$d9(%rip), %rsi
 	callq	s_alloc
-	movq	%rax, %r13
+	movq	%rax, %rbp
 	movq	$E__fW$__fData_Binary_put$d9+3, (%rax)
-	movq	%rbp, 16(%rax)
 	movq	%r15, 8(%rax)
-	orq	$1, %r13
-	movq	%r13, 32(%rbx)
+	movq	%r13, 16(%rax)
+	orq	$1, %rbp
+	movq	%rbp, 32(%rbx)
 	leaq	40(%rbx), %r15
 	movq	%r15, %rdi
 	movq	%r12, %rsi
-	movq	%r13, %rdx
-	callq	bapply__78295
+	movq	%rbp, %rdx
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, 40(%rbx)
 	leaq	48(%rbx), %rdi
 	movq	cFW$__fData_Binary_put$d10(%rip), %rsi
@@ -14476,22 +14473,22 @@ fW$__fData_Binary_put$d8:               # @"fW$__fData_Binary_put$d8"
 	movq	$E__fW$__fData_Binary_put$d10+3, (%rax)
 	movq	(%rsp), %rax                    # 8-byte Reload
 	movq	%rax, 16(%r12)
-	movq	%r13, 8(%r12)
+	movq	%rbp, 8(%r12)
 	orq	$1, %r12
-	movq	8(%r14), %rsi
-	movq	16(%r14), %r15
 	movq	24(%r14), %r13
-	movq	%r15, 48(%rbx)
+	movq	8(%r14), %rsi
+	movq	16(%r14), %r14
+	movq	%r14, 48(%rbx)
 	movq	%r12, 56(%rbx)
-	leaq	64(%rbx), %r14
-	movq	%r14, %rdi
+	leaq	64(%rbx), %r15
+	movq	%r15, %rdi
 	movq	%r12, %rdx
-	callq	bapply__78295
-	movq	%r14, %rdi
+	callq	bapply__84512
+	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	%r14, %rdi
-	movq	%r15, %rsi
+	callq	bapply__84513
+	movq	%r15, %rdi
+	movq	%r14, %rsi
 	callq	eval
 	movq	%rax, %r14
 	movq	%rax, 64(%rbx)
@@ -14500,13 +14497,13 @@ fW$__fData_Binary_put$d8:               # @"fW$__fData_Binary_put$d8"
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6+3, (%rax)
-	movq	%r12, 8(%rax)
 	movq	%r13, 16(%rax)
+	movq	%r12, 8(%rax)
 	orq	$1, %rax
 	movq	%rbx, %rdi
 	movq	%r14, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	addq	$8, %rsp
@@ -14523,7 +14520,7 @@ fW$__fData_Binary_put$d8:               # @"fW$__fData_Binary_put$d8"
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end107:
 	.size	fW$__fData_Binary_put$d8, .Lfunc_end107-fW$__fData_Binary_put$d8
 	.cfi_endproc
@@ -14549,8 +14546,8 @@ fW$__fData_Binary_storableB$d11:        # @"fW$__fData_Binary_storableB$d11"
 	movq	%rdx, %rsi
 	callq	eval
 	movq	(%rax), %rdx
-	movq	8(%rbx), %rsi
-	movq	16(%rbx), %rcx
+	movq	8(%rbx), %rcx
+	movq	16(%rbx), %rsi
 	movq	%r14, %rdi
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
@@ -14584,8 +14581,8 @@ fW$__fData_Binary_storableB$d3:         # @"fW$__fData_Binary_storableB$d3"
 	movq	%rdx, %rsi
 	callq	eval
 	movq	(%rax), %rdx
-	movq	8(%rbx), %rsi
-	movq	16(%rbx), %rcx
+	movq	8(%rbx), %rcx
+	movq	16(%rbx), %rsi
 	movq	%r14, %rdi
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
@@ -14619,8 +14616,8 @@ fW$__fData_Binary_storableB$d5:         # @"fW$__fData_Binary_storableB$d5"
 	movq	%rdx, %rsi
 	callq	eval
 	movq	(%rax), %rdx
-	movq	8(%rbx), %rsi
-	movq	16(%rbx), %rcx
+	movq	8(%rbx), %rcx
+	movq	16(%rbx), %rsi
 	movq	%r14, %rdi
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
@@ -14654,8 +14651,8 @@ fW$__fData_Binary_storableB$d7:         # @"fW$__fData_Binary_storableB$d7"
 	movq	%rdx, %rsi
 	callq	eval
 	movq	(%rax), %rdx
-	movq	8(%rbx), %rsi
-	movq	16(%rbx), %rcx
+	movq	8(%rbx), %rcx
+	movq	16(%rbx), %rsi
 	movq	%r14, %rdi
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
@@ -14689,8 +14686,8 @@ fW$__fData_Binary_storableB$d9:         # @"fW$__fData_Binary_storableB$d9"
 	movq	%rdx, %rsi
 	callq	eval
 	movq	(%rax), %rdx
-	movq	8(%rbx), %rsi
-	movq	16(%rbx), %rcx
+	movq	8(%rbx), %rcx
+	movq	16(%rbx), %rsi
 	movq	%r14, %rdi
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
@@ -14753,9 +14750,9 @@ fW$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2: # @"fW$__fInstanc
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r13, (%rbx)
+	movq	%r15, (%rbx)
 	movq	%r12, 8(%rbx)
-	movq	%r15, 16(%rbx)
+	movq	%r13, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cCHos_Init_Msg_InitFindProvider(%rip), %rsi
 	callq	s_alloc
@@ -14915,7 +14912,7 @@ fW$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4: # @"fW$__fInstanc
 	movq	%rax, %r14
 	movq	$E__fJhc_Basics_$pp+3, (%rax)
 	movq	$2, 8(%rax)
-	movq	$_c350, 16(%rax)
+	movq	$_c238, 16(%rax)
 	movq	%r15, 24(%rax)
 	orq	$1, %r14
 	movq	%r14, 16(%rbx)
@@ -14968,7 +14965,7 @@ fW$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5: # @"fW$__fInstanc
 	movq	%rax, %r15
 	movq	$E__fJhc_Basics_$pp+3, (%rax)
 	movq	$2, 8(%rax)
-	movq	$_c350, 16(%rax)
+	movq	$_c238, 16(%rax)
 	movq	%r14, 24(%rax)
 	orq	$1, %r15
 	movq	%r15, 16(%rbx)
@@ -15011,8 +15008,8 @@ fW$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2: # @"fW$__fInstan
 	movq	%rdx, %rbx
 	movq	%rsi, %r14
 	movq	%rdi, %r15
-	movq	%rdx, (%rdi)
-	movq	%rsi, 8(%rdi)
+	movq	%rsi, (%rdi)
+	movq	%rdx, 8(%rdi)
 	addq	$16, %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -15099,9 +15096,9 @@ fW$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3: # @"fW$__fInstan
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r13, 8(%rbx)
-	movq	%r15, 16(%rbx)
-	movq	%r12, 24(%rbx)
+	movq	%r12, 8(%rbx)
+	movq	%r13, 16(%rbx)
+	movq	%r15, 24(%rbx)
 	leaq	32(%rbx), %rdi
 	movq	cCHos_Init_Msg_InitFoundProvider(%rip), %rsi
 	callq	s_alloc
@@ -15223,7 +15220,7 @@ fW$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5: # @"fW$__fInstan
 	movq	%rax, %r14
 	movq	$E__fJhc_Basics_$pp+3, (%rax)
 	movq	$2, 8(%rax)
-	movq	$_c331, 16(%rax)
+	movq	$_c259, 16(%rax)
 	movq	%r15, 24(%rax)
 	orq	$1, %r14
 	movq	%r14, 16(%rbx)
@@ -15276,7 +15273,7 @@ fW$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6: # @"fW$__fInstan
 	movq	%rax, %r15
 	movq	$E__fJhc_Basics_$pp+3, (%rax)
 	movq	$2, 8(%rax)
-	movq	$_c331, 16(%rax)
+	movq	$_c259, 16(%rax)
 	movq	%r14, 24(%rax)
 	orq	$1, %r15
 	movq	%r15, 16(%rbx)
@@ -15322,56 +15319,56 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2: # @"fW$__f
 	.cfi_offset %r14, -32
 	.cfi_offset %r15, -24
 	.cfi_offset %rbp, -16
-	movq	%r9, %r13
+	movq	%r9, %rbx
 	movq	%r8, (%rsp)                     # 8-byte Spill
-	movq	%rcx, %r14
+	movq	%rdx, %rbp
 	movq	%rsi, %r12
-	movq	%rdi, %rbx
+	movq	%rdi, %r14
 	movq	64(%rsp), %r15
 	movq	%rsi, (%rdi)
-	movq	%rcx, 8(%rdi)
-	movq	%r15, 16(%rdi)
-	leaq	24(%rdi), %rbp
-	movq	%rbp, %rdi
-	movq	%rdx, %rsi
+	movq	%r15, 8(%rdi)
+	movq	%r9, 16(%rdi)
+	leaq	24(%rdi), %r13
+	movq	%r13, %rdi
+	movq	%rcx, %rsi
 	movq	%r15, %rdx
-	callq	bapply__78295
-	movq	%rbp, %rdi
+	callq	bapply__84512
+	movq	%r13, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	%r12, 24(%rbx)
-	leaq	32(%rbx), %rdi
+	callq	bapply__84513
+	movq	%r12, 24(%r14)
+	leaq	32(%r14), %rdi
 	movq	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3(%rip), %rsi
 	callq	s_alloc
-	movq	%rax, %rbp
+	movq	%rax, %r13
 	movq	$E__fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3+3, (%rax)
-	movq	%r13, 16(%rax)
+	movq	%rbp, 16(%rax)
 	movq	%r15, 8(%rax)
-	orq	$1, %rbp
-	movq	%rbp, 32(%rbx)
-	leaq	40(%rbx), %r15
+	orq	$1, %r13
+	movq	%r13, 32(%r14)
+	leaq	40(%r14), %r15
 	movq	%r15, %rdi
 	movq	%r12, %rsi
-	movq	%rbp, %rdx
-	callq	bapply__78295
+	movq	%r13, %rdx
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
-	movq	%r14, 40(%rbx)
-	addq	$48, %rbx
+	callq	bapply__84513
+	movq	%rbx, 40(%r14)
+	addq	$48, %r14
 	movq	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4(%rip), %rsi
-	movq	%rbx, %rdi
+	movq	%r14, %rdi
 	callq	s_alloc
 	movq	$E__fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4+3, (%rax)
-	movq	%rbp, 8(%rax)
+	movq	%r13, 8(%rax)
 	movq	(%rsp), %rcx                    # 8-byte Reload
 	movq	%rcx, 16(%rax)
 	orq	$1, %rax
-	movq	%rbx, %rdi
-	movq	%r14, %rsi
+	movq	%r14, %rdi
+	movq	%rbx, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
-	movq	%rbx, %rdi
+	callq	bapply__84512
+	movq	%r14, %rdi
 	movq	%rax, %rsi
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 56
@@ -15387,7 +15384,7 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2: # @"fW$__f
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end122:
 	.size	fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2, .Lfunc_end122-fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2
 	.cfi_endproc
@@ -15412,33 +15409,33 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5: # @"fW$__f
 	.cfi_offset %r13, -32
 	.cfi_offset %r14, -24
 	.cfi_offset %r15, -16
-	movq	%r8, %r15
-	movq	%rdx, %r12
+	movq	%r8, %r12
+	movq	%rcx, %r15
 	movq	%rsi, %r14
 	movq	%rdi, %rbx
 	movq	%rsi, (%rdi)
 	movq	%r8, 8(%rdi)
 	leaq	16(%rdi), %r13
 	movq	%r13, %rdi
-	movq	%rcx, %rsi
+	movq	%rdx, %rsi
 	movq	%r8, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r13, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, 16(%rbx)
 	addq	$24, %rbx
 	movq	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6(%rip), %rsi
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	$E__fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6+3, (%rax)
-	movq	%r15, 8(%rax)
-	movq	%r12, 16(%rax)
+	movq	%r12, 8(%rax)
+	movq	%r15, 16(%rax)
 	orq	$1, %rax
 	movq	%rbx, %rdi
 	movq	%r14, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	popq	%rbx
@@ -15451,7 +15448,7 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5: # @"fW$__f
 	.cfi_def_cfa_offset 16
 	popq	%r15
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end123:
 	.size	fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5, .Lfunc_end123-fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5
 	.cfi_endproc
@@ -15477,19 +15474,18 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7: # @"fW$__f
 	.cfi_offset %r14, -24
 	.cfi_offset %r15, -16
 	movq	%r8, %r15
+	movq	%rcx, %r12
 	movq	%rdx, %r14
-	movq	%rsi, %r12
 	movq	%rdi, %rbx
 	movq	%r8, (%rdi)
 	movq	%rdx, 8(%rdi)
 	leaq	16(%rdi), %r13
 	movq	%r13, %rdi
-	movq	%rcx, %rsi
 	movq	%r8, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r13, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, 16(%rbx)
 	addq	$24, %rbx
 	movq	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8(%rip), %rsi
@@ -15502,7 +15498,7 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7: # @"fW$__f
 	movq	%rbx, %rdi
 	movq	%r14, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	popq	%rbx
@@ -15515,7 +15511,7 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7: # @"fW$__f
 	.cfi_def_cfa_offset 16
 	popq	%r15
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end124:
 	.size	fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7, .Lfunc_end124-fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7
 	.cfi_endproc
@@ -15540,19 +15536,20 @@ fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5: # @"fW$__fInstance$__iDat
 	.cfi_offset %r13, -32
 	.cfi_offset %r14, -24
 	.cfi_offset %r15, -16
-	movq	%r8, %r15
-	movq	%rcx, %r14
-	movq	%rdx, %r12
+	movq	%r8, %r14
+	movq	%rcx, %r12
+	movq	%rsi, %r15
 	movq	%rdi, %rbx
-	movq	%rdx, (%rdi)
+	movq	%rcx, (%rdi)
 	movq	%r8, 8(%rdi)
 	leaq	16(%rdi), %r13
 	movq	%r13, %rdi
+	movq	%rdx, %rsi
 	movq	%r8, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r13, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r13, %rdi
 	movq	%r12, %rsi
 	callq	eval
@@ -15563,13 +15560,13 @@ fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5: # @"fW$__fInstance$__iDat
 	movq	%rbx, %rdi
 	callq	s_alloc
 	movq	$E__fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6+3, (%rax)
-	movq	%r15, 8(%rax)
-	movq	%r14, 16(%rax)
+	movq	%r15, 16(%rax)
+	movq	%r14, 8(%rax)
 	orq	$1, %rax
 	movq	%rbx, %rdi
 	movq	%r12, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	popq	%rbx
@@ -15582,7 +15579,7 @@ fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5: # @"fW$__fInstance$__iDat
 	.cfi_def_cfa_offset 16
 	popq	%r15
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end125:
 	.size	fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5, .Lfunc_end125-fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5
 	.cfi_endproc
@@ -15608,22 +15605,22 @@ fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2: # @"fW$__fInstance
 	.cfi_offset %r14, -24
 	.cfi_offset %r15, -16
 	movq	%r8, %r14
-	movq	%rcx, %r12
+	movq	%rdx, %r12
 	movq	%rsi, %r15
 	movq	%rdi, %rbx
 	movq	%r8, (%rdi)
-	movq	%rcx, 8(%rdi)
+	movq	%rdx, 8(%rdi)
 	leaq	16(%rdi), %r13
 	movq	%r13, %rdi
-	movq	%rdx, %rsi
+	movq	%rcx, %rsi
 	callq	eval
 	movq	%r13, %rdi
 	movq	%rax, %rsi
 	movq	%r14, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r13, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r13, %rdi
 	movq	%r12, %rsi
 	callq	eval
@@ -15640,7 +15637,7 @@ fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2: # @"fW$__fInstance
 	movq	%rbx, %rdi
 	movq	%r12, %rsi
 	movq	%rax, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	popq	%rbx
@@ -15653,7 +15650,7 @@ fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2: # @"fW$__fInstance
 	.cfi_def_cfa_offset 16
 	popq	%r15
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end126:
 	.size	fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2, .Lfunc_end126-fW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2
 	.cfi_endproc
@@ -15696,14 +15693,14 @@ fInstance$__iData_Binary_get_Jhc_Prim_Prim_$LcR: # @"fInstance$__iData_Binary_ge
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -15737,14 +15734,14 @@ fInstance$__iData_Binary_get_Jhc_Prim_Prim_$LcR: # @"fInstance$__iData_Binary_ge
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -15846,8 +15843,8 @@ fInstance$__iData_Binary_get_Jhc_Prim_Prim_$BE: # @"fInstance$__iData_Binary_get
 	movq	%rcx, %r12
 	movq	%rdx, %r13
 	movq	%rdi, %rbx
-	movq	%rcx, (%rdi)
-	movq	%rdx, 8(%rdi)
+	movq	%rdx, (%rdi)
+	movq	%rcx, 8(%rdi)
 	movq	%rsi, 24(%rsp)                  # 8-byte Spill
 	movq	%rsi, 16(%rdi)
 	leaq	24(%rdi), %r14
@@ -15861,10 +15858,10 @@ fInstance$__iData_Binary_get_Jhc_Prim_Prim_$BE: # @"fInstance$__iData_Binary_get
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r14, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r14, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -15906,24 +15903,24 @@ fInstance$__iData_Binary_get_Jhc_Prim_Prim_$BE: # @"fInstance$__iData_Binary_get
 	movq	%r15, 16(%rsp)                  # 8-byte Spill
 	.p2align	4, 0x90
 .LBB128_10:                             # =>This Inner Loop Header: Depth=1
+	movq	%r14, 40(%rbx)
 	movq	%rax, 32(%rsp)                  # 8-byte Spill
-	movq	%rax, 40(%rbx)
-	movq	%rbp, 48(%rbx)
-	movq	%r14, 56(%rbx)
+	movq	%rax, 48(%rbx)
+	movq	%rbp, 56(%rbx)
 	movq	%r15, %rdi
 	movq	24(%rsp), %rsi                  # 8-byte Reload
 	callq	fData_Binary_get
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r14, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%rbp, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -15974,9 +15971,9 @@ fInstance$__iData_Binary_get_Jhc_Prim_Prim_$BE: # @"fInstance$__iData_Binary_get
 .LBB128_6:
 	movl	$65538, %r12d                   # imm = 0x10002
 .LBB128_7:
-	movq	%r12, 40(%rbx)
-	movq	%rbp, 48(%rbx)
-	movq	%r14, 56(%rbx)
+	movq	%r14, 40(%rbx)
+	movq	%r12, 48(%rbx)
+	movq	%rbp, 56(%rbx)
 	leaq	64(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -16065,10 +16062,10 @@ fInstance$__iData_Binary_get_Jhc_Type_Basic_Maybe: # @"fInstance$__iData_Binary_
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -16115,14 +16112,14 @@ fInstance$__iData_Binary_get_Jhc_Type_Basic_Maybe: # @"fInstance$__iData_Binary_
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -16258,7 +16255,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 # %bb.3:
 	jmpq	*.LJTI130_0(,%rax,8)
 .LBB130_51:
-	movl	$_c66, %eax
+	movl	$_c365, %eax
 	cmpq	$11, %r14
 	jb	.LBB130_6
 # %bb.52:
@@ -16311,7 +16308,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 	movzwl	(%rbp), %eax
 	jmp	.LBB130_15
 .LBB130_29:
-	movl	$_c66, %eax
+	movl	$_c365, %eax
 	cmpq	$4, %r14
 	jb	.LBB130_6
 # %bb.30:
@@ -16338,7 +16335,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 	movzwl	(%rbp), %eax
 	jmp	.LBB130_38
 .LBB130_40:
-	movl	$_c66, %eax
+	movl	$_c365, %eax
 	cmpq	$8, %r14
 	jb	.LBB130_6
 # %bb.41:
@@ -16365,7 +16362,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 	movzwl	(%rbp), %eax
 	jmp	.LBB130_49
 .LBB130_18:
-	movl	$_c66, %eax
+	movl	$_c365, %eax
 	cmpq	$2, %r14
 	jb	.LBB130_6
 # %bb.19:
@@ -16392,7 +16389,7 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 	movzwl	(%rbp), %eax
 	jmp	.LBB130_27
 .LBB130_5:
-	movl	$_c66, %eax
+	movl	$_c365, %eax
 	jmp	.LBB130_6
 .LBB130_13:
 	movq	(%rbp), %r12
@@ -16591,10 +16588,10 @@ fW$__fData_Binary_getStorable:          # @"fW$__fData_Binary_getStorable"
 	retq
 .LBB130_63:
 	.cfi_def_cfa_offset 64
-	movl	$12164, %edi                    # imm = 0x2F84
+	movl	$12218, %edi                    # imm = 0x2FBA
 	callq	jhc_case_fell_off
 .LBB130_59:
-	movl	$12752, %edi                    # imm = 0x31D0
+	movl	$12806, %edi                    # imm = 0x3206
 	callq	jhc_case_fell_off
 .Lfunc_end130:
 	.size	fW$__fData_Binary_getStorable, .Lfunc_end130-fW$__fData_Binary_getStorable
@@ -16677,8 +16674,8 @@ fInstance$__iData_Binary_get_Hos_Common_Bundle_Bundle: # @"fInstance$__iData_Bin
 	movq	%rdx, %r12
 	movq	%rsi, %r13
 	movq	%rdi, %rbx
-	movq	%rdx, (%rdi)
-	movq	%rcx, 8(%rdi)
+	movq	%rcx, (%rdi)
+	movq	%rdx, 8(%rdi)
 	movq	%rsi, 16(%rdi)
 	leaq	24(%rdi), %r14
 	movq	cTHos_Common_Bundle_BundleItem(%rip), %rsi
@@ -16716,8 +16713,8 @@ fInstance$__iData_Binary_get_Hos_Common_Bundle_Bundle: # @"fInstance$__iData_Bin
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
 	movq	%r12, 24(%rbx)
-	movq	%r15, 32(%rbx)
-	movq	%r13, 40(%rbx)
+	movq	%r13, 32(%rbx)
+	movq	%r15, 40(%rbx)
 	leaq	48(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -16858,8 +16855,8 @@ fW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_GUID: # @"fW$__fInstance$__i
 	movq	(%rax), %rbp
 	movq	8(%rax), %r15
 	movq	16(%rax), %rsi
-	movq	%rbp, 32(%rbx)
-	movq	%r15, 40(%rbx)
+	movq	%r15, 32(%rbx)
+	movq	%rbp, 40(%rbx)
 	leaq	48(%rbx), %r14
 	movq	%r14, %rdi
 	callq	eval
@@ -16909,12 +16906,12 @@ fW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_GUID: # @"fW$__fInstance$__i
 	callq	eval
 	movq	(%rax), %r15
 	movq	8(%rax), %rcx
-	movq	%rcx, 8(%rsp)                   # 8-byte Spill
+	movq	%rcx, 16(%rsp)                  # 8-byte Spill
 	movq	16(%rax), %rax
-	movq	%rax, 16(%rsp)                  # 8-byte Spill
-	movq	%rax, 48(%rbx)
+	movq	%rax, 8(%rsp)                   # 8-byte Spill
+	movq	%rcx, 48(%rbx)
 	movq	%r15, 56(%rbx)
-	movq	%rcx, 64(%rbx)
+	movq	%rax, 64(%rbx)
 	leaq	72(%rbx), %rdi
 	movq	cCHos_Common_Bundle_GUID(%rip), %rsi
 	callq	s_alloc
@@ -16929,9 +16926,9 @@ fW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_GUID: # @"fW$__fInstance$__i
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	%r14, (%rax)
-	movq	8(%rsp), %rax                   # 8-byte Reload
-	movq	%rax, 8(%r15)
 	movq	16(%rsp), %rax                  # 8-byte Reload
+	movq	%rax, 8(%r15)
+	movq	8(%rsp), %rax                   # 8-byte Reload
 	movq	%rax, 16(%r15)
 	movq	%r15, 80(%rbx)
 	addq	$88, %rbx
@@ -17006,8 +17003,8 @@ E__fHos_User_IPC_transmitMsg$d17:       # @"E__fHos_User_IPC_transmitMsg$d17"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
+	movslq	16(%rsi), %r15
 	movq	8(%rsi), %rsi
-	movslq	16(%rbx), %r15
 	movq	%r14, %rdi
 	callq	eval
 	addq	(%rax), %r15
@@ -17047,8 +17044,8 @@ E__fHos_User_IPC_transmitMsg$d18:       # @"E__fHos_User_IPC_transmitMsg$d18"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
-	movslq	16(%rsi), %r15
 	movq	8(%rsi), %rsi
+	movslq	16(%rbx), %r15
 	movq	%r14, %rdi
 	callq	eval
 	addq	(%rax), %r15
@@ -17088,8 +17085,8 @@ E__fHos_User_IPC_transmitMsg$d9:        # @"E__fHos_User_IPC_transmitMsg$d9"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
-	movslq	16(%rsi), %r15
 	movq	8(%rsi), %rsi
+	movslq	16(%rbx), %r15
 	movq	%r14, %rdi
 	callq	eval
 	addq	(%rax), %r15
@@ -17129,8 +17126,8 @@ E__fHos_User_IPC_transmitMsg$d10:       # @"E__fHos_User_IPC_transmitMsg$d10"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
+	movslq	16(%rsi), %r15
 	movq	8(%rsi), %rsi
-	movslq	16(%rbx), %r15
 	movq	%r14, %rdi
 	callq	eval
 	addq	(%rax), %r15
@@ -17263,8 +17260,8 @@ fW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue: # @"fW$__fInstance
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r15, 16(%rbx)
-	movq	%r12, 24(%rbx)
+	movq	%r12, 16(%rbx)
+	movq	%r15, 24(%rbx)
 	movq	%r13, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2(%rip), %rsi
@@ -17340,8 +17337,8 @@ fW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue: # @"fW$__fInstance
 	movq	(%rax), %r15
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
-	movq	%r15, 16(%rbx)
-	movq	%r12, 24(%rbx)
+	movq	%r12, 16(%rbx)
+	movq	%r15, 24(%rbx)
 	movq	%r13, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cCHos_Common_Bundle_TextV(%rip), %rsi
@@ -17463,8 +17460,8 @@ fW$__fInstance$__iData_Binary_get_Hos_Storage_Msg_ObId: # @"fW$__fInstance$__iDa
 	movq	8(%rax), %r12
 	movq	16(%rax), %r13
 	movq	%r12, (%rbx)
-	movq	%r15, 8(%rbx)
-	movq	%r13, 16(%rbx)
+	movq	%r13, 8(%rbx)
+	movq	%r15, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -17658,8 +17655,8 @@ fW$__fR$__fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery: # @"fW$__fR
 	movq	(%rax), %r12
 	movq	8(%rax), %r15
 	movq	16(%rax), %rsi
-	movq	%r15, 16(%rbx)
-	movq	%r12, 24(%rbx)
+	movq	%r12, 16(%rbx)
+	movq	%r15, 24(%rbx)
 	leaq	32(%rbx), %r14
 	movq	%r14, %rdi
 	callq	eval
@@ -17682,9 +17679,9 @@ fW$__fR$__fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery: # @"fW$__fR
 	movq	(%rax), %r15
 	movq	8(%rax), %r13
 	movq	16(%rax), %rbp
-	movq	%r15, 32(%rbx)
-	movq	%r13, 40(%rbx)
-	movq	%rbp, 48(%rbx)
+	movq	%r13, 32(%rbx)
+	movq	%rbp, 40(%rbx)
+	movq	%r15, 48(%rbx)
 	leaq	56(%rbx), %rdi
 	movq	cCHos_Storage_Msg_TagIs(%rip), %rsi
 	callq	s_alloc
@@ -17714,8 +17711,8 @@ fW$__fR$__fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery: # @"fW$__fR
 	movq	(%rax), %r12
 	movq	8(%rax), %r15
 	movq	16(%rax), %rsi
-	movq	%r15, 16(%rbx)
-	movq	%r12, 24(%rbx)
+	movq	%r12, 16(%rbx)
+	movq	%r15, 24(%rbx)
 	leaq	32(%rbx), %r14
 	movq	%r14, %rdi
 	callq	eval
@@ -17738,9 +17735,9 @@ fW$__fR$__fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery: # @"fW$__fR
 	movq	(%rax), %r15
 	movq	8(%rax), %r13
 	movq	16(%rax), %rbp
-	movq	%r15, 32(%rbx)
+	movq	%rbp, 32(%rbx)
 	movq	%r13, 40(%rbx)
-	movq	%rbp, 48(%rbx)
+	movq	%r15, 48(%rbx)
 	leaq	56(%rbx), %rdi
 	movq	cCHos_Storage_Msg_OrQ(%rip), %rsi
 	callq	s_alloc
@@ -17818,8 +17815,8 @@ fW$__fR$__fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery: # @"fW$__fR
 	movq	(%rax), %r12
 	movq	8(%rax), %r15
 	movq	16(%rax), %rsi
-	movq	%r12, 16(%rbx)
-	movq	%r15, 24(%rbx)
+	movq	%r15, 16(%rbx)
+	movq	%r12, 24(%rbx)
 	leaq	32(%rbx), %r14
 	movq	%r14, %rdi
 	callq	eval
@@ -17869,9 +17866,9 @@ fW$__fR$__fInstance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery: # @"fW$__fR
 	movq	(%rax), %r15
 	movq	8(%rax), %r13
 	movq	16(%rax), %rbp
-	movq	%rbp, 32(%rbx)
-	movq	%r15, 40(%rbx)
-	movq	%r13, 48(%rbx)
+	movq	%r13, 32(%rbx)
+	movq	%rbp, 40(%rbx)
+	movq	%r15, 48(%rbx)
 	leaq	56(%rbx), %rdi
 	movq	cCHos_Storage_Msg_AndQ(%rip), %rsi
 	callq	s_alloc
@@ -17961,8 +17958,8 @@ fW$__fInstance$__iData_Binary_get_Hos_Storage_Msg_TxStatus: # @"fW$__fInstance$_
 	movq	(%rax), %rsi
 	movq	8(%rax), %r15
 	movq	16(%rax), %r12
-	movq	%r15, (%rbx)
-	movq	%r12, 8(%rbx)
+	movq	%r12, (%rbx)
+	movq	%r15, 8(%rbx)
 	leaq	16(%rbx), %rdi
 	callq	eval
 	movq	%rax, %rcx
@@ -17984,9 +17981,9 @@ fW$__fInstance$__iData_Binary_get_Hos_Storage_Msg_TxStatus: # @"fW$__fInstance$_
 	testl	$1020, %eax                     # imm = 0x3FC
 	jne	.LBB143_11
 .LBB143_9:
-	movq	%r13, 16(%rbx)
-	movq	%r15, 24(%rbx)
-	movq	%r12, 32(%rbx)
+	movq	%r15, 16(%rbx)
+	movq	%r12, 24(%rbx)
+	movq	%r13, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cCJhc_Prim_Prim_$LccR(%rip), %rsi
 	callq	s_alloc
@@ -18051,10 +18048,10 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d8: # @"fInstance$__iData_B
 	movq	%rdx, %r14
 	movq	%rsi, %rbp
 	movq	%rdi, %rbx
-	movq	%rdx, (%rdi)
-	movq	%r8, 8(%rdi)
+	movq	%r8, (%rdi)
+	movq	%rsi, 8(%rdi)
 	movq	%rcx, 16(%rdi)
-	movq	%rsi, 24(%rdi)
+	movq	%rdx, 24(%rdi)
 	addq	$32, %rdi
 	movq	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6(%rip), %rsi
 	callq	s_alloc
@@ -18078,14 +18075,14 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d8: # @"fInstance$__iData_B
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r13, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%r15, %rdi
 	movq	%rax, %rsi
-	callq	bapply__78296
+	callq	bapply__84513
 	movq	%r15, %rdi
 	movq	%rax, %rsi
 	callq	eval
@@ -18138,11 +18135,11 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d8: # @"fInstance$__iData_B
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	movq	%r15, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	movq	%r12, %rdx
-	callq	bapply__78295
+	callq	bapply__84512
 	movq	%rbx, %rdi
 	movq	%rax, %rsi
 	addq	$8, %rsp
@@ -18159,14 +18156,14 @@ fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d8: # @"fInstance$__iData_B
 	.cfi_def_cfa_offset 16
 	popq	%rbp
 	.cfi_def_cfa_offset 8
-	jmp	bapply__78296                   # TAILCALL
+	jmp	bapply__84513                   # TAILCALL
 .Lfunc_end144:
 	.size	fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d8, .Lfunc_end144-fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d8
 	.cfi_endproc
                                         # -- End function
-	.p2align	4, 0x90                         # -- Begin function E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000
-	.type	E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000,@function
-E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000: # @"E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000"
+	.p2align	4, 0x90                         # -- Begin function E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066
+	.type	E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066,@function
+E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066: # @"E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066"
 	.cfi_startproc
 # %bb.0:
 	pushq	%rbp
@@ -18201,10 +18198,10 @@ E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000: # @"E__fW$__fHos_User_IPC_f
 	jne	.LBB145_2
 # %bb.1:
 	leaq	16(%r14), %rdi
-	movq	cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418(%rip), %rsi
+	movq	cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r15
-	movq	$E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418+3, (%rax)
+	movq	$E__bap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482+3, (%rax)
 	movq	%r12, 8(%rax)
 	movq	$65538, 16(%rax)                # imm = 0x10002
 	orq	$1, %r15
@@ -18225,8 +18222,8 @@ E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000: # @"E__fW$__fHos_User_IPC_f
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4+3, (%rax)
-	movl	%r13d, 16(%rax)
 	movq	%r12, 8(%rax)
+	movl	%r13d, 16(%rax)
 	orq	$1, %r15
 	movq	%r15, 24(%r14)
 	addq	$32, %r14
@@ -18235,8 +18232,8 @@ E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000: # @"E__fW$__fHos_User_IPC_f
 	callq	s_alloc
 	movq	$9699330, (%rax)                # imm = 0x940002
 	movq	%r15, 8(%rax)
-	movl	%ebp, 24(%rax)
 	movq	%r12, 16(%rax)
+	movl	%ebp, 24(%rax)
 .LBB145_3:
 	movq	%rax, (%rbx)
 	addq	$8, %rsp
@@ -18255,7 +18252,7 @@ E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000: # @"E__fW$__fHos_User_IPC_f
 	.cfi_def_cfa_offset 8
 	retq
 .Lfunc_end145:
-	.size	E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000, .Lfunc_end145-E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000
+	.size	E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066, .Lfunc_end145-E__fW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066
 	.cfi_endproc
                                         # -- End function
 	.p2align	4, 0x90                         # -- Begin function E__fInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2
@@ -18426,8 +18423,8 @@ E__fW$__fData_Binary_put$d9:            # @"E__fW$__fData_Binary_put$d9"
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
-	movslq	16(%rsi), %r15
 	movq	8(%rsi), %rsi
+	movslq	16(%rbx), %r15
 	movq	%r14, %rdi
 	callq	eval
 	addq	(%rax), %r15
@@ -18545,7 +18542,7 @@ fW$__fForeign_Storable_poke:            # @"fW$__fForeign_Storable_poke"
 	retq
 .LBB152_7:
 	.cfi_def_cfa_offset 16
-	movl	$12788, %edi                    # imm = 0x31F4
+	movl	$12842, %edi                    # imm = 0x322A
 	callq	jhc_case_fell_off
 .Lfunc_end152:
 	.size	fW$__fForeign_Storable_poke, .Lfunc_end152-fW$__fForeign_Storable_poke
@@ -18743,8 +18740,8 @@ E__fW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6: # @"E__fW$__fInstance$
 	orq	$1, %rax
 	movq	%rax, (%rdi)
 	addq	$8, %r14
+	movslq	16(%rsi), %r15
 	movq	8(%rsi), %rsi
-	movslq	16(%rbx), %r15
 	movq	%r14, %rdi
 	callq	eval
 	addq	(%rax), %r15
@@ -18962,8 +18959,8 @@ fJhc_Monad_60__go:                      # @fJhc_Monad_60__go
 	movq	%rax, %rbp
 	movq	64(%rsp), %rax                  # 8-byte Reload
 	movq	%rax, (%rbp)
-	movq	%r15, 56(%rbx)
-	movq	%rbp, 64(%rbx)
+	movq	%rbp, 56(%rbx)
+	movq	%r15, 64(%rbx)
 	leaq	72(%rbx), %rdi
 	movq	cCJhc_Type_Word_Word64(%rip), %rsi
 	callq	s_alloc
@@ -19207,8 +19204,8 @@ E__fMain_serveBundle$d5:                # @"E__fMain_serveBundle$d5"
 	movq	16(%rsi), %r12
 	movq	%r12, 8(%rdi)
 	addq	$16, %rdi
-	movl	$_c303, %esi
-	movl	$_c259, %edx
+	movl	$_c212, %esi
+	movl	$_c167, %edx
 	movl	$65538, %r8d                    # imm = 0x10002
 	callq	fJhc_Show_showsPrec
 	movq	%rax, %r13
@@ -19308,8 +19305,8 @@ fR$__fJhc_Basics_zip:                   # @"fR$__fJhc_Basics_zip"
 # %bb.1:
 	movq	(%rax), %r13
 	movq	8(%rax), %r12
-	movq	%r12, 8(%rbx)
-	movq	%r13, 16(%rbx)
+	movq	%r13, 8(%rbx)
+	movq	%r12, 16(%rbx)
 	leaq	24(%rbx), %rdi
 	movq	%r15, %rsi
 	callq	eval
@@ -19402,29 +19399,28 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 # %bb.3:
 	jmpq	*.LJTI165_0(,%rax,8)
 .LBB165_4:
-	movq	$12713986, (%rbx)               # imm = 0xC20002
-	movq	$2, 8(%rbx)
+	movq	$2, (%rbx)
+	movq	$12713986, 8(%rbx)              # imm = 0xC20002
 	leaq	16(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	$2, 16(%rax)
+	movq	$2, 8(%rax)
 	jmp	.LBB165_5
 .LBB165_15:
 	movq	8(%rsi), %rbp
 	movq	%rbp, (%rbx)
-	movq	$12713986, 8(%rbx)              # imm = 0xC20002
-	movq	$10, 16(%rbx)
+	movq	$10, 8(%rbx)
+	movq	$12713986, 16(%rbx)             # imm = 0xC20002
 	leaq	24(%rbx), %r14
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	movq	%r14, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	$10, 16(%rax)
+	movq	$10, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 24(%rbx)
 	leaq	32(%rbx), %r13
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -19434,15 +19430,15 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 	movq	$7077890, (%rax)                # imm = 0x6C0002
 	movq	%r12, 8(%rax)
 	movq	%rax, 8(%rbx)
-	movq	$12582914, 16(%rbx)             # imm = 0xC00002
-	movq	%rbp, 24(%rbx)
+	movq	%rbp, 16(%rbx)
+	movq	$12582914, 24(%rbx)             # imm = 0xC00002
 	movq	cP2__W$__fData_Binary_storableB$d6(%rip), %rsi
 	movq	%r13, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$7274498, (%rax)                # imm = 0x6F0002
-	movq	$12582914, 8(%rax)              # imm = 0xC00002
-	movq	%rbp, 16(%rax)
+	movq	%rbp, 8(%rax)
+	movq	$12582914, 16(%rax)             # imm = 0xC00002
 	movq	%rax, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d7(%rip), %rsi
@@ -19455,22 +19451,22 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 	movq	%r14, %rdi
 	callq	s_alloc
 	movq	$8126466, (%rax)                # imm = 0x7C0002
-	movq	$1, 24(%rax)
-	movq	%r13, 8(%rax)
+	movq	%r15, 8(%rax)
+	movq	%r13, 16(%rax)
 	jmp	.LBB165_19
 .LBB165_18:
 	movq	8(%rsi), %rbp
 	movq	%rbp, (%rbx)
-	movq	$12713986, 8(%rbx)              # imm = 0xC20002
-	movq	$66, 16(%rbx)
+	movq	$66, 8(%rbx)
+	movq	$12713986, 16(%rbx)             # imm = 0xC20002
 	leaq	24(%rbx), %r14
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	movq	%r14, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	$66, 16(%rax)
+	movq	$66, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 24(%rbx)
 	leaq	32(%rbx), %r13
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -19480,15 +19476,15 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 	movq	$7077890, (%rax)                # imm = 0x6C0002
 	movq	%r12, 8(%rax)
 	movq	%rax, 8(%rbx)
-	movq	$12582914, 16(%rbx)             # imm = 0xC00002
-	movq	%rbp, 24(%rbx)
+	movq	%rbp, 16(%rbx)
+	movq	$12582914, 24(%rbx)             # imm = 0xC00002
 	movq	cP2__W$__fData_Binary_storableB$d6(%rip), %rsi
 	movq	%r13, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$7274498, (%rax)                # imm = 0x6F0002
-	movq	$12582914, 8(%rax)              # imm = 0xC00002
-	movq	%rbp, 16(%rax)
+	movq	%rbp, 8(%rax)
+	movq	$12582914, 16(%rax)             # imm = 0xC00002
 	movq	%rax, 32(%rbx)
 	leaq	40(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d7(%rip), %rsi
@@ -19502,20 +19498,19 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 	callq	s_alloc
 	movq	$8060930, (%rax)                # imm = 0x7B0002
 	movq	%r13, 8(%rax)
-	movq	$1, 24(%rax)
-.LBB165_19:
 	movq	%r15, 16(%rax)
+.LBB165_19:
+	movq	$1, 24(%rax)
 	jmp	.LBB165_20
 .LBB165_14:
-	movq	$12713986, (%rbx)               # imm = 0xC20002
-	movq	$70, 8(%rbx)
+	movq	$70, (%rbx)
+	movq	$12713986, 8(%rbx)              # imm = 0xC20002
 	leaq	16(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	$70, 16(%rax)
+	movq	$70, 8(%rax)
 	jmp	.LBB165_5
 .LBB165_6:
 	movq	8(%rsi), %rbp
@@ -19523,16 +19518,16 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 	movq	%rax, 16(%rsp)                  # 8-byte Spill
 	movq	%rax, (%rbx)
 	movq	%rbp, 8(%rbx)
-	movq	$12713986, 16(%rbx)             # imm = 0xC20002
-	movq	$6, 24(%rbx)
+	movq	$6, 16(%rbx)
+	movq	$12713986, 24(%rbx)             # imm = 0xC20002
 	leaq	32(%rbx), %r15
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	movq	%r15, %rdi
 	callq	s_alloc
 	movq	%rax, %r12
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	$6, 16(%rax)
+	movq	$6, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 32(%rbx)
 	leaq	40(%rbx), %r13
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -19542,16 +19537,16 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 	movq	$7077890, (%rax)                # imm = 0x6C0002
 	movq	%r12, 8(%rax)
 	movq	%rax, 16(%rbx)
-	movq	$12713986, 24(%rbx)             # imm = 0xC20002
-	movq	%rbp, 32(%rbx)
+	movq	%rbp, 24(%rbx)
+	movq	$12713986, 32(%rbx)             # imm = 0xC20002
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	movq	%r13, 8(%rsp)                   # 8-byte Spill
 	movq	%r13, %rdi
 	callq	s_alloc
 	movq	%rax, %r13
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	%rbp, 16(%rax)
+	movq	%rbp, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 40(%rbx)
 	leaq	48(%rbx), %rbp
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -19578,16 +19573,16 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 	movl	$6, %r13d
 	jmp	.LBB165_13
 .LBB165_16:
-	movq	$12713986, (%rbx)               # imm = 0xC20002
-	movq	$1022, 8(%rbx)                  # imm = 0x3FE
+	movq	$1022, (%rbx)                   # imm = 0x3FE
+	movq	$12713986, 8(%rbx)              # imm = 0xC20002
 	leaq	16(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	callq	s_alloc
 	movq	%rax, %r14
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	$1022, 16(%rax)                 # imm = 0x3FE
+	movq	$1022, 8(%rax)                  # imm = 0x3FE
 .LBB165_5:
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 16(%rbx)
 	addq	$24, %rbx
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -19602,15 +19597,15 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 .LBB165_7:
 	movl	$2, %r13d
 .LBB165_13:
-	movq	$12713986, 32(%rbx)             # imm = 0xC20002
-	movq	%r13, 40(%rbx)
+	movq	%r13, 32(%rbx)
+	movq	$12713986, 40(%rbx)             # imm = 0xC20002
 	movq	cP2__W$__fData_Binary_storableB$d2(%rip), %rsi
 	movq	%rbp, %rdi
 	callq	s_alloc
 	movq	%rax, %r15
 	movq	$7012354, (%rax)                # imm = 0x6B0002
-	movq	$12713986, 8(%rax)              # imm = 0xC20002
-	movq	%r13, 16(%rax)
+	movq	%r13, 8(%rax)
+	movq	$12713986, 16(%rax)             # imm = 0xC20002
 	movq	%rax, 48(%rbx)
 	leaq	56(%rbx), %rdi
 	movq	cP2__W$__fData_Binary_storableB$d3(%rip), %rsi
@@ -19624,10 +19619,10 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 	callq	s_alloc
 	movq	$7995394, (%rax)                # imm = 0x7A0002
 	movq	%r12, 8(%rax)
-	movq	%r14, 16(%rax)
-	movq	%r13, 24(%rax)
 	movq	$1, 32(%rax)
+	movq	%r14, 16(%rax)
 	movq	$1, 40(%rax)
+	movq	%r13, 24(%rax)
 .LBB165_20:
 	addq	$24, %rsp
 	.cfi_def_cfa_offset 56
@@ -19646,10 +19641,10 @@ fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse: # @"fW$__fIns
 	retq
 .LBB165_17:
 	.cfi_def_cfa_offset 80
-	movl	$15727, %edi                    # imm = 0x3D6F
+	movl	$15781, %edi                    # imm = 0x3DA5
 	callq	jhc_case_fell_off
 .LBB165_11:
-	movl	$15607, %edi                    # imm = 0x3CF7
+	movl	$15661, %edi                    # imm = 0x3D2D
 	callq	jhc_case_fell_off
 .Lfunc_end165:
 	.size	fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse, .Lfunc_end165-fW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse
@@ -19798,14 +19793,14 @@ E__fR$__fJhc_Basics_zip:                # @"E__fR$__fJhc_Basics_zip"
 	.globl	jhc_c_compile
 	.p2align	4, 0x0
 jhc_c_compile:
-	.asciz	"gcc /tmp/jhc_oB1GUQ/rts/profile.c /tmp/jhc_oB1GUQ/rts/rts_support.c /tmp/jhc_oB1GUQ/rts/gc_none.c /tmp/jhc_oB1GUQ/rts/jhc_rts.c /tmp/jhc_oB1GUQ/lib/lib_cbits.c /tmp/jhc_oB1GUQ/rts/gc_jgc.c /tmp/jhc_oB1GUQ/rts/stableptr.c -I/tmp/jhc_oB1GUQ/cbits -I/tmp/jhc_oB1GUQ /home/bruns/Documents/haskellos/build/progs/storage.c -o /home/bruns/Documents/haskellos/build/progs/storage.c '-std=gnu99' -D_GNU_SOURCE '-falign-functions=4' -ffast-math -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -DNDEBUG -O3 '-D_JHC_GC=_JHC_GC_JGC'"
+	.asciz	"gcc /tmp/jhc_BL9J3q/rts/profile.c /tmp/jhc_BL9J3q/rts/rts_support.c /tmp/jhc_BL9J3q/rts/gc_none.c /tmp/jhc_BL9J3q/rts/jhc_rts.c /tmp/jhc_BL9J3q/lib/lib_cbits.c /tmp/jhc_BL9J3q/rts/gc_jgc.c /tmp/jhc_BL9J3q/rts/stableptr.c -I/tmp/jhc_BL9J3q/cbits -I/tmp/jhc_BL9J3q /home/bruns/Documents/HanonymOS/build/progs/storage.c -o /home/bruns/Documents/HanonymOS/build/progs/storage.c '-std=gnu99' -D_GNU_SOURCE '-falign-functions=4' -ffast-math -Wextra -Wall -Wno-unused-parameter -fno-strict-aliasing -DNDEBUG -O3 '-D_JHC_GC=_JHC_GC_JGC'"
 	.size	jhc_c_compile, 529
 
 	.type	jhc_command,@object             # @jhc_command
 	.globl	jhc_command
 	.p2align	4, 0x0
 jhc_command:
-	.asciz	"jhc -C storage.hs Hos/Storage.hs Hos/Storage/Msg.hs -o /home/bruns/Documents/haskellos/build/progs/storage.c -fcpp -I/home/bruns/Documents/haskellos/src/progs/cbits -I/home/bruns/Documents/haskellos/src/progs/hos -I/home/bruns/Documents/haskellos/src/kernel/d -I/home/bruns/Documents/haskellos/src/libs/rts -I/home/bruns/Documents/haskellos/src/libs/rts/rts -fffi -phos -phos-common -L/usr/local/lib/jhc-0.8.2 -L/home/bruns/Documents/haskellos/build/prog-libs -pinit"
+	.asciz	"jhc -C storage.hs Hos/Storage.hs Hos/Storage/Msg.hs -o /home/bruns/Documents/HanonymOS/build/progs/storage.c -fcpp -I/home/bruns/Documents/HanonymOS/src/progs/cbits -I/home/bruns/Documents/HanonymOS/src/progs/hos -I/home/bruns/Documents/HanonymOS/src/kernel/d -I/home/bruns/Documents/HanonymOS/src/libs/rts -I/home/bruns/Documents/HanonymOS/src/libs/rts/rts -fffi -phos -phos-common -L/usr/local/lib/jhc-0.8.2 -L/home/bruns/Documents/HanonymOS/build/prog-libs -pinit"
 	.size	jhc_command, 467
 
 	.type	jhc_version,@object             # @jhc_version
@@ -19815,77 +19810,77 @@ jhc_version:
 	.asciz	"jhc 0.8.2 (mydniquipepo-32)"
 	.size	jhc_version, 28
 
-	.type	_g1782590997,@object            # @_g1782590997
+	.type	_g1140999701,@object            # @_g1140999701
 	.p2align	3, 0x0
-_g1782590997:
+_g1140999701:
 	.quad	E__ftheMain$d3+3
-	.size	_g1782590997, 8
+	.size	_g1140999701, 8
 
-	.type	_g1820470825,@object            # @_g1820470825
+	.type	_g1178355241,@object            # @_g1178355241
 	.p2align	3, 0x0
-_g1820470825:
+_g1178355241:
 	.quad	E__fMain_serveBundle$d14+3
-	.size	_g1820470825, 8
+	.size	_g1178355241, 8
 
-	.type	_g1837641769,@object            # @_g1837641769
+	.type	_g427837481,@object             # @_g427837481
 	.p2align	3, 0x0
-_g1837641769:
+_g427837481:
 	.quad	E__fMain_serveBundle$d11+3
-	.size	_g1837641769, 8
+	.size	_g427837481, 8
 
-	.type	_g1815227945,@object            # @_g1815227945
+	.type	_g1173112361,@object            # @_g1173112361
 	.p2align	3, 0x0
-_g1815227945:
+_g1173112361:
 	.quad	E__fMain_serveBundle$d10+3
-	.size	_g1815227945, 8
+	.size	_g1173112361, 8
 
-	.type	_g1810116135,@object            # @_g1810116135
+	.type	_g1168000551,@object            # @_g1168000551
 	.p2align	3, 0x0
-_g1810116135:
+_g1168000551:
 	.quad	E__fMain_serveBundle$d9+3
-	.size	_g1810116135, 8
+	.size	_g1168000551, 8
 
-	.type	_g1832529959,@object            # @_g1832529959
+	.type	_g410667047,@object             # @_g410667047
 	.p2align	3, 0x0
-_g1832529959:
+_g410667047:
 	.quad	E__fMain_serveBundle$d6+3
-	.size	_g1832529959, 8
+	.size	_g410667047, 8
 
-	.type	_g1848651815,@object            # @_g1848651815
+	.type	_g450119719,@object             # @_g450119719
 	.p2align	3, 0x0
-_g1848651815:
+_g450119719:
 	.quad	E__fMain_serveBundle$d2+3
-	.size	_g1848651815, 8
+	.size	_g450119719, 8
 
-	.type	_g1860579385,@object            # @_g1860579385
+	.type	_g462047289,@object             # @_g462047289
 	.p2align	3, 0x0
-_g1860579385:
+_g462047289:
 	.quad	E__fHos_User_IPC_transmitMsg$d19+3
-	.size	_g1860579385, 8
+	.size	_g462047289, 8
 
-	.type	_g1828728375,@object            # @_g1828728375
+	.type	_g1186612791,@object            # @_g1186612791
 	.p2align	3, 0x0
-_g1828728375:
+_g1186612791:
 	.quad	E__fHos_User_IPC_transmitMsg$d4+3
-	.size	_g1828728375, 8
+	.size	_g1186612791, 8
 
-	.type	_g1875652663,@object            # @_g1875652663
+	.type	_g480397367,@object             # @_g480397367
 	.p2align	3, 0x0
-_g1875652663:
+_g480397367:
 	.quad	E__fHos_User_IPC_transmitMsg$d2+3
-	.size	_g1875652663, 8
+	.size	_g480397367, 8
 
-	.type	_g1800941159,@object            # @_g1800941159
+	.type	_g1158825575,@object            # @_g1158825575
 	.p2align	3, 0x0
-_g1800941159:
+_g1158825575:
 	.quad	E__fInstance$__iData_Binary_get_Hos_User_IPC_ServerName+3
-	.size	_g1800941159, 8
+	.size	_g1158825575, 8
 
-	.type	_g1647063097,@object            # @_g1647063097
+	.type	_g1346783289,@object            # @_g1346783289
 	.p2align	3, 0x0
-_g1647063097:
+_g1346783289:
 	.quad	E__fHos_User_IPC_transmitMsg$d13+3
-	.size	_g1647063097, 8
+	.size	_g1346783289, 8
 
 	.type	_c1,@object                     # @_c1
 	.section	.rodata,"a",@progbits
@@ -19914,1407 +19909,1407 @@ _c3:
 	.type	_c4,@object                     # @_c4
 	.p2align	4, 0x0
 _c4:
-	.quad	154
+	.quad	466
 	.quad	65538
 	.size	_c4, 16
 
 	.type	_c5,@object                     # @_c5
 	.p2align	4, 0x0
 _c5:
-	.quad	370
+	.quad	446
 	.quad	_c4
 	.size	_c5, 16
 
 	.type	_c6,@object                     # @_c6
 	.p2align	4, 0x0
 _c6:
-	.quad	402
-	.quad	65538
+	.quad	446
+	.quad	_c5
 	.size	_c6, 16
 
 	.type	_c7,@object                     # @_c7
 	.p2align	4, 0x0
 _c7:
-	.quad	294
+	.quad	394
 	.quad	_c6
 	.size	_c7, 16
 
 	.type	_c8,@object                     # @_c8
 	.p2align	4, 0x0
 _c8:
-	.quad	430
+	.quad	446
 	.quad	_c7
 	.size	_c8, 16
 
 	.type	_c9,@object                     # @_c9
 	.p2align	4, 0x0
 _c9:
-	.quad	462
+	.quad	466
 	.quad	_c8
 	.size	_c9, 16
 
 	.type	_c10,@object                    # @_c10
 	.p2align	4, 0x0
 _c10:
-	.quad	390
+	.quad	470
 	.quad	_c9
 	.size	_c10, 16
 
 	.type	_c11,@object                    # @_c11
 	.p2align	4, 0x0
 _c11:
-	.quad	338
+	.quad	390
 	.quad	_c10
 	.size	_c11, 16
 
 	.type	_c12,@object                    # @_c12
 	.p2align	4, 0x0
 _c12:
-	.quad	458
-	.quad	65538
+	.quad	186
+	.quad	_c11
 	.size	_c12, 16
 
 	.type	_c13,@object                    # @_c13
 	.p2align	4, 0x0
 _c13:
-	.quad	406
+	.quad	462
 	.quad	_c12
 	.size	_c13, 16
 
 	.type	_c14,@object                    # @_c14
 	.p2align	4, 0x0
 _c14:
-	.quad	402
+	.quad	446
 	.quad	_c13
 	.size	_c14, 16
 
 	.type	_c15,@object                    # @_c15
 	.p2align	4, 0x0
 _c15:
-	.quad	422
+	.quad	418
 	.quad	_c14
 	.size	_c15, 16
 
 	.type	_c16,@object                    # @_c16
 	.p2align	4, 0x0
 _c16:
-	.quad	474
+	.quad	186
 	.quad	_c15
 	.size	_c16, 16
 
 	.type	_c17,@object                    # @_c17
 	.p2align	4, 0x0
 _c17:
-	.quad	446
+	.quad	438
 	.quad	_c16
 	.size	_c17, 16
 
 	.type	_c18,@object                    # @_c18
 	.p2align	4, 0x0
 _c18:
-	.quad	458
+	.quad	446
 	.quad	_c17
 	.size	_c18, 16
 
 	.type	_c19,@object                    # @_c19
 	.p2align	4, 0x0
 _c19:
-	.quad	322
+	.quad	398
 	.quad	_c18
 	.size	_c19, 16
 
 	.type	_c20,@object                    # @_c20
 	.p2align	4, 0x0
 _c20:
-	.quad	402
-	.quad	_c19
+	.quad	154
+	.quad	65538
 	.size	_c20, 16
 
 	.type	_c21,@object                    # @_c21
 	.p2align	4, 0x0
 _c21:
-	.quad	442
+	.quad	370
 	.quad	_c20
 	.size	_c21, 16
 
 	.type	_c22,@object                    # @_c22
 	.p2align	4, 0x0
 _c22:
-	.quad	470
-	.quad	_c21
+	.quad	402
+	.quad	65538
 	.size	_c22, 16
 
 	.type	_c23,@object                    # @_c23
 	.p2align	4, 0x0
 _c23:
-	.quad	446
+	.quad	294
 	.quad	_c22
 	.size	_c23, 16
 
 	.type	_c24,@object                    # @_c24
 	.p2align	4, 0x0
 _c24:
-	.quad	282
+	.quad	430
 	.quad	_c23
 	.size	_c24, 16
 
 	.type	_c25,@object                    # @_c25
 	.p2align	4, 0x0
 _c25:
-	.quad	466
+	.quad	462
 	.quad	_c24
 	.size	_c25, 16
 
 	.type	_c26,@object                    # @_c26
 	.p2align	4, 0x0
 _c26:
-	.quad	422
+	.quad	390
 	.quad	_c25
 	.size	_c26, 16
 
 	.type	_c27,@object                    # @_c27
 	.p2align	4, 0x0
 _c27:
-	.quad	442
+	.quad	338
 	.quad	_c26
 	.size	_c27, 16
 
 	.type	_c28,@object                    # @_c28
 	.p2align	4, 0x0
 _c28:
-	.quad	294
-	.quad	_c27
+	.quad	458
+	.quad	65538
 	.size	_c28, 16
 
 	.type	_c29,@object                    # @_c29
 	.p2align	4, 0x0
 _c29:
 	.quad	406
-	.quad	65538
+	.quad	_c28
 	.size	_c29, 16
 
 	.type	_c30,@object                    # @_c30
 	.p2align	4, 0x0
 _c30:
-	.quad	434
+	.quad	402
 	.quad	_c29
 	.size	_c30, 16
 
 	.type	_c31,@object                    # @_c31
 	.p2align	4, 0x0
 _c31:
-	.quad	394
+	.quad	422
 	.quad	_c30
 	.size	_c31, 16
 
 	.type	_c32,@object                    # @_c32
 	.p2align	4, 0x0
 _c32:
-	.quad	390
+	.quad	474
 	.quad	_c31
 	.size	_c32, 16
 
 	.type	_c33,@object                    # @_c33
 	.p2align	4, 0x0
 _c33:
-	.quad	458
+	.quad	446
 	.quad	_c32
 	.size	_c33, 16
 
 	.type	_c34,@object                    # @_c34
 	.p2align	4, 0x0
 _c34:
-	.quad	446
+	.quad	458
 	.quad	_c33
 	.size	_c34, 16
 
 	.type	_c35,@object                    # @_c35
 	.p2align	4, 0x0
 _c35:
-	.quad	466
+	.quad	322
 	.quad	_c34
 	.size	_c35, 16
 
 	.type	_c36,@object                    # @_c36
 	.p2align	4, 0x0
 _c36:
-	.quad	462
+	.quad	402
 	.quad	_c35
 	.size	_c36, 16
 
 	.type	_c37,@object                    # @_c37
 	.p2align	4, 0x0
 _c37:
-	.quad	130
+	.quad	442
 	.quad	_c36
 	.size	_c37, 16
 
 	.type	_c38,@object                    # @_c38
 	.p2align	4, 0x0
 _c38:
-	.quad	406
+	.quad	470
 	.quad	_c37
 	.size	_c38, 16
 
 	.type	_c39,@object                    # @_c39
 	.p2align	4, 0x0
 _c39:
-	.quad	474
+	.quad	446
 	.quad	_c38
 	.size	_c39, 16
 
 	.type	_c40,@object                    # @_c40
 	.p2align	4, 0x0
 _c40:
-	.quad	406
+	.quad	282
 	.quad	_c39
 	.size	_c40, 16
 
 	.type	_c41,@object                    # @_c41
 	.p2align	4, 0x0
 _c41:
-	.quad	422
+	.quad	466
 	.quad	_c40
 	.size	_c41, 16
 
 	.type	_c42,@object                    # @_c42
 	.p2align	4, 0x0
 _c42:
-	.quad	458
+	.quad	422
 	.quad	_c41
 	.size	_c42, 16
 
 	.type	_c43,@object                    # @_c43
 	.p2align	4, 0x0
 _c43:
-	.quad	466
+	.quad	442
 	.quad	_c42
 	.size	_c43, 16
 
 	.type	_c44,@object                    # @_c44
 	.p2align	4, 0x0
 _c44:
-	.quad	406
+	.quad	294
 	.quad	_c43
 	.size	_c44, 16
 
 	.type	_c45,@object                    # @_c45
 	.p2align	4, 0x0
 _c45:
-	.quad	458
-	.quad	_c44
+	.quad	370
+	.quad	65538
 	.size	_c45, 16
 
 	.type	_c46,@object                    # @_c46
 	.p2align	4, 0x0
 _c46:
-	.quad	130
+	.quad	370
 	.quad	_c45
 	.size	_c46, 16
 
 	.type	_c47,@object                    # @_c47
 	.p2align	4, 0x0
 _c47:
-	.quad	446
-	.quad	_c46
+	.quad	306
+	.quad	65538
 	.size	_c47, 16
 
 	.type	_c48,@object                    # @_c48
 	.p2align	4, 0x0
 _c48:
-	.quad	466
+	.quad	278
 	.quad	_c47
 	.size	_c48, 16
 
 	.type	_c49,@object                    # @_c49
 	.p2align	4, 0x0
 _c49:
-	.quad	130
+	.quad	274
 	.quad	_c48
 	.size	_c49, 16
 
 	.type	_c50,@object                    # @_c50
 	.p2align	4, 0x0
 _c50:
-	.quad	406
+	.quad	370
 	.quad	_c49
 	.size	_c50, 16
 
 	.type	_c51,@object                    # @_c51
 	.p2align	4, 0x0
 _c51:
-	.quad	398
-	.quad	_c50
+	.quad	390
+	.quad	65538
 	.size	_c51, 16
 
 	.type	_c52,@object                    # @_c52
 	.p2align	4, 0x0
 _c52:
-	.quad	390
+	.quad	370
 	.quad	_c51
 	.size	_c52, 16
 
 	.type	_c53,@object                    # @_c53
 	.p2align	4, 0x0
 _c53:
-	.quad	450
-	.quad	_c52
+	.quad	394
+	.quad	65538
 	.size	_c53, 16
 
 	.type	_c54,@object                    # @_c54
 	.p2align	4, 0x0
 _c54:
-	.quad	462
+	.quad	370
 	.quad	_c53
 	.size	_c54, 16
 
 	.type	_c55,@object                    # @_c55
 	.p2align	4, 0x0
 _c55:
-	.quad	130
-	.quad	_c54
+	.quad	370
+	.quad	_c4
 	.size	_c55, 16
 
 	.type	_c56,@object                    # @_c56
 	.p2align	4, 0x0
 _c56:
-	.quad	418
-	.quad	_c55
+	.quad	442
+	.quad	65538
 	.size	_c56, 16
 
 	.type	_c57,@object                    # @_c57
 	.p2align	4, 0x0
 _c57:
-	.quad	414
+	.quad	370
 	.quad	_c56
 	.size	_c57, 16
 
 	.type	_c58,@object                    # @_c58
 	.p2align	4, 0x0
 _c58:
-	.quad	470
-	.quad	_c57
+	.quad	474
+	.quad	65538
 	.size	_c58, 16
 
 	.type	_c59,@object                    # @_c59
 	.p2align	4, 0x0
 _c59:
-	.quad	446
+	.quad	370
 	.quad	_c58
 	.size	_c59, 16
 
 	.type	_c60,@object                    # @_c60
 	.p2align	4, 0x0
 _c60:
-	.quad	442
-	.quad	_c59
+	.quad	410
+	.quad	65538
 	.size	_c60, 16
 
 	.type	_c61,@object                    # @_c61
 	.p2align	4, 0x0
 _c61:
-	.quad	406
+	.quad	370
 	.quad	_c60
 	.size	_c61, 16
 
 	.type	_c62,@object                    # @_c62
 	.p2align	4, 0x0
 _c62:
-	.quad	130
-	.quad	_c61
+	.quad	370
+	.quad	_c28
 	.size	_c62, 16
 
 	.type	_c63,@object                    # @_c63
 	.p2align	4, 0x0
 _c63:
-	.quad	466
-	.quad	_c62
+	.quad	318
+	.quad	65538
 	.size	_c63, 16
 
 	.type	_c64,@object                    # @_c64
 	.p2align	4, 0x0
 _c64:
-	.quad	446
+	.quad	334
 	.quad	_c63
 	.size	_c64, 16
 
 	.type	_c65,@object                    # @_c65
 	.p2align	4, 0x0
 _c65:
-	.quad	314
+	.quad	370
 	.quad	_c64
 	.size	_c65, 16
 
 	.type	_c66,@object                    # @_c66
 	.p2align	4, 0x0
 _c66:
-	.quad	2                               # 0x2
-	.quad	_c65
+	.quad	342
+	.quad	_c47
 	.size	_c66, 16
 
 	.type	_c67,@object                    # @_c67
 	.p2align	4, 0x0
 _c67:
-	.quad	398
-	.quad	65538
+	.quad	314
+	.quad	_c66
 	.size	_c67, 16
 
 	.type	_c68,@object                    # @_c68
 	.p2align	4, 0x0
 _c68:
-	.quad	446
-	.quad	_c67
+	.quad	290
+	.quad	65538
 	.size	_c68, 16
 
 	.type	_c69,@object                    # @_c69
 	.p2align	4, 0x0
 _c69:
-	.quad	434
+	.quad	318
 	.quad	_c68
 	.size	_c69, 16
 
 	.type	_c70,@object                    # @_c70
 	.p2align	4, 0x0
 _c70:
-	.quad	434
+	.quad	334
 	.quad	_c69
 	.size	_c70, 16
 
 	.type	_c71,@object                    # @_c71
 	.p2align	4, 0x0
 _c71:
-	.quad	390
-	.quad	_c70
+	.quad	354
+	.quad	65538
 	.size	_c71, 16
 
 	.type	_c72,@object                    # @_c72
 	.p2align	4, 0x0
 _c72:
-	.quad	438
+	.quad	338
 	.quad	_c71
 	.size	_c72, 16
 
 	.type	_c73,@object                    # @_c73
 	.p2align	4, 0x0
 _c73:
-	.quad	486
-	.quad	65538
+	.quad	334
+	.quad	_c72
 	.size	_c73, 16
 
 	.type	_c74,@object                    # @_c74
 	.p2align	4, 0x0
 _c74:
-	.quad	458
-	.quad	_c73
+	.quad	278
+	.quad	_c72
 	.size	_c74, 16
 
 	.type	_c75,@object                    # @_c75
 	.p2align	4, 0x0
 _c75:
-	.quad	446
-	.quad	_c74
+	.quad	338
+	.quad	65538
 	.size	_c75, 16
 
 	.type	_c76,@object                    # @_c76
 	.p2align	4, 0x0
 _c76:
-	.quad	438
+	.quad	318
 	.quad	_c75
 	.size	_c76, 16
 
 	.type	_c77,@object                    # @_c77
 	.p2align	4, 0x0
 _c77:
-	.quad	406
+	.quad	278
 	.quad	_c76
 	.size	_c77, 16
 
 	.type	_c78,@object                    # @_c78
 	.p2align	4, 0x0
 _c78:
-	.quad	438
-	.quad	_c77
+	.quad	326
+	.quad	65538
 	.size	_c78, 16
 
 	.type	_c79,@object                    # @_c79
 	.p2align	4, 0x0
 _c79:
-	.quad	130
+	.quad	314
 	.quad	_c78
 	.size	_c79, 16
 
 	.type	_c80,@object                    # @_c80
 	.p2align	4, 0x0
 _c80:
-	.quad	410
+	.quad	278
 	.quad	_c79
 	.size	_c80, 16
 
 	.type	_c81,@object                    # @_c81
 	.p2align	4, 0x0
 _c81:
-	.quad	446
-	.quad	_c80
+	.quad	302
+	.quad	65538
 	.size	_c81, 16
 
 	.type	_c82,@object                    # @_c82
 	.p2align	4, 0x0
 _c82:
-	.quad	130
+	.quad	270
 	.quad	_c81
 	.size	_c82, 16
 
 	.type	_c83,@object                    # @_c83
 	.p2align	4, 0x0
 _c83:
-	.quad	466
+	.quad	262
 	.quad	_c82
 	.size	_c83, 16
 
 	.type	_c84,@object                    # @_c84
 	.p2align	4, 0x0
 _c84:
-	.quad	470
-	.quad	_c83
+	.quad	266
+	.quad	_c48
 	.size	_c84, 16
 
 	.type	_c85,@object                    # @_c85
 	.p2align	4, 0x0
 _c85:
-	.quad	446
-	.quad	_c84
+	.quad	334
+	.quad	65538
 	.size	_c85, 16
 
 	.type	_c86,@object                    # @_c86
 	.p2align	4, 0x0
 _c86:
-	.quad	130
+	.quad	266
 	.quad	_c85
 	.size	_c86, 16
 
 	.type	_c87,@object                    # @_c87
 	.p2align	4, 0x0
 _c87:
-	.quad	234
-	.quad	_c86
+	.quad	290
+	.quad	_c75
 	.size	_c87, 16
 
 	.type	_c88,@object                    # @_c88
 	.p2align	4, 0x0
 _c88:
-	.quad	2                               # 0x2
-	.quad	2
+	.quad	282
+	.quad	65538
 	.size	_c88, 16
 
 	.type	_c89,@object                    # @_c89
 	.p2align	4, 0x0
 _c89:
-	.quad	462
-	.quad	65538
+	.quad	306
+	.quad	_c88
 	.size	_c89, 16
 
 	.type	_c90,@object                    # @_c90
 	.p2align	4, 0x0
 _c90:
-	.quad	470
-	.quad	_c89
+	.quad	346
+	.quad	_c75
 	.size	_c90, 16
 
 	.type	_c91,@object                    # @_c91
 	.p2align	4, 0x0
 _c91:
-	.quad	466
-	.quad	_c90
+	.quad	282
+	.quad	_c88
 	.size	_c91, 16
 
 	.type	_c92,@object                    # @_c92
 	.p2align	4, 0x0
 _c92:
-	.quad	390
-	.quad	_c91
+	.quad	330
+	.quad	65538
 	.size	_c92, 16
 
 	.type	_c93,@object                    # @_c93
 	.p2align	4, 0x0
 _c93:
-	.quad	466
+	.quad	270
 	.quad	_c92
 	.size	_c93, 16
 
 	.type	_c94,@object                    # @_c94
 	.p2align	4, 0x0
 _c94:
-	.quad	462
-	.quad	_c93
+	.quad	294
+	.quad	65538
 	.size	_c94, 16
 
 	.type	_c95,@object                    # @_c95
 	.p2align	4, 0x0
 _c95:
-	.quad	130
+	.quad	334
 	.quad	_c94
 	.size	_c95, 16
 
 	.type	_c96,@object                    # @_c96
 	.p2align	4, 0x0
 _c96:
-	.quad	406
-	.quad	_c95
+	.quad	278
+	.quad	65538
 	.size	_c96, 16
 
 	.type	_c97,@object                    # @_c97
 	.p2align	4, 0x0
 _c97:
-	.quad	458
+	.quad	306
 	.quad	_c96
 	.size	_c97, 16
 
 	.type	_c98,@object                    # @_c98
 	.p2align	4, 0x0
 _c98:
-	.quad	458
+	.quad	274
 	.quad	_c97
 	.size	_c98, 16
 
 	.type	_c99,@object                    # @_c99
 	.p2align	4, 0x0
 _c99:
-	.quad	390
-	.quad	_c98
+	.quad	198
+	.quad	65538
 	.size	_c99, 16
 
 	.type	_c100,@object                   # @_c100
 	.p2align	4, 0x0
 _c100:
-	.quad	490
+	.quad	270
 	.quad	_c99
 	.size	_c100, 16
 
 	.type	_c101,@object                   # @_c101
 	.p2align	4, 0x0
 _c101:
-	.quad	422
+	.quad	274
 	.quad	_c100
 	.size	_c101, 16
 
 	.type	_c102,@object                   # @_c102
 	.p2align	4, 0x0
 _c102:
-	.quad	394
-	.quad	_c101
+	.quad	202
+	.quad	65538
 	.size	_c102, 16
 
 	.type	_c103,@object                   # @_c103
 	.p2align	4, 0x0
 _c103:
-	.quad	130
+	.quad	270
 	.quad	_c102
 	.size	_c103, 16
 
 	.type	_c104,@object                   # @_c104
 	.p2align	4, 0x0
 _c104:
-	.quad	402
+	.quad	274
 	.quad	_c103
 	.size	_c104, 16
 
 	.type	_c105,@object                   # @_c105
 	.p2align	4, 0x0
 _c105:
-	.quad	406
-	.quad	_c104
+	.quad	206
+	.quad	65538
 	.size	_c105, 16
 
 	.type	_c106,@object                   # @_c106
 	.p2align	4, 0x0
 _c106:
-	.quad	442
+	.quad	270
 	.quad	_c105
 	.size	_c106, 16
 
 	.type	_c107,@object                   # @_c107
 	.p2align	4, 0x0
 _c107:
-	.quad	458
+	.quad	274
 	.quad	_c106
 	.size	_c107, 16
 
 	.type	_c108,@object                   # @_c108
 	.p2align	4, 0x0
 _c108:
-	.quad	470
-	.quad	_c107
+	.quad	210
+	.quad	65538
 	.size	_c108, 16
 
 	.type	_c109,@object                   # @_c109
 	.p2align	4, 0x0
 _c109:
-	.quad	466
+	.quad	270
 	.quad	_c108
 	.size	_c109, 16
 
 	.type	_c110,@object                   # @_c110
 	.p2align	4, 0x0
 _c110:
-	.quad	406
+	.quad	274
 	.quad	_c109
 	.size	_c110, 16
 
 	.type	_c111,@object                   # @_c111
 	.p2align	4, 0x0
 _c111:
-	.quad	330
-	.quad	_c110
+	.quad	262
+	.quad	_c81
 	.size	_c111, 16
 
 	.type	_c112,@object                   # @_c112
 	.p2align	4, 0x0
 _c112:
-	.quad	130
+	.quad	314
 	.quad	_c111
 	.size	_c112, 16
 
 	.type	_c113,@object                   # @_c113
 	.p2align	4, 0x0
 _c113:
-	.quad	234
-	.quad	_c112
+	.quad	314
+	.quad	65538
 	.size	_c113, 16
 
 	.type	_c114,@object                   # @_c114
 	.p2align	4, 0x0
 _c114:
-	.quad	462
+	.quad	358
 	.quad	_c113
 	.size	_c114, 16
 
 	.type	_c115,@object                   # @_c115
 	.p2align	4, 0x0
 _c115:
-	.quad	434
+	.quad	334
 	.quad	_c114
 	.size	_c115, 16
 
 	.type	_c116,@object                   # @_c116
 	.p2align	4, 0x0
 _c116:
-	.quad	406
-	.quad	_c115
+	.quad	266
+	.quad	65538
 	.size	_c116, 16
 
 	.type	_c117,@object                   # @_c117
 	.p2align	4, 0x0
 _c117:
-	.quad	442
+	.quad	338
 	.quad	_c116
 	.size	_c117, 16
 
 	.type	_c118,@object                   # @_c118
 	.p2align	4, 0x0
 _c118:
-	.quad	442
+	.quad	278
 	.quad	_c117
 	.size	_c118, 16
 
 	.type	_c119,@object                   # @_c119
 	.p2align	4, 0x0
 _c119:
-	.quad	390
-	.quad	_c118
+	.quad	262
+	.quad	_c113
 	.size	_c119, 16
 
 	.type	_c120,@object                   # @_c120
 	.p2align	4, 0x0
 _c120:
-	.quad	418
+	.quad	270
 	.quad	_c119
 	.size	_c120, 16
 
 	.type	_c121,@object                   # @_c121
 	.p2align	4, 0x0
 _c121:
-	.quad	270
-	.quad	_c120
+	.quad	310
+	.quad	65538
 	.size	_c121, 16
 
 	.type	_c122,@object                   # @_c122
 	.p2align	4, 0x0
 _c122:
-	.quad	442
+	.quad	278
 	.quad	_c121
 	.size	_c122, 16
 
 	.type	_c123,@object                   # @_c123
 	.p2align	4, 0x0
 _c123:
-	.quad	318
-	.quad	_c122
+	.quad	342
+	.quad	_c116
 	.size	_c123, 16
 
 	.type	_c124,@object                   # @_c124
 	.p2align	4, 0x0
 _c124:
-	.quad	466
+	.quad	334
 	.quad	_c123
 	.size	_c124, 16
 
 	.type	_c125,@object                   # @_c125
 	.p2align	4, 0x0
 _c125:
-	.quad	422
-	.quad	_c124
+	.quad	270
+	.quad	65538
 	.size	_c125, 16
 
 	.type	_c126,@object                   # @_c126
 	.p2align	4, 0x0
 _c126:
-	.quad	390
+	.quad	334
 	.quad	_c125
 	.size	_c126, 16
 
 	.type	_c127,@object                   # @_c127
 	.p2align	4, 0x0
 _c127:
-	.quad	350
+	.quad	278
 	.quad	_c126
 	.size	_c127, 16
 
 	.type	_c128,@object                   # @_c128
 	.p2align	4, 0x0
 _c128:
-	.quad	462
-	.quad	_c127
+	.quad	282
+	.quad	_c85
 	.size	_c128, 16
 
 	.type	_c129,@object                   # @_c129
 	.p2align	4, 0x0
 _c129:
-	.quad	446
-	.quad	_c128
+	.quad	286
+	.quad	_c85
 	.size	_c129, 16
 
 	.type	_c130,@object                   # @_c130
 	.p2align	4, 0x0
 _c130:
-	.quad	418
-	.quad	_c129
+	.quad	330
+	.quad	_c85
 	.size	_c130, 16
 
 	.type	_c131,@object                   # @_c131
 	.p2align	4, 0x0
 _c131:
-	.quad	2                               # 0x2
-	.quad	6
+	.quad	342
+	.quad	_c85
 	.size	_c131, 16
 
 	.type	_c132,@object                   # @_c132
 	.p2align	4, 0x0
 _c132:
-	.quad	65538                           # 0x10002
-	.quad	6
+	.quad	322
+	.quad	65538
 	.size	_c132, 16
 
 	.type	_c133,@object                   # @_c133
 	.p2align	4, 0x0
 _c133:
-	.quad	0                               # 0x0
-	.zero	8
+	.quad	334
+	.quad	_c132
 	.size	_c133, 16
 
 	.type	_c134,@object                   # @_c134
 	.p2align	4, 0x0
 _c134:
-	.long	0                               # 0x0
-	.zero	12
+	.quad	_c133
+	.quad	65538
 	.size	_c134, 16
 
 	.type	_c135,@object                   # @_c135
 	.p2align	4, 0x0
 _c135:
-	.long	16                              # 0x10
-	.zero	12
+	.quad	_c131
+	.quad	_c134
 	.size	_c135, 16
 
 	.type	_c136,@object                   # @_c136
 	.p2align	4, 0x0
 _c136:
-	.quad	370
-	.quad	65538
+	.quad	_c130
+	.quad	_c135
 	.size	_c136, 16
 
 	.type	_c137,@object                   # @_c137
 	.p2align	4, 0x0
 _c137:
-	.quad	370
+	.quad	_c129
 	.quad	_c136
 	.size	_c137, 16
 
 	.type	_c138,@object                   # @_c138
 	.p2align	4, 0x0
 _c138:
-	.quad	306
-	.quad	65538
+	.quad	_c128
+	.quad	_c137
 	.size	_c138, 16
 
 	.type	_c139,@object                   # @_c139
 	.p2align	4, 0x0
 _c139:
-	.quad	278
+	.quad	_c127
 	.quad	_c138
 	.size	_c139, 16
 
 	.type	_c140,@object                   # @_c140
 	.p2align	4, 0x0
 _c140:
-	.quad	274
+	.quad	_c124
 	.quad	_c139
 	.size	_c140, 16
 
 	.type	_c141,@object                   # @_c141
 	.p2align	4, 0x0
 _c141:
-	.quad	370
+	.quad	_c122
 	.quad	_c140
 	.size	_c141, 16
 
 	.type	_c142,@object                   # @_c142
 	.p2align	4, 0x0
 _c142:
-	.quad	390
-	.quad	65538
+	.quad	_c120
+	.quad	_c141
 	.size	_c142, 16
 
 	.type	_c143,@object                   # @_c143
 	.p2align	4, 0x0
 _c143:
-	.quad	370
+	.quad	_c118
 	.quad	_c142
 	.size	_c143, 16
 
 	.type	_c144,@object                   # @_c144
 	.p2align	4, 0x0
 _c144:
-	.quad	394
-	.quad	65538
+	.quad	_c115
+	.quad	_c143
 	.size	_c144, 16
 
 	.type	_c145,@object                   # @_c145
 	.p2align	4, 0x0
 _c145:
-	.quad	370
+	.quad	_c112
 	.quad	_c144
 	.size	_c145, 16
 
 	.type	_c146,@object                   # @_c146
 	.p2align	4, 0x0
 _c146:
-	.quad	466
-	.quad	65538
+	.quad	_c110
+	.quad	_c145
 	.size	_c146, 16
 
 	.type	_c147,@object                   # @_c147
 	.p2align	4, 0x0
 _c147:
-	.quad	370
+	.quad	_c107
 	.quad	_c146
 	.size	_c147, 16
 
 	.type	_c148,@object                   # @_c148
 	.p2align	4, 0x0
 _c148:
-	.quad	442
-	.quad	65538
+	.quad	_c104
+	.quad	_c147
 	.size	_c148, 16
 
 	.type	_c149,@object                   # @_c149
 	.p2align	4, 0x0
 _c149:
-	.quad	370
+	.quad	_c101
 	.quad	_c148
 	.size	_c149, 16
 
 	.type	_c150,@object                   # @_c150
 	.p2align	4, 0x0
 _c150:
-	.quad	474
-	.quad	65538
+	.quad	_c98
+	.quad	_c149
 	.size	_c150, 16
 
 	.type	_c151,@object                   # @_c151
 	.p2align	4, 0x0
 _c151:
-	.quad	370
+	.quad	_c95
 	.quad	_c150
 	.size	_c151, 16
 
 	.type	_c152,@object                   # @_c152
 	.p2align	4, 0x0
 _c152:
-	.quad	410
-	.quad	65538
+	.quad	_c64
+	.quad	_c151
 	.size	_c152, 16
 
 	.type	_c153,@object                   # @_c153
 	.p2align	4, 0x0
 _c153:
-	.quad	370
+	.quad	_c93
 	.quad	_c152
 	.size	_c153, 16
 
 	.type	_c154,@object                   # @_c154
 	.p2align	4, 0x0
 _c154:
-	.quad	370
-	.quad	_c12
+	.quad	_c91
+	.quad	_c153
 	.size	_c154, 16
 
 	.type	_c155,@object                   # @_c155
 	.p2align	4, 0x0
 _c155:
-	.quad	318
-	.quad	65538
+	.quad	_c90
+	.quad	_c154
 	.size	_c155, 16
 
 	.type	_c156,@object                   # @_c156
 	.p2align	4, 0x0
 _c156:
-	.quad	334
+	.quad	_c89
 	.quad	_c155
 	.size	_c156, 16
 
 	.type	_c157,@object                   # @_c157
 	.p2align	4, 0x0
 _c157:
-	.quad	370
+	.quad	_c87
 	.quad	_c156
 	.size	_c157, 16
 
 	.type	_c158,@object                   # @_c158
 	.p2align	4, 0x0
 _c158:
-	.quad	342
-	.quad	_c138
+	.quad	_c86
+	.quad	_c157
 	.size	_c158, 16
 
 	.type	_c159,@object                   # @_c159
 	.p2align	4, 0x0
 _c159:
-	.quad	314
+	.quad	_c84
 	.quad	_c158
 	.size	_c159, 16
 
 	.type	_c160,@object                   # @_c160
 	.p2align	4, 0x0
 _c160:
-	.quad	290
-	.quad	65538
+	.quad	_c83
+	.quad	_c159
 	.size	_c160, 16
 
 	.type	_c161,@object                   # @_c161
 	.p2align	4, 0x0
 _c161:
-	.quad	318
+	.quad	_c80
 	.quad	_c160
 	.size	_c161, 16
 
 	.type	_c162,@object                   # @_c162
 	.p2align	4, 0x0
 _c162:
-	.quad	334
+	.quad	_c77
 	.quad	_c161
 	.size	_c162, 16
 
 	.type	_c163,@object                   # @_c163
 	.p2align	4, 0x0
 _c163:
-	.quad	354
-	.quad	65538
+	.quad	_c74
+	.quad	_c162
 	.size	_c163, 16
 
 	.type	_c164,@object                   # @_c164
 	.p2align	4, 0x0
 _c164:
-	.quad	338
+	.quad	_c73
 	.quad	_c163
 	.size	_c164, 16
 
 	.type	_c165,@object                   # @_c165
 	.p2align	4, 0x0
 _c165:
-	.quad	334
+	.quad	_c70
 	.quad	_c164
 	.size	_c165, 16
 
 	.type	_c166,@object                   # @_c166
 	.p2align	4, 0x0
 _c166:
-	.quad	278
-	.quad	_c164
+	.quad	_c67
+	.quad	_c165
 	.size	_c166, 16
 
 	.type	_c167,@object                   # @_c167
 	.p2align	4, 0x0
 _c167:
-	.quad	338
-	.quad	65538
+	.long	0                               # 0x0
+	.zero	12
 	.size	_c167, 16
 
 	.type	_c168,@object                   # @_c168
 	.p2align	4, 0x0
 _c168:
-	.quad	318
-	.quad	_c167
+	.quad	462
+	.quad	65538
 	.size	_c168, 16
 
 	.type	_c169,@object                   # @_c169
 	.p2align	4, 0x0
 _c169:
-	.quad	278
+	.quad	462
 	.quad	_c168
 	.size	_c169, 16
 
 	.type	_c170,@object                   # @_c170
 	.p2align	4, 0x0
 _c170:
-	.quad	326
-	.quad	65538
+	.quad	406
+	.quad	_c169
 	.size	_c170, 16
 
 	.type	_c171,@object                   # @_c171
 	.p2align	4, 0x0
 _c171:
-	.quad	314
+	.quad	398
 	.quad	_c170
 	.size	_c171, 16
 
 	.type	_c172,@object                   # @_c172
 	.p2align	4, 0x0
 _c172:
-	.quad	278
+	.quad	398
 	.quad	_c171
 	.size	_c172, 16
 
 	.type	_c173,@object                   # @_c173
 	.p2align	4, 0x0
 _c173:
-	.quad	302
-	.quad	65538
+	.quad	470
+	.quad	_c172
 	.size	_c173, 16
 
 	.type	_c174,@object                   # @_c174
 	.p2align	4, 0x0
 _c174:
-	.quad	270
+	.quad	334
 	.quad	_c173
 	.size	_c174, 16
 
 	.type	_c175,@object                   # @_c175
 	.p2align	4, 0x0
 _c175:
-	.quad	262
+	.quad	466
 	.quad	_c174
 	.size	_c175, 16
 
 	.type	_c176,@object                   # @_c176
 	.p2align	4, 0x0
 _c176:
-	.quad	266
-	.quad	_c139
+	.quad	422
+	.quad	_c175
 	.size	_c176, 16
 
 	.type	_c177,@object                   # @_c177
 	.p2align	4, 0x0
 _c177:
-	.quad	334
-	.quad	65538
+	.quad	442
+	.quad	_c176
 	.size	_c177, 16
 
 	.type	_c178,@object                   # @_c178
 	.p2align	4, 0x0
 _c178:
-	.quad	266
+	.quad	294
 	.quad	_c177
 	.size	_c178, 16
 
 	.type	_c179,@object                   # @_c179
 	.p2align	4, 0x0
 _c179:
-	.quad	290
-	.quad	_c167
+	.quad	406
+	.quad	_c22
 	.size	_c179, 16
 
 	.type	_c180,@object                   # @_c180
 	.p2align	4, 0x0
 _c180:
-	.quad	282
-	.quad	65538
+	.quad	458
+	.quad	_c179
 	.size	_c180, 16
 
 	.type	_c181,@object                   # @_c181
 	.p2align	4, 0x0
 _c181:
-	.quad	306
+	.quad	406
 	.quad	_c180
 	.size	_c181, 16
 
 	.type	_c182,@object                   # @_c182
 	.p2align	4, 0x0
 _c182:
-	.quad	346
-	.quad	_c167
+	.quad	466
+	.quad	_c181
 	.size	_c182, 16
 
 	.type	_c183,@object                   # @_c183
 	.p2align	4, 0x0
 _c183:
-	.quad	282
-	.quad	_c180
+	.quad	462
+	.quad	_c182
 	.size	_c183, 16
 
 	.type	_c184,@object                   # @_c184
 	.p2align	4, 0x0
 _c184:
-	.quad	330
-	.quad	65538
+	.quad	422
+	.quad	_c183
 	.size	_c184, 16
 
 	.type	_c185,@object                   # @_c185
 	.p2align	4, 0x0
 _c185:
-	.quad	270
+	.quad	414
 	.quad	_c184
 	.size	_c185, 16
 
 	.type	_c186,@object                   # @_c186
 	.p2align	4, 0x0
 _c186:
-	.quad	294
-	.quad	65538
+	.quad	406
+	.quad	_c185
 	.size	_c186, 16
 
 	.type	_c187,@object                   # @_c187
 	.p2align	4, 0x0
 _c187:
-	.quad	334
+	.quad	330
 	.quad	_c186
 	.size	_c187, 16
 
 	.type	_c188,@object                   # @_c188
 	.p2align	4, 0x0
 _c188:
-	.quad	278
-	.quad	65538
+	.quad	486
+	.quad	_c187
 	.size	_c188, 16
 
 	.type	_c189,@object                   # @_c189
 	.p2align	4, 0x0
 _c189:
-	.quad	306
+	.quad	402
 	.quad	_c188
 	.size	_c189, 16
 
 	.type	_c190,@object                   # @_c190
 	.p2align	4, 0x0
 _c190:
-	.quad	274
+	.quad	390
 	.quad	_c189
 	.size	_c190, 16
 
 	.type	_c191,@object                   # @_c191
 	.p2align	4, 0x0
 _c191:
-	.quad	198
-	.quad	65538
+	.quad	406
+	.quad	_c190
 	.size	_c191, 16
 
 	.type	_c192,@object                   # @_c192
 	.p2align	4, 0x0
 _c192:
-	.quad	270
+	.quad	458
 	.quad	_c191
 	.size	_c192, 16
 
 	.type	_c193,@object                   # @_c193
 	.p2align	4, 0x0
 _c193:
-	.quad	274
+	.quad	434
 	.quad	_c192
 	.size	_c193, 16
 
 	.type	_c194,@object                   # @_c194
 	.p2align	4, 0x0
 _c194:
-	.quad	202
-	.quad	65538
+	.quad	262
+	.quad	_c193
 	.size	_c194, 16
 
 	.type	_c195,@object                   # @_c195
 	.p2align	4, 0x0
 _c195:
-	.quad	270
+	.quad	466
 	.quad	_c194
 	.size	_c195, 16
 
 	.type	_c196,@object                   # @_c196
 	.p2align	4, 0x0
 _c196:
-	.quad	274
+	.quad	422
 	.quad	_c195
 	.size	_c196, 16
 
 	.type	_c197,@object                   # @_c197
 	.p2align	4, 0x0
 _c197:
-	.quad	206
-	.quad	65538
+	.quad	442
+	.quad	_c196
 	.size	_c197, 16
 
 	.type	_c198,@object                   # @_c198
 	.p2align	4, 0x0
 _c198:
-	.quad	270
+	.quad	294
 	.quad	_c197
 	.size	_c198, 16
 
 	.type	_c199,@object                   # @_c199
 	.p2align	4, 0x0
 _c199:
-	.quad	274
-	.quad	_c198
+	.quad	442
+	.quad	_c22
 	.size	_c199, 16
 
 	.type	_c200,@object                   # @_c200
 	.p2align	4, 0x0
 _c200:
-	.quad	210
-	.quad	65538
+	.quad	470
+	.quad	_c199
 	.size	_c200, 16
 
 	.type	_c201,@object                   # @_c201
 	.p2align	4, 0x0
 _c201:
-	.quad	270
+	.quad	446
 	.quad	_c200
 	.size	_c201, 16
 
 	.type	_c202,@object                   # @_c202
 	.p2align	4, 0x0
 _c202:
-	.quad	274
+	.quad	282
 	.quad	_c201
 	.size	_c202, 16
 
 	.type	_c203,@object                   # @_c203
 	.p2align	4, 0x0
 _c203:
-	.quad	262
-	.quad	_c173
+	.quad	466
+	.quad	_c202
 	.size	_c203, 16
 
 	.type	_c204,@object                   # @_c204
 	.p2align	4, 0x0
 _c204:
-	.quad	314
+	.quad	446
 	.quad	_c203
 	.size	_c204, 16
 
@@ -21322,454 +21317,454 @@ _c204:
 	.p2align	4, 0x0
 _c205:
 	.quad	314
-	.quad	65538
+	.quad	_c204
 	.size	_c205, 16
 
 	.type	_c206,@object                   # @_c206
 	.p2align	4, 0x0
 _c206:
-	.quad	358
+	.quad	466
 	.quad	_c205
 	.size	_c206, 16
 
 	.type	_c207,@object                   # @_c207
 	.p2align	4, 0x0
 _c207:
-	.quad	334
+	.quad	422
 	.quad	_c206
 	.size	_c207, 16
 
 	.type	_c208,@object                   # @_c208
 	.p2align	4, 0x0
 _c208:
-	.quad	266
-	.quad	65538
+	.quad	442
+	.quad	_c207
 	.size	_c208, 16
 
 	.type	_c209,@object                   # @_c209
 	.p2align	4, 0x0
 _c209:
-	.quad	338
+	.quad	294
 	.quad	_c208
 	.size	_c209, 16
 
 	.type	_c210,@object                   # @_c210
 	.p2align	4, 0x0
 _c210:
-	.quad	278
-	.quad	_c209
+	.quad	138
+	.quad	65538
 	.size	_c210, 16
 
 	.type	_c211,@object                   # @_c211
 	.p2align	4, 0x0
 _c211:
-	.quad	262
-	.quad	_c205
+	.quad	370
+	.quad	_c210
 	.size	_c211, 16
 
 	.type	_c212,@object                   # @_c212
 	.p2align	4, 0x0
 _c212:
-	.quad	270
-	.quad	_c211
+	.quad	12386306                        # 0xbd0002
+	.quad	12058626
 	.size	_c212, 16
 
 	.type	_c213,@object                   # @_c213
 	.p2align	4, 0x0
 _c213:
-	.quad	310
+	.quad	130
 	.quad	65538
 	.size	_c213, 16
 
 	.type	_c214,@object                   # @_c214
 	.p2align	4, 0x0
 _c214:
-	.quad	278
+	.quad	234
 	.quad	_c213
 	.size	_c214, 16
 
 	.type	_c215,@object                   # @_c215
 	.p2align	4, 0x0
 _c215:
-	.quad	342
-	.quad	_c208
+	.quad	406
+	.quad	_c214
 	.size	_c215, 16
 
 	.type	_c216,@object                   # @_c216
 	.p2align	4, 0x0
 _c216:
-	.quad	334
+	.quad	450
 	.quad	_c215
 	.size	_c216, 16
 
 	.type	_c217,@object                   # @_c217
 	.p2align	4, 0x0
 _c217:
-	.quad	270
-	.quad	65538
+	.quad	486
+	.quad	_c216
 	.size	_c217, 16
 
 	.type	_c218,@object                   # @_c218
 	.p2align	4, 0x0
 _c218:
-	.quad	334
+	.quad	466
 	.quad	_c217
 	.size	_c218, 16
 
 	.type	_c219,@object                   # @_c219
 	.p2align	4, 0x0
 _c219:
-	.quad	278
+	.quad	130
 	.quad	_c218
 	.size	_c219, 16
 
 	.type	_c220,@object                   # @_c220
 	.p2align	4, 0x0
 _c220:
-	.quad	282
-	.quad	_c177
+	.quad	406
+	.quad	_c219
 	.size	_c220, 16
 
 	.type	_c221,@object                   # @_c221
 	.p2align	4, 0x0
 _c221:
-	.quad	286
-	.quad	_c177
+	.quad	414
+	.quad	_c220
 	.size	_c221, 16
 
 	.type	_c222,@object                   # @_c222
 	.p2align	4, 0x0
 _c222:
-	.quad	330
-	.quad	_c177
+	.quad	390
+	.quad	_c221
 	.size	_c222, 16
 
 	.type	_c223,@object                   # @_c223
 	.p2align	4, 0x0
 _c223:
-	.quad	342
-	.quad	_c177
+	.quad	462
+	.quad	_c222
 	.size	_c223, 16
 
 	.type	_c224,@object                   # @_c224
 	.p2align	4, 0x0
 _c224:
-	.quad	322
-	.quad	65538
+	.quad	462
+	.quad	_c223
 	.size	_c224, 16
 
 	.type	_c225,@object                   # @_c225
 	.p2align	4, 0x0
 _c225:
-	.quad	334
+	.quad	406
 	.quad	_c224
 	.size	_c225, 16
 
 	.type	_c226,@object                   # @_c226
 	.p2align	4, 0x0
 _c226:
+	.quad	310
 	.quad	_c225
-	.quad	65538
 	.size	_c226, 16
 
 	.type	_c227,@object                   # @_c227
 	.p2align	4, 0x0
 _c227:
-	.quad	_c223
+	.quad	466
 	.quad	_c226
 	.size	_c227, 16
 
 	.type	_c228,@object                   # @_c228
 	.p2align	4, 0x0
 _c228:
-	.quad	_c222
+	.quad	422
 	.quad	_c227
 	.size	_c228, 16
 
 	.type	_c229,@object                   # @_c229
 	.p2align	4, 0x0
 _c229:
-	.quad	_c221
+	.quad	442
 	.quad	_c228
 	.size	_c229, 16
 
 	.type	_c230,@object                   # @_c230
 	.p2align	4, 0x0
 _c230:
-	.quad	_c220
+	.quad	294
 	.quad	_c229
 	.size	_c230, 16
 
 	.type	_c231,@object                   # @_c231
 	.p2align	4, 0x0
 _c231:
-	.quad	_c219
+	.quad	130
 	.quad	_c230
 	.size	_c231, 16
 
 	.type	_c232,@object                   # @_c232
 	.p2align	4, 0x0
 _c232:
-	.quad	_c216
+	.quad	442
 	.quad	_c231
 	.size	_c232, 16
 
 	.type	_c233,@object                   # @_c233
 	.p2align	4, 0x0
 _c233:
-	.quad	_c214
+	.quad	478
 	.quad	_c232
 	.size	_c233, 16
 
 	.type	_c234,@object                   # @_c234
 	.p2align	4, 0x0
 _c234:
-	.quad	_c212
+	.quad	446
 	.quad	_c233
 	.size	_c234, 16
 
 	.type	_c235,@object                   # @_c235
 	.p2align	4, 0x0
 _c235:
-	.quad	_c210
+	.quad	442
 	.quad	_c234
 	.size	_c235, 16
 
 	.type	_c236,@object                   # @_c236
 	.p2align	4, 0x0
 _c236:
-	.quad	_c207
+	.quad	430
 	.quad	_c235
 	.size	_c236, 16
 
 	.type	_c237,@object                   # @_c237
 	.p2align	4, 0x0
 _c237:
-	.quad	_c204
+	.quad	442
 	.quad	_c236
 	.size	_c237, 16
 
 	.type	_c238,@object                   # @_c238
 	.p2align	4, 0x0
 _c238:
-	.quad	_c202
+	.quad	342
 	.quad	_c237
 	.size	_c238, 16
 
 	.type	_c239,@object                   # @_c239
 	.p2align	4, 0x0
 _c239:
-	.quad	_c199
-	.quad	_c238
+	.quad	442
+	.quad	_c219
 	.size	_c239, 16
 
 	.type	_c240,@object                   # @_c240
 	.p2align	4, 0x0
 _c240:
-	.quad	_c196
+	.quad	478
 	.quad	_c239
 	.size	_c240, 16
 
 	.type	_c241,@object                   # @_c241
 	.p2align	4, 0x0
 _c241:
-	.quad	_c193
+	.quad	446
 	.quad	_c240
 	.size	_c241, 16
 
 	.type	_c242,@object                   # @_c242
 	.p2align	4, 0x0
 _c242:
-	.quad	_c190
+	.quad	442
 	.quad	_c241
 	.size	_c242, 16
 
 	.type	_c243,@object                   # @_c243
 	.p2align	4, 0x0
 _c243:
-	.quad	_c187
+	.quad	430
 	.quad	_c242
 	.size	_c243, 16
 
 	.type	_c244,@object                   # @_c244
 	.p2align	4, 0x0
 _c244:
-	.quad	_c156
+	.quad	442
 	.quad	_c243
 	.size	_c244, 16
 
 	.type	_c245,@object                   # @_c245
 	.p2align	4, 0x0
 _c245:
-	.quad	_c185
+	.quad	470
 	.quad	_c244
 	.size	_c245, 16
 
 	.type	_c246,@object                   # @_c246
 	.p2align	4, 0x0
 _c246:
-	.quad	_c183
+	.quad	130
 	.quad	_c245
 	.size	_c246, 16
 
 	.type	_c247,@object                   # @_c247
 	.p2align	4, 0x0
 _c247:
-	.quad	_c182
+	.quad	234
 	.quad	_c246
 	.size	_c247, 16
 
 	.type	_c248,@object                   # @_c248
 	.p2align	4, 0x0
 _c248:
-	.quad	_c181
+	.quad	406
 	.quad	_c247
 	.size	_c248, 16
 
 	.type	_c249,@object                   # @_c249
 	.p2align	4, 0x0
 _c249:
-	.quad	_c179
+	.quad	462
 	.quad	_c248
 	.size	_c249, 16
 
 	.type	_c250,@object                   # @_c250
 	.p2align	4, 0x0
 _c250:
-	.quad	_c178
+	.quad	442
 	.quad	_c249
 	.size	_c250, 16
 
 	.type	_c251,@object                   # @_c251
 	.p2align	4, 0x0
 _c251:
-	.quad	_c176
+	.quad	446
 	.quad	_c250
 	.size	_c251, 16
 
 	.type	_c252,@object                   # @_c252
 	.p2align	4, 0x0
 _c252:
-	.quad	_c175
+	.quad	450
 	.quad	_c251
 	.size	_c252, 16
 
 	.type	_c253,@object                   # @_c253
 	.p2align	4, 0x0
 _c253:
-	.quad	_c172
+	.quad	462
 	.quad	_c252
 	.size	_c253, 16
 
 	.type	_c254,@object                   # @_c254
 	.p2align	4, 0x0
 _c254:
-	.quad	_c169
+	.quad	406
 	.quad	_c253
 	.size	_c254, 16
 
 	.type	_c255,@object                   # @_c255
 	.p2align	4, 0x0
 _c255:
-	.quad	_c166
+	.quad	330
 	.quad	_c254
 	.size	_c255, 16
 
 	.type	_c256,@object                   # @_c256
 	.p2align	4, 0x0
 _c256:
-	.quad	_c165
+	.quad	466
 	.quad	_c255
 	.size	_c256, 16
 
 	.type	_c257,@object                   # @_c257
 	.p2align	4, 0x0
 _c257:
-	.quad	_c162
+	.quad	422
 	.quad	_c256
 	.size	_c257, 16
 
 	.type	_c258,@object                   # @_c258
 	.p2align	4, 0x0
 _c258:
-	.quad	_c159
+	.quad	442
 	.quad	_c257
 	.size	_c258, 16
 
 	.type	_c259,@object                   # @_c259
 	.p2align	4, 0x0
 _c259:
-	.long	0                               # 0x0
-	.zero	12
+	.quad	294
+	.quad	_c258
 	.size	_c259, 16
 
 	.type	_c260,@object                   # @_c260
 	.p2align	4, 0x0
 _c260:
-	.quad	462
-	.quad	_c89
+	.quad	398
+	.quad	65538
 	.size	_c260, 16
 
 	.type	_c261,@object                   # @_c261
 	.p2align	4, 0x0
 _c261:
-	.quad	406
+	.quad	446
 	.quad	_c260
 	.size	_c261, 16
 
 	.type	_c262,@object                   # @_c262
 	.p2align	4, 0x0
 _c262:
-	.quad	398
+	.quad	434
 	.quad	_c261
 	.size	_c262, 16
 
 	.type	_c263,@object                   # @_c263
 	.p2align	4, 0x0
 _c263:
-	.quad	398
+	.quad	434
 	.quad	_c262
 	.size	_c263, 16
 
 	.type	_c264,@object                   # @_c264
 	.p2align	4, 0x0
 _c264:
-	.quad	470
+	.quad	390
 	.quad	_c263
 	.size	_c264, 16
 
 	.type	_c265,@object                   # @_c265
 	.p2align	4, 0x0
 _c265:
-	.quad	334
+	.quad	438
 	.quad	_c264
 	.size	_c265, 16
 
 	.type	_c266,@object                   # @_c266
 	.p2align	4, 0x0
 _c266:
-	.quad	466
-	.quad	_c265
+	.quad	486
+	.quad	65538
 	.size	_c266, 16
 
 	.type	_c267,@object                   # @_c267
 	.p2align	4, 0x0
 _c267:
-	.quad	422
+	.quad	458
 	.quad	_c266
 	.size	_c267, 16
 
 	.type	_c268,@object                   # @_c268
 	.p2align	4, 0x0
 _c268:
-	.quad	442
+	.quad	446
 	.quad	_c267
 	.size	_c268, 16
 
 	.type	_c269,@object                   # @_c269
 	.p2align	4, 0x0
 _c269:
-	.quad	294
+	.quad	438
 	.quad	_c268
 	.size	_c269, 16
 
@@ -21777,111 +21772,111 @@ _c269:
 	.p2align	4, 0x0
 _c270:
 	.quad	406
-	.quad	_c6
+	.quad	_c269
 	.size	_c270, 16
 
 	.type	_c271,@object                   # @_c271
 	.p2align	4, 0x0
 _c271:
-	.quad	458
+	.quad	438
 	.quad	_c270
 	.size	_c271, 16
 
 	.type	_c272,@object                   # @_c272
 	.p2align	4, 0x0
 _c272:
-	.quad	406
+	.quad	130
 	.quad	_c271
 	.size	_c272, 16
 
 	.type	_c273,@object                   # @_c273
 	.p2align	4, 0x0
 _c273:
-	.quad	466
+	.quad	410
 	.quad	_c272
 	.size	_c273, 16
 
 	.type	_c274,@object                   # @_c274
 	.p2align	4, 0x0
 _c274:
-	.quad	462
+	.quad	446
 	.quad	_c273
 	.size	_c274, 16
 
 	.type	_c275,@object                   # @_c275
 	.p2align	4, 0x0
 _c275:
-	.quad	422
+	.quad	130
 	.quad	_c274
 	.size	_c275, 16
 
 	.type	_c276,@object                   # @_c276
 	.p2align	4, 0x0
 _c276:
-	.quad	414
+	.quad	466
 	.quad	_c275
 	.size	_c276, 16
 
 	.type	_c277,@object                   # @_c277
 	.p2align	4, 0x0
 _c277:
-	.quad	406
+	.quad	470
 	.quad	_c276
 	.size	_c277, 16
 
 	.type	_c278,@object                   # @_c278
 	.p2align	4, 0x0
 _c278:
-	.quad	330
+	.quad	446
 	.quad	_c277
 	.size	_c278, 16
 
 	.type	_c279,@object                   # @_c279
 	.p2align	4, 0x0
 _c279:
-	.quad	486
+	.quad	130
 	.quad	_c278
 	.size	_c279, 16
 
 	.type	_c280,@object                   # @_c280
 	.p2align	4, 0x0
 _c280:
-	.quad	402
+	.quad	234
 	.quad	_c279
 	.size	_c280, 16
 
 	.type	_c281,@object                   # @_c281
 	.p2align	4, 0x0
 _c281:
-	.quad	390
-	.quad	_c280
+	.long	16                              # 0x10
+	.zero	12
 	.size	_c281, 16
 
 	.type	_c282,@object                   # @_c282
 	.p2align	4, 0x0
 _c282:
-	.quad	406
-	.quad	_c281
+	.quad	2                               # 0x2
+	.quad	2
 	.size	_c282, 16
 
 	.type	_c283,@object                   # @_c283
 	.p2align	4, 0x0
 _c283:
-	.quad	458
-	.quad	_c282
+	.quad	470
+	.quad	_c168
 	.size	_c283, 16
 
 	.type	_c284,@object                   # @_c284
 	.p2align	4, 0x0
 _c284:
-	.quad	434
+	.quad	466
 	.quad	_c283
 	.size	_c284, 16
 
 	.type	_c285,@object                   # @_c285
 	.p2align	4, 0x0
 _c285:
-	.quad	262
+	.quad	390
 	.quad	_c284
 	.size	_c285, 16
 
@@ -21895,84 +21890,84 @@ _c286:
 	.type	_c287,@object                   # @_c287
 	.p2align	4, 0x0
 _c287:
-	.quad	422
+	.quad	462
 	.quad	_c286
 	.size	_c287, 16
 
 	.type	_c288,@object                   # @_c288
 	.p2align	4, 0x0
 _c288:
-	.quad	442
+	.quad	130
 	.quad	_c287
 	.size	_c288, 16
 
 	.type	_c289,@object                   # @_c289
 	.p2align	4, 0x0
 _c289:
-	.quad	294
+	.quad	406
 	.quad	_c288
 	.size	_c289, 16
 
 	.type	_c290,@object                   # @_c290
 	.p2align	4, 0x0
 _c290:
-	.quad	442
-	.quad	_c6
+	.quad	458
+	.quad	_c289
 	.size	_c290, 16
 
 	.type	_c291,@object                   # @_c291
 	.p2align	4, 0x0
 _c291:
-	.quad	470
+	.quad	458
 	.quad	_c290
 	.size	_c291, 16
 
 	.type	_c292,@object                   # @_c292
 	.p2align	4, 0x0
 _c292:
-	.quad	446
+	.quad	390
 	.quad	_c291
 	.size	_c292, 16
 
 	.type	_c293,@object                   # @_c293
 	.p2align	4, 0x0
 _c293:
-	.quad	282
+	.quad	490
 	.quad	_c292
 	.size	_c293, 16
 
 	.type	_c294,@object                   # @_c294
 	.p2align	4, 0x0
 _c294:
-	.quad	466
+	.quad	422
 	.quad	_c293
 	.size	_c294, 16
 
 	.type	_c295,@object                   # @_c295
 	.p2align	4, 0x0
 _c295:
-	.quad	446
+	.quad	394
 	.quad	_c294
 	.size	_c295, 16
 
 	.type	_c296,@object                   # @_c296
 	.p2align	4, 0x0
 _c296:
-	.quad	314
+	.quad	130
 	.quad	_c295
 	.size	_c296, 16
 
 	.type	_c297,@object                   # @_c297
 	.p2align	4, 0x0
 _c297:
-	.quad	466
+	.quad	402
 	.quad	_c296
 	.size	_c297, 16
 
 	.type	_c298,@object                   # @_c298
 	.p2align	4, 0x0
 _c298:
-	.quad	422
+	.quad	406
 	.quad	_c297
 	.size	_c298, 16
 
@@ -21986,77 +21981,77 @@ _c299:
 	.type	_c300,@object                   # @_c300
 	.p2align	4, 0x0
 _c300:
-	.quad	294
+	.quad	458
 	.quad	_c299
 	.size	_c300, 16
 
 	.type	_c301,@object                   # @_c301
 	.p2align	4, 0x0
 _c301:
-	.quad	138
-	.quad	65538
+	.quad	470
+	.quad	_c300
 	.size	_c301, 16
 
 	.type	_c302,@object                   # @_c302
 	.p2align	4, 0x0
 _c302:
-	.quad	370
+	.quad	466
 	.quad	_c301
 	.size	_c302, 16
 
 	.type	_c303,@object                   # @_c303
 	.p2align	4, 0x0
 _c303:
-	.quad	12386306                        # 0xbd0002
-	.quad	12058626
+	.quad	406
+	.quad	_c302
 	.size	_c303, 16
 
 	.type	_c304,@object                   # @_c304
 	.p2align	4, 0x0
 _c304:
-	.quad	130
-	.quad	65538
+	.quad	330
+	.quad	_c303
 	.size	_c304, 16
 
 	.type	_c305,@object                   # @_c305
 	.p2align	4, 0x0
 _c305:
-	.quad	234
+	.quad	130
 	.quad	_c304
 	.size	_c305, 16
 
 	.type	_c306,@object                   # @_c306
 	.p2align	4, 0x0
 _c306:
-	.quad	406
+	.quad	234
 	.quad	_c305
 	.size	_c306, 16
 
 	.type	_c307,@object                   # @_c307
 	.p2align	4, 0x0
 _c307:
-	.quad	450
+	.quad	462
 	.quad	_c306
 	.size	_c307, 16
 
 	.type	_c308,@object                   # @_c308
 	.p2align	4, 0x0
 _c308:
-	.quad	486
+	.quad	434
 	.quad	_c307
 	.size	_c308, 16
 
 	.type	_c309,@object                   # @_c309
 	.p2align	4, 0x0
 _c309:
-	.quad	466
+	.quad	406
 	.quad	_c308
 	.size	_c309, 16
 
 	.type	_c310,@object                   # @_c310
 	.p2align	4, 0x0
 _c310:
-	.quad	130
+	.quad	442
 	.quad	_c309
 	.size	_c310, 16
 
@@ -22070,63 +22065,63 @@ _c311:
 	.type	_c312,@object                   # @_c312
 	.p2align	4, 0x0
 _c312:
-	.quad	478
+	.quad	390
 	.quad	_c311
 	.size	_c312, 16
 
 	.type	_c313,@object                   # @_c313
 	.p2align	4, 0x0
 _c313:
-	.quad	446
+	.quad	418
 	.quad	_c312
 	.size	_c313, 16
 
 	.type	_c314,@object                   # @_c314
 	.p2align	4, 0x0
 _c314:
-	.quad	442
+	.quad	270
 	.quad	_c313
 	.size	_c314, 16
 
 	.type	_c315,@object                   # @_c315
 	.p2align	4, 0x0
 _c315:
-	.quad	430
+	.quad	442
 	.quad	_c314
 	.size	_c315, 16
 
 	.type	_c316,@object                   # @_c316
 	.p2align	4, 0x0
 _c316:
-	.quad	442
+	.quad	318
 	.quad	_c315
 	.size	_c316, 16
 
 	.type	_c317,@object                   # @_c317
 	.p2align	4, 0x0
 _c317:
-	.quad	470
+	.quad	466
 	.quad	_c316
 	.size	_c317, 16
 
 	.type	_c318,@object                   # @_c318
 	.p2align	4, 0x0
 _c318:
-	.quad	130
+	.quad	422
 	.quad	_c317
 	.size	_c318, 16
 
 	.type	_c319,@object                   # @_c319
 	.p2align	4, 0x0
 _c319:
-	.quad	234
+	.quad	390
 	.quad	_c318
 	.size	_c319, 16
 
 	.type	_c320,@object                   # @_c320
 	.p2align	4, 0x0
 _c320:
-	.quad	406
+	.quad	350
 	.quad	_c319
 	.size	_c320, 16
 
@@ -22140,91 +22135,91 @@ _c321:
 	.type	_c322,@object                   # @_c322
 	.p2align	4, 0x0
 _c322:
-	.quad	442
+	.quad	446
 	.quad	_c321
 	.size	_c322, 16
 
 	.type	_c323,@object                   # @_c323
 	.p2align	4, 0x0
 _c323:
-	.quad	446
+	.quad	418
 	.quad	_c322
 	.size	_c323, 16
 
 	.type	_c324,@object                   # @_c324
 	.p2align	4, 0x0
 _c324:
-	.quad	450
-	.quad	_c323
+	.quad	2                               # 0x2
+	.quad	6
 	.size	_c324, 16
 
 	.type	_c325,@object                   # @_c325
 	.p2align	4, 0x0
 _c325:
-	.quad	462
-	.quad	_c324
+	.quad	65538                           # 0x10002
+	.quad	6
 	.size	_c325, 16
 
 	.type	_c326,@object                   # @_c326
 	.p2align	4, 0x0
 _c326:
-	.quad	406
-	.quad	_c325
+	.quad	0                               # 0x0
+	.zero	8
 	.size	_c326, 16
 
 	.type	_c327,@object                   # @_c327
 	.p2align	4, 0x0
 _c327:
-	.quad	330
-	.quad	_c326
+	.long	0                               # 0x0
+	.zero	12
 	.size	_c327, 16
 
 	.type	_c328,@object                   # @_c328
 	.p2align	4, 0x0
 _c328:
-	.quad	466
-	.quad	_c327
+	.quad	406
+	.quad	65538
 	.size	_c328, 16
 
 	.type	_c329,@object                   # @_c329
 	.p2align	4, 0x0
 _c329:
-	.quad	422
+	.quad	434
 	.quad	_c328
 	.size	_c329, 16
 
 	.type	_c330,@object                   # @_c330
 	.p2align	4, 0x0
 _c330:
-	.quad	442
+	.quad	394
 	.quad	_c329
 	.size	_c330, 16
 
 	.type	_c331,@object                   # @_c331
 	.p2align	4, 0x0
 _c331:
-	.quad	294
+	.quad	390
 	.quad	_c330
 	.size	_c331, 16
 
 	.type	_c332,@object                   # @_c332
 	.p2align	4, 0x0
 _c332:
-	.quad	406
-	.quad	_c310
+	.quad	458
+	.quad	_c331
 	.size	_c332, 16
 
 	.type	_c333,@object                   # @_c333
 	.p2align	4, 0x0
 _c333:
-	.quad	414
+	.quad	446
 	.quad	_c332
 	.size	_c333, 16
 
 	.type	_c334,@object                   # @_c334
 	.p2align	4, 0x0
 _c334:
-	.quad	390
+	.quad	466
 	.quad	_c333
 	.size	_c334, 16
 
@@ -22238,7 +22233,7 @@ _c335:
 	.type	_c336,@object                   # @_c336
 	.p2align	4, 0x0
 _c336:
-	.quad	462
+	.quad	130
 	.quad	_c335
 	.size	_c336, 16
 
@@ -22252,14 +22247,14 @@ _c337:
 	.type	_c338,@object                   # @_c338
 	.p2align	4, 0x0
 _c338:
-	.quad	310
+	.quad	474
 	.quad	_c337
 	.size	_c338, 16
 
 	.type	_c339,@object                   # @_c339
 	.p2align	4, 0x0
 _c339:
-	.quad	466
+	.quad	406
 	.quad	_c338
 	.size	_c339, 16
 
@@ -22273,35 +22268,35 @@ _c340:
 	.type	_c341,@object                   # @_c341
 	.p2align	4, 0x0
 _c341:
-	.quad	442
+	.quad	458
 	.quad	_c340
 	.size	_c341, 16
 
 	.type	_c342,@object                   # @_c342
 	.p2align	4, 0x0
 _c342:
-	.quad	294
+	.quad	466
 	.quad	_c341
 	.size	_c342, 16
 
 	.type	_c343,@object                   # @_c343
 	.p2align	4, 0x0
 _c343:
-	.quad	130
+	.quad	406
 	.quad	_c342
 	.size	_c343, 16
 
 	.type	_c344,@object                   # @_c344
 	.p2align	4, 0x0
 _c344:
-	.quad	442
+	.quad	458
 	.quad	_c343
 	.size	_c344, 16
 
 	.type	_c345,@object                   # @_c345
 	.p2align	4, 0x0
 _c345:
-	.quad	478
+	.quad	130
 	.quad	_c344
 	.size	_c345, 16
 
@@ -22315,133 +22310,133 @@ _c346:
 	.type	_c347,@object                   # @_c347
 	.p2align	4, 0x0
 _c347:
-	.quad	442
+	.quad	466
 	.quad	_c346
 	.size	_c347, 16
 
 	.type	_c348,@object                   # @_c348
 	.p2align	4, 0x0
 _c348:
-	.quad	430
+	.quad	130
 	.quad	_c347
 	.size	_c348, 16
 
 	.type	_c349,@object                   # @_c349
 	.p2align	4, 0x0
 _c349:
-	.quad	442
+	.quad	406
 	.quad	_c348
 	.size	_c349, 16
 
 	.type	_c350,@object                   # @_c350
 	.p2align	4, 0x0
 _c350:
-	.quad	342
+	.quad	398
 	.quad	_c349
 	.size	_c350, 16
 
 	.type	_c351,@object                   # @_c351
 	.p2align	4, 0x0
 _c351:
-	.quad	446
-	.quad	_c146
+	.quad	390
+	.quad	_c350
 	.size	_c351, 16
 
 	.type	_c352,@object                   # @_c352
 	.p2align	4, 0x0
 _c352:
-	.quad	446
+	.quad	450
 	.quad	_c351
 	.size	_c352, 16
 
 	.type	_c353,@object                   # @_c353
 	.p2align	4, 0x0
 _c353:
-	.quad	394
+	.quad	462
 	.quad	_c352
 	.size	_c353, 16
 
 	.type	_c354,@object                   # @_c354
 	.p2align	4, 0x0
 _c354:
-	.quad	446
+	.quad	130
 	.quad	_c353
 	.size	_c354, 16
 
 	.type	_c355,@object                   # @_c355
 	.p2align	4, 0x0
 _c355:
-	.quad	466
+	.quad	418
 	.quad	_c354
 	.size	_c355, 16
 
 	.type	_c356,@object                   # @_c356
 	.p2align	4, 0x0
 _c356:
-	.quad	470
+	.quad	414
 	.quad	_c355
 	.size	_c356, 16
 
 	.type	_c357,@object                   # @_c357
 	.p2align	4, 0x0
 _c357:
-	.quad	390
+	.quad	470
 	.quad	_c356
 	.size	_c357, 16
 
 	.type	_c358,@object                   # @_c358
 	.p2align	4, 0x0
 _c358:
-	.quad	186
+	.quad	446
 	.quad	_c357
 	.size	_c358, 16
 
 	.type	_c359,@object                   # @_c359
 	.p2align	4, 0x0
 _c359:
-	.quad	462
+	.quad	442
 	.quad	_c358
 	.size	_c359, 16
 
 	.type	_c360,@object                   # @_c360
 	.p2align	4, 0x0
 _c360:
-	.quad	446
+	.quad	406
 	.quad	_c359
 	.size	_c360, 16
 
 	.type	_c361,@object                   # @_c361
 	.p2align	4, 0x0
 _c361:
-	.quad	418
+	.quad	130
 	.quad	_c360
 	.size	_c361, 16
 
 	.type	_c362,@object                   # @_c362
 	.p2align	4, 0x0
 _c362:
-	.quad	186
+	.quad	466
 	.quad	_c361
 	.size	_c362, 16
 
 	.type	_c363,@object                   # @_c363
 	.p2align	4, 0x0
 _c363:
-	.quad	438
+	.quad	446
 	.quad	_c362
 	.size	_c363, 16
 
 	.type	_c364,@object                   # @_c364
 	.p2align	4, 0x0
 _c364:
-	.quad	446
+	.quad	314
 	.quad	_c363
 	.size	_c364, 16
 
 	.type	_c365,@object                   # @_c365
 	.p2align	4, 0x0
 _c365:
-	.quad	398
+	.quad	2                               # 0x2
 	.quad	_c364
 	.size	_c365, 16
 
@@ -22645,7 +22640,7 @@ _c393:
 	.p2align	4, 0x0
 _c394:
 	.quad	2                               # 0x2
-	.quad	_c134
+	.quad	_c327
 	.size	_c394, 16
 
 	.type	_c395,@object                   # @_c395
@@ -22660,7 +22655,7 @@ _c395:
 _c396:
 	.quad	196610                          # 0x30002
 	.quad	_c395
-	.quad	_g1875652663+1
+	.quad	_g480397367+1
 	.zero	8
 	.size	_c396, 32
 
@@ -22675,7 +22670,7 @@ _c397:
 	.p2align	4, 0x0
 _c398:
 	.quad	398
-	.quad	_c29
+	.quad	_c328
 	.size	_c398, 16
 
 	.type	_c399,@object                   # @_c399
@@ -22773,7 +22768,7 @@ _c411:
 	.p2align	4, 0x0
 _c412:
 	.quad	65538                           # 0x10002
-	.quad	_c134
+	.quad	_c327
 	.size	_c412, 16
 
 	.type	_c413,@object                   # @_c413
@@ -22788,7 +22783,7 @@ _c413:
 _c414:
 	.quad	196610                          # 0x30002
 	.quad	_c413
-	.quad	_g1860579385+1
+	.quad	_g462047289+1
 	.zero	8
 	.size	_c414, 32
 
@@ -22825,7 +22820,7 @@ _c418:
 _c419:
 	.quad	196610                          # 0x30002
 	.quad	_c418
-	.quad	_g1848651815+1
+	.quad	_g450119719+1
 	.zero	8
 	.size	_c419, 32
 
@@ -22840,7 +22835,7 @@ _c420:
 	.p2align	4, 0x0
 _c421:
 	.quad	414
-	.quad	_c29
+	.quad	_c328
 	.size	_c421, 16
 
 	.type	_c422,@object                   # @_c422
@@ -22910,7 +22905,7 @@ _c430:
 	.p2align	4, 0x0
 _c431:
 	.quad	466
-	.quad	_c304
+	.quad	_c213
 	.size	_c431, 16
 
 	.type	_c432,@object                   # @_c432
@@ -22973,7 +22968,7 @@ _c439:
 	.p2align	4, 0x0
 _c440:
 	.quad	414
-	.quad	_c305
+	.quad	_c214
 	.size	_c440, 16
 
 	.type	_c441,@object                   # @_c441
@@ -23149,7 +23144,7 @@ _c464:
 _c465:
 	.quad	196610                          # 0x30002
 	.quad	_c464
-	.quad	_g1832529959+1
+	.quad	_g410667047+1
 	.zero	8
 	.size	_c465, 32
 
@@ -23375,7 +23370,7 @@ _c496:
 _c497:
 	.quad	196610                          # 0x30002
 	.quad	_c464
-	.quad	_g1837641769+1
+	.quad	_g427837481+1
 	.zero	8
 	.size	_c497, 32
 
@@ -23383,7 +23378,7 @@ _c497:
 	.p2align	4, 0x0
 _c498:
 	.quad	422
-	.quad	_c146
+	.quad	_c4
 	.size	_c498, 16
 
 	.type	_c499,@object                   # @_c499
@@ -23432,7 +23427,7 @@ _c504:
 	.p2align	4, 0x0
 _c505:
 	.quad	462
-	.quad	_c29
+	.quad	_c328
 	.size	_c505, 16
 
 	.type	_c506,@object                   # @_c506
@@ -24230,7 +24225,7 @@ _c618:
 	.p2align	4, 0x0
 _c619:
 	.quad	462
-	.quad	_c306
+	.quad	_c215
 	.size	_c619, 16
 
 	.type	_c620,@object                   # @_c620
@@ -24706,7 +24701,7 @@ _c686:
 	.p2align	4, 0x0
 _c687:
 	.quad	458
-	.quad	_c305
+	.quad	_c214
 	.size	_c687, 16
 
 	.type	_c688,@object                   # @_c688
@@ -25620,7 +25615,7 @@ _c816:
 	.p2align	4, 0x0
 _c817:
 	.quad	410
-	.quad	_c292
+	.quad	_c201
 	.size	_c817, 16
 
 	.type	_c818,@object                   # @_c818
@@ -25858,18 +25853,18 @@ _c850:
 	.globl	nh_stuff
 	.p2align	4, 0x0
 nh_stuff:
-	.quad	_g1782590997
-	.quad	_g1820470825
-	.quad	_g1837641769
-	.quad	_g1815227945
-	.quad	_g1810116135
-	.quad	_g1832529959
-	.quad	_g1848651815
-	.quad	_g1860579385
-	.quad	_g1828728375
-	.quad	_g1875652663
-	.quad	_g1800941159
-	.quad	_g1647063097
+	.quad	_g1140999701
+	.quad	_g1178355241
+	.quad	_g427837481
+	.quad	_g1173112361
+	.quad	_g1168000551
+	.quad	_g410667047
+	.quad	_g450119719
+	.quad	_g462047289
+	.quad	_g1186612791
+	.quad	_g480397367
+	.quad	_g1158825575
+	.quad	_g1346783289
 	.quad	_c1
 	.quad	_c2
 	.quad	_c3
@@ -26723,96 +26718,603 @@ nh_stuff:
 	.quad	0
 	.size	nh_stuff, 6904
 
-	.type	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2,@object # @"cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2"
-	.local	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2
-	.comm	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5,@object # @"cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5"
-	.local	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5
-	.comm	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7,@object # @"cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7"
-	.local	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7
-	.comm	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7,8,8
+	.type	cP1__Hos_User_IPC_transmitMsg$d15,@object # @"cP1__Hos_User_IPC_transmitMsg$d15"
+	.local	cP1__Hos_User_IPC_transmitMsg$d15
+	.comm	cP1__Hos_User_IPC_transmitMsg$d15,8,8
+	.type	cCJhc_Type_Basic_Right,@object  # @cCJhc_Type_Basic_Right
+	.local	cCJhc_Type_Basic_Right
+	.comm	cCJhc_Type_Basic_Right,8,8
+	.type	cCJhc_Prim_Prim_$LccR,@object   # @"cCJhc_Prim_Prim_$LccR"
+	.local	cCJhc_Prim_Prim_$LccR
+	.comm	cCJhc_Prim_Prim_$LccR,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2"
+	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2
+	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2,8,8
+	.type	cP1__Data_Binary_fl$_x64315462$d5406,@object # @"cP1__Data_Binary_fl$_x64315462$d5406"
+	.local	cP1__Data_Binary_fl$_x64315462$d5406
+	.comm	cP1__Data_Binary_fl$_x64315462$d5406,8,8
+	.type	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3,@object # @"cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3"
+	.local	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3
+	.comm	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2"
+	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2
+	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2,8,8
+	.type	cCHos_Init_Msg_InitFoundProvider,@object # @cCHos_Init_Msg_InitFoundProvider
+	.local	cCHos_Init_Msg_InitFoundProvider
+	.comm	cCHos_Init_Msg_InitFoundProvider,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3"
+	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3
+	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3"
+	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3
+	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4"
+	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4
+	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4"
+	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4
+	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3"
+	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3
+	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2"
+	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2
+	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2"
+	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2
+	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2,8,8
+	.type	cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2,@object # @"cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2"
+	.local	cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2
+	.comm	cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2"
+	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2
+	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2,8,8
+	.type	cCJhc_Prim_Prim_$LcR,@object    # @"cCJhc_Prim_Prim_$LcR"
+	.local	cCJhc_Prim_Prim_$LcR
+	.comm	cCJhc_Prim_Prim_$LcR,8,8
+	.type	cFInstance$__iJhc_Show_show_default,@object # @"cFInstance$__iJhc_Show_show_default"
+	.local	cFInstance$__iJhc_Show_show_default
+	.comm	cFInstance$__iJhc_Show_show_default,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3"
+	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3
+	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3"
+	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3
+	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3,8,8
+	.type	cCHos_Common_Bundle_BundleItem,@object # @cCHos_Common_Bundle_BundleItem
+	.local	cCHos_Common_Bundle_BundleItem
+	.comm	cCHos_Common_Bundle_BundleItem,8,8
+	.type	cFtheMain$d7,@object            # @"cFtheMain$d7"
+	.local	cFtheMain$d7
+	.comm	cFtheMain$d7,8,8
+	.type	cFtheMain$d6,@object            # @"cFtheMain$d6"
+	.local	cFtheMain$d6
+	.comm	cFtheMain$d6,8,8
+	.type	cFtheMain$d5,@object            # @"cFtheMain$d5"
+	.local	cFtheMain$d5
+	.comm	cFtheMain$d5,8,8
+	.type	cCHos_Common_Types_FromPhysical,@object # @cCHos_Common_Types_FromPhysical
+	.local	cCHos_Common_Types_FromPhysical
+	.comm	cCHos_Common_Types_FromPhysical,8,8
+	.type	cFNumeric_showHex,@object       # @cFNumeric_showHex
+	.local	cFNumeric_showHex
+	.comm	cFNumeric_showHex,8,8
+	.type	cFJhc_Basics_$pp,@object        # @"cFJhc_Basics_$pp"
+	.local	cFJhc_Basics_$pp
+	.comm	cFJhc_Basics_$pp,8,8
+	.type	cCHos_User_IPC_CouldNotParseResponse,@object # @cCHos_User_IPC_CouldNotParseResponse
+	.local	cCHos_User_IPC_CouldNotParseResponse
+	.comm	cCHos_User_IPC_CouldNotParseResponse,8,8
+	.type	cCHos_Init_Msg_InitRegisterProvider,@object # @cCHos_Init_Msg_InitRegisterProvider
+	.local	cCHos_Init_Msg_InitRegisterProvider
+	.comm	cCHos_Init_Msg_InitRegisterProvider,8,8
+	.type	cCHos_User_IPC_OurMsg,@object   # @cCHos_User_IPC_OurMsg
+	.local	cCHos_User_IPC_OurMsg
+	.comm	cCHos_User_IPC_OurMsg,8,8
+	.type	cCHos_Storage_Msg_StoragePerformQuery,@object # @cCHos_Storage_Msg_StoragePerformQuery
+	.local	cCHos_Storage_Msg_StoragePerformQuery
+	.comm	cCHos_Storage_Msg_StoragePerformQuery,8,8
+	.type	cCHos_Storage_Msg_TagIs,@object # @cCHos_Storage_Msg_TagIs
+	.local	cCHos_Storage_Msg_TagIs
+	.comm	cCHos_Storage_Msg_TagIs,8,8
+	.type	cCHos_Storage_Msg_StorageQueryResult,@object # @cCHos_Storage_Msg_StorageQueryResult
+	.local	cCHos_Storage_Msg_StorageQueryResult
+	.comm	cCHos_Storage_Msg_StorageQueryResult,8,8
+	.type	cCHos_Storage_Msg_StorageExecute,@object # @cCHos_Storage_Msg_StorageExecute
+	.local	cCHos_Storage_Msg_StorageExecute
+	.comm	cCHos_Storage_Msg_StorageExecute,8,8
+	.type	cCHos_Init_Msg_InitSendArgs,@object # @cCHos_Init_Msg_InitSendArgs
+	.local	cCHos_Init_Msg_InitSendArgs
+	.comm	cCHos_Init_Msg_InitSendArgs,8,8
+	.type	cCHos_Storage_Msg_StorageStartedTask,@object # @cCHos_Storage_Msg_StorageStartedTask
+	.local	cCHos_Storage_Msg_StorageStartedTask
+	.comm	cCHos_Storage_Msg_StorageStartedTask,8,8
+	.type	cFMain_serveBundle$d13,@object  # @"cFMain_serveBundle$d13"
+	.local	cFMain_serveBundle$d13
+	.comm	cFMain_serveBundle$d13,8,8
+	.type	cCHos_User_IPC_InTransitMsg,@object # @cCHos_User_IPC_InTransitMsg
+	.local	cCHos_User_IPC_InTransitMsg
+	.comm	cCHos_User_IPC_InTransitMsg,8,8
+	.type	cFMain_serveBundle$d5,@object   # @"cFMain_serveBundle$d5"
+	.local	cFMain_serveBundle$d5
+	.comm	cFMain_serveBundle$d5,8,8
+	.type	cFR$__fJhc_Basics_zip,@object   # @"cFR$__fJhc_Basics_zip"
+	.local	cFR$__fJhc_Basics_zip
+	.comm	cFR$__fJhc_Basics_zip,8,8
+	.type	cFW$__fJhc_Inst_Enum_67__f,@object # @"cFW$__fJhc_Inst_Enum_67__f"
+	.local	cFW$__fJhc_Inst_Enum_67__f
+	.comm	cFW$__fJhc_Inst_Enum_67__f,8,8
+	.type	cP2__Hos_User_IPC_transmitMsg$d8,@object # @"cP2__Hos_User_IPC_transmitMsg$d8"
+	.local	cP2__Hos_User_IPC_transmitMsg$d8
+	.comm	cP2__Hos_User_IPC_transmitMsg$d8,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage,@object # @"cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage,8,8
+	.type	cP2__Hos_User_IPC_transmitMsg$d15,@object # @"cP2__Hos_User_IPC_transmitMsg$d15"
+	.local	cP2__Hos_User_IPC_transmitMsg$d15
+	.comm	cP2__Hos_User_IPC_transmitMsg$d15,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage,@object # @"cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage,8,8
+	.type	cFHos_User_IPC_transmitMsg$d18,@object # @"cFHos_User_IPC_transmitMsg$d18"
+	.local	cFHos_User_IPC_transmitMsg$d18
+	.comm	cFHos_User_IPC_transmitMsg$d18,8,8
+	.type	cFHos_User_IPC_transmitMsg$d17,@object # @"cFHos_User_IPC_transmitMsg$d17"
+	.local	cFHos_User_IPC_transmitMsg$d17
+	.comm	cFHos_User_IPC_transmitMsg$d17,8,8
+	.type	cFHos_User_IPC_transmitMsg$d16,@object # @"cFHos_User_IPC_transmitMsg$d16"
+	.local	cFHos_User_IPC_transmitMsg$d16
+	.comm	cFHos_User_IPC_transmitMsg$d16,8,8
+	.type	cFHos_User_IPC_transmitMsg$d10,@object # @"cFHos_User_IPC_transmitMsg$d10"
+	.local	cFHos_User_IPC_transmitMsg$d10
+	.comm	cFHos_User_IPC_transmitMsg$d10,8,8
+	.type	cFHos_User_IPC_transmitMsg$d9,@object # @"cFHos_User_IPC_transmitMsg$d9"
+	.local	cFHos_User_IPC_transmitMsg$d9
+	.comm	cFHos_User_IPC_transmitMsg$d9,8,8
+	.type	cFW$__fR$__fJhc_List_383__f,@object # @"cFW$__fR$__fJhc_List_383__f"
+	.local	cFW$__fR$__fJhc_List_383__f
+	.comm	cFW$__fR$__fJhc_List_383__f,8,8
+	.type	cCData_Elf_Elf64ProgHdr,@object # @cCData_Elf_Elf64ProgHdr
+	.local	cCData_Elf_Elf64ProgHdr
+	.comm	cCData_Elf_Elf64ProgHdr,8,8
+	.type	cCHos_Common_Types_CopyOnWrite,@object # @cCHos_Common_Types_CopyOnWrite
+	.local	cCHos_Common_Types_CopyOnWrite
+	.comm	cCHos_Common_Types_CopyOnWrite,8,8
+	.type	cFW$__fHos_Storage_loadElf$d4,@object # @"cFW$__fHos_Storage_loadElf$d4"
+	.local	cFW$__fHos_Storage_loadElf$d4
+	.comm	cFW$__fHos_Storage_loadElf$d4,8,8
+	.type	cFW$__fHos_Storage_loadElf$d2,@object # @"cFW$__fHos_Storage_loadElf$d2"
+	.local	cFW$__fHos_Storage_loadElf$d2
+	.comm	cFW$__fHos_Storage_loadElf$d2,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse,@object # @"cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse,@object # @"cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse,8,8
+	.type	cBap__1__W$__fNumeric_showIntAtBase__100304,@object # @"cBap__1__W$__fNumeric_showIntAtBase__100304"
+	.local	cBap__1__W$__fNumeric_showIntAtBase__100304
+	.comm	cBap__1__W$__fNumeric_showIntAtBase__100304,8,8
+	.type	cFW$__fNumeric_showIntAtBase$d2,@object # @"cFW$__fNumeric_showIntAtBase$d2"
+	.local	cFW$__fNumeric_showIntAtBase$d2
+	.comm	cFW$__fNumeric_showIntAtBase$d2,8,8
+	.type	cBap__1__W$__fNumeric_showIntAtBase__100308,@object # @"cBap__1__W$__fNumeric_showIntAtBase__100308"
+	.local	cBap__1__W$__fNumeric_showIntAtBase__100308
+	.comm	cBap__1__W$__fNumeric_showIntAtBase__100308,8,8
+	.type	cFW$__fNumeric_showIntAtBase$d3,@object # @"cFW$__fNumeric_showIntAtBase$d3"
+	.local	cFW$__fNumeric_showIntAtBase$d3
+	.comm	cFW$__fNumeric_showIntAtBase$d3,8,8
+	.type	cFHos_User_SysCall_hosDebugLog$d2,@object # @"cFHos_User_SysCall_hosDebugLog$d2"
+	.local	cFHos_User_SysCall_hosDebugLog$d2
+	.comm	cFHos_User_SysCall_hosDebugLog$d2,8,8
+	.type	cP1__W$__fData_Binary_storableB$d3,@object # @"cP1__W$__fData_Binary_storableB$d3"
+	.local	cP1__W$__fData_Binary_storableB$d3
+	.comm	cP1__W$__fData_Binary_storableB$d3,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,@object # @"cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5"
+	.local	cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5
+	.comm	cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4"
+	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4
+	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4,8,8
+	.type	cP1__W$__fData_Binary_storableB$d5,@object # @"cP1__W$__fData_Binary_storableB$d5"
+	.local	cP1__W$__fData_Binary_storableB$d5
+	.comm	cP1__W$__fData_Binary_storableB$d5,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6"
+	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6
+	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6,8,8
+	.type	cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066,@object # @"cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066"
+	.local	cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066
+	.comm	cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066,8,8
+	.type	cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool"
+	.local	cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool
+	.comm	cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13"
+	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13
+	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13,8,8
+	.type	cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool"
+	.local	cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool
+	.comm	cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool,8,8
+	.type	cP1__W$__fData_Binary_storableB$d7,@object # @"cP1__W$__fData_Binary_storableB$d7"
+	.local	cP1__W$__fData_Binary_storableB$d7
+	.comm	cP1__W$__fData_Binary_storableB$d7,8,8
+	.type	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10,@object # @"cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10"
+	.local	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10
+	.comm	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10,8,8
+	.type	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9,@object # @"cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9"
+	.local	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9
+	.comm	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9,8,8
+	.type	cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char"
+	.local	cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char
+	.comm	cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7"
+	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7
+	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7,8,8
+	.type	cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char"
+	.local	cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char
+	.comm	cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6"
+	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6
+	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6,8,8
+	.type	cP1__W$__fData_Binary_storableB$d9,@object # @"cP1__W$__fData_Binary_storableB$d9"
+	.local	cP1__W$__fData_Binary_storableB$d9
+	.comm	cP1__W$__fData_Binary_storableB$d9,8,8
+	.type	cP3__Data_Binary_get$d2,@object # @"cP3__Data_Binary_get$d2"
+	.local	cP3__Data_Binary_get$d2
+	.comm	cP3__Data_Binary_get$d2,8,8
+	.type	cP3__Data_Binary_get$d3,@object # @"cP3__Data_Binary_get$d3"
+	.local	cP3__Data_Binary_get$d3
+	.comm	cP3__Data_Binary_get$d3,8,8
+	.type	cP3__Data_Binary_get$d4,@object # @"cP3__Data_Binary_get$d4"
+	.local	cP3__Data_Binary_get$d4
+	.comm	cP3__Data_Binary_get$d4,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId,8,8
+	.type	cP1__W$__fData_Binary_storableB$d11,@object # @"cP1__W$__fData_Binary_storableB$d11"
+	.local	cP1__W$__fData_Binary_storableB$d11
+	.comm	cP1__W$__fData_Binary_storableB$d11,8,8
 	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_QId,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_QId"
 	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_QId
 	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_QId,8,8
+	.type	cP3__Data_Binary_get$d5,@object # @"cP3__Data_Binary_get$d5"
+	.local	cP3__Data_Binary_get$d5
+	.comm	cP3__Data_Binary_get$d5,8,8
 	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_QId,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_QId"
 	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_QId
 	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_QId,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5"
-	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5
-	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5"
-	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5
-	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,8,8
 	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId"
 	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId
 	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId,8,8
 	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId"
 	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId
 	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_ObId,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6"
-	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6
-	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6"
-	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6
-	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2,@object # @"cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2"
+	.local	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2
+	.comm	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2,8,8
 	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus"
 	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus
 	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus,8,8
 	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus"
 	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus
 	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxStatus,8,8
+	.type	cP3__Data_Binary_get$d6,@object # @"cP3__Data_Binary_get$d6"
+	.local	cP3__Data_Binary_get$d6
+	.comm	cP3__Data_Binary_get$d6,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5,@object # @"cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5"
+	.local	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5
+	.comm	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5,8,8
+	.type	cP3__Data_Binary_get$d7,@object # @"cP3__Data_Binary_get$d7"
+	.local	cP3__Data_Binary_get$d7
+	.comm	cP3__Data_Binary_get$d7,8,8
+	.type	cCHos_User_IPC_RoutedMessage,@object # @cCHos_User_IPC_RoutedMessage
+	.local	cCHos_User_IPC_RoutedMessage
+	.comm	cCHos_User_IPC_RoutedMessage,8,8
+	.type	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2,@object # @"cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2"
+	.local	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2
+	.comm	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2,8,8
+	.type	cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482,@object # @"cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482"
+	.local	cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482
+	.comm	cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3066u100482,8,8
+	.type	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11,@object # @"cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11"
+	.local	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11
+	.comm	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11,8,8
+	.type	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4,@object # @"cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4"
+	.local	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4
+	.comm	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7,@object # @"cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7"
+	.local	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7
+	.comm	cP1__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7,8,8
+	.type	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5,@object # @"cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5"
+	.local	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5
+	.comm	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5,8,8
+	.type	cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494,@object # @"cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494"
+	.local	cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494
+	.comm	cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100494,8,8
+	.type	cFJhc_Show_showsPrec,@object    # @cFJhc_Show_showsPrec
+	.local	cFJhc_Show_showsPrec
+	.comm	cFJhc_Show_showsPrec,8,8
+	.type	cFW$__fPrelude_Text_showLitChar$d2,@object # @"cFW$__fPrelude_Text_showLitChar$d2"
+	.local	cFW$__fPrelude_Text_showLitChar$d2
+	.comm	cFW$__fPrelude_Text_showLitChar$d2,8,8
+	.type	cFW$__fPrelude_Text_showLitChar$d3,@object # @"cFW$__fPrelude_Text_showLitChar$d3"
+	.local	cFW$__fPrelude_Text_showLitChar$d3
+	.comm	cFW$__fPrelude_Text_showLitChar$d3,8,8
+	.type	cFW$__fJhc_List_$bb,@object     # @"cFW$__fJhc_List_$bb"
+	.local	cFW$__fJhc_List_$bb
+	.comm	cFW$__fJhc_List_$bb,8,8
+	.type	cP1__W$__fData_Binary_put$d2,@object # @"cP1__W$__fData_Binary_put$d2"
+	.local	cP1__W$__fData_Binary_put$d2
+	.comm	cP1__W$__fData_Binary_put$d2,8,8
+	.type	cCHos_Storage_Msg_StorageTransactionStatus,@object # @cCHos_Storage_Msg_StorageTransactionStatus
+	.local	cCHos_Storage_Msg_StorageTransactionStatus
+	.comm	cCHos_Storage_Msg_StorageTransactionStatus,8,8
+	.type	cCHos_Storage_Msg_StorageAbortTransaction,@object # @cCHos_Storage_Msg_StorageAbortTransaction
+	.local	cCHos_Storage_Msg_StorageAbortTransaction
+	.comm	cCHos_Storage_Msg_StorageAbortTransaction,8,8
+	.type	cCHos_Storage_Msg_StorageCommitTransaction,@object # @cCHos_Storage_Msg_StorageCommitTransaction
+	.local	cCHos_Storage_Msg_StorageCommitTransaction
+	.comm	cCHos_Storage_Msg_StorageCommitTransaction,8,8
+	.type	cP1__W$__fData_Binary_put$d4,@object # @"cP1__W$__fData_Binary_put$d4"
+	.local	cP1__W$__fData_Binary_put$d4
+	.comm	cP1__W$__fData_Binary_put$d4,8,8
+	.type	cCHos_Storage_Msg_NotQ,@object  # @cCHos_Storage_Msg_NotQ
+	.local	cCHos_Storage_Msg_NotQ
+	.comm	cCHos_Storage_Msg_NotQ,8,8
+	.type	cCHos_Storage_Msg_OrQ,@object   # @cCHos_Storage_Msg_OrQ
+	.local	cCHos_Storage_Msg_OrQ
+	.comm	cCHos_Storage_Msg_OrQ,8,8
+	.type	cCHos_Storage_Msg_AndQ,@object  # @cCHos_Storage_Msg_AndQ
+	.local	cCHos_Storage_Msg_AndQ
+	.comm	cCHos_Storage_Msg_AndQ,8,8
+	.type	cP1__W$__fData_Binary_put$d6,@object # @"cP1__W$__fData_Binary_put$d6"
+	.local	cP1__W$__fData_Binary_put$d6
+	.comm	cP1__W$__fData_Binary_put$d6,8,8
+	.type	cCHos_Common_Bundle_Tag,@object # @cCHos_Common_Bundle_Tag
+	.local	cCHos_Common_Bundle_Tag
+	.comm	cCHos_Common_Bundle_Tag,8,8
+	.type	cCHos_Common_Bundle_BooleanV,@object # @cCHos_Common_Bundle_BooleanV
+	.local	cCHos_Common_Bundle_BooleanV
+	.comm	cCHos_Common_Bundle_BooleanV,8,8
+	.type	cCHos_Common_Bundle_IntegerV,@object # @cCHos_Common_Bundle_IntegerV
+	.local	cCHos_Common_Bundle_IntegerV
+	.comm	cCHos_Common_Bundle_IntegerV,8,8
+	.type	cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2,@object # @"cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2"
+	.local	cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2
+	.comm	cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2,8,8
+	.type	cCHos_Common_Bundle_TextV,@object # @cCHos_Common_Bundle_TextV
+	.local	cCHos_Common_Bundle_TextV
+	.comm	cCHos_Common_Bundle_TextV,8,8
+	.type	cP1__W$__fData_Binary_put$d8,@object # @"cP1__W$__fData_Binary_put$d8"
+	.local	cP1__W$__fData_Binary_put$d8
+	.comm	cP1__W$__fData_Binary_put$d8,8,8
+	.type	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,@object # @"cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5"
+	.local	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5
+	.comm	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4"
+	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4
+	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4,8,8
+	.type	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,@object # @"cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2"
+	.local	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2
+	.comm	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,8,8
+	.type	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,@object # @"cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6"
+	.local	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6
+	.comm	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5"
+	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5
+	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5,8,8
+	.type	cFR$__fJhc_Basics_$pp,@object   # @"cFR$__fJhc_Basics_$pp"
+	.local	cFR$__fJhc_Basics_$pp
+	.comm	cFR$__fJhc_Basics_$pp,8,8
+	.type	cCHos_Init_Msg_InitFindProvider,@object # @cCHos_Init_Msg_InitFindProvider
+	.local	cCHos_Init_Msg_InitFindProvider
+	.comm	cCHos_Init_Msg_InitFindProvider,8,8
+	.type	cCHos_Common_Bundle_TagDescriptor,@object # @cCHos_Common_Bundle_TagDescriptor
+	.local	cCHos_Common_Bundle_TagDescriptor
+	.comm	cCHos_Common_Bundle_TagDescriptor,8,8
+	.type	cFPrelude_Text_30__showl,@object # @cFPrelude_Text_30__showl
+	.local	cFPrelude_Text_30__showl
+	.comm	cFPrelude_Text_30__showl,8,8
+	.type	cCJhc_Type_Word_Word64,@object  # @cCJhc_Type_Word_Word64
+	.local	cCJhc_Type_Word_Word64
+	.comm	cCJhc_Type_Word_Word64,8,8
+	.type	cCJhc_Type_Ptr_Ptr,@object      # @cCJhc_Type_Ptr_Ptr
+	.local	cCJhc_Type_Ptr_Ptr
+	.comm	cCJhc_Type_Ptr_Ptr,8,8
+	.type	cCJhc_Type_Basic_Left,@object   # @cCJhc_Type_Basic_Left
+	.local	cCJhc_Type_Basic_Left
+	.comm	cCJhc_Type_Basic_Left,8,8
+	.type	cFJhc_Show_showsPrec$d3,@object # @"cFJhc_Show_showsPrec$d3"
+	.local	cFJhc_Show_showsPrec$d3
+	.comm	cFJhc_Show_showsPrec$d3,8,8
+	.type	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId,@object # @"cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId"
+	.local	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId
+	.comm	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId,8,8
+	.type	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2,@object # @"cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2"
+	.local	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2
+	.comm	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2,8,8
+	.type	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3,@object # @"cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3"
+	.local	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3
+	.comm	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3,8,8
+	.type	cFW$__fJhc_Inst_Show_showWord,@object # @"cFW$__fJhc_Inst_Show_showWord"
+	.local	cFW$__fJhc_Inst_Show_showWord
+	.comm	cFW$__fJhc_Inst_Show_showWord,8,8
+	.type	cCJhc_Prim_Prim_$x3a,@object    # @"cCJhc_Prim_Prim_$x3a"
+	.local	cCJhc_Prim_Prim_$x3a
+	.comm	cCJhc_Prim_Prim_$x3a,8,8
+	.type	cBap__1__Main_serveBundle$d8u100840,@object # @"cBap__1__Main_serveBundle$d8u100840"
+	.local	cBap__1__Main_serveBundle$d8u100840
+	.comm	cBap__1__Main_serveBundle$d8u100840,8,8
+	.type	cP1__Main_serveBundle$d8,@object # @"cP1__Main_serveBundle$d8"
+	.local	cP1__Main_serveBundle$d8
+	.comm	cP1__Main_serveBundle$d8,8,8
+	.type	cCJhc_Type_Word_Word32,@object  # @cCJhc_Type_Word_Word32
+	.local	cCJhc_Type_Word_Word32
+	.comm	cCJhc_Type_Word_Word32,8,8
+	.type	cCJhc_Type_Word_Int,@object     # @cCJhc_Type_Word_Int
+	.local	cCJhc_Type_Word_Int
+	.comm	cCJhc_Type_Word_Int,8,8
+	.type	cCJhc_Type_Basic_Integer,@object # @cCJhc_Type_Basic_Integer
+	.local	cCJhc_Type_Basic_Integer
+	.comm	cCJhc_Type_Basic_Integer,8,8
+	.type	cFR$__fJhc_List_filter,@object  # @"cFR$__fJhc_List_filter"
+	.local	cFR$__fJhc_List_filter
+	.comm	cFR$__fJhc_List_filter,8,8
+	.type	cTHos_Common_Bundle_BundleItem,@object # @cTHos_Common_Bundle_BundleItem
+	.local	cTHos_Common_Bundle_BundleItem
+	.comm	cTHos_Common_Bundle_BundleItem,8,8
+	.type	cCJhc_Type_Basic_Just,@object   # @cCJhc_Type_Basic_Just
+	.local	cCJhc_Type_Basic_Just
+	.comm	cCJhc_Type_Basic_Just,8,8
+	.type	cCData_Binary_Builder,@object   # @cCData_Binary_Builder
+	.local	cCData_Binary_Builder
+	.comm	cCData_Binary_Builder,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6"
+	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6
+	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,8,8
+	.type	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,@object # @"cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2"
+	.local	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2
+	.comm	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6"
+	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6
+	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,8,8
+	.type	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3,@object # @"cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3"
+	.local	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3
+	.comm	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3,8,8
+	.type	cP2__W$__fData_Binary_put$d2,@object # @"cP2__W$__fData_Binary_put$d2"
+	.local	cP2__W$__fData_Binary_put$d2
+	.comm	cP2__W$__fData_Binary_put$d2,8,8
+	.type	cP2__W$__fData_Binary_put$d4,@object # @"cP2__W$__fData_Binary_put$d4"
+	.local	cP2__W$__fData_Binary_put$d4
+	.comm	cP2__W$__fData_Binary_put$d4,8,8
+	.type	cP2__W$__fData_Binary_put$d6,@object # @"cP2__W$__fData_Binary_put$d6"
+	.local	cP2__W$__fData_Binary_put$d6
+	.comm	cP2__W$__fData_Binary_put$d6,8,8
+	.type	cP2__W$__fData_Binary_put$d8,@object # @"cP2__W$__fData_Binary_put$d8"
+	.local	cP2__W$__fData_Binary_put$d8
+	.comm	cP2__W$__fData_Binary_put$d8,8,8
+	.type	cFW$__fData_Binary_put$d10,@object # @"cFW$__fData_Binary_put$d10"
+	.local	cFW$__fData_Binary_put$d10
+	.comm	cFW$__fData_Binary_put$d10,8,8
+	.type	cFW$__fData_Binary_put$d9,@object # @"cFW$__fData_Binary_put$d9"
+	.local	cFW$__fData_Binary_put$d9
+	.comm	cFW$__fData_Binary_put$d9,8,8
+	.type	cFW$__fData_Binary_put$d7,@object # @"cFW$__fData_Binary_put$d7"
+	.local	cFW$__fData_Binary_put$d7
+	.comm	cFW$__fData_Binary_put$d7,8,8
+	.type	cFW$__fData_Binary_put$d5,@object # @"cFW$__fData_Binary_put$d5"
+	.local	cFW$__fData_Binary_put$d5
+	.comm	cFW$__fData_Binary_put$d5,8,8
+	.type	cFW$__fData_Binary_put$d3,@object # @"cFW$__fData_Binary_put$d3"
+	.local	cFW$__fData_Binary_put$d3
+	.comm	cFW$__fData_Binary_put$d3,8,8
+	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5"
+	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5
+	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,8,8
+	.type	cCHos_Storage_Msg_StorageTransaction,@object # @cCHos_Storage_Msg_StorageTransaction
+	.local	cCHos_Storage_Msg_StorageTransaction
+	.comm	cCHos_Storage_Msg_StorageTransaction,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5"
+	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5
+	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2,@object # @"cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2"
+	.local	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2
+	.comm	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5,@object # @"cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5"
+	.local	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5
+	.comm	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5,8,8
+	.type	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7,@object # @"cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7"
+	.local	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7
+	.comm	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8,@object # @"cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8"
+	.local	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8
+	.comm	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8,8,8
 	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2"
 	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2
 	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2,8,8
 	.type	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2,@object # @"cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2"
 	.local	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2
 	.comm	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6,@object # @"cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6"
+	.local	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6
+	.comm	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4,@object # @"cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4"
+	.local	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4
+	.comm	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3,@object # @"cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3"
+	.local	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3
+	.comm	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3,8,8
 	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5"
 	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5
 	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5,8,8
 	.type	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5,@object # @"cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5"
 	.local	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5
 	.comm	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5,8,8
-	.type	cP1__Data_Binary_fl$_x64315462$d5406,@object # @"cP1__Data_Binary_fl$_x64315462$d5406"
-	.local	cP1__Data_Binary_fl$_x64315462$d5406
-	.comm	cP1__Data_Binary_fl$_x64315462$d5406,8,8
+	.type	cFHos_User_IPC_transmitMsg$d14,@object # @"cFHos_User_IPC_transmitMsg$d14"
+	.local	cFHos_User_IPC_transmitMsg$d14
+	.comm	cFHos_User_IPC_transmitMsg$d14,8,8
+	.type	cFHos_User_IPC_transmitMsg$d11,@object # @"cFHos_User_IPC_transmitMsg$d11"
+	.local	cFHos_User_IPC_transmitMsg$d11
+	.comm	cFHos_User_IPC_transmitMsg$d11,8,8
+	.type	cFHos_User_IPC_transmitMsg$d12,@object # @"cFHos_User_IPC_transmitMsg$d12"
+	.local	cFHos_User_IPC_transmitMsg$d12
+	.comm	cFHos_User_IPC_transmitMsg$d12,8,8
+	.type	cFHos_User_IPC_transmitMsg$d6,@object # @"cFHos_User_IPC_transmitMsg$d6"
+	.local	cFHos_User_IPC_transmitMsg$d6
+	.comm	cFHos_User_IPC_transmitMsg$d6,8,8
+	.type	cFHos_User_IPC_transmitMsg$d7,@object # @"cFHos_User_IPC_transmitMsg$d7"
+	.local	cFHos_User_IPC_transmitMsg$d7
+	.comm	cFHos_User_IPC_transmitMsg$d7,8,8
+	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2"
+	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2
+	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2,8,8
+	.type	cP2__W$__fData_Binary_storableB$d3,@object # @"cP2__W$__fData_Binary_storableB$d3"
+	.local	cP2__W$__fData_Binary_storableB$d3
+	.comm	cP2__W$__fData_Binary_storableB$d3,8,8
+	.type	cP2__W$__fData_Binary_storableB$d2,@object # @"cP2__W$__fData_Binary_storableB$d2"
+	.local	cP2__W$__fData_Binary_storableB$d2
+	.comm	cP2__W$__fData_Binary_storableB$d2,8,8
+	.type	cP2__W$__fData_Binary_storableB$d5,@object # @"cP2__W$__fData_Binary_storableB$d5"
+	.local	cP2__W$__fData_Binary_storableB$d5
+	.comm	cP2__W$__fData_Binary_storableB$d5,8,8
+	.type	cP2__W$__fData_Binary_storableB$d4,@object # @"cP2__W$__fData_Binary_storableB$d4"
+	.local	cP2__W$__fData_Binary_storableB$d4
+	.comm	cP2__W$__fData_Binary_storableB$d4,8,8
+	.type	cP2__W$__fData_Binary_storableB$d7,@object # @"cP2__W$__fData_Binary_storableB$d7"
+	.local	cP2__W$__fData_Binary_storableB$d7
+	.comm	cP2__W$__fData_Binary_storableB$d7,8,8
+	.type	cP2__W$__fData_Binary_storableB$d6,@object # @"cP2__W$__fData_Binary_storableB$d6"
+	.local	cP2__W$__fData_Binary_storableB$d6
+	.comm	cP2__W$__fData_Binary_storableB$d6,8,8
 	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10"
 	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10
 	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10,8,8
+	.type	cP2__W$__fData_Binary_storableB$d9,@object # @"cP2__W$__fData_Binary_storableB$d9"
+	.local	cP2__W$__fData_Binary_storableB$d9
+	.comm	cP2__W$__fData_Binary_storableB$d9,8,8
+	.type	cP2__W$__fData_Binary_storableB$d8,@object # @"cP2__W$__fData_Binary_storableB$d8"
+	.local	cP2__W$__fData_Binary_storableB$d8
+	.comm	cP2__W$__fData_Binary_storableB$d8,8,8
 	.type	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10,@object # @"cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10"
 	.local	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10
 	.comm	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor,@object # @"cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor,@object # @"cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag,@object # @"cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag,@object # @"cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag,8,8
+	.type	cP2__W$__fData_Binary_storableB$d11,@object # @"cP2__W$__fData_Binary_storableB$d11"
+	.local	cP2__W$__fData_Binary_storableB$d11
+	.comm	cP2__W$__fData_Binary_storableB$d11,8,8
+	.type	cP2__W$__fData_Binary_storableB$d10,@object # @"cP2__W$__fData_Binary_storableB$d10"
+	.local	cP2__W$__fData_Binary_storableB$d10
+	.comm	cP2__W$__fData_Binary_storableB$d10,8,8
+	.type	cCHos_Common_Bundle_GUID,@object # @cCHos_Common_Bundle_GUID
+	.local	cCHos_Common_Bundle_GUID
+	.comm	cCHos_Common_Bundle_GUID,8,8
 	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11"
 	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11
 	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11,8,8
 	.type	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11,@object # @"cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11"
 	.local	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11
 	.comm	cP2__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue,@object # @"cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue,@object # @"cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue,8,8
 	.type	cP1__Data_Binary_get$d2,@object # @"cP1__Data_Binary_get$d2"
 	.local	cP1__Data_Binary_get$d2
 	.comm	cP1__Data_Binary_get$d2,8,8
@@ -26825,6 +27327,12 @@ nh_stuff:
 	.type	cP2__Data_Binary_get$d3,@object # @"cP2__Data_Binary_get$d3"
 	.local	cP2__Data_Binary_get$d3
 	.comm	cP2__Data_Binary_get$d3,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor,@object # @"cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor,@object # @"cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagDescriptor,8,8
 	.type	cP1__Data_Binary_get$d4,@object # @"cP1__Data_Binary_get$d4"
 	.local	cP1__Data_Binary_get$d4
 	.comm	cP1__Data_Binary_get$d4,8,8
@@ -26849,591 +27357,78 @@ nh_stuff:
 	.type	cP2__Data_Binary_get$d7,@object # @"cP2__Data_Binary_get$d7"
 	.local	cP2__Data_Binary_get$d7
 	.comm	cP2__Data_Binary_get$d7,8,8
-	.type	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,@object # @"cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2"
-	.local	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2
-	.comm	cP1__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage,@object # @"cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage,@object # @"cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitMessage,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7"
-	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7
-	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d7,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6"
-	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6
-	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d6,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag,@object # @"cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag,@object # @"cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_Tag,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageQuery,8,8
 	.type	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,@object # @"cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5"
 	.local	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5
 	.comm	cP1__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,8,8
-	.type	cP3__Data_Binary_get$d2,@object # @"cP3__Data_Binary_get$d2"
-	.local	cP3__Data_Binary_get$d2
-	.comm	cP3__Data_Binary_get$d2,8,8
-	.type	cP3__Data_Binary_get$d3,@object # @"cP3__Data_Binary_get$d3"
-	.local	cP3__Data_Binary_get$d3
-	.comm	cP3__Data_Binary_get$d3,8,8
-	.type	cP3__Data_Binary_get$d4,@object # @"cP3__Data_Binary_get$d4"
-	.local	cP3__Data_Binary_get$d4
-	.comm	cP3__Data_Binary_get$d4,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue,@object # @"cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue,@object # @"cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagValue,8,8
+	.type	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64"
+	.local	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64
+	.comm	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64,8,8
+	.type	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64"
+	.local	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64
+	.comm	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64,8,8
+	.type	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32"
+	.local	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32
+	.comm	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32,8,8
+	.type	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32"
+	.local	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32
+	.comm	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32,8,8
 	.type	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID,@object # @"cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID"
 	.local	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID
 	.comm	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID,8,8
 	.type	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID,@object # @"cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID"
 	.local	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID
 	.comm	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_GUID,8,8
-	.type	cP3__Data_Binary_get$d5,@object # @"cP3__Data_Binary_get$d5"
-	.local	cP3__Data_Binary_get$d5
-	.comm	cP3__Data_Binary_get$d5,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse,@object # @"cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse,@object # @"cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Init_Msg_InitResponse,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName,@object # @"cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName,@object # @"cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName,8,8
-	.type	cP3__Data_Binary_get$d6,@object # @"cP3__Data_Binary_get$d6"
-	.local	cP3__Data_Binary_get$d6
-	.comm	cP3__Data_Binary_get$d6,8,8
-	.type	cP3__Data_Binary_get$d7,@object # @"cP3__Data_Binary_get$d7"
-	.local	cP3__Data_Binary_get$d7
-	.comm	cP3__Data_Binary_get$d7,8,8
-	.type	cP1__Hos_User_IPC_transmitMsg$d8,@object # @"cP1__Hos_User_IPC_transmitMsg$d8"
-	.local	cP1__Hos_User_IPC_transmitMsg$d8
-	.comm	cP1__Hos_User_IPC_transmitMsg$d8,8,8
-	.type	cP1__Hos_User_IPC_transmitMsg$d15,@object # @"cP1__Hos_User_IPC_transmitMsg$d15"
-	.local	cP1__Hos_User_IPC_transmitMsg$d15
-	.comm	cP1__Hos_User_IPC_transmitMsg$d15,8,8
-	.type	cCJhc_Type_Basic_Right,@object  # @cCJhc_Type_Basic_Right
-	.local	cCJhc_Type_Basic_Right
-	.comm	cCJhc_Type_Basic_Right,8,8
-	.type	cCJhc_Prim_Prim_$LccR,@object   # @"cCJhc_Prim_Prim_$LccR"
-	.local	cCJhc_Prim_Prim_$LccR
-	.comm	cCJhc_Prim_Prim_$LccR,8,8
-	.type	cCHos_User_IPC_RoutedMessage,@object # @cCHos_User_IPC_RoutedMessage
-	.local	cCHos_User_IPC_RoutedMessage
-	.comm	cCHos_User_IPC_RoutedMessage,8,8
-	.type	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2,@object # @"cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2"
-	.local	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2
-	.comm	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d2,8,8
-	.type	cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418,@object # @"cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418"
-	.local	cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418
-	.comm	cBap__1__W$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000u100418,8,8
-	.type	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11,@object # @"cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11"
-	.local	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11
-	.comm	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d11,8,8
-	.type	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4,@object # @"cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4"
-	.local	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4
-	.comm	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d4,8,8
-	.type	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5,@object # @"cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5"
-	.local	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5
-	.comm	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d5,8,8
-	.type	cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430,@object # @"cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430"
-	.local	cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430
-	.comm	cBap__1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d4u100430,8,8
-	.type	cCJhc_Prim_Prim_$LcR,@object    # @"cCJhc_Prim_Prim_$LcR"
-	.local	cCJhc_Prim_Prim_$LcR
-	.comm	cCJhc_Prim_Prim_$LcR,8,8
-	.type	cCHos_Common_Bundle_BundleItem,@object # @cCHos_Common_Bundle_BundleItem
-	.local	cCHos_Common_Bundle_BundleItem
-	.comm	cCHos_Common_Bundle_BundleItem,8,8
-	.type	cBap__1__Main_serveBundle$d8u100472,@object # @"cBap__1__Main_serveBundle$d8u100472"
-	.local	cBap__1__Main_serveBundle$d8u100472
-	.comm	cBap__1__Main_serveBundle$d8u100472,8,8
-	.type	cP1__Main_serveBundle$d8,@object # @"cP1__Main_serveBundle$d8"
-	.local	cP1__Main_serveBundle$d8
-	.comm	cP1__Main_serveBundle$d8,8,8
-	.type	cCHos_Common_Bundle_TextV,@object # @cCHos_Common_Bundle_TextV
-	.local	cCHos_Common_Bundle_TextV
-	.comm	cCHos_Common_Bundle_TextV,8,8
-	.type	cCHos_Common_Bundle_IntegerV,@object # @cCHos_Common_Bundle_IntegerV
-	.local	cCHos_Common_Bundle_IntegerV
-	.comm	cCHos_Common_Bundle_IntegerV,8,8
-	.type	cCHos_Common_Bundle_BooleanV,@object # @cCHos_Common_Bundle_BooleanV
-	.local	cCHos_Common_Bundle_BooleanV
-	.comm	cCHos_Common_Bundle_BooleanV,8,8
-	.type	cFR$__fJhc_List_filter,@object  # @"cFR$__fJhc_List_filter"
-	.local	cFR$__fJhc_List_filter
-	.comm	cFR$__fJhc_List_filter,8,8
-	.type	cCHos_Common_Bundle_Tag,@object # @cCHos_Common_Bundle_Tag
-	.local	cCHos_Common_Bundle_Tag
-	.comm	cCHos_Common_Bundle_Tag,8,8
-	.type	cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool"
-	.local	cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool
-	.comm	cP1__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool,8,8
-	.type	cFHos_User_SysCall_hosDebugLog$d2,@object # @"cFHos_User_SysCall_hosDebugLog$d2"
-	.local	cFHos_User_SysCall_hosDebugLog$d2
-	.comm	cFHos_User_SysCall_hosDebugLog$d2,8,8
-	.type	cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool"
-	.local	cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool
-	.comm	cP2__Instance$__iData_Binary_get_Jhc_Prim_Prim_Bool,8,8
-	.type	cFJhc_Show_showsPrec,@object    # @cFJhc_Show_showsPrec
-	.local	cFJhc_Show_showsPrec
-	.comm	cFJhc_Show_showsPrec,8,8
-	.type	cFW$__fPrelude_Text_showLitChar$d2,@object # @"cFW$__fPrelude_Text_showLitChar$d2"
-	.local	cFW$__fPrelude_Text_showLitChar$d2
-	.comm	cFW$__fPrelude_Text_showLitChar$d2,8,8
-	.type	cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char"
-	.local	cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char
-	.comm	cP1__Instance$__iData_Binary_get_Jhc_Type_Basic_Char,8,8
-	.type	cFW$__fPrelude_Text_showLitChar$d3,@object # @"cFW$__fPrelude_Text_showLitChar$d3"
-	.local	cFW$__fPrelude_Text_showLitChar$d3
-	.comm	cFW$__fPrelude_Text_showLitChar$d3,8,8
-	.type	cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char"
-	.local	cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char
-	.comm	cP2__Instance$__iData_Binary_get_Jhc_Type_Basic_Char,8,8
-	.type	cFW$__fJhc_List_$bb,@object     # @"cFW$__fJhc_List_$bb"
-	.local	cFW$__fJhc_List_$bb
-	.comm	cFW$__fJhc_List_$bb,8,8
-	.type	cCHos_Common_Types_FromPhysical,@object # @cCHos_Common_Types_FromPhysical
-	.local	cCHos_Common_Types_FromPhysical
-	.comm	cCHos_Common_Types_FromPhysical,8,8
-	.type	cCHos_Common_Types_CopyOnWrite,@object # @cCHos_Common_Types_CopyOnWrite
-	.local	cCHos_Common_Types_CopyOnWrite
-	.comm	cCHos_Common_Types_CopyOnWrite,8,8
-	.type	cCData_Elf_Elf64ProgHdr,@object # @cCData_Elf_Elf64ProgHdr
-	.local	cCData_Elf_Elf64ProgHdr
-	.comm	cCData_Elf_Elf64ProgHdr,8,8
-	.type	cCHos_Storage_Msg_StorageExecute,@object # @cCHos_Storage_Msg_StorageExecute
-	.local	cCHos_Storage_Msg_StorageExecute
-	.comm	cCHos_Storage_Msg_StorageExecute,8,8
-	.type	cCHos_Storage_Msg_StoragePerformQuery,@object # @cCHos_Storage_Msg_StoragePerformQuery
-	.local	cCHos_Storage_Msg_StoragePerformQuery
-	.comm	cCHos_Storage_Msg_StoragePerformQuery,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage,8,8
-	.type	cCHos_Storage_Msg_StorageTransactionStatus,@object # @cCHos_Storage_Msg_StorageTransactionStatus
-	.local	cCHos_Storage_Msg_StorageTransactionStatus
-	.comm	cCHos_Storage_Msg_StorageTransactionStatus,8,8
-	.type	cCHos_Storage_Msg_StorageAbortTransaction,@object # @cCHos_Storage_Msg_StorageAbortTransaction
-	.local	cCHos_Storage_Msg_StorageAbortTransaction
-	.comm	cCHos_Storage_Msg_StorageAbortTransaction,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageMessage,8,8
-	.type	cCHos_Storage_Msg_StorageCommitTransaction,@object # @cCHos_Storage_Msg_StorageCommitTransaction
-	.local	cCHos_Storage_Msg_StorageCommitTransaction
-	.comm	cCHos_Storage_Msg_StorageCommitTransaction,8,8
-	.type	cCHos_Storage_Msg_NotQ,@object  # @cCHos_Storage_Msg_NotQ
-	.local	cCHos_Storage_Msg_NotQ
-	.comm	cCHos_Storage_Msg_NotQ,8,8
-	.type	cCHos_Storage_Msg_OrQ,@object   # @cCHos_Storage_Msg_OrQ
-	.local	cCHos_Storage_Msg_OrQ
-	.comm	cCHos_Storage_Msg_OrQ,8,8
-	.type	cCHos_Storage_Msg_AndQ,@object  # @cCHos_Storage_Msg_AndQ
-	.local	cCHos_Storage_Msg_AndQ
-	.comm	cCHos_Storage_Msg_AndQ,8,8
-	.type	cCHos_Storage_Msg_TagIs,@object # @cCHos_Storage_Msg_TagIs
-	.local	cCHos_Storage_Msg_TagIs
-	.comm	cCHos_Storage_Msg_TagIs,8,8
-	.type	cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2,@object # @"cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2"
-	.local	cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2
-	.comm	cFW$__fInstance$__iData_Binary_get_Hos_Common_Bundle_TagValue$d2,8,8
-	.type	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64"
-	.local	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64
-	.comm	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word64,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse,8,8
-	.type	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64"
-	.local	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64
-	.comm	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word64,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_StorageResponse,8,8
-	.type	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,@object # @"cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6"
-	.local	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6
-	.comm	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d6,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5"
-	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5
-	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d5,8,8
-	.type	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32"
-	.local	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32
-	.comm	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word32,8,8
-	.type	cCHos_Init_Msg_InitSendArgs,@object # @cCHos_Init_Msg_InitSendArgs
-	.local	cCHos_Init_Msg_InitSendArgs
-	.comm	cCHos_Init_Msg_InitSendArgs,8,8
-	.type	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32"
-	.local	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32
-	.comm	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word32,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId,@object # @"cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId"
-	.local	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId
-	.comm	cP1__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId,8,8
-	.type	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId,@object # @"cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId"
-	.local	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId
-	.comm	cP2__Instance$__iData_Binary_get_Hos_Storage_Msg_TxId,8,8
-	.type	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,@object # @"cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5"
-	.local	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5
-	.comm	cP3__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d5,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4"
-	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4
-	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d4,8,8
 	.type	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word16,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word16"
 	.local	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word16
 	.comm	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word16,8,8
-	.type	cCHos_Storage_Msg_StorageQueryResult,@object # @cCHos_Storage_Msg_StorageQueryResult
-	.local	cCHos_Storage_Msg_StorageQueryResult
-	.comm	cCHos_Storage_Msg_StorageQueryResult,8,8
 	.type	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word16,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word16"
 	.local	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word16
 	.comm	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word16,8,8
-	.type	cCHos_Storage_Msg_StorageStartedTask,@object # @cCHos_Storage_Msg_StorageStartedTask
-	.local	cCHos_Storage_Msg_StorageStartedTask
-	.comm	cCHos_Storage_Msg_StorageStartedTask,8,8
-	.type	cCHos_Storage_Msg_StorageTransaction,@object # @cCHos_Storage_Msg_StorageTransaction
-	.local	cCHos_Storage_Msg_StorageTransaction
-	.comm	cCHos_Storage_Msg_StorageTransaction,8,8
-	.type	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3,@object # @"cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3"
-	.local	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3
-	.comm	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d3,8,8
-	.type	cCHos_Common_Bundle_GUID,@object # @cCHos_Common_Bundle_GUID
-	.local	cCHos_Common_Bundle_GUID
-	.comm	cCHos_Common_Bundle_GUID,8,8
-	.type	cCHos_Init_Msg_InitFoundProvider,@object # @cCHos_Init_Msg_InitFoundProvider
-	.local	cCHos_Init_Msg_InitFoundProvider
-	.comm	cCHos_Init_Msg_InitFoundProvider,8,8
+	.type	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName,@object # @"cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName"
+	.local	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName
+	.comm	cP1__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName,8,8
 	.type	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word8,@object # @"cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word8"
 	.local	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word8
 	.comm	cP1__Instance$__iData_Binary_get_Jhc_Type_Word_Word8,8,8
 	.type	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word8,@object # @"cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word8"
 	.local	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word8
 	.comm	cP2__Instance$__iData_Binary_get_Jhc_Type_Word_Word8,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2,@object # @"cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2"
-	.local	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2
-	.comm	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d2,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5,@object # @"cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5"
-	.local	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5
-	.comm	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d5,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7,@object # @"cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7"
-	.local	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7
-	.comm	cP2__W$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d7,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8,@object # @"cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8"
-	.local	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8
-	.comm	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d8,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6,@object # @"cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6"
-	.local	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6
-	.comm	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d6,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4,@object # @"cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4"
-	.local	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4
-	.comm	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d4,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3,@object # @"cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3"
-	.local	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3
-	.comm	cFW$__fInstance$__iData_Binary_put_Hos_Storage_Msg_StorageResponse$d3,8,8
-	.type	cP2__W$__fData_Binary_put$d2,@object # @"cP2__W$__fData_Binary_put$d2"
-	.local	cP2__W$__fData_Binary_put$d2
-	.comm	cP2__W$__fData_Binary_put$d2,8,8
-	.type	cCHos_Init_Msg_InitRegisterProvider,@object # @cCHos_Init_Msg_InitRegisterProvider
-	.local	cCHos_Init_Msg_InitRegisterProvider
-	.comm	cCHos_Init_Msg_InitRegisterProvider,8,8
-	.type	cP2__W$__fData_Binary_put$d4,@object # @"cP2__W$__fData_Binary_put$d4"
-	.local	cP2__W$__fData_Binary_put$d4
-	.comm	cP2__W$__fData_Binary_put$d4,8,8
-	.type	cCHos_Init_Msg_InitFindProvider,@object # @cCHos_Init_Msg_InitFindProvider
-	.local	cCHos_Init_Msg_InitFindProvider
-	.comm	cCHos_Init_Msg_InitFindProvider,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2"
-	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2
-	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2,8,8
-	.type	cP2__W$__fData_Binary_put$d6,@object # @"cP2__W$__fData_Binary_put$d6"
-	.local	cP2__W$__fData_Binary_put$d6
-	.comm	cP2__W$__fData_Binary_put$d6,8,8
-	.type	cP2__W$__fData_Binary_put$d8,@object # @"cP2__W$__fData_Binary_put$d8"
-	.local	cP2__W$__fData_Binary_put$d8
-	.comm	cP2__W$__fData_Binary_put$d8,8,8
-	.type	cFW$__fData_Binary_put$d10,@object # @"cFW$__fData_Binary_put$d10"
-	.local	cFW$__fData_Binary_put$d10
-	.comm	cFW$__fData_Binary_put$d10,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2"
-	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2
-	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d2,8,8
-	.type	cFW$__fData_Binary_put$d9,@object # @"cFW$__fData_Binary_put$d9"
-	.local	cFW$__fData_Binary_put$d9
-	.comm	cFW$__fData_Binary_put$d9,8,8
-	.type	cFW$__fData_Binary_put$d7,@object # @"cFW$__fData_Binary_put$d7"
-	.local	cFW$__fData_Binary_put$d7
-	.comm	cFW$__fData_Binary_put$d7,8,8
-	.type	cFW$__fData_Binary_put$d5,@object # @"cFW$__fData_Binary_put$d5"
-	.local	cFW$__fData_Binary_put$d5
-	.comm	cFW$__fData_Binary_put$d5,8,8
-	.type	cFW$__fData_Binary_put$d3,@object # @"cFW$__fData_Binary_put$d3"
-	.local	cFW$__fData_Binary_put$d3
-	.comm	cFW$__fData_Binary_put$d3,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3"
-	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3
-	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3,8,8
-	.type	cFHos_User_IPC_transmitMsg$d14,@object # @"cFHos_User_IPC_transmitMsg$d14"
-	.local	cFHos_User_IPC_transmitMsg$d14
-	.comm	cFHos_User_IPC_transmitMsg$d14,8,8
-	.type	cFHos_User_IPC_transmitMsg$d11,@object # @"cFHos_User_IPC_transmitMsg$d11"
-	.local	cFHos_User_IPC_transmitMsg$d11
-	.comm	cFHos_User_IPC_transmitMsg$d11,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3"
-	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3
-	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitMessage$d3,8,8
-	.type	cFHos_User_IPC_transmitMsg$d12,@object # @"cFHos_User_IPC_transmitMsg$d12"
-	.local	cFHos_User_IPC_transmitMsg$d12
-	.comm	cFHos_User_IPC_transmitMsg$d12,8,8
-	.type	cFHos_User_IPC_transmitMsg$d6,@object # @"cFHos_User_IPC_transmitMsg$d6"
-	.local	cFHos_User_IPC_transmitMsg$d6
-	.comm	cFHos_User_IPC_transmitMsg$d6,8,8
-	.type	cFHos_User_IPC_transmitMsg$d7,@object # @"cFHos_User_IPC_transmitMsg$d7"
-	.local	cFHos_User_IPC_transmitMsg$d7
-	.comm	cFHos_User_IPC_transmitMsg$d7,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2"
-	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2
-	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Type_Basic_Char$d2,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2"
-	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2
-	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2,8,8
-	.type	cP2__W$__fData_Binary_storableB$d3,@object # @"cP2__W$__fData_Binary_storableB$d3"
-	.local	cP2__W$__fData_Binary_storableB$d3
-	.comm	cP2__W$__fData_Binary_storableB$d3,8,8
-	.type	cP2__W$__fData_Binary_storableB$d2,@object # @"cP2__W$__fData_Binary_storableB$d2"
-	.local	cP2__W$__fData_Binary_storableB$d2
-	.comm	cP2__W$__fData_Binary_storableB$d2,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2"
-	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2
-	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d2,8,8
-	.type	cP2__W$__fData_Binary_storableB$d5,@object # @"cP2__W$__fData_Binary_storableB$d5"
-	.local	cP2__W$__fData_Binary_storableB$d5
-	.comm	cP2__W$__fData_Binary_storableB$d5,8,8
-	.type	cP2__W$__fData_Binary_storableB$d4,@object # @"cP2__W$__fData_Binary_storableB$d4"
-	.local	cP2__W$__fData_Binary_storableB$d4
-	.comm	cP2__W$__fData_Binary_storableB$d4,8,8
-	.type	cP2__W$__fData_Binary_storableB$d7,@object # @"cP2__W$__fData_Binary_storableB$d7"
-	.local	cP2__W$__fData_Binary_storableB$d7
-	.comm	cP2__W$__fData_Binary_storableB$d7,8,8
-	.type	cP2__W$__fData_Binary_storableB$d6,@object # @"cP2__W$__fData_Binary_storableB$d6"
-	.local	cP2__W$__fData_Binary_storableB$d6
-	.comm	cP2__W$__fData_Binary_storableB$d6,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3"
-	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3
-	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3,8,8
-	.type	cP2__W$__fData_Binary_storableB$d9,@object # @"cP2__W$__fData_Binary_storableB$d9"
-	.local	cP2__W$__fData_Binary_storableB$d9
-	.comm	cP2__W$__fData_Binary_storableB$d9,8,8
-	.type	cP2__W$__fData_Binary_storableB$d8,@object # @"cP2__W$__fData_Binary_storableB$d8"
-	.local	cP2__W$__fData_Binary_storableB$d8
-	.comm	cP2__W$__fData_Binary_storableB$d8,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3"
-	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3
-	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d3,8,8
-	.type	cP2__W$__fData_Binary_storableB$d11,@object # @"cP2__W$__fData_Binary_storableB$d11"
-	.local	cP2__W$__fData_Binary_storableB$d11
-	.comm	cP2__W$__fData_Binary_storableB$d11,8,8
-	.type	cP2__W$__fData_Binary_storableB$d10,@object # @"cP2__W$__fData_Binary_storableB$d10"
-	.local	cP2__W$__fData_Binary_storableB$d10
-	.comm	cP2__W$__fData_Binary_storableB$d10,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3"
-	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3
-	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd3,8,8
-	.type	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4,@object # @"cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4"
-	.local	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4
-	.comm	cP1__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2"
-	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2
-	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd2,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4,@object # @"cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4"
-	.local	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4
-	.comm	cP2__W$__fInstance$__iData_Binary_get_Hos_Init_Msg_InitResponse$d4,8,8
-	.type	cFJhc_Basics_$pp,@object        # @"cFJhc_Basics_$pp"
-	.local	cFJhc_Basics_$pp
-	.comm	cFJhc_Basics_$pp,8,8
-	.type	cFInstance$__iJhc_Show_show_default,@object # @"cFInstance$__iJhc_Show_show_default"
-	.local	cFInstance$__iJhc_Show_show_default
-	.comm	cFInstance$__iJhc_Show_show_default,8,8
-	.type	cFPrelude_Text_30__showl,@object # @cFPrelude_Text_30__showl
-	.local	cFPrelude_Text_30__showl
-	.comm	cFPrelude_Text_30__showl,8,8
-	.type	cFJhc_Show_showsPrec$d3,@object # @"cFJhc_Show_showsPrec$d3"
-	.local	cFJhc_Show_showsPrec$d3
-	.comm	cFJhc_Show_showsPrec$d3,8,8
-	.type	cFW$__fJhc_Inst_Show_showWord,@object # @"cFW$__fJhc_Inst_Show_showWord"
-	.local	cFW$__fJhc_Inst_Show_showWord
-	.comm	cFW$__fJhc_Inst_Show_showWord,8,8
-	.type	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId,@object # @"cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId"
-	.local	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId
-	.comm	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId,8,8
-	.type	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2,@object # @"cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2"
-	.local	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2
-	.comm	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d2,8,8
-	.type	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3,@object # @"cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3"
-	.local	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3
-	.comm	cFW$__fInstance$__iJhc_Show_showsPrec_Hos_Common_Types_TaskId$d3,8,8
-	.type	cFR$__fJhc_Basics_$pp,@object   # @"cFR$__fJhc_Basics_$pp"
-	.local	cFR$__fJhc_Basics_$pp
-	.comm	cFR$__fJhc_Basics_$pp,8,8
-	.type	cCHos_Common_Bundle_TagDescriptor,@object # @cCHos_Common_Bundle_TagDescriptor
-	.local	cCHos_Common_Bundle_TagDescriptor
-	.comm	cCHos_Common_Bundle_TagDescriptor,8,8
-	.type	cCJhc_Type_Word_Word64,@object  # @cCJhc_Type_Word_Word64
-	.local	cCJhc_Type_Word_Word64
-	.comm	cCJhc_Type_Word_Word64,8,8
-	.type	cCJhc_Type_Ptr_Ptr,@object      # @cCJhc_Type_Ptr_Ptr
-	.local	cCJhc_Type_Ptr_Ptr
-	.comm	cCJhc_Type_Ptr_Ptr,8,8
-	.type	cCJhc_Type_Basic_Left,@object   # @cCJhc_Type_Basic_Left
-	.local	cCJhc_Type_Basic_Left
-	.comm	cCJhc_Type_Basic_Left,8,8
-	.type	cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2,@object # @"cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2"
-	.local	cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2
-	.comm	cFInstance$__iData_Binary_get_Jhc_Type_Basic_Char$d2,8,8
-	.type	cFtheMain$d7,@object            # @"cFtheMain$d7"
-	.local	cFtheMain$d7
-	.comm	cFtheMain$d7,8,8
-	.type	cFtheMain$d6,@object            # @"cFtheMain$d6"
-	.local	cFtheMain$d6
-	.comm	cFtheMain$d6,8,8
-	.type	cFtheMain$d5,@object            # @"cFtheMain$d5"
-	.local	cFtheMain$d5
-	.comm	cFtheMain$d5,8,8
-	.type	cFNumeric_showHex,@object       # @cFNumeric_showHex
-	.local	cFNumeric_showHex
-	.comm	cFNumeric_showHex,8,8
-	.type	cCJhc_Prim_Prim_$x3a,@object    # @"cCJhc_Prim_Prim_$x3a"
-	.local	cCJhc_Prim_Prim_$x3a
-	.comm	cCJhc_Prim_Prim_$x3a,8,8
-	.type	cCHos_User_IPC_CouldNotParseResponse,@object # @cCHos_User_IPC_CouldNotParseResponse
-	.local	cCHos_User_IPC_CouldNotParseResponse
-	.comm	cCHos_User_IPC_CouldNotParseResponse,8,8
-	.type	cCHos_User_IPC_OurMsg,@object   # @cCHos_User_IPC_OurMsg
-	.local	cCHos_User_IPC_OurMsg
-	.comm	cCHos_User_IPC_OurMsg,8,8
-	.type	cCJhc_Type_Word_Word32,@object  # @cCJhc_Type_Word_Word32
-	.local	cCJhc_Type_Word_Word32
-	.comm	cCJhc_Type_Word_Word32,8,8
-	.type	cFMain_serveBundle$d13,@object  # @"cFMain_serveBundle$d13"
-	.local	cFMain_serveBundle$d13
-	.comm	cFMain_serveBundle$d13,8,8
-	.type	cCHos_User_IPC_InTransitMsg,@object # @cCHos_User_IPC_InTransitMsg
-	.local	cCHos_User_IPC_InTransitMsg
-	.comm	cCHos_User_IPC_InTransitMsg,8,8
-	.type	cFMain_serveBundle$d5,@object   # @"cFMain_serveBundle$d5"
-	.local	cFMain_serveBundle$d5
-	.comm	cFMain_serveBundle$d5,8,8
-	.type	cCData_Binary_Builder,@object   # @cCData_Binary_Builder
-	.local	cCData_Binary_Builder
-	.comm	cCData_Binary_Builder,8,8
-	.type	cCJhc_Type_Word_Int,@object     # @cCJhc_Type_Word_Int
-	.local	cCJhc_Type_Word_Int
-	.comm	cCJhc_Type_Word_Int,8,8
-	.type	cCJhc_Type_Basic_Just,@object   # @cCJhc_Type_Basic_Just
-	.local	cCJhc_Type_Basic_Just
-	.comm	cCJhc_Type_Basic_Just,8,8
-	.type	cFR$__fJhc_Basics_zip,@object   # @"cFR$__fJhc_Basics_zip"
-	.local	cFR$__fJhc_Basics_zip
-	.comm	cFR$__fJhc_Basics_zip,8,8
-	.type	cFW$__fJhc_Inst_Enum_67__f,@object # @"cFW$__fJhc_Inst_Enum_67__f"
-	.local	cFW$__fJhc_Inst_Enum_67__f
-	.comm	cFW$__fJhc_Inst_Enum_67__f,8,8
-	.type	cCJhc_Type_Basic_Integer,@object # @cCJhc_Type_Basic_Integer
-	.local	cCJhc_Type_Basic_Integer
-	.comm	cCJhc_Type_Basic_Integer,8,8
-	.type	cP2__Hos_User_IPC_transmitMsg$d8,@object # @"cP2__Hos_User_IPC_transmitMsg$d8"
-	.local	cP2__Hos_User_IPC_transmitMsg$d8
-	.comm	cP2__Hos_User_IPC_transmitMsg$d8,8,8
-	.type	cP2__Hos_User_IPC_transmitMsg$d15,@object # @"cP2__Hos_User_IPC_transmitMsg$d15"
-	.local	cP2__Hos_User_IPC_transmitMsg$d15
-	.comm	cP2__Hos_User_IPC_transmitMsg$d15,8,8
-	.type	cTHos_Common_Bundle_BundleItem,@object # @cTHos_Common_Bundle_BundleItem
-	.local	cTHos_Common_Bundle_BundleItem
-	.comm	cTHos_Common_Bundle_BundleItem,8,8
-	.type	cFHos_User_IPC_transmitMsg$d18,@object # @"cFHos_User_IPC_transmitMsg$d18"
-	.local	cFHos_User_IPC_transmitMsg$d18
-	.comm	cFHos_User_IPC_transmitMsg$d18,8,8
-	.type	cFHos_User_IPC_transmitMsg$d17,@object # @"cFHos_User_IPC_transmitMsg$d17"
-	.local	cFHos_User_IPC_transmitMsg$d17
-	.comm	cFHos_User_IPC_transmitMsg$d17,8,8
-	.type	cFHos_User_IPC_transmitMsg$d16,@object # @"cFHos_User_IPC_transmitMsg$d16"
-	.local	cFHos_User_IPC_transmitMsg$d16
-	.comm	cFHos_User_IPC_transmitMsg$d16,8,8
-	.type	cFHos_User_IPC_transmitMsg$d10,@object # @"cFHos_User_IPC_transmitMsg$d10"
-	.local	cFHos_User_IPC_transmitMsg$d10
-	.comm	cFHos_User_IPC_transmitMsg$d10,8,8
-	.type	cFHos_User_IPC_transmitMsg$d9,@object # @"cFHos_User_IPC_transmitMsg$d9"
-	.local	cFHos_User_IPC_transmitMsg$d9
-	.comm	cFHos_User_IPC_transmitMsg$d9,8,8
-	.type	cFW$__fR$__fJhc_List_383__f,@object # @"cFW$__fR$__fJhc_List_383__f"
-	.local	cFW$__fR$__fJhc_List_383__f
-	.comm	cFW$__fR$__fJhc_List_383__f,8,8
-	.type	cP1__W$__fData_Binary_storableB$d3,@object # @"cP1__W$__fData_Binary_storableB$d3"
-	.local	cP1__W$__fData_Binary_storableB$d3
-	.comm	cP1__W$__fData_Binary_storableB$d3,8,8
-	.type	cP1__W$__fData_Binary_storableB$d5,@object # @"cP1__W$__fData_Binary_storableB$d5"
-	.local	cP1__W$__fData_Binary_storableB$d5
-	.comm	cP1__W$__fData_Binary_storableB$d5,8,8
-	.type	cFW$__fHos_Storage_loadElf$d4,@object # @"cFW$__fHos_Storage_loadElf$d4"
-	.local	cFW$__fHos_Storage_loadElf$d4
-	.comm	cFW$__fHos_Storage_loadElf$d4,8,8
-	.type	cP1__W$__fData_Binary_storableB$d7,@object # @"cP1__W$__fData_Binary_storableB$d7"
-	.local	cP1__W$__fData_Binary_storableB$d7
-	.comm	cP1__W$__fData_Binary_storableB$d7,8,8
-	.type	cFW$__fHos_Storage_loadElf$d2,@object # @"cFW$__fHos_Storage_loadElf$d2"
-	.local	cFW$__fHos_Storage_loadElf$d2
-	.comm	cFW$__fHos_Storage_loadElf$d2,8,8
-	.type	cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,@object # @"cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5"
-	.local	cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5
-	.comm	cP2__W$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd5,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4"
-	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4
-	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd4,8,8
-	.type	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6,@object # @"cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6"
-	.local	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6
-	.comm	cFW$__fInstance$__iData_Binary_put_Jhc_Prim_Prim_$BEd6,8,8
-	.type	cP1__W$__fData_Binary_storableB$d9,@object # @"cP1__W$__fData_Binary_storableB$d9"
-	.local	cP1__W$__fData_Binary_storableB$d9
-	.comm	cP1__W$__fData_Binary_storableB$d9,8,8
-	.type	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,@object # @"cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2"
-	.local	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2
-	.comm	cP2__W$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d2,8,8
-	.type	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3,@object # @"cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3"
-	.local	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3
-	.comm	cFW$__fInstance$__iData_Monoid_mappend_Data_Binary_Builder$d3,8,8
-	.type	cBap__1__W$__fNumeric_showIntAtBase__100342,@object # @"cBap__1__W$__fNumeric_showIntAtBase__100342"
-	.local	cBap__1__W$__fNumeric_showIntAtBase__100342
-	.comm	cBap__1__W$__fNumeric_showIntAtBase__100342,8,8
-	.type	cFW$__fNumeric_showIntAtBase$d2,@object # @"cFW$__fNumeric_showIntAtBase$d2"
-	.local	cFW$__fNumeric_showIntAtBase$d2
-	.comm	cFW$__fNumeric_showIntAtBase$d2,8,8
-	.type	cP1__W$__fData_Binary_storableB$d11,@object # @"cP1__W$__fData_Binary_storableB$d11"
-	.local	cP1__W$__fData_Binary_storableB$d11
-	.comm	cP1__W$__fData_Binary_storableB$d11,8,8
-	.type	cBap__1__W$__fNumeric_showIntAtBase__100346,@object # @"cBap__1__W$__fNumeric_showIntAtBase__100346"
-	.local	cBap__1__W$__fNumeric_showIntAtBase__100346
-	.comm	cBap__1__W$__fNumeric_showIntAtBase__100346,8,8
-	.type	cFW$__fNumeric_showIntAtBase$d3,@object # @"cFW$__fNumeric_showIntAtBase$d3"
-	.local	cFW$__fNumeric_showIntAtBase$d3
-	.comm	cFW$__fNumeric_showIntAtBase$d3,8,8
-	.type	cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000,@object # @"cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000"
-	.local	cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000
-	.comm	cFW$__fHos_User_IPC_fl$_Hos_User_IPC_28__go$d3000,8,8
-	.type	cP1__W$__fData_Binary_put$d2,@object # @"cP1__W$__fData_Binary_put$d2"
-	.local	cP1__W$__fData_Binary_put$d2
-	.comm	cP1__W$__fData_Binary_put$d2,8,8
-	.type	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13,@object # @"cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13"
-	.local	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13
-	.comm	cP1__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d13,8,8
-	.type	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10,@object # @"cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10"
-	.local	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10
-	.comm	cP3__Instance$__iData_Binary_get_Hos_User_IPC_ServerName$d10,8,8
-	.type	cP1__W$__fData_Binary_put$d4,@object # @"cP1__W$__fData_Binary_put$d4"
-	.local	cP1__W$__fData_Binary_put$d4
-	.comm	cP1__W$__fData_Binary_put$d4,8,8
-	.type	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9,@object # @"cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9"
-	.local	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9
-	.comm	cFInstance$__iData_Binary_get_Hos_User_IPC_ServerName$d9,8,8
-	.type	cP1__W$__fData_Binary_put$d6,@object # @"cP1__W$__fData_Binary_put$d6"
-	.local	cP1__W$__fData_Binary_put$d6
-	.comm	cP1__W$__fData_Binary_put$d6,8,8
-	.type	cP1__W$__fData_Binary_put$d8,@object # @"cP1__W$__fData_Binary_put$d8"
-	.local	cP1__W$__fData_Binary_put$d8
-	.comm	cP1__W$__fData_Binary_put$d8,8,8
+	.type	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName,@object # @"cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName"
+	.local	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName
+	.comm	cP2__Instance$__iData_Binary_get_Hos_Common_Bundle_TagName,8,8
+	.type	cP1__Hos_User_IPC_transmitMsg$d8,@object # @"cP1__Hos_User_IPC_transmitMsg$d8"
+	.local	cP1__Hos_User_IPC_transmitMsg$d8
+	.comm	cP1__Hos_User_IPC_transmitMsg$d8,8,8
 	.type	.L.str,@object                  # @.str
 	.section	.rodata.str1.1,"aMS",@progbits,1
 .L.str:

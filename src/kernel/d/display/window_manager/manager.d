@@ -1,8 +1,8 @@
-module anonymos_display.window_manager.manager;
+module display.window_manager.manager;
 
-import anonymos_display.framebuffer : framebufferAvailable;
-import anonymos_display.canvas : Canvas;
-import anonymos_display.input_pipeline : InputEvent, InputQueue, enqueue, dequeue;
+import display.framebuffer : framebufferAvailable;
+import display.canvas : Canvas;
+import display.input_pipeline : InputEvent, InputQueue, enqueue, dequeue;
 
 nothrow:
 @nogc:

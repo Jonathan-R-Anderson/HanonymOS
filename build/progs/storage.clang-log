@@ -6,69 +6,69 @@ In file included from <built-in>:385:
     1 | #define _JHC_GC _JHC_GC_JGC
       |         ^
 In file included from <built-in>:1:
-/home/bruns/Documents/haskellos/src/progs/cbits/hos.h:36:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/home/bruns/Documents/HanonymOS/src/progs/cbits/hos.h:36:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
    36 | int fprintf(void *stream, const char *format, ...);
       |     ^
-In file included from /home/bruns/Documents/haskellos/build/progs/storage.c:244:
-/home/bruns/Documents/haskellos/src/progs/cbits/stdio.h:10:8: warning: incompatible redeclaration of library function 'fwrite' [-Wincompatible-library-redeclaration]
+In file included from /home/bruns/Documents/HanonymOS/build/progs/storage.c:244:
+/home/bruns/Documents/HanonymOS/src/progs/cbits/stdio.h:10:8: warning: incompatible redeclaration of library function 'fwrite' [-Wincompatible-library-redeclaration]
    10 | size_t fwrite(const void * ptr, size_t size, size_t nitems, void * stream);
       |        ^
-/home/bruns/Documents/haskellos/src/progs/cbits/stdio.h:10:8: note: 'fwrite' is a builtin with type 'unsigned long (const void *, unsigned long, unsigned long, FILE *)' (aka 'unsigned long (const void *, unsigned long, unsigned long, void **)')
-/home/bruns/Documents/haskellos/build/progs/storage.c:9050:29: warning: expression result unused [-Wunused-value]
- 9050 |                             (uint64_t)syscall((uint64_t)256,(uint64_t)v13593614,(uint64_t)0,(uint64_t)v237919340,(uint64_t)0,(uint64_t)0);
+/home/bruns/Documents/HanonymOS/src/progs/cbits/stdio.h:10:8: note: 'fwrite' is a builtin with type 'unsigned long (const void *, unsigned long, unsigned long, FILE *)' (aka 'unsigned long (const void *, unsigned long, unsigned long, void **)')
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:9050:29: warning: expression result unused [-Wunused-value]
+ 9050 |                             (uint64_t)syscall((uint64_t)256,(uint64_t)v13593612,(uint64_t)0,(uint64_t)v237919340,(uint64_t)0,(uint64_t)0);
       |                             ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:9064:33: warning: expression result unused [-Wunused-value]
- 9064 |                                 (uint64_t)syscall((uint64_t)260,(uint64_t)v152606386,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
-      |                                 ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:9500:17: warning: expression result unused [-Wunused-value]
- 9500 |                 (uint64_t)syscall((uint64_t)0,(uint64_t)v8056232,(uint64_t)v154103238,(uint64_t)0,(uint64_t)0,(uint64_t)0);
-      |                 ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:11145:13: warning: expression result unused [-Wunused-value]
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:9064:33: warning: expression result unused [-Wunused-value]
+ 9064 |                                 (uint64_t)syscall((uint64_t)260,(uint64_t)v86448662,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+      |                                 ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:9500:17: warning: expression result unused [-Wunused-value]
+ 9500 |                 (uint64_t)syscall((uint64_t)0,(uint64_t)v227981060,(uint64_t)v132127014,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+      |                 ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:11145:13: warning: expression result unused [-Wunused-value]
  11145 |             (uint64_t)syscall((uint64_t)260,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
        |             ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12797:9: warning: expression result unused [-Wunused-value]
- 12797 |         *((uint16_t *)(v257664008));
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12851:9: warning: expression result unused [-Wunused-value]
+ 12851 |         *((uint16_t *)(v120834806));
        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12799:9: warning: expression result unused [-Wunused-value]
- 12799 |         *((uint16_t *)(v183082878));
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12853:9: warning: expression result unused [-Wunused-value]
+ 12853 |         *((uint16_t *)(v183082878));
        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12801:9: warning: expression result unused [-Wunused-value]
- 12801 |         *((uint32_t *)(v66102156));
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12855:9: warning: expression result unused [-Wunused-value]
+ 12855 |         *((uint32_t *)(v134159168));
+       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12861:9: warning: expression result unused [-Wunused-value]
+ 12861 |         *((uint64_t *)(v85433876));
        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12807:9: warning: expression result unused [-Wunused-value]
- 12807 |         *((uint64_t *)(v239029634));
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12863:9: warning: expression result unused [-Wunused-value]
+ 12863 |         *((uint32_t *)(v183861076));
        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12809:9: warning: expression result unused [-Wunused-value]
- 12809 |         *((uint32_t *)(v59150084));
-       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12811:9: warning: expression result unused [-Wunused-value]
- 12811 |         *((uint16_t *)(v134159168));
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12865:9: warning: expression result unused [-Wunused-value]
+ 12865 |         *((uint16_t *)(v203886776));
        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12817:9: warning: expression result unused [-Wunused-value]
- 12817 |         *((uint16_t *)(v29077244));
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12871:9: warning: expression result unused [-Wunused-value]
+ 12871 |         *((uint16_t *)(v29077244));
        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12819:9: warning: expression result unused [-Wunused-value]
- 12819 |         *((uint16_t *)(v18087956));
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12873:9: warning: expression result unused [-Wunused-value]
+ 12873 |         *((uint16_t *)(v67242578));
        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12821:9: warning: expression result unused [-Wunused-value]
- 12821 |         *((uint16_t *)(v237919336));
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12875:9: warning: expression result unused [-Wunused-value]
+ 12875 |         *((uint16_t *)(v224424526));
        |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12904:25: warning: expression result unused [-Wunused-value]
- 12904 |                         (uint64_t)syscall((uint64_t)7,(uint64_t)v170030622,(uint64_t)v246712078,(uint64_t)0,(uint64_t)0,(uint64_t)0);
-       |                         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12912:25: warning: expression result unused [-Wunused-value]
- 12912 |                         (uint64_t)syscall((uint64_t)4,(uint64_t)v14053572,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
-       |                         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:12914:25: warning: expression result unused [-Wunused-value]
- 12914 |                         (uint64_t)syscall((uint64_t)1027,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12958:25: warning: expression result unused [-Wunused-value]
+ 12958 |                         (uint64_t)syscall((uint64_t)7,(uint64_t)v13690790,(uint64_t)v172856234,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+       |                         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12966:25: warning: expression result unused [-Wunused-value]
+ 12966 |                         (uint64_t)syscall((uint64_t)4,(uint64_t)v156390962,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+       |                         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:12968:25: warning: expression result unused [-Wunused-value]
+ 12968 |                         (uint64_t)syscall((uint64_t)1027,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0,(uint64_t)0);
        |                         ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:17704:13: warning: expression result unused [-Wunused-value]
- 17704 |             (uint64_t)syscall((uint64_t)65281,(uint64_t)2,(uint64_t)v120257690,(uint64_t)0,(uint64_t)0,(uint64_t)0);
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:17758:13: warning: expression result unused [-Wunused-value]
+ 17758 |             (uint64_t)syscall((uint64_t)65281,(uint64_t)2,(uint64_t)v177904412,(uint64_t)0,(uint64_t)0,(uint64_t)0);
        |             ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:17717:21: warning: expression result unused [-Wunused-value]
- 17717 |                     v19601788;
-       |                     ^~~~~~~~~
-/home/bruns/Documents/haskellos/build/progs/storage.c:17723:25: warning: expression result unused [-Wunused-value]
- 17723 |                         v19601788;
-       |                         ^~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:17771:21: warning: expression result unused [-Wunused-value]
+ 17771 |                     v131353964;
+       |                     ^~~~~~~~~~
+/home/bruns/Documents/HanonymOS/build/progs/storage.c:17777:25: warning: expression result unused [-Wunused-value]
+ 17777 |                         v131353964;
+       |                         ^~~~~~~~~~
 22 warnings generated.

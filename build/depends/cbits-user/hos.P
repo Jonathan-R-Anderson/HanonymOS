@@ -1,1 +1,1 @@
-/home/bruns/Documents/haskellos/build/cbits-user/hos.o: hos.c hos.h stdio.h stdlib.h syscall.h
+/home/bruns/Documents/HanonymOS/build/cbits-user/hos.o: hos.c hos.h stdio.h stdlib.h syscall.h

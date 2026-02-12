@@ -1,7 +1,7 @@
-module anonymos_network.stack.udp;
+module network.udp;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.ipv4;
+import network.types;
+import network.ipv4;
 
 /// UDP header
 struct UDPHeader {

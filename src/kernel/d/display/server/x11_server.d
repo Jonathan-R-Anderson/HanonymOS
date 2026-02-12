@@ -1,15 +1,17 @@
-module anonymos_display.server.x11_server;
+module display.server.x11_server;
 
 // Minimal X11 server implementation for i3
 // Provides enough X11 protocol support for i3 to run
 
-import anonymos_userland.core.objects;
-import anonymos_display.framebuffer;
-import anonymos_display.canvas;
-import core.stdc.stdlib : malloc, free;
-import core.stdc.string : memcpy, memset;
-import anonymos_userland.core.objects : socketBind, socketListen, socketAccept, socketRecv, socketSend, socketClose;
-import anonymos_display.input_pipeline : InputEvent;
+import userland.core.objects;
+import display.framebuffer;
+import display.canvas;
+extern(C) void* malloc(size_t size) @nogc nothrow;
+extern(C) void free(void* ptr) @nogc nothrow;
+extern(C) void* memcpy(void* dest, const(void)* src, size_t n) @nogc nothrow;
+extern(C) void* memset(void* s, int c, size_t n) @nogc nothrow;
+import userland.core.objects : socketBind, socketListen, socketAccept, socketRecv, socketSend, socketClose;
+import display.input_pipeline : InputEvent;
 
 // ============================================================================
 // X11 Atoms & Properties
@@ -349,7 +351,7 @@ __gshared X11ServerState g_x11Server;
 // Handle X11 connection setup (initial handshake)
 @nogc nothrow bool handleX11ConnectionSetup(const(ubyte)[] request, ubyte* responseBuffer, size_t* responseLen)
 {
-    import anonymos_userland.shell.console : printLine, printUnsigned;
+    import userland.shell.console : printLine, printUnsigned;
     
     // Connection setup request is 12 bytes minimum
     if (request.length < 12)
@@ -923,12 +925,12 @@ __gshared X11ServerState g_x11Server;
 // Start X11 server
 @nogc nothrow bool startX11Server()
 {
-    import anonymos_userland.shell.console : printLine;
+    import userland.shell.console : printLine;
     
     printLine("[x11] Starting X11 server...");
     
     // Create server socket (Unix domain socket)
-    import anonymos_userland.core.objects : createSocket, SocketType;
+    import userland.core.objects : createSocket, SocketType;
     g_x11Server.serverSocket = createSocket(SocketType.Stream);
     if (g_x11Server.serverSocket.low == 0)
     {
@@ -976,7 +978,7 @@ __gshared X11ServerState g_x11Server;
     g_x11Server.screenDepth = 32; // Framebuffer is usually 32bpp
     
     printLine("[x11] Screen size: ");
-    import anonymos_userland.shell.console : printUnsigned;
+    import userland.shell.console : printUnsigned;
     printUnsigned(g_x11Server.screenWidth);
     printLine("x");
     printUnsigned(g_x11Server.screenHeight);
@@ -1024,7 +1026,7 @@ __gshared X11ServerState g_x11Server;
     ObjectID newClient = socketAccept(g_x11Server.serverSocket);
     if (newClient.low != 0)
     {
-        import anonymos_userland.shell.console : printLine, printUnsigned;
+        import userland.shell.console : printLine, printUnsigned;
         printLine("[x11] New client connected");
         
         // Find free slot
@@ -1059,7 +1061,7 @@ __gshared X11ServerState g_x11Server;
             // Check if this is a new connection that needs handshake
             if (!g_x11Server.clients[i].handshakeComplete)
             {
-                import anonymos_userland.shell.console : printLine;
+                import userland.shell.console : printLine;
                 printLine("[x11] Processing connection setup for new client");
                 
                 if (handleX11ConnectionSetup(
@@ -1211,7 +1213,7 @@ __gshared X11ServerState g_x11Server;
     // Log when window state changes
     if (!logged || g_x11WindowCount != lastWindowCount || mappedCount != lastMappedCount)
     {
-        import anonymos_userland.shell.console : printLine, printUnsigned;
+        import userland.shell.console : printLine, printUnsigned;
         printLine("[x11] renderAllX11Windows: total windows = ");
         printUnsigned(g_x11WindowCount);
         printLine(", mapped = ");

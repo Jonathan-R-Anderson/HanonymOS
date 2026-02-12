@@ -1,4 +1,4 @@
-module anonymos_drivers.veracrypt;
+module drivers.veracrypt;
 
 // Constants from Volumes.h
 enum TC_HEADER_MAGIC = 0x56455241; // "VERA"
@@ -136,7 +136,7 @@ export extern(C) bool isVeraCryptAvailable() @nogc nothrow
 // Boot into decoy/hidden OS
 export extern(C) bool bootDecoyOS() @nogc nothrow
 {
-    import anonymos_userland.shell.console : printLine;
+    import userland.shell.console : printLine;
     
     printLine("[veracrypt] Attempting to boot decoy OS...");
     
@@ -160,7 +160,7 @@ export extern(C) bool bootDecoyOS() @nogc nothrow
 // Prompt for VeraCrypt password
 export extern(C) bool promptForPassword(char* buffer, size_t maxLen) @nogc nothrow
 {
-    import anonymos_userland.shell.console : printLine, print;
+    import userland.shell.console : printLine, print;
     
     if (buffer is null || maxLen == 0) return false;
     

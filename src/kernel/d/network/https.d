@@ -1,11 +1,11 @@
-module anonymos_network.stack.https;
+module network.https;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.tcp;
-import anonymos_network.stack.tls;
-import anonymos_network.stack.dns;
-import anonymos_network.stack.http;
-import anonymos_network.stack.stack;
+import network.types;
+import network.tcp;
+import network.tls;
+import network.dns;
+import network.http;
+import network.stack;
 
 /// HTTPS request
 struct HTTPSRequest {

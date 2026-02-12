@@ -1,4 +1,4 @@
-module anonymos_network.stack.types;
+module network.types;
 
 /// Network byte order conversion
 @nogc nothrow {

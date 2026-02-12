@@ -34,7 +34,7 @@ data X64PageTableIndex = X64PageTableIndex
 
 type X64HosState = HosState X64Registers X64PageTable X64Exception
 
-foreign import "write_serial" writeSerial :: Word8 -> IO ()
+
 foreign import ccall "vga_putchar" vgaPutChar :: Word8 -> IO ()
 foreign import ccall "term_putchar" termPutChar :: Word8 -> IO ()
 

@@ -1,1 +1,1 @@
-/home/bruns/Documents/haskellos/build/cbits-user/syscall.o: syscall.c syscall.h hos.h
+/home/bruns/Documents/HanonymOS/build/cbits-user/syscall.o: syscall.c syscall.h hos.h

@@ -1,4 +1,4 @@
-module anonymos_display.wayland.protocol;
+module display.wayland.protocol;
 
 // --------------------------------------------------------------------------
 // Wayland Wire Protocol Definitions

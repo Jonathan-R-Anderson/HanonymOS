@@ -1,4 +1,4 @@
-module anonymos_display.framebuffer;
+module display.framebuffer;
 
 @safe: // default, we drop to @system in the few places we need pointer math
 
@@ -11,8 +11,8 @@ import core.stdc.string : memmove; // for scrolling
 enum fbDefaultFgColor = 0xFFFFFFFF; // ARGB: white
 enum fbDefaultBgColor = 0x00000000; // ARGB: black
 
-import anonymos_display.common : glyphHeight, glyphWidth;
-import anonymos_display.fonts.font_stack : activeFontStack, glyphMaskFromStack;
+import display.common : glyphHeight, glyphWidth;
+import display.fonts.font_stack : activeFontStack, glyphMaskFromStack;
 
 enum MaxSupportedBpp = 32;
 
@@ -223,7 +223,7 @@ void framebufferPutPixel(uint x, uint y, uint argbColor) {
     if (pixelLogCount < 10 && argbColor == 0xFFFF0000) // Log only Red pixels
     {
         pixelLogCount++;
-        import anonymos_userland.shell.console : print, printUnsigned, printLine;
+        import userland.shell.console : print, printUnsigned, printLine;
         print("[fb] PutPixel Red at (");
         printUnsigned(x); print(", "); printUnsigned(y);
         print(") BPP="); printUnsigned(g_fb.bpp);
@@ -635,7 +635,7 @@ void framebufferInitCursor()
 @nogc nothrow @system
 void framebufferSetCursorIcon(uint width, uint height, const(uint)* pixels)
 {
-    import anonymos_userland.shell.console : print, printUnsigned, printLine;
+    import userland.shell.console : print, printUnsigned, printLine;
     print("[fb] SetCursorIcon W="); printUnsigned(width); print(" H="); printUnsigned(height); printLine("");
 
     // Hide old cursor first to restore background
@@ -680,7 +680,7 @@ void framebufferMoveCursor(int x, int y)
         static int moveLog = 0;
         moveLog++;
         if (moveLog % 100 == 0) {
-             // import anonymos_userland.shell.console : printLine;
+             // import userland.shell.console : printLine;
              // printLine("[fb] Atomic Move Cursor");
         }
         
@@ -1041,7 +1041,7 @@ void framebufferDrawCursorToBuffer(uint* buffer, uint width, uint height, uint p
     if (!g_fbInitialized) return;
     
     // Debug logging
-    // import anonymos_userland.shell.console : print, printLine, printUnsigned;
+    // import userland.shell.console : print, printLine, printUnsigned;
     // static int logCount = 0;
     // if (logCount++ < 20)
     // {

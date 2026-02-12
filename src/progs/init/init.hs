@@ -86,14 +86,14 @@ doParent initState =
          Left err -> hosDebugLog ("[init] wait on channels error: " ++ show err) >>
                             return initState
 
-bootIntoEsh :: IO ()
-bootIntoEsh = do hosDebugLog "[init] requesting I/O privileges..."
-             hosRequestIO
-             hosDebugLog "[init] initializing PS/2..."
-             initPS2
+bootIntoEsh = do
+    hosDebugLog "[init] requesting I/O privileges..."
+    hosRequestIO
+    hosDebugLog "[init] initializing PS/2..."
+    initPS2
 
-             hosDebugLog "[init] entering esh interactive shell"
-             runEsh
+    hosDebugLog "[init] entering esh interactive shell"
+    runEsh
 
 -- Built-in esh while userspace exec/spawn support is still being finalized.
 runEsh :: IO ()

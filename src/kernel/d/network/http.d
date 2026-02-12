@@ -1,8 +1,8 @@
-module anonymos_network.stack.http;
+module network.http;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.tcp;
-import anonymos_network.stack.stack;
+import network.types;
+import network.tcp;
+import network.stack;
 
 /// HTTP method
 enum HTTPMethod {

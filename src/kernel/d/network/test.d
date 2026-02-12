@@ -1,12 +1,12 @@
-module anonymos_network.stack.test;
+module network.test;
 
-import anonymos_network.stack.stack;
-import anonymos_network.stack.dhcp;
-import anonymos_network.stack.dns;
-import anonymos_network.stack.tcp;
-import anonymos_network.stack.icmp;
-import anonymos_network.stack.types;
-import anonymos_userland.shell.console : printLine, print;
+import network.stack;
+import network.dhcp;
+import network.dns;
+import network.tcp;
+import network.icmp;
+import network.types;
+import userland.shell.console : printLine, print;
 
 /// Test network stack functionality
 export extern(C) void testNetworkStack() @nogc nothrow {

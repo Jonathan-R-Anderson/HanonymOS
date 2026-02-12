@@ -1,7 +1,7 @@
-module anonymos_display.vulkan;
+module display.vulkan;
 
-import anonymos_display.framebuffer;
-import anonymos_userland.shell.console : printLine, printUnsigned;
+import display.framebuffer;
+import userland.shell.console : printLine, printUnsigned;
 
 // --------------------------------------------------------------------------
 // Vulkan Types (Minimal Subset)
@@ -247,7 +247,7 @@ export VkResult vkQueuePresentKHR(VkQueue queue, const(VkPresentInfoKHR)* pPrese
     // And we assume g_swapchainImages has the data.
     
     // For this simple shim, we just call the DRM page flip simulation.
-    import anonymos_display.drm_sim : drmModePageFlip, drmModeDirtyFB, g_drmDevice, DrmClipRect;
+    import display.drm_sim : drmModePageFlip, drmModeDirtyFB, g_drmDevice, DrmClipRect;
     
     // We need a handle to the FB. In our sim, the "image" is the FB for now.
     // If we had back buffers, we'd copy.

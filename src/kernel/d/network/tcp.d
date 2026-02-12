@@ -1,7 +1,7 @@
-module anonymos_network.stack.tcp;
+module network.tcp;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.ipv4;
+import network.types;
+import network.ipv4;
 
 /// TCP header
 struct TCPHeader {

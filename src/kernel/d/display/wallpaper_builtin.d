@@ -1,6 +1,6 @@
-module anonymos_display.wallpaper_builtin;
+module display.wallpaper_builtin;
 
-import anonymos_display.wallpaper_types;
+import display.wallpaper_types;
 
 nothrow:
 @nogc:

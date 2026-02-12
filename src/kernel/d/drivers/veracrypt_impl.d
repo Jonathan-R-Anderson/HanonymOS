@@ -1,7 +1,10 @@
-module anonymos_drivers.veracrypt_impl;
+module drivers.veracrypt_impl;
 
-import anonymos_drivers.veracrypt;
-import anonymos_crypto.primitives.sha512;
+import drivers.veracrypt;
+// import anonymos_crypto.primitives.sha512;
+
+extern(C) void sha512_hash(const(ubyte)* data, size_t len, ubyte* output) @nogc nothrow;
+extern(C) void aes_encrypt(ubyte* data, const(ubyte)* key) @nogc nothrow;
 
 // XTS-AES Implementation
 // Uses aes_encrypt (ECB) to implement XTS mode

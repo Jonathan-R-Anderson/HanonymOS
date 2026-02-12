@@ -1,6 +1,6 @@
-module anonymos_display.fonts.bitmap_font;
+module display.fonts.bitmap_font;
 
-import anonymos_display.common : glyphHeight, glyphWidth;
+import display.common : glyphHeight, glyphWidth;
 
 /// Lightweight bitmap font source used as a stand-in for a full FreeType
 /// pipeline. The data is intentionally small and static so that the kernel can

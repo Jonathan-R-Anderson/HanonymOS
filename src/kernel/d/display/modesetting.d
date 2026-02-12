@@ -1,8 +1,8 @@
-module anonymos_display.modesetting;
+module display.modesetting;
 
-import anonymos_userland.shell.console : printLine, print, printUnsigned;
-import anonymos_display.framebuffer;
-import implementation.kernel.core.multiboot;
+import userland.shell.console : printLine, print, printUnsigned;
+import display.framebuffer;
+import boot.multiboot;
 
 @nogc nothrow:
 
@@ -97,7 +97,7 @@ ModesetResult enableDisplayPipeline(const MultibootContext context,
 /// framebuffer module and log the active mode.
 private bool initFramebufferWithInfo(const MultibootFramebufferInfo fbInfo, bool fromFirmware)
 {
-    initFramebuffer(fbInfo.base, fbInfo.width, fbInfo.height, fbInfo.pitch, fbInfo.bpp, fbInfo.isBGR, fbInfo.modeNumber, fromFirmware);
+    initFramebuffer(fbInfo.base, fbInfo.width, fbInfo.height, fbInfo.pitch, fbInfo.bpp, fbInfo.isBGR, cast(ushort)fbInfo.modeNumber, fromFirmware);
 
     if (!framebufferAvailable())
     {

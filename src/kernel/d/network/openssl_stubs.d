@@ -1,6 +1,6 @@
-module anonymos_network.stack.openssl_stubs;
+module network.openssl_stubs;
 
-import anonymos_userland.shell.console : printLine;
+import userland.shell.console : printLine;
 
 extern(C) @nogc nothrow {
     void SSL_library_init() { printLine("[openssl-stub] SSL_library_init (stub)"); }

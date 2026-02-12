@@ -1,12 +1,12 @@
-module anonymos_drivers.input.usb_hid;
+module drivers.input.usb_hid;
 
 import core.volatile : volatileLoad;
-import anonymos_userland.shell.console : print, printLine, printHex, printUnsigned;
-import anonymos_display.input_pipeline : InputQueue, enqueue, InputEvent;
-import anonymos_display.framebuffer : g_fb;
-import anonymos_drivers.input.hid_keyboard : HIDKeyboardReport, processKeyboardReport;
-import anonymos_drivers.input.hid_mouse : HIDMouseReport, processMouseReport;
-import implementation.kernel.core.dma : dma_alloc;
+import userland.shell.console : print, printLine, printHex, printUnsigned;
+import display.input_pipeline : InputQueue, enqueue, InputEvent;
+import display.framebuffer : g_fb;
+import drivers.input.hid_keyboard : HIDKeyboardReport, processKeyboardReport;
+import drivers.input.hid_mouse : HIDMouseReport, processMouseReport;
+import memory.dma : dma_alloc;
 
 @nogc:
 nothrow:
@@ -769,7 +769,7 @@ private bool initializeLegacyPS2() @nogc nothrow
     printLine("[usb-hid] PS/2 legacy input enabled");
 
     // Restore PIC masks to defaults (unmask timer/kbd/mouse).
-    import implementation.kernel.core.interrupts : PIC1_DEFAULT_MASK, PIC2_DEFAULT_MASK;
+    import core.ticks : PIC1_DEFAULT_MASK, PIC2_DEFAULT_MASK;
     outb(0xA1, PIC2_DEFAULT_MASK);
     outb(0x21, PIC1_DEFAULT_MASK);
     return true;

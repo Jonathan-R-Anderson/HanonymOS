@@ -1,10 +1,10 @@
-module anonymos_display.wayland.wserver;
+module display.wayland.wserver;
 
-import anonymos_userland.shell.console : printLine, print, printUnsigned, printHex;
-import implementation.kernel.syscalls.socket;
-import implementation.kernel.syscalls.posix : sys_close, ssize_t;
-import anonymos_display.wayland.protocol;
-import anonymos_display.framebuffer : g_fb, framebufferPutPixel;
+import userland.shell.console : printLine, print, printUnsigned, printHex;
+import core.syscalls.socket;
+import core.syscalls.posix : sys_close, ssize_t;
+import display.wayland.protocol;
+import display.framebuffer : g_fb, framebufferPutPixel;
 import core.stdc.string : memcpy, memset;
 
 @nogc nothrow:

@@ -132,4 +132,11 @@ void ext_halt(void);
 void arch_unmap_init_task(void);
 uint32_t x64SwitchToUserspace(void* userState, void* kernelState);
 
+// D-Haskell bridge functions
+int d_init_display(void);
+int d_init_drivers(void);
+int d_display_is_ready(void);
+int d_drivers_are_ready(void);
+void d_display_heartbeat(void);
+
 #endif

@@ -1,10 +1,10 @@
-module anonymos_network.stack.dhcp;
+module network.dhcp;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.udp;
-import anonymos_network.stack.ipv4;
-import anonymos_network.stack.stack;
-import implementation.drivers.network.network : getMacAddress;
+import network.types;
+import network.udp;
+import network.ipv4;
+import network.stack;
+import drivers.network.network : getMacAddress;
 
 /// DHCP Message Type
 enum DHCPMessageType : ubyte {

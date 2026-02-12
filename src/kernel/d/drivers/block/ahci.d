@@ -1,8 +1,8 @@
-module anonymos_drivers.block.ahci;
+module drivers.block.ahci;
 
-import anonymos_drivers.pci;
-import anonymos_userland.shell.console : print, printHex, printLine, printUnsigned;
-import implementation.kernel.core.physmem : allocFrame, freeFrame;
+import drivers.pci;
+import userland.shell.console : print, printHex, printLine, printUnsigned;
+import memory.physmem : allocFrame, freeFrame;
 import core.stdc.string : memset;
 
 @nogc nothrow:

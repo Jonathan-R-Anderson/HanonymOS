@@ -1,8 +1,8 @@
-module anonymos_network.stack.ipv4;
+module network.ipv4;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.ethernet;
-import anonymos_network.stack.arp;
+import network.types;
+import network.ethernet;
+import network.arp;
 
 /// IPv4 header
 struct IPv4Header {

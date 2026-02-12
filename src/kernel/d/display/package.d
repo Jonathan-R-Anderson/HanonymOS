@@ -1,4 +1,4 @@
-module anonymos_display;
+module display;
 
 /// AnonymOS Display - Display server and graphics stack
 /// 
@@ -12,44 +12,44 @@ module anonymos_display;
 /// - Input handling
 
 // Core display components
-public import anonymos_display.framebuffer;
-public import anonymos_display.canvas;
-public import anonymos_display.cursor;
-public import anonymos_display.cursor_diagnostics;
-public import anonymos_display.wallpaper;
-public import anonymos_display.wallpaper_builtin;
-public import anonymos_display.wallpaper_types;
-public import anonymos_display.common;
+public import display.framebuffer;
+public import display.canvas;
+public import display.cursor;
+public import display.cursor_diagnostics;
+public import display.wallpaper;
+public import display.wallpaper_builtin;
+public import display.wallpaper_types;
+public import display.common;
 
 // Display servers
-public import anonymos_display.server.server;
-public import anonymos_display.server.x11_server;
-public import anonymos_display.server.x11_stack;
+public import display.server.server;
+public import display.server.x11_server;
+public import display.server.x11_stack;
 
 // Wayland
-public import anonymos_display.wayland.protocol;
-public import anonymos_display.wayland.wserver;
+public import display.wayland.protocol;
+public import display.wayland.wserver;
 
 // Compositor
-public import anonymos_display.compositor.compositor;
+public import display.compositor.compositor;
 
 // Window manager
-public import anonymos_display.window_manager.manager;
-public import anonymos_display.window_manager.renderer;
+public import display.window_manager.manager;
+public import display.window_manager.renderer;
 
 // Font rendering
-public import anonymos_display.fonts.bitmap_font;
-public import anonymos_display.fonts.truetype_font;
-public import anonymos_display.fonts.font_stack;
-public import anonymos_display.freetype_bindings;
-public import anonymos_display.harfbuzz_bindings;
+public import display.fonts.bitmap_font;
+public import display.fonts.truetype_font;
+public import display.fonts.font_stack;
+public import display.freetype_bindings;
+public import display.harfbuzz_bindings;
 
 // Input
-public import anonymos_display.input_handler;
-public import anonymos_display.input_pipeline;
+public import display.input_handler;
+public import display.input_pipeline;
 
 // Graphics acceleration
-public import anonymos_display.gpu_accel;
-public import anonymos_display.vulkan;
-public import anonymos_display.drm_sim;
-public import anonymos_display.modesetting;
+public import display.gpu_accel;
+public import display.vulkan;
+public import display.drm_sim;
+public import display.modesetting;

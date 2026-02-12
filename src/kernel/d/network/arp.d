@@ -1,7 +1,7 @@
-module anonymos_network.stack.arp;
+module network.arp;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.ethernet;
+import network.types;
+import network.ethernet;
 
 /// ARP operation codes
 enum ARPOperation : ushort {

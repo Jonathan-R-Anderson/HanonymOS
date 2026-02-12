@@ -25,20 +25,20 @@ fromCIntBool v = v /= 0
 
 initDisplayAndDrivers :: IO Bool
 initDisplayAndDrivers = do
-  displayOk <- fromCIntBool <$> dInitDisplay
-  driversOk <- fromCIntBool <$> dInitDrivers
+  displayOk <- fmap fromCIntBool dInitDisplay
+  driversOk <- fmap fromCIntBool dInitDrivers
   writeIORef displayDriverState (DisplayDriverState displayOk driversOk 0)
-  pure (displayOk && driversOk)
+  return (displayOk && driversOk)
 
 displayDriversReady :: IO Bool
 displayDriversReady = do
-  displayOk <- fromCIntBool <$> dDisplayIsReady
-  driversOk <- fromCIntBool <$> dDriversAreReady
-  modifyIORef' displayDriverState $ \st -> st
+  displayOk <- fmap fromCIntBool dDisplayIsReady
+  driversOk <- fmap fromCIntBool dDriversAreReady
+  modifyIORef displayDriverState $ \st -> st
     { ddsDisplayReady = displayOk
     , ddsDriversReady = driversOk
     }
-  pure (displayOk && driversOk)
+  return (displayOk && driversOk)
 
 displayDriversPoll :: IO ()
 displayDriversPoll = do
@@ -47,4 +47,4 @@ displayDriversPoll = do
   writeIORef displayDriverState st { ddsTickCounter = nextTick }
   if ddsDisplayReady st && ddsDriversReady st && (nextTick .&. 0x3F) == 0
     then dDisplayHeartbeat
-    else pure ()
+    else return ()

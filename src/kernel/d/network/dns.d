@@ -1,8 +1,8 @@
-module anonymos_network.stack.dns;
+module network.dns;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.udp;
-import anonymos_network.stack.stack;
+import network.types;
+import network.udp;
+import network.stack;
 
 /// DNS header
 struct DNSHeader {

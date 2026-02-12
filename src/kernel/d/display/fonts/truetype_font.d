@@ -1,8 +1,8 @@
-module anonymos_display.fonts.truetype_font;
+module display.fonts.truetype_font;
 
-import anonymos_display.freetype_bindings;
-import anonymos_display.harfbuzz_bindings;
-import anonymos_display.common : glyphWidth, glyphHeight;
+import display.freetype_bindings;
+import display.harfbuzz_bindings;
+import display.common : glyphWidth, glyphHeight;
 
 @nogc nothrow:
 
@@ -29,7 +29,7 @@ bool initFreeType() @nogc nothrow
     FT_Error error = FT_Init_FreeType(&g_ftLibrary);
     if (error != 0)
     {
-        import anonymos_userland.shell.console : print, printLine, printUnsigned;
+        import userland.shell.console : print, printLine, printUnsigned;
         print("[freetype] Failed to initialize FreeType, error: ");
         printUnsigned(cast(uint)error);
         printLine("");
@@ -38,7 +38,7 @@ bool initFreeType() @nogc nothrow
     
     g_ftInitialized = true;
     
-    import anonymos_userland.shell.console : printLine;
+    import userland.shell.console : printLine;
     printLine("[freetype] FreeType initialized successfully");
     return true;
 }
@@ -46,8 +46,8 @@ bool initFreeType() @nogc nothrow
 /// Load a TrueType font from a file path
 bool loadTrueTypeFont(ref TrueTypeFont font, const(char)[] path, uint pixelSize = 16) @nogc nothrow
 {
-    import anonymos_userland.shell.console : print, printLine, printUnsigned;
-    import anonymos_filesystem.core.fs : readFile;
+    import userland.shell.console : print, printLine, printUnsigned;
+    // import anonymos_filesystem.core.fs : readFile;
     
     if (!g_ftInitialized)
     {
@@ -61,18 +61,18 @@ bool loadTrueTypeFont(ref TrueTypeFont font, const(char)[] path, uint pixelSize 
         font.path[i] = path[i];
     font.path[len] = '\0';
     
-    // Read file from VFS
-    // readFile expects null-terminated C string
-    const(ubyte)[] data = readFile(font.path.ptr);
+    // Read file from VFS (STUBBED: filesystem module missing)
+    const(ubyte)[] data = null; // readFile(font.path.ptr);
     
+    /* stripping leading '/' if present
     if (data is null)
     {
-        // Try stripping leading '/' if present (VFS might store without it)
         if (len > 1 && font.path[0] == '/')
         {
             data = readFile(font.path.ptr + 1);
         }
     }
+    */
     
     if (data is null)
     {
@@ -89,7 +89,7 @@ bool loadTrueTypeFont(ref TrueTypeFont font, const(char)[] path, uint pixelSize 
 /// Load a TrueType font from memory
 bool loadTrueTypeFontFromMemory(ref TrueTypeFont font, const(ubyte)[] data, uint pixelSize = 16) @nogc nothrow
 {
-    import anonymos_userland.shell.console : print, printLine, printUnsigned;
+    import userland.shell.console : print, printLine, printUnsigned;
     
     if (!g_ftInitialized)
     {

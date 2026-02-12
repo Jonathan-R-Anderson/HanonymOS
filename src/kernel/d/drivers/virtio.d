@@ -1,7 +1,7 @@
-module anonymos_drivers.virtio;
+module drivers.virtio;
 
-import anonymos_drivers.pci;
-import anonymos_userland.shell.console : printLine, printHex;
+import drivers.pci;
+import userland.shell.console : printLine, printHex;
 
 // --------------------------------------------------------------------------
 // VirtIO Constants & Types
@@ -71,18 +71,18 @@ struct VirtioDevice {
 
 void virtioReset(VirtioDevice* dev) @nogc nothrow {
     // Legacy PIO reset
-    import anonymos_drivers.io;
+    import drivers.io;
     outportb(cast(ushort)(dev.ioBase + 18), 0);
 }
 
 void virtioSetStatus(VirtioDevice* dev, ubyte status) @nogc nothrow {
-    import anonymos_drivers.io;
+    import drivers.io;
     ubyte cur = inportb(cast(ushort)(dev.ioBase + 18));
     outportb(cast(ushort)(dev.ioBase + 18), cur | status);
 }
 
 void virtioSetupQueue(VirtioDevice* dev, uint queueIndex) @nogc nothrow {
-    import anonymos_drivers.io;
+    import drivers.io;
     
     // Select queue
     outportw(cast(ushort)(dev.ioBase + 14), cast(ushort)queueIndex);

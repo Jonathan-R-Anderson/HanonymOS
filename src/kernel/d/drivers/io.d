@@ -1,4 +1,4 @@
-module anonymos_drivers.io;
+module drivers.io;
 
 @nogc nothrow:
 

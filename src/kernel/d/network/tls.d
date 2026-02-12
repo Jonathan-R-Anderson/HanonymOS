@@ -1,7 +1,7 @@
-module anonymos_network.stack.tls;
+module network.tls;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.tcp;
+import network.types;
+import network.tcp;
 
 /// TLS version
 enum TLSVersion {

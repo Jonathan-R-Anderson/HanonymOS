@@ -1,7 +1,7 @@
-module anonymos_network.stack.icmpv6;
+module network.icmpv6;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.ipv6;
+import network.types;
+import network.ipv6;
 
 /// ICMPv6 Message Types
 enum ICMPv6Type : ubyte {

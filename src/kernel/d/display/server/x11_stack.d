@@ -1,7 +1,7 @@
-module anonymos_display.x11_stack;
+module display.x11_stack;
 
-import anonymos_display.framebuffer : framebufferAvailable;
-import implementation.kernel.syscalls.posix : spawnAndWait;
+import display.framebuffer : framebufferAvailable;
+import core.syscalls.posix : spawnAndWait;
 
 nothrow:
 @nogc:
@@ -53,7 +53,7 @@ const(char)[] displayManagerLabel(DisplayManagerKind kind) @nogc pure nothrow
 }
 
 /// Seed X11 stack state based on framebuffer availability and config intent.
-import anonymos_display.server.x11_server : startX11Server;
+import display.server.x11_server : startX11Server;
 
 /// Seed X11 stack state based on framebuffer availability and config intent.
 X11StackState bootstrapX11Stack(X11StackConfig config) @nogc nothrow

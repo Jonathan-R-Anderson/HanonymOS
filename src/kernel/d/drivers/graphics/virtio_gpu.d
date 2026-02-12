@@ -1,9 +1,9 @@
-module anonymos_drivers.graphics.virtio_gpu;
+module drivers.graphics.virtio_gpu;
 
-import anonymos_drivers.virtio;
-import anonymos_drivers.pci;
-import anonymos_userland.shell.console : printLine, printHex, printUnsigned;
-import anonymos_drivers.io;
+import drivers.virtio;
+import drivers.pci;
+import userland.shell.console : printLine, printHex, printUnsigned;
+import drivers.io;
 
 extern(C):
 
@@ -114,7 +114,7 @@ export void virtioGpuInit() @nogc nothrow {
     // We need to scan for it manually or use a helper if available.
     // pciFindDevice is not in pci.d, we must implement a search or use scanPCIDevices.
     
-    import anonymos_drivers.pci : scanPCIDevices, pciConfigRead32;
+    import drivers.pci : scanPCIDevices, pciConfigRead32;
     auto devices = scanPCIDevices();
     PCIDevice* pci = null;
     
@@ -185,7 +185,7 @@ export uint virtioGpuCreateResource(uint width, uint height) @nogc nothrow {
     sendCmd(&cmd, cmd.sizeof);
     
     // 2. Attach Backing to Framebuffer
-    import anonymos_display.framebuffer : g_fb;
+    import display.framebuffer : g_fb;
     if (g_fb.addr !is null) {
         virtioGpuAttachBacking(rid, cast(ulong)g_fb.addr, g_fb.height * g_fb.pitch);
     }

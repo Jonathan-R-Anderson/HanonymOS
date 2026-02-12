@@ -1,11 +1,11 @@
-module anonymos_display.server.server;
+module display.server.server;
 
-import anonymos_display.framebuffer : framebufferAvailable;
-import anonymos_display.fonts.font_stack;
-import implementation.kernel.core.multiboot : FramebufferModeRequest;
-import anonymos_display.server.x11_stack;
-import anonymos_display.canvas : Canvas, createFramebufferCanvas;
-import implementation.kernel.syscalls.posix : spawnRegisteredProcess, pid_t;
+import display.framebuffer : framebufferAvailable;
+import display.fonts.font_stack;
+import boot.multiboot : FramebufferModeRequest;
+import display.server.x11_stack;
+import display.canvas : Canvas, createFramebufferCanvas;
+import core.syscalls.posix : spawnRegisteredProcess, pid_t;
 
 /// Enumeration for the type of display server protocol we want to expose.
 /// These are intentionally high level: the kernel still lacks the userspace
@@ -104,10 +104,10 @@ void attachInputPipeline(ref DisplayServerState state) @nogc nothrow
 
     if (state.config.inputEnabled)
     {
-        import anonymos_drivers.input.usb_hid : initializeUSBHID, usbHIDAvailable,
+        import drivers.input.usb_hid : initializeUSBHID, usbHIDAvailable,
                                             usbHIDPointerPresent, usbHIDTouchPresent,
                                             usbHIDKeyboardPresent;
-        import implementation.kernel.syscalls.posix : schedYield;
+        import core.syscalls.posix : schedYield;
 
         initializeUSBHID();
 

@@ -1,11 +1,11 @@
-module anonymos_display.window_manager.renderer;
+module display.window_manager.renderer;
 
-import anonymos_display.fonts.font_stack : activeFontStack;
-import anonymos_display.framebuffer;
-import anonymos_display.common : glyphWidth, glyphHeight;
-import anonymos_display.window_manager.manager;
-import anonymos_display.wallpaper : drawWallpaperToFramebuffer;
-import anonymos_display.canvas;
+import display.fonts.font_stack : activeFontStack;
+import display.framebuffer;
+import display.common : glyphWidth, glyphHeight;
+import display.window_manager.manager;
+import display.wallpaper : drawWallpaperToFramebuffer;
+import display.canvas;
 
 nothrow:
 @nogc:
@@ -25,8 +25,8 @@ private struct WindowEntry
 
 void renderWorkspace(const WindowManager* manager, const Damage* damage = null)
 {
-    import anonymos_userland.shell.console : printLine;
-    import anonymos_display.wallpaper : drawWallpaperToFramebufferRect;
+    import userland.shell.console : printLine;
+    import display.wallpaper : drawWallpaperToFramebufferRect;
     static bool loggedStart;
     if (!loggedStart)
     {

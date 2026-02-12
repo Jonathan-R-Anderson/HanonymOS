@@ -1,8 +1,8 @@
-module anonymos_display.gpu_accel;
+module display.gpu_accel;
 
 import core.stdc.string : memcpy;
-import anonymos_display.framebuffer;
-import anonymos_display.modesetting : ModesetResult;
+import display.framebuffer;
+import display.modesetting : ModesetResult;
 
 @nogc nothrow:
 

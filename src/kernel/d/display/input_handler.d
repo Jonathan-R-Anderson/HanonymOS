@@ -1,8 +1,8 @@
-module anonymos_display.input_handler;
+module display.input_handler;
 
-import anonymos_display.input_pipeline : InputEvent, InputQueue, dequeue;
-import anonymos_display.window_manager.manager : WindowManager, Window, Damage;
-import anonymos_display.server.x11_server : injectX11Input;
+import display.input_pipeline : InputEvent, InputQueue, dequeue;
+import display.window_manager.manager : WindowManager, Window, Damage;
+import display.server.x11_server : injectX11Input;
 
 @nogc:
 nothrow:
@@ -139,11 +139,11 @@ private void handleKeyDown(ref const InputEvent event, ref WindowManager manager
     // Check for Ctrl+Shift+T (run cursor tests)
     if (ctrlPressed && shiftPressed && (key == 't' || key == 'T'))
     {
-        import anonymos_userland.shell.console : printLine;
+        import userland.shell.console : printLine;
         printLine("[input] Running cursor movement tests...");
         
         // Import and run cursor tests
-        import anonymos_display.cursor_diagnostics : printCursorDiagnostics;
+        import display.cursor_diagnostics : printCursorDiagnostics;
         
         printCursorDiagnostics();
         
@@ -193,7 +193,7 @@ private void handlePointerMove(ref const InputEvent event, ref WindowManager man
     // g_cursor.y = event.data2;
     // Use the authoritative mouse state directly to ensure synchronization
     // with the desktop loop's cursor rendering.
-    import anonymos_drivers.input.hid_mouse : getMousePosition;
+    import drivers.input.hid_mouse : getMousePosition;
     getMousePosition(g_cursor.x, g_cursor.y);
     
     // Handle window dragging

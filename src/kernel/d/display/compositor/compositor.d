@@ -1,14 +1,14 @@
-module anonymos_display.compositor.compositor;
+module display.compositor.compositor;
 
-import anonymos_display.framebuffer;
-import anonymos_display.common : glyphWidth, glyphHeight;
-import anonymos_display.canvas;
-import anonymos_display.fonts.font_stack : activeFontStack;
-import anonymos_display.window_manager.manager;
-import anonymos_display.wallpaper : drawWallpaperToBuffer;
-import anonymos_display.gpu_accel : acceleratedPresentBuffer;
+import display.framebuffer;
+import display.common : glyphWidth, glyphHeight;
+import display.canvas;
+import display.fonts.font_stack : activeFontStack;
+import display.window_manager.manager;
+import display.wallpaper : drawWallpaperToBuffer;
+import display.gpu_accel : acceleratedPresentBuffer;
 import core.stdc.string : memcpy;
-import anonymos_userland.shell.console : printLine, printHex, printUnsigned, print;
+import userland.shell.console : printLine, printHex, printUnsigned, print;
 import std.conv : to;
 
 nothrow:
@@ -102,13 +102,13 @@ struct Compositor
         {
             return;
         }
-        import anonymos_userland.shell.console : printLine;
+        import userland.shell.console : printLine;
         static bool loggedOnce;
         if (!loggedOnce)
         {
             printLine("Compositor.clear start");
             print("[compositor] clear width="); 
-            import anonymos_userland.shell.console : printUnsigned, printHex;
+            import userland.shell.console : printUnsigned, printHex;
             printUnsigned(width); print(" height="); printUnsigned(height);
             print(" pitch="); printUnsigned(pitch);
             print(" buffer="); printHex(cast(ulong)buffer); printLine("");
@@ -219,7 +219,7 @@ struct Compositor
 
     void present()
     {
-        import anonymos_userland.shell.console : printLine, printUnsigned, print;
+        import userland.shell.console : printLine, printUnsigned, print;
 
         static bool loggedOnce;
         // Evaluate framebuffer availability once so the value matches what we print
@@ -533,7 +533,7 @@ void compositorReleaseSurface(size_t id)
 
 void renderWorkspaceComposited(const WindowManager* manager)
 {
-    import anonymos_userland.shell.console : printLine, print, printUnsigned;
+    import userland.shell.console : printLine, print, printUnsigned;
     if (manager is null || !framebufferAvailable())
     {
         return;
@@ -565,7 +565,7 @@ void renderWorkspaceComposited(const WindowManager* manager)
     /*
     WindowEntry[WINDOW_MANAGER_CAPACITY] ordered;
     const size_t visibleCount = collectWindows(manager, ordered);
-    import anonymos_userland.shell.console : printUnsigned;
+    import userland.shell.console : printUnsigned;
     print("[compositor] windows pending: ");
     printUnsigned(visibleCount);
     printLine("");
@@ -574,7 +574,7 @@ void renderWorkspaceComposited(const WindowManager* manager)
     if (frameLogs < 1) printLine("[compositor] windows drawing skipped");
 
     // Draw cursor on top of everything in the backbuffer
-    import anonymos_display.framebuffer : framebufferDrawCursorToBuffer;
+    import display.framebuffer : framebufferDrawCursorToBuffer;
     framebufferDrawCursorToBuffer(g_compositor.buffer, g_compositor.width, g_compositor.height, g_compositor.pitch);
 
     g_compositor.present();
@@ -696,7 +696,7 @@ private void drawWindow(ref const Window window, uint taskbarHeight)
         return;
     }
 
-    import anonymos_userland.shell.console : print, printLine, printUnsigned, printHex;
+    import userland.shell.console : print, printLine, printUnsigned, printHex;
     static uint windowLogs;
 
     auto canvas = compositorCanvas();

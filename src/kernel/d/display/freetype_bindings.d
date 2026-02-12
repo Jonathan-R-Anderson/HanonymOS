@@ -1,11 +1,12 @@
-module anonymos_display.freetype_bindings;
+module display.freetype_bindings;
 
 // Minimal FreeType bindings for kernel use
 // Based on FreeType 2.x API
 
 extern(C) @nogc nothrow:
 
-import core.stdc.config;
+// Redundant extern(C) void* malloc(size_t size) @nogc nothrow;
+extern(C) void free(void* ptr) @nogc nothrow;
 
 // Opaque types
 // Additional types
@@ -130,7 +131,7 @@ struct FT_GlyphSlotRec
     FT_SubGlyph       subglyphs;
 
     void*             control_data;
-    c_long            control_len;
+    long              control_len;
 
     FT_Pos            lsb_delta;
     FT_Pos            rsb_delta;
@@ -146,16 +147,16 @@ alias FT_Size = FT_SizeRec*;
 
 // Basic types
 alias FT_Error = int;
-alias FT_Long = c_long;
-alias FT_ULong = c_ulong;
+alias FT_Long = long;
+alias FT_ULong = ulong;
 alias FT_Int = int;
 alias FT_UInt = uint;
 alias FT_Short = short;
 alias FT_UShort = ushort;
 alias FT_Byte = ubyte;
 alias FT_Bool = ubyte;
-alias FT_Fixed = c_long;
-alias FT_Pos = c_long;
+alias FT_Fixed = long;
+alias FT_Pos = long;
 
 // Glyph formats
 enum FT_Glyph_Format : uint

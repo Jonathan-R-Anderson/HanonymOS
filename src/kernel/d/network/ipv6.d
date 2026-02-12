@@ -1,7 +1,7 @@
-module anonymos_network.stack.ipv6;
+module network.ipv6;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.ethernet;
+import network.types;
+import network.ethernet;
 
 /// IPv6 Header
 struct IPv6Header {

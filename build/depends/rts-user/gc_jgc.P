@@ -1,4 +1,4 @@
-/home/bruns/Documents/haskellos/build/rts-user/gc_jgc.o: gc_jgc.c jhc_rts_header.h HsFFI.h sys/wsize.h rts/cdefs.h \
+/home/bruns/Documents/HanonymOS/build/rts-user/gc_jgc.o: gc_jgc.c jhc_rts_header.h HsFFI.h sys/wsize.h rts/cdefs.h \
   rts/profile.h rts/rts_support.h rts/gc.h rts/gc_none.h rts/gc_jgc.h \
   sys/queue.h rts/jhc_rts.h rts/constants.h rts/gc_jgc_internal.h \
   sys/bitarray.h

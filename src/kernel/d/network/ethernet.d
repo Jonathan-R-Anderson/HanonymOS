@@ -1,7 +1,7 @@
-module anonymos_network.stack.ethernet;
+module network.ethernet;
 
-import anonymos_network.stack.types;
-import implementation.drivers.network.network : sendEthFrame, receiveEthFrame, getMacAddress;
+import network.types;
+import drivers.network.network : sendEthFrame, receiveEthFrame, getMacAddress;
 
 /// Ethernet frame header
 struct EthernetHeader {

@@ -1,7 +1,7 @@
-module anonymos_display.fonts.font_stack;
+module display.fonts.font_stack;
 
-import anonymos_display.fonts.bitmap_font : BitmapFont, createBuiltInBitmapFont, glyphMask;
-import anonymos_display.common : glyphHeight, glyphWidth;
+import display.fonts.bitmap_font : BitmapFont, createBuiltInBitmapFont, glyphMask;
+import display.common : glyphHeight, glyphWidth;
 
 /// Simple bookkeeping structure describing which font rendering backends have
 /// been wired up. Now includes actual TrueType support via FreeType/HarfBuzz.
@@ -98,7 +98,7 @@ bool glyphMaskFromStack(const FontStack* stack, dchar codepoint, ref ubyte[glyph
     // Try TrueType font first (best quality)
     if (stack.truetypeFontLoaded && stack.truetypeFont !is null)
     {
-        import anonymos_display.fonts.truetype_font : TrueTypeFont, renderGlyph;
+        import display.fonts.truetype_font : TrueTypeFont, renderGlyph;
         auto ttFont = cast(TrueTypeFont*)stack.truetypeFont;
         if (ttFont.available && renderGlyph(*ttFont, codepoint, mask, advance))
         {
@@ -106,7 +106,7 @@ bool glyphMaskFromStack(const FontStack* stack, dchar codepoint, ref ubyte[glyph
         }
         else
         {
-             // import anonymos_userland.shell.console : print, printLine, printUnsigned;
+             // import userland.shell.console : print, printLine, printUnsigned;
              // print("[font_stack-debug] TTF render failed for char: "); printUnsigned(cast(uint)codepoint); printLine("");
         }
     }
@@ -141,7 +141,7 @@ bool glyphMaskFromStack(const FontStack* stack, dchar codepoint, ref ubyte[glyph
 
 /// Module-level shared stack so UI helpers can draw text without having to
 /// construct their own font registry first.
-import anonymos_display.fonts.truetype_font : TrueTypeFont;
+import display.fonts.truetype_font : TrueTypeFont;
 
 // Module-level globals with canaries to detect corruption
 public __gshared uint g_fontStackCanary1 = 0xCAFEBABE;
@@ -154,7 +154,7 @@ public __gshared uint g_ttFontCanary1 = 0xBAADF00D;
 private __gshared TrueTypeFont g_ttFont;
 public __gshared uint g_ttFontCanary2 = 0xFEEDFACE;
 
-import anonymos_userland.shell.console : print, printLine, printHex, printUnsigned;
+import userland.shell.console : print, printLine, printHex, printUnsigned;
 
 /// Check for memory corruption around the font stack
 public void checkFontStackIntegrity() @nogc nothrow
@@ -216,8 +216,8 @@ FontStack* activeFontStack() @nogc nothrow
 /// Load a TrueType font into the font stack
 bool loadTrueTypeFontIntoStack(ref FontStack stack, const(char)[] path, uint pixelSize = 16) @nogc nothrow
 {
-    import anonymos_display.fonts.truetype_font : TrueTypeFont, loadTrueTypeFont, initFreeType;
-    import anonymos_userland.shell.console : printLine;
+    import display.fonts.truetype_font : TrueTypeFont, loadTrueTypeFont, initFreeType;
+    import userland.shell.console : printLine;
     
     // Initialize FreeType if not already done
     if (!initFreeType())

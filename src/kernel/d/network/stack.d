@@ -1,17 +1,17 @@
-module anonymos_network.stack.stack;
+module network.stack;
 
-import anonymos_network.stack.types;
-import anonymos_network.stack.ethernet;
-import anonymos_network.stack.arp;
-import anonymos_network.stack.ipv4;
-import anonymos_network.stack.icmp;
-import anonymos_network.stack.udp;
-import anonymos_network.stack.tcp;
-import anonymos_network.stack.dns;
-import anonymos_network.stack.tls;
-import anonymos_network.stack.ipv6;
-import anonymos_network.stack.icmpv6;
-import implementation.drivers.network.network : initNetwork, isNetworkAvailable;
+import network.types;
+import network.ethernet;
+import network.arp;
+import network.ipv4;
+import network.icmp;
+import network.udp;
+import network.tcp;
+import network.dns;
+import network.tls;
+import network.ipv6;
+import network.icmpv6;
+import drivers.network.network : initNetwork, isNetworkAvailable;
 
 private __gshared bool g_stackInitialized = false;
 private __gshared bool g_stackRunning = false;

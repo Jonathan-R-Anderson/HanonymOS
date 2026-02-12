@@ -1,8 +1,8 @@
-module anonymos_display.drm_sim;
+module display.drm_sim;
 
-import anonymos_display.framebuffer;
-import anonymos_userland.shell.console : printLine;
-import anonymos_drivers.graphics.virtio_gpu;
+import display.framebuffer;
+import userland.shell.console : printLine;
+import drivers.graphics.virtio_gpu;
 
 // --------------------------------------------------------------------------
 // DRM/KMS Simulation Types
