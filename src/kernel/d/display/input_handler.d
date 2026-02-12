@@ -2,8 +2,6 @@ module anonymos_display.input_handler;
 
 import anonymos_display.input_pipeline : InputEvent, InputQueue, dequeue;
 import anonymos_display.window_manager.manager : WindowManager, Window, Damage;
-import anonymos_display.framebuffer : g_fb;
-import anonymos_installer.logic.state : g_installer;
 import anonymos_display.server.x11_server : injectX11Input;
 
 @nogc:
@@ -77,18 +75,6 @@ void processInputEvents(ref InputQueue queue, ref WindowManager manager, Damage*
     {
         // Inject into X11 server
         injectX11Input(event);
-
-        // Give installer priority if active
-        if (g_installer.active)
-        {
-            {
-                if (damage !is null)
-                {
-                    damage.add(0, 0, g_fb.width, g_fb.height);
-                }
-                continue;
-            }
-        }
 
         final switch (event.type)
         {
