@@ -47,13 +47,13 @@ content:
 
         # VMWare PIIX3 IDE controller
       - com.hos.dev.pci.supported-device: 8086:7111
-  - location: ../../build/progs/shell.elf
+  - location: ../../build/progs/esh.elf
     tags:
       - com.hos.autoboot
       - system.executable
       - com.bundle.short-description: Enhanced shell (esh)
       - com.hos.autoboot.order: 99
-      - com.hos.service-name: hos.shell
+      - com.hos.service-name: hos.esh
 #   - location: ahci.elf
 #     tags:
 # #      - com.hos.autoboot

@@ -73,7 +73,9 @@ align(8) __gshared ulong[2] limine_requests_end = [0xadc0e0531bb10d03, 0x9572709
 
 extern __gshared ulong hhdm_offset;
 
-void _start() {
+
+void initializeKernelCore() {
+    // D owns early platform bring-up (CPU, boot protocol and memory handoff).
     enable_sse();
     klog("AnonymOS Kernel Starting...\n");
     klog("Base Revision Addr: "); klog_hex(cast(ulong)&base_revision); klog("\n");
@@ -90,7 +92,12 @@ void _start() {
         hhdm_offset = hhdm_req.response.offset;
         klog("HHDM Offset: "); klog_hex(hhdm_offset); klog("\n");
     }
-    
+}
+
+void _start() {
+    initializeKernelCore();
+
+    // Hand off from D core to runtime/bootstrap bridge used by Haskell kernel logic.
     bootstrap_kernel(memmap_req.response, kernel_addr_req.response, module_req.response, terminal_req.response, framebuffer_req.response);
 
     hcf();

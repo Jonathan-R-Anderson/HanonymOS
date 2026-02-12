@@ -6,11 +6,11 @@ import Control.Monad
 
 main :: IO ()
 main = do
-  hosDebugLog "[shell] Enhanced Shell (esh) starting..."
+  hosDebugLog "[esh] Enhanced Shell starting..."
   hosRequestIO
-  hosDebugLog "[shell] Initializing PS/2..."
+  hosDebugLog "[esh] Initializing PS/2..."
   initPS2
-  hosDebugLog "[shell] Ready. Type 'help' for available commands."
+  hosDebugLog "[esh] Ready. Type 'help' for available commands."
   doShell
 
 doShell :: IO ()

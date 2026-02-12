@@ -69,6 +69,24 @@ main = do
   hosMain (x64 { archInitProcessPhysBase = initProcessPhysBase })
 #endif
 
+
+
+initPlatformServices :: Arch X64Registers X64PageTable X64Exception -> IO ()
+initPlatformServices a = do
+  archDebugLog a "Initializing network + Linux compatibility"
+  initLinuxCompat
+  linuxCompatReady <- isLinuxCompatReady
+  if linuxCompatReady
+     then archDebugLog a "Linux compatibility layer ready"
+     else archDebugLog a "Linux compatibility layer reported not-ready"
+  _ <- initNetworkStack defaultNetworkConfig
+  displayReady <- initDisplayAndDrivers
+  if displayReady
+     then archDebugLog a "Display + driver infrastructure ready"
+     else do
+       archDebugLog a "Display/driver bridge not fully available (continuing)"
+       readyNow <- displayDriversReady
+       when readyNow (archDebugLog a "Display/driver bridge became ready")
 defaultNetworkConfig :: NetworkConfig
 defaultNetworkConfig =
   NetworkConfig
@@ -163,12 +181,7 @@ hosMain a = do cr3 <- x64ReadCR3C
                                   , hosTasks = M.singleton initTaskId initTask' }
                    initTaskId = TaskId 0
 
-               archDebugLog a "Initializing network + Linux compatibility"
-               _ <- initLinuxCompat
-               _ <- initNetworkStack defaultNetworkConfig
-               displayReady <- initDisplayAndDrivers
-               when (not displayReady) $
-                 archDebugLog a "Display/driver bridge not fully available"
+               initPlatformServices a
                archDebugLog a "Entering kernelize"
                kernelize a initialState
 
