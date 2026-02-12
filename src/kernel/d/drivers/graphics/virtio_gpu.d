@@ -2,8 +2,6 @@ module anonymos_drivers.graphics.virtio_gpu;
 
 import anonymos_drivers.virtio;
 import anonymos_drivers.pci;
-import implementation.kernel.core.heap;
-import implementation.kernel.core.memory;
 import anonymos_userland.shell.console : printLine, printHex, printUnsigned;
 import anonymos_drivers.io;
 
