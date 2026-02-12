@@ -23,8 +23,8 @@ import System.IO (hFlush, stdout)
 main :: IO ()
 main =  do hosDebugLog "[init] started"
            -- Temporarily disable fork to test shell
-           hosDebugLog "[init] going directly to shell (no fork for now)"
-           doChild
+           hosDebugLog "[init] boot target: esh"
+           bootIntoEsh
 
 data InitState = InitState
                { initServers :: M.Map String TaskId }
@@ -86,36 +86,31 @@ doParent initState =
          Left err -> hosDebugLog ("[init] wait on channels error: " ++ show err) >>
                             return initState
 
-doChild :: IO ()
-doChild = do hosDebugLog "[init] requesting I/O privileges..."
+bootIntoEsh :: IO ()
+bootIntoEsh = do hosDebugLog "[init] requesting I/O privileges..."
              hosRequestIO
              hosDebugLog "[init] initializing PS/2..."
              initPS2
 
-             -- TODO: Try to launch external shell program (shell.elf) here
-             -- When process spawning is implemented:
-             --   1. Try to exec/spawn shell.elf from the bundle
-             --   2. If that fails, fall back to doFallbackShell
-             -- For now, using built-in fallback shell since we don't have exec() yet
-             hosDebugLog "[init] using fallback shell (exec not implemented yet)..."
-             hosDebugLog "[init] (normally would launch shell.elf here)"
-             doFallbackShell
+             hosDebugLog "[init] entering esh interactive shell"
+             runEsh
 
--- Minimal built-in shell as fallback
-doFallbackShell :: IO ()
-doFallbackShell = do
+-- Built-in esh while userspace exec/spawn support is still being finalized.
+runEsh :: IO ()
+runEsh = do
   hosVGAPut "> "
   line <- getLinePS2
   case line of
-    "help" -> hosDebugLog "Fallback shell - Available commands: help, echo <args>, clear, exit\n" >> doFallbackShell
-    "clear" -> hosDebugLog "\x1b[2J\x1b[H" >> doFallbackShell -- ANSI clear
-    "exit" -> hosDebugLog "Bye!\n" >> return ()
-    "" -> doFallbackShell
+    "help" -> hosDebugLog "esh commands: help, echo <args>, clear, about, exit\n" >> runEsh
+    "clear" -> hosDebugLog "\x1b[2J\x1b[H" >> runEsh -- ANSI clear
+    "about" -> hosDebugLog "esh (embedded init edition)\n" >> runEsh
+    "exit" -> hosDebugLog "esh: goodbye\n" >> return ()
+    "" -> runEsh
     _ -> do
       let (cmd, args) = break (== ' ') line
       case cmd of
-        "echo" -> hosDebugLog (drop 1 args ++ "\n") >> doFallbackShell
-        _ -> hosDebugLog ("Unknown command: " ++ cmd ++ "\n") >> doFallbackShell
+        "echo" -> hosDebugLog (drop 1 args ++ "\n") >> runEsh
+        _ -> hosDebugLog ("esh: unknown command: " ++ cmd ++ "\n") >> runEsh
 
 getLinePS2 :: IO String
 getLinePS2 = go ""
