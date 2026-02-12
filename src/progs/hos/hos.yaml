@@ -4,6 +4,7 @@ exposed-modules:
   - Hos.User.SysCall
   - Hos.User.IO
   - Hos.User.IPC
+  - Hos.User.Driver.PS2
 build-depends:
   - applicative
   - hos-common

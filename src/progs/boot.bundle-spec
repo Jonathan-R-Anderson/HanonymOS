@@ -51,7 +51,7 @@ content:
     tags:
       - com.hos.autoboot
       - system.executable
-      - com.bundle.short-description: Minimal shell placeholder
+      - com.bundle.short-description: Enhanced shell (esh)
       - com.hos.autoboot.order: 99
       - com.hos.service-name: hos.shell
 #   - location: ahci.elf

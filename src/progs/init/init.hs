@@ -17,16 +17,14 @@ import Foreign.Ptr
 import Foreign.Storable
 
 import Numeric
+import Hos.User.Driver.PS2
+import System.IO (hFlush, stdout)
 
 main :: IO ()
-main =  do hosDebugLog ("[init] starting")
-           childId <- hosFork
-           case childId of
-             0 -> doChild
-             _ -> hosDebugLog "[init] starting routing layer..." >>
-                  -- Set up IPC structures
-                  hosAddMappingToCurTask 0x10000000000 0x10000001000 (Message (Incoming (MessageFrom (ChanId 0))) undefined) >>
-                  threadState doParent initialInitState
+main =  do hosDebugLog "[init] started"
+           -- Temporarily disable fork to test shell
+           hosDebugLog "[init] going directly to shell (no fork for now)"
+           doChild
 
 data InitState = InitState
                { initServers :: M.Map String TaskId }
@@ -89,25 +87,48 @@ doParent initState =
                             return initState
 
 doChild :: IO ()
-doChild = do -- Now, we want to launch the second module given to us on the command line, which should be the storage server
-             hosDebugLog "[init] checking for storage server..."
-             modCount <- hosModuleCount
-             if modCount < 2
-                then hosDebugLog "[init] no storage.elf module given..."
-                else do ModuleInfo _ start end <- hosGetModuleInfo 1
-                        let vBase = 0xC000000000 :: Word64
-                            vEnd = (fromIntegral (end - start)) + vBase
+doChild = do hosDebugLog "[init] requesting I/O privileges..."
+             hosRequestIO
+             hosDebugLog "[init] initializing PS/2..."
+             initPS2
 
-                        hosAddMappingToCurTask vBase vEnd (FromPhysical RetainInParent (UserSpace ReadOnly) (fromIntegral start))
-                        hosDebugLog "[init] mapped storage module. going to read ELF information..."
-                        (elfHdr, progHdrs) <- elf64ProgHdrs (wordToPtr vBase)
-                        aRef <- hosEmptyAddressSpace
-                        forM_ progHdrs $ \progHdr ->
-                            case ph64Type progHdr of
-                              PtLoad -> hosAddMapping aRef (ph64VAddr progHdr) (ph64VAddr progHdr + ph64MemSz progHdr) (CopyOnWrite (UserSpace ReadWrite) (ph64Offset progHdr + fromIntegral start))
-                              _ -> return 0
-                        hosDebugLog ("[init] exec storage.elf(entry at " ++ showHex (e64Entry elfHdr) "" ++ ")...")
-                        hosEnterAddressSpace aRef (e64Entry elfHdr)
+             -- TODO: Try to launch external shell program (shell.elf) here
+             -- When process spawning is implemented:
+             --   1. Try to exec/spawn shell.elf from the bundle
+             --   2. If that fails, fall back to doFallbackShell
+             -- For now, using built-in fallback shell since we don't have exec() yet
+             hosDebugLog "[init] using fallback shell (exec not implemented yet)..."
+             hosDebugLog "[init] (normally would launch shell.elf here)"
+             doFallbackShell
+
+-- Minimal built-in shell as fallback
+doFallbackShell :: IO ()
+doFallbackShell = do
+  hosVGAPut "> "
+  line <- getLinePS2
+  case line of
+    "help" -> hosDebugLog "Fallback shell - Available commands: help, echo <args>, clear, exit\n" >> doFallbackShell
+    "clear" -> hosDebugLog "\x1b[2J\x1b[H" >> doFallbackShell -- ANSI clear
+    "exit" -> hosDebugLog "Bye!\n" >> return ()
+    "" -> doFallbackShell
+    _ -> do
+      let (cmd, args) = break (== ' ') line
+      case cmd of
+        "echo" -> hosDebugLog (drop 1 args ++ "\n") >> doFallbackShell
+        _ -> hosDebugLog ("Unknown command: " ++ cmd ++ "\n") >> doFallbackShell
+
+getLinePS2 :: IO String
+getLinePS2 = go ""
+  where
+    go acc = do
+      c <- getCharPS2
+      case c of
+        '\0' -> hosYield >> go acc -- yield to avoid tight loop
+        '\n' -> hosVGAPut "\n" >> return acc
+        '\b' -> if null acc
+                  then go acc
+                  else (hosVGAPut "\b \b" >> go (init acc))
+        c'   -> (hosVGAPut [c'] >> go (acc ++ [c']))
 
 
 -- import Hos.User.SysCall
@@ -184,4 +205,3 @@ doChild = do -- Now, we want to launch the second module given to us on the comm
 
 --                 -- run the initialization script
 --                 system "$root:/scripts/init"
-

@@ -49,10 +49,8 @@ void report_sse_panic() {
     while(1) { asm { hlt; } }
 }
 
-int main(int argc, char** argv) {
-   klog("Stub main called.\n");
-   return 0;
-}
+// Haskell main
+extern (C) int main(int argc, char** argv);
 
 // Pointer conversion functions
 ulong ptrToWord(void* ptr) {
@@ -71,7 +69,7 @@ struct IDTDescriptor {
 
 // kernelTmpStack, kernelTmpStack_top, and setupSysCalls are defined in context.S
 
-__gshared ubyte[104] tssArea;
+extern __gshared ubyte[104] tssArea;
 
 // loadIdt is defined in asm.S
 
@@ -170,34 +168,21 @@ void write_serial(int c) {
     klog(s.ptr);
 }
 
-// Runtime support functions
-extern(C) void c_assert(int condition) {
-    if (condition == 0) {
-        klog("ASSERTION FAILED\\n");
-        while(true) { asm { hlt; } }
-    }
-}
-
 extern(C) void abort() {
-    klog("ABORT CALLED\\n");
+    klog("ABORT CALLED\n");
     while(true) { asm { hlt; } }
-}
-
-extern(C) void jhc_utf8_putchar(int c) {
-    char[2] s;
-    s[0] = cast(char)c;
-    s[1] = 0;
-    klog(s.ptr);
 }
 
 void arch_unmap_init_task() {
     // No-op
 }
 
-void jhc_exit(int code) {
-    klog("JHC Exit: ");
-    klog_hex(code);
-    while(1) { asm { hlt; } }
+ulong get_init_module_phys_base() {
+    return init_module_phys_base;
+}
+
+void map_page_for_haskell(ulong virt_addr, ulong phys_addr, ulong flags) {
+    map_page_hhdm(phys_addr, virt_addr, flags, &alloc_phys_page);
 }
 
 // Math stubs
@@ -206,10 +191,10 @@ float frexpf(float x, int* exp) { return 0.0f; }
 double ldexp(double x, int exp) { return 0.0; }
 double ceil(double x) { return cast(double)cast(long)x; } // approximate
 double log(double x) { return 0.0; }
-int __isnan(double x) { return 0; }
-int __isnanf(float x) { return 0; }
-int __isinf(double x) { return 0; }
-int __isinff(float x) { return 0; }
+double __isnan(double x) { return 0.0; } 
+float __isnanf(float x) { return 0.0f; }
+double __isinf(double x) { return 0.0; }
+float __isinff(float x) { return 0.0f; }
 
 // Interrupt handler stubs - these will be overridden by actual handlers
 // Trap handlers are defined in context.S

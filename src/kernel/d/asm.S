@@ -29,7 +29,32 @@ x64ReadCR2:
     mov %cr2, %rax
     ret
 
+.global x64ReadCR3
+x64ReadCR3:
+    mov %cr3, %rax
+    ret
+
 .global x64WriteCR3
 x64WriteCR3:
     mov %rdi, %cr3
+    ret
+
+.global x64ReadCR0
+x64ReadCR0:
+    mov %cr0, %rax
+    ret
+
+.global x64WriteCR0
+x64WriteCR0:
+    mov %rdi, %cr0
+    ret
+
+.global x64ReadCR4
+x64ReadCR4:
+    mov %cr4, %rax
+    ret
+
+.global x64WriteCR4
+x64WriteCR4:
+    mov %rdi, %cr4
     ret

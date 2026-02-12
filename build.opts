@@ -2,9 +2,9 @@
 SRC_ROOT=$(PROJECT_ROOT)/src
 BUILD_ROOT=$(PROJECT_ROOT)/build
 
-# Docker environment configuration
+# Host Configuration
 CROSSCOMPILE_PREFIX=/usr
-LLVM_PREFIX=/usr/lib/llvm-6.0
+LLVM_PREFIX=/usr/lib/llvm-18
 
 # Tools
 CROSSCOMPILE_LD=ld
@@ -27,7 +27,7 @@ RTS_INC=-I$(SRC_ROOT)/libs/rts -I$(SRC_ROOT)/libs/rts/rts
 CBITS_INC=-I$(SRC_ROOT)/kernel/d
 PROGS_INC=-I$(SRC_ROOT)/progs/cbits -I$(SRC_ROOT)/progs/hos
 
-CFLAGS_COMMON=-D _JHC_GC=1 -D _JHC_DEBUG=0 -D _JHC_BAREBONES -fno-pic -fno-pie
+CFLAGS_COMMON=-D _JHC_GC=1 -D _JHC_DEBUG=0 -D _JHC_BAREBONES -fno-pic -fno-pie -fno-addrsig
 JHC_COMMON=-DTARGET=$(TARGET) -pcontainers -papplicative -fforall
 DFLAGS=-betterC -mtriple=x86_64-unknown-none-elf -O2 -code-model=large
 
@@ -35,6 +35,6 @@ DFLAGS=-betterC -mtriple=x86_64-unknown-none-elf -O2 -code-model=large
 KERNEL_CFLAGS=-m64 $(CFLAGS_COMMON) -ffreestanding $(RTS_INC) $(CBITS_INC) -include d_exports.h -DCOMPILING_HS_KERNEL -mno-red-zone -mcmodel=large -D TARGET=$(TARGET) -D KERNEL=1 -O2
 
 # User CFLAGS
-USER_CFLAGS=-m64 $(CFLAGS_COMMON) $(RTS_INC) $(PROGS_INC) -include hos.h -D TARGET=$(TARGET) -D HOS_USER=1 -O2
+USER_CFLAGS=-m64 $(CFLAGS_COMMON) $(RTS_INC) $(PROGS_INC) -include hos.h -D TARGET=$(TARGET) -D HOS_USER=1 -D__HaskellOS__ -O2
 
 TEST_CFLAGS=$(CFLAGS_COMMON) -D TARGET=$(HOST)

@@ -11,7 +11,7 @@ hos.iso: kernel.elf progs
 	@echo "Building ISO image..."
 	mkdir -p cd/boot/limine
 	cp kernel.elf cd/boot/kernel.elf
-	cp src/boot/limine.cfg cd/boot/limine.cfg
+	cp src/boot/limine.conf cd/boot/limine/limine.conf
 	# Limine binaries
 	cp src/boot/limine-bios.sys src/boot/limine-bios-cd.bin src/boot/limine-uefi-cd.bin cd/boot/limine/ || echo "Warning: Limine binaries missing in src/boot/"
 	# Modules
@@ -24,6 +24,9 @@ hos.iso: kernel.elf progs
 		--efi-boot boot/limine/limine-uefi-cd.bin \
 		-efi-boot-part --efi-boot-image --protective-msdos-label \
 		cd -o hos.iso
+
+build/hos.o: build/hos.c
+	$(CROSSCOMPILE_CLANG) -c $< -o $@ $(KERNEL_CFLAGS)
 
 kernel.elf: build/libkernel_d.a build/librts.a build/hos.o src/kernel/d/linker.ld
 	$(CROSSCOMPILE_LD) -T src/kernel/d/linker.ld --whole-archive build/libkernel_d.a --no-whole-archive build/hos.o -lrts -Lbuild -o kernel.elf

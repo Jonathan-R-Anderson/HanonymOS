@@ -522,6 +522,7 @@ MAX_RELEASE_CHECK_RATE   default: 4095 unless not HAVE_MMAP
 */
 
 #include "hos.h"
+#define assert(e) c_assert(!!(e))
 
 /* Version identifier to allow people to support multiple versions */
 #ifndef DLMALLOC_VERSION
@@ -541,6 +542,25 @@ MAX_RELEASE_CHECK_RATE   default: 4095 unless not HAVE_MMAP
 #define WIN32 1
 #endif /* _WIN32_WCE */
 #endif  /* WIN32 */
+#ifdef __HaskellOS__
+/* HaskellOS: No mmap, only sbrk */
+#define HAVE_MMAP 0
+#define HAVE_MORECORE 1
+#define LACKS_UNISTD_H
+#define LACKS_SYS_PARAM_H
+#define LACKS_SYS_MMAN_H
+#define LACKS_STRING_H
+#define LACKS_STRINGS_H
+#define LACKS_SYS_TYPES_H
+#define LACKS_ERRNO_H
+#define LACKS_SCHED_H
+/* Define errno values since we lack errno.h */
+#define EINVAL 22
+#define ENOMEM 12
+#ifndef MALLOC_FAILURE_ACTION
+#define MALLOC_FAILURE_ACTION
+#endif /* MALLOC_FAILURE_ACTION */
+#endif  /* __HaskellOS__ */
 #ifdef WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
@@ -1440,19 +1460,7 @@ DLMALLOC_EXPORT int mspace_mallopt(int, int);
 #ifndef LACKS_ERRNO_H
 #include <errno.h>       /* for MALLOC_FAILURE_ACTION */
 #endif /* LACKS_ERRNO_H */
-#ifdef DEBUG
-#if ABORT_ON_ASSERT_FAILURE
-#undef assert
-#define assert(x) if(!(x)) ABORT
-#else /* ABORT_ON_ASSERT_FAILURE */
-#include <assert.h>
-#endif /* ABORT_ON_ASSERT_FAILURE */
-#else  /* DEBUG */
-#ifndef assert
-#define assert(x)
-#endif
-#define DEBUG 0
-#endif /* DEBUG */
+
 #if !defined(WIN32) && !defined(LACKS_TIME_H)
 #include <time.h>        /* for magic initialization */
 #endif /* WIN32 */
@@ -2629,7 +2637,8 @@ static struct malloc_params mparams;
 #if !ONLY_MSPACES
 
 /* The global malloc_state used for all non-"mspace" calls */
-static struct malloc_state _gm_ = {0};
+/* Made non-static so we can reset it after fork */
+struct malloc_state _gm_ = {0};
 #define gm                 (&_gm_)
 #define is_global(M)       ((M) == &_gm_)
 
@@ -3843,6 +3852,12 @@ static void* mmap_alloc(mstate m, size_t nb) {
         m->least_addr = mm;
       if ((m->footprint += mmsize) > m->max_footprint)
         m->max_footprint = m->footprint;
+#ifdef assert
+#pragma message "ASSERT IS DEFINED AT 3850"
+#else
+#define assert(e) c_assert(!!(e))
+#pragma message "FORCED ASSERT DEFINITION AT 3850"
+#endif
       assert(is_aligned(chunk2mem(p)));
       check_mmapped_chunk(m, p);
       return chunk2mem(p);

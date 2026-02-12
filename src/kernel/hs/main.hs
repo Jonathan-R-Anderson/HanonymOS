@@ -28,10 +28,16 @@ import Data.Elf
 import Hos.Arch.Types
 #if TARGET==x86_64
 import Hos.Arch.X64
+import Hos.Arch.X64.Types
+import Hos.Arch.X64.Interrupt
 #endif
 
 strict :: a -> a
 strict !x = x
+
+#if TARGET==x86_64
+foreign import ccall unsafe "get_init_module_phys_base" x64GetInitModulePhysBase :: IO Word64
+#endif
 
 main :: IO ()
 main = do
@@ -51,35 +57,89 @@ main = do
   --
   -- Finally, we will want to load the init process, enable preemption, and enter user mode.
 #if TARGET==x86_64
-  initProcessPhysBase <- x64GetPhysPage 0x400000
+  writeSerial (fromIntegral (ord 'H'))
+  writeSerial (fromIntegral (ord '!'))
+  writeSerial (fromIntegral (ord '\n'))
+  initProcessPhysBase <- x64GetInitModulePhysBase
+  writeSerial (fromIntegral (ord 'P'))
+  writeSerial (fromIntegral (ord '\n'))
   hosMain (x64 { archInitProcessPhysBase = initProcessPhysBase })
 #endif
 
-hosMain :: (Show regs, Show vTbl, Show e, Registers regs) => Arch regs vTbl e -> IO ()
-hosMain a = do archDebugLog a "[kernel] starting in Haskell land"
+hosMain :: Arch X64Registers X64PageTable X64Exception -> IO ()
+hosMain a = do cr3 <- x64ReadCR3C
+               archDebugLog a ("[kernel] starting in Haskell land, CR3=" ++ showHex cr3 "")
 
                -- The loader will have loaded the init task at 4 megabytes, but it's an ELF file
                -- so we should parse it, unmap it from the address space, and then establish new mappings
                -- for it.
                let elfPtr = wordToPtr 0x400000 :: Ptr Elf64Hdr
+               archDebugLog a "Parsing ELF..."
                (elfHdr, progHdrs) <- elf64ProgHdrs elfPtr
-               let mappings = map (\pHdr -> (ph64VAddr pHdr, ph64MemSz pHdr, initProcessPhysBase + (ph64Offset pHdr))) $
+               archDebugLog a ("Parsed ELF. Entry: " ++ showHex (e64Entry elfHdr) "")
+
+               -- Round up end addresses to ensure all bytes are covered (IntervalMap uses exclusive upper bounds)
+               let mappings = map (\pHdr -> let vAddr = ph64VAddr pHdr
+                                                sz = ph64MemSz pHdr
+                                                physBase = initProcessPhysBase + (ph64Offset pHdr)
+                                                -- Ensure end address is rounded up to include all bytes
+                                                endAddr = vAddr + sz + 1
+                                            in (vAddr, endAddr - vAddr, physBase)) $
                               filter (elfShouldLoad . ph64Type) progHdrs
                    initProcessPhysBase = archInitProcessPhysBase a
 
-               archUnmapInitTask a
+               -- Skip remapping - the D bootstrap code already mapped init.elf to 0x400000
+               -- We'll use Copy-On-Write mappings later
+               archDebugLog a "Skipping page remapping - using bootstrap mappings"
+
+               -- Don't unmap the init task - we're using the bootstrap's mappings
+               -- archUnmapInitTask a
+               archDebugLog a "Keeping bootstrap init task mappings"
 
                initTask <- mkInitTask a (e64Entry elfHdr)
+               archDebugLog a "Created init task"
+
+               -- Setup Stack for init task
+               initStackPhys <- cPageAlignedPhysAlloc 0x1000
+               let initStackVirt = 0x80000000
+               archDebugLog a "Setting up init task stack"
+               -- Map the stack page
+               archMapPage a initStackVirt initStackPhys (UserSpace ReadWrite)
+               archDebugLog a "Mapped stack page"
+               let initStackTop = initStackVirt + 0x1000
+                   initTaskWithStack = taskWithMapping initStackVirt initStackTop (Mapped (UserSpace ReadWrite) initStackPhys) initTask
+                   initTaskRegs = registersForTask (StackPtr initStackTop) (InstructionPtr (e64Entry elfHdr))
+                   initTaskWithRegs = initTaskWithStack {
+                       taskSavedRegisters = initTaskRegs {
+                           x64GPRegisters = (x64GPRegisters initTaskRegs) {
+                               x64GpRflags = 0x202
+                           }
+                       },
+                       taskReasonLeft = Trap
+                   }
 
                -- Now, add the mapping into the task
-               let initTask' = foldr (\(vAddr, sz, physBase) -> taskWithMapping vAddr (vAddr + sz) (CopyOnWrite (UserSpace ReadWrite) physBase)) initTask mappings
+               let initTask' = foldr (\(vAddr, sz, physBase) -> taskWithMapping vAddr (vAddr + sz) (CopyOnWrite (UserSpace ReadWrite) physBase)) initTaskWithRegs mappings
+
+               -- Map all CopyOnWrite pages as read-only so they're accessible for code execution
+               forM_ mappings $ \(vAddr, sz, physBase) -> do
+                   let numPages = (sz + 4095) `div` 4096
+                   forM_ [0..(numPages-1)] $ \pageIdx -> do
+                       let virtPage = vAddr + (pageIdx * 4096)
+                           physPage = physBase + (pageIdx * 4096)
+                       -- Map as read-only for CopyOnWrite
+                       archMapPage a virtPage physPage (UserSpace ReadOnly)
 
                -- Now we want to get ready for userspace.
                archReadyForUserspace a
+               archDebugLog a "Ready for userspace"
 
                -- switch tasks, using the initTask we're switching to as the faux old task...
                -- we're not going to use the result so this doesn't really matter
                archSwitchTasks a initTask' initTask'
+
+               archDebugLog a ("Init Task Regs: " ++ show (taskSavedRegisters initTask'))
+               archDebugLog a "Switched tasks"
 
                -- Now we will build our resource catalog
                -- archGetArchSpecificResources a
@@ -91,19 +151,21 @@ hosMain a = do archDebugLog a "[kernel] starting in Haskell land"
                                   , hosTasks = M.singleton initTaskId initTask' }
                    initTaskId = TaskId 0
 
+               archDebugLog a "Entering kernelize"
                kernelize a initialState
 
 kernelize :: (Registers regs, Show e, Show regs, Show vMemTbl) => Arch regs vMemTbl e -> HosState regs vMemTbl e -> IO ()
 kernelize a st =
     do rsn <- archSwitchToUserspace a
+       -- archDebugLog a "K"  -- Too verbose for screen
        let taskId = hscCurrentTask (hosSchedule st)
---       rip <- x64GetUserRIP
---       rsp <- x64GetRSP
---       archDebugLog a ("Back(Task" ++ show taskId ++ "): " ++ show rsn ++ " at " ++ showHex rip ("stack is " ++ showHex rsp ""))
+       rip <- x64GetUserRIP
+       rsp <- x64GetRSP
+       -- archDebugLog a ("Back(Task" ++ show taskId ++ "): " ++ show rsn ++ " at " ++ showHex rip ("stack is " ++ showHex rsp ""))  -- Too verbose
        case rsn of
          TrapInterrupt (VirtualMemoryFault vmCause vAddr) ->
              do t <- currentTask st
---                archDebugLog a  ("On fault space is " ++ show (taskAddressSpace t))
+                -- archDebugLog a  ("On fault space is " ++ show (taskAddressSpace t))  -- Too verbose for screen
                 res <- handleFaultAt a vmCause vAddr t
                 case res of
                   Right t' ->
@@ -111,10 +173,14 @@ kernelize a st =
                        kernelize a st'
                   Left rsn ->
                     do rip <- x64GetUserRIP
-                       archDebugLog a ("Can't map " ++ showHex vAddr "" ++ " at " ++ showHex rip "")
-                       t' <- archSwitchTasks a t t
-                       archDebugLog a ("Regs :" ++ show (taskSavedRegisters t'))
-                       archDebugLog a ("Address space: " ++ show (taskAddressSpace t'))
+                       let taskId = hscCurrentTask (hosSchedule st)
+                       archDebugLog a ("Task " ++ show taskId ++ " crashed: Can't map " ++ showHex vAddr "" ++ " at " ++ showHex rip "")
+                       archDebugLog a ("Killing task " ++ show taskId)
+                       -- Kill the faulting task and continue with next task
+                       st' <- runSysCallM (killTask taskId) a st
+                       case st' of
+                         Error e -> archDebugLog a ("Error killing task: " ++ show e)
+                         Success ((), st'') -> kernelize a st''
          TrapInterrupt (ArchException archE) ->
              do res <- archHandleException a archE st
                 case res of
@@ -122,6 +188,8 @@ kernelize a st =
                   Left err -> archDebugLog a ("Architectural panic: " ++ show err)
          SysCallInterrupt (DebugLog s n) ->
              runSysCall (debugLog s n) a st >>= kernelize a
+         SysCallInterrupt (VGAPut s n) ->
+             runSysCall (vgaPut s n) a st >>= kernelize a
          SysCallInterrupt EmptyAddressSpace ->
              runSysCall emptyAddressSpace a st >>= kernelize a
          SysCallInterrupt (CurrentAddressSpace taskId) ->
@@ -169,12 +237,13 @@ kernelize a st =
 
 runSysCall :: (SysCallReturnable a, Registers r, Show e, Show r, Show v) => SysCallM r v e a -> Arch r v e -> HosState r v e -> IO (HosState r v e)
 runSysCall sc a st = do let curTaskId = hscCurrentTask (hosSchedule st)
+                        -- archDebugLog a "S"  -- Too verbose
                         res <- runSysCallM sc a st
                         case res of
                           Error e -> archReturnToUserspace a (fromSysCallReturnable e) >>
                                      return st
                           Success (x, st') ->
-                              let curTaskId' = hscCurrentTask (hosSchedule st)
+                              let curTaskId' = hscCurrentTask (hosSchedule st')
                               in if curTaskId' == curTaskId
                                    then archReturnToUserspace a (fromSysCallReturnable x) >>
                                         return st'
@@ -189,9 +258,26 @@ debugLog p sLength =
     do let go 0 = ensurePtr p ReadOnly
            go !n = do x <- ensurePtr (p `plusPtr` n) ReadOnly
                       x `seq` go (n - 1)
-       x <- go (sLength - 1) -- Ensure the entire string is in memory
-       s <- liftIO (readCString p sLength)
-       x `seq` scDebugLog ("[User] " ++ s)
+       if sLength > 0
+          then do _ <- go (sLength - 1)
+                  s <- liftIO (readCString p sLength)
+                  scDebugLog ("[User] " ++ s)
+          else return ()
+
+vgaPut :: Ptr Word8 -> Int -> SysCallM r v e ()
+vgaPut p sLength =
+    do let go 0 = ensurePtr p ReadOnly
+           go !n = do x <- ensurePtr (p `plusPtr` n) ReadOnly
+                      x `seq` go (n - 1)
+       if sLength > 0
+          then do _ <- go (sLength - 1)
+                  s <- liftIO (readCString p sLength)
+                  liftIO (mapM_ (\c -> do
+                                     let w = fromIntegral (ord c)
+                                     writeSerial w
+                                     vgaPutChar w
+                                     termPutChar w) s)
+          else return ()
 
 currentAddressSpace :: TaskId -> SysCallM r v e AddressSpaceRef
 currentAddressSpace taskId =
@@ -289,11 +375,37 @@ forkSc = do curTask <- getCurrentTask
             (curTask', childTask') <-
                 liftIO $ do
                   curTask' <- archSwitchTasks a curTask curTask
+                  archDebugLog a "F1"
                   (newCurTask, newChildTask) <- taskFork a curTask'
-                  t <- archSwitchTasks a curTask newChildTask
+                  archDebugLog a "F2"
+
+                  -- Switch to child's page table first (use newCurTask, not old curTask!)
+                  savedParentTask <- archSwitchTasks a newCurTask newChildTask
+                  archDebugLog a "F2b"
+
+                  -- Map all CopyOnWrite pages in the child's page table
+                  let childAddressSpace = taskAddressSpace newChildTask
+                      allMappings = addrSpaceRegions childAddressSpace
+
+                  archDebugLog a ("Mapping " ++ show (length allMappings) ++ " COW regions for child")
+                  forM_ allMappings $ \regionMapping ->
+                      case regionMapping of
+                        ((start, end), CopyOnWrite perms physBase) -> do
+                          let sz = end - start
+                              numPages = (sz + 4095) `div` 4096
+                          forM_ [0..(numPages-1)] $ \pageIdx -> do
+                              let virtPage = start + (pageIdx * 4096)
+                                  physPage = physBase + (pageIdx * 4096)
+                              archMapPage a virtPage physPage (readOnlyPerms perms)
+                        _ -> return ()
+
+                  archDebugLog a "F2c"
                   t1 <- archReturnToUserspace a (fromSysCallReturnable (TaskId 0))
-                  newChildTask <- archSwitchTasks a newChildTask newCurTask
-                  t `seq` t1 `seq` return (newCurTask, newChildTask)
+                  archDebugLog a "F4"
+                  -- Switch back to parent, passing the child as the "old" (current) task
+                  updatedChildTask <- archSwitchTasks a newChildTask newCurTask
+                  archDebugLog a "F5"
+                  savedParentTask `seq` t1 `seq` return (newCurTask, updatedChildTask)
 
             childId <- newTaskId
 

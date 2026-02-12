@@ -38,20 +38,28 @@ void abort();
 void hos_init_clear_bss();
 
 /* JHC integration - implemented in hos.c */
-void c_assert(int condition);
-void assert(int condition);
+/* Moved outside for forced definition */
 void jhc_utf8_putchar(int ch);
 void jhc_exit(int n);
 void jhc_case_fell_off(int n);
 void klog(const char *msg);
 void klog_hex(unsigned long n);
 void abort(void);
+uint8_t inb(uint16_t port);
+void outb(uint16_t port, uint8_t val);
+uint8_t hosIn8(uint16_t port);
+uint16_t hosIn16(uint16_t port);
+uint32_t hosIn32(uint16_t port);
+void hosOut8(uint16_t port, uint8_t val);
+void hosOut16(uint16_t port, uint16_t val);
+void hosOut32(uint16_t port, uint32_t val);
 
 void *ext_page_aligned_alloc(size_t size);
 void *ext_page_aligned_realloc(void *ptr, size_t sz);
 void ext_free(void *ptr, size_t size);
 void *ext_alloc_megablock(void);
 void *ext_alloc_cache(void);
+void hos_reset_malloc_after_fork(void);
 
 void *malloc(size_t size);
 void free(void *ptr);
@@ -93,3 +101,8 @@ static inline double log(double x)
 #endif
 
 #endif
+
+/* JHC integration - forced definition */
+void c_assert(int condition);
+#undef assert
+#define assert(e) c_assert(!!(e))

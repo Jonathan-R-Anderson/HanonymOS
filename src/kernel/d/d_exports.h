@@ -18,6 +18,10 @@ void klog(const char *msg);
 void klog_hex(unsigned long n);
 void write_serial(int c);
 void jhc_exit(int code);
+void vga_putchar(char c);
+void vga_puts(const char *str);
+void term_write(const char *str);
+void term_putchar(char c);
 
 // Pointer conversion
 uint64_t ptrToWord(void* ptr);
@@ -98,20 +102,33 @@ extern uint64_t x64TrapErrorCode;
 extern int g_module_count;
 extern void* g_mboot_modules;
 
+// Globals
+extern uint64_t init_module_phys_base;
+extern uint64_t hhdm_offset;
+uint64_t get_init_module_phys_base(void);
+void map_page_for_haskell(uint64_t virt_addr, uint64_t phys_addr, uint64_t flags);
+
 // Memory allocation
+// Memory allocation
+uint64_t alloc_phys_page(uint64_t size);
 void* alloc_from_regions(uint64_t size);
 void* ext_page_aligned_alloc(uint64_t size);
 void* ext_page_aligned_realloc(void* ptr, uint64_t sz);
 void ext_free(void* ptr, uint64_t size);
 void* ext_alloc_megablock(void);
 void* ext_alloc_cache(void);
-void free_from_regions(void* ptr, uint64_t size);
+// Memory allocation (JHC uses uint64_t for pointers in some generated code)
+void free_from_regions(uint64_t ptr, uint64_t size);
 void* malloc(size_t size);
 void free(void* ptr);
 void* memset(void* s, int c, size_t n);
 
 // Architecture functions
 void x64WriteCR3(uint64_t value);
+uint64_t x64ReadCR3(void);
+uint64_t x64ReadCR2(void);
+void arch_invalidate_page(uint64_t pageAddr);
+void ext_halt(void);
 void arch_unmap_init_task(void);
 uint32_t x64SwitchToUserspace(void* userState, void* kernelState);
 

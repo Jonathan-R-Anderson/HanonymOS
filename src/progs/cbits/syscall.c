@@ -66,6 +66,6 @@ void jhc_error(char *ptr)
 hos_word_t x64_syscall(hos_word_t a1, hos_word_t a2, hos_word_t a3, hos_word_t i, hos_word_t a4, hos_word_t a5);
 hos_word_t syscall(hos_word_t i, hos_word_t a1, hos_word_t a2, hos_word_t a3, hos_word_t a4, hos_word_t a5)
 {
-  x64_syscall(a1, a2, a3, i, a4, a5);
+  return x64_syscall(a1, a2, a3, i, a4, a5);
 }
 #endif

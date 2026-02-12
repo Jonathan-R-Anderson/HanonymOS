@@ -47,7 +47,9 @@ newTask arch td fn =
 
 mkInitTask :: Registers regs => Arch regs vMemTbl e -> Word64 -> IO (Task regs vMemTbl)
 mkInitTask arch initMainFuncAddr =
-    do vMemTbl <- archGetCurVirtMemTbl arch
+    do archDebugLog arch "mkInitTask: getting current page table"
+       vMemTbl <- archGetCurVirtMemTbl arch
+       archDebugLog arch "mkInitTask: got page table"
        return (Task
                { taskSavedRegisters = registersForTask (StackPtr 0) (InstructionPtr initMainFuncAddr)
                , taskReasonLeft = SysCall

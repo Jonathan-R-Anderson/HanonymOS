@@ -4,8 +4,8 @@ import io;
 
 extern (C):
 
-align(1)
 struct gdt_entry {
+    align(1):
     ushort limit_low;
     ushort base_low;
     ubyte  base_middle;
@@ -14,8 +14,8 @@ struct gdt_entry {
     ubyte  base_high;
 }
 
-align(1)
 struct tss_entry {
+    align(1):
     ushort limit_low;
     ushort base_low;
     ubyte  base_middle;
@@ -26,13 +26,18 @@ struct tss_entry {
     uint   reserved;
 }
 
-align(1)
 struct gdt_ptr {
+    align(1):
     ushort limit;
     ulong  base;
 }
 
+static assert(gdt_ptr.sizeof == 10);
+static assert(gdt_entry.sizeof == 8);
+static assert(tss_entry.sizeof == 16);
+
 struct tss {
+    align(1):
     uint   reserved0;
     ulong  rsp0;
     ulong  rsp1;
@@ -48,10 +53,12 @@ struct tss {
     ulong  reserved2;
     ushort reserved3;
     ushort iomap_base;
-} 
+}
 
-__gshared gdt_entry[7] gdt; // 5 entries + TSS (2 entries)
-__gshared tss tssArea;
+static assert(tss.sizeof == 104);
+
+align(16) __gshared gdt_entry[7] gdt;
+align(16) __gshared tss tssArea;
 
 // Alias for assembly if needed (but we do it all in D/Inline Asm)
 // extern char tssArea[]; 
@@ -83,41 +90,55 @@ void tss_set_gate(int num, ulong base, ulong limit) {
     tss_desc.reserved = 0;
 }
 
+extern (C) void loadGdt(gdt_ptr*);
+extern (C) void loadTr(ushort);
+
 void init_gdt() {
-    // Clear GDT
-    import core.stdc.string : memset; // Or iterate
-    // Since BetterC, define simple memset or loop.
-    for(int i=0; i<7; i++) gdt[i] = gdt_entry(0,0,0,0,0,0);
+    klog("init_gdt: size of gdt_ptr="); klog_hex(gdt_ptr.sizeof); klog("\n");
+    klog("init_gdt: GDT Addr="); klog_hex(cast(ulong)gdt.ptr); klog("\n");
+    klog("init_gdt: TSS Addr="); klog_hex(cast(ulong)&tssArea); klog("\n");
+    klog("init_gdt: clearing structures\n");
     
-    // Clear TSS
-    ubyte* tss_ptr = cast(ubyte*)&tssArea;
-    for(int i=0; i<tss.sizeof; i++) tss_ptr[i] = 0;
-    tssArea.iomap_base = tss.sizeof;
+    ubyte* gdt_raw = cast(ubyte*)gdt.ptr;
+    for (size_t i = 0; i < gdt.sizeof; i++) {
+        gdt_raw[i] = 0;
+        if (i % 8 == 0) klog(".");
+    }
+    klog(" GDT cleared\n");
+    
+    ubyte* tss_raw = cast(ubyte*)&tssArea;
+    for (size_t i = 0; i < tss.sizeof; i++) {
+        tss_raw[i] = 0;
+        if (i % 8 == 0) klog(".");
+    }
+    klog(" TSS cleared\n");
+    
+    tssArea.iomap_base = cast(ushort)tss.sizeof;
 
-    // 0: Null
-    gdt_set_gate(0, 0, 0, 0, 0);
+    klog("init_gdt: setting gates\n");
+    // NULL
+    gdt_set_gate(0, 0, 0, 0, 0); 
+    // Kernel Code (64-bit)
+    gdt_set_gate(1, 0, 0xFFFFFFFF, 0x9A, 0xAF); 
+    // Kernel Data
+    gdt_set_gate(2, 0, 0xFFFFFFFF, 0x92, 0xCF); 
+    // User Data (Index 3)
+    gdt_set_gate(3, 0, 0xFFFFFFFF, 0xF2, 0xCF); 
+    // User Code (Index 4)
+    gdt_set_gate(4, 0, 0xFFFFFFFF, 0xFA, 0xAF); 
 
-    // 1: Kernel Code (0x08)
-    gdt_set_gate(1, 0, 0, 0x9A, 0xAF);
-
-    // 2: Kernel Data (0x10)
-    gdt_set_gate(2, 0, 0, 0x92, 0xAF);
-
-    // 3: User Data (0x18)
-    gdt_set_gate(3, 0, 0, 0xF2, 0xAF);
-
-    // 4: User Code (0x20)
-    gdt_set_gate(4, 0, 0, 0xFA, 0xAF);
-
-    // 5: TSS (0x28)
+    // TSS (two slots 5 and 6)
+    klog("init_gdt: setup TSS gate at index 5\n");
     tss_set_gate(5, cast(ulong)&tssArea, tss.sizeof - 1);
 
-    gdt_pointer.limit = gdt.sizeof - 1;
+    gdt_pointer.limit = cast(ushort)(gdt.sizeof - 1);
     gdt_pointer.base = cast(ulong)gdt.ptr;
- 
-    extern void loadGdt(gdt_ptr*);
-    extern void loadTr(ushort);
 
+    klog("init_gdt: Loading GDT...\n");
     loadGdt(&gdt_pointer);
-    loadTr(0x28);
+    klog("init_gdt: GDT loaded.\n");
+
+    klog("init_gdt: Loading TSS (selector 0x28)...\n");
+    loadTr(0x28); 
+    klog("init_gdt: TR loaded.\n");
 }

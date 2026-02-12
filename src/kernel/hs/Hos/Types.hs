@@ -144,6 +144,7 @@ data FaultError = UnknownMapping
                   deriving (Show, Read, Eq, Ord)
 
 data SysCall = DebugLog (Ptr Word8) Int -- special code 0x0
+             | VGAPut (Ptr Word8) Int -- special code 0x1
 
              -- Address space management (section 0)
              | EmptyAddressSpace

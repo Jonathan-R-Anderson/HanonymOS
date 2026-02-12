@@ -17,6 +17,7 @@ import Hos.Common.Types
 foreign import ccall "syscall.h syscall" syscall :: Word64 -> Word64 -> Word64 -> Word64 -> Word64 -> Word64 -> IO Word64
 foreign import ccall "hos.h ptr_to_word" ptrToWord :: Ptr a -> Word64
 foreign import ccall "hos.h word_to_ptr" wordToPtr :: Word64 -> Ptr a
+foreign import ccall "hos.h hos_reset_malloc_after_fork" hosResetMallocAfterFork :: IO ()
 
 writeCString :: String -> (Ptr Char -> Int -> IO a) -> IO a
 writeCString string f =
@@ -38,6 +39,9 @@ hosRequestIO = syscall 0x300 0 0 0 0 0
 
 hosDebugLog :: String -> IO ()
 hosDebugLog x = writeCString x $ \xp len -> syscall 0 (ptrToWord xp) (fromIntegral len) 0 0 0 >> return ()
+
+hosVGAPut :: String -> IO ()
+hosVGAPut x = writeCString x $ \xp len -> syscall 1 (ptrToWord xp) (fromIntegral len) 0 0 0 >> return ()
 
 hosPhysAddrFor :: Word64 -> IO Word64
 hosPhysAddrFor x = bracket malloc free $ \wP -> syscall 8 x (ptrToWord wP) 0 0 0 >> peek wP

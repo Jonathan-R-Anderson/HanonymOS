@@ -191,6 +191,7 @@ continueInKernelFault:
 continueWithPanic:
 	movq (%rsp), %rdx # RIP
 	movq 0x10(%rsp), %rcx # EFLAGS
+	movabsq $kernel_panic_msg, %rdi
 	callq report_kernel_panic
 
 callNMPanic:
@@ -282,7 +283,7 @@ x64SwitchToUserspace:
 	fxrstor SSE_OFFSET(%rdi)
 
 	# Now restore segment selectors to the userspace ones
-	mov $0x1b, %rbx
+	mov $USERSPACE_DATA_SELECTOR, %rbx
 	mov %bx, %ds
 	mov %bx, %es
 	mov %bx, %fs
@@ -335,17 +336,17 @@ ret_trap:
 	movq %rbx, (%rax)
 	popq %rbx
 
-	mov $0x1b, %ax
+	mov $USERSPACE_DATA_SELECTOR, %ax
 	mov %ax, %ds
 	mov %ax, %es
 	mov %ax, %fs
 	mov %ax, %gs
 
 	movq (RAX_I * 8)(%rdi), %rax
-	pushq $0x1b # Userspace SS
+	pushq $USERSPACE_DATA_SELECTOR # Userspace SS
 	pushq (RSP_I * 8)(%rdi)
 	pushq (RFLAGS_I * 8)(%rdi)
-	pushq $0x23 # Userspace CS
+	pushq $USERSPACE_CODE_SELECTOR # Userspace CS
 	pushq (RIP_I * 8)(%rdi)
 	movq (RDI_I * 8)(%rdi), %rdi
 	iretq
@@ -460,7 +461,7 @@ setupSysCalls:
 	#    - 32-bit target EIP is unused, so set to 0
 	movq $STAR_MSR, %rcx
 	movl $0x0, %eax
-	movl $0x00130008, %edx
+	movl $0x00100008, %edx
 	wrmsr
 
 	# The LSTAR register contains the address of the entry point for the
@@ -690,6 +691,9 @@ irq14:
 irq15:
 	pushq $0x8F
 	jmp serviceISR
+
+.section .data
+kernel_panic_msg: .asciz "Kernel Fault"
 
 	.align 8
 x64TrapErrorCode:

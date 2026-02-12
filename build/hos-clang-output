@@ -1,235 +1,148 @@
-/build_work/build/hos.c:21151:127: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 65535 to 255 [-Wconstant-conversion]
-static const struct sCHos_Arch_X64_Types_X64FPState _c207 = {.a1 = 0, .a2 = 0, .a3 = 8064, .a4 = 0, .a5 = 895, .a6 = 0, .a7 = 65535, .a8 = 0};
-                                                            ~                                                                 ^~~~~
-/build_work/build/hos.c:28930:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-static const struct sCJhc_Type_Word_Word64 _c2587 = {.a1 = 18446743521806196736};
-                                                           ^
-/build_work/build/hos.c:28933:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-static const struct sCJhc_Type_Word_Word64 _c2586 = {.a1 = 18446743521806200832};
-                                                           ^
-/build_work/build/hos.c:28936:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-static const struct sCJhc_Type_Word_Word64 _c2585 = {.a1 = 18446743521806204928};
-                                                           ^
-/build_work/build/hos.c:28939:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-static const struct sCJhc_Type_Word_Word64 _c2583 = {.a1 = 18446743521806209024};
-                                                           ^
-/build_work/build/hos.c:28942:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-static const struct sCJhc_Type_Word_Word64 _c2588 = {.a1 = 18446743521806217216};
-                                                           ^
-/build_work/build/hos.c:28945:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-static const struct sCJhc_Type_Word_Word64 _c2582 = {.a1 = 18446743521806221312};
-                                                           ^
-/build_work/build/hos.c:108861:76: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                    uintptr_t v239807258 = ((uintptr_t)wordToPtr((uint64_t)18446743521806217216));
-                                                                           ^
-/build_work/build/hos.c:108863:76: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                    uintptr_t v200350880 = ((uintptr_t)wordToPtr((uint64_t)18446743521806221312));
-                                                                           ^
-/build_work/build/hos.c:108887:63: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-        uintptr_t v46178002 = ((uintptr_t)wordToPtr((uint64_t)18446743522877890560));
-                                                              ^
-/build_work/build/hos.c:109057:75: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                    uintptr_t v79172086 = ((uintptr_t)wordToPtr((uint64_t)18446743521806221312));
-                                                                          ^
-/build_work/build/hos.c:109980:25: warning: expression result unused [-Wunused-value]
-                        *((uint64_t *)(64 + ((uintptr_t)&curUserSpaceState)));
-                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:109981:25: warning: expression result unused [-Wunused-value]
-                        *((uint64_t *)(16 + ((uintptr_t)&curUserSpaceState)));
-                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:110553:70: warning: implicit declaration of function 'x64ReadCR2' is invalid in C99 [-Wimplicit-function-declaration]
-                                    uint64_t v200635568 = ((uint64_t)x64ReadCR2());
-                                                                     ^
-/build_work/build/hos.c:111245:47: warning: shift count >= width of type [-Wshift-count-overflow]
-                    v47261 = (v178407654 | (1 << 33));
-                                              ^  ~~
-/build_work/build/hos.c:127125:23: warning: implicit declaration of function 'arch_invalidate_page' is invalid in C99 [-Wimplicit-function-declaration]
-                (void)arch_invalidate_page((uint64_t)v256109470);
-                      ^
-/build_work/build/hos.c:127245:39: warning: implicit declaration of function 'arch_invalidate_page' is invalid in C99 [-Wimplicit-function-declaration]
-                                (void)arch_invalidate_page((uint64_t)v42540888);
-                                      ^
-/build_work/build/hos.c:127286:32: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-        uint64_t v244681498 = (18446744073709547520 & v182914990);
-                               ^
-/build_work/build/hos.c:127318:40: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                uint64_t v150189334 = (18446743522875801600 + v46608940);
-                                       ^
-/build_work/build/hos.c:127330:44: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                    uint64_t v136500328 = (18446743521806254080 + v149978144);
-                                           ^
-/build_work/build/hos.c:127345:47: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                        uint64_t v66156646 = (18446742974197923840 + v216085098);
-                                              ^
-/build_work/build/hos.c:127417:72: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                uintptr_t v245228928 = ((uintptr_t)wordToPtr((uint64_t)18446743521806221312));
-                                                                       ^
-/build_work/build/hos.c:127500:32: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-        uint64_t v152383852 = (18446742974197923840 + v80100080);
-                               ^
-/build_work/build/hos.c:127514:61: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-        v99125704 = fW$__fHos_Arch_X64_x64PtAddrForVAddr(gc,18446742974197923839);
-                                                            ^
-/build_work/build/hos.c:127534:66: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-            v142570334 = fW$__fHos_Arch_X64_x64PtAddrForVAddr(gc,18446742974197923839);
-                                                                 ^
-/build_work/build/hos.c:127537:64: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-            v6106772 = fW$__fHos_Arch_X64_x64PtAddrForVAddr(gc,18446742974197923839);
-                                                               ^
-/build_work/build/hos.c:127545:37: warning: incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
-            (void)free_from_regions((uint64_t)v662216737,(uint64_t)4096);
-                                    ^~~~~~~~~~~~~~~~~~~~
-/build_work/src/kernel/d/d_exports.h:108:30: note: passing argument to parameter 'ptr' here
-void free_from_regions(void* ptr, uint64_t size);
-                             ^
-/build_work/build/hos.c:127821:37: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                uint64_t v831940 = (18446743522875801600 + v69126754);
-                                    ^
-/build_work/build/hos.c:127832:43: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                    uint64_t v64278102 = (18446743521806254080 + v259795368);
-                                          ^
-/build_work/build/hos.c:127846:47: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                        uint64_t v44725410 = (18446742974197923840 + v264254038);
-                                              ^
-/build_work/build/hos.c:127857:31: warning: implicit declaration of function 'arch_invalidate_page' is invalid in C99 [-Wimplicit-function-declaration]
-                        (void)arch_invalidate_page((uint64_t)v503750713);
-                              ^
-/build_work/build/hos.c:127934:37: warning: expression result unused [-Wunused-value]
-                                    (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
-                                    ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:128044:73: warning: expression result unused [-Wunused-value]
-                                                                        (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
-                                                                        ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:128125:97: warning: expression result unused [-Wunused-value]
-                                                                                                (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
-                                                                                                ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:128210:117: warning: expression result unused [-Wunused-value]
-                                                                                                                    (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
-                                                                                                                    ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:128246:105: warning: expression result unused [-Wunused-value]
-                                                                                                        v121013328;
-                                                                                                        ^~~~~~~~~~
-/build_work/build/hos.c:128261:85: warning: expression result unused [-Wunused-value]
-                                                                                    v16800346;
-                                                                                    ^~~~~~~~~
-/build_work/build/hos.c:128278:57: warning: expression result unused [-Wunused-value]
-                                                        v260218016;
-                                                        ^~~~~~~~~~
-/build_work/build/hos.c:128341:64: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-        uintptr_t v129372188 = ((uintptr_t)wordToPtr((uint64_t)18446743521806196736));
-                                                               ^
-/build_work/build/hos.c:128351:63: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-        uintptr_t v59775346 = ((uintptr_t)wordToPtr((uint64_t)18446743521806209024));
-                                                              ^
-/build_work/build/hos.c:128361:64: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-        uintptr_t v128025960 = ((uintptr_t)wordToPtr((uint64_t)18446743521806200832));
-                                                               ^
-/build_work/build/hos.c:128371:64: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-        uintptr_t v228621314 = ((uintptr_t)wordToPtr((uint64_t)18446743521806204928));
-                                                               ^
-/build_work/build/hos.c:128401:23: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-            v18423 = (18446462598732840960 | v69152654);
-                      ^
-/build_work/build/hos.c:128397:44: warning: shift count >= width of type [-Wshift-count-overflow]
-        uint64_t v101664 = (v69152654 & (1 << 47));
-                                           ^  ~~
-/build_work/build/hos.c:128465:31: warning: implicit declaration of function 'ext_halt' is invalid in C99 [-Wimplicit-function-declaration]
-                        (void)ext_halt();
-                              ^
-/build_work/build/hos.c:128489:39: warning: implicit declaration of function 'ext_halt' is invalid in C99 [-Wimplicit-function-declaration]
-                                (void)ext_halt();
-                                      ^
-/build_work/build/hos.c:128640:35: warning: implicit declaration of function 'ext_halt' is invalid in C99 [-Wimplicit-function-declaration]
-                            (void)ext_halt();
-                                  ^
-/build_work/build/hos.c:130506:41: warning: incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
-                (void)free_from_regions((uint64_t)v160829080,(uint64_t)v68501054);
-                                        ^~~~~~~~~~~~~~~~~~~~
-/build_work/src/kernel/d/d_exports.h:108:30: note: passing argument to parameter 'ptr' here
-void free_from_regions(void* ptr, uint64_t size);
-                             ^
-/build_work/build/hos.c:131166:41: warning: incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
-                (void)free_from_regions((uint64_t)v181885144,(uint64_t)v179197786);
-                                        ^~~~~~~~~~~~~~~~~~~~
-/build_work/src/kernel/d/d_exports.h:108:30: note: passing argument to parameter 'ptr' here
-void free_from_regions(void* ptr, uint64_t size);
-                             ^
-/build_work/build/hos.c:134175:49: warning: expression result unused [-Wunused-value]
-                                            {   (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
-                                                ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:134221:49: warning: expression result unused [-Wunused-value]
-                                            {   (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
-                                                ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:134296:33: warning: incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
-        (void)free_from_regions((uint64_t)v28755507,(uint64_t)v52086092);
-                                ^~~~~~~~~~~~~~~~~~~
-/build_work/src/kernel/d/d_exports.h:108:30: note: passing argument to parameter 'ptr' here
-void free_from_regions(void* ptr, uint64_t size);
-                             ^
-/build_work/build/hos.c:134647:79: warning: implicit declaration of function 'ext_halt' is invalid in C99 [-Wimplicit-function-declaration]
-                                                                        (void)ext_halt();
-                                                                              ^
-/build_work/build/hos.c:136235:23: warning: implicit declaration of function 'ext_halt' is invalid in C99 [-Wimplicit-function-declaration]
-                (void)ext_halt();
-                      ^
-/build_work/build/hos.c:136398:27: warning: implicit declaration of function 'ext_halt' is invalid in C99 [-Wimplicit-function-declaration]
-                    (void)ext_halt();
-                          ^
-/build_work/build/hos.c:157293:36: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-            uint64_t v176533954 = (18446743522875801600 + v67520158);
-                                   ^
-/build_work/build/hos.c:157308:39: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                uint64_t v69703322 = (18446743521806254080 + v254950500);
-                                      ^
-/build_work/build/hos.c:157320:40: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
-                uint64_t v132127024 = (18446742974197923840 + v23565132);
-                                       ^
-/build_work/build/hos.c:157361:23: warning: implicit declaration of function 'arch_invalidate_page' is invalid in C99 [-Wimplicit-function-declaration]
-                (void)arch_invalidate_page((uint64_t)v650944567);
-                      ^
-/build_work/build/hos.c:158600:33: warning: incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
-        (void)free_from_regions((uint64_t)v609535543,(uint64_t)4096);
-                                ^~~~~~~~~~~~~~~~~~~~
-/build_work/src/kernel/d/d_exports.h:108:30: note: passing argument to parameter 'ptr' here
-void free_from_regions(void* ptr, uint64_t size);
-                             ^
-/build_work/build/hos.c:158983:33: warning: incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
-        (void)free_from_regions((uint64_t)v613074487,(uint64_t)4096);
-                                ^~~~~~~~~~~~~~~~~~~~
-/build_work/src/kernel/d/d_exports.h:108:30: note: passing argument to parameter 'ptr' here
-void free_from_regions(void* ptr, uint64_t size);
-                             ^
-/build_work/build/hos.c:159266:33: warning: incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
-        (void)free_from_regions((uint64_t)v616613431,(uint64_t)4096);
-                                ^~~~~~~~~~~~~~~~~~~~
-/build_work/src/kernel/d/d_exports.h:108:30: note: passing argument to parameter 'ptr' here
-void free_from_regions(void* ptr, uint64_t size);
-                             ^
-/build_work/build/hos.c:159294:13: warning: expression result unused [-Wunused-value]
-            *((uint16_t *)(v81854478));
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:159296:13: warning: expression result unused [-Wunused-value]
-            *((uint16_t *)(v254700450));
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:159298:13: warning: expression result unused [-Wunused-value]
-            *((uint32_t *)(v49778038));
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:159304:13: warning: expression result unused [-Wunused-value]
-            *((uint64_t *)(v104821638));
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:159306:13: warning: expression result unused [-Wunused-value]
-            *((uint32_t *)(v87988892));
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:159308:13: warning: expression result unused [-Wunused-value]
-            *((uint16_t *)(v182473852));
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:159314:13: warning: expression result unused [-Wunused-value]
-            *((uint16_t *)(v16415580));
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:159316:13: warning: expression result unused [-Wunused-value]
-            *((uint16_t *)(v141123870));
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/build_work/build/hos.c:159318:13: warning: expression result unused [-Wunused-value]
-            *((uint16_t *)(v10262808));
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~
-71 warnings generated.
+/home/bruns/Documents/haskellos/build/hos.c:20942:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 20942 | static const struct sCJhc_Type_Word_Word64 _c2553 = {.a1 = 18446743521806196736};
+       |                                                            ^
+/home/bruns/Documents/haskellos/build/hos.c:20945:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 20945 | static const struct sCJhc_Type_Word_Word64 _c2552 = {.a1 = 18446743521806200832};
+       |                                                            ^
+/home/bruns/Documents/haskellos/build/hos.c:20948:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 20948 | static const struct sCJhc_Type_Word_Word64 _c2551 = {.a1 = 18446743521806204928};
+       |                                                            ^
+/home/bruns/Documents/haskellos/build/hos.c:20951:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 20951 | static const struct sCJhc_Type_Word_Word64 _c2549 = {.a1 = 18446743521806209024};
+       |                                                            ^
+/home/bruns/Documents/haskellos/build/hos.c:20954:60: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 20954 | static const struct sCJhc_Type_Word_Word64 _c2547 = {.a1 = 18446743521806221312};
+       |                                                            ^
+/home/bruns/Documents/haskellos/build/hos.c:29915:128: warning: implicit conversion from 'int' to 'uint8_t' (aka 'unsigned char') changes value from 65535 to 255 [-Wconstant-conversion]
+ 29915 | static const struct sCHos_Arch_X64_Types_X64FPState _c1426 = {.a1 = 0, .a2 = 0, .a3 = 8064, .a4 = 0, .a5 = 895, .a6 = 0, .a7 = 65535, .a8 = 0};
+       |                                                              ~                                                                 ^~~~~
+/home/bruns/Documents/haskellos/build/hos.c:110226:75: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 110226 |                     uintptr_t v13643304 = ((uintptr_t)wordToPtr((uint64_t)18446743521806221312));
+        |                                                                           ^
+/home/bruns/Documents/haskellos/build/hos.c:111125:17: warning: expression result unused [-Wunused-value]
+ 111125 |                 *((uint64_t *)(64 + ((uintptr_t)&curUserSpaceState)));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:111126:17: warning: expression result unused [-Wunused-value]
+ 111126 |                 *((uint64_t *)(16 + ((uintptr_t)&curUserSpaceState)));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:112437:46: warning: shift count >= width of type [-Wshift-count-overflow]
+ 112437 |                     v59341 = (v45031404 | (1 << 33));
+        |                                              ^  ~~
+/home/bruns/Documents/haskellos/build/hos.c:128337:31: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128337 |         uint64_t v73342042 = (18446744073709547520 & v61124748);
+        |                               ^
+/home/bruns/Documents/haskellos/build/hos.c:128353:32: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128353 |         uint64_t v261547404 = (18446744073709547520 & v260952216);
+        |                                ^
+/home/bruns/Documents/haskellos/build/hos.c:128370:36: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128370 |             uint64_t v156312466 = (18446744073709547520 & v247305784);
+        |                                    ^
+/home/bruns/Documents/haskellos/build/hos.c:128382:39: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128382 |                 uint64_t v30600872 = (18446744073709547520 & v46454720);
+        |                                       ^
+/home/bruns/Documents/haskellos/build/hos.c:128394:43: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128394 |                     uint64_t v66207640 = (18446744073709547520 & v110207586);
+        |                                           ^
+/home/bruns/Documents/haskellos/build/hos.c:128516:37: warning: shift count >= width of type [-Wshift-count-overflow]
+ 128516 |         uint64_t v253468964 = ((510 << 39) | v137248444);
+        |                                     ^  ~~
+/home/bruns/Documents/haskellos/build/hos.c:128530:62: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128530 |         v196992868 = fW$__fHos_Arch_X64_x64PtAddrForVAddr(gc,18446742974197923839);
+        |                                                              ^
+/home/bruns/Documents/haskellos/build/hos.c:128550:66: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128550 |             v151618626 = fW$__fHos_Arch_X64_x64PtAddrForVAddr(gc,18446742974197923839);
+        |                                                                  ^
+/home/bruns/Documents/haskellos/build/hos.c:128553:65: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128553 |             v97501250 = fW$__fHos_Arch_X64_x64PtAddrForVAddr(gc,18446742974197923839);
+        |                                                                 ^
+/home/bruns/Documents/haskellos/build/hos.c:128822:32: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128822 |         uint64_t v183006726 = (18446744073709547520 & v59642632);
+        |                                ^
+/home/bruns/Documents/haskellos/build/hos.c:128838:36: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128838 |             uint64_t v212699452 = (18446744073709547520 & v172537498);
+        |                                    ^
+/home/bruns/Documents/haskellos/build/hos.c:128849:40: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128849 |                 uint64_t v178540710 = (18446744073709547520 & v95073932);
+        |                                        ^
+/home/bruns/Documents/haskellos/build/hos.c:128860:43: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 128860 |                     uint64_t v41628980 = (18446744073709547520 & v194492368);
+        |                                           ^
+/home/bruns/Documents/haskellos/build/hos.c:128942:37: warning: expression result unused [-Wunused-value]
+ 128942 |                                     (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
+        |                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:129052:73: warning: expression result unused [-Wunused-value]
+ 129052 |                                                                         (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
+        |                                                                         ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:129133:97: warning: expression result unused [-Wunused-value]
+ 129133 |                                                                                                 (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
+        |                                                                                                 ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:129218:117: warning: expression result unused [-Wunused-value]
+ 129218 |                                                                                                                     (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
+        |                                                                                                                     ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:129254:105: warning: expression result unused [-Wunused-value]
+ 129254 |                                                                                                         v5506190;
+        |                                                                                                         ^~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:129269:85: warning: expression result unused [-Wunused-value]
+ 129269 |                                                                                     v98853490;
+        |                                                                                     ^~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:129286:57: warning: expression result unused [-Wunused-value]
+ 129286 |                                                         v207389292;
+        |                                                         ^~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:129349:64: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 129349 |         uintptr_t v256711676 = ((uintptr_t)wordToPtr((uint64_t)18446743521806200832));
+        |                                                                ^
+/home/bruns/Documents/haskellos/build/hos.c:129359:64: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 129359 |         uintptr_t v215694380 = ((uintptr_t)wordToPtr((uint64_t)18446743521806204928));
+        |                                                                ^
+/home/bruns/Documents/haskellos/build/hos.c:129369:64: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 129369 |         uintptr_t v173100424 = ((uintptr_t)wordToPtr((uint64_t)18446743521806196736));
+        |                                                                ^
+/home/bruns/Documents/haskellos/build/hos.c:129379:64: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 129379 |         uintptr_t v156608670 = ((uintptr_t)wordToPtr((uint64_t)18446743521806209024));
+        |                                                                ^
+/home/bruns/Documents/haskellos/build/hos.c:129409:22: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 129409 |             v3823 = (18446462598732840960 | v249771066);
+        |                      ^
+/home/bruns/Documents/haskellos/build/hos.c:129405:45: warning: shift count >= width of type [-Wshift-count-overflow]
+ 129405 |         uint64_t v102274 = (v249771066 & (1 << 47));
+        |                                             ^  ~~
+/home/bruns/Documents/haskellos/build/hos.c:135170:49: warning: expression result unused [-Wunused-value]
+ 135170 |                                             {   (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
+        |                                                 ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:135216:49: warning: expression result unused [-Wunused-value]
+ 135216 |                                             {   (sptr_t)SET_RAW_TAG(CJhc_Prim_Prim_$LR);
+        |                                                 ^       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:158962:72: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 158962 |                 uintptr_t v131073038 = ((uintptr_t)wordToPtr((uint64_t)18446743521806221312));
+        |                                                                        ^
+/home/bruns/Documents/haskellos/build/hos.c:158965:40: warning: integer literal is too large to be represented in a signed integer type, interpreting as unsigned [-Wimplicitly-unsigned-literal]
+ 158965 |                 uint64_t v126652632 = (18446744073709547520 & v163734720);
+        |                                        ^
+/home/bruns/Documents/haskellos/build/hos.c:160481:17: warning: expression result unused [-Wunused-value]
+ 160481 |                 *((uint16_t *)(v21683320));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:160483:17: warning: expression result unused [-Wunused-value]
+ 160483 |                 *((uint16_t *)(v185269384));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:160485:17: warning: expression result unused [-Wunused-value]
+ 160485 |                 *((uint32_t *)(v9627734));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:160491:17: warning: expression result unused [-Wunused-value]
+ 160491 |                 *((uint64_t *)(v251856956));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:160493:17: warning: expression result unused [-Wunused-value]
+ 160493 |                 *((uint32_t *)(v243533140));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:160495:17: warning: expression result unused [-Wunused-value]
+ 160495 |                 *((uint16_t *)(v43972862));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:160501:17: warning: expression result unused [-Wunused-value]
+ 160501 |                 *((uint16_t *)(v12292222));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:160503:17: warning: expression result unused [-Wunused-value]
+ 160503 |                 *((uint16_t *)(v112085112));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bruns/Documents/haskellos/build/hos.c:160505:17: warning: expression result unused [-Wunused-value]
+ 160505 |                 *((uint16_t *)(v260785336));
+        |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+49 warnings generated.

@@ -1,2 +1,2 @@
-/build_work/build/rts-user/rts.o: rts.c rts/jhc_rts.h rts/profile.h rts/cdefs.h rts/gc.h \
+/home/bruns/Documents/haskellos/build/rts-user/rts.o: rts.c rts/jhc_rts.h rts/profile.h rts/cdefs.h rts/gc.h \
   rts/gc_none.h rts/gc_jgc.h sys/queue.h HsFFI.h

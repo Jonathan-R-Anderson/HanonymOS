@@ -10,6 +10,11 @@ SECTIONS
     {
         *(.text .text.*)
     }
+
+    .limine_reqs ALIGN(64) : AT(ADDR(.limine_reqs) - 0xFFFFFFFF80000000)
+    {
+        KEEP(*(.limine_reqs))
+    }
     
     .rodata ALIGN(4K) : AT(ADDR(.rodata) - 0xFFFFFFFF80000000)
     {

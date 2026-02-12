@@ -31,16 +31,34 @@ PageTable* phys_to_virt_pt(ulong phys_addr) {
     return cast(PageTable*)(phys_addr + hhdm_offset);
 }
 
-// Read CR3 (PML4 base physical address)
 import ldc.llvmasm;
 
-ulong read_cr3() {
-    return __asm!ulong("mov %cr3, $0", "=r");
+extern (C) ulong x64ReadCR3();
+extern (C) void x64WriteCR3(ulong);
+extern (C) ulong x64ReadCR0();
+extern (C) void x64WriteCR0(ulong);
+extern (C) ulong x64ReadCR4();
+extern (C) void x64WriteCR4(ulong);
+
+void enable_sse() {
+    ulong cr0 = x64ReadCR0();
+    cr0 &= ~(1UL << 2); // EM = 0
+    cr0 |= (1UL << 1);  // MP = 1
+    x64WriteCR0(cr0);
+
+    ulong cr4 = x64ReadCR4();
+    cr4 |= (1UL << 9);  // OSFXSR = 1
+    cr4 |= (1UL << 10); // OSXMMEXCPT = 1
+    x64WriteCR4(cr4);
 }
 
+ulong read_cr3() {
+    return x64ReadCR3();
+}
+ 
 // Write CR3
 void write_cr3(ulong val) {
-   __asm("mov $0, %cr3", "r", val);
+    x64WriteCR3(val);
 }
 
 // Invalidate Page

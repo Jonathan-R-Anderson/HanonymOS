@@ -35,16 +35,18 @@ data X64PageTableIndex = X64PageTableIndex
 type X64HosState = HosState X64Registers X64PageTable X64Exception
 
 foreign import "write_serial" writeSerial :: Word8 -> IO ()
+foreign import ccall "vga_putchar" vgaPutChar :: Word8 -> IO ()
+foreign import ccall "term_putchar" termPutChar :: Word8 -> IO ()
+
 x64DebugLog:: String -> IO ()
-x64DebugLog s = let go {- ptr -} [] = writeSerial (fromIntegral (ord '\n'))
-                    go {- ptr -} (!x:xs) = do writeSerial (fromIntegral (ord x))
-                                              --poke ptr (fromIntegral (ord x))
-                                              --poke (ptr `plusPtr` 1) (0x0f :: Word8)
-                                              go   {- (ptr `plusPtr` 2) -} xs
+x64DebugLog s = let go {- ptr -} [] = writeSerial (fromIntegral (ord '\n')) >> vgaPutChar (fromIntegral (ord '\n')) >> termPutChar (fromIntegral (ord '\n'))
+                    go {- ptr -} (!x:xs) = writeSerial (fromIntegral (ord x)) >> vgaPutChar (fromIntegral (ord x)) >> termPutChar (fromIntegral (ord x)) >> go xs
                 in {- readIORef x64VideoBuffer >>= \buf -> -} go {- buf -} s
 
 foreign import ccall "arch_unmap_init_task" x64UnmapInitTask :: IO ()
 foreign import ccall "&g_module_count" x64ModuleCount :: Ptr Int
+foreign import ccall "&hhdm_offset" x64HhdmOffset :: Ptr Word64
+foreign import ccall "map_page_for_haskell" mapPageForHaskell :: Word64 -> Word64 -> Word64 -> IO ()
 x64 :: Arch X64Registers X64PageTable X64Exception
 x64 = Arch
     { archPageSize = x64PageSize
@@ -83,16 +85,24 @@ instance Registers X64Registers where
     registersWithIP (InstructionPtr ip) regs = regs { x64GPRegisters = (x64GPRegisters regs) { x64GpRip = ip } }
 
 x64KernelPDPTEntry :: Int
-x64KernelPDPTEntry = 0x1fe
+x64KernelPDPTEntry = 0x1ff
 
 x64CurPt :: Int -> Int -> Int -> Ptr Word64
 x64CurPt pml4I pdptI pdtI = wordToPtr (x64PtAddr pml4I pdptI pdtI)
 
 x64PtAddr :: Int -> Int -> Int -> Word64
-x64PtAddr pml4I pdptI pdtI = 0xffffff0000000000
-                             + (fromIntegral pml4I * 0x40000000)
-                             + (fromIntegral pdptI * 0x200000)
-                             + (fromIntegral pdtI  * 0x1000)
+x64PtAddr pml4I pdptI pdtI = 
+    let recursiveIndex :: Word64
+        recursiveIndex = 510
+        base :: Word64
+        base = recursiveIndex `shiftL` 39
+        pml4Bits :: Word64
+        pml4Bits = (fromIntegral pml4I :: Word64) `shiftL` 30
+        pdptBits :: Word64
+        pdptBits = (fromIntegral pdptI :: Word64) `shiftL` 21
+        pdtBits :: Word64
+        pdtBits = (fromIntegral pdtI :: Word64) `shiftL` 12
+    in base .|. pml4Bits .|. pdptBits .|. pdtBits
 
 x64PtAddrForVAddr :: Word64 -> Word64
 x64PtAddrForVAddr vAddr = let X64PageTableIndex pml4I pdptI pdtI _ = x64PTIndex vAddr
@@ -119,7 +129,7 @@ x64NewVirtMemTbl = do
   newPageTbl <- cPageAlignedPhysAlloc (fromIntegral (archPageSize x64))
   withMapping x64 (Privileged ReadWrite) miscPage1 newPageTbl $ \mapping ->
     do memset (mapping :: Ptr Word64) 0 (fromIntegral (archPageSize x64))
-       pokeElemOff mapping 511 (newPageTbl .|. 3)
+       pokeElemOff mapping 510 (newPageTbl .|. 3)
   return (X64PageTable newPageTbl)
 
 x64LastUserspaceByte :: Word64
@@ -144,9 +154,20 @@ x64ReleaseVirtMemTbl pgTbl@(X64PageTable pml4) =
 x64MapKernel :: X64PageTable -> IO ()
 x64MapKernel (X64PageTable pgTbl) =
     do withMapping x64 (Privileged ReadWrite) miscPage1 pgTbl $ \mapping ->
-           -- We map the kernel by copying over the current pdpt mapping
-         do pdpt <- peekElemOff x64CurPml4 x64KernelPDPTEntry
-            pokeElemOff mapping x64KernelPDPTEntry pdpt
+         do -- Use HHDM offset to read current PML4 instead of broken recursive mapping
+            hhdmOffset <- peek x64HhdmOffset
+            cr3 <- x64ReadCR3C
+            let pml4Phys = cr3 .&. 0xfffffffffffff000
+                pml4Virt = pml4Phys + hhdmOffset
+                curPml4Ptr = wordToPtr pml4Virt :: Ptr Word64
+
+            forM_ [256..511] $ \i ->
+               if i /= 510
+                  then do val <- peekElemOff curPml4Ptr i
+                          when (val /= 0) $ pokeElemOff mapping i val
+                  else return ()
+            -- Map the page table recursively
+            pokeElemOff mapping 510 (pgTbl .|. 3)
 
 x64PTIndex :: Word64 -> X64PageTableIndex
 x64PTIndex addr =
@@ -171,62 +192,45 @@ x64PageEntryPermissions x = case x .&. 7 of
                               _ -> Privileged ReadOnly
 
 x64MapPage :: Word64 -> Word64 -> MemoryPermissions -> IO ()
-x64MapPage virt phys perms =
-    do let X64PageTableIndex pml4I pdptI pdtI ptI = x64PTIndex virt
-           entry = x64PageEntry phys perms
-
-           pdptPtr = x64CurPdpt pml4I
-           pdtPtr = x64CurPdt pml4I pdptI
-           ptPtr = x64CurPt pml4I pdptI pdtI
-
-           ensurePageTable pdAddr index pAddr = do
-             pEntry <- peekElemOff pdAddr index
-             when (pEntry == 0) $ do
-               newPd <- cPageAlignedPhysAlloc (fromIntegral (archPageSize x64))
-               pokeElemOff pdAddr index (x64PageEntry newPd perms)
-               archInvalidatePage (ptrToWord pAddr)
-               memset pAddr 0 (fromIntegral (archPageSize x64))
-             pEntry <- peekElemOff pdAddr index
-             -- Now we want to ensure that the permissions are weaker than the permissions we were given
-             let newPermissions = case (oldPermissions, perms) of
-                                    (Privileged cur, Privileged new) -> Privileged (newPermsRW cur new)
-                                    (Privileged cur, UserSpace new) -> UserSpace (newPermsRW cur new)
-                                    (UserSpace cur, Privileged new) -> UserSpace (newPermsRW cur new)
-                                    (UserSpace cur, UserSpace new) -> UserSpace (newPermsRW cur new)
-                 newPermsRW ReadOnly x = x
-                 newPermsRW ReadWrite _ = ReadWrite
-
-                 oldPermissions = x64PageEntryPermissions pEntry
-
-                 newEntry = x64PageEntry (pEntry .&. (complement (fromIntegral (archPageSize x64) - 1))) newPermissions
-
-             when (newPermissions /= oldPermissions) $ do
-                  pokeElemOff pdAddr index newEntry
-                  archInvalidatePage (ptrToWord pAddr)
-       ensurePageTable x64CurPml4 pml4I pdptPtr
-       ensurePageTable pdptPtr pdptI pdtPtr
-       ensurePageTable pdtPtr pdtI ptPtr
-
-       pokeElemOff ptPtr ptI entry
-       archInvalidatePage virt
+x64MapPage virt phys perms = do
+    -- Use the D code's working map_page_hhdm via the foreign import
+    let flags = case perms of
+                  Privileged ReadOnly   -> 1           -- PTE_PRESENT
+                  Privileged ReadWrite  -> 3           -- PTE_PRESENT | PTE_RW
+                  UserSpace ReadOnly    -> 5           -- PTE_PRESENT | PTE_USER
+                  UserSpace ReadWrite   -> 7           -- PTE_PRESENT | PTE_RW | PTE_USER
+    mapPageForHaskell virt phys flags
 
 x64GetPhysPageEntry :: Word64 -> IO Word64
 x64GetPhysPageEntry virt =
     do let X64PageTableIndex pml4I pdptI pdtI ptI = x64PTIndex virt
 
-           pdptPtr = x64CurPdpt pml4I
-           pdtPtr = x64CurPdt pml4I pdptI
-           ptPtr = x64CurPt pml4I pdptI pdtI
+       -- Use HHDM offset to walk page tables instead of broken recursive mapping
+       hhdmOffset <- peek x64HhdmOffset
+       cr3 <- x64ReadCR3C
+       let pml4Phys = cr3 .&. 0xfffffffffffff000
+           pml4Virt = pml4Phys + hhdmOffset
+           pml4Ptr = wordToPtr pml4Virt :: Ptr Word64
 
-       pmlEntry <- peekElemOff x64CurPml4 pml4I
-       if pmlEntry /= 0
+       pmlEntry <- peekElemOff pml4Ptr pml4I
+       if (pmlEntry .&. 1) /= 0
          then do
+           let pdptPhys = pmlEntry .&. 0xfffffffffffff000
+               pdptVirt = pdptPhys + hhdmOffset
+               pdptPtr = wordToPtr pdptVirt :: Ptr Word64
            pdptEntry <- peekElemOff pdptPtr pdptI
-           if pdptEntry /= 0
+           if (pdptEntry .&. 1) /= 0
              then do
+               let pdtPhys = pdptEntry .&. 0xfffffffffffff000
+                   pdtVirt = pdtPhys + hhdmOffset
+                   pdtPtr = wordToPtr pdtVirt :: Ptr Word64
                pdtEntry <- peekElemOff pdtPtr pdtI
-               if pdtEntry /= 0
-                 then peekElemOff ptPtr ptI
+               if (pdtEntry .&. 1) /= 0
+                 then do
+                   let ptPhys = pdtEntry .&. 0xfffffffffffff000
+                       ptVirt = ptPhys + hhdmOffset
+                       ptPtr = wordToPtr ptVirt :: Ptr Word64
+                   peekElemOff ptPtr ptI
                  else return 0
              else return 0
          else return 0
@@ -239,16 +243,28 @@ x64UnmapPage :: Word64 -> IO ()
 x64UnmapPage virt =
     do let X64PageTableIndex pml4I pdptI pdtI ptI = x64PTIndex virt
 
-           pdptPtr = x64CurPdpt pml4I
-           pdtPtr = x64CurPdt pml4I pdptI
-           ptPtr = x64CurPt pml4I pdptI pdtI
+       -- Use HHDM offset to walk page tables instead of broken recursive mapping
+       hhdmOffset <- peek x64HhdmOffset
+       cr3 <- x64ReadCR3C
+       let pml4Phys = cr3 .&. 0xfffffffffffff000
+           pml4Virt = pml4Phys + hhdmOffset
+           pml4Ptr = wordToPtr pml4Virt :: Ptr Word64
 
-       pmlEntry <- peekElemOff x64CurPml4 pml4I
-       when (pmlEntry /= 0) $ do
+       pmlEntry <- peekElemOff pml4Ptr pml4I
+       when ((pmlEntry .&. 1) /= 0) $ do
+         let pdptPhys = pmlEntry .&. 0xfffffffffffff000
+             pdptVirt = pdptPhys + hhdmOffset
+             pdptPtr = wordToPtr pdptVirt :: Ptr Word64
          pdptEntry <- peekElemOff pdptPtr pdptI
-         when (pdptEntry /= 0) $ do
+         when ((pdptEntry .&. 1) /= 0) $ do
+           let pdtPhys = pdptEntry .&. 0xfffffffffffff000
+               pdtVirt = pdtPhys + hhdmOffset
+               pdtPtr = wordToPtr pdtVirt :: Ptr Word64
            pdtEntry <- peekElemOff pdtPtr pdtI
-           when (pdtEntry /= 0) $ do
+           when ((pdtEntry .&. 1) /= 0) $ do
+             let ptPhys = pdtEntry .&. 0xfffffffffffff000
+                 ptVirt = ptPhys + hhdmOffset
+                 ptPtr = wordToPtr ptVirt :: Ptr Word64
              pokeElemOff ptPtr ptI 0
              archInvalidatePage virt
 
@@ -269,10 +285,11 @@ x64TestPage vAddr reqPerms =
          _ -> return False
 
 x64CopyPhysPage :: Word64 -> Word64 -> IO ()
-x64CopyPhysPage src dest =
-    withMapping x64 (Privileged ReadOnly) miscPage1 src $ \srcP ->
-    withMapping x64 (Privileged ReadWrite) miscPage2 dest $ \destP ->
-    memcpy destP srcP (fromIntegral x64PageSize)
+x64CopyPhysPage src dest = do
+    hhdmOffset <- peek x64HhdmOffset
+    let srcVirt = wordToPtr (src + hhdmOffset)
+        destVirt = wordToPtr (dest + hhdmOffset)
+    memcpy destVirt srcVirt (fromIntegral x64PageSize)
 
 x64WalkVirtMemTbl :: X64PageTable -> Word64 -> Word64 -> (Word64 -> Word64 -> IO ()) -> IO ()
 x64WalkVirtMemTbl (X64PageTable pml4) start end visit = go
@@ -312,9 +329,11 @@ x64WalkVirtMemTbl (X64PageTable pml4) start end visit = go
               peekElemOff ptP ptI >>= \ptE ->
               if testBit ptE 0 then visit (base + (0x1000 * fromIntegral ptI)) (alignToPage x64 ptE) else return ()
 
+foreign import ccall unsafe "x64ReadCR3" x64ReadCR3C :: IO Word64
+
 x64GetCurVirtMemTbl :: IO X64PageTable
-x64GetCurVirtMemTbl = do pgTblAddr <- peekElemOff x64CurPml4 0x1ff
-                         let pgTblAddrAligned = pgTblAddr .&. (complement (fromIntegral (archPageSize x64) - 1))
+x64GetCurVirtMemTbl = do cr3 <- x64ReadCR3C
+                         let pgTblAddrAligned = cr3 .&. (complement (fromIntegral (archPageSize x64) - 1))
                          return (X64PageTable pgTblAddrAligned)
 
 foreign import ccall "&tssArea" x64TssArea :: Ptr Word64
@@ -343,6 +362,7 @@ x64SwitchTasks oldTask newTask =
        x64PokeTaskState newTask x64TaskStateTmp
        let X64PageTable newPml4 = taskVirtMemTbl newTask
 
+       x64DebugLog ("x64SwitchTasks: CR3 " ++ showHex newPml4 "")
        x64WriteCR3 newPml4
        return oldTask'
 
@@ -357,22 +377,17 @@ x64GetBootModule i p = do let moduleInfo = x64BootModules `plusPtr` (fromIntegra
                           memcpy (castPtr p) (castPtr moduleInfo) 128
 
 x64SwitchToUserspace :: IO (InterruptReason X64Exception)
-x64SwitchToUserspace = do -- We're going to be returning to some location in userspace, but we
-                          -- don't know if the location is mapped into memory or not. If it is not
-                          -- we will simulate a VirtualMemoryFault so that the location can be mapped in
+x64SwitchToUserspace = do -- We're going to be returning to some location in userspace
+                          -- Just try to jump - if the page isn't mapped, we'll get a fault
 
                           rip <- x64GetUserRIP
-                          returnPhysPage <- x64GetPhysPageEntry rip
-                          let returnPageIsPresent = testBit returnPhysPage x64_PAGE_PRESENT_BIT
-                          if returnPageIsPresent
-                             then do
-                               reason <- x64SwitchToUserspaceAsm (castPtr x64TaskStateTmp) (castPtr x64KernelState)
-                               case reason of
-                                 256 -> x64GetUserSyscall >>= return . SysCallInterrupt
-                                 _ | reason < 128 -> x64MapFault reason >>= return . TrapInterrupt
-                                   | otherwise    -> return (DeviceInterrupt (reason .&. 0xF))
-                             else -- Simulate the VM fault
-                                 return (TrapInterrupt (VirtualMemoryFault FaultOnInstructionFetch rip))
+                          -- x64DebugLog ("x64SwitchToUserspace: jumping to " ++ showHex rip "")  -- Too verbose
+                          reason <- x64SwitchToUserspaceAsm (castPtr x64TaskStateTmp) (castPtr x64KernelState)
+                          -- x64DebugLog ("x64SwitchToUserspace: back with " ++ show reason)  -- Too verbose
+                          case reason of
+                            256 -> x64GetUserSyscall >>= return . SysCallInterrupt
+                            _ | reason < 128 -> x64MapFault reason >>= return . TrapInterrupt
+                              | otherwise    -> return (DeviceInterrupt (reason .&. 0xF))
 
 x64ReturnToUserspace :: Word64 -> IO ()
 x64ReturnToUserspace = poke ((castPtr x64TaskStateTmp) `plusPtr` 8)
@@ -401,7 +416,8 @@ x64GetUserSyscall =
        sysCallInfoPtrW <- peek ((castPtr x64TaskStateTmp :: Ptr Word64) `plusPtr` 16)
        case sysCallNumW of
          0 -> return (DebugLog (wordToPtr sysCallArg1W) (fromIntegral sysCallArg2W))
-         1 -> return (CurrentAddressSpace (TaskId (fromIntegral sysCallArg1W)))
+         1 -> return (VGAPut (wordToPtr sysCallArg1W) (fromIntegral sysCallArg2W))
+         0x001 -> return (CurrentAddressSpace (TaskId (fromIntegral sysCallArg1W)))
          2 -> do mapping <- peek (wordToPtr sysCallArg4W)
                  return (AddMapping (AddressSpaceRef (fromIntegral sysCallArg1W))
                                     (AR (fromIntegral sysCallArg2W) (fromIntegral sysCallArg3W))
@@ -449,6 +465,7 @@ x64MapFault 12 = return $ ArchException X64StackSegmentFault
 x64MapFault 13 = return $ ProtectionException
 x64MapFault 14 = do location <- x64ReadCR2
                     errCode <- peek x64TrapErrorCode
+                    -- x64DebugLog ("Page fault: CR2=" ++ showHex location (" errCode=" ++ showHex errCode ""))  -- Too verbose
                     let faultReason
                             | testBit errCode 1 = FaultOnWrite
                             | testBit errCode 4 = FaultOnInstructionFetch
