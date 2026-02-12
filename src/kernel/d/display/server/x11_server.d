@@ -1,4 +1,4 @@
-module anonymos_display.x11_server;
+module anonymos_display.server.x11_server;
 
 // Minimal X11 server implementation for i3
 // Provides enough X11 protocol support for i3 to run
@@ -6,8 +6,8 @@ module anonymos_display.x11_server;
 import anonymos_userland.core.objects;
 import anonymos_display.framebuffer;
 import anonymos_display.canvas;
-import implementation.kernel.core.heap : kmalloc, kfree;
-import implementation.kernel.core.memory : memcpy, memset;
+import core.stdc.stdlib : malloc, free;
+import core.stdc.string : memcpy, memset;
 import anonymos_userland.core.object_methods : socketBind, socketListen, socketAccept, socketRecv, socketSend, socketClose;
 import anonymos_network.stack.types : IPv4Address;
 import anonymos_display.input_pipeline : InputEvent;
@@ -179,7 +179,7 @@ __gshared uint g_nextWindowId = 1;
     
     // Create backing store
     size_t bufferSize = width * height * 4;  // 32-bit RGBA
-    ubyte* buffer = cast(ubyte*)kmalloc(bufferSize);
+    ubyte* buffer = cast(ubyte*)malloc(bufferSize);
     if (buffer !is null)
     {
         // Clear to black
@@ -278,13 +278,13 @@ __gshared uint g_nextWindowId = 1;
     for (size_t i = 0; i < win.propertyCount; ++i)
     {
         if (win.properties[i].data !is null)
-            kfree(win.properties[i].data);
+            free(win.properties[i].data);
     }
     
     // Free backing store buffer (VMO handles itself via refcounting usually, but we allocated the buffer manually)
     if (win.buffer !is null)
     {
-        kfree(win.buffer);
+        free(win.buffer);
     }
     
     // Remove from list (shift)
@@ -626,12 +626,12 @@ __gshared X11ServerState g_x11Server;
                 if (prop !is null)
                 {
                     // Update property
-                    if (prop.data !is null) kfree(prop.data);
+                    if (prop.data !is null) free(prop.data);
                     
                     prop.type = type;
                     prop.format = format;
                     prop.length = nUnits;
-                    prop.data = cast(ubyte*)kmalloc(dataLen);
+                    prop.data = cast(ubyte*)malloc(dataLen);
                     
                     if (prop.data !is null)
                     {
@@ -704,7 +704,7 @@ __gshared X11ServerState g_x11Server;
                     if (win.properties[i].property == property)
                     {
                         if (win.properties[i].data !is null)
-                            kfree(win.properties[i].data);
+                            free(win.properties[i].data);
                             
                         // Shift remove
                         for (size_t j = i; j < win.propertyCount - 1; ++j)
