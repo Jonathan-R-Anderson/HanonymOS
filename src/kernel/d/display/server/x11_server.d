@@ -8,7 +8,7 @@ import anonymos_display.framebuffer;
 import anonymos_display.canvas;
 import core.stdc.stdlib : malloc, free;
 import core.stdc.string : memcpy, memset;
-import anonymos_userland.core.object_methods : socketBind, socketListen, socketAccept, socketRecv, socketSend, socketClose;
+import anonymos_userland.core.objects : socketBind, socketListen, socketAccept, socketRecv, socketSend, socketClose;
 import anonymos_network.stack.types : IPv4Address;
 import anonymos_display.input_pipeline : InputEvent;
 
